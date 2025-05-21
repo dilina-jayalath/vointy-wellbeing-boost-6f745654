@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -9,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 mb-12 md:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight mb-6">
-              Boost Employee <span className="gradient-text">Wellbeing</span> and Reduce Sick Leaves
+              Boost Employee <span className="gradient-text">Wellbeing</span> and Increase Engagement
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-lg">
               Vointy helps companies improve workplace wellness, reduce sick leaves by up to 32%, and boost employee engagement through our social wellness platform.
