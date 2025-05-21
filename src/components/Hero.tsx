@@ -35,29 +35,29 @@ const Hero = () => {
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg transform rotate-1">
                   <img 
-                    src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=300&fit=crop" 
-                    alt="Happy woman smiling at work" 
+                    src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=400&h=300&fit=crop" 
+                    alt="Office worker doing desk stretching exercises" 
                     className="w-full h-auto"
                   />
                 </div>
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg transform -rotate-1">
                   <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=300&fit=crop" 
-                    alt="Confident professional with positive body language" 
+                    src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?w=400&h=300&fit=crop" 
+                    alt="Person doing yoga break at workplace" 
                     className="w-full h-auto"
                   />
                 </div>
                 <div className="col-span-2 bg-white rounded-xl overflow-hidden shadow-lg transform rotate-1 mt-3">
                   <img 
-                    src="https://images.unsplash.com/photo-1516389573391-5620a0263606?w=800&h=400&fit=crop" 
-                    alt="Group of happy colleagues celebrating success" 
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=400&fit=crop" 
+                    alt="Group exercise break in office setting" 
                     className="w-full h-auto"
                   />
                 </div>
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg -rotate-3">
                 <p className="text-sm font-medium text-brand-dark">
-                  "32% reduction in sick leaves within 6 months"
+                  "Transforming workplace wellness culture"
                 </p>
               </div>
             </div>
