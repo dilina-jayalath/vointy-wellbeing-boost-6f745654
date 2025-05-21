@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   return (
@@ -31,12 +32,28 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -z-10 w-72 h-72 bg-brand-purple-light rounded-full -top-10 -right-10 blur-3xl opacity-60"></div>
               <div className="absolute -z-10 w-72 h-72 bg-brand-blue-light rounded-full -bottom-10 -left-10 blur-3xl opacity-60"></div>
-              <div className="bg-white rounded-xl overflow-hidden shadow-2xl rotate-1 card-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop" 
-                  alt="Happy employee using Vointy wellness platform at work" 
-                  className="w-full h-auto"
-                />
+              <div className="grid grid-cols-2 gap-3">
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg transform rotate-1">
+                  <img 
+                    src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=300&fit=crop" 
+                    alt="Happy woman smiling at work" 
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg transform -rotate-1">
+                  <img 
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=300&fit=crop" 
+                    alt="Confident professional with positive body language" 
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="col-span-2 bg-white rounded-xl overflow-hidden shadow-lg transform rotate-1 mt-3">
+                  <img 
+                    src="https://images.unsplash.com/photo-1516389573391-5620a0263606?w=800&h=400&fit=crop" 
+                    alt="Group of happy colleagues celebrating success" 
+                    className="w-full h-auto"
+                  />
+                </div>
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg -rotate-3">
                 <p className="text-sm font-medium text-brand-dark">
