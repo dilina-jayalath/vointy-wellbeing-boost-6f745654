@@ -34,8 +34,8 @@ const Hero = () => {
               <div className="absolute -z-10 w-72 h-72 bg-brand-blue-light rounded-full -bottom-10 -left-10 blur-3xl opacity-60"></div>
               <div className="col-span-2 bg-white rounded-xl overflow-hidden shadow-lg transform rotate-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=400&fit=crop" 
-                  alt="Group of three people doing exercise break together" 
+                  src="https://images.unsplash.com/photo-1543269664-7eef42226a21?w=800&h=400&fit=crop" 
+                  alt="Group of people with smiling faces" 
                   className="w-full h-auto"
                 />
               </div>
