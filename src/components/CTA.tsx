@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CTA = () => {
   return (
@@ -17,12 +18,16 @@ const CTA = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-              <Button className="bg-white text-brand-purple hover:bg-gray-100 transition-colors px-8 py-6 text-lg font-medium">
-                Request Demo
-              </Button>
-              <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors px-8 py-6 text-lg font-medium">
-                View Pricing
-              </Button>
+              <Link to="/subscription">
+                <Button className="bg-white text-brand-purple hover:bg-gray-100 transition-colors px-8 py-6 text-lg font-medium">
+                  View Pricing Plans
+                </Button>
+              </Link>
+              <Link to="/subscription">
+                <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors px-8 py-6 text-lg font-medium">
+                  Start Free Trial
+                </Button>
+              </Link>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
