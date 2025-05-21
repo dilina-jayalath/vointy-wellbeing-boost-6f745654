@@ -4,17 +4,17 @@ import React from 'react';
 const Testimonials = () => {
   const testimonials = [
     {
-      content: "Vointy has transformed our company culture. Our team is more engaged, healthier, and happier than ever before. The reduction in sick leave alone has paid for the platform many times over.",
+      content: "Vointy's social approach to wellness has transformed our company culture. Within 6 months, we saw a 28% reduction in sick leaves and our teams are more engaged and connected than ever before.",
       author: "Sarah Johnson",
       title: "HR Director, TechVision Inc."
     },
     {
-      content: "What stands out about Vointy is how seamlessly it integrates into our existing workflows. It doesn't feel like 'another app' employees need to check - they genuinely want to engage with it.",
+      content: "What stands out about Vointy is how it feels like a social platform employees actually want to use. The engagement is incredible, and we've seen sick leaves drop by nearly a third since implementation.",
       author: "Michael Chen",
       title: "CEO, Quantum Solutions"
     },
     {
-      content: "The analytics from Vointy have been incredibly valuable. We can now see a direct correlation between wellness program participation and reduced turnover. It's been a game-changer.",
+      content: "The analytics from Vointy have been incredibly valuable. We can now see a direct correlation between social wellness engagement and reduced sick days. Our team health scores improve every month.",
       author: "Priya Patel",
       title: "Wellness Coordinator, Global Finance Group"
     }
@@ -27,7 +27,7 @@ const Testimonials = () => {
           What Our Clients <span className="gradient-text">Say</span>
         </h2>
         <p className="section-subtitle text-center">
-          Don't just take our word for it. Here's what companies using Vointy have experienced.
+          Don't just take our word for it. Here's how companies are reducing sick leaves with Vointy's social wellness platform.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

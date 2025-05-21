@@ -9,10 +9,10 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 mb-12 md:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight mb-6">
-              Boost Employee <span className="gradient-text">Wellbeing</span> and Reduce Turnover
+              Boost Employee <span className="gradient-text">Wellbeing</span> and Reduce Sick Leaves
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-lg">
-              Vointy helps companies improve workplace wellness, reduce sick leaves, and boost employee retention through social engagement.
+              Vointy helps companies improve workplace wellness, reduce sick leaves by up to 32%, and boost employee engagement through our social wellness platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="btn-primary text-lg">Request Demo</Button>
@@ -33,14 +33,14 @@ const Hero = () => {
               <div className="absolute -z-10 w-72 h-72 bg-brand-blue-light rounded-full -bottom-10 -left-10 blur-3xl opacity-60"></div>
               <div className="bg-white rounded-xl overflow-hidden shadow-2xl rotate-1 card-shadow">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop" 
-                  alt="Employee using Vointy app" 
+                  src="https://images.unsplash.com/photo-1556155092-490a1ba16284?w=800&h=600&fit=crop" 
+                  alt="Employees engaging on Vointy's social wellness platform" 
                   className="w-full h-auto"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg -rotate-3">
                 <p className="text-sm font-medium text-brand-dark">
-                  "93% of employees report improved wellbeing"
+                  "32% reduction in sick leaves within 6 months"
                 </p>
               </div>
             </div>

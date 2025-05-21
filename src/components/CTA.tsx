@@ -13,7 +13,7 @@ const CTA = () => {
               Ready to Transform Your Workplace Wellbeing?
             </h2>
             <p className="text-xl opacity-90 text-center max-w-3xl mx-auto mb-8">
-              Join hundreds of forward-thinking companies that use Vointy to create healthier, happier, and more productive work environments.
+              Join hundreds of forward-thinking companies that use Vointy's social wellness platform to reduce sick leaves and create healthier, happier teams.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
@@ -27,8 +27,8 @@ const CTA = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {[
-                "Free implementation support", 
-                "ROI measurement tools", 
+                "Reduce sick leaves by up to 32%", 
+                "Social wellness platform", 
                 "30-day satisfaction guarantee"
               ].map((feature, index) => (
                 <div key={index} className="flex items-center">
