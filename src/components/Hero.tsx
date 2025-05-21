@@ -32,28 +32,12 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -z-10 w-72 h-72 bg-brand-purple-light rounded-full -top-10 -right-10 blur-3xl opacity-60"></div>
               <div className="absolute -z-10 w-72 h-72 bg-brand-blue-light rounded-full -bottom-10 -left-10 blur-3xl opacity-60"></div>
-              <div className="grid grid-cols-2 gap-3">
-                <div className="bg-white rounded-xl overflow-hidden shadow-lg transform rotate-1">
-                  <img 
-                    src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=400&h=300&fit=crop" 
-                    alt="Office worker doing desk stretching exercises" 
-                    className="w-full h-auto"
-                  />
-                </div>
-                <div className="bg-white rounded-xl overflow-hidden shadow-lg transform -rotate-1">
-                  <img 
-                    src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?w=400&h=300&fit=crop" 
-                    alt="Person doing yoga break at workplace" 
-                    className="w-full h-auto"
-                  />
-                </div>
-                <div className="col-span-2 bg-white rounded-xl overflow-hidden shadow-lg transform rotate-1 mt-3">
-                  <img 
-                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=400&fit=crop" 
-                    alt="Group exercise break in office setting" 
-                    className="w-full h-auto"
-                  />
-                </div>
+              <div className="col-span-2 bg-white rounded-xl overflow-hidden shadow-lg transform rotate-1">
+                <img 
+                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=400&fit=crop" 
+                  alt="Group of three people doing exercise break together" 
+                  className="w-full h-auto"
+                />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg -rotate-3">
                 <p className="text-sm font-medium text-brand-dark">
