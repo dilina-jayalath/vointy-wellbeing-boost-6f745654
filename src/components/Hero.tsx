@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -32,8 +33,8 @@ const Hero = () => {
               <div className="absolute -z-10 w-72 h-72 bg-brand-blue-light rounded-full -bottom-10 -left-10 blur-3xl opacity-60"></div>
               <div className="bg-white rounded-xl overflow-hidden shadow-2xl rotate-1 card-shadow">
                 <img 
-                  src="https://images.unsplash.com/photo-1556155092-490a1ba16284?w=800&h=600&fit=crop" 
-                  alt="Employees engaging on Vointy's social wellness platform" 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop" 
+                  alt="Happy employee using Vointy wellness platform at work" 
                   className="w-full h-auto"
                 />
               </div>
