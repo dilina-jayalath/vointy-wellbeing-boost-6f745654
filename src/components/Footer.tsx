@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,26 +18,52 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Product</h3>
             <ul className="space-y-3">
-              {['Features', 'Benefits', 'Pricing', 'Success Stories'].map((item, index) => (
-                <li key={index}>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="#features" className="text-gray-300 hover:text-white transition-colors">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">
+                  Benefits
+                </a>
+              </li>
+              <li>
+                <Link to="/subscription" className="text-gray-300 hover:text-white transition-colors">
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">
+                  Success Stories
+                </a>
+              </li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-bold mb-4">Company</h3>
             <ul className="space-y-3">
-              {['About Us', 'Careers', 'Blog', 'Contact'].map((item, index) => (
-                <li key={index}>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/careers" className="text-gray-300 hover:text-white transition-colors">
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-gray-300 hover:text-white transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
           
