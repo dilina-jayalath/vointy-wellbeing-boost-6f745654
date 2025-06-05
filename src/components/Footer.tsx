@@ -91,15 +91,24 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Vointy.io. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((item, index) => (
-                <a 
-                  key={index}
-                  href="#" 
-                  className="text-gray-400 text-sm hover:text-white transition-colors"
-                >
-                  {item}
-                </a>
-              ))}
+              <Link 
+                to="/privacy-policy"
+                className="text-gray-400 text-sm hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link 
+                to="/terms-of-service"
+                className="text-gray-400 text-sm hover:text-white transition-colors"
+              >
+                Terms of Service
+              </Link>
+              <Link 
+                to="/cookie-policy"
+                className="text-gray-400 text-sm hover:text-white transition-colors"
+              >
+                Cookie Policy
+              </Link>
             </div>
           </div>
         </div>
