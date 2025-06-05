@@ -3,29 +3,31 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
-import { Shield, Lock, Eye, UserCheck, Globe, Clock, Phone, Mail } from 'lucide-react';
+import { Shield, Lock, Eye, UserCheck, Globe, Clock, Phone, Mail, Building, FileText, Users } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   const sections = [
     {
       id: 1,
-      title: "Who We Are",
-      icon: <UserCheck className="w-6 h-6 text-brand-purple" />,
+      title: "Data Controller",
+      icon: <Building className="w-6 h-6 text-brand-purple" />,
       content: (
         <div>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Vointy.io is a corporate wellbeing platform that helps organizations improve employee wellness through social engagement and data-driven insights. You can contact our Data Protection Officer at:
-          </p>
-          <div className="bg-brand-purple-light p-4 rounded-lg">
-            <div className="flex items-center gap-2 mb-2">
-              <Mail className="w-4 h-4 text-brand-purple" />
-              <span className="font-medium text-brand-purple">Email:</span>
-              <span className="text-gray-700">privacy@vointy.io</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-brand-purple" />
-              <span className="font-medium text-brand-purple">Address:</span>
-              <span className="text-gray-700">[Company Address]</span>
+          <div className="bg-brand-purple-light p-6 rounded-lg">
+            <h3 className="font-bold text-brand-purple text-lg mb-4">Wellthyforce Oy</h3>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-brand-purple mt-1 flex-shrink-0" />
+                <div>
+                  <span className="font-medium text-brand-purple">Address:</span>
+                  <p className="text-gray-700">Vasantie 43, 90310 Oulu</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <FileText className="w-5 h-5 text-brand-purple flex-shrink-0" />
+                <span className="font-medium text-brand-purple">Business ID:</span>
+                <span className="text-gray-700">3254418-4</span>
+              </div>
             </div>
           </div>
         </div>
@@ -33,89 +35,91 @@ const PrivacyPolicy = () => {
     },
     {
       id: 2,
-      title: "Data We Collect",
-      icon: <Eye className="w-6 h-6 text-brand-blue" />,
+      title: "Contact Person Responsible for the Register",
+      icon: <UserCheck className="w-6 h-6 text-brand-blue" />,
       content: (
-        <div>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            We collect the following categories of personal data:
-          </p>
-          <div className="grid gap-3">
-            {[
-              "Identification Data: name, email address, phone number",
-              "Employment Information: company name, job title (if applicable)",
-              "Usage Data: device info, IP address, browser type, log files",
-              "Wellness Activity Data: participation in challenges, feedback, interactions within the app"
-            ].map((item, index) => (
-              <div key={index} className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <div className="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">{item}</span>
-              </div>
-            ))}
+        <div className="bg-brand-blue-light p-6 rounded-lg">
+          <h3 className="font-bold text-brand-blue text-lg mb-4">Riina Manner</h3>
+          <div className="space-y-3">
+            <div className="flex items-center gap-3">
+              <Mail className="w-5 h-5 text-brand-blue flex-shrink-0" />
+              <span className="font-medium text-brand-blue">Email:</span>
+              <span className="text-gray-700">riina.manner@vointy.io</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Phone className="w-5 h-5 text-brand-blue flex-shrink-0" />
+              <span className="font-medium text-brand-blue">Phone:</span>
+              <span className="text-gray-700">0405282670</span>
+            </div>
           </div>
         </div>
       )
     },
     {
       id: 3,
-      title: "Legal Basis for Processing",
-      icon: <Shield className="w-6 h-6 text-brand-purple" />,
+      title: "Name of the Register",
+      icon: <FileText className="w-6 h-6 text-brand-purple" />,
       content: (
-        <div>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            We process personal data under the following legal grounds:
+        <div className="bg-purple-50 border-l-4 border-brand-purple p-4 rounded-r-lg">
+          <p className="text-gray-700 font-medium">
+            Wellthyforce Oy's marketing register
           </p>
-          <div className="grid gap-3">
-            {[
-              { title: "Contractual Necessity", desc: "To provide our services" },
-              { title: "Legitimate Interests", desc: "To improve our services and ensure platform security" },
-              { title: "Consent", desc: "For optional features and marketing" },
-              { title: "Legal Obligation", desc: "To comply with applicable laws" }
-            ].map((item, index) => (
-              <div key={index} className="p-4 border-l-4 border-brand-purple bg-gray-50 rounded-r-lg">
-                <div className="font-semibold text-brand-purple mb-1">{item.title}:</div>
-                <div className="text-gray-700">{item.desc}</div>
-              </div>
-            ))}
-          </div>
         </div>
       )
     },
     {
       id: 4,
-      title: "How We Use Your Data",
-      icon: <Lock className="w-6 h-6 text-brand-blue" />,
+      title: "Legal Basis and Purpose of Processing Personal Data",
+      icon: <Shield className="w-6 h-6 text-brand-blue" />,
       content: (
-        <div className="grid gap-3">
-          {[
-            "To provide access to the Vointy.io platform",
-            "To analyze usage and improve performance",
-            "To personalize user experiences",
-            "To send important service updates",
-            "To comply with legal obligations"
-          ].map((item, index) => (
-            <div key={index} className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
-              <div className="w-2 h-2 bg-brand-blue rounded-full flex-shrink-0"></div>
-              <span className="text-gray-700">{item}</span>
-            </div>
-          ))}
+        <div>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            The legal basis for processing personal data under the EU General Data Protection Regulation is:
+          </p>
+          <div className="grid gap-3 mb-6">
+            {[
+              "The person's consent",
+              "A contract to which the data subject is a party",
+              "Legitimate interest of the controller"
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
+                <div className="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg mb-4">
+            <h4 className="font-semibold text-gray-900 mb-2">Purpose of Processing:</h4>
+            <p className="text-gray-700">
+              The purpose of processing personal data is to communicate with customers, maintain customer relationships and market.
+            </p>
+          </div>
+          <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+            <p className="text-green-800">
+              <strong>Note:</strong> The data is not used for automated decision-making or profiling.
+            </p>
+          </div>
         </div>
       )
     },
     {
       id: 5,
-      title: "Sharing Your Data",
-      icon: <Globe className="w-6 h-6 text-brand-purple" />,
+      title: "Data Content of the Register",
+      icon: <Eye className="w-6 h-6 text-brand-purple" />,
       content: (
         <div>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            We only share your data with:
+            The information stored in the register includes:
           </p>
           <div className="grid gap-3 mb-4">
             {[
-              "Authorized service providers (e.g., hosting, analytics, payment processors)",
-              "Legal authorities, when required by law",
-              "Your employer (only anonymized or aggregated usage data)"
+              "Person's name, position, company/organization",
+              "Contact information (telephone number, email address, address)",
+              "Website addresses",
+              "IP address of the network connection",
+              "Information about ordered services and their changes",
+              "Billing information",
+              "Other information related to customer relationship and ordered services"
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg">
                 <div className="w-2 h-2 bg-brand-purple rounded-full mt-2 flex-shrink-0"></div>
@@ -123,9 +127,9 @@ const PrivacyPolicy = () => {
               </div>
             ))}
           </div>
-          <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
-            <p className="text-green-800 font-medium">
-              We <strong>do not sell</strong> your personal data.
+          <div className="bg-blue-50 border-l-4 border-brand-blue p-4 rounded-r-lg">
+            <p className="text-gray-700">
+              <strong>IP addresses and cookies:</strong> Website visitors' IP addresses and cookies necessary for service operation are processed based on legitimate interest, including for data security and statistical purposes. Separate consent is requested for third-party cookies when necessary.
             </p>
           </div>
         </div>
@@ -133,51 +137,128 @@ const PrivacyPolicy = () => {
     },
     {
       id: 6,
-      title: "International Data Transfers",
-      icon: <Globe className="w-6 h-6 text-brand-blue" />,
-      content: (
-        <p className="text-gray-700 leading-relaxed">
-          If we transfer data outside the EU/EEA, we use appropriate safeguards such as Standard Contractual Clauses to ensure your data remains protected.
-        </p>
-      )
-    },
-    {
-      id: 7,
-      title: "Data Retention",
-      icon: <Clock className="w-6 h-6 text-brand-purple" />,
-      content: (
-        <p className="text-gray-700 leading-relaxed">
-          We retain personal data only for as long as necessary for service provision, legitimate business needs, and as required by legal or regulatory obligations.
-        </p>
-      )
-    },
-    {
-      id: 8,
-      title: "Your Rights (Under GDPR)",
-      icon: <UserCheck className="w-6 h-6 text-brand-blue" />,
+      title: "Regular Sources of Information",
+      icon: <Users className="w-6 h-6 text-brand-blue" />,
       content: (
         <div>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            You have the right to:
+            Information stored in the register is obtained from:
           </p>
-          <div className="grid md:grid-cols-2 gap-3 mb-4">
+          <div className="grid gap-3 mb-4">
             {[
-              "Access your data",
-              "Correct inaccurate data",
-              "Request deletion (right to be forgotten)",
-              "Restrict or object to processing",
-              "Data portability",
-              "Withdraw consent at any time"
+              "Customer communications (www forms, email, telephone, social media)",
+              "Website analysis tools",
+              "Contracts and customer meetings",
+              "Other customer interaction situations"
             ].map((item, index) => (
-              <div key={index} className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
-                <div className="w-2 h-2 bg-brand-blue rounded-full flex-shrink-0"></div>
+              <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
+                <div className="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
                 <span className="text-gray-700">{item}</span>
               </div>
             ))}
           </div>
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <p className="text-gray-700">
+              Information is updated with data from <strong>Alma Media Finland Oy's Decision Makers register</strong>. Contact information for companies may also be collected from public sources such as websites, directory services, and other companies.
+            </p>
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 7,
+      title: "Regular Data Transfers and Transfers Outside EU/EEA",
+      icon: <Globe className="w-6 h-6 text-brand-purple" />,
+      content: (
+        <div>
+          <div className="grid gap-4">
+            <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+              <p className="text-green-800">
+                <strong>Information is not routinely disclosed to other parties.</strong> Information may be published only to the extent agreed with the customer.
+              </p>
+            </div>
+            <div className="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg">
+              <p className="text-orange-800">
+                Data may be transferred by the controller outside the EU or EEA. <strong>Data will not be transferred to the United States without express consent of the data subjects.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 8,
+      title: "Principles of Register Protection",
+      icon: <Lock className="w-6 h-6 text-brand-blue" />,
+      content: (
+        <div>
+          <div className="grid gap-3">
+            {[
+              "Register handled with care and appropriate protection of data in information systems",
+              "Physical and digital security of Internet servers appropriately ensured",
+              "Data, access rights, and security-critical information handled confidentially",
+              "Access limited to employees whose job description requires it"
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
+                <Lock className="w-4 h-4 text-brand-blue mt-1 flex-shrink-0" />
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 9,
+      title: "Right to Inspect and Request Correction",
+      icon: <Eye className="w-6 h-6 text-brand-purple" />,
+      content: (
+        <div>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Every person in the register has the right to:
+          </p>
+          <div className="grid gap-3 mb-4">
+            {[
+              "Check their data stored in the register",
+              "Demand correction of incorrect data",
+              "Request completion of incomplete data"
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg">
+                <div className="w-2 h-2 bg-brand-purple rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+          <div className="bg-brand-purple-light p-4 rounded-lg">
+            <p className="text-gray-700">
+              <strong>Process:</strong> Requests must be sent in writing to the controller. Identity verification may be required. Response within EU Data Protection Regulation timeframe (generally within one month).
+            </p>
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 10,
+      title: "Other Rights Related to Processing Personal Data",
+      icon: <UserCheck className="w-6 h-6 text-brand-blue" />,
+      content: (
+        <div>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Persons in the register have additional rights under EU GDPR:
+          </p>
+          <div className="grid gap-3 mb-4">
+            <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+              <h4 className="font-semibold text-red-800 mb-2">Right to be Forgotten</h4>
+              <p className="text-red-700">Request deletion of personal data from the register</p>
+            </div>
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+              <h4 className="font-semibold text-yellow-800 mb-2">Processing Restrictions</h4>
+              <p className="text-yellow-700">Restrict processing of personal data in certain situations</p>
+            </div>
+          </div>
           <div className="bg-brand-blue-light p-4 rounded-lg">
             <p className="text-gray-700">
-              To exercise your rights, email us at: <strong className="text-brand-blue">privacy@vointy.io</strong>
+              <strong>Request Process:</strong> All requests must be sent in writing to the controller. Identity verification may be required. Response within EU Data Protection Regulation timeframe (generally within one month).
             </p>
           </div>
         </div>
@@ -200,12 +281,19 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-8 max-w-2xl mx-auto">
-              How we collect, use, and protect your information (GDPR Compliant)
+              Wellthyforce Oy's Registration and Privacy Statement (GDPR Compliant)
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 inline-block">
-              <p className="text-white/90">
-                <strong>Effective Date:</strong> {new Date().toLocaleDateString()}
-              </p>
+            <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <p className="text-white/90 text-sm">
+                  <strong>Prepared:</strong> 14.04.2022
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <p className="text-white/90 text-sm">
+                  <strong>Last Modified:</strong> 19.09.2024
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -246,18 +334,18 @@ const PrivacyPolicy = () => {
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">Questions About This Policy?</h3>
                 <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                  If you have questions about this Privacy Policy, please don't hesitate to contact us.
+                  If you have questions about this Privacy Policy, please contact our Data Protection Officer.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 max-w-lg mx-auto">
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                     <Mail className="w-6 h-6 mx-auto mb-2" />
-                    <div className="font-medium">Email</div>
-                    <div className="text-white/80">privacy@vointy.io</div>
+                    <div className="font-medium">Riina Manner</div>
+                    <div className="text-white/80">riina.manner@vointy.io</div>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                     <Phone className="w-6 h-6 mx-auto mb-2" />
-                    <div className="font-medium">Address</div>
-                    <div className="text-white/80">[Your Company Address]</div>
+                    <div className="font-medium">Phone</div>
+                    <div className="text-white/80">0405282670</div>
                   </div>
                 </div>
               </CardContent>
