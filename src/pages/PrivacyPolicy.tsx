@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-xl opacity-90 mb-8">
-              How we collect, use, and protect your information
+              How we collect, use, and protect your information (GDPR Compliant)
             </p>
           </div>
         </div>
@@ -30,68 +30,117 @@ const PrivacyPolicy = () => {
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold mb-4">1. Information We Collect</h2>
+                <h2 className="text-2xl font-bold mb-4">1. Who We Are</h2>
                 <p className="text-gray-600 mb-4">
-                  We collect information you provide directly to us, such as when you create an account, participate in wellness activities, or contact us for support.
+                  Vointy.io is a corporate wellbeing platform that helps organizations improve employee wellness through social engagement and data-driven insights. You can contact our Data Protection Officer at:
                 </p>
-                <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>Personal information (name, email address, phone number)</li>
-                  <li>Health and wellness data (activity levels, wellness goals, participation metrics)</li>
-                  <li>Usage information (how you interact with our platform)</li>
-                  <li>Device information (IP address, browser type, operating system)</li>
-                </ul>
+                <p className="text-gray-600">
+                  📧 Email: privacy@vointy.io
+                  <br />
+                  📍 Address: [Company Address]
+                </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4">2. How We Use Your Information</h2>
-                <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>Provide and improve our workplace wellness services</li>
-                  <li>Generate wellness insights and analytics for your organization</li>
-                  <li>Send you notifications about wellness programs and activities</li>
-                  <li>Respond to your questions and provide customer support</li>
-                  <li>Ensure platform security and prevent fraud</li>
-                </ul>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-bold mb-4">3. Information Sharing</h2>
+                <h2 className="text-2xl font-bold mb-4">2. Data We Collect</h2>
                 <p className="text-gray-600 mb-4">
-                  We do not sell your personal information. We may share your information in the following circumstances:
+                  We collect the following categories of personal data:
                 </p>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>With your employer (aggregated, anonymized wellness metrics only)</li>
-                  <li>With service providers who assist in operating our platform</li>
-                  <li>When required by law or to protect our rights</li>
-                  <li>With your explicit consent</li>
+                  <li>Identification Data: name, email address, phone number</li>
+                  <li>Employment Information: company name, job title (if applicable)</li>
+                  <li>Usage Data: device info, IP address, browser type, log files</li>
+                  <li>Wellness Activity Data: participation in challenges, feedback, interactions within the app</li>
                 </ul>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4">4. Data Security</h2>
-                <p className="text-gray-600">
-                  We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. This includes encryption, secure servers, and regular security assessments.
+                <h2 className="text-2xl font-bold mb-4">3. Legal Basis for Processing</h2>
+                <p className="text-gray-600 mb-4">
+                  We process personal data under the following legal grounds:
                 </p>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-bold mb-4">5. Your Rights</h2>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>Access and update your personal information</li>
-                  <li>Request deletion of your personal data</li>
-                  <li>Opt-out of certain communications</li>
-                  <li>Data portability (receive your data in a structured format)</li>
+                  <li><strong>Contractual Necessity:</strong> To provide our services</li>
+                  <li><strong>Legitimate Interests:</strong> To improve our services and ensure platform security</li>
+                  <li><strong>Consent:</strong> For optional features and marketing</li>
+                  <li><strong>Legal Obligation:</strong> To comply with applicable laws</li>
                 </ul>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4">6. Cookies and Tracking</h2>
-                <p className="text-gray-600">
-                  We use cookies and similar technologies to enhance your experience, analyze usage patterns, and improve our services. You can control cookie settings through your browser preferences.
+                <h2 className="text-2xl font-bold mb-4">4. How We Use Your Data</h2>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>To provide access to the Vointy.io platform</li>
+                  <li>To analyze usage and improve performance</li>
+                  <li>To personalize user experiences</li>
+                  <li>To send important service updates</li>
+                  <li>To comply with legal obligations</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold mb-4">5. Sharing Your Data</h2>
+                <p className="text-gray-600 mb-4">
+                  We only share your data with:
+                </p>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Authorized service providers (e.g., hosting, analytics, payment processors)</li>
+                  <li>Legal authorities, when required by law</li>
+                  <li>Your employer (only anonymized or aggregated usage data)</li>
+                </ul>
+                <p className="text-gray-600 mt-4">
+                  We <strong>do not sell</strong> your personal data.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4">7. Contact Us</h2>
+                <h2 className="text-2xl font-bold mb-4">6. International Data Transfers</h2>
+                <p className="text-gray-600">
+                  If we transfer data outside the EU/EEA, we use appropriate safeguards such as Standard Contractual Clauses to ensure your data remains protected.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold mb-4">7. Data Retention</h2>
+                <p className="text-gray-600">
+                  We retain personal data only for as long as necessary for service provision, legitimate business needs, and as required by legal or regulatory obligations.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold mb-4">8. Your Rights (Under GDPR)</h2>
+                <p className="text-gray-600 mb-4">
+                  You have the right to:
+                </p>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Access your data</li>
+                  <li>Correct inaccurate data</li>
+                  <li>Request deletion (right to be forgotten)</li>
+                  <li>Restrict or object to processing</li>
+                  <li>Data portability</li>
+                  <li>Withdraw consent at any time</li>
+                </ul>
+                <p className="text-gray-600 mt-4">
+                  To exercise your rights, email us at: <strong>privacy@vointy.io</strong>
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold mb-4">9. Cookies</h2>
+                <p className="text-gray-600">
+                  We use cookies to enhance functionality and measure engagement. See our Cookie Policy for more information.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold mb-4">10. Contacting Supervisory Authority</h2>
+                <p className="text-gray-600">
+                  If you believe we have violated your rights, you have the right to lodge a complaint with your local data protection authority.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold mb-4">11. Contact Us</h2>
                 <p className="text-gray-600">
                   If you have questions about this Privacy Policy, please contact us at:
                   <br />

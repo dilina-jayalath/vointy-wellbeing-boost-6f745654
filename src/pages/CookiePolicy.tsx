@@ -116,10 +116,10 @@ const CookiePolicy = () => {
                   Most web browsers allow you to control cookies through their settings preferences. To find out more about cookies, including how to see what cookies have been set, visit:
                 </p>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>Chrome: Settings > Privacy and security > Cookies and other site data</li>
-                  <li>Firefox: Settings > Privacy & Security > Cookies and Site Data</li>
-                  <li>Safari: Preferences > Privacy > Manage Website Data</li>
-                  <li>Edge: Settings > Cookies and site permissions</li>
+                  <li>Chrome: Settings {'>'}  Privacy and security {'>'} Cookies and other site data</li>
+                  <li>Firefox: Settings {'>'} Privacy & Security {'>'} Cookies and Site Data</li>
+                  <li>Safari: Preferences {'>'} Privacy {'>'} Manage Website Data</li>
+                  <li>Edge: Settings {'>'} Cookies and site permissions</li>
                 </ul>
               </div>
 
