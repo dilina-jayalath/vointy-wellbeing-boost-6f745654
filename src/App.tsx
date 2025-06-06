@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Careers from "./pages/Careers";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import ContactForm from "./pages/ContactForm";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/careers" element={<Careers />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-form" element={<ContactForm />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
