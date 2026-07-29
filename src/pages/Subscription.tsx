@@ -27,6 +27,7 @@ const Subscription = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<PlanKey | null>(null);
+  const [submittedPlan, setSubmittedPlan] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
