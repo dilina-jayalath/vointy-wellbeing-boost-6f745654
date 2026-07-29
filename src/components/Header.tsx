@@ -16,6 +16,7 @@ const Header = () => {
     { label: t('nav.benefits'), href: '#benefits' },
     { label: t('nav.testimonials'), href: '#testimonials' },
     { label: t('nav.pricing'), href: '/subscription', isLink: true },
+    { label: 'Employer panel', href: 'https://hr.vointy.io/#/', external: true },
   ];
 
   return (
@@ -33,6 +34,10 @@ const Header = () => {
                   <Link key={link.label} to={link.href} className="text-gray-700 hover:text-brand-purple transition-colors font-medium text-sm lg:text-base">
                     {link.label}
                   </Link>
+                ) : link.external ? (
+                  <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-brand-purple transition-colors font-medium text-sm lg:text-base">
+                    {link.label}
+                  </a>
                 ) : (
                   <a key={link.label} href={link.href} className="text-gray-700 hover:text-brand-purple transition-colors font-medium text-sm lg:text-base">
                     {link.label}
@@ -89,6 +94,17 @@ const Header = () => {
                   >
                     {link.label}
                   </Link>
+                ) : link.external ? (
+                  <a 
+                    key={link.label}
+                    href={link.href} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-brand-purple transition-colors px-4 py-2 text-lg font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
                 ) : (
                   <a 
                     key={link.label}
