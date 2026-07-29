@@ -90,17 +90,6 @@ const Header = () => {
                   >
                     {link.label}
                   </Link>
-                ) : link.external ? (
-                  <a 
-                    key={link.label}
-                    href={link.href} 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-brand-purple transition-colors px-4 py-2 text-lg font-medium"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </a>
                 ) : (
                   <a 
                     key={link.label}
