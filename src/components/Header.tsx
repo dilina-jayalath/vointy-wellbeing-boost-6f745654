@@ -16,6 +16,7 @@ const Header = () => {
     { label: t('nav.benefits'), href: '#benefits' },
     { label: t('nav.testimonials'), href: '#testimonials' },
     { label: t('nav.pricing'), href: '/subscription', isLink: true },
+    { label: 'Employer panel', href: 'https://hr.vointy.io/#/', external: true },
   ];
 
   return (
