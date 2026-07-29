@@ -1,11 +1,22 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, X, User as UserIcon, LogOut } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from '@/lib/i18n';
+import { useAuth } from '@/contexts/AuthContext';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+  const { user, signOut, isAdmin } = useAuth();
+
+  const navLinks = [
+    { label: t('nav.features'), href: '#features' },
+    { label: t('nav.benefits'), href: '#benefits' },
+    { label: t('nav.testimonials'), href: '#testimonials' },
+    { label: t('nav.pricing'), href: '/subscription', isLink: true },
+  ];
 
   return (
     <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
@@ -15,62 +26,121 @@ const Header = () => {
             <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.io</span></span>
           </Link>
           
-          {/* Mobile menu button */}
+          <div className="hidden md:flex items-center space-x-6">
+            <nav className="flex items-center space-x-6">
+              {navLinks.map((link) => (
+                link.isLink ? (
+                  <Link key={link.label} to={link.href} className="text-gray-700 hover:text-brand-purple transition-colors font-medium text-sm lg:text-base">
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a key={link.label} href={link.href} className="text-gray-700 hover:text-brand-purple transition-colors font-medium text-sm lg:text-base">
+                    {link.label}
+                  </a>
+                )
+              ))}
+            </nav>
+            
+            <div className="h-6 w-px bg-gray-200" />
+            
+            <LanguageSwitcher />
+            
+            {user ? (
+              <div className="flex items-center space-x-4">
+                <Link to="/account" className="text-gray-700 hover:text-brand-purple transition-colors flex items-center gap-1 font-medium">
+                  <UserIcon size={18} />
+                  <span>{t('nav.account')}</span>
+                </Link>
+                {isAdmin && (
+                  <Link to="/admin" className="text-gray-700 hover:text-brand-purple transition-colors font-medium">
+                    {t('nav.admin')}
+                  </Link>
+                )}
+                <Button variant="ghost" size="sm" onClick={() => signOut()} className="flex items-center gap-1 text-gray-700 hover:text-red-600">
+                  <LogOut size={18} />
+                  <span>{t('nav.logout')}</span>
+                </Button>
+              </div>
+            ) : (
+              <Link to="/login">
+                <Button className="btn-primary">{t('nav.login')}</Button>
+              </Link>
+            )}
+          </div>
+          
           <button 
             className="md:hidden text-gray-700"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <Menu size={24} />
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-          
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-700 hover:text-brand-purple transition-colors">Features</a>
-            <a href="#benefits" className="text-gray-700 hover:text-brand-purple transition-colors">Benefits</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-brand-purple transition-colors">Testimonials</a>
-            <Link to="/subscription" className="text-gray-700 hover:text-brand-purple transition-colors">Pricing</Link>
-            <Link to="/subscription">
-              <Button className="btn-primary">Request Demo</Button>
-            </Link>
-          </nav>
         </div>
         
-        {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden bg-white py-4 mt-4 rounded-lg shadow-md animate-fade-in">
-            <div className="flex flex-col space-y-4">
-              <a 
-                href="#features" 
-                className="text-gray-700 hover:text-brand-purple transition-colors px-4 py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Features
-              </a>
-              <a 
-                href="#benefits" 
-                className="text-gray-700 hover:text-brand-purple transition-colors px-4 py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Benefits
-              </a>
-              <a 
-                href="#testimonials" 
-                className="text-gray-700 hover:text-brand-purple transition-colors px-4 py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Testimonials
-              </a>
-              <Link 
-                to="/subscription" 
-                className="text-gray-700 hover:text-brand-purple transition-colors px-4 py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Pricing
-              </Link>
+          <nav className="md:hidden bg-white border-t mt-4 py-4 animate-in fade-in slide-in-from-top-4">
+            <div className="flex flex-col space-y-4 px-2">
+              {navLinks.map((link) => (
+                link.isLink ? (
+                  <Link 
+                    key={link.label}
+                    to={link.href} 
+                    className="text-gray-700 hover:text-brand-purple transition-colors px-4 py-2 text-lg font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a 
+                    key={link.label}
+                    href={link.href} 
+                    className="text-gray-700 hover:text-brand-purple transition-colors px-4 py-2 text-lg font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )
+              ))}
               <div className="px-4 py-2">
-                <Link to="/subscription" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button className="btn-primary w-full">Request Demo</Button>
-                </Link>
+                <p className="text-sm text-gray-500 mb-2">Language</p>
+                <LanguageSwitcher />
+              </div>
+              <div className="px-4 pt-4 border-t flex flex-col space-y-4">
+                {user ? (
+                  <>
+                    <Link 
+                      to="/account" 
+                      className="text-gray-700 flex items-center gap-2 text-lg font-medium"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <UserIcon size={20} />
+                      {t('nav.account')}
+                    </Link>
+                    {isAdmin && (
+                      <Link 
+                        to="/admin" 
+                        className="text-gray-700 text-lg font-medium"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {t('nav.admin')}
+                      </Link>
+                    )}
+                    <Button 
+                      variant="destructive" 
+                      className="w-full justify-start gap-2" 
+                      onClick={() => {
+                        signOut();
+                        setIsMobileMenuOpen(false);
+                      }}
+                    >
+                      <LogOut size={20} />
+                      {t('nav.logout')}
+                    </Button>
+                  </>
+                ) : (
+                  <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Button className="w-full btn-primary">{t('nav.login')}</Button>
+                  </Link>
+                )}
               </div>
             </div>
           </nav>
