@@ -121,5 +121,70 @@
   },
   "errors": {
     "generic": "Noget gik galt. Prøv venligst igen."
+  },
+  "pricing": {
+    "title": "Choose Your Wellness Plan",
+    "subtitle": "Invest in your team's wellbeing with our flexible subscription options. Select the plan that best fits your organization's needs.",
+    "mostPopular": "Most Popular",
+    "perMonth": "/month per user",
+    "basic": {
+      "name": "Basic",
+      "price": "€12",
+      "description": "For small teams looking to get started with wellness activities",
+      "features": [
+        "Up to 15 team members",
+        "Basic wellness challenges",
+        "Monthly reports",
+        "Email support"
+      ],
+      "cta": "Get Started"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "€24",
+      "description": "For growing teams that need more features and engagement",
+      "features": [
+        "Up to 50 team members",
+        "Advanced wellness challenges",
+        "Weekly reports",
+        "Priority support",
+        "Custom wellness programs",
+        "Team analytics dashboard"
+      ],
+      "cta": "Start Free Trial"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "€49",
+      "description": "For large organizations requiring custom solutions",
+      "features": [
+        "Unlimited team members",
+        "Custom wellness programs",
+        "Detailed analytics",
+        "Dedicated account manager",
+        "API access",
+        "SSO integration",
+        "White labeling"
+      ],
+      "cta": "Contact Sales"
+    },
+    "formTitle": "Get Started with Vointy",
+    "formSubtitle": "Fill out the form and we will contact you immediately.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "companyName": "Company Name",
+    "teamSize": "Team Size",
+    "teamSizeOptions": {
+      "1-10": "1-10",
+      "11-50": "11-50",
+      "51-200": "51-200",
+      "201-500": "201-500",
+      "501+": "501+"
+    },
+    "message": "Message (optional)",
+    "submit": "Request Subscription",
+    "successTitle": "Request received!",
+    "successMessage": "We'll contact you shortly about your {plan} subscription."
   }
 }
