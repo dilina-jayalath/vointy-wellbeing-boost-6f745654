@@ -6,13 +6,13 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useAuth } from "@/contexts/AuthContext";
-import { useI18n, languages } from "@/lib/i18n";
+import { useTranslation, languages } from "@/lib/i18n";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
 
 const Account = () => {
   const { user, profile, isAdmin, signOut, updateProfile, loading } = useAuth();
-  const { t, language, setLanguage } = useI18n();
+  const { t, language, setLanguage } = useTranslation();
   const { toast } = useToast();
   const navigate = useNavigate();
   const [displayName, setDisplayName] = useState("");

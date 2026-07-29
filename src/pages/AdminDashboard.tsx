@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useI18n } from "@/lib/i18n";
+import { useTranslation } from "@/lib/i18n";
 import { Loader2 } from "lucide-react";
 import type { Database } from "@/integrations/supabase/types";
 
