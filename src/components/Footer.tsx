@@ -1,9 +1,45 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { useTranslation } from '@/lib/i18n';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const Footer = () => {
+  const { t, language } = useTranslation();
+  const { toast } = useToast();
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setIsSubmitting(true);
+    try {
+      const { error } = await supabase
+        .from('newsletter_subscribers')
+        .insert([{ email, language }]);
+
+      if (error) throw error;
+
+      toast({
+        title: t('newsletter.success'),
+        variant: 'default',
+      });
+      setEmail('');
+    } catch (error: any) {
+      console.error('Newsletter error:', error);
+      toast({
+        title: t('errors.generic'),
+        description: error.message,
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <footer className="bg-brand-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -11,38 +47,38 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Vointy.io</h3>
             <p className="text-gray-300 mb-4">
-              Empowering companies to improve employee wellbeing and productivity through social engagement.
+              {t('footer.tagline')}
             </p>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Product</h3>
+            <h3 className="text-lg font-bold mb-4">{t('footer.product')}</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#features" className="text-gray-300 hover:text-white transition-colors">
-                  Features
+                  {t('nav.features')}
                 </a>
               </li>
               <li>
                 <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">
-                  Benefits
+                  {t('nav.benefits')}
                 </a>
               </li>
               <li>
                 <Link to="/subscription" className="text-gray-300 hover:text-white transition-colors">
-                  Pricing
+                  {t('nav.pricing')}
                 </Link>
               </li>
               <li>
                 <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">
-                  Success Stories
+                  {t('nav.testimonials')}
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Company</h3>
+            <h3 className="text-lg font-bold mb-4">{t('footer.company')}</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
@@ -60,7 +96,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/contact-form" className="text-gray-300 hover:text-white transition-colors">
                   Contact
                 </Link>
               </li>
@@ -68,27 +104,34 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Stay Updated</h3>
+            <h3 className="text-lg font-bold mb-4">{t('newsletter.title')}</h3>
             <p className="text-gray-300 mb-4">
-              Subscribe to our newsletter for the latest wellness insights and Vointy updates.
+              {t('newsletter.description')}
             </p>
-            <div className="flex">
+            <form onSubmit={handleSubscribe} className="flex">
               <input 
                 type="email" 
-                placeholder="Your email" 
-                className="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none flex-grow"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={t('newsletter.placeholder')} 
+                className="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none flex-grow border border-gray-700 focus:border-brand-purple"
+                required
               />
-              <Button className="bg-brand-purple rounded-r-lg rounded-l-none">
-                Subscribe
+              <Button 
+                type="submit"
+                disabled={isSubmitting}
+                className="bg-brand-purple hover:bg-brand-purple/90 rounded-r-lg rounded-l-none"
+              >
+                {t('newsletter.button')}
               </Button>
-            </div>
+            </form>
           </div>
         </div>
         
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Vointy.io. All rights reserved.
+              {t('footer.copyright').replace('{year}', new Date().getFullYear().toString())}
             </p>
             <div className="flex space-x-6">
               <Link 
