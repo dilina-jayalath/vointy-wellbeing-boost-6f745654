@@ -197,7 +197,7 @@ const Subscription = () => {
                     </div>
                     <h2 className="text-3xl font-bold text-brand-dark">{t('pricing.successTitle')}</h2>
                     <p className="text-gray-600 text-lg">
-                      {t('pricing.successMessage').replace('{plan}', selectedPlan ? t(`pricing.${selectedPlan}.name`) : '')}
+                      {t('pricing.successMessage').replace('{plan}', submittedPlan || '')}
                     </p>
                     <Button onClick={() => setIsSuccess(false)} variant="outline" className="mt-4">
                       {t('pricing.submit')}
