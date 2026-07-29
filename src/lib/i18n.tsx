@@ -36,7 +36,7 @@ const translations: Record<Language, any> = {
 interface I18nContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (key: string, fallback?: string) => string;
+  t: (key: string, fallback?: string) => any;
 }
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
