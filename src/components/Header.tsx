@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.io</span></span>
+            <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.life</span></span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">
