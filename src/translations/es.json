@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Funcionalidades",
+    "benefits": "Beneficios",
+    "testimonials": "Casos de éxito",
+    "pricing": "Precios",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "account": "Cuenta",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Vointy es el motivador colectivo de tu equipo.",
+    "subtitle": "Prueba Vointy gratis hoy mismo y experimenta cómo sus actividades pueden transformar tu jornada laboral. ¡Desafía e invita a otros miembros del equipo a unirse!",
+    "ctaDemo": "Ver Demo",
+    "ctaFree": "Probar Vointy gratis"
+  },
+  "freeTeam": {
+    "title": "Para equipos de hasta 10 personas",
+    "description": "Con la versión gratuita de Vointy, puedes crear un equipo de hasta 10 personas. Puedes formar un equipo en el trabajo, con amigos o entre departamentos.",
+    "cta": "Crear un equipo gratis"
+  },
+  "companies": {
+    "title": "Para Empresas",
+    "description": "Las empresas pueden adquirir una versión de pago para sus equipos. Cuesta solo 2,90 € por persona al mes. Puedes crear un número ilimitado de equipos. Las empresas tendrán acceso a una interfaz de RR.HH. para activar equipos y crear desafíos.",
+    "price": "2,90 €",
+    "priceUnit": "/persona/mes",
+    "cta": "Solicitar una demo"
+  },
+  "challenges": {
+    "title": "Ejemplos de desafíos que puedes realizar",
+    "items": [
+      { "title": "Desafíos de recuperación", "description": "consistencia del sueño, micro-descansos, rutinas de reinicio de estrés" },
+      { "title": "Muévete más, sin esfuerzo", "description": "pasos, minutos activos, reuniones caminando" },
+      { "title": "Ergonomía y movilidad", "description": "movilidad de 5 minutos, cuello/hombros, lista de verificación de configuración del escritorio" },
+      { "title": "Desafíos en equipo", "description": "objetivos compartidos, parejas de compañeros, ánimo y seguimiento" },
+      { "title": "Rutinas saludables", "description": "hidratación, tiempo al aire libre, descansos de pantalla, una acción de bienestar al día" }
+    ]
+  },
+  "social": {
+    "title": "Una plataforma social que a los empleados les encantará",
+    "features": [
+      { "title": "Opciones de activación versátiles", "description": "Explora los diferentes métodos de activación de Vointy para que el trabajo sea más agradable junto con tus amigos." },
+      { "title": "Feed social", "description": "Celebra hitos, comparte logros y anima a otros a través de un feed social interactivo." },
+      { "title": "Desafío", "description": "Programa y sigue la participación en los desafíos de tu equipo, fomentando un sentido de unión y colaboración." },
+      { "title": "Una forma moderna para que el liderazgo de la empresa apoye a los empleados.", "description": "Con Vointy, el liderazgo de la empresa puede crear desafíos y eventos que impulsen el compromiso de los empleados y el disfrute en el lugar de trabajo, ayudando a toda la comunidad a tener éxito." }
+    ]
+  },
+  "why": {
+    "title": "Por qué funciona Vointy",
+    "description": "Cada participante tiene acceso a una aplicación que les anima a participar en actividades físicas y otros desafíos relacionados con el ocio en sus propios términos. Pueden invitar a amigos a unirse, ganar puntos y mantenerse motivados juntos. Los niveles de actividad se pueden seguir a través de una puntuación de actividad, lo que facilita comparar el progreso y ver cómo otros están participando. La variedad de actividades es amplia, desde fitness hasta cultura. Al mismo tiempo, el liderazgo de la empresa gana visibilidad sobre cómo se desarrollan la actividad de los empleados y el bienestar general fuera del trabajo."
+  },
+  "video": {
+    "title": "Ver Vointy en acción",
+    "description": "Mira cómo los equipos usan Vointy para crear hábitos más saludables y conexiones más fuertes."
+  },
+  "license": {
+    "title": "Empieza a vender Vointy con una licencia",
+    "description": "Vointy es un producto versátil y listo para usar que funciona excepcionalmente bien. Empieza a vender Vointy con una licencia a tu propia base de clientes. Vointy es fácil de implementar, lo que hace que las ventas sean sencillas.",
+    "formTitle": "Rellena el formulario y nos pondremos en contacto contigo de inmediato.",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "companyName": "Nombre de la empresa",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "submit": "Enviar mensaje",
+    "success": "¡Gracias! Nos pondremos en contacto pronto."
+  },
+  "newsletter": {
+    "title": "Mantente actualizado",
+    "description": "Suscríbete a nuestro boletín para recibir las últimas noticias sobre bienestar y actualizaciones de Vointy.",
+    "placeholder": "Tu correo electrónico",
+    "button": "Suscribirse",
+    "success": "¡Gracias por suscribirte!"
+  },
+  "footer": {
+    "tagline": "Empoderando a las empresas para mejorar el bienestar y la productividad de los empleados a través del compromiso social.",
+    "product": "Producto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "copyright": "© {year} Vointy.io. Todos los derechos reservados."
+  },
+  "auth": {
+    "loginTitle": "Inicia sesión en Vointy",
+    "signupTitle": "Crea tu cuenta de Vointy",
+    "resetTitle": "Restablece tu contraseña",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "loginButton": "Iniciar sesión",
+    "signupButton": "Crear cuenta",
+    "resetButton": "Enviar enlace de restablecimiento",
+    "updatePasswordButton": "Actualizar contraseña",
+    "googleButton": "Continuar con Google",
+    "appleButton": "Continuar con Apple",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes una cuenta?",
+    "hasAccount": "¿Ya tienes una cuenta?",
+    "signUpNow": "Regístrate",
+    "logInNow": "Inicia sesión",
+    "passwordMismatch": "Las contraseñas no coinciden.",
+    "checkEmail": "Revisa tu correo para el enlace de confirmación.",
+    "resetSent": "Correo de restablecimiento enviado.",
+    "logout": "Cerrar sesión"
+  },
+  "account": {
+    "title": "Tu cuenta",
+    "displayName": "Nombre mostrado",
+    "language": "Idioma",
+    "save": "Guardar cambios",
+    "saved": "Perfil actualizado."
+  },
+  "admin": {
+    "title": "Panel de administración",
+    "contacts": "Contactos recibidos",
+    "subscribers": "Suscriptores del boletín",
+    "noContacts": "Aún no hay contactos.",
+    "noSubscribers": "Aún no hay suscriptores.",
+    "loading": "Cargando..."
+  },
+  "errors": {
+    "generic": "Algo salió mal. Por favor, inténtalo de nuevo."
+  }
+}

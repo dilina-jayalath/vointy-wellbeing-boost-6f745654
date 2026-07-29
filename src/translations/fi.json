@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Ominaisuudet",
+    "benefits": "Hyödyt",
+    "testimonials": "Onnistumistarinat",
+    "pricing": "Hinnasto",
+    "login": "Kirjaudu",
+    "logout": "Kirjaudu ulos",
+    "account": "Tili",
+    "admin": "Ylläpito"
+  },
+  "hero": {
+    "title": "Vointy on tiimisi yhteinen motivaattori.",
+    "subtitle": "Kokeile Vointya ilmaiseksi tänään ja koe, miten sen aktiviteetit voivat muuttaa työpäiväsi. Haasta ja kutsu muut tiimin jäsenet mukaan!",
+    "ctaDemo": "Katso demo",
+    "ctaFree": "Kokeile Vointya ilmaiseksi"
+  },
+  "freeTeam": {
+    "title": "Tiimeille 10 henkilöön asti",
+    "description": "Vointyn ilmaisversiolla voit luoda jopa 10 hengen tiimin. Voit muodostaa tiimin töissä, ystävien kesken tai osastojen välillä.",
+    "cta": "Luo ilmainen tiimi"
+  },
+  "companies": {
+    "title": "Yrityksille",
+    "description": "Yritykset voivat ostaa maksullisen version tiimeilleen. Se maksaa vain 2,90 € per henkilö kuukaudessa. Voit luoda rajattoman määrän tiimejä. Yritykset saavat pääsyn HR-liittymään tiimien aktivoimiseksi ja haasteiden luomiseksi.",
+    "price": "2,90 €",
+    "priceUnit": "/henkilö/kk",
+    "cta": "Pyydä demo"
+  },
+  "challenges": {
+    "title": "Esimerkkejä haasteista, joita voit järjestää",
+    "items": [
+      { "title": "Palautumishaasteet", "description": "unirytmi, mikrotauot, stressinhallintarutiinit" },
+      { "title": "Lisää liikettä vaivattomasti", "description": "askeleet, aktiiviset minuutit, kävelykokoukset" },
+      { "title": "Ergonomia ja liikkuvuus", "description": "5 minuutin liikkuvuus, niska ja hartiat, työpisteen tarkistuslista" },
+      { "title": "Tiimihaasteet", "description": "yhteiset tavoitteet, tsemppiparit, kannustus ja kuulumisten vaihto" },
+      { "title": "Terveelliset rutiinit", "description": "nesteytys, ulkoilu, tauot ruudulta, yksi hyvinvointiteko päivässä" }
+    ]
+  },
+  "social": {
+    "title": "Sosiaalinen alusta, jota työntekijät rakastavat",
+    "features": [
+      { "title": "Monipuoliset aktivointivaihtoehdot", "description": "Tutustu Vointyn eri aktivointitapoihin ja tee työnteosta nautinnollisempaa yhdessä ystäviesi kanssa." },
+      { "title": "Sosiaalinen syöte", "description": "Juhlista virstanpylväitä, jaa saavutuksia ja kannusta muita osallistavan sosiaalisen syötteen kautta." },
+      { "title": "Haaste", "description": "Ajoita ja seuraa osallistumista tiimisi haasteisiin, mikä vahvistaa yhdessä tekemisen tunnetta ja yhteistyötä." },
+      { "title": "Moderni tapa yritysjohdolle tukea työntekijöitä.", "description": "Vointyn avulla yritysjohto voi luoda haasteita ja tapahtumia, jotka lisäävät työntekijöiden sitoutumista ja työn iloa, auttaen koko työyhteisöä menestymään." }
+    ]
+  },
+  "why": {
+    "title": "Miksi Vointy toimii",
+    "description": "Jokainen osallistuja saa käyttöönsä sovelluksen, joka rohkaisee heitä osallistumaan fyysisiin aktiviteetteihin ja muihin vapaa-ajan haasteisiin omilla ehdoillaan. He voivat kutsua ystäviä mukaan, kerätä pisteitä ja pysyä motivoituneina yhdessä. Aktiivisuustasoa voidaan seurata aktiviteettipisteiden avulla, mikä tekee edistymisen vertailusta ja muiden osallistumisen seuraamisesta helppoa. Aktiviteettien valikoima on laaja, kuntosalista kulttuuriin. Samalla yritysjohto saa näkyvyyttä siihen, miten työntekijöiden aktiivisuus ja kokonaisvaltainen hyvinvointi kehittyvät työn ulkopuolella."
+  },
+  "video": {
+    "title": "Näe Vointy toiminnassa",
+    "description": "Katso, miten tiimit käyttävät Vointya terveellisempien tapojen ja vahvempien yhteyksien rakentamiseen."
+  },
+  "license": {
+    "title": "Aloita Vointyn myynti lisenssillä",
+    "description": "Vointy on monipuolinen, käyttövalmis tuote, joka toimii erinomaisesti. Aloita Vointyn myynti lisenssillä omalle asiakaskunnallesi. Vointy on helppo ottaa käyttöön, mikä tekee myynnistä vaivatonta.",
+    "formTitle": "Täytä lomake ja otamme sinuun yhteyttä välittömästi.",
+    "firstName": "Etunimi",
+    "lastName": "Sukunimi",
+    "email": "Sähköpostiosoite",
+    "companyName": "Yrityksen nimi",
+    "subject": "Aihe",
+    "message": "Viesti",
+    "submit": "Lähetä viesti",
+    "success": "Kiitos! Olemme pian yhteydessä."
+  },
+  "newsletter": {
+    "title": "Pysy ajan tasalla",
+    "description": "Tilaa uutiskirjeemme saadaksesi uusimmat hyvinvointivinkit ja Vointy-päivitykset.",
+    "placeholder": "Sähköpostisi",
+    "button": "Tilaa",
+    "success": "Kiitos tilauksesta!"
+  },
+  "footer": {
+    "tagline": "Autamme yrityksiä parantamaan työntekijöiden hyvinvointia ja tuottavuutta sosiaalisen sitouttamisen avulla.",
+    "product": "Tuote",
+    "company": "Yritys",
+    "legal": "Lakitiedot",
+    "copyright": "© {year} Vointy.io. Kaikki oikeudet pidätetään."
+  },
+  "auth": {
+    "loginTitle": "Kirjaudu Vointyyn",
+    "signupTitle": "Luo Vointy-tili",
+    "resetTitle": "Nollaa salasanasi",
+    "email": "Sähköposti",
+    "password": "Salasana",
+    "confirmPassword": "Vahvista salasana",
+    "loginButton": "Kirjaudu sisään",
+    "signupButton": "Luo tili",
+    "resetButton": "Lähetä nollauslinkki",
+    "updatePasswordButton": "Päivitä salasana",
+    "googleButton": "Jatka Googlella",
+    "appleButton": "Jatka Applella",
+    "forgotPassword": "Unohditko salasanan?",
+    "noAccount": "Eikö sinulla ole tiliä?",
+    "hasAccount": "Onko sinulla jo tili?",
+    "signUpNow": "Rekisteröidy",
+    "logInNow": "Kirjaudu sisään",
+    "passwordMismatch": "Salasanat eivät täsmää.",
+    "checkEmail": "Tarkista sähköpostisi vahvistuslinkin varalta.",
+    "resetSent": "Salasanan nollaussähköposti lähetetty.",
+    "logout": "Kirjaudu ulos"
+  },
+  "account": {
+    "title": "Oma tili",
+    "displayName": "Näyttönimi",
+    "language": "Kieli",
+    "save": "Tallenna muutokset",
+    "saved": "Profiili päivitetty."
+  },
+  "admin": {
+    "title": "Ylläpidon hallintapaneeli",
+    "contacts": "Yhteydenotot",
+    "subscribers": "Uutiskirjeen tilaajat",
+    "noContacts": "Ei vielä yhteydenottoja.",
+    "noSubscribers": "Ei vielä uutiskirjeen tilaajia.",
+    "loading": "Ladataan..."
+  },
+  "errors": {
+    "generic": "Jotain meni pieleen. Yritä uudelleen."
+  }
+}

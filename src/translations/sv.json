@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Funktioner",
+    "benefits": "Fördelar",
+    "testimonials": "Framgångshistorier",
+    "pricing": "Priser",
+    "login": "Logga in",
+    "logout": "Logga ut",
+    "account": "Konto",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Vointy är ditt teams kollektiva motivatör.",
+    "subtitle": "Prova Vointy gratis idag och upplev hur dess aktiviteter kan förvandla din arbetsdag. Utmana och bjud in andra teammedlemmar att gå med!",
+    "ctaDemo": "Visa demo",
+    "ctaFree": "Prova Vointy gratis"
+  },
+  "freeTeam": {
+    "title": "För team upp till 10 personer",
+    "description": "Med gratisversionen av Vointy kan du skapa ett team med upp till 10 personer. Du kan bilda ett team på jobbet, med vänner eller mellan avdelningar.",
+    "cta": "Skapa ett gratisteam"
+  },
+  "companies": {
+    "title": "För företag",
+    "description": "Företag kan köpa en betald version för sina team. Det kostar endast 2,90 € per person och månad. Du kan skapa ett obegränsat antal team. Företag får tillgång till ett HR-gränssnitt för att aktivera team och skapa utmaningar.",
+    "price": "2,90 €",
+    "priceUnit": "/person/månad",
+    "cta": "Begär en demo"
+  },
+  "challenges": {
+    "title": "Exempel på utmaningar du kan köra",
+    "items": [
+      { "title": "Återhämtningsutmaningar", "description": "sömnkontinuitet, mikropauser, stressåterställningsrutiner" },
+      { "title": "Rör dig mer, utan ansträngning", "description": "steg, aktiva minuter, walk-and-talk-möten" },
+      { "title": "Ergonomi & rörlighet", "description": "5-minuters rörlighet, nacke/axlar, checklista för skrivbordsinställning" },
+      { "title": "Teamutmaningar", "description": "delade mål, kompispar, uppmuntran och incheckningar" },
+      { "title": "Hälsosamma rutiner", "description": "vätskebalans, utetid, skärmpauser, en välmåendeåtgärd om dagen" }
+    ]
+  },
+  "social": {
+    "title": "En social plattform anställda kommer att älska",
+    "features": [
+      { "title": "Mångsidiga aktiveringsalternativ", "description": "Utforska Vointys olika aktiveringsmetoder för att göra arbetet roligare tillsammans med dina vänner." },
+      { "title": "Socialt flöde", "description": "Fira milstolpar, dela prestationer och uppmuntra andra genom ett engagerande socialt flöde." },
+      { "title": "Utmaning", "description": "Schemalägg och följ deltagande i ditt teams utmaningar, vilket främjar en känsla av gemenskap och samarbete." },
+      { "title": "Ett modernt sätt för företagsledningen att stödja anställda.", "description": "Med Vointy kan företagsledningen skapa utmaningar och evenemang som ökar anställdas engagemang och arbetsglädje, vilket hjälper hela gemenskapen att lyckas." }
+    ]
+  },
+  "why": {
+    "title": "Varför Vointy fungerar",
+    "description": "Varje deltagare får tillgång till en app som uppmuntrar dem att delta i fysiska aktiviteter och andra fritidsrelaterade utmaningar på sina egna villkor. De kan bjuda in vänner att gå med, tjäna poäng och hålla sig motiverade tillsammans. Aktivitetsnivåer kan spåras genom en aktivitetspoäng, vilket gör det enkelt att jämföra framsteg och se hur andra engagerar sig. Utbudet av aktiviteter är brett, från fitness till kultur. Samtidigt får företagsledningen insyn i hur anställdas aktivitet och övergripande välbefinnande utvecklas utanför arbetet."
+  },
+  "video": {
+    "title": "Se Vointy i action",
+    "description": "Se hur team använder Vointy för att bygga hälsosammare vanor och starkare kontakter."
+  },
+  "license": {
+    "title": "Börja sälja Vointy med en licens",
+    "description": "Vointy är en mångsidig, färdig produkt som fungerar exceptionellt bra. Börja sälja Vointy med en licens till din egen kundbas. Vointy är lätt att implementera, vilket gör försäljningen enkel.",
+    "formTitle": "Fyll i formuläret så kontaktar vi dig omedelbart.",
+    "firstName": "Förnamn",
+    "lastName": "Efternamn",
+    "email": "E-postadress",
+    "companyName": "Företagsnamn",
+    "subject": "Ämne",
+    "message": "Meddelande",
+    "submit": "Skicka meddelande",
+    "success": "Tack! Vi hör av oss snart."
+  },
+  "newsletter": {
+    "title": "Håll dig uppdaterad",
+    "description": "Prenumerera på vårt nyhetsbrev för de senaste hälsoinsikterna och Vointy-uppdateringarna.",
+    "placeholder": "Din e-post",
+    "button": "Prenumerera",
+    "success": "Tack för att du prenumererar!"
+  },
+  "footer": {
+    "tagline": "Stärker företag att förbättra anställdas välbefinnande och produktivitet genom socialt engagemang.",
+    "product": "Produkt",
+    "company": "Företag",
+    "legal": "Juridiskt",
+    "copyright": "© {year} Vointy.io. Alla rättigheter förbehållna."
+  },
+  "auth": {
+    "loginTitle": "Logga in på Vointy",
+    "signupTitle": "Skapa ditt Vointy-konto",
+    "resetTitle": "Återställ ditt lösenord",
+    "email": "E-post",
+    "password": "Lösenord",
+    "confirmPassword": "Bekräfta lösenord",
+    "loginButton": "Logga in",
+    "signupButton": "Skapa konto",
+    "resetButton": "Skicka återställningslänk",
+    "updatePasswordButton": "Uppdatera lösenord",
+    "googleButton": "Fortsätt med Google",
+    "appleButton": "Fortsätt med Apple",
+    "forgotPassword": "Glömt lösenordet?",
+    "noAccount": "Har du inget konto?",
+    "hasAccount": "Har du redan ett konto?",
+    "signUpNow": "Registrera dig",
+    "logInNow": "Logga in",
+    "passwordMismatch": "Lösenorden matchar inte.",
+    "checkEmail": "Kontrollera din e-post för bekräftelselänken.",
+    "resetSent": "E-post för lösenordsåterställning skickat.",
+    "logout": "Logga ut"
+  },
+  "account": {
+    "title": "Ditt konto",
+    "displayName": "Visningsnamn",
+    "language": "Språk",
+    "save": "Spara ändringar",
+    "saved": "Profil uppdaterad."
+  },
+  "admin": {
+    "title": "Adminpanel",
+    "contacts": "Kontaktförfrågningar",
+    "subscribers": "Nyhetsbrevsprenumeranter",
+    "noContacts": "Inga kontaktförfrågningar än.",
+    "noSubscribers": "Inga nyhetsbrevsprenumeranter än.",
+    "loading": "Laddar..."
+  },
+  "errors": {
+    "generic": "Något gick fel. Försök igen."
+  }
+}
