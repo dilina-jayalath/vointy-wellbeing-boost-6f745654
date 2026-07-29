@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "benefits": "Vorteile",
+    "testimonials": "Erfolgsgeschichten",
+    "pricing": "Preise",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "account": "Konto",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Vointy ist der kollektive Motivator für Ihr Team.",
+    "subtitle": "Testen Sie Vointy noch heute kostenlos und erleben Sie, wie die Aktivitäten Ihren Arbeitstag verändern können. Fordern Sie andere Teammitglieder heraus und laden Sie sie ein!",
+    "ctaDemo": "Demo ansehen",
+    "ctaFree": "Vointy kostenlos testen"
+  },
+  "freeTeam": {
+    "title": "Für Teams bis zu 10 Personen",
+    "description": "Mit der kostenlosen Version von Vointy können Sie ein Team von bis zu 10 Personen erstellen. Sie können ein Team bei der Arbeit, mit Freunden oder abteilungsübergreifend bilden.",
+    "cta": "Kostenloses Team erstellen"
+  },
+  "companies": {
+    "title": "Für Unternehmen",
+    "description": "Unternehmen können eine kostenpflichtige Version für ihre Teams erwerben. Sie kostet nur 2,90 € pro Person und Monat. Sie können unbegrenzt viele Teams erstellen. Unternehmen erhalten Zugriff auf eine HR-Schnittstelle, um Teams zu aktivieren und Herausforderungen zu erstellen.",
+    "price": "2,90 €",
+    "priceUnit": "/Person/Monat",
+    "cta": "Demo anfordern"
+  },
+  "challenges": {
+    "title": "Beispiele für Herausforderungen, die Sie durchführen können",
+    "items": [
+      { "title": "Erholungs-Challenges", "description": "Schlaf-Kontinuität, Mikropausen, Stress-Reset-Routinen" },
+      { "title": "Mühelos mehr bewegen", "description": "Schritte, aktive Minuten, Walk-and-Talk-Meetings" },
+      { "title": "Ergonomie & Mobilität", "description": "5-Minuten-Mobilität, Nacken/Schultern, Checkliste für den Schreibtisch" },
+      { "title": "Team-Challenges", "description": "gemeinsame Ziele, Buddy-Paare, Ermutigung und Check-ins" },
+      { "title": "Gesunde Routinen", "description": "Hydratation, Zeit im Freien, Bildschirmpausen, eine Wohlfühlaktion pro Tag" }
+    ]
+  },
+  "social": {
+    "title": "Eine soziale Plattform, die Mitarbeiter lieben werden",
+    "features": [
+      { "title": "Vielseitige Aktivierungsoptionen", "description": "Entdecken Sie die verschiedenen Aktivierungsmethoden von Vointy, um die Arbeit gemeinsam mit Ihren Freunden angenehmer zu gestalten." },
+      { "title": "Social Feed", "description": "Feiern Sie Meilensteine, teilen Sie Erfolge und ermutigen Sie andere über einen ansprechenden Social Feed." },
+      { "title": "Herausforderung", "description": "Planen und verfolgen Sie die Teilnahme an den Herausforderungen Ihres Teams und fördern Sie so ein Gefühl von Zusammengehörigkeit und Zusammenarbeit." },
+      { "title": "Ein moderner Weg für die Unternehmensführung, Mitarbeiter zu unterstützen.", "description": "Mit Vointy kann die Unternehmensführung Herausforderungen und Events erstellen, die das Engagement der Mitarbeiter und die Freude am Arbeitsplatz steigern und so der gesamten Gemeinschaft zum Erfolg verhelfen." }
+    ]
+  },
+  "why": {
+    "title": "Warum Vointy funktioniert",
+    "description": "Jeder Teilnehmer erhält Zugang zu einer App, die ihn dazu ermutigt, zu seinen eigenen Bedingungen an körperlichen Aktivitäten und anderen freizeitbezogenen Herausforderungen teilzunehmen. Sie können Freunde einladen, Punkte sammeln und gemeinsam motiviert bleiben. Das Aktivitätsniveau kann über einen Aktivitätsscore verfolgt werden, was es einfach macht, Fortschritte zu vergleichen und zu sehen, wie andere sich engagieren. Die Vielfalt der Aktivitäten ist groß und reicht von Fitness bis Kultur. Gleichzeitig gewinnt die Unternehmensführung Einblick in die Entwicklung der Mitarbeiteraktivität und des allgemeinen Wohlbefindens außerhalb der Arbeit."
+  },
+  "video": {
+    "title": "Vointy in Aktion sehen",
+    "description": "Sehen Sie, wie Teams Vointy nutzen, um gesündere Gewohnheiten und stärkere Verbindungen aufzubauen."
+  },
+  "license": {
+    "title": "Starten Sie den Verkauf von Vointy mit einer Lizenz",
+    "description": "Vointy ist ein vielseitiges, gebrauchsfertiges Produkt, das außergewöhnlich gut funktioniert. Starten Sie den Verkauf von Vointy mit einer Lizenz an Ihren eigenen Kundenstamm. Vointy ist einfach zu implementieren, was den Verkauf mühelos macht.",
+    "formTitle": "Füllen Sie das Formular aus und wir werden Sie umgehend kontaktieren.",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail-Adresse",
+    "companyName": "Unternehmensname",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "submit": "Nachricht senden",
+    "success": "Vielen Dank! Wir werden uns in Kürze melden."
+  },
+  "newsletter": {
+    "title": "Bleiben Sie auf dem Laufenden",
+    "description": "Abonnieren Sie unseren Newsletter für die neuesten Wellness-Erkenntnisse und Vointy-Updates.",
+    "placeholder": "Ihre E-Mail",
+    "button": "Abonnieren",
+    "success": "Danke fürs Abonnieren!"
+  },
+  "footer": {
+    "tagline": "Unternehmen befähigen, das Wohlbefinden und die Produktivität ihrer Mitarbeiter durch soziales Engagement zu verbessern.",
+    "product": "Produkt",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "copyright": "© {year} Vointy.io. Alle Rechte vorbehalten."
+  },
+  "auth": {
+    "loginTitle": "Bei Vointy anmelden",
+    "signupTitle": "Erstellen Sie Ihr Vointy-Konto",
+    "resetTitle": "Passwort zurücksetzen",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "loginButton": "Anmelden",
+    "signupButton": "Konto erstellen",
+    "resetButton": "Reset-Link senden",
+    "updatePasswordButton": "Passwort aktualisieren",
+    "googleButton": "Weiter mit Google",
+    "appleButton": "Weiter mit Apple",
+    "forgotPassword": "Passwort vergessen?",
+    "noAccount": "Haben Sie noch kein Konto?",
+    "hasAccount": "Haben Sie bereits ein Konto?",
+    "signUpNow": "Registrieren",
+    "logInNow": "Anmelden",
+    "passwordMismatch": "Passwörter stimmen nicht überein.",
+    "checkEmail": "Überprüfen Sie Ihre E-Mail auf den Bestätigungslink.",
+    "resetSent": "E-Mail zum Zurücksetzen des Passworts gesendet.",
+    "logout": "Abmelden"
+  },
+  "account": {
+    "title": "Ihr Konto",
+    "displayName": "Anzeigename",
+    "language": "Sprache",
+    "save": "Änderungen speichern",
+    "saved": "Profil aktualisiert."
+  },
+  "admin": {
+    "title": "Admin-Dashboard",
+    "contacts": "Kontaktanfragen",
+    "subscribers": "Newsletter-Abonnenten",
+    "noContacts": "Noch keine Kontaktanfragen.",
+    "noSubscribers": "Noch keine Newsletter-Abonnenten.",
+    "loading": "Laden..."
+  },
+  "errors": {
+    "generic": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+  }
+}
