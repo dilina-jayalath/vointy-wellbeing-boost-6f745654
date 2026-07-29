@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "benefits": "Avantages",
+    "testimonials": "Témoignages",
+    "pricing": "Tarifs",
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "account": "Compte",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Vointy est le moteur collectif de votre équipe.",
+    "subtitle": "Essayez Vointy gratuitement dès aujourd'hui et découvrez comment ses activités peuvent transformer votre journée de travail. Relevez le défi et invitez d'autres membres de l'équipe à vous rejoindre !",
+    "ctaDemo": "Voir la démo",
+    "ctaFree": "Essayer Vointy gratuitement"
+  },
+  "freeTeam": {
+    "title": "Pour les équipes jusqu'à 10 personnes",
+    "description": "Avec la version gratuite de Vointy, vous pouvez créer une équipe allant jusqu'à 10 personnes. Vous pouvez former une équipe au travail, avec des amis ou entre départements.",
+    "cta": "Créer une équipe gratuite"
+  },
+  "companies": {
+    "title": "Pour les Entreprises",
+    "description": "Les entreprises peuvent acheter une version payante pour leurs équipes. Elle ne coûte que 2,90 € par personne et par mois. Vous pouvez créer un nombre illimité d'équipes. Les entreprises auront accès à une interface RH pour activer les équipes et créer des défis.",
+    "price": "2,90 €",
+    "priceUnit": "/personne/mois",
+    "cta": "Demander une démo"
+  },
+  "challenges": {
+    "title": "Exemples de défis que vous pouvez lancer",
+    "items": [
+      { "title": "Défis de récupération", "description": "cohérence du sommeil, micro-pauses, routines de réinitialisation du stress" },
+      { "title": "Bouger plus, sans effort", "description": "pas, minutes actives, réunions en marchant" },
+      { "title": "Ergonomie & mobilité", "description": "mobilité de 5 minutes, cou/épaules, liste de contrôle pour l'installation du bureau" },
+      { "title": "Défis d'équipe", "description": "objectifs partagés, binômes, encouragements et suivis" },
+      { "title": "Routines saines", "description": "hydratation, temps à l'extérieur, pauses écran, une action bien-être par jour" }
+    ]
+  },
+  "social": {
+    "title": "Une plateforme sociale que les employés vont adorer",
+    "features": [
+      { "title": "Options d'activation polyvalentes", "description": "Explorez les différentes méthodes d'activation de Vointy pour rendre le travail plus agréable avec vos amis." },
+      { "title": "Fil social", "description": "Célébrez les étapes importantes, partagez vos réussites et encouragez les autres grâce à un fil social engageant." },
+      { "title": "Défi", "description": "Planifiez et suivez la participation aux défis de votre équipe, favorisant un sentiment de convivialité et de collaboration." },
+      { "title": "Une façon moderne pour la direction de soutenir les employés.", "description": "Avec Vointy, la direction de l'entreprise peut créer des défis et des événements qui stimulent l'engagement des employés et le plaisir au travail, aidant ainsi toute la communauté à réussir." }
+    ]
+  },
+  "why": {
+    "title": "Pourquoi Vointy fonctionne",
+    "description": "Chaque participant a accès à une application qui l'encourage à participer à des activités physiques et à d'autres défis liés aux loisirs selon ses propres termes. Ils peuvent inviter des amis à les rejoindre, gagner des points et rester motivés ensemble. Les niveaux d'activité peuvent être suivis grâce à un score d'activité, ce qui facilite la comparaison des progrès et permet de voir comment les autres s'engagent. La variété des activités est large, allant du fitness à la culture. En même temps, la direction de l'entreprise gagne en visibilité sur la manière dont l'activité des employés et le bien-être général se développent en dehors du travail."
+  },
+  "video": {
+    "title": "Voir Vointy en action",
+    "description": "Regardez comment les équipes utilisent Vointy pour adopter des habitudes plus saines et renforcer les liens."
+  },
+  "license": {
+    "title": "Commencez à vendre Vointy avec une licence",
+    "description": "Vointy est un produit polyvalent et prêt à l'emploi qui fonctionne exceptionnellement bien. Commencez à vendre Vointy avec une licence à votre propre clientèle. Vointy est facile à mettre en œuvre, ce qui rend les ventes sans effort.",
+    "formTitle": "Remplissez le formulaire et nous vous contacterons immédiatement.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Adresse e-mail",
+    "companyName": "Nom de l'entreprise",
+    "subject": "Objet",
+    "message": "Message",
+    "submit": "Envoyer le message",
+    "success": "Merci ! Nous vous recontacterons bientôt."
+  },
+  "newsletter": {
+    "title": "Restez informé",
+    "description": "Abonnez-vous à notre newsletter pour les dernières infos bien-être et les mises à jour de Vointy.",
+    "placeholder": "Votre e-mail",
+    "button": "S'abonner",
+    "success": "Merci pour votre abonnement !"
+  },
+  "footer": {
+    "tagline": "Donner aux entreprises les moyens d'améliorer le bien-être et la productivité des employés grâce à l'engagement social.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "legal": "Mentions légales",
+    "copyright": "© {year} Vointy.io. Tous droits réservés."
+  },
+  "auth": {
+    "loginTitle": "Connectez-vous à Vointy",
+    "signupTitle": "Créez votre compte Vointy",
+    "resetTitle": "Réinitialisez votre mot de passe",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmez le mot de passe",
+    "loginButton": "Se connecter",
+    "signupButton": "Créer un compte",
+    "resetButton": "Envoyer le lien de réinitialisation",
+    "updatePasswordButton": "Mettre à jour le mot de passe",
+    "googleButton": "Continuer avec Google",
+    "appleButton": "Continuer avec Apple",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "signUpNow": "S'inscrire",
+    "logInNow": "Se connecter",
+    "passwordMismatch": "Les mots de passe ne correspondent pas.",
+    "checkEmail": "Vérifiez vos e-mails pour le lien de confirmation.",
+    "resetSent": "E-mail de réinitialisation du mot de passe envoyé.",
+    "logout": "Déconnexion"
+  },
+  "account": {
+    "title": "Votre compte",
+    "displayName": "Nom d'affichage",
+    "language": "Langue",
+    "save": "Enregistrer les modifications",
+    "saved": "Profil mis à jour."
+  },
+  "admin": {
+    "title": "Tableau de bord administrateur",
+    "contacts": "Soumissions de contact",
+    "subscribers": "Abonnés à la newsletter",
+    "noContacts": "Aucune soumission de contact pour le moment.",
+    "noSubscribers": "Aucun abonné à la newsletter pour le moment.",
+    "loading": "Chargement..."
+  },
+  "errors": {
+    "generic": "Un problème est survenu. Veuillez réessayer."
+  }
+}

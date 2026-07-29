@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Funktioner",
+    "benefits": "Fordele",
+    "testimonials": "Succeshistorier",
+    "pricing": "Priser",
+    "login": "Log ind",
+    "logout": "Log ud",
+    "account": "Konto",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Vointy er dit teams kollektive motivator.",
+    "subtitle": "Prøv Vointy gratis i dag og oplev, hvordan dets aktiviteter kan transformere din arbejdsdag. Udfordr og inviter andre teammedlemmer til at deltage!",
+    "ctaDemo": "Se demo",
+    "ctaFree": "Prøv Vointy gratis"
+  },
+  "freeTeam": {
+    "title": "For teams op til 10 personer",
+    "description": "Med den gratis version af Vointy kan du oprette et team på op til 10 personer. Du kan danne et team på arbejdet, med venner eller på tværs af afdelinger.",
+    "cta": "Opret et gratis team"
+  },
+  "companies": {
+    "title": "For virksomheder",
+    "description": "Virksomheder kan købe en betalt version til deres teams. Det koster kun 2,90 € pr. person pr. måned. Du kan oprette et ubegrænset antal teams. Virksomheder får adgang til en HR-grænseflade til at aktivere teams og oprette udfordringer.",
+    "price": "2,90 €",
+    "priceUnit": "/person/måned",
+    "cta": "Bestil en demo"
+  },
+  "challenges": {
+    "title": "Eksempler på udfordringer, du kan køre",
+    "items": [
+      { "title": "Restitutionsudfordringer", "description": "søvnkonsistens, mikropauser, rutiner til stress-nulstilling" },
+      { "title": "Bevæg dig mere, ubesværet", "description": "skridt, aktive minutter, gå-og-tale-møder" },
+      { "title": "Ergonomi og mobilitet", "description": "5 minutters mobilitet, nakke/skuldre, tjekliste til skrivebordsopsætning" },
+      { "title": "Teamudfordringer", "description": "fælles mål, makkerpar, opmuntring og tjek-ind" },
+      { "title": "Sunde rutiner", "description": "hydrering, tid udendørs, skærmpauser, én trivselshandling om dagen" }
+    ]
+  },
+  "social": {
+    "title": "En social platform medarbejderne vil elske",
+    "features": [
+      { "title": "Alsidige aktiveringsmuligheder", "description": "Udforsk Vointys forskellige aktiveringsmetoder for at gøre arbejdet sjovere sammen med dine venner." },
+      { "title": "Socialt feed", "description": "Fejr milepæle, del præstationer og opmuntre andre gennem et engagerende socialt feed." },
+      { "title": "Udfordring", "description": "Planlæg og følg deltagelse i dit teams udfordringer, hvilket fremmer en følelse af fællesskab og samarbejde." },
+      { "title": "En moderne måde for virksomhedsledelsen at støtte medarbejderne på.", "description": "Med Vointy kan virksomhedsledelsen skabe udfordringer og begivenheder, der øger medarbejdernes engagement og arbejdsglæde, hvilket hjælper hele fællesskabet med at få succes." }
+    ]
+  },
+  "why": {
+    "title": "Hvorfor Vointy virker",
+    "description": "Hver deltager får adgang til en app, der opmuntrer dem til at deltage i fysiske aktiviteter og andre fritidsrelaterede udfordringer på deres egne præmisser. De kan invitere venner til at deltage, optjene point og forblive motiverede sammen. Aktivitetsniveauer kan spores gennem en aktivitetsscore, hvilket gør det nemt at sammenligne fremskridt og se, hvordan andre engagerer sig. Udvalget af aktiviteter er bredt og spænder fra fitness til kultur. Samtidig får virksomhedsledelsen synlighed i, hvordan medarbejdernes aktivitet og generelle trivsel udvikler sig uden for arbejdet."
+  },
+  "video": {
+    "title": "Se Vointy i aktion",
+    "description": "Se, hvordan teams bruger Vointy til at opbygge sundere vaner og stærkere forbindelser."
+  },
+  "license": {
+    "title": "Begynd at sælge Vointy med en licens",
+    "description": "Vointy er et alsidigt, brugsklart produkt, der fungerer usædvanligt godt. Begynd at sælge Vointy med en licens til din egen kundebase. Vointy er let at implementere, hvilket gør salget ubesværet.",
+    "formTitle": "Udfyld formularen, og vi kontakter dig med det samme.",
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "email": "E-mailadresse",
+    "companyName": "Virksomhedsnavn",
+    "subject": "Emne",
+    "message": "Besked",
+    "submit": "Send besked",
+    "success": "Tak! Vi kontakter dig snart."
+  },
+  "newsletter": {
+    "title": "Hold dig opdateret",
+    "description": "Tilmeld dig vores nyhedsbrev for at få den seneste indsigt i wellness og Vointy-opdateringer.",
+    "placeholder": "Din e-mail",
+    "button": "Tilmeld",
+    "success": "Tak fordi du tilmeldte dig!"
+  },
+  "footer": {
+    "tagline": "Giver virksomheder mulighed for at forbedre medarbejdernes trivsel og produktivitet gennem socialt engagement.",
+    "product": "Produkt",
+    "company": "Virksomhed",
+    "legal": "Juridisk",
+    "copyright": "© {year} Vointy.io. Alle rettigheder forbeholdes."
+  },
+  "auth": {
+    "loginTitle": "Log ind på Vointy",
+    "signupTitle": "Opret din Vointy-konto",
+    "resetTitle": "Nulstil din adgangskode",
+    "email": "E-mail",
+    "password": "Adgangskode",
+    "confirmPassword": "Bekræft adgangskode",
+    "loginButton": "Log ind",
+    "signupButton": "Opret konto",
+    "resetButton": "Send nulstillingslink",
+    "updatePasswordButton": "Opdater adgangskode",
+    "googleButton": "Fortsæt med Google",
+    "appleButton": "Fortsæt med Apple",
+    "forgotPassword": "Glemt adgangskode?",
+    "noAccount": "Har du ikke en konto?",
+    "hasAccount": "Har du allerede en konto?",
+    "signUpNow": "Tilmeld dig",
+    "logInNow": "Log ind",
+    "passwordMismatch": "Adgangskoderne stemmer ikke overens.",
+    "checkEmail": "Tjek din e-mail for bekræftelseslinket.",
+    "resetSent": "E-mail til nulstilling af adgangskode er sendt.",
+    "logout": "Log ud"
+  },
+  "account": {
+    "title": "Din konto",
+    "displayName": "Visningsnavn",
+    "language": "Sprog",
+    "save": "Gem ændringer",
+    "saved": "Profil opdateret."
+  },
+  "admin": {
+    "title": "Admin dashboard",
+    "contacts": "Kontakthenvendelser",
+    "subscribers": "Nyhedsbrevsabonnenter",
+    "noContacts": "Ingen kontakthenvendelser endnu.",
+    "noSubscribers": "Ingen nyhedsbrevsabonnenter endnu.",
+    "loading": "Indlæser..."
+  },
+  "errors": {
+    "generic": "Noget gik galt. Prøv venligst igen."
+  }
+}

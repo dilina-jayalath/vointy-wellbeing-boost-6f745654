@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Functies",
+    "benefits": "Voordelen",
+    "testimonials": "Succesverhalen",
+    "pricing": "Tarieven",
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "account": "Account",
+    "admin": "Beheer"
+  },
+  "hero": {
+    "title": "Vointy is de collectieve motivator van jouw team.",
+    "subtitle": "Probeer Vointy vandaag gratis en ervaar hoe de activiteiten je werkdag kunnen transformeren. Daag andere teamleden uit en nodig ze uit om mee te doen!",
+    "ctaDemo": "Bekijk demo",
+    "ctaFree": "Probeer Vointy gratis"
+  },
+  "freeTeam": {
+    "title": "Voor teams tot 10 personen",
+    "description": "Met de gratis versie van Vointy kun je een team van maximaal 10 personen maken. Je kunt een team vormen op het werk, met vrienden of tussen afdelingen.",
+    "cta": "Maak een gratis team"
+  },
+  "companies": {
+    "title": "Voor Bedrijven",
+    "description": "Bedrijven kunnen een betaalde versie kopen voor hun teams. Het kost slechts € 2,90 per persoon per maand. Je kunt een onbeperkt aantal teams maken. Bedrijven krijgen toegang tot een HR-interface om teams te activeren en uitdagingen te creëren.",
+    "price": "€ 2,90",
+    "priceUnit": "/persoon/maand",
+    "cta": "Vraag een demo aan"
+  },
+  "challenges": {
+    "title": "Voorbeelden van uitdagingen die je kunt doen",
+    "items": [
+      { "title": "Hersteluitdagingen", "description": "slaapconsistentie, micropauzes, routines voor stressherstel" },
+      { "title": "Moeiteloos meer bewegen", "description": "stappen, actieve minuten, wandelvergaderingen" },
+      { "title": "Ergonomie & mobiliteit", "description": "5-minuten mobiliteit, nek/schouders, checklist voor bureau-instelling" },
+      { "title": "Teamuitdagingen", "description": "gezamenlijke doelen, buddy-paren, aanmoediging en check-ins" },
+      { "title": "Gezonde routines", "description": "hydratatie, tijd buiten, schermpauzes, één welzijnsactie per dag" }
+    ]
+  },
+  "social": {
+    "title": "Een sociaal platform waar medewerkers dol op zullen zijn",
+    "features": [
+      { "title": "Veelzijdige activeringsopties", "description": "Ontdek de verschillende activeringsmethoden van Vointy om samen met je vrienden het werk leuker te maken." },
+      { "title": "Sociale Feed", "description": "Vier mijlpalen, deel prestaties en moedig anderen aan via een boeiende sociale feed." },
+      { "title": "Uitdaging", "description": "Plan en volg deelname aan de uitdagingen van je team, wat een gevoel van saamhorigheid en samenwerking bevordert." },
+      { "title": "Een moderne manier voor bedrijfsleiding om medewerkers te ondersteunen.", "description": "Met Vointy kan de bedrijfsleiding uitdagingen en evenementen creëren die de betrokkenheid van medewerkers en het plezier op de werkplek vergroten, waardoor de hele gemeenschap succesvol wordt." }
+    ]
+  },
+  "why": {
+    "title": "Waarom Vointy werkt",
+    "description": "Elke deelnemer krijgt toegang tot een app die hen aanmoedigt om op hun eigen voorwaarden deel te nemen aan fysieke activiteiten en andere vrijetijdsgerelateerde uitdagingen. Ze kunnen vrienden uitnodigen om mee te doen, punten verdienen en samen gemotiveerd blijven. Activiteitsniveaus kunnen worden gevolgd via een activiteitsscore, waardoor het eenvoudig is om voortgang te vergelijken en te zien hoe anderen betrokken zijn. De variëteit aan activiteiten is groot, variërend van fitness tot cultuur. Tegelijkertijd krijgt de bedrijfsleiding inzicht in hoe de activiteit van medewerkers en het algemene welzijn zich buiten het werk ontwikkelen."
+  },
+  "video": {
+    "title": "Zie Vointy in actie",
+    "description": "Bekijk hoe teams Vointy gebruiken om gezondere gewoonten en sterkere verbindingen op te bouwen."
+  },
+  "license": {
+    "title": "Begin met het verkopen van Vointy met een licentie",
+    "description": "Vointy is een veelzijdig, kant-en-klaar product dat uitzonderlijk goed werkt. Begin met het verkopen van Vointy met een licentie aan je eigen klantenbestand. Vointy is eenvoudig te implementeren, waardoor verkoop moeiteloos gaat.",
+    "formTitle": "Vul het formulier in en we nemen direct contact met je op.",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "E-mailadres",
+    "companyName": "Bedrijfsnaam",
+    "subject": "Onderwerp",
+    "message": "Bericht",
+    "submit": "Bericht verzenden",
+    "success": "Bedankt! We nemen snel contact op."
+  },
+  "newsletter": {
+    "title": "Blijf op de hoogte",
+    "description": "Abonneer je op onze nieuwsbrief voor de nieuwste welzijnsinzichten en Vointy-updates.",
+    "placeholder": "Je e-mail",
+    "button": "Abonneren",
+    "success": "Bedankt voor je inschrijving!"
+  },
+  "footer": {
+    "tagline": "Bedrijven in staat stellen om het welzijn en de productiviteit van medewerkers te verbeteren via sociale betrokkenheid.",
+    "product": "Product",
+    "company": "Bedrijf",
+    "legal": "Juridisch",
+    "copyright": "© {year} Vointy.io. Alle rechten voorbehouden."
+  },
+  "auth": {
+    "loginTitle": "Log in bij Vointy",
+    "signupTitle": "Maak je Vointy-account aan",
+    "resetTitle": "Stel je wachtwoord opnieuw in",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "confirmPassword": "Bevestig wachtwoord",
+    "loginButton": "Inloggen",
+    "signupButton": "Account aanmaken",
+    "resetButton": "Stuur herstellink",
+    "updatePasswordButton": "Update wachtwoord",
+    "googleButton": "Ga verder met Google",
+    "appleButton": "Ga verder met Apple",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "noAccount": "Nog geen account?",
+    "hasAccount": "Heb je al een account?",
+    "signUpNow": "Meld je aan",
+    "logInNow": "Inloggen",
+    "passwordMismatch": "Wachtwoorden komen niet overeen.",
+    "checkEmail": "Check je e-mail voor de bevestigingslink.",
+    "resetSent": "Wachtwoord herstel e-mail verzonden.",
+    "logout": "Uitloggen"
+  },
+  "account": {
+    "title": "Je account",
+    "displayName": "Weergavenaam",
+    "language": "Taal",
+    "save": "Wijzigingen opslaan",
+    "saved": "Profiel bijgewerkt."
+  },
+  "admin": {
+    "title": "Beheerdersdashboard",
+    "contacts": "Contactaanvragen",
+    "subscribers": "Nieuwsbriefabonnees",
+    "noContacts": "Nog geen contactaanvragen.",
+    "noSubscribers": "Nog geen nieuwsbriefabonnees.",
+    "loading": "Laden..."
+  },
+  "errors": {
+    "generic": "Er is iets misgegaan. Probeer het opnieuw."
+  }
+}

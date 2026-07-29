@@ -1,215 +1,222 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useTranslation } from '@/lib/i18n';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { useToast } from '@/hooks/use-toast';
-
-const formSchema = z.object({
-  firstName: z.string().min(2, 'First name must be at least 2 characters'),
-  lastName: z.string().min(2, 'Last name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email address'),
-  companyName: z.string().min(2, 'Company name must be at least 2 characters'),
-  employeeSize: z.string().min(1, 'Please select employee size'),
-  contactNumber: z.string().min(10, 'Please enter a valid contact number'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
-});
-
-type FormData = z.infer<typeof formSchema>;
+import { Label } from '@/components/ui/label';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Send, CheckCircle2 } from 'lucide-react';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
-  
-  const form = useForm<FormData>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      companyName: '',
-      employeeSize: '',
-      contactNumber: '',
-      message: '',
-    },
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    companyName: '',
+    subject: '',
+    message: ''
   });
 
-  const onSubmit = (data: FormData) => {
-    console.log('Form submitted:', data);
-    toast({
-      title: "Demo Request Submitted!",
-      description: "We'll get back to you within 24 hours to schedule your demo.",
-    });
-    form.reset();
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([{
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          company_name: formData.companyName,
+          subject: formData.subject,
+          message: formData.message
+        }]);
+
+      if (error) throw error;
+
+      toast({
+        title: t('license.success'),
+        variant: 'default',
+      });
+      setIsSuccess(true);
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        companyName: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error: any) {
+      console.error('Submission error:', error);
+      toast({
+        title: t('errors.generic'),
+        description: error.message,
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       <Header />
       
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-brand-purple to-brand-blue text-white">
+      <main className="pt-32 pb-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">
-              Request a Demo
-            </h1>
-            <p className="text-xl opacity-90 mb-8">
-              Fill out the form below and we'll schedule a personalized demo to show you how Vointy can transform your workplace wellness.
-            </p>
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h1 className="text-4xl font-bold text-brand-dark mb-4">{t('license.title')}</h1>
+            <p className="text-xl text-gray-600">{t('license.description')}</p>
           </div>
-        </div>
-      </section>
 
-      {/* Contact Form Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
-            <Card className="shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl text-center">Request Your Demo</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <FormField
-                        control={form.control}
-                        name="firstName"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>First Name *</FormLabel>
-                            <FormControl>
-                              <Input placeholder="John" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <FormField
-                        control={form.control}
-                        name="lastName"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Last Name *</FormLabel>
-                            <FormControl>
-                              <Input placeholder="Doe" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
+            {isSuccess ? (
+              <Card className="text-center p-12 shadow-xl border-none">
+                <CardContent className="space-y-6">
+                  <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle2 size={48} />
+                  </div>
+                  <h2 className="text-3xl font-bold text-brand-dark">{t('license.success')}</h2>
+                  <p className="text-gray-600 text-lg">We have received your message and will get back to you shortly.</p>
+                  <Button onClick={() => setIsSuccess(false)} variant="outline" className="mt-4">
+                    Send another message
+                  </Button>
+                </CardContent>
+              </Card>
+            ) : (
+              <Card className="shadow-2xl border-none overflow-hidden">
+                <CardHeader className="bg-brand-purple text-white p-8">
+                  <CardTitle className="text-2xl flex items-center gap-3">
+                    <Send size={24} />
+                    {t('license.formTitle')}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-8 bg-white">
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="firstName" className="text-sm font-semibold text-gray-700">
+                          {t('license.firstName')} *
+                        </Label>
+                        <Input 
+                          id="firstName" 
+                          name="firstName" 
+                          value={formData.firstName} 
+                          onChange={handleChange} 
+                          placeholder="John"
+                          required 
+                          className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="lastName" className="text-sm font-semibold text-gray-700">
+                          {t('license.lastName')} *
+                        </Label>
+                        <Input 
+                          id="lastName" 
+                          name="lastName" 
+                          value={formData.lastName} 
+                          onChange={handleChange} 
+                          placeholder="Doe"
+                          required 
+                          className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div className="grid sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="email" className="text-sm font-semibold text-gray-700">
+                          {t('license.email')} *
+                        </Label>
+                        <Input 
+                          id="email" 
+                          name="email" 
+                          type="email" 
+                          value={formData.email} 
+                          onChange={handleChange} 
+                          placeholder="john@example.com"
+                          required 
+                          className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="companyName" className="text-sm font-semibold text-gray-700">
+                          {t('license.companyName')} *
+                        </Label>
+                        <Input 
+                          id="companyName" 
+                          name="companyName" 
+                          value={formData.companyName} 
+                          onChange={handleChange} 
+                          placeholder="Your Company"
+                          required 
+                          className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Label htmlFor="subject" className="text-sm font-semibold text-gray-700">
+                        {t('license.subject')} *
+                      </Label>
+                      <Input 
+                        id="subject" 
+                        name="subject" 
+                        value={formData.subject} 
+                        onChange={handleChange} 
+                        placeholder="Inquiry about Vointy"
+                        required 
+                        className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
                       />
                     </div>
                     
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Email Address *</FormLabel>
-                          <FormControl>
-                            <Input type="email" placeholder="john.doe@company.com" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    
-                    <FormField
-                      control={form.control}
-                      name="companyName"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Company Name *</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Your Company Inc." {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <FormField
-                        control={form.control}
-                        name="employeeSize"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Employee Size *</FormLabel>
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
-                              <FormControl>
-                                <SelectTrigger>
-                                  <SelectValue placeholder="Select size" />
-                                </SelectTrigger>
-                              </FormControl>
-                              <SelectContent>
-                                <SelectItem value="1-10">1-10 employees</SelectItem>
-                                <SelectItem value="11-50">11-50 employees</SelectItem>
-                                <SelectItem value="51-200">51-200 employees</SelectItem>
-                                <SelectItem value="201-500">201-500 employees</SelectItem>
-                                <SelectItem value="501-1000">501-1000 employees</SelectItem>
-                                <SelectItem value="1000+">1000+ employees</SelectItem>
-                              </SelectContent>
-                            </Select>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <FormField
-                        control={form.control}
-                        name="contactNumber"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Contact Number *</FormLabel>
-                            <FormControl>
-                              <Input type="tel" placeholder="+1 (555) 123-4567" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
+                    <div className="space-y-2">
+                      <Label htmlFor="message" className="text-sm font-semibold text-gray-700">
+                        {t('license.message')} *
+                      </Label>
+                      <Textarea 
+                        id="message" 
+                        name="message" 
+                        value={formData.message} 
+                        onChange={handleChange} 
+                        rows={6} 
+                        placeholder="How can we help you?"
+                        required 
+                        className="border-gray-200 focus:border-brand-purple focus:ring-brand-purple resize-none"
                       />
                     </div>
                     
-                    <FormField
-                      control={form.control}
-                      name="message"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Tell us about your wellness goals *</FormLabel>
-                          <FormControl>
-                            <Textarea
-                              rows={4}
-                              placeholder="What wellness challenges is your company facing? What are you hoping to achieve with Vointy?"
-                              {...field}
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    
-                    <Button type="submit" className="w-full btn-primary">
-                      Request Demo
+                    <Button 
+                      type="submit" 
+                      className="w-full btn-primary h-14 text-lg font-bold shadow-lg shadow-brand-purple/20 transition-all hover:-translate-y-0.5" 
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? 'Sending Message...' : t('license.submit')}
                     </Button>
-                    
-                    <p className="text-sm text-gray-600 text-center">
-                      We'll get back to you within 24 hours to schedule your personalized demo.
-                    </p>
                   </form>
-                </Form>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
-      </section>
-
+      </main>
+      
       <Footer />
     </div>
   );
