@@ -94,6 +94,7 @@ const Subscription = () => {
       toast({
         title: t('pricing.successTitle'),
       });
+      setSubmittedPlan(planName);
       setIsSuccess(true);
       setFormData({
         firstName: '',
