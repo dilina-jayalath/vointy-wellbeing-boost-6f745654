@@ -72,6 +72,23 @@ const App = () => (
                   </ProtectedRoute>
                 }
               />
+              <Route
+                path="/employer"
+                element={
+                  <ProtectedRoute>
+                    <EmployerLayout />
+                  </ProtectedRoute>
+                }
+              >
+                <Route index element={<EmployerDashboard />} />
+                <Route path="wellbeing" element={<EmployerWellbeing />} />
+                <Route path="surveys" element={<EmployerSurveys />} />
+                <Route path="challenges" element={<EmployerChallenges />} />
+                <Route path="subscriptions" element={<EmployerSubscriptions />} />
+                <Route path="invite" element={<EmployerInvite />} />
+                <Route path="activate" element={<EmployerActivate />} />
+                <Route path="teams" element={<EmployerTeams />} />
+              </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
