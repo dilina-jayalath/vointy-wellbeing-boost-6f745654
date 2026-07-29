@@ -10,7 +10,7 @@ type Contact = Database["public"]["Tables"]["contact_submissions"]["Row"];
 type Subscriber = Database["public"]["Tables"]["newsletter_subscribers"]["Row"];
 
 const AdminDashboard = () => {
-  const { t } = useI18n();
+  const { t } = useTranslation();
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [subscribers, setSubscribers] = useState<Subscriber[]>([]);
   const [loading, setLoading] = useState(true);
