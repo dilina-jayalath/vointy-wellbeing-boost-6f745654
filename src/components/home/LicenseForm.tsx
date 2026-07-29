@@ -87,7 +87,7 @@ const LicenseForm = () => {
               </div>
               <div>
                 <div className="font-bold">Email us</div>
-                <div className="text-gray-500">hello@vointy.io</div>
+                <div className="text-gray-500">hello@vointy.life</div>
               </div>
             </div>
           </div>

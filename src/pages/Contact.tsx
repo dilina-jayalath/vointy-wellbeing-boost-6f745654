@@ -47,7 +47,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">Email Us</h3>
-                      <p className="text-gray-600">hello@vointy.io</p>
+                      <p className="text-gray-600">hello@vointy.life</p>
                     </div>
                   </div>
                   

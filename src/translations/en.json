@@ -79,7 +79,7 @@
     "product": "Product",
     "company": "Company",
     "legal": "Legal",
-    "copyright": "© {year} Vointy.io. All rights reserved."
+    "copyright": "© {year} Vointy.life. All rights reserved."
   },
   "auth": {
     "loginTitle": "Log in to Vointy",

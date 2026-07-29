@@ -14,7 +14,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">
-              About Vointy.io
+              About Vointy.life
             </h1>
             <p className="text-xl opacity-90 mb-8">
               We're on a mission to transform workplace wellbeing through social engagement and data-driven insights.
@@ -31,7 +31,7 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-bold font-display mb-6">Our Mission</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  At Vointy.io, we believe that healthy, engaged employees are the foundation of successful organizations. 
+                  At Vointy.life, we believe that healthy, engaged employees are the foundation of successful organizations. 
                   Our social wellness platform helps companies reduce sick leaves by up to 32% while fostering a culture 
                   of connection and wellbeing.
                 </p>
