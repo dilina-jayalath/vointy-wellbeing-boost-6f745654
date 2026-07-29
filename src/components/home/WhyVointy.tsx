@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from '@/lib/i18n';
 import { Activity, Brain, Users, TrendingUp } from 'lucide-react';
+import mobileImage from '@/assets/mobile.jpg';
 
 const WhyVointy = () => {
   const { t } = useTranslation();
@@ -31,19 +32,15 @@ const WhyVointy = () => {
             </div>
           </div>
           
-          <div className="flex-1 w-full grid grid-cols-2 gap-4">
-             <div className="space-y-4">
-                <div className="aspect-square bg-brand-purple/10 rounded-3xl flex items-center justify-center">
-                  <Activity size={64} className="text-brand-purple" />
-                </div>
-                <div className="aspect-video bg-gray-100 rounded-3xl" />
-             </div>
-             <div className="space-y-4 pt-8">
-                <div className="aspect-video bg-brand-blue/10 rounded-3xl flex items-center justify-center">
-                  <Brain size={48} className="text-brand-blue" />
-                </div>
-                <div className="aspect-square bg-gray-100 rounded-3xl" />
-             </div>
+          <div className="flex-1 w-full flex justify-center">
+            <div className="relative max-w-sm">
+              <div className="absolute inset-0 bg-brand-blue/20 rounded-3xl blur-[60px] -z-10" />
+              <img 
+                src={mobileImage} 
+                alt="Vointy app dashboard showing activity rings" 
+                className="w-full h-auto rounded-3xl shadow-2xl border-4 border-white"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,11 +1,12 @@
 import React from 'react';
 import { useTranslation } from '@/lib/i18n';
 import { MessageCircle, Share2, Target, Heart } from 'lucide-react';
+import socialImage from '@/assets/social.jpg';
 
 const SocialPlatform = () => {
   const { t } = useTranslation();
   
-  const iconMap: Record<number, any> = {
+  const iconMap: Record<number, React.ReactNode> = {
     0: <Target className="text-brand-purple" />,
     1: <MessageCircle className="text-brand-blue" />,
     2: <Share2 className="text-indigo-500" />,
@@ -42,33 +43,14 @@ const SocialPlatform = () => {
             ))}
           </div>
           
-          <div className="relative">
+          <div className="relative flex justify-center">
             <div className="absolute inset-0 bg-brand-purple/20 rounded-full blur-[100px] -z-10" />
-            <div className="bg-white p-4 rounded-3xl shadow-2xl border border-gray-100">
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 border-b pb-4">
-                  <div className="w-10 h-10 rounded-full bg-gray-200" />
-                  <div className="flex-1">
-                    <div className="h-4 w-32 bg-gray-100 rounded mb-1" />
-                    <div className="h-3 w-20 bg-gray-50 rounded" />
-                  </div>
-                </div>
-                <div className="h-64 w-full bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400">
-                  <Share2 size={48} className="opacity-20" />
-                </div>
-                <div className="flex gap-4">
-                  <div className="h-8 w-8 rounded-full bg-brand-purple/10 flex items-center justify-center text-brand-purple">
-                    <Heart size={16} />
-                  </div>
-                  <div className="h-8 w-8 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue">
-                    <MessageCircle size={16} />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <div className="h-3 w-full bg-gray-100 rounded" />
-                  <div className="h-3 w-3/4 bg-gray-100 rounded" />
-                </div>
-              </div>
+            <div className="bg-white p-4 rounded-3xl shadow-2xl border border-gray-100 max-w-sm">
+              <img 
+                src={socialImage} 
+                alt="Vointy social feed on a mobile phone" 
+                className="w-full h-auto rounded-2xl"
+              />
             </div>
           </div>
         </div>

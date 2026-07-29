@@ -2,7 +2,8 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/i18n';
 import { Link } from 'react-router-dom';
-import { Sparkles, Activity } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
+import heroImage from '@/assets/hero.jpg';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -40,17 +41,12 @@ const Hero = () => {
           </div>
           
           <div className="flex-1 relative w-full max-w-xl">
-            <div className="aspect-square rounded-3xl bg-gradient-to-br from-brand-purple/20 to-brand-blue/20 flex items-center justify-center p-8 relative animate-float">
-              <div className="absolute inset-0 bg-white/40 backdrop-blur-sm rounded-3xl -m-4 -z-10 border border-white/50" />
-              <div className="w-full h-full bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center gap-4 text-brand-purple">
-                <Activity size={80} className="animate-pulse" />
-                <div className="h-4 w-3/4 bg-gray-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-brand-purple w-2/3 animate-progress-flow" />
-                </div>
-                <div className="h-4 w-1/2 bg-gray-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-brand-blue w-1/2 animate-progress-flow" />
-                </div>
-              </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+              <img 
+                src={heroImage} 
+                alt="Diverse team stretching together outdoors" 
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
