@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Features",
+    "benefits": "Benefits",
+    "testimonials": "Success Stories",
+    "pricing": "Pricing",
+    "login": "Log in",
+    "logout": "Log out",
+    "account": "Account",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Vointy is your team’s collective motivator.",
+    "subtitle": "Try Vointy for free today and experience how its activities can transform your workday. Challenge and invite other team members to join you!",
+    "ctaDemo": "View Demo",
+    "ctaFree": "Try Vointy free"
+  },
+  "freeTeam": {
+    "title": "For teams up to 10 people",
+    "description": "With the free version of Vointy, you can create a team of up to 10 people. You could form a team at work, with friends, or across departments.",
+    "cta": "Create a free team"
+  },
+  "companies": {
+    "title": "For Companies",
+    "description": "Companies can purchase a paid version for their teams. It costs only €2.90 per person per month. You can create an unlimited number of teams. Companies will get access to an HR interface to activate teams and create challenges.",
+    "price": "€2.90",
+    "priceUnit": "/person/month",
+    "cta": "Request a demo"
+  },
+  "challenges": {
+    "title": "Examples of challenges you can run",
+    "items": [
+      { "title": "Recovery challenges", "description": "sleep consistency, micro-breaks, stress reset routines" },
+      { "title": "Move more, effortlessly", "description": "steps, active minutes, walk-and-talk meetings" },
+      { "title": "Ergonomics & mobility", "description": "5-minute mobility, neck/shoulders, desk setup checklist" },
+      { "title": "Team challenges", "description": "shared goals, buddy pairs, encouragement and check-ins" },
+      { "title": "Healthy routines", "description": "hydration, outdoor time, screen breaks, one wellbeing action a day" }
+    ]
+  },
+  "social": {
+    "title": "A Social Platform Employees Will Love",
+    "features": [
+      { "title": "Versatile Activation Options", "description": "Explore Vointy's different activation methods to make work more enjoyable together with your friends." },
+      { "title": "Social Feed", "description": "Celebrate milestones, share achievements, and encourage others through an engaging social feed." },
+      { "title": "Challenge", "description": "Schedule and track participation in your team's challenges, fostering a sense of togetherness and collaboration." },
+      { "title": "A modern way for company leadership to support employees.", "description": "With Vointy, company leadership can create challenges and events that boost employee engagement and workplace enjoyment, helping the entire community succeed." }
+    ]
+  },
+  "why": {
+    "title": "Why Vointy works",
+    "description": "Every participant gets access to an app that encourages them to take part in physical activities and other leisure-related challenges on their own terms. They can invite friends to join, earn points, and stay motivated together. Activity levels can be tracked through an activity score, making it easy to compare progress and see how others are engaging. The variety of activities is wide, ranging from fitness to culture. At the same time, company leadership gains visibility into how employee activity and overall wellbeing are developing outside of work."
+  },
+  "video": {
+    "title": "See Vointy in action",
+    "description": "Watch how teams use Vointy to build healthier habits and stronger connections."
+  },
+  "license": {
+    "title": "Start selling Vointy with a license",
+    "description": "Vointy is a versatile, ready-to-use product that works exceptionally well. Start selling Vointy with a license to your own customer base. Vointy is easy to implement, making sales effortless.",
+    "formTitle": "Fill out the form and we will contact you immediately.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "companyName": "Company Name",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send message",
+    "success": "Thank you! We will be in touch soon."
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "description": "Subscribe to our newsletter for the latest wellness insights and Vointy updates.",
+    "placeholder": "Your email",
+    "button": "Subscribe",
+    "success": "Thanks for subscribing!"
+  },
+  "footer": {
+    "tagline": "Empowering companies to improve employee wellbeing and productivity through social engagement.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "copyright": "© {year} Vointy.io. All rights reserved."
+  },
+  "auth": {
+    "loginTitle": "Log in to Vointy",
+    "signupTitle": "Create your Vointy account",
+    "resetTitle": "Reset your password",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "loginButton": "Log in",
+    "signupButton": "Create account",
+    "resetButton": "Send reset link",
+    "updatePasswordButton": "Update password",
+    "googleButton": "Continue with Google",
+    "appleButton": "Continue with Apple",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signUpNow": "Sign up",
+    "logInNow": "Log in",
+    "passwordMismatch": "Passwords do not match.",
+    "checkEmail": "Check your email for the confirmation link.",
+    "resetSent": "Password reset email sent.",
+    "logout": "Log out"
+  },
+  "account": {
+    "title": "Your account",
+    "displayName": "Display name",
+    "language": "Language",
+    "save": "Save changes",
+    "saved": "Profile updated."
+  },
+  "admin": {
+    "title": "Admin dashboard",
+    "contacts": "Contact submissions",
+    "subscribers": "Newsletter subscribers",
+    "noContacts": "No contact submissions yet.",
+    "noSubscribers": "No newsletter subscribers yet.",
+    "loading": "Loading..."
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again."
+  }
+}
