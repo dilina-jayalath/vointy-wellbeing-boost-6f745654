@@ -34,10 +34,6 @@ const Header = () => {
                   <Link key={link.label} to={link.href} className="text-gray-700 hover:text-brand-purple transition-colors font-medium text-sm lg:text-base">
                     {link.label}
                   </Link>
-                ) : link.external ? (
-                  <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-brand-purple transition-colors font-medium text-sm lg:text-base">
-                    {link.label}
-                  </a>
                 ) : (
                   <a key={link.label} href={link.href} className="text-gray-700 hover:text-brand-purple transition-colors font-medium text-sm lg:text-base">
                     {link.label}
