@@ -10,10 +10,9 @@
     "admin": "Ylläpito"
   },
   "hero": {
-    "title": "Vointy on tiimisi yhteinen motivaattori.",
-    "subtitle": "Kokeile Vointya ilmaiseksi tänään ja koe, miten sen aktiviteetit voivat muuttaa työpäiväsi. Haasta ja kutsu muut tiimin jäsenet mukaan!",
-    "ctaDemo": "Katso demo",
-    "ctaFree": "Kokeile Vointya ilmaiseksi"
+    "title": "Rakenna terveempi ja tuottavampi tiimi.",
+    "subtitle": "Auta työntekijöitäsi pysymään aktiivisina, motivoituneina ja energisinä yksinkertaisten päivittäisten haasteiden avulla. Vointy tekee työpaikan hyvinvoinnin parantamisesta helppoa—jokaiselle tiimille.",
+    "ctaFree": "Aloita ilmaiseksi"
   },
   "freeTeam": {
     "title": "Tiimeille 10 henkilöön asti",

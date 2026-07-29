@@ -10,10 +10,9 @@
     "admin": "Admin"
   },
   "hero": {
-    "title": "Vointy is your team’s collective motivator.",
-    "subtitle": "Try Vointy for free today and experience how its activities can transform your workday. Challenge and invite other team members to join you!",
-    "ctaDemo": "View Demo",
-    "ctaFree": "Try Vointy free"
+    "title": "Build a healthier, more productive team.",
+    "subtitle": "Help your employees stay active, motivated, and energized with simple daily challenges. Vointy makes improving workplace wellbeing easy—for every team.",
+    "ctaFree": "Start Free"
   },
   "freeTeam": {
     "title": "For teams up to 10 people",
