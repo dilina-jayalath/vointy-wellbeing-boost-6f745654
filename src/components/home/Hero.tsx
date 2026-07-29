@@ -32,11 +32,6 @@ const Hero = () => {
                   {t('hero.ctaFree')}
                 </Button>
               </Link>
-              <Link to="/contact-form">
-                <Button variant="outline" className="text-lg px-8 py-6 h-auto">
-                  {t('hero.ctaDemo')}
-                </Button>
-              </Link>
             </div>
           </div>
           
