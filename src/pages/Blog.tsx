@@ -75,7 +75,7 @@ const Blog = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">
-              Vointy.io Blog
+              Vointy.life Blog
             </h1>
             <p className="text-xl opacity-90 mb-8">
               Insights, research, and best practices for workplace wellness and employee engagement.

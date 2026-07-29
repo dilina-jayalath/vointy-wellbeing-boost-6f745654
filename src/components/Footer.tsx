@@ -45,7 +45,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">Vointy.io</h3>
+            <h3 className="text-xl font-bold mb-4">Vointy.life</h3>
             <p className="text-gray-300 mb-4">
               {t('footer.tagline')}
             </p>

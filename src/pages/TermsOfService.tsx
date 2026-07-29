@@ -13,7 +13,7 @@ const TermsOfService = () => {
       icon: <FileText className="w-6 h-6 text-brand-purple" />,
       content: (
         <p className="text-gray-700 leading-relaxed">
-          By accessing and using Vointy.io's workplace wellness platform, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+          By accessing and using Vointy.life's workplace wellness platform, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
         </p>
       )
     },
@@ -24,7 +24,7 @@ const TermsOfService = () => {
       content: (
         <div className="bg-blue-50 border-l-4 border-brand-blue p-4 rounded-r-lg">
           <p className="text-gray-700 leading-relaxed">
-            You must be at least <strong>18 years old</strong> and authorized by your employer or organization to use Vointy.io.
+            You must be at least <strong>18 years old</strong> and authorized by your employer or organization to use Vointy.life.
           </p>
         </div>
       )
@@ -36,7 +36,7 @@ const TermsOfService = () => {
       content: (
         <div>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Vointy.io provides a workplace wellness platform that helps organizations improve employee wellbeing through social engagement, wellness tracking, and data-driven insights.
+            Vointy.life provides a workplace wellness platform that helps organizations improve employee wellbeing through social engagement, wellness tracking, and data-driven insights.
           </p>
           <div className="grid gap-3">
             {[
@@ -80,7 +80,7 @@ const TermsOfService = () => {
       content: (
         <div className="bg-purple-50 border-l-4 border-brand-purple p-4 rounded-r-lg">
           <p className="text-gray-700 leading-relaxed">
-            We grant you a <strong>non-transferable, limited license</strong> to use Vointy.io in accordance with these Terms for your organization's wellness programs.
+            We grant you a <strong>non-transferable, limited license</strong> to use Vointy.life in accordance with these Terms for your organization's wellness programs.
           </p>
         </div>
       )
@@ -149,7 +149,7 @@ const TermsOfService = () => {
       icon: <Shield className="w-6 h-6 text-brand-blue" />,
       content: (
         <p className="text-gray-700 leading-relaxed">
-          The service and its original content, features, and functionality are and will remain the exclusive property of Vointy.io and its licensors. The service is protected by copyright, trademark, and other laws.
+          The service and its original content, features, and functionality are and will remain the exclusive property of Vointy.life and its licensors. The service is protected by copyright, trademark, and other laws.
         </p>
       )
     },
@@ -182,7 +182,7 @@ const TermsOfService = () => {
               Terms of Service
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-8 max-w-2xl mx-auto">
-              Terms and conditions for using Vointy.io
+              Terms and conditions for using Vointy.life
             </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 inline-block">
               <p className="text-white/90">
@@ -232,7 +232,7 @@ const TermsOfService = () => {
                     <h3 className="text-xl font-bold text-red-800">Limitation of Liability</h3>
                   </div>
                   <p className="text-red-700 text-sm leading-relaxed">
-                    In no event shall Vointy.io be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
+                    In no event shall Vointy.life be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
                   </p>
                 </CardContent>
               </Card>
@@ -261,7 +261,7 @@ const TermsOfService = () => {
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                     <Mail className="w-6 h-6 mx-auto mb-2" />
                     <div className="font-medium">Email</div>
-                    <div className="text-white/80">legal@vointy.io</div>
+                    <div className="text-white/80">legal@vointy.life</div>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                     <Phone className="w-6 h-6 mx-auto mb-2" />
