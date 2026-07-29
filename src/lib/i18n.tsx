@@ -1,3 +1,4 @@
+// @refresh reset
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import en from '../translations/en.json';
 import de from '../translations/de.json';
