@@ -21,6 +21,15 @@ import ResetPassword from "./pages/ResetPassword";
 import Account from "./pages/Account";
 import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import EmployerLayout from "./pages/employer/EmployerLayout";
+import EmployerDashboard from "./pages/employer/Dashboard";
+import EmployerWellbeing from "./pages/employer/WellbeingIndex";
+import EmployerSurveys from "./pages/employer/Surveys";
+import EmployerChallenges from "./pages/employer/Challenges";
+import EmployerSubscriptions from "./pages/employer/Subscriptions";
+import EmployerInvite from "./pages/employer/InviteUsers";
+import EmployerActivate from "./pages/employer/ActivateUsers";
+import EmployerTeams from "./pages/employer/Teams";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -63,6 +72,23 @@ const App = () => (
                   </ProtectedRoute>
                 }
               />
+              <Route
+                path="/employer"
+                element={
+                  <ProtectedRoute>
+                    <EmployerLayout />
+                  </ProtectedRoute>
+                }
+              >
+                <Route index element={<EmployerDashboard />} />
+                <Route path="wellbeing" element={<EmployerWellbeing />} />
+                <Route path="surveys" element={<EmployerSurveys />} />
+                <Route path="challenges" element={<EmployerChallenges />} />
+                <Route path="subscriptions" element={<EmployerSubscriptions />} />
+                <Route path="invite" element={<EmployerInvite />} />
+                <Route path="activate" element={<EmployerActivate />} />
+                <Route path="teams" element={<EmployerTeams />} />
+              </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
