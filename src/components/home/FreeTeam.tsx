@@ -14,17 +14,18 @@ const FreeTeam = () => {
           <div className="flex-1 p-8 md:p-12">
             <div className="inline-flex items-center gap-2 text-brand-blue font-semibold mb-4">
               <Users size={20} />
-              <span>Small Teams</span>
+              <span>Free for companies</span>
             </div>
             <h2 className="text-3xl font-bold text-brand-dark mb-4">
-              {t('freeTeam.title')}
+              Unlimited employees. Unlimited teams. Free.
             </h2>
             <p className="text-gray-600 mb-8 text-lg">
-              {t('freeTeam.description')}
+              Companies join Vointy for free and share credentials with employees across unlimited teams —
+              no per-user fees, no team size limits. Only pay if you want the employer dashboard.
             </p>
-            <Link to="/signup">
+            <Link to="/subscription">
               <Button className="btn-primary px-8">
-                {t('freeTeam.cta')}
+                Get started free
               </Button>
             </Link>
           </div>
@@ -34,6 +35,7 @@ const FreeTeam = () => {
               <div className="opacity-80 uppercase tracking-wider font-semibold">Forever free</div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

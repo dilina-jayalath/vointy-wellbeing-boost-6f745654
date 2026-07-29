@@ -21,14 +21,15 @@ const Companies = () => {
               <span className="uppercase tracking-widest">{t('companies.title')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              Scale wellness across your <span className="text-brand-blue">entire organization</span>
+              Free for companies. <span className="text-brand-blue">Pay only</span> for the employer dashboard.
             </h2>
             <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-              {t('companies.description')}
+              Join Vointy for free and share credentials with your employees across unlimited teams — no per-user fees.
+              Upgrade to the employer dashboard when you want tracking, analytics, campaigns and events.
             </p>
             
             <div className="space-y-4 mb-10">
-              {['Unlimited teams', 'HR Dashboard', 'Employee engagement analytics', 'Custom challenges'].map((feat) => (
+              {['Unlimited employees', 'Unlimited teams', 'All activities', 'Employer dashboard', 'Reporting & analytics', 'No per-user fees'].map((feat) => (
                 <div key={feat} className="flex items-center gap-3">
                   <CheckCircle2 className="text-brand-purple" size={20} />
                   <span className="text-gray-200 font-medium">{feat}</span>
@@ -36,9 +37,9 @@ const Companies = () => {
               ))}
             </div>
             
-            <Link to="/contact-form">
+            <Link to="/subscription">
               <Button className="bg-brand-blue hover:bg-brand-blue/90 text-white px-10 py-6 h-auto text-lg rounded-full">
-                {t('companies.cta')}
+                See pricing
               </Button>
             </Link>
           </div>
@@ -52,24 +53,26 @@ const Companies = () => {
                 className="w-full h-auto rounded-2xl object-cover mb-6"
               />
               <div className="text-center">
-                <div className="text-brand-blue text-sm font-bold uppercase tracking-tighter mb-2">Special Enterprise Pricing</div>
-                <div className="flex items-baseline justify-center gap-1 mb-4">
-                  <span className="text-6xl md:text-7xl font-black">{t('companies.price')}</span>
-                  <span className="text-xl text-gray-400 font-medium">{t('companies.priceUnit')}</span>
+                <div className="text-brand-blue text-sm font-bold uppercase tracking-tighter mb-2">Employer Dashboard</div>
+                <div className="flex items-baseline justify-center gap-1 mb-2">
+                  <span className="text-6xl md:text-7xl font-black">€149</span>
+                  <span className="text-xl text-gray-400 font-medium">/month</span>
                 </div>
+                <div className="text-sm text-gray-400">per company · unlimited users</div>
               </div>
               <div className="h-px w-full bg-white/10 my-6" />
               <div className="grid grid-cols-2 gap-8">
                 <div className="text-left">
-                  <div className="text-brand-purple font-bold text-2xl mb-1">24/7</div>
-                  <div className="text-sm text-gray-400 uppercase">Support</div>
+                  <div className="text-brand-purple font-bold text-2xl mb-1">30 days</div>
+                  <div className="text-sm text-gray-400 uppercase">Free trial</div>
                 </div>
                 <div className="text-left">
-                  <div className="text-brand-purple font-bold text-2xl mb-1">Easy</div>
-                  <div className="text-sm text-gray-400 uppercase">Setup</div>
+                  <div className="text-brand-purple font-bold text-2xl mb-1">€0</div>
+                  <div className="text-sm text-gray-400 uppercase">Setup fee</div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
