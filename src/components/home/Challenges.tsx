@@ -14,7 +14,7 @@ const Challenges = () => {
     4: <Apple className="text-orange-500" />,
   };
 
-  const challenges = t('challenges.items') as any[] || [];
+  const challenges = t('challenges.items') || [];
 
   return (
     <section id="features" className="py-24 bg-white">

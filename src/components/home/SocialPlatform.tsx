@@ -13,7 +13,7 @@ const SocialPlatform = () => {
     3: <Heart className="text-pink-500" />,
   };
 
-  const features = t('social.features') as any[] || [];
+  const features = t('social.features') || [];
 
   return (
     <section className="py-24 bg-gray-50 overflow-hidden">
