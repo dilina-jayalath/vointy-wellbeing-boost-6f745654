@@ -20,6 +20,7 @@ import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
 import CompanySignup from "./pages/CompanySignup";
 import JoinCompany from "./pages/JoinCompany";
+import Unsubscribe from "./pages/Unsubscribe";
 import Account from "./pages/Account";
 import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
