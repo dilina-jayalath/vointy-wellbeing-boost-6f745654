@@ -22,9 +22,15 @@ const AppLayout = () => {
     <div className="min-h-screen bg-muted/40">
       <div className="mx-auto w-full max-w-md min-h-screen bg-background flex flex-col shadow-xl">
         <header className="sticky top-0 z-20 bg-gradient-to-r from-brand-purple to-brand-blue text-primary-foreground px-4 py-3 flex items-center justify-between">
-          <Link to="/app" className="font-bold text-lg">
-            Vointy<span className="opacity-80">.life</span>
-          </Link>
+          <div className="flex items-center gap-1">
+            {showBack && (
+              <BackButton fallback="/app" className="text-primary-foreground hover:bg-white/10 hover:text-primary-foreground px-2" />
+            )}
+            <Link to="/app" className="font-bold text-lg">
+              Vointy<span className="opacity-80">.life</span>
+            </Link>
+          </div>
+
           <div className="flex items-center gap-2">
             <LanguageSwitcher />
             <NavLink

@@ -1,14 +1,18 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import { Bell, RefreshCw, User as UserIcon, Languages } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { EmployerSidebar } from "@/components/employer/EmployerSidebar";
 import { Button } from "@/components/ui/button";
+import BackButton from "@/components/BackButton";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 
 const EmployerLayout = () => {
   const { profile } = useAuth();
   const { orgName } = useEmployerOrg();
+  const { pathname } = useLocation();
+  const showBack = pathname !== "/employer";
+
 
   return (
     <SidebarProvider>
