@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, User as UserIcon, LogOut } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from '@/lib/i18n';
 import { useAuth } from '@/contexts/AuthContext';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import BackButton from '@/components/BackButton';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
   const { user, signOut, isAdmin } = useAuth();
+  const { pathname } = useLocation();
+  const showBack = pathname !== '/';
+
 
   const navLinks = [
     { label: t('nav.features'), href: '#features' },
@@ -24,9 +28,13 @@ const Header = () => {
     <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.life</span></span>
-          </Link>
+          <div className="flex items-center gap-2">
+            {showBack && <BackButton className="text-gray-700 hover:text-brand-purple px-2" />}
+            <Link to="/" className="flex items-center">
+              <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.life</span></span>
+            </Link>
+          </div>
+
           
           <div className="hidden md:flex items-center space-x-6">
             <nav className="flex items-center space-x-6">
