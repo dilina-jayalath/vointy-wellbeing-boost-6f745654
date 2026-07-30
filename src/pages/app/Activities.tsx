@@ -16,7 +16,15 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { toast } from "@/hooks/use-toast";
-import { Plus } from "lucide-react";
+import { Plus, PlayCircle } from "lucide-react";
+
+const youTubeId = (url?: string | null) => {
+  if (!url) return null;
+  const m = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/
+  );
+  return m ? m[1] : null;
+};
 
 const AppActivities = () => {
   const { user } = useAuth();
@@ -92,14 +100,10 @@ const AppActivities = () => {
                     {a.category ? ` · ${a.category}` : ""}
                   </p>
                   {a.link && (
-                    <a
-                      href={a.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs underline text-muted-foreground"
-                    >
-                      Open guide
-                    </a>
+                    <span className="mt-1 inline-flex items-center gap-1 text-xs text-muted-foreground">
+                      <PlayCircle className="h-3.5 w-3.5" />
+                      {youTubeId(a.link) ? "Video" : "Guide"}
+                    </span>
                   )}
                 </div>
                 <Button size="sm" onClick={() => setSelected(a)}>
@@ -139,6 +143,30 @@ const AppActivities = () => {
             <DialogTitle>{selected?.title}</DialogTitle>
           </DialogHeader>
           <div className="space-y-3">
+            {youTubeId(selected?.link) ? (
+              <div className="aspect-video w-full overflow-hidden rounded-md bg-muted">
+                <iframe
+                  className="h-full w-full"
+                  src={`https://www.youtube.com/embed/${youTubeId(selected?.link)}`}
+                  title={selected?.title ?? "Activity video"}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            ) : selected?.link ? (
+              <a
+                href={selected.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm underline text-muted-foreground"
+              >
+                Open guide
+              </a>
+            ) : null}
+            {selected?.description && (
+              <p className="text-sm text-muted-foreground">{selected.description}</p>
+            )}
             <div>
               <Label htmlFor="amount">Amount ({selected?.unit})</Label>
               <Input
