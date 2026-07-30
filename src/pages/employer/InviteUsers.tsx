@@ -137,8 +137,17 @@ const InviteUsers = () => {
   };
 
   const sendAll = async () => {
-    if (!orgId || !user) return;
+    if (!user) return;
+    if (!orgId) {
+      toast({
+        title: "No company found",
+        description: "Your company workspace is still being created. Please reload the page and try again.",
+        variant: "destructive",
+      });
+      return;
+    }
     setSending(true);
+
     const { data, error } = await supabase
       .from("organization_invitations")
       .insert(
@@ -224,7 +233,7 @@ const InviteUsers = () => {
 
           {list.length > 0 && (
             <div className="flex justify-end">
-              <Button onClick={sendAll} disabled={sending || orgLoading || !orgId}
+              <Button onClick={sendAll} disabled={sending || orgLoading}
                 className="bg-brand-purple hover:bg-brand-purple-dark uppercase">
                 {sending ? <Loader2 className="h-4 w-4 animate-spin" /> : (
                   <><Send className="h-4 w-4 mr-1" /> Send {list.length} invitation{list.length > 1 ? "s" : ""}</>
