@@ -22,7 +22,7 @@ import {
 
 const items = [
   { title: "Dashboard", url: "/employer", icon: LayoutDashboard, end: true },
-  { title: "Wellbeing Index", url: "/employer/wellbeing", icon: Building2 },
+  { title: "Activity Index", url: "/employer/wellbeing", icon: Building2 },
   { title: "Surveys", url: "/employer/surveys", icon: ClipboardList },
   { title: "Challenges", url: "/employer/challenges", icon: Trophy },
   { title: "Subscriptions", url: "/employer/subscriptions", icon: CreditCard },
