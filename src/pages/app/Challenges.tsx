@@ -74,8 +74,8 @@ const AppChallenges = () => {
       acc[p.user_id] = (acc[p.user_id] ?? 0) + Number(p.progress ?? 0);
       return acc;
     }, {});
-  const ranked = Object.entries(leaderboard)
-    .sort((a, b) => b[1] - a[1])
+  const ranked = (Object.entries(leaderboard) as [string, number][])
+    .sort((a, b) => Number(b[1]) - Number(a[1]))
     .slice(0, 10);
 
   return (
