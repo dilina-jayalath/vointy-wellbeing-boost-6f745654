@@ -4,9 +4,11 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { EmployerSidebar } from "@/components/employer/EmployerSidebar";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
+import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 
 const EmployerLayout = () => {
   const { profile } = useAuth();
+  const { orgName } = useEmployerOrg();
 
   return (
     <SidebarProvider>
