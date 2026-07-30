@@ -31,6 +31,7 @@ import EmployerSurveys from "./pages/employer/Surveys";
 import EmployerChallenges from "./pages/employer/Challenges";
 import EmployerSubscriptions from "./pages/employer/Subscriptions";
 import EmployerInvite from "./pages/employer/InviteUsers";
+import EmployerInvitedList from "./pages/employer/InvitedList";
 import EmployerActivate from "./pages/employer/ActivateUsers";
 import EmployerTeams from "./pages/employer/Teams";
 import AppLayout from "./pages/app/AppLayout";
@@ -99,6 +100,7 @@ const App = () => (
                 <Route path="challenges" element={<EmployerChallenges />} />
                 <Route path="subscriptions" element={<EmployerSubscriptions />} />
                 <Route path="invite" element={<EmployerInvite />} />
+                <Route path="invited" element={<EmployerInvitedList />} />
                 <Route path="activate" element={<EmployerActivate />} />
                 <Route path="teams" element={<EmployerTeams />} />
               </Route>
