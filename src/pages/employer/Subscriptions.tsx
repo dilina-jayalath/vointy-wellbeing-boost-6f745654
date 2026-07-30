@@ -23,6 +23,9 @@ const Subscriptions = () => (
               "Management dashboard",
               "Reporting",
               "No per-user fees",
+              "Activity Index tracking continuously",
+              "Possibility to create new challenges",
+              "Possibility to reward employees monthly",
             ].map((f) => (
               <li key={f} className="flex gap-2 items-center">
                 <CheckCircle2 className="h-4 w-4 text-brand-purple" /> {f}
@@ -44,6 +47,9 @@ const Subscriptions = () => (
               "Management dashboard",
               "Reporting",
               "No per-user fees",
+              "Activity Index tracking continuously",
+              "Possibility to create new challenges",
+              "Possibility to reward employees monthly",
             ].map((f) => (
               <li key={f} className="flex gap-2 items-center">
                 <CheckCircle2 className="h-4 w-4 text-brand-purple" /> {f}
