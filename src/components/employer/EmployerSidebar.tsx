@@ -8,6 +8,7 @@ import {
   UserPlus,
   UserCheck,
   Users,
+  MailCheck,
 } from "lucide-react";
 import {
   Sidebar,
@@ -26,6 +27,7 @@ const items = [
   { title: "Challenges", url: "/employer/challenges", icon: Trophy },
   { title: "Subscriptions", url: "/employer/subscriptions", icon: CreditCard },
   { title: "Invite Users", url: "/employer/invite", icon: UserPlus },
+  { title: "Invited List", url: "/employer/invited", icon: MailCheck },
   { title: "Activate Users", url: "/employer/activate", icon: UserCheck },
   { title: "Teams", url: "/employer/teams", icon: Users },
 ];
