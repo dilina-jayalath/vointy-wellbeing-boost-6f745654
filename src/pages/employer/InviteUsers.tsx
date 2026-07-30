@@ -288,6 +288,10 @@ const InviteUsers = () => {
                     </span>
                     {inv.status === "pending" && (
                       <>
+                        <Button size="icon" variant="ghost" disabled={resending === inv.id}
+                          onClick={() => resendInvite(inv)} title="Resend invitation email">
+                          {resending === inv.id ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
+                        </Button>
                         <Button size="icon" variant="ghost" onClick={() => copyLink(inv.token)} title="Copy invitation link">
                           <Copy className="h-4 w-4" />
                         </Button>
