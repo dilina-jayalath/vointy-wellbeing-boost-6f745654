@@ -1,70 +1,49 @@
-## Goal
-Rebuild vointy.io in Lovable as a refreshed, multi-language marketing site that preserves the current vointy.io content and brand feel, then wire it to Lovable Cloud backend services so it can later be wrapped as a Capacitor native app.
+## Tavoite
+Rakennetaan mobiiliapin koko sisältö samanlaisena web-palveluna tähän projektiin `/app`-reitin alle, ja tehdään siitä lopuksi asennettava PWA.
 
-## What we will build
+## Mitä Flutter-koodista löytyi
+Näkymät: Home, Activities, Challenges, Community, Settings, Profile, Onboarding.
+Datamallit: activity, user_challenge, hr_challenges, open hr challenges, challenge_users, community_feed, comment, like/dislike, performed_exercise, wellbeing_index, wellbeing_survey, home_survey, survey_submission, subscription, profile_picture.
+Backend tällä hetkellä: `api.vointy.io/api/v1/` + Firebase (auth, push).
 
-### 1. Refreshed homepage (vointy.io content)
-- Hero: "Vointy is your team's collective motivator" with CTA buttons and trusted-by avatars.
-- Free/team intro cards and the "For Companies" pricing teaser (€2.90 / person / month).
-- Numbered challenge examples (Recovery, Move more, Ergonomics, Team challenges, Healthy routines).
-- "A Social Platform Employees Will Love" feature section with app screenshots.
-- "Why Vointy works" explanation section.
-- Embedded presentation video (YouTube/Vimeo placeholder).
-- License/reseller CTA and a working contact form.
-- Newsletter signup footer block.
+## Vaihe 1 — Tietokanta Lovable Cloudiin
+Taulut Flutter-mallien mukaan:
+- `activities`, `performed_exercises`
+- `challenges` (yritys/HR + avoimet), `user_challenges`, `challenge_participants`
+- `community_posts`, `post_comments`, `post_likes`
+- `wellbeing_surveys`, `survey_questions`, `survey_answers`, `wellbeing_index_scores`
+- `teams`, `team_members` (liittyy jo olemassa oleviin `profiles`-tauluun)
+RLS: käyttäjä näkee vain oman datansa + oman yrityksen tiimidatan; HR-roolilla laajempi näkyvyys. GRANTit jokaiselle taululle.
 
-### 2. Multi-language support (9 languages)
-- English, German, French, Spanish, Italian, Finnish, Swedish, Dutch, Danish.
-- Language switcher in the header, persisted in localStorage.
-- All homepage strings extracted to translation files.
+## Vaihe 2 — Web-app `/app`-reitin alle
+Mobiilinäkymä (max-leveys, alanavigaatio) kirjautuneille käyttäjille:
+- **Home** — tervehdys, wellbeing index -kortti, päivän tehtävät, aktiiviset haasteet, avoimet kutsut, kysely-kortti
+- **Activities** — aktiviteettilista, suoritusten kirjaus, suoritushistoria
+- **Challenges** — omat/yrityksen/avoimet haasteet, liittyminen, edistyminen, tulostaulu
+- **Community** — feed, uusi postaus, tykkäykset, kommentit
+- **Wellbeing Index** — kyselyn täyttö ja henkilökohtainen indeksi + trendi
+- **Profile / Settings** — profiilikuva, kieli, ilmoitukset, tilaus
 
-### 3. Authentication & user profiles
-- Email/password sign-up, login, logout, password reset.
-- Google sign-in.
-- `profiles` table linked to `auth.users` with display name, avatar URL, language preference, and role.
-- Auto-create profile on sign-up via database trigger.
-- Protected `/dashboard` or `/account` route placeholder for logged-in users.
+Kaikki tekstit i18n-järjestelmään (9 kieltä, jo olemassa).
 
-### 4. Contact form & newsletter backend
-- Contact submissions stored in a `contact_submissions` table.
-- Newsletter subscribers stored in a `newsletter_subscribers` table.
-- RLS policies so only admins can read; public can insert.
+## Vaihe 3 — Employer panel kytketään oikeaan dataan
+Nykyiset placeholderit (Wellbeing Index, Surveys, Challenges, Teams, Activate/Invite Users) luetaan samoista tauluista mock-datan sijaan.
 
-### 5. Paid subscriptions
-- Paddle is the recommended provider for this B2B SaaS product.
-- After you confirm, enable Paddle and create subscription products/prices.
-- Build a pricing/subscription page with Paddle checkout buttons.
+## Vaihe 4 — Datansiirto
+Kun saat exportin `api.vointy.io`:sta (JSON/CSV), ladataan käyttäjät, haasteet, aktiviteetit ja kyselyvastaukset tauluihin. Salasanoja ei voi siirtää — käyttäjille pakotettu salasanan resetointi ensikirjautumisella.
 
-### 6. Placeholder assets
-- Generate placeholder hero/feature images and a Vointy-style logo.
-- You can replace placeholders with original assets later without changing code.
+## Vaihe 5 — PWA
+Manifest + ikonit + theme color → asennettavissa kotinäytölle iOS/Android. Offline-tuki vain jos erikseen haluat.
 
-### 7. SEO / head metadata
-- Update `index.html` title/description to match Vointy.
-- Add canonical, OpenGraph, and Twitter tags.
+## Tekninen huomio
+Rakennetaan Lovable Cloudin päälle, ei `api.vointy.io`:ta vasten — muuten olisitte kiinni vanhassa backendissä. Vanha API voi pyöriä rinnalla kunnes natiiviapit poistetaan käytöstä.
 
-### 8. Capacitor readiness (after site is live)
-- Install Capacitor core + iOS/Android.
-- Configure app ID/name and hot-reload server URL.
-- Keep web layer as the single source of truth so the same code can be published to App Store / Google Play.
+## Ehdotettu järjestys
+1. Tietokantaskeema (Vaihe 1)
+2. `/app` runko + Home + Wellbeing Index
+3. Challenges + Activities
+4. Community
+5. Profile/Settings + Employer panelin kytkentä
+6. Datansiirto + PWA
 
-## Technical approach
-- Frontend: existing React + Vite + Tailwind + shadcn/ui project.
-- Backend: Lovable Cloud (already enabled) for auth, database, and edge functions.
-- Payments: Lovable-managed Paddle integration.
-- i18n: lightweight in-app dictionary (e.g. `i18next` or custom hook) to avoid external service dependencies.
-- Images: generated placeholders under `public/`, referenced as static assets.
-
-## Milestones / order of work
-1. Refresh homepage layout and content (placeholders, no backend).
-2. Add i18n framework and translate all homepage strings.
-3. Set up auth + profiles table + login/reset pages.
-4. Build contact form and newsletter tables/backend.
-5. Enable Paddle, create products, and build pricing/subscription page.
-6. Polish responsive design, SEO metadata, and preview.
-7. Add Capacitor config and instructions for native builds.
-
-## Open decisions
-- Please confirm Paddle for subscriptions so we can enable it.
-- Should the first version include an admin dashboard to view contact/newsletter submissions, or is email notification enough?
-- For the embedded "presentation video", do you have a YouTube/Vimeo URL, or should we use a placeholder video thumbnail?
+Aloitetaanko vaiheesta 1 ja 2?

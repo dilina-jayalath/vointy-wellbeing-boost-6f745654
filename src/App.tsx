@@ -30,6 +30,13 @@ import EmployerSubscriptions from "./pages/employer/Subscriptions";
 import EmployerInvite from "./pages/employer/InviteUsers";
 import EmployerActivate from "./pages/employer/ActivateUsers";
 import EmployerTeams from "./pages/employer/Teams";
+import AppLayout from "./pages/app/AppLayout";
+import AppHome from "./pages/app/Home";
+import AppActivities from "./pages/app/Activities";
+import AppChallenges from "./pages/app/Challenges";
+import AppCommunity from "./pages/app/Community";
+import AppWellbeing from "./pages/app/Wellbeing";
+import AppProfile from "./pages/app/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -88,6 +95,21 @@ const App = () => (
                 <Route path="invite" element={<EmployerInvite />} />
                 <Route path="activate" element={<EmployerActivate />} />
                 <Route path="teams" element={<EmployerTeams />} />
+              </Route>
+              <Route
+                path="/app"
+                element={
+                  <ProtectedRoute>
+                    <AppLayout />
+                  </ProtectedRoute>
+                }
+              >
+                <Route index element={<AppHome />} />
+                <Route path="activities" element={<AppActivities />} />
+                <Route path="challenges" element={<AppChallenges />} />
+                <Route path="community" element={<AppCommunity />} />
+                <Route path="wellbeing" element={<AppWellbeing />} />
+                <Route path="profile" element={<AppProfile />} />
               </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>

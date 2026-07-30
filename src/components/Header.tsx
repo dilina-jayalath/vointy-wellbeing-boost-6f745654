@@ -16,6 +16,7 @@ const Header = () => {
     { label: t('nav.benefits'), href: '#benefits' },
     { label: t('nav.testimonials'), href: '#testimonials' },
     { label: t('nav.pricing'), href: '/subscription', isLink: true },
+    ...(user ? [{ label: 'My Vointy', href: '/app', isLink: true }] : []),
     { label: 'Employer panel', href: '/employer', isLink: true },
   ];
 
