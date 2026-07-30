@@ -27,6 +27,7 @@ const InviteUsers = () => {
   const [email, setEmail] = useState("");
   const [list, setList] = useState<Recipient[]>([]);
   const [sending, setSending] = useState(false);
+  const [resending, setResending] = useState<string | null>(null);
   const [invitations, setInvitations] = useState<Invitation[]>([]);
   const fileRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
