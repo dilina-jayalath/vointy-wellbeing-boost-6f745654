@@ -70,7 +70,7 @@ export const useOpenSurveys = () =>
       const { data, error } = await supabase
         .from("wellbeing_surveys")
         .select("*, survey_questions(*)")
-        .eq("status", "active")
+        .in("status", ["active", "published"])
         .order("created_at", { ascending: false });
       if (error) throw error;
       return data;
