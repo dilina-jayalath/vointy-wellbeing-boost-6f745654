@@ -135,11 +135,11 @@ const Subscription = () => {
                     ))}
                   </ul>
                   <Button
+                    asChild
                     variant="outline"
                     className="w-full h-12 text-lg font-semibold border-2 border-brand-purple text-brand-purple hover:bg-brand-purple/5"
-                    onClick={scrollToForm}
                   >
-                    Get started free
+                    <Link to="/company-signup">Get started free</Link>
                   </Button>
                 </CardContent>
               </Card>
