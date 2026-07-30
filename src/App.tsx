@@ -30,6 +30,13 @@ import EmployerSubscriptions from "./pages/employer/Subscriptions";
 import EmployerInvite from "./pages/employer/InviteUsers";
 import EmployerActivate from "./pages/employer/ActivateUsers";
 import EmployerTeams from "./pages/employer/Teams";
+import AppLayout from "./pages/app/AppLayout";
+import AppHome from "./pages/app/Home";
+import AppActivities from "./pages/app/Activities";
+import AppChallenges from "./pages/app/Challenges";
+import AppCommunity from "./pages/app/Community";
+import AppWellbeing from "./pages/app/Wellbeing";
+import AppProfile from "./pages/app/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
