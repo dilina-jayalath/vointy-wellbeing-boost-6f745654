@@ -450,8 +450,12 @@ export type Database = {
           created_by: string | null
           id: string
           logo_url: string | null
+          monthly_amount: number
           name: string
+          plan: string
+          plan_started_at: string | null
           slug: string | null
+          trial_ends_at: string | null
           updated_at: string
         }
         Insert: {
@@ -459,8 +463,12 @@ export type Database = {
           created_by?: string | null
           id?: string
           logo_url?: string | null
+          monthly_amount?: number
           name: string
+          plan?: string
+          plan_started_at?: string | null
           slug?: string | null
+          trial_ends_at?: string | null
           updated_at?: string
         }
         Update: {
@@ -468,9 +476,40 @@ export type Database = {
           created_by?: string | null
           id?: string
           logo_url?: string | null
+          monthly_amount?: number
           name?: string
+          plan?: string
+          plan_started_at?: string | null
           slug?: string | null
+          trial_ends_at?: string | null
           updated_at?: string
+        }
+        Relationships: []
+      }
+      page_views: {
+        Row: {
+          created_at: string
+          id: string
+          path: string
+          referrer: string | null
+          session_id: string | null
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          path: string
+          referrer?: string | null
+          session_id?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          path?: string
+          referrer?: string | null
+          session_id?: string | null
+          user_id?: string | null
         }
         Relationships: []
       }

@@ -42,6 +42,7 @@ import AppCommunity from "./pages/app/Community";
 import AppWellbeing from "./pages/app/Wellbeing";
 import AppProfile from "./pages/app/Profile";
 import NotFound from "./pages/NotFound";
+import PageViewTracker from "./components/PageViewTracker";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <PageViewTracker />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/subscription" element={<Subscription />} />
