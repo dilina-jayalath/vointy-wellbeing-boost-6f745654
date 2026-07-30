@@ -18,6 +18,8 @@ import CookiePolicy from "./pages/CookiePolicy";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
+import CompanySignup from "./pages/CompanySignup";
+import JoinCompany from "./pages/JoinCompany";
 import Account from "./pages/Account";
 import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
