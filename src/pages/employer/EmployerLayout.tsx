@@ -1,14 +1,18 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import { Bell, RefreshCw, User as UserIcon, Languages } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { EmployerSidebar } from "@/components/employer/EmployerSidebar";
 import { Button } from "@/components/ui/button";
+import BackButton from "@/components/BackButton";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 
 const EmployerLayout = () => {
   const { profile } = useAuth();
   const { orgName } = useEmployerOrg();
+  const { pathname } = useLocation();
+  const showBack = pathname !== "/employer";
+
 
   return (
     <SidebarProvider>
@@ -19,9 +23,13 @@ const EmployerLayout = () => {
           <header className="h-16 flex items-center justify-between px-4 bg-gradient-to-r from-brand-purple to-brand-blue text-white">
             <div className="flex items-center gap-2">
               <SidebarTrigger className="text-white hover:bg-white/10" />
+              {showBack && (
+                <BackButton fallback="/employer" className="text-white hover:bg-white/10 hover:text-white px-2" />
+              )}
               <Link to="/" className="text-lg font-bold ml-2 hidden sm:inline">
                 Vointy<span className="opacity-80">.life</span>
               </Link>
+
               {orgName && <span className="hidden md:inline text-sm text-white/80 ml-3">{orgName}</span>}
             </div>
             <div className="flex items-center gap-2 sm:gap-3">

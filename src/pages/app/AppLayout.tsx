@@ -1,7 +1,8 @@
-import { Outlet, NavLink, Link } from "react-router-dom";
+import { Outlet, NavLink, Link, useLocation } from "react-router-dom";
 import { Home, Activity, Trophy, Users, HeartPulse, User as UserIcon } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import BackButton from "@/components/BackButton";
 
 const navItems = [
   { to: "/app", end: true, icon: Home, label: "Home" },
@@ -13,14 +14,23 @@ const navItems = [
 
 const AppLayout = () => {
   const { profile } = useAuth();
+  const { pathname } = useLocation();
+  const showBack = pathname !== "/app";
+
 
   return (
     <div className="min-h-screen bg-muted/40">
       <div className="mx-auto w-full max-w-md min-h-screen bg-background flex flex-col shadow-xl">
         <header className="sticky top-0 z-20 bg-gradient-to-r from-brand-purple to-brand-blue text-primary-foreground px-4 py-3 flex items-center justify-between">
-          <Link to="/app" className="font-bold text-lg">
-            Vointy<span className="opacity-80">.life</span>
-          </Link>
+          <div className="flex items-center gap-1">
+            {showBack && (
+              <BackButton fallback="/app" className="text-primary-foreground hover:bg-white/10 hover:text-primary-foreground px-2" />
+            )}
+            <Link to="/app" className="font-bold text-lg">
+              Vointy<span className="opacity-80">.life</span>
+            </Link>
+          </div>
+
           <div className="flex items-center gap-2">
             <LanguageSwitcher />
             <NavLink
