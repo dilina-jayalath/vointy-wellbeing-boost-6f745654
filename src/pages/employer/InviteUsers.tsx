@@ -97,23 +97,72 @@ const InviteUsers = () => {
     loadInvitations();
   };
 
+  const sendInviteEmail = async (inv: Invitation) => {
+    await supabase.functions.invoke("send-transactional-email", {
+      body: {
+        templateName: "employee-invitation",
+        recipientEmail: inv.email,
+        idempotencyKey: `employee-invitation-${inv.id}`,
+        templateData: {
+          name: inv.name ?? undefined,
+          organizationName: orgName ?? undefined,
+          joinUrl: inviteLink(inv.token),
+        },
+      },
+    });
+  };
+
+  const resendInvite = async (inv: Invitation) => {
+    setResending(inv.id);
+    try {
+      await supabase.functions.invoke("send-transactional-email", {
+        body: {
+          templateName: "employee-invitation",
+          recipientEmail: inv.email,
+          idempotencyKey: `employee-invitation-${inv.id}-${Date.now()}`,
+          templateData: {
+            name: inv.name ?? undefined,
+            organizationName: orgName ?? undefined,
+            joinUrl: inviteLink(inv.token),
+          },
+        },
+      });
+      toast({ title: "Invitation email sent", description: inv.email });
+    } catch (e) {
+      toast({ title: "Could not send email", variant: "destructive" });
+    } finally {
+      setResending(null);
+    }
+  };
+
   const sendAll = async () => {
     if (!orgId || !user) return;
     setSending(true);
-    const { error } = await supabase.from("organization_invitations").insert(
-      list.map((r) => ({
-        organization_id: orgId,
-        invited_by: user.id,
-        email: r.email,
-        name: r.name,
-      }))
-    );
-    setSending(false);
+    const { data, error } = await supabase
+      .from("organization_invitations")
+      .insert(
+        list.map((r) => ({
+          organization_id: orgId,
+          invited_by: user.id,
+          email: r.email,
+          name: r.name,
+        }))
+      )
+      .select("id, name, email, token, status, created_at");
     if (error) {
+      setSending(false);
       toast({ title: "Could not create invitations", description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: "Invitations created", description: `${list.length} employee(s) can now join.` });
+    const created = (data as Invitation[]) ?? [];
+    for (const inv of created) {
+      await sendInviteEmail(inv);
+    }
+    setSending(false);
+    toast({
+      title: "Invitations sent",
+      description: `${created.length} employee(s) received an invitation email.`,
+    });
     setList([]);
     loadInvitations();
   };
