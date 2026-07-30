@@ -16,7 +16,14 @@ const Subscriptions = () => (
         <CardContent className="space-y-2 text-sm">
           <p>30 days remaining. Unlimited users, teams and activities during trial.</p>
           <ul className="space-y-1 mt-3">
-            {["Unlimited employees", "Unlimited teams", "All activities"].map((f) => (
+            {[
+              "Unlimited employees",
+              "Unlimited teams",
+              "All activities",
+              "Management dashboard",
+              "Reporting",
+              "No per-user fees",
+            ].map((f) => (
               <li key={f} className="flex gap-2 items-center">
                 <CheckCircle2 className="h-4 w-4 text-brand-purple" /> {f}
               </li>
