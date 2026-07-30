@@ -74,12 +74,33 @@ const AppActivities = () => {
             </p>
           )}
           {(activities ?? []).map((a: any) => (
-            <Card key={a.id}>
-              <CardContent className="p-4 flex items-center justify-between gap-3">
-                <div>
+            <Card key={a.id} className="overflow-hidden">
+              <CardContent className="p-4 flex items-center gap-3">
+                {a.image_url && (
+                  <img
+                    src={a.image_url}
+                    alt={a.title}
+                    loading="lazy"
+                    className="h-16 w-16 rounded-md object-cover flex-shrink-0"
+                  />
+                )}
+                <div className="min-w-0 flex-1">
                   <p className="font-medium">{a.title}</p>
                   <p className="text-xs text-muted-foreground line-clamp-2">{a.description}</p>
-                  <p className="text-xs text-brand-purple mt-1">{a.points} pts · {a.unit}</p>
+                  <p className="text-xs text-brand-purple mt-1">
+                    {a.points} pts · {a.unit}
+                    {a.category ? ` · ${a.category}` : ""}
+                  </p>
+                  {a.link && (
+                    <a
+                      href={a.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs underline text-muted-foreground"
+                    >
+                      Open guide
+                    </a>
+                  )}
                 </div>
                 <Button size="sm" onClick={() => setSelected(a)}>
                   <Plus className="h-4 w-4" />
