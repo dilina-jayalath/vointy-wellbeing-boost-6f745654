@@ -4,9 +4,11 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { EmployerSidebar } from "@/components/employer/EmployerSidebar";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
+import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 
 const EmployerLayout = () => {
   const { profile } = useAuth();
+  const { orgName } = useEmployerOrg();
 
   return (
     <SidebarProvider>
@@ -20,6 +22,7 @@ const EmployerLayout = () => {
               <Link to="/" className="text-lg font-bold ml-2 hidden sm:inline">
                 Vointy<span className="opacity-80">.life</span>
               </Link>
+              {orgName && <span className="hidden md:inline text-sm text-white/80 ml-3">{orgName}</span>}
             </div>
             <div className="flex items-center gap-2 sm:gap-3">
               <div className="hidden md:flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-sm">

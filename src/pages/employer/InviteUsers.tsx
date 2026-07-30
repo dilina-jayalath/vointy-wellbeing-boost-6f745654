@@ -1,12 +1,24 @@
-import { useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { Plus, Upload, Download, Info, Trash2, User, Mail } from "lucide-react";
+import { Plus, Upload, Download, Info, Trash2, User, Mail, Copy, Loader2, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/contexts/AuthContext";
+import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 
 interface Recipient { id: string; name: string; email: string; }
+
+interface Invitation {
+  id: string;
+  name: string | null;
+  email: string;
+  token: string;
+  status: string;
+  created_at: string;
+}
 
 const emailRe = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
@@ -14,8 +26,26 @@ const InviteUsers = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [list, setList] = useState<Recipient[]>([]);
+  const [sending, setSending] = useState(false);
+  const [invitations, setInvitations] = useState<Invitation[]>([]);
   const fileRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
+  const { user } = useAuth();
+  const { orgId, orgName, loading: orgLoading } = useEmployerOrg();
+
+  const loadInvitations = useCallback(async () => {
+    if (!orgId) return;
+    const { data } = await supabase
+      .from("organization_invitations")
+      .select("id, name, email, token, status, created_at")
+      .eq("organization_id", orgId)
+      .order("created_at", { ascending: false });
+    setInvitations((data as Invitation[]) ?? []);
+  }, [orgId]);
+
+  useEffect(() => {
+    loadInvitations();
+  }, [loadInvitations]);
 
   const add = () => {
     if (!name.trim() || !emailRe.test(email)) {
@@ -43,9 +73,9 @@ const InviteUsers = () => {
   const onUpload = async (file: File) => {
     const text = await file.text();
     const lines = text.split(/\r?\n/).filter(Boolean);
-    const header = lines[0]?.toLowerCase().includes("email") ? lines.slice(1) : lines;
+    const rows = lines[0]?.toLowerCase().includes("email") ? lines.slice(1) : lines;
     const parsed: Recipient[] = [];
-    for (const line of header) {
+    for (const line of rows) {
       const [a, b] = line.split(",").map((s) => s.trim());
       const em = emailRe.test(a) ? a : emailRe.test(b) ? b : "";
       const nm = emailRe.test(a) ? b || "" : a || "";
@@ -55,14 +85,45 @@ const InviteUsers = () => {
     toast({ title: "CSV imported", description: `${parsed.length} recipient(s) added.` });
   };
 
-  const sendAll = () => {
-    toast({ title: "Invitations sent", description: `${list.length} invitation(s) queued.` });
+  const inviteLink = (token: string) => `${window.location.origin}/join?token=${token}`;
+
+  const copyLink = async (token: string) => {
+    await navigator.clipboard.writeText(inviteLink(token));
+    toast({ title: "Invitation link copied" });
+  };
+
+  const cancelInvite = async (id: string) => {
+    await supabase.from("organization_invitations").delete().eq("id", id);
+    loadInvitations();
+  };
+
+  const sendAll = async () => {
+    if (!orgId || !user) return;
+    setSending(true);
+    const { error } = await supabase.from("organization_invitations").insert(
+      list.map((r) => ({
+        organization_id: orgId,
+        invited_by: user.id,
+        email: r.email,
+        name: r.name,
+      }))
+    );
+    setSending(false);
+    if (error) {
+      toast({ title: "Could not create invitations", description: error.message, variant: "destructive" });
+      return;
+    }
+    toast({ title: "Invitations created", description: `${list.length} employee(s) can now join.` });
     setList([]);
+    loadInvitations();
   };
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-bold text-brand-purple">Add Users</h1>
+      <div>
+        <h1 className="text-3xl font-bold text-brand-purple">Invite employees</h1>
+        {orgName && <p className="text-muted-foreground mt-1">Company: {orgName}</p>}
+      </div>
 
       <Card>
         <CardHeader>
@@ -110,6 +171,17 @@ const InviteUsers = () => {
               ))}
             </div>
           )}
+
+          {list.length > 0 && (
+            <div className="flex justify-end">
+              <Button onClick={sendAll} disabled={sending || orgLoading || !orgId}
+                className="bg-brand-purple hover:bg-brand-purple-dark uppercase">
+                {sending ? <Loader2 className="h-4 w-4 animate-spin" /> : (
+                  <><Send className="h-4 w-4 mr-1" /> Send {list.length} invitation{list.length > 1 ? "s" : ""}</>
+                )}
+              </Button>
+            </div>
+          )}
         </CardContent>
       </Card>
 
@@ -145,26 +217,56 @@ const InviteUsers = () => {
 
       <Card>
         <CardHeader>
+          <CardTitle className="text-lg">Invitations</CardTitle>
+        </CardHeader>
+        <CardContent>
+          {orgLoading ? (
+            <div className="flex justify-center py-6"><Loader2 className="h-5 w-5 animate-spin text-brand-purple" /></div>
+          ) : invitations.length === 0 ? (
+            <p className="text-sm text-muted-foreground">No invitations yet.</p>
+          ) : (
+            <div className="border rounded-md divide-y">
+              {invitations.map((inv) => (
+                <div key={inv.id} className="flex items-center justify-between gap-3 px-4 py-3 text-sm">
+                  <div className="min-w-0">
+                    <div className="font-medium truncate">{inv.name || "—"}</div>
+                    <div className="text-muted-foreground truncate">{inv.email}</div>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <span className={`text-xs rounded-full px-2 py-1 ${inv.status === "accepted" ? "bg-green-100 text-green-700" : "bg-amber-100 text-amber-700"}`}>
+                      {inv.status}
+                    </span>
+                    {inv.status === "pending" && (
+                      <>
+                        <Button size="icon" variant="ghost" onClick={() => copyLink(inv.token)} title="Copy invitation link">
+                          <Copy className="h-4 w-4" />
+                        </Button>
+                        <Button size="icon" variant="ghost" onClick={() => cancelInvite(inv.id)} title="Cancel invitation">
+                          <Trash2 className="h-4 w-4" />
+                        </Button>
+                      </>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
           <CardTitle className="text-lg">How it works</CardTitle>
         </CardHeader>
         <CardContent>
           <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
             <li>Add names and email addresses manually or upload a CSV file for bulk import</li>
-            <li>Download the CSV template to see the correct format</li>
-            <li>Users will receive an invitation to join the Vointy App</li>
-            <li>You can add multiple names and emails and send all invites at once</li>
-            <li>Invalid emails or names will be highlighted and can be corrected</li>
+            <li>Each invitation gets a personal join link you can copy and share</li>
+            <li>Invited employees create their password and join your company automatically</li>
+            <li>Accepted invitations are marked in the list above</li>
           </ul>
         </CardContent>
       </Card>
-
-      {list.length > 0 && (
-        <div className="flex justify-end">
-          <Button onClick={sendAll} className="bg-brand-purple hover:bg-brand-purple-dark uppercase">
-            Send {list.length} Invitation{list.length > 1 ? "s" : ""}
-          </Button>
-        </div>
-      )}
     </div>
   );
 };

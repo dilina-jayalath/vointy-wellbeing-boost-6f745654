@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check, CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -135,11 +136,11 @@ const Subscription = () => {
                     ))}
                   </ul>
                   <Button
+                    asChild
                     variant="outline"
                     className="w-full h-12 text-lg font-semibold border-2 border-brand-purple text-brand-purple hover:bg-brand-purple/5"
-                    onClick={scrollToForm}
                   >
-                    Get started free
+                    <Link to="/company-signup">Get started free</Link>
                   </Button>
                 </CardContent>
               </Card>

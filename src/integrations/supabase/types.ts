@@ -300,6 +300,63 @@ export type Database = {
         }
         Relationships: []
       }
+      organization_invitations: {
+        Row: {
+          accepted_at: string | null
+          created_at: string
+          email: string
+          id: string
+          invited_by: string | null
+          name: string | null
+          organization_id: string
+          status: string
+          team_id: string | null
+          token: string
+          updated_at: string
+        }
+        Insert: {
+          accepted_at?: string | null
+          created_at?: string
+          email: string
+          id?: string
+          invited_by?: string | null
+          name?: string | null
+          organization_id: string
+          status?: string
+          team_id?: string | null
+          token?: string
+          updated_at?: string
+        }
+        Update: {
+          accepted_at?: string | null
+          created_at?: string
+          email?: string
+          id?: string
+          invited_by?: string | null
+          name?: string | null
+          organization_id?: string
+          status?: string
+          team_id?: string | null
+          token?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "organization_invitations_organization_id_fkey"
+            columns: ["organization_id"]
+            isOneToOne: false
+            referencedRelation: "organizations"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "organization_invitations_team_id_fkey"
+            columns: ["team_id"]
+            isOneToOne: false
+            referencedRelation: "teams"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       organizations: {
         Row: {
           created_at: string
@@ -759,6 +816,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      accept_invitation: { Args: { _token: string }; Returns: string }
       current_org_id: { Args: never; Returns: string }
       has_role: {
         Args: {
@@ -766,6 +824,15 @@ export type Database = {
           _user_id: string
         }
         Returns: boolean
+      }
+      invitation_info: {
+        Args: { _token: string }
+        Returns: {
+          email: string
+          name: string
+          organization_name: string
+          status: string
+        }[]
       }
     }
     Enums: {
