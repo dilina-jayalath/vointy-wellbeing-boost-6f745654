@@ -233,7 +233,7 @@ const InviteUsers = () => {
 
           {list.length > 0 && (
             <div className="flex justify-end">
-              <Button onClick={sendAll} disabled={sending || orgLoading || !orgId}
+              <Button onClick={sendAll} disabled={sending || orgLoading}
                 className="bg-brand-purple hover:bg-brand-purple-dark uppercase">
                 {sending ? <Loader2 className="h-4 w-4 animate-spin" /> : (
                   <><Send className="h-4 w-4 mr-1" /> Send {list.length} invitation{list.length > 1 ? "s" : ""}</>
