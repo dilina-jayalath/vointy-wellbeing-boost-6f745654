@@ -1,42 +1,77 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
-import { useWellbeingScores, useOpenSurveys } from "@/hooks/useAppData";
+import { useActivityLog, useOpenSurveys } from "@/hooks/useAppData";
 import { useTranslation } from "@/lib/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { toast } from "@/hooks/use-toast";
-import { HeartPulse } from "lucide-react";
-import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
+import { Activity as ActivityIcon } from "lucide-react";
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
 
 const localized = (value: any, lang: string) =>
   typeof value === "object" && value !== null ? value[lang] ?? value.en ?? "" : value ?? "";
 
-const AppWellbeing = () => {
-  const { user, profile } = useAuth();
+const monthKey = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+
+const AppActivityIndex = () => {
+  const { user } = useAuth();
   const { language } = useTranslation();
   const qc = useQueryClient();
-  const { data: scores } = useWellbeingScores();
+  const { data: log } = useActivityLog();
   const { data: surveys } = useOpenSurveys();
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [saving, setSaving] = useState(false);
 
   const survey = surveys?.[0];
   const questions = (survey?.survey_questions ?? []).sort((a: any, b: any) => a.position - b.position);
-  const latest = scores?.length ? Number(scores[scores.length - 1].score) : null;
 
-  const chartData = (scores ?? []).map((s: any) => ({
-    date: new Date(s.recorded_at).toLocaleDateString(undefined, { month: "short", day: "numeric" }),
-    score: Number(s.score),
-  }));
+  // 1 point per performed activity. Monthly sums, and a running total for the
+  // membership year that started when the user joined.
+  const { thisMonth, yearTotal, chartData, yearLabel } = useMemo(() => {
+    const joined = user?.created_at ? new Date(user.created_at) : new Date();
+    const now = new Date();
+
+    // Current membership year window (anniversary based)
+    const yearStart = new Date(joined);
+    while (yearStart <= now) yearStart.setFullYear(yearStart.getFullYear() + 1);
+    yearStart.setFullYear(yearStart.getFullYear() - 1);
+
+    const entries = (log ?? []).map((e: any) => new Date(e.performed_at));
+    const inYear = entries.filter((d) => d >= yearStart && d <= now);
+
+    const counts: Record<string, number> = {};
+    inYear.forEach((d) => {
+      const k = monthKey(d);
+      counts[k] = (counts[k] ?? 0) + 1;
+    });
+
+    // Build the 12 months of the current membership year up to now
+    const months: { month: string; points: number }[] = [];
+    const cursor = new Date(yearStart.getFullYear(), yearStart.getMonth(), 1);
+    while (cursor <= now) {
+      const k = monthKey(cursor);
+      months.push({
+        month: cursor.toLocaleDateString(undefined, { month: "short" }),
+        points: counts[k] ?? 0,
+      });
+      cursor.setMonth(cursor.getMonth() + 1);
+    }
+
+    return {
+      thisMonth: counts[monthKey(now)] ?? 0,
+      yearTotal: inYear.length,
+      chartData: months,
+      yearLabel: `${yearStart.toLocaleDateString(undefined, { month: "short", year: "numeric" })} →`,
+    };
+  }, [log, user?.created_at]);
 
   const submit = async () => {
     if (!user || !survey) return;
-    const values = questions.map((q: any) => answers[q.id] ?? 5);
     setSaving(true);
-    const { error: answerError } = await supabase.from("survey_answers").insert(
+    const { error } = await supabase.from("survey_answers").insert(
       questions.map((q: any) => ({
         survey_id: survey.id,
         question_id: q.id,
@@ -44,69 +79,60 @@ const AppWellbeing = () => {
         answer_value: answers[q.id] ?? 5,
       }))
     );
-    if (answerError) {
-      setSaving(false);
-      toast({ title: "Could not submit", description: answerError.message, variant: "destructive" });
-      return;
-    }
-    const score = values.length ? (values.reduce((a, b) => a + b, 0) / values.length) * 10 : 0;
-    const { error } = await supabase.from("wellbeing_index_scores").insert({
-      user_id: user.id,
-      organization_id: (profile as any)?.organization_id ?? null,
-      survey_id: survey.id,
-      score,
-    });
     setSaving(false);
     if (error) {
-      toast({ title: "Could not save score", description: error.message, variant: "destructive" });
+      toast({ title: "Could not submit", description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: "Thanks!", description: `Your wellbeing index is now ${Math.round(score)}.` });
+    toast({ title: "Thanks!", description: "Your answers were saved." });
     setAnswers({});
-    qc.invalidateQueries({ queryKey: ["wellbeing-scores"] });
+    qc.invalidateQueries({ queryKey: ["open-surveys"] });
   };
 
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-bold flex items-center gap-2">
-        <HeartPulse className="h-6 w-6 text-brand-purple" /> Wellbeing Index
+        <ActivityIcon className="h-6 w-6 text-brand-purple" /> Activity Index
       </h1>
 
       <Card className="bg-gradient-to-br from-brand-purple to-brand-blue text-primary-foreground border-0">
         <CardContent className="p-6 text-center">
-          <p className="text-5xl font-bold">{latest !== null ? Math.round(latest) : "—"}</p>
-          <p className="text-sm opacity-90">out of 100</p>
+          <p className="text-5xl font-bold">{yearTotal}</p>
+          <p className="text-sm opacity-90">points this membership year</p>
+          <p className="text-xs opacity-75 mt-1">{thisMonth} points this month</p>
         </CardContent>
       </Card>
 
-      {chartData.length > 1 && (
+      <p className="text-xs text-muted-foreground">
+        Every completed activity earns 1 point. Points are summed per month and accumulated over
+        your membership year, starting from the day you joined.
+      </p>
+
+      {chartData.length > 0 && (
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle className="text-base">Trend</CardTitle>
+            <CardTitle className="text-base">Monthly points · {yearLabel}</CardTitle>
           </CardHeader>
           <CardContent className="h-48">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={chartData}>
-                <XAxis dataKey="date" fontSize={11} />
-                <YAxis domain={[0, 100]} fontSize={11} width={28} />
+              <BarChart data={chartData}>
+                <XAxis dataKey="month" fontSize={11} />
+                <YAxis allowDecimals={false} fontSize={11} width={28} />
                 <Tooltip />
-                <Line type="monotone" dataKey="score" stroke="#9b87f5" strokeWidth={2} dot={false} />
-              </LineChart>
+                <Bar dataKey="points" fill="#9b87f5" radius={[4, 4, 0, 0]} />
+              </BarChart>
             </ResponsiveContainer>
           </CardContent>
         </Card>
       )}
 
-      {survey ? (
+      {survey && questions.length > 0 && (
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-base">{localized(survey.title, language)}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-5">
             <p className="text-sm text-muted-foreground">{localized(survey.description, language)}</p>
-            {questions.length === 0 && (
-              <p className="text-sm text-muted-foreground">This survey has no questions yet.</p>
-            )}
             {questions.map((q: any) => (
               <div key={q.id} className="space-y-2">
                 <p className="text-sm font-medium">{localized(q.question, language)}</p>
@@ -120,20 +146,14 @@ const AppWellbeing = () => {
                 <p className="text-xs text-muted-foreground text-right">{answers[q.id] ?? 5} / 10</p>
               </div>
             ))}
-            {questions.length > 0 && (
-              <Button className="w-full" onClick={submit} disabled={saving}>
-                {saving ? "Saving…" : "Submit"}
-              </Button>
-            )}
+            <Button className="w-full" onClick={submit} disabled={saving}>
+              {saving ? "Saving…" : "Submit"}
+            </Button>
           </CardContent>
         </Card>
-      ) : (
-        <p className="text-sm text-muted-foreground">
-          No active survey right now. Your index updates when your employer opens a new survey.
-        </p>
       )}
     </div>
   );
 };
 
-export default AppWellbeing;
+export default AppActivityIndex;

@@ -1,5 +1,5 @@
 import { Outlet, NavLink, Link, useLocation } from "react-router-dom";
-import { Home, Activity, Trophy, Users, HeartPulse, User as UserIcon } from "lucide-react";
+import { Home, Activity, Trophy, Users, BarChart3 as ActivityIcon2, User as UserIcon } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import BackButton from "@/components/BackButton";
@@ -9,7 +9,7 @@ const navItems = [
   { to: "/app/activities", icon: Activity, label: "Activities" },
   { to: "/app/challenges", icon: Trophy, label: "Challenges" },
   { to: "/app/community", icon: Users, label: "Community" },
-  { to: "/app/wellbeing", icon: HeartPulse, label: "Wellbeing" },
+  { to: "/app/wellbeing", icon: ActivityIcon2, label: "Index" },
 ];
 
 const AppLayout = () => {

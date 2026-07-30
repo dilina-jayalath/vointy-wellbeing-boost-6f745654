@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { HeartPulse, Trophy, Activity as ActivityIcon, ClipboardList, ChevronRight } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import {
-  useWellbeingScores,
+  useActivityLog,
   usePerformedExercises,
   useChallenges,
   useOpenSurveys,
@@ -15,18 +15,25 @@ import {
 
 const AppHome = () => {
   const { user, profile } = useAuth();
-  const { data: scores } = useWellbeingScores();
+  const { data: log } = useActivityLog();
   const { data: exercises } = usePerformedExercises();
   const { data: challenges } = useChallenges();
   const { data: surveys } = useOpenSurveys();
 
-  const latestScore = scores?.length ? Number(scores[scores.length - 1].score) : null;
+  const yearPoints = useMemo(() => {
+    const joined = user?.created_at ? new Date(user.created_at) : new Date();
+    const now = new Date();
+    const yearStart = new Date(joined);
+    while (yearStart <= now) yearStart.setFullYear(yearStart.getFullYear() + 1);
+    yearStart.setFullYear(yearStart.getFullYear() - 1);
+    return (log ?? []).filter((e: any) => new Date(e.performed_at) >= yearStart).length;
+  }, [log, user?.created_at]);
 
   const todayPoints = useMemo(() => {
     const today = new Date().toDateString();
     return (exercises ?? [])
       .filter((e: any) => new Date(e.performed_at).toDateString() === today)
-      .reduce((sum: number, e: any) => sum + (e.points ?? 0), 0);
+      .length;
   }, [exercises]);
 
   const myChallenges = (challenges ?? []).filter((c: any) =>
@@ -50,10 +57,10 @@ const AppHome = () => {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm opacity-90 flex items-center gap-1">
-                <HeartPulse className="h-4 w-4" /> Wellbeing Index
+                <HeartPulse className="h-4 w-4" /> Activity Index
               </p>
-              <p className="text-4xl font-bold mt-1">{latestScore !== null ? Math.round(latestScore) : "—"}</p>
-              <p className="text-xs opacity-80">out of 100</p>
+              <p className="text-4xl font-bold mt-1">{yearPoints}</p>
+              <p className="text-xs opacity-80">points this year</p>
             </div>
             <Button asChild variant="secondary" size="sm">
               <Link to="/app/wellbeing">View</Link>
@@ -86,7 +93,7 @@ const AppHome = () => {
               <p className="font-medium flex items-center gap-2">
                 <ClipboardList className="h-4 w-4 text-brand-purple" /> Survey open
               </p>
-              <p className="text-sm text-muted-foreground">Answer to update your wellbeing index.</p>
+              <p className="text-sm text-muted-foreground">Answer a few quick questions.</p>
             </div>
             <Button asChild size="sm">
               <Link to="/app/wellbeing">Answer</Link>

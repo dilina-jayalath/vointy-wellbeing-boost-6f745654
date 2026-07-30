@@ -1,15 +1,18 @@
 import Placeholder from "./Placeholder";
 
-const WellbeingIndex = () => (
+const ActivityIndex = () => (
   <Placeholder
-    title="Wellbeing Index"
-    description="Track how your organisation's wellbeing evolves over time."
+    title="Activity Index"
+    description="Track how active your organisation is over time."
     sections={[
-      { title: "Overall Index", body: "Aggregate wellbeing score across all active teams and employees." },
-      { title: "Trend", body: "Monthly and quarterly comparison of the wellbeing index." },
-      { title: "Team Breakdown", body: "Per-team wellbeing score with drill-down." },
-      { title: "Recommendations", body: "Automated suggestions to raise the index." },
+      {
+        title: "How it is calculated",
+        body: "Every completed activity gives an employee 1 point. Points are summed per month and accumulated over the membership year that starts when the employee joins.",
+      },
+      { title: "Monthly points", body: "Total activity points per month across all active teams and employees." },
+      { title: "Yearly total", body: "Accumulated points per employee since they joined." },
+      { title: "Team Breakdown", body: "Per-team activity points with drill-down." },
     ]}
   />
 );
-export default WellbeingIndex;
+export default ActivityIndex;
