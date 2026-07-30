@@ -90,3 +90,19 @@ export const useCommunityFeed = () =>
       return data;
     },
   });
+
+export const useActivityLog = () => {
+  const { user } = useAuth();
+  return useQuery({
+    queryKey: ["activity-log", user?.id],
+    enabled: !!user,
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("performed_exercises")
+        .select("id, performed_at, activity_id, activities(title)")
+        .order("performed_at", { ascending: true });
+      if (error) throw error;
+      return data;
+    },
+  });
+};
