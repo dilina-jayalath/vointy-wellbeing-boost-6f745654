@@ -1,7 +1,7 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 import { Home, Activity, Trophy, Users, HeartPulse, User as UserIcon } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const navItems = [
   { to: "/app", end: true, icon: Home, label: "Home" },
