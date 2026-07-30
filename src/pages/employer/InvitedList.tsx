@@ -42,6 +42,23 @@ const InvitedList = () => {
   const { orgId, loading: orgLoading } = useEmployerOrg();
   const [rows, setRows] = useState<Row[]>([]);
   const [loading, setLoading] = useState(true);
+  const [removingId, setRemovingId] = useState<string | null>(null);
+
+  const handleRemove = async (row: Row) => {
+    setRemovingId(row.id);
+    const { error } = await supabase
+      .from("organization_invitations")
+      .delete()
+      .eq("id", row.id);
+    setRemovingId(null);
+    if (error) {
+      toast.error("Could not remove invitation", { description: error.message });
+      return;
+    }
+    setRows((prev) => prev.filter((r) => r.id !== row.id));
+    toast.success(`Removed ${row.email}`);
+  };
+
 
   useEffect(() => {
     if (!orgId) return;
