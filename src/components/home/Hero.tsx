@@ -27,7 +27,7 @@ const Hero = () => {
               {t('hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <Link to="/signup">
+              <Link to="/company-signup">
                 <Button className="btn-primary text-lg px-8 py-6 h-auto">
                   {t('hero.ctaFree')}
                 </Button>
