@@ -96,6 +96,21 @@ const App = () => (
                 <Route path="activate" element={<EmployerActivate />} />
                 <Route path="teams" element={<EmployerTeams />} />
               </Route>
+              <Route
+                path="/app"
+                element={
+                  <ProtectedRoute>
+                    <AppLayout />
+                  </ProtectedRoute>
+                }
+              >
+                <Route index element={<AppHome />} />
+                <Route path="activities" element={<AppActivities />} />
+                <Route path="challenges" element={<AppChallenges />} />
+                <Route path="community" element={<AppCommunity />} />
+                <Route path="wellbeing" element={<AppWellbeing />} />
+                <Route path="profile" element={<AppProfile />} />
+              </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
