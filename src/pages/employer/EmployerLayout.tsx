@@ -23,7 +23,10 @@ const EmployerLayout = () => {
           <header className="h-16 flex items-center justify-between px-4 bg-gradient-to-r from-brand-purple to-brand-blue text-white">
             <div className="flex items-center gap-2">
               <SidebarTrigger className="text-white hover:bg-white/10" />
-              <Link to="/" className="text-lg font-bold ml-2 hidden sm:inline">
+              {showBack && (
+                <BackButton fallback="/employer" className="text-white hover:bg-white/10 hover:text-white px-2" />
+              )}
+
                 Vointy<span className="opacity-80">.life</span>
               </Link>
               {orgName && <span className="hidden md:inline text-sm text-white/80 ml-3">{orgName}</span>}
