@@ -37,6 +37,26 @@ export const useEmployerOrg = () => {
       return;
     }
 
+    // Fall back to an organization this user already created
+    const { data: ownOrg } = await supabase
+      .from("organizations")
+      .select("id, name")
+      .eq("created_by", user.id)
+      .order("created_at", { ascending: true })
+      .limit(1)
+      .maybeSingle();
+
+    if (ownOrg) {
+      await supabase
+        .from("profiles")
+        .update({ organization_id: ownOrg.id })
+        .eq("user_id", user.id);
+      setOrgId(ownOrg.id);
+      setOrgName(ownOrg.name);
+      setLoading(false);
+      return;
+    }
+
     const companyName =
       (user.user_metadata?.company_name as string | undefined)?.trim() ||
       `${user.email?.split("@")[0] ?? "My"} company`;
@@ -48,6 +68,7 @@ export const useEmployerOrg = () => {
       .single();
 
     if (error || !created) {
+      console.error("Failed to create organization", error);
       setLoading(false);
       return;
     }
@@ -60,6 +81,7 @@ export const useEmployerOrg = () => {
     setOrgId(created.id);
     setOrgName(created.name);
     setLoading(false);
+
   }, [user]);
 
   useEffect(() => {
