@@ -9,6 +9,7 @@ import {
   UserCheck,
   Users,
   MailCheck,
+  Dumbbell,
 } from "lucide-react";
 import {
   Sidebar,
@@ -23,6 +24,7 @@ import {
 const items = [
   { title: "Dashboard", url: "/employer", icon: LayoutDashboard, end: true },
   { title: "Activity Index", url: "/employer/wellbeing", icon: Building2 },
+  { title: "Activities", url: "/employer/activities", icon: Dumbbell },
   { title: "Surveys", url: "/employer/surveys", icon: ClipboardList },
   { title: "Challenges", url: "/employer/challenges", icon: Trophy },
   { title: "Subscriptions", url: "/employer/subscriptions", icon: CreditCard },

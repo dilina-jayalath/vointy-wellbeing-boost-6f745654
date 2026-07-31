@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/dialog";
 import { toast } from "@/hooks/use-toast";
 import { Plus, PlayCircle } from "lucide-react";
+import { MyActivities } from "@/components/app/MyActivities";
 
 const youTubeId = (url?: string | null) => {
   if (!url) return null;
@@ -71,8 +72,14 @@ const AppActivities = () => {
       <Tabs defaultValue="all">
         <TabsList className="w-full">
           <TabsTrigger value="all" className="flex-1">All</TabsTrigger>
+          <TabsTrigger value="mine" className="flex-1">My own</TabsTrigger>
           <TabsTrigger value="history" className="flex-1">History</TabsTrigger>
         </TabsList>
+
+        <TabsContent value="mine" className="mt-4">
+          <MyActivities />
+        </TabsContent>
+
 
         <TabsContent value="all" className="space-y-3 mt-4">
           {isLoading && <p className="text-sm text-muted-foreground">Loading…</p>}
