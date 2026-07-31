@@ -14,6 +14,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "@/hooks/use-toast";
 import { Pencil, Plus, Trash2, UserPlus, Clock, PlayCircle } from "lucide-react";
 import { ActivityForm, type CustomActivity } from "./ActivityForm";
