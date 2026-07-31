@@ -101,13 +101,21 @@ export const MyActivities = () => {
           <CardContent className="p-4 space-y-3">
             <div className="flex items-start gap-3">
               {a.image_url && (
-                <img
-                  src={a.image_url}
-                  alt={a.title}
-                  loading="lazy"
-                  className="h-16 w-16 flex-shrink-0 rounded-md object-cover"
-                />
+                <button
+                  type="button"
+                  onClick={() => setPreview(a)}
+                  className="flex-shrink-0 rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
+                  aria-label={`Show larger image of ${a.title}`}
+                >
+                  <img
+                    src={a.image_url}
+                    alt={a.title}
+                    loading="lazy"
+                    className="h-16 w-16 rounded-md object-cover transition-transform hover:scale-105"
+                  />
+                </button>
               )}
+
               <div className="min-w-0 flex-1">
                 <p className="font-medium">{a.title}</p>
                 {a.description && (
