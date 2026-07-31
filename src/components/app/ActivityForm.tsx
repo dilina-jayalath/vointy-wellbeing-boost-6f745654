@@ -167,14 +167,49 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
             />
           </div>
           <div>
-            <Label htmlFor="ca-image">Image URL</Label>
-            <Input
-              id="ca-image"
-              value={form.image_url}
-              onChange={(e) => set("image_url", e.target.value)}
-              placeholder="https://…/photo.jpg"
-            />
+            <Label htmlFor="ca-image">Image</Label>
+            <div className="flex flex-col gap-2">
+              <Input
+                id="ca-image"
+                value={form.image_url}
+                onChange={(e) => set("image_url", e.target.value)}
+                placeholder="https://…/photo.jpg"
+              />
+              <div className="flex items-center gap-2">
+                <input
+                  ref={fileRef}
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    e.target.value = "";
+                    if (file) uploadImage(file);
+                  }}
+                />
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  disabled={uploading}
+                  onClick={() => fileRef.current?.click()}
+                >
+                  <Upload className="h-4 w-4 mr-1" />
+                  {uploading ? "Uploading…" : "Upload image"}
+                </Button>
+                <span className="text-xs text-muted-foreground">or paste a URL above</span>
+              </div>
+              {form.image_url && (
+                <img
+                  src={form.image_url}
+                  alt="Activity preview"
+                  loading="lazy"
+                  className="h-24 w-24 rounded-md object-cover"
+                />
+              )}
+            </div>
           </div>
+
           <div>
             <Label htmlFor="ca-link">YouTube video link</Label>
             <Input
