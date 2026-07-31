@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { TransitionSeries, springTiming } from "@remotion/transitions";
 import { wipe } from "@remotion/transitions/wipe";
-import { fade } from "@remotion/transitions/fade";
+import { slide } from "@remotion/transitions/slide";
 import { Backdrop } from "./components/Backdrop";
 import { SceneIntro } from "./scenes/SceneIntro";
 import { SceneFree } from "./scenes/SceneFree";
@@ -23,7 +23,7 @@ export const MainVideo: React.FC = () => (
       <TransitionSeries.Sequence durationInFrames={90}>
         <SceneFree />
       </TransitionSeries.Sequence>
-      <TransitionSeries.Transition presentation={fade()} timing={timing} />
+      <TransitionSeries.Transition presentation={slide({ direction: "from-right" })} timing={timing} />
       <TransitionSeries.Sequence durationInFrames={100}>
         <SceneActivities />
       </TransitionSeries.Sequence>
@@ -31,7 +31,7 @@ export const MainVideo: React.FC = () => (
       <TransitionSeries.Sequence durationInFrames={100}>
         <SceneIndex />
       </TransitionSeries.Sequence>
-      <TransitionSeries.Transition presentation={fade()} timing={timing} />
+      <TransitionSeries.Transition presentation={slide({ direction: "from-right" })} timing={timing} />
       <TransitionSeries.Sequence durationInFrames={90}>
         <SceneOutro />
       </TransitionSeries.Sequence>
