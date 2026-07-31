@@ -34,6 +34,7 @@ export const MyActivities = () => {
   const [editing, setEditing] = useState<CustomActivity | null>(null);
   const [inviteFor, setInviteFor] = useState<CustomActivity | null>(null);
   const [deleting, setDeleting] = useState<CustomActivity | null>(null);
+  const [preview, setPreview] = useState<CustomActivity | null>(null);
 
   const load = useCallback(async () => {
     if (!user) return;
