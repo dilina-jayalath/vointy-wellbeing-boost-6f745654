@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Upload } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
@@ -52,6 +53,43 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
   const { user } = useAuth();
   const [form, setForm] = useState(empty);
   const [saving, setSaving] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  const uploadImage = async (file: File) => {
+    if (!user) return;
+    if (!file.type.startsWith("image/")) {
+      toast({ title: "Select an image file", variant: "destructive" });
+      return;
+    }
+    if (file.size > 5 * 1024 * 1024) {
+      toast({ title: "Image must be smaller than 5 MB", variant: "destructive" });
+      return;
+    }
+    setUploading(true);
+    const ext = file.name.split(".").pop()?.toLowerCase() || "jpg";
+    const path = `${user.id}/${crypto.randomUUID()}.${ext}`;
+    const { error } = await supabase.storage
+      .from("activity-images")
+      .upload(path, file, { contentType: file.type, upsert: false });
+    if (error) {
+      setUploading(false);
+      toast({ title: "Upload failed", description: error.message, variant: "destructive" });
+      return;
+    }
+    const { data, error: signErr } = await supabase.storage
+      .from("activity-images")
+      .createSignedUrl(path, 60 * 60 * 24 * 365 * 10);
+    setUploading(false);
+    if (signErr || !data?.signedUrl) {
+      toast({ title: "Could not get image link", description: signErr?.message, variant: "destructive" });
+      return;
+    }
+    setForm((f) => ({ ...f, image_url: data.signedUrl }));
+    toast({ title: "Image uploaded" });
+  };
+
+
 
   useEffect(() => {
     if (!open) return;
@@ -167,14 +205,49 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
             />
           </div>
           <div>
-            <Label htmlFor="ca-image">Image URL</Label>
-            <Input
-              id="ca-image"
-              value={form.image_url}
-              onChange={(e) => set("image_url", e.target.value)}
-              placeholder="https://…/photo.jpg"
-            />
+            <Label htmlFor="ca-image">Image</Label>
+            <div className="flex flex-col gap-2">
+              <Input
+                id="ca-image"
+                value={form.image_url}
+                onChange={(e) => set("image_url", e.target.value)}
+                placeholder="https://…/photo.jpg"
+              />
+              <div className="flex items-center gap-2">
+                <input
+                  ref={fileRef}
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    e.target.value = "";
+                    if (file) uploadImage(file);
+                  }}
+                />
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  disabled={uploading}
+                  onClick={() => fileRef.current?.click()}
+                >
+                  <Upload className="h-4 w-4 mr-1" />
+                  {uploading ? "Uploading…" : "Upload image"}
+                </Button>
+                <span className="text-xs text-muted-foreground">or paste a URL above</span>
+              </div>
+              {form.image_url && (
+                <img
+                  src={form.image_url}
+                  alt="Activity preview"
+                  loading="lazy"
+                  className="h-24 w-24 rounded-md object-cover"
+                />
+              )}
+            </div>
           </div>
+
           <div>
             <Label htmlFor="ca-link">YouTube video link</Label>
             <Input
