@@ -40,7 +40,13 @@ interface I18nContextType {
   t: (key: string, fallback?: string) => any;
 }
 
-const I18nContext = createContext<I18nContextType | undefined>(undefined);
+// Reuse the same context instance across hot reloads so already-mounted
+// consumers keep matching the provider.
+const g = globalThis as any;
+const I18nContext: React.Context<I18nContextType | undefined> =
+  g.__vointyI18nContext ??
+  (g.__vointyI18nContext = createContext<I18nContextType | undefined>(undefined));
+
 
 export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
