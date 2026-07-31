@@ -14,6 +14,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "@/hooks/use-toast";
 import { Pencil, Plus, Trash2, UserPlus, Clock, PlayCircle } from "lucide-react";
 import { ActivityForm, type CustomActivity } from "./ActivityForm";
@@ -34,6 +35,7 @@ export const MyActivities = () => {
   const [editing, setEditing] = useState<CustomActivity | null>(null);
   const [inviteFor, setInviteFor] = useState<CustomActivity | null>(null);
   const [deleting, setDeleting] = useState<CustomActivity | null>(null);
+  const [preview, setPreview] = useState<CustomActivity | null>(null);
 
   const load = useCallback(async () => {
     if (!user) return;
@@ -101,13 +103,21 @@ export const MyActivities = () => {
           <CardContent className="p-4 space-y-3">
             <div className="flex items-start gap-3">
               {a.image_url && (
-                <img
-                  src={a.image_url}
-                  alt={a.title}
-                  loading="lazy"
-                  className="h-16 w-16 flex-shrink-0 rounded-md object-cover"
-                />
+                <button
+                  type="button"
+                  onClick={() => setPreview(a)}
+                  className="flex-shrink-0 rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
+                  aria-label={`Show larger image of ${a.title}`}
+                >
+                  <img
+                    src={a.image_url}
+                    alt={a.title}
+                    loading="lazy"
+                    className="h-16 w-16 rounded-md object-cover transition-transform hover:scale-105"
+                  />
+                </button>
               )}
+
               <div className="min-w-0 flex-1">
                 <p className="font-medium">{a.title}</p>
                 {a.description && (
@@ -163,6 +173,23 @@ export const MyActivities = () => {
         activityId={inviteFor?.id ?? null}
         activityTitle={inviteFor?.title}
       />
+
+      <Dialog open={!!preview} onOpenChange={(o) => !o && setPreview(null)}>
+        <DialogContent className="max-w-3xl">
+          <DialogHeader>
+            <DialogTitle>{preview?.title}</DialogTitle>
+          </DialogHeader>
+          {preview?.image_url && (
+            <img
+              src={preview.image_url}
+              alt={preview.title}
+              className="max-h-[75vh] w-full rounded-md object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
+
+
 
       <AlertDialog open={!!deleting} onOpenChange={(o) => !o && setDeleting(null)}>
         <AlertDialogContent>
