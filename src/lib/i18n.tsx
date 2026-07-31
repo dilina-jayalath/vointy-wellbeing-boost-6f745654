@@ -91,10 +91,22 @@ export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children
   );
 };
 
+const fallbackT = (key: string, fallback?: string): any => {
+  const keys = key.split('.');
+  let value: any = translations.en;
+  for (const k of keys) {
+    if (value && typeof value === 'object' && k in value) value = value[k];
+    else return fallback !== undefined ? fallback : keys[keys.length - 1];
+  }
+  return value;
+};
+
 export const useTranslation = () => {
   const context = useContext(I18nContext);
   if (context === undefined) {
-    throw new Error('useTranslation must be used within an I18nProvider');
+    // Can happen transiently during hot reloads; fall back to English instead of crashing.
+    return { language: 'en' as Language, setLanguage: () => {}, t: fallbackT };
   }
   return context;
 };
+
