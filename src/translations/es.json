@@ -30,20 +30,51 @@
   "challenges": {
     "title": "Ejemplos de desafíos que puedes realizar",
     "items": [
-      { "title": "Desafíos de recuperación", "description": "consistencia del sueño, micro-descansos, rutinas de reinicio de estrés" },
-      { "title": "Muévete más, sin esfuerzo", "description": "pasos, minutos activos, reuniones caminando" },
-      { "title": "Ergonomía y movilidad", "description": "movilidad de 5 minutos, cuello/hombros, lista de verificación de configuración del escritorio" },
-      { "title": "Desafíos en equipo", "description": "objetivos compartidos, parejas de compañeros, ánimo y seguimiento" },
-      { "title": "Rutinas saludables", "description": "hidratación, tiempo al aire libre, descansos de pantalla, una acción de bienestar al día" }
+      {
+        "title": "Desafíos de recuperación",
+        "description": "consistencia del sueño, micro-descansos, rutinas de reinicio de estrés"
+      },
+      {
+        "title": "Muévete más, sin esfuerzo",
+        "description": "pasos, minutos activos, reuniones caminando"
+      },
+      {
+        "title": "Ergonomía y movilidad",
+        "description": "movilidad de 5 minutos, cuello/hombros, lista de verificación de configuración del escritorio"
+      },
+      {
+        "title": "Desafíos en equipo",
+        "description": "objetivos compartidos, parejas de compañeros, ánimo y seguimiento"
+      },
+      {
+        "title": "Rutinas saludables",
+        "description": "hidratación, tiempo al aire libre, descansos de pantalla, una acción de bienestar al día"
+      },
+      {
+        "title": "Crea tu propia actividad",
+        "description": "Elige entre 158 actividades listas en la biblioteca de Vointy, o crea la tuya, por ejemplo un paseo por la naturaleza en equipo."
+      }
     ]
   },
   "social": {
     "title": "Una plataforma social que a los empleados les encantará",
     "features": [
-      { "title": "Opciones de activación versátiles", "description": "Explora los diferentes métodos de activación de Vointy para que el trabajo sea más agradable junto con tus amigos." },
-      { "title": "Feed social", "description": "Celebra hitos, comparte logros y anima a otros a través de un feed social interactivo." },
-      { "title": "Desafío", "description": "Programa y sigue la participación en los desafíos de tu equipo, fomentando un sentido de unión y colaboración." },
-      { "title": "Una forma moderna para que el liderazgo de la empresa apoye a los empleados.", "description": "Con Vointy, el liderazgo de la empresa puede crear desafíos y eventos que impulsen el compromiso de los empleados y el disfrute en el lugar de trabajo, ayudando a toda la comunidad a tener éxito." }
+      {
+        "title": "Opciones de activación versátiles",
+        "description": "Explora los diferentes métodos de activación de Vointy para que el trabajo sea más agradable junto con tus amigos."
+      },
+      {
+        "title": "Feed social",
+        "description": "Celebra hitos, comparte logros y anima a otros a través de un feed social interactivo."
+      },
+      {
+        "title": "Desafío",
+        "description": "Programa y sigue la participación en los desafíos de tu equipo, fomentando un sentido de unión y colaboración."
+      },
+      {
+        "title": "Una forma moderna para que el liderazgo de la empresa apoye a los empleados.",
+        "description": "Con Vointy, el liderazgo de la empresa puede crear desafíos y eventos que impulsen el compromiso de los empleados y el disfrute en el lugar de trabajo, ayudando a toda la comunidad a tener éxito."
+      }
     ]
   },
   "why": {

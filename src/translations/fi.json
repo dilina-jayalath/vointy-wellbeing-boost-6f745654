@@ -29,20 +29,51 @@
   "challenges": {
     "title": "Esimerkkejä haasteista, joita voit järjestää",
     "items": [
-      { "title": "Palautumishaasteet", "description": "unirytmi, mikrotauot, stressinhallintarutiinit" },
-      { "title": "Lisää liikettä vaivattomasti", "description": "askeleet, aktiiviset minuutit, kävelykokoukset" },
-      { "title": "Ergonomia ja liikkuvuus", "description": "5 minuutin liikkuvuus, niska ja hartiat, työpisteen tarkistuslista" },
-      { "title": "Tiimihaasteet", "description": "yhteiset tavoitteet, tsemppiparit, kannustus ja kuulumisten vaihto" },
-      { "title": "Terveelliset rutiinit", "description": "nesteytys, ulkoilu, tauot ruudulta, yksi hyvinvointiteko päivässä" }
+      {
+        "title": "Palautumishaasteet",
+        "description": "unirytmi, mikrotauot, stressinhallintarutiinit"
+      },
+      {
+        "title": "Lisää liikettä vaivattomasti",
+        "description": "askeleet, aktiiviset minuutit, kävelykokoukset"
+      },
+      {
+        "title": "Ergonomia ja liikkuvuus",
+        "description": "5 minuutin liikkuvuus, niska ja hartiat, työpisteen tarkistuslista"
+      },
+      {
+        "title": "Tiimihaasteet",
+        "description": "yhteiset tavoitteet, tsemppiparit, kannustus ja kuulumisten vaihto"
+      },
+      {
+        "title": "Terveelliset rutiinit",
+        "description": "nesteytys, ulkoilu, tauot ruudulta, yksi hyvinvointiteko päivässä"
+      },
+      {
+        "title": "Luo oma aktiviteetti",
+        "description": "Voit valita Vointyn arkistosta 158 erilaista aktiviteettia. Voit myös luoda oman, esimerkiksi tiimin luontokävely."
+      }
     ]
   },
   "social": {
     "title": "Sosiaalinen alusta, jota työntekijät rakastavat",
     "features": [
-      { "title": "Monipuoliset aktivointivaihtoehdot", "description": "Tutustu Vointyn eri aktivointitapoihin ja tee työnteosta nautinnollisempaa yhdessä ystäviesi kanssa." },
-      { "title": "Sosiaalinen syöte", "description": "Juhlista virstanpylväitä, jaa saavutuksia ja kannusta muita osallistavan sosiaalisen syötteen kautta." },
-      { "title": "Haaste", "description": "Ajoita ja seuraa osallistumista tiimisi haasteisiin, mikä vahvistaa yhdessä tekemisen tunnetta ja yhteistyötä." },
-      { "title": "Moderni tapa yritysjohdolle tukea työntekijöitä.", "description": "Vointyn avulla yritysjohto voi luoda haasteita ja tapahtumia, jotka lisäävät työntekijöiden sitoutumista ja työn iloa, auttaen koko työyhteisöä menestymään." }
+      {
+        "title": "Monipuoliset aktivointivaihtoehdot",
+        "description": "Tutustu Vointyn eri aktivointitapoihin ja tee työnteosta nautinnollisempaa yhdessä ystäviesi kanssa."
+      },
+      {
+        "title": "Sosiaalinen syöte",
+        "description": "Juhlista virstanpylväitä, jaa saavutuksia ja kannusta muita osallistavan sosiaalisen syötteen kautta."
+      },
+      {
+        "title": "Haaste",
+        "description": "Ajoita ja seuraa osallistumista tiimisi haasteisiin, mikä vahvistaa yhdessä tekemisen tunnetta ja yhteistyötä."
+      },
+      {
+        "title": "Moderni tapa yritysjohdolle tukea työntekijöitä.",
+        "description": "Vointyn avulla yritysjohto voi luoda haasteita ja tapahtumia, jotka lisäävät työntekijöiden sitoutumista ja työn iloa, auttaen koko työyhteisöä menestymään."
+      }
     ]
   },
   "why": {

@@ -30,20 +30,51 @@
   "challenges": {
     "title": "Voorbeelden van uitdagingen die je kunt doen",
     "items": [
-      { "title": "Hersteluitdagingen", "description": "slaapconsistentie, micropauzes, routines voor stressherstel" },
-      { "title": "Moeiteloos meer bewegen", "description": "stappen, actieve minuten, wandelvergaderingen" },
-      { "title": "Ergonomie & mobiliteit", "description": "5-minuten mobiliteit, nek/schouders, checklist voor bureau-instelling" },
-      { "title": "Teamuitdagingen", "description": "gezamenlijke doelen, buddy-paren, aanmoediging en check-ins" },
-      { "title": "Gezonde routines", "description": "hydratatie, tijd buiten, schermpauzes, één welzijnsactie per dag" }
+      {
+        "title": "Hersteluitdagingen",
+        "description": "slaapconsistentie, micropauzes, routines voor stressherstel"
+      },
+      {
+        "title": "Moeiteloos meer bewegen",
+        "description": "stappen, actieve minuten, wandelvergaderingen"
+      },
+      {
+        "title": "Ergonomie & mobiliteit",
+        "description": "5-minuten mobiliteit, nek/schouders, checklist voor bureau-instelling"
+      },
+      {
+        "title": "Teamuitdagingen",
+        "description": "gezamenlijke doelen, buddy-paren, aanmoediging en check-ins"
+      },
+      {
+        "title": "Gezonde routines",
+        "description": "hydratatie, tijd buiten, schermpauzes, één welzijnsactie per dag"
+      },
+      {
+        "title": "Maak je eigen activiteit",
+        "description": "Kies uit 158 kant-en-klare activiteiten in de Vointy-bibliotheek — of maak je eigen, bijvoorbeeld een natuurwandeling met het team."
+      }
     ]
   },
   "social": {
     "title": "Een sociaal platform waar medewerkers dol op zullen zijn",
     "features": [
-      { "title": "Veelzijdige activeringsopties", "description": "Ontdek de verschillende activeringsmethoden van Vointy om samen met je vrienden het werk leuker te maken." },
-      { "title": "Sociale Feed", "description": "Vier mijlpalen, deel prestaties en moedig anderen aan via een boeiende sociale feed." },
-      { "title": "Uitdaging", "description": "Plan en volg deelname aan de uitdagingen van je team, wat een gevoel van saamhorigheid en samenwerking bevordert." },
-      { "title": "Een moderne manier voor bedrijfsleiding om medewerkers te ondersteunen.", "description": "Met Vointy kan de bedrijfsleiding uitdagingen en evenementen creëren die de betrokkenheid van medewerkers en het plezier op de werkplek vergroten, waardoor de hele gemeenschap succesvol wordt." }
+      {
+        "title": "Veelzijdige activeringsopties",
+        "description": "Ontdek de verschillende activeringsmethoden van Vointy om samen met je vrienden het werk leuker te maken."
+      },
+      {
+        "title": "Sociale Feed",
+        "description": "Vier mijlpalen, deel prestaties en moedig anderen aan via een boeiende sociale feed."
+      },
+      {
+        "title": "Uitdaging",
+        "description": "Plan en volg deelname aan de uitdagingen van je team, wat een gevoel van saamhorigheid en samenwerking bevordert."
+      },
+      {
+        "title": "Een moderne manier voor bedrijfsleiding om medewerkers te ondersteunen.",
+        "description": "Met Vointy kan de bedrijfsleiding uitdagingen en evenementen creëren die de betrokkenheid van medewerkers en het plezier op de werkplek vergroten, waardoor de hele gemeenschap succesvol wordt."
+      }
     ]
   },
   "why": {

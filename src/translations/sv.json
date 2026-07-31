@@ -30,20 +30,51 @@
   "challenges": {
     "title": "Exempel på utmaningar du kan köra",
     "items": [
-      { "title": "Återhämtningsutmaningar", "description": "sömnkontinuitet, mikropauser, stressåterställningsrutiner" },
-      { "title": "Rör dig mer, utan ansträngning", "description": "steg, aktiva minuter, walk-and-talk-möten" },
-      { "title": "Ergonomi & rörlighet", "description": "5-minuters rörlighet, nacke/axlar, checklista för skrivbordsinställning" },
-      { "title": "Teamutmaningar", "description": "delade mål, kompispar, uppmuntran och incheckningar" },
-      { "title": "Hälsosamma rutiner", "description": "vätskebalans, utetid, skärmpauser, en välmåendeåtgärd om dagen" }
+      {
+        "title": "Återhämtningsutmaningar",
+        "description": "sömnkontinuitet, mikropauser, stressåterställningsrutiner"
+      },
+      {
+        "title": "Rör dig mer, utan ansträngning",
+        "description": "steg, aktiva minuter, walk-and-talk-möten"
+      },
+      {
+        "title": "Ergonomi & rörlighet",
+        "description": "5-minuters rörlighet, nacke/axlar, checklista för skrivbordsinställning"
+      },
+      {
+        "title": "Teamutmaningar",
+        "description": "delade mål, kompispar, uppmuntran och incheckningar"
+      },
+      {
+        "title": "Hälsosamma rutiner",
+        "description": "vätskebalans, utetid, skärmpauser, en välmåendeåtgärd om dagen"
+      },
+      {
+        "title": "Skapa din egen aktivitet",
+        "description": "Välj bland 158 färdiga aktiviteter i Vointys bibliotek – eller skapa din egen, till exempel en naturpromenad med teamet."
+      }
     ]
   },
   "social": {
     "title": "En social plattform anställda kommer att älska",
     "features": [
-      { "title": "Mångsidiga aktiveringsalternativ", "description": "Utforska Vointys olika aktiveringsmetoder för att göra arbetet roligare tillsammans med dina vänner." },
-      { "title": "Socialt flöde", "description": "Fira milstolpar, dela prestationer och uppmuntra andra genom ett engagerande socialt flöde." },
-      { "title": "Utmaning", "description": "Schemalägg och följ deltagande i ditt teams utmaningar, vilket främjar en känsla av gemenskap och samarbete." },
-      { "title": "Ett modernt sätt för företagsledningen att stödja anställda.", "description": "Med Vointy kan företagsledningen skapa utmaningar och evenemang som ökar anställdas engagemang och arbetsglädje, vilket hjälper hela gemenskapen att lyckas." }
+      {
+        "title": "Mångsidiga aktiveringsalternativ",
+        "description": "Utforska Vointys olika aktiveringsmetoder för att göra arbetet roligare tillsammans med dina vänner."
+      },
+      {
+        "title": "Socialt flöde",
+        "description": "Fira milstolpar, dela prestationer och uppmuntra andra genom ett engagerande socialt flöde."
+      },
+      {
+        "title": "Utmaning",
+        "description": "Schemalägg och följ deltagande i ditt teams utmaningar, vilket främjar en känsla av gemenskap och samarbete."
+      },
+      {
+        "title": "Ett modernt sätt för företagsledningen att stödja anställda.",
+        "description": "Med Vointy kan företagsledningen skapa utmaningar och evenemang som ökar anställdas engagemang och arbetsglädje, vilket hjälper hela gemenskapen att lyckas."
+      }
     ]
   },
   "why": {
