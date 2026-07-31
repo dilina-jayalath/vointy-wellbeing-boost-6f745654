@@ -34,6 +34,7 @@ import EmployerInvite from "./pages/employer/InviteUsers";
 import EmployerInvitedList from "./pages/employer/InvitedList";
 import EmployerActivate from "./pages/employer/ActivateUsers";
 import EmployerTeams from "./pages/employer/Teams";
+import EmployerActivities from "./pages/employer/Activities";
 import AppLayout from "./pages/app/AppLayout";
 import AppHome from "./pages/app/Home";
 import AppActivities from "./pages/app/Activities";
@@ -98,6 +99,7 @@ const App = () => (
               >
                 <Route index element={<EmployerDashboard />} />
                 <Route path="wellbeing" element={<EmployerWellbeing />} />
+                <Route path="activities" element={<EmployerActivities />} />
                 <Route path="surveys" element={<EmployerSurveys />} />
                 <Route path="challenges" element={<EmployerChallenges />} />
                 <Route path="subscriptions" element={<EmployerSubscriptions />} />
