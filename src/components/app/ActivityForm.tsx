@@ -53,6 +53,43 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
   const { user } = useAuth();
   const [form, setForm] = useState(empty);
   const [saving, setSaving] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  const uploadImage = async (file: File) => {
+    if (!user) return;
+    if (!file.type.startsWith("image/")) {
+      toast({ title: "Select an image file", variant: "destructive" });
+      return;
+    }
+    if (file.size > 5 * 1024 * 1024) {
+      toast({ title: "Image must be smaller than 5 MB", variant: "destructive" });
+      return;
+    }
+    setUploading(true);
+    const ext = file.name.split(".").pop()?.toLowerCase() || "jpg";
+    const path = `${user.id}/${crypto.randomUUID()}.${ext}`;
+    const { error } = await supabase.storage
+      .from("activity-images")
+      .upload(path, file, { contentType: file.type, upsert: false });
+    if (error) {
+      setUploading(false);
+      toast({ title: "Upload failed", description: error.message, variant: "destructive" });
+      return;
+    }
+    const { data, error: signErr } = await supabase.storage
+      .from("activity-images")
+      .createSignedUrl(path, 60 * 60 * 24 * 365 * 10);
+    setUploading(false);
+    if (signErr || !data?.signedUrl) {
+      toast({ title: "Could not get image link", description: signErr?.message, variant: "destructive" });
+      return;
+    }
+    setForm((f) => ({ ...f, image_url: data.signedUrl }));
+    toast({ title: "Image uploaded" });
+  };
+
+
 
   useEffect(() => {
     if (!open) return;
