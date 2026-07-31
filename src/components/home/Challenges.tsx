@@ -77,9 +77,6 @@ const Challenges = () => {
   );
 };
 
-      </div>
-    </section>
-  );
-};
+
 
 export default Challenges;
