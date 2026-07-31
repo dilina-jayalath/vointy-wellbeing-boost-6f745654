@@ -30,20 +30,51 @@
   "challenges": {
     "title": "Beispiele für Herausforderungen, die Sie durchführen können",
     "items": [
-      { "title": "Erholungs-Challenges", "description": "Schlaf-Kontinuität, Mikropausen, Stress-Reset-Routinen" },
-      { "title": "Mühelos mehr bewegen", "description": "Schritte, aktive Minuten, Walk-and-Talk-Meetings" },
-      { "title": "Ergonomie & Mobilität", "description": "5-Minuten-Mobilität, Nacken/Schultern, Checkliste für den Schreibtisch" },
-      { "title": "Team-Challenges", "description": "gemeinsame Ziele, Buddy-Paare, Ermutigung und Check-ins" },
-      { "title": "Gesunde Routinen", "description": "Hydratation, Zeit im Freien, Bildschirmpausen, eine Wohlfühlaktion pro Tag" }
+      {
+        "title": "Erholungs-Challenges",
+        "description": "Schlaf-Kontinuität, Mikropausen, Stress-Reset-Routinen"
+      },
+      {
+        "title": "Mühelos mehr bewegen",
+        "description": "Schritte, aktive Minuten, Walk-and-Talk-Meetings"
+      },
+      {
+        "title": "Ergonomie & Mobilität",
+        "description": "5-Minuten-Mobilität, Nacken/Schultern, Checkliste für den Schreibtisch"
+      },
+      {
+        "title": "Team-Challenges",
+        "description": "gemeinsame Ziele, Buddy-Paare, Ermutigung und Check-ins"
+      },
+      {
+        "title": "Gesunde Routinen",
+        "description": "Hydratation, Zeit im Freien, Bildschirmpausen, eine Wohlfühlaktion pro Tag"
+      },
+      {
+        "title": "Eigene Aktivität erstellen",
+        "description": "Wählen Sie aus 158 fertigen Aktivitäten in der Vointy-Bibliothek – oder erstellen Sie eine eigene, z. B. einen Naturspaziergang im Team."
+      }
     ]
   },
   "social": {
     "title": "Eine soziale Plattform, die Mitarbeiter lieben werden",
     "features": [
-      { "title": "Vielseitige Aktivierungsoptionen", "description": "Entdecken Sie die verschiedenen Aktivierungsmethoden von Vointy, um die Arbeit gemeinsam mit Ihren Freunden angenehmer zu gestalten." },
-      { "title": "Social Feed", "description": "Feiern Sie Meilensteine, teilen Sie Erfolge und ermutigen Sie andere über einen ansprechenden Social Feed." },
-      { "title": "Herausforderung", "description": "Planen und verfolgen Sie die Teilnahme an den Herausforderungen Ihres Teams und fördern Sie so ein Gefühl von Zusammengehörigkeit und Zusammenarbeit." },
-      { "title": "Ein moderner Weg für die Unternehmensführung, Mitarbeiter zu unterstützen.", "description": "Mit Vointy kann die Unternehmensführung Herausforderungen und Events erstellen, die das Engagement der Mitarbeiter und die Freude am Arbeitsplatz steigern und so der gesamten Gemeinschaft zum Erfolg verhelfen." }
+      {
+        "title": "Vielseitige Aktivierungsoptionen",
+        "description": "Entdecken Sie die verschiedenen Aktivierungsmethoden von Vointy, um die Arbeit gemeinsam mit Ihren Freunden angenehmer zu gestalten."
+      },
+      {
+        "title": "Social Feed",
+        "description": "Feiern Sie Meilensteine, teilen Sie Erfolge und ermutigen Sie andere über einen ansprechenden Social Feed."
+      },
+      {
+        "title": "Herausforderung",
+        "description": "Planen und verfolgen Sie die Teilnahme an den Herausforderungen Ihres Teams und fördern Sie so ein Gefühl von Zusammengehörigkeit und Zusammenarbeit."
+      },
+      {
+        "title": "Ein moderner Weg für die Unternehmensführung, Mitarbeiter zu unterstützen.",
+        "description": "Mit Vointy kann die Unternehmensführung Herausforderungen und Events erstellen, die das Engagement der Mitarbeiter und die Freude am Arbeitsplatz steigern und so der gesamten Gemeinschaft zum Erfolg verhelfen."
+      }
     ]
   },
   "why": {

@@ -29,20 +29,51 @@
   "challenges": {
     "title": "Examples of challenges you can run",
     "items": [
-      { "title": "Recovery challenges", "description": "sleep consistency, micro-breaks, stress reset routines" },
-      { "title": "Move more, effortlessly", "description": "steps, active minutes, walk-and-talk meetings" },
-      { "title": "Ergonomics & mobility", "description": "5-minute mobility, neck/shoulders, desk setup checklist" },
-      { "title": "Team challenges", "description": "shared goals, buddy pairs, encouragement and check-ins" },
-      { "title": "Healthy routines", "description": "hydration, outdoor time, screen breaks, one wellbeing action a day" }
+      {
+        "title": "Recovery challenges",
+        "description": "sleep consistency, micro-breaks, stress reset routines"
+      },
+      {
+        "title": "Move more, effortlessly",
+        "description": "steps, active minutes, walk-and-talk meetings"
+      },
+      {
+        "title": "Ergonomics & mobility",
+        "description": "5-minute mobility, neck/shoulders, desk setup checklist"
+      },
+      {
+        "title": "Team challenges",
+        "description": "shared goals, buddy pairs, encouragement and check-ins"
+      },
+      {
+        "title": "Healthy routines",
+        "description": "hydration, outdoor time, screen breaks, one wellbeing action a day"
+      },
+      {
+        "title": "Create your own activity",
+        "description": "Choose from 158 ready-made activities in the Vointy library — or create your own, such as a team nature walk."
+      }
     ]
   },
   "social": {
     "title": "A Social Platform Employees Will Love",
     "features": [
-      { "title": "Versatile Activation Options", "description": "Explore Vointy's different activation methods to make work more enjoyable together with your friends." },
-      { "title": "Social Feed", "description": "Celebrate milestones, share achievements, and encourage others through an engaging social feed." },
-      { "title": "Challenge", "description": "Schedule and track participation in your team's challenges, fostering a sense of togetherness and collaboration." },
-      { "title": "A modern way for company leadership to support employees.", "description": "With Vointy, company leadership can create challenges and events that boost employee engagement and workplace enjoyment, helping the entire community succeed." }
+      {
+        "title": "Versatile Activation Options",
+        "description": "Explore Vointy's different activation methods to make work more enjoyable together with your friends."
+      },
+      {
+        "title": "Social Feed",
+        "description": "Celebrate milestones, share achievements, and encourage others through an engaging social feed."
+      },
+      {
+        "title": "Challenge",
+        "description": "Schedule and track participation in your team's challenges, fostering a sense of togetherness and collaboration."
+      },
+      {
+        "title": "A modern way for company leadership to support employees.",
+        "description": "With Vointy, company leadership can create challenges and events that boost employee engagement and workplace enjoyment, helping the entire community succeed."
+      }
     ]
   },
   "why": {
