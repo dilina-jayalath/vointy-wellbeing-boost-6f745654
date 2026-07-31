@@ -18,52 +18,116 @@ export type Database = {
         Row: {
           category: string | null
           created_at: string
+          created_by: string | null
           description: string | null
+          duration_minutes: number | null
           icon: string | null
           id: string
           image_url: string | null
           is_active: boolean
           legacy_id: number | null
           link: string | null
+          organization_id: string | null
           points: number
           title: string
           translations: Json
           unit: string
           updated_at: string
+          visibility: string
         }
         Insert: {
           category?: string | null
           created_at?: string
+          created_by?: string | null
           description?: string | null
+          duration_minutes?: number | null
           icon?: string | null
           id?: string
           image_url?: string | null
           is_active?: boolean
           legacy_id?: number | null
           link?: string | null
+          organization_id?: string | null
           points?: number
           title: string
           translations?: Json
           unit?: string
           updated_at?: string
+          visibility?: string
         }
         Update: {
           category?: string | null
           created_at?: string
+          created_by?: string | null
           description?: string | null
+          duration_minutes?: number | null
           icon?: string | null
           id?: string
           image_url?: string | null
           is_active?: boolean
           legacy_id?: number | null
           link?: string | null
+          organization_id?: string | null
           points?: number
           title?: string
           translations?: Json
           unit?: string
           updated_at?: string
+          visibility?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "activities_organization_id_fkey"
+            columns: ["organization_id"]
+            isOneToOne: false
+            referencedRelation: "organizations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      activity_invitations: {
+        Row: {
+          activity_id: string
+          created_at: string
+          email: string
+          id: string
+          invited_by: string
+          name: string | null
+          status: string
+          token: string
+          updated_at: string
+        }
+        Insert: {
+          activity_id: string
+          created_at?: string
+          email: string
+          id?: string
+          invited_by: string
+          name?: string | null
+          status?: string
+          token?: string
+          updated_at?: string
+        }
+        Update: {
+          activity_id?: string
+          created_at?: string
+          email?: string
+          id?: string
+          invited_by?: string
+          name?: string | null
+          status?: string
+          token?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "activity_invitations_activity_id_fkey"
+            columns: ["activity_id"]
+            isOneToOne: false
+            referencedRelation: "activities"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       challenge_participants: {
         Row: {
