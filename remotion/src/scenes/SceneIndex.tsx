@@ -30,7 +30,7 @@ export const SceneIndex: React.FC = () => {
         One point per activity.
       </div>
 
-      <div style={{ display: "flex", alignItems: "flex-end", gap: 26, height: maxH + 60, marginTop: 56 }}>
+      <div style={{ display: "flex", alignItems: "flex-end", gap: 20, height: maxH + 60, marginTop: 56 }}>
         {values.map((v, i) => {
           const s = spring({ frame: frame - 20 - i * 3.5, fps, config: { damping: 18, stiffness: 120 } });
           const h = v * maxH * s;
@@ -38,7 +38,7 @@ export const SceneIndex: React.FC = () => {
             <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
               <div
                 style={{
-                  width: 96,
+                  width: 84,
                   height: h,
                   background: `linear-gradient(180deg, ${C.purple} 0%, ${C.blue} 100%)`,
                   opacity: 0.35 + v * 0.65,
