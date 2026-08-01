@@ -6,7 +6,7 @@
       "challenges": "Sfide",
       "community": "Community",
       "index": "Indice",
-      "tagline": "Costruite insieme abitudini più sane.",
+      "tagline": "Build healthier habits, together.",
       "profileAria": "Profilo"
     },
     "home": {
@@ -32,7 +32,11 @@
     },
     "activities": {
       "title": "Attività",
-      "tabs": { "all": "Tutte", "mine": "Le mie", "history": "Cronologia" },
+      "tabs": {
+        "all": "Tutte",
+        "mine": "Le mie",
+        "history": "Cronologia"
+      },
       "loading": "Caricamento…",
       "noActivities": "Nessuna attività disponibile. Compariranno qui una volta importato il catalogo.",
       "video": "Video",
@@ -53,7 +57,11 @@
     },
     "challenges": {
       "title": "Sfide",
-      "tabs": { "mine": "Le mie", "open": "Aperte", "board": "Classifica" },
+      "tabs": {
+        "mine": "Le mie",
+        "open": "Aperte",
+        "board": "Classifica"
+      },
       "loading": "Caricamento…",
       "noneJoined": "Non hai ancora partecipato a nessuna sfida.",
       "noneOpen": "Nessuna sfida aperta al momento.",
@@ -63,7 +71,10 @@
       "noResults": "Ancora nessun risultato.",
       "you": "Tu",
       "member": "Membro {n}",
-      "toast": { "couldNotJoin": "Impossibile partecipare", "joined": "Ti sei unito alla sfida" }
+      "toast": {
+        "couldNotJoin": "Impossibile partecipare",
+        "joined": "Ti sei unito alla sfida"
+      }
     },
     "community": {
       "title": "Community",
@@ -72,7 +83,10 @@
       "loading": "Caricamento…",
       "noPosts": "Ancora nessun post. Sii il primo a condividere.",
       "writeComment": "Scrivi un commento…",
-      "toast": { "couldNotPost": "Impossibile pubblicare", "couldNotComment": "Impossibile commentare" }
+      "toast": {
+        "couldNotPost": "Impossibile pubblicare",
+        "couldNotComment": "Impossibile commentare"
+      }
     },
     "profile": {
       "title": "Profilo",
@@ -86,7 +100,10 @@
       "saving": "Salvataggio…",
       "employerPanel": "Pannello azienda",
       "signOut": "Esci",
-      "toast": { "couldNotSave": "Impossibile salvare", "updated": "Profilo aggiornato" }
+      "toast": {
+        "couldNotSave": "Impossibile salvare",
+        "updated": "Profilo aggiornato"
+      }
     },
     "wellbeing": {
       "title": "Indice di attività",
@@ -96,7 +113,11 @@
       "monthlyPoints": "Punti mensili · {year}",
       "saving": "Salvataggio…",
       "submit": "Invia",
-      "toast": { "couldNotSubmit": "Invio non riuscito", "thanksTitle": "Grazie!", "thanksDesc": "Le tue risposte sono state salvate." }
+      "toast": {
+        "couldNotSubmit": "Invio non riuscito",
+        "thanksTitle": "Grazie!",
+        "thanksDesc": "Le tue risposte sono state salvate."
+      }
     },
     "activityForm": {
       "editTitle": "Modifica attività",
@@ -117,7 +138,11 @@
       "linkLabel": "Link video YouTube",
       "linkPlaceholder": "https://www.youtube.com/watch?v=…",
       "visibilityLabel": "Visibilità",
-      "visibility": { "private": "Solo io", "organization": "La mia azienda", "public": "Tutti" },
+      "visibility": {
+        "private": "Solo io",
+        "organization": "La mia azienda",
+        "public": "Tutti"
+      },
       "cancel": "Annulla",
       "saving": "Salvataggio…",
       "saveChanges": "Salva modifiche",
@@ -169,7 +194,11 @@
       "delete": "Elimina",
       "video": "Video",
       "minutesSuffix": "min",
-      "visibility": { "private": "Solo io", "organization": "La mia azienda", "public": "Tutti" },
+      "visibility": {
+        "private": "Solo io",
+        "organization": "La mia azienda",
+        "public": "Tutti"
+      },
       "imageAlt": "Mostra immagine ingrandita di {title}",
       "deleteConfirmTitle": "Eliminare questa attività?",
       "deleteConfirmDesc": "“{title}” e i relativi inviti verranno eliminati definitivamente.",

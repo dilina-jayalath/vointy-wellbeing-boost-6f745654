@@ -28,7 +28,7 @@
       "disclaimer": "Geen opstartkosten · op elk moment opzegbaar · kaart vereist om de proefperiode te starten, eerste betaling na 30 dagen."
     },
     "layout": {
-      "brandTagline": "Bouw samen aan gezondere gewoontes.",
+      "brandTagline": "Build healthier habits, together.",
       "checkingPlan": "Abonnement controleren…",
       "trialRemaining": "Resterende proefperiode: {days} d",
       "paymentFailed": "Betaling mislukt",
@@ -83,10 +83,22 @@
       "title": "Uitdagingen",
       "description": "Start teamuitdagingen om activiteit, slaap, hydratatie en meer te stimuleren.",
       "sections": {
-        "active": { "title": "Actieve uitdagingen", "body": "Lopende uitdagingen met deelname en voortgang." },
-        "create": { "title": "Uitdaging maken", "body": "Stel titel, activiteitstype, doel, duur en teams in." },
-        "library": { "title": "Uitdagingenbibliotheek", "body": "Kant-en-klare uitdagingen: 10.000 stappen, waterdoel, mindfulnessweek." },
-        "leaderboard": { "title": "Klassement", "body": "Ranglijst van teams en individuen per uitdaging." }
+        "active": {
+          "title": "Actieve uitdagingen",
+          "body": "Lopende uitdagingen met deelname en voortgang."
+        },
+        "create": {
+          "title": "Uitdaging maken",
+          "body": "Stel titel, activiteitstype, doel, duur en teams in."
+        },
+        "library": {
+          "title": "Uitdagingenbibliotheek",
+          "body": "Kant-en-klare uitdagingen: 10.000 stappen, waterdoel, mindfulnessweek."
+        },
+        "leaderboard": {
+          "title": "Klassement",
+          "body": "Ranglijst van teams en individuen per uitdaging."
+        }
       }
     },
     "inviteUsers": {
@@ -213,7 +225,10 @@
       "createdByYou": "Jij",
       "createdToastTitle": "Team aangemaakt",
       "createdToastDescription": "\"{name}\" is toegevoegd.",
-      "tabs": { "teams": "Teams", "leaderboard": "Klassement" },
+      "tabs": {
+        "teams": "Teams",
+        "leaderboard": "Klassement"
+      },
       "columns": {
         "teamName": "Teamnaam",
         "description": "Beschrijving",
@@ -222,7 +237,12 @@
         "actions": "Acties"
       },
       "noTeams": "Geen teams gevonden. Maak een nieuw team aan om te beginnen.",
-      "leaderboardColumns": { "rank": "#", "team": "Team", "members": "Leden", "score": "Score" },
+      "leaderboardColumns": {
+        "rank": "#",
+        "team": "Team",
+        "members": "Leden",
+        "score": "Score"
+      },
       "noLeaderboard": "Nog geen klassementsgegevens."
     },
     "wellbeingIndex": {
@@ -233,9 +253,18 @@
           "title": "Hoe het wordt berekend",
           "body": "Elke voltooide activiteit levert een werknemer 1 punt op. Punten worden per maand opgeteld en verzameld gedurende het lidmaatschapsjaar dat begint wanneer de werknemer zich aansluit."
         },
-        "monthlyPoints": { "title": "Maandelijkse punten", "body": "Totaal aantal activiteitspunten per maand voor alle actieve teams en werknemers." },
-        "yearlyTotal": { "title": "Jaartotaal", "body": "Verzamelde punten per werknemer sinds aansluiting." },
-        "teamBreakdown": { "title": "Teamoverzicht", "body": "Activiteitspunten per team met verdere detaillering." }
+        "monthlyPoints": {
+          "title": "Maandelijkse punten",
+          "body": "Totaal aantal activiteitspunten per maand voor alle actieve teams en werknemers."
+        },
+        "yearlyTotal": {
+          "title": "Jaartotaal",
+          "body": "Verzamelde punten per werknemer sinds aansluiting."
+        },
+        "teamBreakdown": {
+          "title": "Teamoverzicht",
+          "body": "Activiteitspunten per team met verdere detaillering."
+        }
       }
     },
     "paymentBanner": {
@@ -317,14 +346,20 @@
       "pageViewsLegend": "Paginaweergaven",
       "visitorsLegend": "Bezoekers",
       "topPagesTitle": "Meest bezochte pagina's",
-      "columns": { "path": "Pad", "views": "Weergaven" },
+      "columns": {
+        "path": "Pad",
+        "views": "Weergaven"
+      },
       "noVisits": "Nog geen bijgehouden bezoeken."
     },
     "activities": {
       "monthlyChartTitle": "Uitgevoerde activiteiten per maand",
       "activitiesLegend": "Activiteiten",
       "topActivitiesTitle": "Meest gebruikte activiteiten",
-      "columns": { "activity": "Activiteit", "timesPerformed": "Aantal keer uitgevoerd" },
+      "columns": {
+        "activity": "Activiteit",
+        "timesPerformed": "Aantal keer uitgevoerd"
+      },
       "noActivities": "Nog geen activiteiten uitgevoerd."
     }
   }

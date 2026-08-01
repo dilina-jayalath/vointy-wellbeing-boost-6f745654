@@ -28,7 +28,7 @@
       "disclaimer": "Nessun costo di attivazione · annulla in qualsiasi momento · carta richiesta per iniziare la prova, primo addebito dopo 30 giorni."
     },
     "layout": {
-      "brandTagline": "Costruite insieme abitudini più sane.",
+      "brandTagline": "Build healthier habits, together.",
       "checkingPlan": "Controllo del piano in corso…",
       "trialRemaining": "Prova gratuita rimanente: {days}g",
       "paymentFailed": "Pagamento non riuscito",
@@ -83,10 +83,22 @@
       "title": "Sfide",
       "description": "Lancia sfide di squadra per aumentare l'attività, il sonno, l'idratazione e altro ancora.",
       "sections": {
-        "active": { "title": "Sfide attive", "body": "Sfide in corso con partecipazione e progressi." },
-        "create": { "title": "Crea sfida", "body": "Imposta titolo, tipo di attività, obiettivo, durata e team." },
-        "library": { "title": "Libreria sfide", "body": "Sfide predefinite: 10.000 passi, obiettivo idratazione, settimana della consapevolezza." },
-        "leaderboard": { "title": "Classifica", "body": "Classifica di team e singoli per ogni sfida." }
+        "active": {
+          "title": "Sfide attive",
+          "body": "Sfide in corso con partecipazione e progressi."
+        },
+        "create": {
+          "title": "Crea sfida",
+          "body": "Imposta titolo, tipo di attività, obiettivo, durata e team."
+        },
+        "library": {
+          "title": "Libreria sfide",
+          "body": "Sfide predefinite: 10.000 passi, obiettivo idratazione, settimana della consapevolezza."
+        },
+        "leaderboard": {
+          "title": "Classifica",
+          "body": "Classifica di team e singoli per ogni sfida."
+        }
       }
     },
     "inviteUsers": {
@@ -213,7 +225,10 @@
       "createdByYou": "Tu",
       "createdToastTitle": "Team creato",
       "createdToastDescription": "\"{name}\" è stato aggiunto.",
-      "tabs": { "teams": "Team", "leaderboard": "Classifica" },
+      "tabs": {
+        "teams": "Team",
+        "leaderboard": "Classifica"
+      },
       "columns": {
         "teamName": "Nome del team",
         "description": "Descrizione",
@@ -222,7 +237,12 @@
         "actions": "Azioni"
       },
       "noTeams": "Nessun team trovato. Crea un nuovo team per iniziare.",
-      "leaderboardColumns": { "rank": "#", "team": "Team", "members": "Membri", "score": "Punteggio" },
+      "leaderboardColumns": {
+        "rank": "#",
+        "team": "Team",
+        "members": "Membri",
+        "score": "Punteggio"
+      },
       "noLeaderboard": "Nessun dato di classifica ancora disponibile."
     },
     "wellbeingIndex": {
@@ -233,9 +253,18 @@
           "title": "Come viene calcolato",
           "body": "Ogni attività completata assegna 1 punto al dipendente. I punti vengono sommati per mese e accumulati nell'anno di adesione che inizia quando il dipendente si unisce."
         },
-        "monthlyPoints": { "title": "Punti mensili", "body": "Punti di attività totali per mese in tutti i team e i dipendenti attivi." },
-        "yearlyTotal": { "title": "Totale annuale", "body": "Punti accumulati per dipendente dal momento in cui si è unito." },
-        "teamBreakdown": { "title": "Ripartizione per team", "body": "Punti di attività per ogni team con approfondimento." }
+        "monthlyPoints": {
+          "title": "Punti mensili",
+          "body": "Punti di attività totali per mese in tutti i team e i dipendenti attivi."
+        },
+        "yearlyTotal": {
+          "title": "Totale annuale",
+          "body": "Punti accumulati per dipendente dal momento in cui si è unito."
+        },
+        "teamBreakdown": {
+          "title": "Ripartizione per team",
+          "body": "Punti di attività per ogni team con approfondimento."
+        }
       }
     },
     "paymentBanner": {
@@ -317,14 +346,20 @@
       "pageViewsLegend": "Visualizzazioni di pagina",
       "visitorsLegend": "Visitatori",
       "topPagesTitle": "Pagine più visitate",
-      "columns": { "path": "Percorso", "views": "Visualizzazioni" },
+      "columns": {
+        "path": "Percorso",
+        "views": "Visualizzazioni"
+      },
       "noVisits": "Nessuna visita tracciata ancora."
     },
     "activities": {
       "monthlyChartTitle": "Attività svolte per mese",
       "activitiesLegend": "Attività",
       "topActivitiesTitle": "Attività più utilizzate",
-      "columns": { "activity": "Attività", "timesPerformed": "Volte eseguite" },
+      "columns": {
+        "activity": "Attività",
+        "timesPerformed": "Volte eseguite"
+      },
       "noActivities": "Nessuna attività svolta ancora."
     }
   }

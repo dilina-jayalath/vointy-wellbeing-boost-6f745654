@@ -6,7 +6,7 @@
       "challenges": "Haasteet",
       "community": "Yhteisö",
       "index": "Indeksi",
-      "tagline": "Rakennetaan terveellisempiä tapoja yhdessä.",
+      "tagline": "Build healthier habits, together.",
       "profileAria": "Profiili"
     },
     "home": {
@@ -32,7 +32,11 @@
     },
     "activities": {
       "title": "Aktiviteetit",
-      "tabs": { "all": "Kaikki", "mine": "Omat", "history": "Historia" },
+      "tabs": {
+        "all": "Kaikki",
+        "mine": "Omat",
+        "history": "Historia"
+      },
       "loading": "Ladataan…",
       "noActivities": "Ei vielä aktiviteetteja. Ne ilmestyvät tänne, kun aktiviteettikatalogi on tuotu.",
       "video": "Video",
@@ -53,7 +57,11 @@
     },
     "challenges": {
       "title": "Haasteet",
-      "tabs": { "mine": "Omat", "open": "Avoimet", "board": "Tulostaulu" },
+      "tabs": {
+        "mine": "Omat",
+        "open": "Avoimet",
+        "board": "Tulostaulu"
+      },
       "loading": "Ladataan…",
       "noneJoined": "Et ole vielä liittynyt yhteenkään haasteeseen.",
       "noneOpen": "Ei avoimia haasteita juuri nyt.",
@@ -63,7 +71,10 @@
       "noResults": "Ei vielä tuloksia.",
       "you": "Sinä",
       "member": "Jäsen {n}",
-      "toast": { "couldNotJoin": "Liittyminen epäonnistui", "joined": "Liityit haasteeseen" }
+      "toast": {
+        "couldNotJoin": "Liittyminen epäonnistui",
+        "joined": "Liityit haasteeseen"
+      }
     },
     "community": {
       "title": "Yhteisö",
@@ -72,7 +83,10 @@
       "loading": "Ladataan…",
       "noPosts": "Ei vielä julkaisuja. Ole ensimmäinen jakaja.",
       "writeComment": "Kirjoita kommentti…",
-      "toast": { "couldNotPost": "Julkaisu epäonnistui", "couldNotComment": "Kommentointi epäonnistui" }
+      "toast": {
+        "couldNotPost": "Julkaisu epäonnistui",
+        "couldNotComment": "Kommentointi epäonnistui"
+      }
     },
     "profile": {
       "title": "Profiili",
@@ -86,7 +100,10 @@
       "saving": "Tallennetaan…",
       "employerPanel": "Työnantajapaneeli",
       "signOut": "Kirjaudu ulos",
-      "toast": { "couldNotSave": "Tallennus epäonnistui", "updated": "Profiili päivitetty" }
+      "toast": {
+        "couldNotSave": "Tallennus epäonnistui",
+        "updated": "Profiili päivitetty"
+      }
     },
     "wellbeing": {
       "title": "Aktiivisuusindeksi",
@@ -96,7 +113,11 @@
       "monthlyPoints": "Kuukausittaiset pisteet · {year}",
       "saving": "Tallennetaan…",
       "submit": "Lähetä",
-      "toast": { "couldNotSubmit": "Lähetys epäonnistui", "thanksTitle": "Kiitos!", "thanksDesc": "Vastauksesi tallennettiin." }
+      "toast": {
+        "couldNotSubmit": "Lähetys epäonnistui",
+        "thanksTitle": "Kiitos!",
+        "thanksDesc": "Vastauksesi tallennettiin."
+      }
     },
     "activityForm": {
       "editTitle": "Muokkaa aktiviteettia",
@@ -117,7 +138,11 @@
       "linkLabel": "YouTube-videolinkki",
       "linkPlaceholder": "https://www.youtube.com/watch?v=…",
       "visibilityLabel": "Näkyvyys",
-      "visibility": { "private": "Vain minä", "organization": "Oma yritykseni", "public": "Kaikki" },
+      "visibility": {
+        "private": "Vain minä",
+        "organization": "Oma yritykseni",
+        "public": "Kaikki"
+      },
       "cancel": "Peruuta",
       "saving": "Tallennetaan…",
       "saveChanges": "Tallenna muutokset",
@@ -169,7 +194,11 @@
       "delete": "Poista",
       "video": "Video",
       "minutesSuffix": "min",
-      "visibility": { "private": "Vain minä", "organization": "Oma yritykseni", "public": "Kaikki" },
+      "visibility": {
+        "private": "Vain minä",
+        "organization": "Oma yritykseni",
+        "public": "Kaikki"
+      },
       "imageAlt": "Näytä suurempi kuva aktiviteetista {title}",
       "deleteConfirmTitle": "Poistetaanko tämä aktiviteetti?",
       "deleteConfirmDesc": "“{title}” ja sen kutsut poistetaan pysyvästi.",

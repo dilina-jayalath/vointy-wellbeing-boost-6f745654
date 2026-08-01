@@ -28,7 +28,7 @@
       "disclaimer": "Ingen startavgift · avsluta när som helst · kort krävs för att starta provperioden, första debiteringen sker efter 30 dagar."
     },
     "layout": {
-      "brandTagline": "Bygg hälsosammare vanor tillsammans.",
+      "brandTagline": "Build healthier habits, together.",
       "checkingPlan": "Kontrollerar plan…",
       "trialRemaining": "Kvarvarande provperiod: {days} dagar",
       "paymentFailed": "Betalningen misslyckades",
@@ -83,10 +83,22 @@
       "title": "Utmaningar",
       "description": "Lansera lagutmaningar för att öka aktivitet, sömn, vätskeintag och mer.",
       "sections": {
-        "active": { "title": "Aktiva utmaningar", "body": "Pågående utmaningar med deltagande och framsteg." },
-        "create": { "title": "Skapa utmaning", "body": "Ange titel, aktivitetstyp, mål, varaktighet och team." },
-        "library": { "title": "Utmaningsbibliotek", "body": "Färdiga utmaningar: 10 000 steg, vattenmål, mindfulnessvecka." },
-        "leaderboard": { "title": "Topplista", "body": "Rankning av team och individer per utmaning." }
+        "active": {
+          "title": "Aktiva utmaningar",
+          "body": "Pågående utmaningar med deltagande och framsteg."
+        },
+        "create": {
+          "title": "Skapa utmaning",
+          "body": "Ange titel, aktivitetstyp, mål, varaktighet och team."
+        },
+        "library": {
+          "title": "Utmaningsbibliotek",
+          "body": "Färdiga utmaningar: 10 000 steg, vattenmål, mindfulnessvecka."
+        },
+        "leaderboard": {
+          "title": "Topplista",
+          "body": "Rankning av team och individer per utmaning."
+        }
       }
     },
     "inviteUsers": {
@@ -213,7 +225,10 @@
       "createdByYou": "Du",
       "createdToastTitle": "Team skapat",
       "createdToastDescription": "\"{name}\" har lagts till.",
-      "tabs": { "teams": "Team", "leaderboard": "Topplista" },
+      "tabs": {
+        "teams": "Team",
+        "leaderboard": "Topplista"
+      },
       "columns": {
         "teamName": "Teamnamn",
         "description": "Beskrivning",
@@ -222,7 +237,12 @@
         "actions": "Åtgärder"
       },
       "noTeams": "Inga team hittades. Skapa ett nytt team för att komma igång.",
-      "leaderboardColumns": { "rank": "#", "team": "Team", "members": "Medlemmar", "score": "Poäng" },
+      "leaderboardColumns": {
+        "rank": "#",
+        "team": "Team",
+        "members": "Medlemmar",
+        "score": "Poäng"
+      },
       "noLeaderboard": "Ingen topplistadata ännu."
     },
     "wellbeingIndex": {
@@ -233,9 +253,18 @@
           "title": "Hur det beräknas",
           "body": "Varje slutförd aktivitet ger en anställd 1 poäng. Poängen summeras per månad och ackumuleras under medlemsåret som börjar när den anställda ansluter sig."
         },
-        "monthlyPoints": { "title": "Månatliga poäng", "body": "Totala aktivitetspoäng per månad för alla aktiva team och anställda." },
-        "yearlyTotal": { "title": "Årlig totalsumma", "body": "Ackumulerade poäng per anställd sedan de anslöt sig." },
-        "teamBreakdown": { "title": "Teamöversikt", "body": "Aktivitetspoäng per team med möjlighet att fördjupa sig." }
+        "monthlyPoints": {
+          "title": "Månatliga poäng",
+          "body": "Totala aktivitetspoäng per månad för alla aktiva team och anställda."
+        },
+        "yearlyTotal": {
+          "title": "Årlig totalsumma",
+          "body": "Ackumulerade poäng per anställd sedan de anslöt sig."
+        },
+        "teamBreakdown": {
+          "title": "Teamöversikt",
+          "body": "Aktivitetspoäng per team med möjlighet att fördjupa sig."
+        }
       }
     },
     "paymentBanner": {
@@ -317,14 +346,20 @@
       "pageViewsLegend": "Sidvisningar",
       "visitorsLegend": "Besökare",
       "topPagesTitle": "Mest besökta sidor",
-      "columns": { "path": "Sökväg", "views": "Visningar" },
+      "columns": {
+        "path": "Sökväg",
+        "views": "Visningar"
+      },
       "noVisits": "Inga spårade besök ännu."
     },
     "activities": {
       "monthlyChartTitle": "Utförda aktiviteter per månad",
       "activitiesLegend": "Aktiviteter",
       "topActivitiesTitle": "Mest använda aktiviteter",
-      "columns": { "activity": "Aktivitet", "timesPerformed": "Antal gånger utförd" },
+      "columns": {
+        "activity": "Aktivitet",
+        "timesPerformed": "Antal gånger utförd"
+      },
       "noActivities": "Inga aktiviteter utförda ännu."
     }
   }
