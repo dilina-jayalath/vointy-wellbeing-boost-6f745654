@@ -1,11 +1,14 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { Bell, RefreshCw, User as UserIcon, Languages } from "lucide-react";
+import { Bell, RefreshCw, User as UserIcon, Languages, Loader2 } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { EmployerSidebar } from "@/components/employer/EmployerSidebar";
 import { Button } from "@/components/ui/button";
 import BackButton from "@/components/BackButton";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
+import { useSubscription } from "@/hooks/useSubscription";
+import EmployerPaywall from "@/components/employer/EmployerPaywall";
+import { PaymentTestModeBanner } from "@/components/PaymentTestModeBanner";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 
 
@@ -14,6 +17,26 @@ const EmployerLayout = () => {
   const { orgName } = useEmployerOrg();
   const { pathname } = useLocation();
   const showBack = pathname !== "/employer";
+
+  const { isActive, isTrialing, isPastDue, endsAt, loading } = useSubscription();
+  // Billing page stays reachable without a plan so companies can subscribe.
+  const isBillingPage = pathname.startsWith("/employer/subscriptions");
+  const locked = !loading && !isActive && !isBillingPage;
+
+  const daysLeft = endsAt
+    ? Math.max(0, Math.ceil((endsAt.getTime() - Date.now()) / 86400000))
+    : null;
+  const statusPill = loading
+    ? "Checking plan…"
+    : isTrialing && daysLeft !== null
+      ? `Free trial remaining: ${daysLeft}d`
+      : isPastDue
+        ? "Payment failed"
+        : isActive
+          ? "Employer panel active"
+          : "No active plan";
+
+
 
 
   return (
@@ -43,8 +66,12 @@ const EmployerLayout = () => {
             </div>
             <div className="flex items-center gap-2 sm:gap-3">
               <div className="hidden md:flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-sm">
-                <span className="inline-block h-2 w-2 rounded-full bg-green-400" />
-                Free trial remaining: 30d and 23h
+                <span
+                  className={`inline-block h-2 w-2 rounded-full ${
+                    isActive && !isPastDue ? "bg-green-400" : "bg-orange-300"
+                  }`}
+                />
+                {statusPill}
               </div>
               <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                 <Bell className="h-5 w-5" />
@@ -61,9 +88,20 @@ const EmployerLayout = () => {
             </div>
           </header>
 
+          <PaymentTestModeBanner />
+
           <main className="flex-1 p-6">
-            <Outlet />
+            {loading ? (
+              <div className="flex items-center justify-center py-24">
+                <Loader2 className="h-6 w-6 animate-spin text-brand-purple" />
+              </div>
+            ) : locked ? (
+              <EmployerPaywall />
+            ) : (
+              <Outlet />
+            )}
           </main>
+
         </div>
       </div>
     </SidebarProvider>

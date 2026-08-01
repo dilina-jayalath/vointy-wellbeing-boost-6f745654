@@ -1,10 +1,15 @@
 import React from 'react';
-import { Check, CheckCircle2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Check, CheckCircle2, Loader2 } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
+import { useAuth } from '@/contexts/AuthContext';
+import { useEmployerOrg } from '@/hooks/useEmployerOrg';
+import { usePaddleCheckout } from '@/hooks/usePaddleCheckout';
+import { EMPLOYER_PRICE_ID } from '@/lib/paddle';
+
 
 const planFeatures = [
   'Unlimited employees',
@@ -24,7 +29,27 @@ const highlights = [
 ];
 
 const Subscription = () => {
+  const { user } = useAuth();
+  const { orgId } = useEmployerOrg();
+  const { openCheckout, loading: checkoutLoading } = usePaddleCheckout();
+  const navigate = useNavigate();
+
+  // Signed-in companies go straight to checkout; new companies register first.
+  const handleUpgrade = () => {
+    if (!user) {
+      navigate('/company-signup');
+      return;
+    }
+    openCheckout({
+      priceId: EMPLOYER_PRICE_ID,
+      quantity: 1,
+      customerEmail: user.email ?? undefined,
+      customData: { userId: user.id, ...(orgId ? { organizationId: orgId } : {}) },
+    });
+  };
+
   return (
+
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
 
@@ -114,11 +139,14 @@ const Subscription = () => {
                     ))}
                   </ul>
                   <Button
-                    asChild
+                    onClick={handleUpgrade}
+                    disabled={checkoutLoading}
                     className="w-full h-12 text-lg font-semibold bg-brand-purple hover:bg-brand-purple-dark text-white"
                   >
-                    <Link to="/company-signup">Start free 30-day trial</Link>
+                    {checkoutLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
+                    Start free 30-day trial
                   </Button>
+
                 </CardContent>
               </Card>
             </div>
