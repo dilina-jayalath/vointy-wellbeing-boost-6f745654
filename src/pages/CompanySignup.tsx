@@ -74,9 +74,11 @@ const CompanySignup = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
             <div>
+              <img src={vointyMark.url} alt="Vointy logo" className="h-14 w-auto mb-4" />
               <h1 className="text-4xl md:text-5xl font-bold font-display text-brand-dark mb-4 leading-tight">
                 Join Vointy <span className="gradient-text">free</span> as a company
               </h1>
+
               <p className="text-lg text-gray-600 mb-6">
                 Register your company, get your credentials by email, and invite your employees from your own
                 company panel. Unlimited employees, unlimited teams — no cost.
