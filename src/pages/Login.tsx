@@ -7,6 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
+import vointyMark from "@/assets/vointy-mark.png.asset.json";
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
