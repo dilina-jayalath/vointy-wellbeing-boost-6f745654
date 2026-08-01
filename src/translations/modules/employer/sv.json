@@ -12,7 +12,8 @@
       "activateUsers": "Aktivera användare",
       "teams": "Team",
       "activitySummary": "Aktivitetssammanfattning",
-      "engagement": "Engagemang"
+      "engagement": "Engagemang",
+      "wellbeing": "Välbefinnande"
     },
     "paywall": {
       "title": "Aktivera arbetsgivarpanelen",
@@ -340,6 +341,43 @@
         "participants": "Deltagare",
         "completed": "Slutförda",
         "completionRate": "Slutförandegrad"
+      }
+    },
+    "wellbeing": {
+      "title": "Välbefinnande",
+      "description": "Resultat från välbefinnandeenkäter i din organisation, sammanställda så att enskilda svar förblir privata.",
+      "errorTitle": "Kunde inte läsa in välbefinnandedata",
+      "errorBody": "Endast organisationens ansvariga kan se sammanställda rapporter.",
+      "noData": "Ingen enkätdata ännu.",
+      "monthlyTitle": "Utveckling av välbefinnande (12 månader)",
+      "questionsTitle": "Snittpoäng per fråga (lägsta först)",
+      "distributionTitle": "Fördelning av välbefinnande",
+      "teamsTitle": "Välbefinnande per team",
+      "privacyNote": "Grupper visas endast som antal – enskilda svar avslöjas aldrig.",
+      "kpi": {
+        "avgScore": "Genomsnittligt välbefinnande",
+        "last30Days": "Senaste 30 dagarna",
+        "change": "Förändring",
+        "vsPrev30Days": "Föregående 30 dagar",
+        "responseRate": "Svarsfrekvens",
+        "answers": "Enkätsvar",
+        "activeSurveys": "Aktiva enkäter"
+      },
+      "chart": {
+        "score": "Poäng",
+        "respondents": "Svarande"
+      },
+      "buckets": {
+        "low": "Kräver uppmärksamhet",
+        "medium": "Måttlig",
+        "high": "God"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Medlemmar",
+        "respondents": "Svarande",
+        "responseRate": "Svarsfrekvens",
+        "avgScore": "Snittpoäng"
       }
     }
   },

@@ -12,7 +12,8 @@
       "activateUsers": "Activate Users",
       "teams": "Teams",
       "activitySummary": "Activity summary",
-      "engagement": "Engagement"
+      "engagement": "Engagement",
+      "wellbeing": "Wellbeing"
     },
     "paywall": {
       "title": "Activate the Employer panel",
@@ -340,6 +341,43 @@
         "participants": "Participants",
         "completed": "Completed",
         "completionRate": "Completion rate"
+      }
+    },
+    "wellbeing": {
+      "title": "Wellbeing",
+      "description": "Wellbeing survey results for your organization, aggregated so individual answers stay private.",
+      "errorTitle": "Could not load wellbeing data",
+      "errorBody": "Only organization managers can view aggregated wellbeing reports.",
+      "noData": "No survey data yet.",
+      "monthlyTitle": "Wellbeing development (12 months)",
+      "questionsTitle": "Average score per question (lowest first)",
+      "distributionTitle": "Wellbeing distribution",
+      "teamsTitle": "Wellbeing by team",
+      "privacyNote": "Groups are shown as counts only — individual answers are never revealed.",
+      "kpi": {
+        "avgScore": "Average wellbeing score",
+        "last30Days": "Last 30 days",
+        "change": "Change",
+        "vsPrev30Days": "Previous 30 days",
+        "responseRate": "Response rate",
+        "answers": "Survey answers",
+        "activeSurveys": "Active surveys"
+      },
+      "chart": {
+        "score": "Score",
+        "respondents": "Respondents"
+      },
+      "buckets": {
+        "low": "Needs attention",
+        "medium": "Moderate",
+        "high": "Good"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Members",
+        "respondents": "Respondents",
+        "responseRate": "Response rate",
+        "avgScore": "Average score"
       }
     }
   },

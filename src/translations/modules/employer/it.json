@@ -12,7 +12,8 @@
       "activateUsers": "Attiva utenti",
       "teams": "Team",
       "activitySummary": "Riepilogo attività",
-      "engagement": "Coinvolgimento"
+      "engagement": "Coinvolgimento",
+      "wellbeing": "Benessere"
     },
     "paywall": {
       "title": "Attiva il pannello Datore di lavoro",
@@ -340,6 +341,43 @@
         "participants": "Partecipanti",
         "completed": "Completate",
         "completionRate": "Tasso di completamento"
+      }
+    },
+    "wellbeing": {
+      "title": "Benessere",
+      "description": "Risultati dei sondaggi sul benessere della tua organizzazione, aggregati per mantenere private le risposte individuali.",
+      "errorTitle": "Impossibile caricare i dati sul benessere",
+      "errorBody": "Solo i responsabili dell'organizzazione vedono i report aggregati.",
+      "noData": "Nessun dato dai sondaggi.",
+      "monthlyTitle": "Andamento del benessere (12 mesi)",
+      "questionsTitle": "Punteggio medio per domanda (dal più basso)",
+      "distributionTitle": "Distribuzione del benessere",
+      "teamsTitle": "Benessere per team",
+      "privacyNote": "I gruppi sono mostrati solo come conteggi: nessuna risposta individuale.",
+      "kpi": {
+        "avgScore": "Punteggio medio di benessere",
+        "last30Days": "Ultimi 30 giorni",
+        "change": "Variazione",
+        "vsPrev30Days": "30 giorni precedenti",
+        "responseRate": "Tasso di risposta",
+        "answers": "Risposte ai sondaggi",
+        "activeSurveys": "Sondaggi attivi"
+      },
+      "chart": {
+        "score": "Punteggio",
+        "respondents": "Rispondenti"
+      },
+      "buckets": {
+        "low": "Richiede attenzione",
+        "medium": "Moderato",
+        "high": "Buono"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Membri",
+        "respondents": "Rispondenti",
+        "responseRate": "Tasso di risposta",
+        "avgScore": "Punteggio medio"
       }
     }
   },

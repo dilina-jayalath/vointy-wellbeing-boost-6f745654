@@ -12,7 +12,8 @@
       "activateUsers": "Gebruikers activeren",
       "teams": "Teams",
       "activitySummary": "Activiteitsoverzicht",
-      "engagement": "Betrokkenheid"
+      "engagement": "Betrokkenheid",
+      "wellbeing": "Welzijn"
     },
     "paywall": {
       "title": "Activeer het werkgeverspaneel",
@@ -340,6 +341,43 @@
         "participants": "Deelnemers",
         "completed": "Voltooid",
         "completionRate": "Voltooiingspercentage"
+      }
+    },
+    "wellbeing": {
+      "title": "Welzijn",
+      "description": "Resultaten van welzijnsonderzoeken in je organisatie, geaggregeerd zodat individuele antwoorden privé blijven.",
+      "errorTitle": "Welzijnsgegevens konden niet worden geladen",
+      "errorBody": "Alleen organisatiebeheerders zien geaggregeerde rapporten.",
+      "noData": "Nog geen enquêtegegevens.",
+      "monthlyTitle": "Ontwikkeling van welzijn (12 maanden)",
+      "questionsTitle": "Gemiddelde score per vraag (laagste eerst)",
+      "distributionTitle": "Verdeling van welzijn",
+      "teamsTitle": "Welzijn per team",
+      "privacyNote": "Groepen worden alleen als aantallen weergegeven – nooit individuele antwoorden.",
+      "kpi": {
+        "avgScore": "Gemiddelde welzijnsscore",
+        "last30Days": "Laatste 30 dagen",
+        "change": "Verandering",
+        "vsPrev30Days": "Vorige 30 dagen",
+        "responseRate": "Responspercentage",
+        "answers": "Enquêteantwoorden",
+        "activeSurveys": "Actieve enquêtes"
+      },
+      "chart": {
+        "score": "Score",
+        "respondents": "Respondenten"
+      },
+      "buckets": {
+        "low": "Vraagt aandacht",
+        "medium": "Gemiddeld",
+        "high": "Goed"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Leden",
+        "respondents": "Respondenten",
+        "responseRate": "Responspercentage",
+        "avgScore": "Gemiddelde score"
       }
     }
   },

@@ -12,7 +12,8 @@
       "activateUsers": "Nutzer aktivieren",
       "teams": "Teams",
       "activitySummary": "Aktivitätsübersicht",
-      "engagement": "Engagement"
+      "engagement": "Engagement",
+      "wellbeing": "Wohlbefinden"
     },
     "paywall": {
       "title": "Employer-Panel aktivieren",
@@ -340,6 +341,43 @@
         "participants": "Teilnehmende",
         "completed": "Abgeschlossen",
         "completionRate": "Abschlussquote"
+      }
+    },
+    "wellbeing": {
+      "title": "Wohlbefinden",
+      "description": "Ergebnisse der Wohlbefindens-Umfragen Ihrer Organisation, aggregiert – einzelne Antworten bleiben privat.",
+      "errorTitle": "Wohlbefindens-Daten konnten nicht geladen werden",
+      "errorBody": "Nur Organisationsverantwortliche sehen aggregierte Berichte.",
+      "noData": "Noch keine Umfragedaten.",
+      "monthlyTitle": "Entwicklung des Wohlbefindens (12 Monate)",
+      "questionsTitle": "Durchschnitt pro Frage (niedrigste zuerst)",
+      "distributionTitle": "Verteilung des Wohlbefindens",
+      "teamsTitle": "Wohlbefinden je Team",
+      "privacyNote": "Gruppen werden nur als Anzahl gezeigt – einzelne Antworten nie.",
+      "kpi": {
+        "avgScore": "Durchschnittlicher Wert",
+        "last30Days": "Letzte 30 Tage",
+        "change": "Veränderung",
+        "vsPrev30Days": "Vorherige 30 Tage",
+        "responseRate": "Rücklaufquote",
+        "answers": "Umfrageantworten",
+        "activeSurveys": "Aktive Umfragen"
+      },
+      "chart": {
+        "score": "Punkte",
+        "respondents": "Teilnehmende"
+      },
+      "buckets": {
+        "low": "Handlungsbedarf",
+        "medium": "Mittel",
+        "high": "Gut"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Mitglieder",
+        "respondents": "Teilnehmende",
+        "responseRate": "Rücklaufquote",
+        "avgScore": "Durchschnitt"
       }
     }
   },
