@@ -51,7 +51,7 @@ const Footer = () => {
               <img src={vointyMark.url} alt="Vointy logo" className="h-9 w-auto" />
               <h3 className="text-xl font-bold">Vointy.life</h3>
             </div>
-            <p className="text-sm text-brand-purple-light mb-4 font-medium tracking-wide">Build healthier habits, together.</p>
+            <p className="text-sm text-brand-purple mb-4 font-medium tracking-wide">Build healthier habits, together.</p>
             <p className="text-gray-300 mb-4">
               {t('footer.tagline')}
             </p>
