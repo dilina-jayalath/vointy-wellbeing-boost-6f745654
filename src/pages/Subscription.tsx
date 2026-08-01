@@ -1,10 +1,15 @@
 import React from 'react';
-import { Check, CheckCircle2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Check, CheckCircle2, Loader2 } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
+import { useAuth } from '@/contexts/AuthContext';
+import { useEmployerOrg } from '@/hooks/useEmployerOrg';
+import { usePaddleCheckout } from '@/hooks/usePaddleCheckout';
+import { EMPLOYER_PRICE_ID } from '@/lib/paddle';
+
 
 const planFeatures = [
   'Unlimited employees',
