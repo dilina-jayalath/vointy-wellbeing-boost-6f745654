@@ -47,49 +47,13 @@
     "value3Description": "Conçu et développé par Wellthyforce Oy, détenue et financée par des entrepreneurs privés."
   },
   "careersPage": {
-    "title": "Rejoignez notre mission",
-    "subtitle": "Aidez-nous à transformer le bien-être au travail et à construire l'avenir de l'engagement des salariés.",
-    "whyWorkTitle": "Pourquoi travailler chez Vointy.life ?",
-    "benefit1Title": "Culture Remote-First",
-    "benefit1Description": "Travaillez d'où vous voulez avec des horaires flexibles et un vrai équilibre vie pro/vie perso.",
-    "benefit2Title": "Focus sur l'innovation",
-    "benefit2Description": "Travaillez sur des technologies de pointe qui font une réelle différence dans la vie des gens.",
-    "benefit3Title": "Opportunités d'évolution",
-    "benefit3Description": "Apprentissage continu et développement grâce au mentorat et aux programmes de formation.",
-    "openPositionsTitle": "Postes ouverts",
-    "positions": [
-      {
-        "title": "Développeur·se Frontend Senior",
-        "department": "Ingénierie",
-        "location": "Télétravail",
-        "type": "Temps plein",
-        "description": "Rejoignez notre équipe d'ingénierie pour créer la prochaine génération de solutions de bien-être au travail avec React, TypeScript et les technologies web modernes."
-      },
-      {
-        "title": "Chef·fe de produit",
-        "department": "Produit",
-        "location": "San Francisco, CA",
-        "type": "Temps plein",
-        "description": "Pilotez la stratégie et le développement produit de notre plateforme de bien-être social, en étroite collaboration avec les équipes ingénierie et design."
-      },
-      {
-        "title": "Responsable Customer Success",
-        "department": "Customer Success",
-        "location": "Télétravail",
-        "type": "Temps plein",
-        "description": "Aidez nos clients entreprises à tirer le meilleur parti de Vointy.life et à favoriser son adoption au sein de leurs organisations."
-      },
-      {
-        "title": "Designer UI/UX",
-        "department": "Design",
-        "location": "New York, NY",
-        "type": "Temps plein",
-        "description": "Concevez des expériences utilisateur intuitives et engageantes qui rendent le bien-être au travail accessible et agréable pour tous les utilisateurs."
-      }
-    ],
-    "applyNow": "Postuler maintenant",
-    "noRoleText": "Vous ne trouvez pas le poste idéal ? Nous sommes toujours à la recherche de talents.",
-    "sendResume": "Envoyez-nous votre CV"
+    "title": "Carrières",
+    "subtitle": "Vointy.life s'étend à l'échelle mondiale et opère dans de nombreuses langues.",
+    "intro": "Nous recherchons les professionnels suivants pour rejoindre notre équipe :",
+    "salesTitle": "Représentants commerciaux",
+    "salesText": "Nous offrons aux vendeurs indépendants un accord basé sur la commission pour vendre les services Vointy.life aux entreprises. Nous payons une commission de 35% sur les ventes réalisées. Demandez plus d'informations à contact@vointy.life",
+    "partnerTitle": "Partenaires contractuels",
+    "partnerText": "Nous recherchons des partenaires contractuels pour les ventes qui opèrent dans le domaine de l'amélioration de la capacité de travail des employés. Vointy.life offre une excellente opportunité supplémentaire de vendre d'autres services de bien-être au travail aux clients. Demandez plus d'informations à contact@vointy.life"
   },
   "blogPage": {
     "title": "Blog Vointy.life",

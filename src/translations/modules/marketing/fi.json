@@ -47,49 +47,13 @@
     "value3Description": "Suunnitellut ja kehittänyt Wellthyforce Oy, yksityisten yrittäjien omistama ja rahoittama."
   },
   "careersPage": {
-    "title": "Liity missioomme",
-    "subtitle": "Auta meitä muuttamaan työhyvinvointia ja rakentamaan työntekijöiden sitoutumisen tulevaisuutta.",
-    "whyWorkTitle": "Miksi työskennellä Vointy.lifessa?",
-    "benefit1Title": "Etätyö edellä -kulttuuri",
-    "benefit1Description": "Työskentele mistä tahansa joustavilla työajoilla ja työn ja vapaa-ajan tasapainoon keskittyen.",
-    "benefit2Title": "Innovaatiokeskeisyys",
-    "benefit2Description": "Työskentele huippuluokan teknologian parissa, joka tekee todellisen eron ihmisten elämässä.",
-    "benefit3Title": "Kasvumahdollisuudet",
-    "benefit3Description": "Jatkuvaa oppimista ja kehittymistä mentorointi- ja koulutusohjelmien avulla.",
-    "openPositionsTitle": "Avoimet työpaikat",
-    "positions": [
-      {
-        "title": "Senior Frontend Developer",
-        "department": "Tekniikka",
-        "location": "Etätyö",
-        "type": "Kokoaikainen",
-        "description": "Liity tekniikkatiimiimme rakentamaan seuraavan sukupolven työhyvinvointiratkaisuja Reactilla, TypeScriptillä ja modernilla web-teknologialla."
-      },
-      {
-        "title": "Tuotepäällikkö",
-        "department": "Tuote",
-        "location": "San Francisco, CA",
-        "type": "Kokoaikainen",
-        "description": "Johda tuotestrategiaa ja -kehitystä sosiaaliselle hyvinvointialustallemme yhteistyössä tekniikka- ja suunnittelutiimien kanssa."
-      },
-      {
-        "title": "Customer Success Manager",
-        "department": "Customer Success",
-        "location": "Etätyö",
-        "type": "Kokoaikainen",
-        "description": "Auta yritysasiakkaitamme maksimoimaan Vointy.lifen arvo ja edistä sen käyttöönottoa heidän organisaatioissaan."
-      },
-      {
-        "title": "UI/UX-suunnittelija",
-        "department": "Suunnittelu",
-        "location": "New York, NY",
-        "type": "Kokoaikainen",
-        "description": "Suunnittele intuitiivisia ja kiinnostavia käyttökokemuksia, jotka tekevät työhyvinvoinnista saavutettavaa ja miellyttävää kaikille käyttäjille."
-      }
-    ],
-    "applyNow": "Hae nyt",
-    "noRoleText": "Etkö löytänyt sopivaa roolia? Etsimme aina lahjakkaita ihmisiä.",
-    "sendResume": "Lähetä meille ansioluettelosi"
+    "title": "Careers",
+    "subtitle": "Vointy.life laajenee globaalisti toimien lukuisilla kielillä.",
+    "intro": "Etsimme seuraavia osaajia tiimiimme:",
+    "salesTitle": "Myyntiedustajia",
+    "salesText": "Tarjoamme itsenäisille myyjille komissiopohjaista sopimusta myydä Vointy.life palvelua yrityksille. Toteutuneesta myynnistä maksamme 35 % komission. Kysy lisää contact@vointy.life",
+    "partnerTitle": "Sopimuskumppaneita",
+    "partnerText": "Etsimme myyntiä varten sopimuskumppaneita, jotka toimivat työntekijöiden työkyvyn parantamisen alueella. Vointy.life muodostaa hyvän lisämahdollisuuden myydä muitakin työhyvinvoinnin palveluja asiakkaille. Kysy lisää contact@vointy.life"
   },
   "blogPage": {
     "title": "Vointy.life-blogi",

@@ -47,49 +47,13 @@
     "value3Description": "Designet og udviklet af Wellthyforce Oy, ejet og finansieret af private iværksættere."
   },
   "careersPage": {
-    "title": "Bliv en del af vores mission",
-    "subtitle": "Hjælp os med at transformere trivsel på arbejdspladsen og skabe fremtidens medarbejderengagement.",
-    "whyWorkTitle": "Hvorfor arbejde hos Vointy.life?",
-    "benefit1Title": "Remote-first kultur",
-    "benefit1Description": "Arbejd hvor som helst med fleksible arbejdstider og fokus på balance mellem arbejde og privatliv.",
-    "benefit2Title": "Fokus på innovation",
-    "benefit2Description": "Arbejd med den nyeste teknologi, der gør en reel forskel i menneskers liv.",
-    "benefit3Title": "Udviklingsmuligheder",
-    "benefit3Description": "Løbende læring og udvikling med mentorordninger og træningsprogrammer.",
-    "openPositionsTitle": "Ledige stillinger",
-    "positions": [
-      {
-        "title": "Senior Frontend-udvikler",
-        "department": "Engineering",
-        "location": "Remote",
-        "type": "Fuldtid",
-        "description": "Bliv en del af vores udviklingsteam og byg den næste generation af løsninger til trivsel på arbejdspladsen med React, TypeScript og moderne webteknologier."
-      },
-      {
-        "title": "Produktchef",
-        "department": "Produkt",
-        "location": "San Francisco, CA",
-        "type": "Fuldtid",
-        "description": "Led produktstrategi og -udvikling for vores sociale trivselsplatform i tæt samarbejde med udviklings- og designteams."
-      },
-      {
-        "title": "Customer Success Manager",
-        "department": "Customer Success",
-        "location": "Remote",
-        "type": "Fuldtid",
-        "description": "Hjælp vores erhvervskunder med at maksimere værdien af Vointy.life og drive adoption i deres organisationer."
-      },
-      {
-        "title": "UI/UX-designer",
-        "department": "Design",
-        "location": "New York, NY",
-        "type": "Fuldtid",
-        "description": "Design intuitive og engagerende brugeroplevelser, der gør trivsel på arbejdspladsen tilgængeligt og behageligt for alle brugere."
-      }
-    ],
-    "applyNow": "Ansøg nu",
-    "noRoleText": "Kan du ikke finde en stilling, der passer? Vi leder altid efter talentfulde mennesker.",
-    "sendResume": "Send os dit CV"
+    "title": "Karriere",
+    "subtitle": "Vointy.life ekspanderer globalt og opererer på adskillige sprog.",
+    "intro": "Vi søger følgende fagfolk til vores team:",
+    "salesTitle": "Salgsrepræsentanter",
+    "salesText": "Vi tilbyder uafhængige sælgere en kommissionsbaseret aftale om at sælge Vointy.life-ydelser til virksomheder. Vi betaler 35% kommission på realiserede salg. Spørg mere på contact@vointy.life",
+    "partnerTitle": "Kontraktpartnere",
+    "partnerText": "Vi søger kontraktpartnere til salg, der opererer inden for området for forbedring af medarbejdernes arbejdsevne. Vointy.life udgør en god ekstra mulighed for at sælge andre arbejdsmiljørelaterede sundhedsydelser til kunder. Spørg mere på contact@vointy.life"
   },
   "blogPage": {
     "title": "Vointy.life-bloggen",
