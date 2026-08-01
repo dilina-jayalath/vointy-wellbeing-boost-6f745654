@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Check, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
-import { supabase } from '@/integrations/supabase/client';
+import { Card, CardContent } from '@/components/ui/card';
 
 const planFeatures = [
   'Unlimited employees',
@@ -29,55 +24,6 @@ const highlights = [
 ];
 
 const Subscription = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    companyName: '',
-    message: '',
-  });
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const scrollToForm = () => {
-    document.getElementById('subscription-form')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    try {
-      const { error } = await supabase.from('contact_submissions').insert([
-        {
-          first_name: formData.firstName,
-          last_name: formData.lastName,
-          email: formData.email,
-          company_name: formData.companyName,
-          subject: 'Employer dashboard subscription — €149/month',
-          message:
-            `Plan: Employer Dashboard (€149/month)\n\n` +
-            (formData.message ? `Message: ${formData.message}` : ''),
-        },
-      ]);
-      if (error) throw error;
-      toast({ title: 'Request received!' });
-      setIsSuccess(true);
-      setFormData({ firstName: '', lastName: '', email: '', companyName: '', message: '' });
-    } catch (error: any) {
-      toast({ title: 'Something went wrong', description: error.message, variant: 'destructive' });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
@@ -168,10 +114,10 @@ const Subscription = () => {
                     ))}
                   </ul>
                   <Button
+                    asChild
                     className="w-full h-12 text-lg font-semibold bg-brand-purple hover:bg-brand-purple-dark text-white"
-                    onClick={scrollToForm}
                   >
-                    Start free 30-day trial
+                    <Link to="/company-signup">Start free 30-day trial</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -179,71 +125,6 @@ const Subscription = () => {
           </div>
         </section>
 
-        <section id="subscription-form" className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto">
-              {isSuccess ? (
-                <Card className="text-center p-12 shadow-xl border-none">
-                  <CardContent className="space-y-6">
-                    <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <CheckCircle2 size={48} />
-                    </div>
-                    <h2 className="text-3xl font-bold text-brand-dark">Request received!</h2>
-                    <p className="text-gray-600 text-lg">
-                      We'll be in touch shortly to set up your Vointy account.
-                    </p>
-                    <Button onClick={() => setIsSuccess(false)} variant="outline" className="mt-4">
-                      Send another request
-                    </Button>
-                  </CardContent>
-                </Card>
-              ) : (
-                <Card className="shadow-2xl border-none overflow-hidden">
-                  <CardHeader className="bg-brand-purple text-white p-8">
-                    <CardTitle className="text-2xl">Get started with Vointy</CardTitle>
-                    <p className="text-white/80 mt-2">
-                      Fill out the form and we'll contact you to activate your company account.
-                    </p>
-                  </CardHeader>
-                  <CardContent className="p-8 bg-white">
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                      <div className="grid sm:grid-cols-2 gap-6">
-                        <div className="space-y-2">
-                          <Label htmlFor="firstName">First Name *</Label>
-                          <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} required className="h-12" />
-                        </div>
-                        <div className="space-y-2">
-                          <Label htmlFor="lastName">Last Name *</Label>
-                          <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} required className="h-12" />
-                        </div>
-                      </div>
-                      <div className="grid sm:grid-cols-2 gap-6">
-                        <div className="space-y-2">
-                          <Label htmlFor="email">Email Address *</Label>
-                          <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} required className="h-12" />
-                        </div>
-                        <div className="space-y-2">
-                          <Label htmlFor="companyName">Company Name *</Label>
-                          <Input id="companyName" name="companyName" value={formData.companyName} onChange={handleInputChange} required className="h-12" />
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="message">Message (optional)</Label>
-                        <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} rows={4} placeholder="How can we help you?" className="resize-none" />
-                      </div>
-                      <Button type="submit" className="w-full btn-primary h-14 text-lg font-bold" disabled={isSubmitting}>
-                        {isSubmitting ? 'Processing...' : 'Request access'}
-                      </Button>
-                      <p className="text-sm text-gray-500 text-center">
-                        By submitting, you agree to our Terms of Service and Privacy Policy.
-                      </p>
-                    </form>
-                  </CardContent>
-                </Card>
-              )}
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
