@@ -5,6 +5,7 @@ import { useTranslation } from '@/lib/i18n';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 import vointyMark from '@/assets/vointy-mark.png.asset.json';
+import FooterContactForm from '@/components/FooterContactForm';
 
 
 const Footer = () => {
@@ -43,6 +44,8 @@ const Footer = () => {
   };
 
   return (
+    <>
+    <FooterContactForm />
     <footer className="bg-brand-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -169,6 +172,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 

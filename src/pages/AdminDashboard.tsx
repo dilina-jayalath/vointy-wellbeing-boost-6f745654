@@ -194,27 +194,61 @@ const AdminDashboard = () => {
             <TabsTrigger value="newsletter">Newsletter ({data.subscribers.length})</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="messages" className="space-y-4 mt-4">
-            {data.messages.length === 0 ? (
-              <p className="text-muted-foreground">No messages yet.</p>
-            ) : (
-              data.messages.map((m: any) => (
-                <Card key={m.id}>
+          <TabsContent value="messages" className="mt-4">
+            <div className="grid gap-6 lg:grid-cols-3">
+              {[
+                {
+                  key: "contact",
+                  title: "contact@vointy.life",
+                  description: "Messages from the website contact form",
+                  items: data.messages.filter((m: any) => m.category === "contact"),
+                },
+                {
+                  key: "license",
+                  title: "License requests",
+                  description: "Requests sent through the license form",
+                  items: data.messages.filter((m: any) => m.category === "license"),
+                },
+                {
+                  key: "other",
+                  title: "Other messages",
+                  description: "Everything else",
+                  items: data.messages.filter(
+                    (m: any) => m.category !== "contact" && m.category !== "license",
+                  ),
+                },
+              ].map((box) => (
+                <Card key={box.key} className="flex flex-col">
                   <CardHeader>
-                    <CardTitle className="text-lg">{m.subject}</CardTitle>
-                    <CardDescription>
-                      {m.first_name} {m.last_name} — {m.email}
-                      {m.company_name && ` · ${m.company_name}`}
-                    </CardDescription>
+                    <CardTitle className="text-lg">
+                      {box.title} ({box.items.length})
+                    </CardTitle>
+                    <CardDescription>{box.description}</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-sm whitespace-pre-wrap">{m.message}</p>
-                    <p className="text-xs text-muted-foreground mt-4">{new Date(m.created_at).toLocaleString()}</p>
+                  <CardContent className="space-y-4 max-h-[600px] overflow-y-auto">
+                    {box.items.length === 0 ? (
+                      <p className="text-sm text-muted-foreground">No messages yet.</p>
+                    ) : (
+                      box.items.map((m: any) => (
+                        <div key={m.id} className="rounded-lg border p-4">
+                          <p className="font-semibold text-sm">{m.subject}</p>
+                          <p className="text-xs text-muted-foreground">
+                            {m.first_name} {m.last_name} — {m.email}
+                            {m.company_name && ` · ${m.company_name}`}
+                          </p>
+                          <p className="text-sm whitespace-pre-wrap mt-2">{m.message}</p>
+                          <p className="text-xs text-muted-foreground mt-3">
+                            {new Date(m.created_at).toLocaleString()}
+                          </p>
+                        </div>
+                      ))
+                    )}
                   </CardContent>
                 </Card>
-              ))
-            )}
+              ))}
+            </div>
           </TabsContent>
+
 
           <TabsContent value="customers" className="mt-4 space-y-6">
             {[
