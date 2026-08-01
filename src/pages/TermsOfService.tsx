@@ -98,6 +98,75 @@ const TermsOfService = () => {
     },
     {
       id: 6,
+      title: "Free Use and Paid Subscription",
+      icon: <CreditCard className="w-6 h-6 text-brand-purple" />,
+      content: (
+        <div>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Companies and their employees can use Vointy.life free of charge, with unlimited teams and unlimited employees. The optional <strong>Employer panel</strong> (tracking, analytics, reporting, campaigns, events and invitations) is a paid subscription sold by Wellthyforce Oy.
+          </p>
+          <div className="grid gap-3">
+            {[
+              "Price: EUR 149 per month per company, with no setup fee and no per-user fees. Applicable taxes (such as VAT) are added at checkout and shown before you confirm your order.",
+              "Free trial: new subscriptions include a 30-day free trial. A valid payment method is required to start the trial.",
+              "Trial-to-paid conversion: unless you cancel before the trial ends, the subscription automatically converts to a paid subscription and the first monthly charge is made at the end of the trial.",
+              "Billing cycle: the subscription is billed monthly in advance and renews automatically each month until cancelled.",
+              "Cancellation: you may cancel at any time. Cancellation stops future renewals, and access to the Employer panel continues until the end of the billing period already paid for.",
+              "Price changes: we may change subscription pricing with at least 30 days' prior notice before the change applies to your next renewal.",
+              "Non-payment: if a payment fails and is not resolved after retries, access to the Employer panel may be suspended or the subscription terminated."
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg">
+                <div className="w-2 h-2 bg-brand-purple rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 7,
+      title: "Order Process and Merchant of Record",
+      icon: <Building className="w-6 h-6 text-brand-blue" />,
+      content: (
+        <div className="bg-blue-50 border-l-4 border-brand-blue p-4 rounded-r-lg">
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Our order process is conducted by our online reseller <strong>Paddle.com</strong>. Paddle.com is the Merchant of Record for all our orders. Paddle provides all customer service inquiries and handles returns.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            This means that when you purchase a subscription, your contract for the purchase, payment, invoicing and taxes is with Paddle, while the Vointy.life service itself is provided by Wellthyforce Oy under these Terms.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Payment, billing, tax, cancellation and refund mechanics are additionally governed by{' '}
+            <a href="https://www.paddle.com/legal/checkout-buyer-terms" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">
+              Paddle's Buyer Terms
+            </a>. You can manage your subscription, payment method and invoices, and request a refund, via Paddle at{' '}
+            <a href="https://paddle.net" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">paddle.net</a>{' '}
+            or by contacting{' '}
+            <a href="mailto:contact@vointy.life" className="text-brand-blue hover:underline">contact@vointy.life</a>.
+          </p>
+        </div>
+      )
+    },
+    {
+      id: 8,
+      title: "Refunds",
+      icon: <Info className="w-6 h-6 text-brand-purple" />,
+      content: (
+        <div>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            We offer a <strong>30-day money-back guarantee</strong> on paid subscriptions. If you are not satisfied, you can request a full refund of your subscription payment within 30 days of the order date.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Refunds are processed by our payment provider and Merchant of Record, Paddle. Full details are described in our{' '}
+            <a href="/refund-policy" className="text-brand-blue hover:underline">Refund Policy</a>.
+          </p>
+        </div>
+      )
+    },
+    {
+
+      id: 6,
       title: "Accounts",
       icon: <Lock className="w-6 h-6 text-brand-blue" />,
       content: (
