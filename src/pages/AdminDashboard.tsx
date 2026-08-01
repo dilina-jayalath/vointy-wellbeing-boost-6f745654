@@ -23,6 +23,8 @@ import {
 import { useTranslation } from "@/lib/i18n";
 import MessageReply from "@/components/admin/MessageReply";
 import BlogManager from "@/components/admin/BlogManager";
+import NewsletterList from "@/components/admin/NewsletterList";
+
 
 
 
@@ -524,19 +526,9 @@ const AdminDashboard = () => {
           </TabsContent>
 
           <TabsContent value="newsletter" className="mt-4">
-            <Card>
-              <CardContent className="p-0">
-                <ul className="divide-y">
-                  {data.subscribers.map((s: any) => (
-                    <li key={s.id} className="px-6 py-4 flex justify-between items-center">
-                      <span>{s.email}</span>
-                      <span className="text-xs text-muted-foreground uppercase">{s.language}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            <NewsletterList subscribers={data.subscribers as any} />
           </TabsContent>
+
         </Tabs>
       </div>
     </div>
