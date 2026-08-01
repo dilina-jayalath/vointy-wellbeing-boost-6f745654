@@ -6,6 +6,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { useTranslation } from '@/lib/i18n';
+import { useQuery } from '@tanstack/react-query';
+import { supabase } from '@/integrations/supabase/client';
+import BlogMedia from '@/components/blog/BlogMedia';
 
 interface BlogPost {
   title: string;
@@ -20,6 +23,19 @@ const Blog = () => {
   const { t } = useTranslation();
   const blogPosts = (t('blogPage.posts') as BlogPost[]).map((post) => ({ ...post, image: '/placeholder.svg' }));
   const categories = t('blogPage.categories') as string[];
+
+  const { data: livePosts = [] } = useQuery({
+    queryKey: ['public-blog-posts'],
+    queryFn: async () => {
+      const { data } = await supabase
+        .from('blog_posts')
+        .select('id, title, excerpt, content, media_type, media_url, published_at')
+        .eq('status', 'published')
+        .order('published_at', { ascending: false });
+      return data ?? [];
+    },
+  });
+
 
   return (
     <div className="min-h-screen">
@@ -62,7 +78,40 @@ const Blog = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            {livePosts.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                {livePosts.map((post: any) => (
+                  <Card key={post.id} className="hover:shadow-lg transition-shadow group overflow-hidden">
+                    {post.media_url && post.media_type !== 'none' && (
+                      <div className="aspect-video bg-muted overflow-hidden">
+                        <BlogMedia
+                          path={post.media_url}
+                          type={post.media_type}
+                          alt={post.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <CardHeader>
+                      <CardTitle className="text-lg">{post.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground whitespace-pre-wrap line-clamp-6">
+                        {post.excerpt || post.content}
+                      </p>
+                      {post.published_at && (
+                        <p className="text-xs text-muted-foreground mt-4 flex items-center">
+                          <Calendar className="h-4 w-4 mr-1" />
+                          {new Date(post.published_at).toLocaleDateString()}
+                        </p>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
               {blogPosts.map((post, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow cursor-pointer group">
                   <div className="aspect-video bg-gray-200 rounded-t-lg overflow-hidden">

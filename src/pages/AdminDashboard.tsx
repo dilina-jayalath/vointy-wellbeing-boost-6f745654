@@ -22,6 +22,8 @@ import {
 } from "recharts";
 import { useTranslation } from "@/lib/i18n";
 import MessageReply from "@/components/admin/MessageReply";
+import BlogManager from "@/components/admin/BlogManager";
+
 
 
 const PAID_AMOUNT = 149;
@@ -222,7 +224,13 @@ const AdminDashboard = () => {
             <TabsTrigger value="newsletter">
               {(t("adminPanel.tabs.newsletter") as string).replace("{count}", String(data.subscribers.length))}
             </TabsTrigger>
+            <TabsTrigger value="blog">Blog</TabsTrigger>
           </TabsList>
+
+          <TabsContent value="blog" className="mt-4">
+            <BlogManager />
+          </TabsContent>
+
 
           <TabsContent value="messages" className="mt-4">
             <div className="grid gap-6 lg:grid-cols-3">
