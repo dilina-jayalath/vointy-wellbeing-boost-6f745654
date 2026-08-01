@@ -1,9 +1,18 @@
-import { Outlet, Link, useLocation } from "react-router-dom";
-import { Bell, RefreshCw, User as UserIcon, Languages, Loader2 } from "lucide-react";
+import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
+import { Bell, RefreshCw, User as UserIcon, Languages, Loader2, CreditCard, LogOut } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { EmployerSidebar } from "@/components/employer/EmployerSidebar";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import BackButton from "@/components/BackButton";
+
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 import { useSubscription } from "@/hooks/useSubscription";
@@ -14,9 +23,11 @@ import { useTranslation } from "@/lib/i18n";
 
 
 const EmployerLayout = () => {
-  const { profile, isAdmin } = useAuth();
+  const { profile, isAdmin, user, signOut } = useAuth();
   const { orgName } = useEmployerOrg();
   const { pathname } = useLocation();
+  const navigate = useNavigate();
+
   const { t } = useTranslation();
   const showBack = pathname !== "/employer";
 
@@ -85,9 +96,47 @@ const EmployerLayout = () => {
               <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                 <RefreshCw className="h-5 w-5" />
               </Button>
-              <div className="h-8 w-8 rounded-full bg-white/20 flex items-center justify-center">
-                <UserIcon className="h-4 w-4" />
-              </div>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button
+                    aria-label="Profile menu"
+                    className="h-8 w-8 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center overflow-hidden focus:outline-none focus:ring-2 focus:ring-white/60"
+                  >
+                    {profile?.avatar_url ? (
+                      <img src={profile.avatar_url} alt="Profile avatar" className="h-full w-full object-cover" />
+                    ) : (
+                      <UserIcon className="h-4 w-4" />
+                    )}
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56 bg-background z-50">
+                  <DropdownMenuLabel className="truncate">
+                    {profile?.display_name || user?.email || "Account"}
+                  </DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem asChild>
+                    <Link to="/app/profile" className="cursor-pointer">
+                      <UserIcon className="mr-2 h-4 w-4" /> Profile
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link to="/employer/subscriptions" className="cursor-pointer">
+                      <CreditCard className="mr-2 h-4 w-4" /> Billing
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem
+                    onClick={async () => {
+                      await signOut();
+                      navigate("/auth");
+                    }}
+                    className="cursor-pointer"
+                  >
+                    <LogOut className="mr-2 h-4 w-4" /> Sign out
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+
             </div>
           </header>
 
