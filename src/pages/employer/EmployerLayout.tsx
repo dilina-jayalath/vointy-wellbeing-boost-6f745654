@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import BackButton from "@/components/BackButton";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
+import vointyMark from "@/assets/vointy-mark.png.asset.json";
+
 
 const EmployerLayout = () => {
   const { profile } = useAuth();
