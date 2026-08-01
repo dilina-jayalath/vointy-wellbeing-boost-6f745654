@@ -29,7 +29,27 @@ const highlights = [
 ];
 
 const Subscription = () => {
+  const { user } = useAuth();
+  const { orgId } = useEmployerOrg();
+  const { openCheckout, loading: checkoutLoading } = usePaddleCheckout();
+  const navigate = useNavigate();
+
+  // Signed-in companies go straight to checkout; new companies register first.
+  const handleUpgrade = () => {
+    if (!user) {
+      navigate('/company-signup');
+      return;
+    }
+    openCheckout({
+      priceId: EMPLOYER_PRICE_ID,
+      quantity: 1,
+      customerEmail: user.email ?? undefined,
+      customData: { userId: user.id, ...(orgId ? { organizationId: orgId } : {}) },
+    });
+  };
+
   return (
+
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
 
