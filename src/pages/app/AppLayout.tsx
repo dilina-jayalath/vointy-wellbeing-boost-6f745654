@@ -32,7 +32,10 @@ const AppLayout = () => {
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/90">
                 <img src={vointyMark.url} alt="Vointy logo" className="h-5 w-auto" />
               </span>
-              Vointy<span className="opacity-80">.life</span>
+              <div className="flex flex-col leading-none">
+                <span>Vointy<span className="opacity-80">.life</span></span>
+                <span className="text-[9px] font-normal tracking-wide opacity-90">Build healthier habits, together.</span>
+              </div>
             </Link>
 
           </div>
