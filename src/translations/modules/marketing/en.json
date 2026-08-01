@@ -3,17 +3,35 @@
     "headingPrefix": "One simple price. Unlimited employees. Unlimited teams.",
     "headingPrice": "€149/month.",
     "subheading": "Companies join Vointy for free and share credentials with employees across unlimited teams. Upgrade only when you want the employer dashboard with analytics, campaigns, and events.",
-    "highlights": ["Free 30-day trial", "€149/month", "No setup fee", "Unlimited employees", "Cancel anytime"],
+    "highlights": [
+      "Free 30-day trial",
+      "€149/month",
+      "No setup fee",
+      "Unlimited employees",
+      "Cancel anytime"
+    ],
     "freeTitle": "Free",
     "freeForever": "forever",
     "freeDescription": "Join as a company and share Vointy credentials with your employees across unlimited teams.",
-    "freeFeatures": ["Unlimited employees", "Unlimited teams", "All employee activities", "Team-based access"],
+    "freeFeatures": [
+      "Unlimited employees",
+      "Unlimited teams",
+      "All employee activities",
+      "Team-based access"
+    ],
     "getStartedFree": "Get started free",
     "employerDashboardBadge": "Employer Dashboard",
     "companyPlanTitle": "Company Plan",
     "perMonthPerCompany": "/month / company",
     "companyPlanDescription": "Everything in Free, plus the employer dashboard with tracking, analytics, campaigns, events and invitations.",
-    "planFeatures": ["Unlimited employees", "Unlimited teams", "All activities", "Employer dashboard", "Reporting & analytics", "No per-user fees"],
+    "planFeatures": [
+      "Unlimited employees",
+      "Unlimited teams",
+      "All activities",
+      "Employer dashboard",
+      "Reporting & analytics",
+      "No per-user fees"
+    ],
     "startTrial": "Start free 30-day trial"
   },
   "aboutPage": {
@@ -80,7 +98,15 @@
   "blogPage": {
     "title": "Vointy.life Blog",
     "subtitle": "Insights, research, and best practices for workplace wellness and employee engagement.",
-    "categories": ["All", "Remote Work", "Analytics", "Company Culture", "Mental Health", "Research", "Implementation"],
+    "categories": [
+      "All",
+      "Remote Work",
+      "Analytics",
+      "Company Culture",
+      "Mental Health",
+      "Research",
+      "Implementation"
+    ],
     "posts": [
       {
         "title": "5 Ways to Boost Employee Wellbeing in Remote Teams",
@@ -148,10 +174,22 @@
     "requestDemo": "Request a Demo",
     "whyChooseTitle": "Why Choose Vointy?",
     "reasons": [
-      { "title": "Proven Results", "description": "Companies using Vointy see an average 30% reduction in sick leaves within the first 6 months." },
-      { "title": "Easy Implementation", "description": "Get started in just 24 hours with our simple onboarding process and dedicated support team." },
-      { "title": "Personalized Support", "description": "Our wellness experts work with you to create a customized program that fits your company culture." },
-      { "title": "Data-Driven Insights", "description": "Track progress with comprehensive analytics and reporting to measure your wellness program's impact." }
+      {
+        "title": "Proven Results",
+        "description": "Companies using Vointy see an average 30% reduction in sick leaves within the first 6 months."
+      },
+      {
+        "title": "Easy Implementation",
+        "description": "Get started in just 24 hours with our simple onboarding process and dedicated support team."
+      },
+      {
+        "title": "Personalized Support",
+        "description": "Our wellness experts work with you to create a customized program that fits your company culture."
+      },
+      {
+        "title": "Data-Driven Insights",
+        "description": "Track progress with comprehensive analytics and reporting to measure your wellness program's impact."
+      }
     ]
   },
   "contactFormPage": {
@@ -201,5 +239,11 @@
   },
   "backButton": {
     "label": "Back"
+  },
+  "homeExtra": {
+    "freeBadge": "Free for companies",
+    "altHero": "Diverse team stretching together outdoors",
+    "altWhy": "Vointy app dashboard showing activity rings",
+    "altCompanies": "Company leadership discussing employee wellbeing"
   }
 }

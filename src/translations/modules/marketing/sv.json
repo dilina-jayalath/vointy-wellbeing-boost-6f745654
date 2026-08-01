@@ -239,5 +239,11 @@
   },
   "backButton": {
     "label": "Tillbaka"
+  },
+  "homeExtra": {
+    "freeBadge": "Gratis för företag",
+    "altHero": "Ett blandat team stretchar tillsammans utomhus",
+    "altWhy": "Vointy-appens översikt med aktivitetsringar",
+    "altCompanies": "Företagsledningen diskuterar medarbetarnas välbefinnande"
   }
 }

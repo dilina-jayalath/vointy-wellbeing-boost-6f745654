@@ -239,5 +239,11 @@
   },
   "backButton": {
     "label": "Tilbage"
+  },
+  "homeExtra": {
+    "freeBadge": "Gratis for virksomheder",
+    "altHero": "Et mangfoldigt team strækker ud sammen udendørs",
+    "altWhy": "Vointy-appens dashboard med aktivitetsringe",
+    "altCompanies": "Virksomhedsledelsen drøfter medarbejdernes trivsel"
   }
 }

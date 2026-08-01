@@ -239,5 +239,11 @@
   },
   "backButton": {
     "label": "Terug"
+  },
+  "homeExtra": {
+    "freeBadge": "Gratis voor bedrijven",
+    "altHero": "Een divers team rekt zich samen buiten uit",
+    "altWhy": "Vointy-app dashboard met activiteitsringen",
+    "altCompanies": "Bedrijfsleiding bespreekt het welzijn van medewerkers"
   }
 }

@@ -3,17 +3,35 @@
     "headingPrefix": "Un precio sencillo. Empleados ilimitados. Equipos ilimitados.",
     "headingPrice": "149 €/mes.",
     "subheading": "Las empresas se unen a Vointy de forma gratuita y comparten sus credenciales con empleados en equipos ilimitados. Actualiza solo cuando quieras el panel de empleador con analíticas, campañas y eventos.",
-    "highlights": ["Prueba gratuita de 30 días", "149 €/mes", "Sin cuota de instalación", "Empleados ilimitados", "Cancela cuando quieras"],
+    "highlights": [
+      "Prueba gratuita de 30 días",
+      "149 €/mes",
+      "Sin cuota de instalación",
+      "Empleados ilimitados",
+      "Cancela cuando quieras"
+    ],
     "freeTitle": "Gratis",
     "freeForever": "para siempre",
     "freeDescription": "Únete como empresa y comparte las credenciales de Vointy con tus empleados en equipos ilimitados.",
-    "freeFeatures": ["Empleados ilimitados", "Equipos ilimitados", "Todas las actividades para empleados", "Acceso por equipos"],
+    "freeFeatures": [
+      "Empleados ilimitados",
+      "Equipos ilimitados",
+      "Todas las actividades para empleados",
+      "Acceso por equipos"
+    ],
     "getStartedFree": "Empezar gratis",
     "employerDashboardBadge": "Panel de empleador",
     "companyPlanTitle": "Plan Empresa",
     "perMonthPerCompany": "/mes / empresa",
     "companyPlanDescription": "Todo lo del plan Gratis, más el panel de empleador con seguimiento, analíticas, campañas, eventos e invitaciones.",
-    "planFeatures": ["Empleados ilimitados", "Equipos ilimitados", "Todas las actividades", "Panel de empleador", "Informes y analíticas", "Sin tarifas por usuario"],
+    "planFeatures": [
+      "Empleados ilimitados",
+      "Equipos ilimitados",
+      "Todas las actividades",
+      "Panel de empleador",
+      "Informes y analíticas",
+      "Sin tarifas por usuario"
+    ],
     "startTrial": "Iniciar prueba gratuita de 30 días"
   },
   "aboutPage": {
@@ -80,7 +98,15 @@
   "blogPage": {
     "title": "Blog de Vointy.life",
     "subtitle": "Perspectivas, investigación y buenas prácticas sobre bienestar laboral y compromiso de los empleados.",
-    "categories": ["Todo", "Trabajo remoto", "Analíticas", "Cultura empresarial", "Salud mental", "Investigación", "Implementación"],
+    "categories": [
+      "Todo",
+      "Trabajo remoto",
+      "Analíticas",
+      "Cultura empresarial",
+      "Salud mental",
+      "Investigación",
+      "Implementación"
+    ],
     "posts": [
       {
         "title": "5 formas de impulsar el bienestar de los empleados en equipos remotos",
@@ -148,10 +174,22 @@
     "requestDemo": "Solicitar una demo",
     "whyChooseTitle": "¿Por qué elegir Vointy?",
     "reasons": [
-      { "title": "Resultados probados", "description": "Las empresas que usan Vointy ven una reducción promedio del 30 % en bajas por enfermedad en los primeros 6 meses." },
-      { "title": "Implementación sencilla", "description": "Empieza en solo 24 horas con nuestro proceso de incorporación sencillo y un equipo de soporte dedicado." },
-      { "title": "Soporte personalizado", "description": "Nuestros expertos en bienestar trabajan contigo para crear un programa a medida que se ajuste a la cultura de tu empresa." },
-      { "title": "Información basada en datos", "description": "Haz seguimiento del progreso con analíticas e informes completos para medir el impacto de tu programa de bienestar." }
+      {
+        "title": "Resultados probados",
+        "description": "Las empresas que usan Vointy ven una reducción promedio del 30 % en bajas por enfermedad en los primeros 6 meses."
+      },
+      {
+        "title": "Implementación sencilla",
+        "description": "Empieza en solo 24 horas con nuestro proceso de incorporación sencillo y un equipo de soporte dedicado."
+      },
+      {
+        "title": "Soporte personalizado",
+        "description": "Nuestros expertos en bienestar trabajan contigo para crear un programa a medida que se ajuste a la cultura de tu empresa."
+      },
+      {
+        "title": "Información basada en datos",
+        "description": "Haz seguimiento del progreso con analíticas e informes completos para medir el impacto de tu programa de bienestar."
+      }
     ]
   },
   "contactFormPage": {
@@ -201,5 +239,11 @@
   },
   "backButton": {
     "label": "Atrás"
+  },
+  "homeExtra": {
+    "freeBadge": "Gratis para empresas",
+    "altHero": "Un equipo diverso estirando juntos al aire libre",
+    "altWhy": "Panel de la aplicación Vointy con los anillos de actividad",
+    "altCompanies": "La dirección de la empresa habla sobre el bienestar de los empleados"
   }
 }

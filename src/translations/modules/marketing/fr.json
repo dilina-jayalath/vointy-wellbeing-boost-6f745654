@@ -3,17 +3,35 @@
     "headingPrefix": "Un prix simple. Salariés illimités. Équipes illimitées.",
     "headingPrice": "149 €/mois.",
     "subheading": "Les entreprises rejoignent Vointy gratuitement et partagent leurs identifiants avec leurs salariés dans un nombre illimité d'équipes. Passez à l'offre supérieure uniquement lorsque vous souhaitez le tableau de bord employeur avec analyses, campagnes et événements.",
-    "highlights": ["Essai gratuit de 30 jours", "149 €/mois", "Aucun frais d'installation", "Salariés illimités", "Résiliable à tout moment"],
+    "highlights": [
+      "Essai gratuit de 30 jours",
+      "149 €/mois",
+      "Aucun frais d'installation",
+      "Salariés illimités",
+      "Résiliable à tout moment"
+    ],
     "freeTitle": "Gratuit",
     "freeForever": "à vie",
     "freeDescription": "Rejoignez en tant qu'entreprise et partagez vos identifiants Vointy avec vos salariés dans un nombre illimité d'équipes.",
-    "freeFeatures": ["Salariés illimités", "Équipes illimitées", "Toutes les activités des salariés", "Accès par équipe"],
+    "freeFeatures": [
+      "Salariés illimités",
+      "Équipes illimitées",
+      "Toutes les activités des salariés",
+      "Accès par équipe"
+    ],
     "getStartedFree": "Commencer gratuitement",
     "employerDashboardBadge": "Tableau de bord employeur",
     "companyPlanTitle": "Offre Entreprise",
     "perMonthPerCompany": "/mois / entreprise",
     "companyPlanDescription": "Tout ce qui est inclus dans l'offre Gratuite, plus le tableau de bord employeur avec suivi, analyses, campagnes, événements et invitations.",
-    "planFeatures": ["Salariés illimités", "Équipes illimitées", "Toutes les activités", "Tableau de bord employeur", "Rapports et analyses", "Aucun frais par utilisateur"],
+    "planFeatures": [
+      "Salariés illimités",
+      "Équipes illimitées",
+      "Toutes les activités",
+      "Tableau de bord employeur",
+      "Rapports et analyses",
+      "Aucun frais par utilisateur"
+    ],
     "startTrial": "Démarrer l'essai gratuit de 30 jours"
   },
   "aboutPage": {
@@ -80,7 +98,15 @@
   "blogPage": {
     "title": "Blog Vointy.life",
     "subtitle": "Analyses, recherches et bonnes pratiques pour le bien-être au travail et l'engagement des salariés.",
-    "categories": ["Tout", "Télétravail", "Analyses", "Culture d'entreprise", "Santé mentale", "Recherche", "Mise en œuvre"],
+    "categories": [
+      "Tout",
+      "Télétravail",
+      "Analyses",
+      "Culture d'entreprise",
+      "Santé mentale",
+      "Recherche",
+      "Mise en œuvre"
+    ],
     "posts": [
       {
         "title": "5 façons de renforcer le bien-être des salariés en télétravail",
@@ -148,10 +174,22 @@
     "requestDemo": "Demander une démo",
     "whyChooseTitle": "Pourquoi choisir Vointy ?",
     "reasons": [
-      { "title": "Résultats prouvés", "description": "Les entreprises qui utilisent Vointy constatent en moyenne une réduction de 30 % de l'absentéisme dès les 6 premiers mois." },
-      { "title": "Mise en place facile", "description": "Démarrez en seulement 24 heures grâce à notre processus d'intégration simple et à notre équipe support dédiée." },
-      { "title": "Accompagnement personnalisé", "description": "Nos experts en bien-être travaillent avec vous pour créer un programme sur mesure adapté à la culture de votre entreprise." },
-      { "title": "Analyses fondées sur les données", "description": "Suivez vos progrès grâce à des analyses et rapports complets pour mesurer l'impact de votre programme de bien-être." }
+      {
+        "title": "Résultats prouvés",
+        "description": "Les entreprises qui utilisent Vointy constatent en moyenne une réduction de 30 % de l'absentéisme dès les 6 premiers mois."
+      },
+      {
+        "title": "Mise en place facile",
+        "description": "Démarrez en seulement 24 heures grâce à notre processus d'intégration simple et à notre équipe support dédiée."
+      },
+      {
+        "title": "Accompagnement personnalisé",
+        "description": "Nos experts en bien-être travaillent avec vous pour créer un programme sur mesure adapté à la culture de votre entreprise."
+      },
+      {
+        "title": "Analyses fondées sur les données",
+        "description": "Suivez vos progrès grâce à des analyses et rapports complets pour mesurer l'impact de votre programme de bien-être."
+      }
     ]
   },
   "contactFormPage": {
@@ -201,5 +239,11 @@
   },
   "backButton": {
     "label": "Retour"
+  },
+  "homeExtra": {
+    "freeBadge": "Gratuit pour les entreprises",
+    "altHero": "Une équipe diverse s'étire ensemble en plein air",
+    "altWhy": "Tableau de bord de l'application Vointy avec les anneaux d'activité",
+    "altCompanies": "La direction de l'entreprise discute du bien-être des employés"
   }
 }

@@ -3,17 +3,35 @@
     "headingPrefix": "Un prezzo semplice. Dipendenti illimitati. Team illimitati.",
     "headingPrice": "€149/mese.",
     "subheading": "Le aziende si iscrivono a Vointy gratuitamente e condividono le credenziali con i dipendenti in team illimitati. Effettua l'upgrade solo quando vuoi la dashboard del datore di lavoro con analisi, campagne ed eventi.",
-    "highlights": ["Prova gratuita di 30 giorni", "€149/mese", "Nessun costo di attivazione", "Dipendenti illimitati", "Annulla quando vuoi"],
+    "highlights": [
+      "Prova gratuita di 30 giorni",
+      "€149/mese",
+      "Nessun costo di attivazione",
+      "Dipendenti illimitati",
+      "Annulla quando vuoi"
+    ],
     "freeTitle": "Gratis",
     "freeForever": "per sempre",
     "freeDescription": "Iscriviti come azienda e condividi le credenziali Vointy con i tuoi dipendenti in team illimitati.",
-    "freeFeatures": ["Dipendenti illimitati", "Team illimitati", "Tutte le attività dei dipendenti", "Accesso basato sul team"],
+    "freeFeatures": [
+      "Dipendenti illimitati",
+      "Team illimitati",
+      "Tutte le attività dei dipendenti",
+      "Accesso basato sul team"
+    ],
     "getStartedFree": "Inizia gratis",
     "employerDashboardBadge": "Dashboard datore di lavoro",
     "companyPlanTitle": "Piano Azienda",
     "perMonthPerCompany": "/mese / azienda",
     "companyPlanDescription": "Tutto ciò che è incluso nel piano Gratis, più la dashboard del datore di lavoro con monitoraggio, analisi, campagne, eventi e inviti.",
-    "planFeatures": ["Dipendenti illimitati", "Team illimitati", "Tutte le attività", "Dashboard datore di lavoro", "Report e analisi", "Nessun costo per utente"],
+    "planFeatures": [
+      "Dipendenti illimitati",
+      "Team illimitati",
+      "Tutte le attività",
+      "Dashboard datore di lavoro",
+      "Report e analisi",
+      "Nessun costo per utente"
+    ],
     "startTrial": "Avvia la prova gratuita di 30 giorni"
   },
   "aboutPage": {
@@ -80,7 +98,15 @@
   "blogPage": {
     "title": "Blog di Vointy.life",
     "subtitle": "Approfondimenti, ricerche e best practice per il benessere sul lavoro e il coinvolgimento dei dipendenti.",
-    "categories": ["Tutti", "Lavoro remoto", "Analisi", "Cultura aziendale", "Salute mentale", "Ricerca", "Implementazione"],
+    "categories": [
+      "Tutti",
+      "Lavoro remoto",
+      "Analisi",
+      "Cultura aziendale",
+      "Salute mentale",
+      "Ricerca",
+      "Implementazione"
+    ],
     "posts": [
       {
         "title": "5 modi per aumentare il benessere dei dipendenti nei team remoti",
@@ -148,10 +174,22 @@
     "requestDemo": "Richiedi una demo",
     "whyChooseTitle": "Perché scegliere Vointy?",
     "reasons": [
-      { "title": "Risultati comprovati", "description": "Le aziende che utilizzano Vointy registrano in media una riduzione del 30% delle assenze per malattia nei primi 6 mesi." },
-      { "title": "Implementazione semplice", "description": "Inizia in sole 24 ore grazie al nostro semplice processo di onboarding e a un team di supporto dedicato." },
-      { "title": "Supporto personalizzato", "description": "I nostri esperti di benessere lavorano con te per creare un programma su misura adatto alla cultura della tua azienda." },
-      { "title": "Insight basati sui dati", "description": "Monitora i progressi con analisi e report completi per misurare l'impatto del tuo programma di benessere." }
+      {
+        "title": "Risultati comprovati",
+        "description": "Le aziende che utilizzano Vointy registrano in media una riduzione del 30% delle assenze per malattia nei primi 6 mesi."
+      },
+      {
+        "title": "Implementazione semplice",
+        "description": "Inizia in sole 24 ore grazie al nostro semplice processo di onboarding e a un team di supporto dedicato."
+      },
+      {
+        "title": "Supporto personalizzato",
+        "description": "I nostri esperti di benessere lavorano con te per creare un programma su misura adatto alla cultura della tua azienda."
+      },
+      {
+        "title": "Insight basati sui dati",
+        "description": "Monitora i progressi con analisi e report completi per misurare l'impatto del tuo programma di benessere."
+      }
     ]
   },
   "contactFormPage": {
@@ -201,5 +239,11 @@
   },
   "backButton": {
     "label": "Indietro"
+  },
+  "homeExtra": {
+    "freeBadge": "Gratis per le aziende",
+    "altHero": "Un team eterogeneo si allunga insieme all'aperto",
+    "altWhy": "Dashboard dell'app Vointy con gli anelli di attività",
+    "altCompanies": "La direzione aziendale discute del benessere dei dipendenti"
   }
 }

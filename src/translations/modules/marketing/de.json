@@ -3,17 +3,35 @@
     "headingPrefix": "Ein einfacher Preis. Unbegrenzt viele Mitarbeitende. Unbegrenzt viele Teams.",
     "headingPrice": "€149/Monat.",
     "subheading": "Unternehmen treten Vointy kostenlos bei und teilen Zugangsdaten mit Mitarbeitenden in unbegrenzt vielen Teams. Ein Upgrade lohnt sich erst, wenn Sie das Arbeitgeber-Dashboard mit Analysen, Kampagnen und Events nutzen möchten.",
-    "highlights": ["Kostenlose 30-Tage-Testphase", "€149/Monat", "Keine Einrichtungsgebühr", "Unbegrenzt viele Mitarbeitende", "Jederzeit kündbar"],
+    "highlights": [
+      "Kostenlose 30-Tage-Testphase",
+      "€149/Monat",
+      "Keine Einrichtungsgebühr",
+      "Unbegrenzt viele Mitarbeitende",
+      "Jederzeit kündbar"
+    ],
     "freeTitle": "Kostenlos",
     "freeForever": "dauerhaft",
     "freeDescription": "Treten Sie als Unternehmen bei und teilen Sie Vointy-Zugangsdaten mit Ihren Mitarbeitenden in unbegrenzt vielen Teams.",
-    "freeFeatures": ["Unbegrenzt viele Mitarbeitende", "Unbegrenzt viele Teams", "Alle Mitarbeiteraktivitäten", "Teambasierter Zugriff"],
+    "freeFeatures": [
+      "Unbegrenzt viele Mitarbeitende",
+      "Unbegrenzt viele Teams",
+      "Alle Mitarbeiteraktivitäten",
+      "Teambasierter Zugriff"
+    ],
     "getStartedFree": "Kostenlos starten",
     "employerDashboardBadge": "Arbeitgeber-Dashboard",
     "companyPlanTitle": "Unternehmensplan",
     "perMonthPerCompany": "/Monat / Unternehmen",
     "companyPlanDescription": "Alles aus Kostenlos, plus das Arbeitgeber-Dashboard mit Tracking, Analysen, Kampagnen, Events und Einladungen.",
-    "planFeatures": ["Unbegrenzt viele Mitarbeitende", "Unbegrenzt viele Teams", "Alle Aktivitäten", "Arbeitgeber-Dashboard", "Berichte & Analysen", "Keine Gebühren pro Nutzer"],
+    "planFeatures": [
+      "Unbegrenzt viele Mitarbeitende",
+      "Unbegrenzt viele Teams",
+      "Alle Aktivitäten",
+      "Arbeitgeber-Dashboard",
+      "Berichte & Analysen",
+      "Keine Gebühren pro Nutzer"
+    ],
     "startTrial": "Kostenlose 30-Tage-Testphase starten"
   },
   "aboutPage": {
@@ -80,7 +98,15 @@
   "blogPage": {
     "title": "Vointy.life Blog",
     "subtitle": "Einblicke, Forschung und Best Practices für Wellness am Arbeitsplatz und Mitarbeiterengagement.",
-    "categories": ["Alle", "Remote-Arbeit", "Analysen", "Unternehmenskultur", "Mentale Gesundheit", "Forschung", "Umsetzung"],
+    "categories": [
+      "Alle",
+      "Remote-Arbeit",
+      "Analysen",
+      "Unternehmenskultur",
+      "Mentale Gesundheit",
+      "Forschung",
+      "Umsetzung"
+    ],
     "posts": [
       {
         "title": "5 Wege, das Wohlbefinden von Mitarbeitenden in Remote-Teams zu steigern",
@@ -148,10 +174,22 @@
     "requestDemo": "Demo anfordern",
     "whyChooseTitle": "Warum Vointy wählen?",
     "reasons": [
-      { "title": "Bewährte Ergebnisse", "description": "Unternehmen, die Vointy nutzen, verzeichnen innerhalb der ersten 6 Monate eine durchschnittliche Reduktion der Krankheitstage um 30 %." },
-      { "title": "Einfache Einführung", "description": "Starten Sie innerhalb von 24 Stunden mit unserem einfachen Onboarding-Prozess und engagierten Support-Team." },
-      { "title": "Persönliche Unterstützung", "description": "Unsere Wellness-Experten arbeiten mit Ihnen zusammen, um ein maßgeschneidertes Programm für Ihre Unternehmenskultur zu entwickeln." },
-      { "title": "Datenbasierte Einblicke", "description": "Verfolgen Sie Fortschritte mit umfassenden Analysen und Berichten, um die Wirkung Ihres Wellness-Programms zu messen." }
+      {
+        "title": "Bewährte Ergebnisse",
+        "description": "Unternehmen, die Vointy nutzen, verzeichnen innerhalb der ersten 6 Monate eine durchschnittliche Reduktion der Krankheitstage um 30 %."
+      },
+      {
+        "title": "Einfache Einführung",
+        "description": "Starten Sie innerhalb von 24 Stunden mit unserem einfachen Onboarding-Prozess und engagierten Support-Team."
+      },
+      {
+        "title": "Persönliche Unterstützung",
+        "description": "Unsere Wellness-Experten arbeiten mit Ihnen zusammen, um ein maßgeschneidertes Programm für Ihre Unternehmenskultur zu entwickeln."
+      },
+      {
+        "title": "Datenbasierte Einblicke",
+        "description": "Verfolgen Sie Fortschritte mit umfassenden Analysen und Berichten, um die Wirkung Ihres Wellness-Programms zu messen."
+      }
     ]
   },
   "contactFormPage": {
@@ -201,5 +239,11 @@
   },
   "backButton": {
     "label": "Zurück"
+  },
+  "homeExtra": {
+    "freeBadge": "Kostenlos für Unternehmen",
+    "altHero": "Vielfältiges Team dehnt sich gemeinsam im Freien",
+    "altWhy": "Vointy App-Dashboard mit Aktivitätsringen",
+    "altCompanies": "Unternehmensleitung spricht über das Wohlbefinden der Mitarbeitenden"
   }
 }

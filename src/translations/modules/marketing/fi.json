@@ -3,17 +3,35 @@
     "headingPrefix": "Yksi yksinkertainen hinta. Rajattomasti työntekijöitä. Rajattomasti tiimejä.",
     "headingPrice": "149 €/kk.",
     "subheading": "Yritykset liittyvät Vointyyn ilmaiseksi ja jakavat tunnukset työntekijöilleen rajattomassa määrässä tiimejä. Päivitä vasta, kun haluat työnantajan hallintapaneelin analytiikalla, kampanjoilla ja tapahtumilla.",
-    "highlights": ["Ilmainen 30 päivän kokeilu", "149 €/kk", "Ei käyttöönottomaksua", "Rajattomasti työntekijöitä", "Peru milloin tahansa"],
+    "highlights": [
+      "Ilmainen 30 päivän kokeilu",
+      "149 €/kk",
+      "Ei käyttöönottomaksua",
+      "Rajattomasti työntekijöitä",
+      "Peru milloin tahansa"
+    ],
     "freeTitle": "Ilmainen",
     "freeForever": "ikuisesti",
     "freeDescription": "Liity yrityksenä ja jaa Vointy-tunnukset työntekijöillesi rajattomassa määrässä tiimejä.",
-    "freeFeatures": ["Rajattomasti työntekijöitä", "Rajattomasti tiimejä", "Kaikki työntekijöiden aktiviteetit", "Tiimipohjainen käyttöoikeus"],
+    "freeFeatures": [
+      "Rajattomasti työntekijöitä",
+      "Rajattomasti tiimejä",
+      "Kaikki työntekijöiden aktiviteetit",
+      "Tiimipohjainen käyttöoikeus"
+    ],
     "getStartedFree": "Aloita ilmaiseksi",
     "employerDashboardBadge": "Työnantajan hallintapaneeli",
     "companyPlanTitle": "Yrityspaketti",
     "perMonthPerCompany": "/kk / yritys",
     "companyPlanDescription": "Kaikki Ilmainen-paketin ominaisuudet sekä työnantajan hallintapaneeli seurannalla, analytiikalla, kampanjoilla, tapahtumilla ja kutsuilla.",
-    "planFeatures": ["Rajattomasti työntekijöitä", "Rajattomasti tiimejä", "Kaikki aktiviteetit", "Työnantajan hallintapaneeli", "Raportointi ja analytiikka", "Ei käyttäjäkohtaisia maksuja"],
+    "planFeatures": [
+      "Rajattomasti työntekijöitä",
+      "Rajattomasti tiimejä",
+      "Kaikki aktiviteetit",
+      "Työnantajan hallintapaneeli",
+      "Raportointi ja analytiikka",
+      "Ei käyttäjäkohtaisia maksuja"
+    ],
     "startTrial": "Aloita ilmainen 30 päivän kokeilu"
   },
   "aboutPage": {
@@ -80,7 +98,15 @@
   "blogPage": {
     "title": "Vointy.life-blogi",
     "subtitle": "Oivalluksia, tutkimusta ja parhaita käytäntöjä työhyvinvointiin ja työntekijöiden sitoutumiseen.",
-    "categories": ["Kaikki", "Etätyö", "Analytiikka", "Yrityskulttuuri", "Mielenterveys", "Tutkimus", "Käyttöönotto"],
+    "categories": [
+      "Kaikki",
+      "Etätyö",
+      "Analytiikka",
+      "Yrityskulttuuri",
+      "Mielenterveys",
+      "Tutkimus",
+      "Käyttöönotto"
+    ],
     "posts": [
       {
         "title": "5 tapaa parantaa työntekijöiden hyvinvointia etätiimeissä",
@@ -148,10 +174,22 @@
     "requestDemo": "Pyydä esittely",
     "whyChooseTitle": "Miksi valita Vointy?",
     "reasons": [
-      { "title": "Todistetut tulokset", "description": "Vointyä käyttävät yritykset näkevät keskimäärin 30 % vähemmän sairauspoissaoloja ensimmäisten 6 kuukauden aikana." },
-      { "title": "Helppo käyttöönotto", "description": "Pääset alkuun vain 24 tunnissa yksinkertaisen käyttöönottoprosessimme ja omistautuneen tukitiimimme ansiosta." },
-      { "title": "Henkilökohtainen tuki", "description": "Hyvinvointiasiantuntijamme työskentelevät kanssasi luodakseen yrityskulttuuriisi sopivan räätälöidyn ohjelman." },
-      { "title": "Dataan perustuvat oivallukset", "description": "Seuraa edistymistä kattavan analytiikan ja raportoinnin avulla ja mittaa hyvinvointiohjelmasi vaikutusta." }
+      {
+        "title": "Todistetut tulokset",
+        "description": "Vointyä käyttävät yritykset näkevät keskimäärin 30 % vähemmän sairauspoissaoloja ensimmäisten 6 kuukauden aikana."
+      },
+      {
+        "title": "Helppo käyttöönotto",
+        "description": "Pääset alkuun vain 24 tunnissa yksinkertaisen käyttöönottoprosessimme ja omistautuneen tukitiimimme ansiosta."
+      },
+      {
+        "title": "Henkilökohtainen tuki",
+        "description": "Hyvinvointiasiantuntijamme työskentelevät kanssasi luodakseen yrityskulttuuriisi sopivan räätälöidyn ohjelman."
+      },
+      {
+        "title": "Dataan perustuvat oivallukset",
+        "description": "Seuraa edistymistä kattavan analytiikan ja raportoinnin avulla ja mittaa hyvinvointiohjelmasi vaikutusta."
+      }
     ]
   },
   "contactFormPage": {
@@ -201,5 +239,11 @@
   },
   "backButton": {
     "label": "Takaisin"
+  },
+  "homeExtra": {
+    "freeBadge": "Yrityksille maksutta",
+    "altHero": "Monimuotoinen tiimi venyttelee yhdessä ulkona",
+    "altWhy": "Vointy-sovelluksen näkymä aktiivisuusrenkaineen",
+    "altCompanies": "Yrityksen johto keskustelee työntekijöiden hyvinvoinnista"
   }
 }
