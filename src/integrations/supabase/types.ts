@@ -310,6 +310,44 @@ export type Database = {
           },
         ]
       }
+      contact_replies: {
+        Row: {
+          admin_user_id: string
+          body: string
+          created_at: string
+          id: string
+          recipient_email: string
+          subject: string
+          submission_id: string
+        }
+        Insert: {
+          admin_user_id: string
+          body: string
+          created_at?: string
+          id?: string
+          recipient_email: string
+          subject: string
+          submission_id: string
+        }
+        Update: {
+          admin_user_id?: string
+          body?: string
+          created_at?: string
+          id?: string
+          recipient_email?: string
+          subject?: string
+          submission_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "contact_replies_submission_id_fkey"
+            columns: ["submission_id"]
+            isOneToOne: false
+            referencedRelation: "contact_submissions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       contact_submissions: {
         Row: {
           category: string
