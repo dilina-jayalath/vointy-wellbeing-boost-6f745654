@@ -1,5 +1,6 @@
 // deno-lint-ignore-file no-explicit-any
 import { template as employeeInvitation } from './employee-invitation.tsx'
+import { template as contactReply } from './contact-reply.tsx'
 
 export interface TemplateEntry {
   component: (props: any) => any
@@ -11,4 +12,5 @@ export interface TemplateEntry {
 
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'employee-invitation': employeeInvitation,
+  'contact-reply': contactReply,
 }

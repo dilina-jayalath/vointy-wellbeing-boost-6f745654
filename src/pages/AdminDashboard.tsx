@@ -21,6 +21,8 @@ import {
   Tooltip,
 } from "recharts";
 import { useTranslation } from "@/lib/i18n";
+import MessageReply from "@/components/admin/MessageReply";
+
 
 const PAID_AMOUNT = 149;
 
@@ -268,6 +270,8 @@ const AdminDashboard = () => {
                           <p className="text-xs text-muted-foreground mt-3">
                             {new Date(m.created_at).toLocaleString()}
                           </p>
+                          <MessageReply submission={m} />
+
                         </div>
                       ))
                     )}
