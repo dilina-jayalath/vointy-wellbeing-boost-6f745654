@@ -11,7 +11,8 @@
       "invitedList": "Liste des invités",
       "activateUsers": "Activer des utilisateurs",
       "teams": "Équipes",
-      "activitySummary": "Synthèse d'activité"
+      "activitySummary": "Synthèse d'activité",
+      "engagement": "Engagement"
     },
     "paywall": {
       "title": "Activer le panneau Employeur",
@@ -301,6 +302,44 @@
         "avgPerMember": "Moy. / membre",
         "employee": "Employé",
         "lastActive": "Dernière activité"
+      }
+    },
+    "engagement": {
+      "title": "Engagement et communauté",
+      "description": "Vue agrégée de la participation à la communauté. Le contenu des publications et commentaires n'est jamais affiché.",
+      "errorTitle": "Aucun accès aux rapports",
+      "errorBody": "Les rapports d'engagement sont accessibles au propriétaire de l'organisation. Demandez l'accès à votre administrateur.",
+      "never": "Jamais",
+      "noData": "Aucune donnée d'engagement pour le moment.",
+      "noTeams": "Aucune équipe créée pour le moment.",
+      "noChallenges": "Aucun défi créé pour le moment.",
+      "monthlyTrend": "Activité de la communauté par mois (12 mois)",
+      "teamInteraction": "Interaction des équipes",
+      "topContributors": "Employés les plus engagés",
+      "challengeParticipation": "Participation aux défis",
+      "kpi": {
+        "posts": "Publications",
+        "comments": "Commentaires",
+        "likes": "J'aime",
+        "engagementRate": "Taux d'engagement",
+        "last30Days": "30 derniers jours",
+        "challengeParticipants": "Participants aux défis",
+        "challengeCompletions": "Défis terminés",
+        "surveyRespondents": "Répondants aux enquêtes"
+      },
+      "table": {
+        "team": "Équipe",
+        "members": "Membres",
+        "activeMembers": "Membres actifs",
+        "perMember": "Interactions / membre",
+        "employee": "Employé",
+        "score": "Score d'engagement",
+        "lastActivity": "Dernière activité",
+        "challenge": "Défi",
+        "status": "Statut",
+        "participants": "Participants",
+        "completed": "Terminés",
+        "completionRate": "Taux de réussite"
       }
     }
   },

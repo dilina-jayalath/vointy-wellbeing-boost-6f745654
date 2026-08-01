@@ -11,7 +11,8 @@
       "invitedList": "Invited List",
       "activateUsers": "Activate Users",
       "teams": "Teams",
-      "activitySummary": "Activity summary"
+      "activitySummary": "Activity summary",
+      "engagement": "Engagement"
     },
     "paywall": {
       "title": "Activate the Employer panel",
@@ -301,6 +302,44 @@
         "avgPerMember": "Avg / member",
         "employee": "Employee",
         "lastActive": "Last active"
+      }
+    },
+    "engagement": {
+      "title": "Engagement & community",
+      "description": "Aggregated view of community participation. Post and comment content is never shown.",
+      "errorTitle": "No access to reports",
+      "errorBody": "Engagement reports are available to the organization owner. Ask your administrator for access.",
+      "never": "Never",
+      "noData": "No engagement data yet.",
+      "noTeams": "No teams created yet.",
+      "noChallenges": "No challenges created yet.",
+      "monthlyTrend": "Community activity by month (12 months)",
+      "teamInteraction": "Team interaction",
+      "topContributors": "Most engaged employees",
+      "challengeParticipation": "Challenge participation",
+      "kpi": {
+        "posts": "Posts",
+        "comments": "Comments",
+        "likes": "Likes",
+        "engagementRate": "Engagement rate",
+        "last30Days": "Last 30 days",
+        "challengeParticipants": "Challenge participants",
+        "challengeCompletions": "Completed challenges",
+        "surveyRespondents": "Survey respondents"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Members",
+        "activeMembers": "Active members",
+        "perMember": "Interactions / member",
+        "employee": "Employee",
+        "score": "Engagement score",
+        "lastActivity": "Last activity",
+        "challenge": "Challenge",
+        "status": "Status",
+        "participants": "Participants",
+        "completed": "Completed",
+        "completionRate": "Completion rate"
       }
     }
   },

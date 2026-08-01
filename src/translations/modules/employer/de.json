@@ -11,7 +11,8 @@
       "invitedList": "Eingeladene",
       "activateUsers": "Nutzer aktivieren",
       "teams": "Teams",
-      "activitySummary": "Aktivitätsübersicht"
+      "activitySummary": "Aktivitätsübersicht",
+      "engagement": "Engagement"
     },
     "paywall": {
       "title": "Employer-Panel aktivieren",
@@ -301,6 +302,44 @@
         "avgPerMember": "Ø / Mitglied",
         "employee": "Mitarbeitende",
         "lastActive": "Zuletzt aktiv"
+      }
+    },
+    "engagement": {
+      "title": "Engagement und Gemeinschaft",
+      "description": "Aggregierte Sicht auf die Beteiligung in der Community. Inhalte von Beiträgen und Kommentaren werden nie angezeigt.",
+      "errorTitle": "Kein Zugriff auf Berichte",
+      "errorBody": "Engagement-Berichte sind für die Eigentümerin bzw. den Eigentümer der Organisation verfügbar. Bitten Sie Ihre Administration um Zugriff.",
+      "never": "Nie",
+      "noData": "Noch keine Engagement-Daten.",
+      "noTeams": "Noch keine Teams erstellt.",
+      "noChallenges": "Noch keine Challenges erstellt.",
+      "monthlyTrend": "Community-Aktivität pro Monat (12 Monate)",
+      "teamInteraction": "Team-Interaktion",
+      "topContributors": "Engagierteste Mitarbeitende",
+      "challengeParticipation": "Challenge-Teilnahme",
+      "kpi": {
+        "posts": "Beiträge",
+        "comments": "Kommentare",
+        "likes": "Likes",
+        "engagementRate": "Engagement-Quote",
+        "last30Days": "Letzte 30 Tage",
+        "challengeParticipants": "Challenge-Teilnehmende",
+        "challengeCompletions": "Abgeschlossene Challenges",
+        "surveyRespondents": "Umfrageteilnehmende"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Mitglieder",
+        "activeMembers": "Aktive Mitglieder",
+        "perMember": "Interaktionen / Mitglied",
+        "employee": "Mitarbeitende",
+        "score": "Engagement-Score",
+        "lastActivity": "Letzte Aktivität",
+        "challenge": "Challenge",
+        "status": "Status",
+        "participants": "Teilnehmende",
+        "completed": "Abgeschlossen",
+        "completionRate": "Abschlussquote"
       }
     }
   },

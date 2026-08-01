@@ -11,7 +11,8 @@
       "invitedList": "Uitnodigingslijst",
       "activateUsers": "Gebruikers activeren",
       "teams": "Teams",
-      "activitySummary": "Activiteitsoverzicht"
+      "activitySummary": "Activiteitsoverzicht",
+      "engagement": "Betrokkenheid"
     },
     "paywall": {
       "title": "Activeer het werkgeverspaneel",
@@ -301,6 +302,44 @@
         "avgPerMember": "Gem. / lid",
         "employee": "Medewerker",
         "lastActive": "Laatst actief"
+      }
+    },
+    "engagement": {
+      "title": "Betrokkenheid en community",
+      "description": "Geaggregeerd beeld van de deelname aan de community. De inhoud van berichten en reacties wordt nooit weergegeven.",
+      "errorTitle": "Geen toegang tot rapporten",
+      "errorBody": "Betrokkenheidsrapporten zijn beschikbaar voor de eigenaar van de organisatie. Vraag je beheerder om toegang.",
+      "never": "Nooit",
+      "noData": "Nog geen betrokkenheidsgegevens.",
+      "noTeams": "Nog geen teams aangemaakt.",
+      "noChallenges": "Nog geen challenges aangemaakt.",
+      "monthlyTrend": "Community-activiteit per maand (12 maanden)",
+      "teamInteraction": "Teaminteractie",
+      "topContributors": "Meest betrokken medewerkers",
+      "challengeParticipation": "Deelname aan challenges",
+      "kpi": {
+        "posts": "Berichten",
+        "comments": "Reacties",
+        "likes": "Likes",
+        "engagementRate": "Betrokkenheidsgraad",
+        "last30Days": "Laatste 30 dagen",
+        "challengeParticipants": "Deelnemers aan challenges",
+        "challengeCompletions": "Voltooide challenges",
+        "surveyRespondents": "Respondenten enquêtes"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Leden",
+        "activeMembers": "Actieve leden",
+        "perMember": "Interacties / lid",
+        "employee": "Medewerker",
+        "score": "Betrokkenheidsscore",
+        "lastActivity": "Laatste activiteit",
+        "challenge": "Challenge",
+        "status": "Status",
+        "participants": "Deelnemers",
+        "completed": "Voltooid",
+        "completionRate": "Voltooiingspercentage"
       }
     }
   },

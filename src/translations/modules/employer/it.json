@@ -11,7 +11,8 @@
       "invitedList": "Elenco invitati",
       "activateUsers": "Attiva utenti",
       "teams": "Team",
-      "activitySummary": "Riepilogo attività"
+      "activitySummary": "Riepilogo attività",
+      "engagement": "Coinvolgimento"
     },
     "paywall": {
       "title": "Attiva il pannello Datore di lavoro",
@@ -301,6 +302,44 @@
         "avgPerMember": "Media / membro",
         "employee": "Dipendente",
         "lastActive": "Ultima attività"
+      }
+    },
+    "engagement": {
+      "title": "Coinvolgimento e community",
+      "description": "Vista aggregata della partecipazione alla community. Il contenuto di post e commenti non viene mai mostrato.",
+      "errorTitle": "Nessun accesso ai report",
+      "errorBody": "I report sul coinvolgimento sono disponibili per il proprietario dell'organizzazione. Chiedi l'accesso al tuo amministratore.",
+      "never": "Mai",
+      "noData": "Nessun dato di coinvolgimento per ora.",
+      "noTeams": "Nessun team creato per ora.",
+      "noChallenges": "Nessuna sfida creata per ora.",
+      "monthlyTrend": "Attività della community per mese (12 mesi)",
+      "teamInteraction": "Interazione dei team",
+      "topContributors": "Dipendenti più coinvolti",
+      "challengeParticipation": "Partecipazione alle sfide",
+      "kpi": {
+        "posts": "Post",
+        "comments": "Commenti",
+        "likes": "Mi piace",
+        "engagementRate": "Tasso di coinvolgimento",
+        "last30Days": "Ultimi 30 giorni",
+        "challengeParticipants": "Partecipanti alle sfide",
+        "challengeCompletions": "Sfide completate",
+        "surveyRespondents": "Rispondenti ai sondaggi"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Membri",
+        "activeMembers": "Membri attivi",
+        "perMember": "Interazioni / membro",
+        "employee": "Dipendente",
+        "score": "Punteggio di coinvolgimento",
+        "lastActivity": "Ultima attività",
+        "challenge": "Sfida",
+        "status": "Stato",
+        "participants": "Partecipanti",
+        "completed": "Completate",
+        "completionRate": "Tasso di completamento"
       }
     }
   },

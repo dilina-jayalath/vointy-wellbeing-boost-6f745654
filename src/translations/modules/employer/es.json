@@ -11,7 +11,8 @@
       "invitedList": "Lista de invitados",
       "activateUsers": "Activar usuarios",
       "teams": "Equipos",
-      "activitySummary": "Resumen de actividad"
+      "activitySummary": "Resumen de actividad",
+      "engagement": "Compromiso"
     },
     "paywall": {
       "title": "Activar el panel de Empleador",
@@ -301,6 +302,44 @@
         "avgPerMember": "Prom. / miembro",
         "employee": "Empleado",
         "lastActive": "Última actividad"
+      }
+    },
+    "engagement": {
+      "title": "Compromiso y comunidad",
+      "description": "Vista agregada de la participación en la comunidad. El contenido de publicaciones y comentarios nunca se muestra.",
+      "errorTitle": "Sin acceso a los informes",
+      "errorBody": "Los informes de compromiso están disponibles para el propietario de la organización. Solicita acceso a tu administrador.",
+      "never": "Nunca",
+      "noData": "Aún no hay datos de compromiso.",
+      "noTeams": "Aún no se han creado equipos.",
+      "noChallenges": "Aún no se han creado retos.",
+      "monthlyTrend": "Actividad de la comunidad por mes (12 meses)",
+      "teamInteraction": "Interacción de los equipos",
+      "topContributors": "Empleados más comprometidos",
+      "challengeParticipation": "Participación en retos",
+      "kpi": {
+        "posts": "Publicaciones",
+        "comments": "Comentarios",
+        "likes": "Me gusta",
+        "engagementRate": "Tasa de compromiso",
+        "last30Days": "Últimos 30 días",
+        "challengeParticipants": "Participantes en retos",
+        "challengeCompletions": "Retos completados",
+        "surveyRespondents": "Personas que respondieron encuestas"
+      },
+      "table": {
+        "team": "Equipo",
+        "members": "Miembros",
+        "activeMembers": "Miembros activos",
+        "perMember": "Interacciones / miembro",
+        "employee": "Empleado",
+        "score": "Puntuación de compromiso",
+        "lastActivity": "Última actividad",
+        "challenge": "Reto",
+        "status": "Estado",
+        "participants": "Participantes",
+        "completed": "Completados",
+        "completionRate": "Tasa de finalización"
       }
     }
   },
