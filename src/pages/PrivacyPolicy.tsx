@@ -167,27 +167,61 @@ const PrivacyPolicy = () => {
     },
     {
       id: 7,
-      title: "Regular Data Transfers and Transfers Outside EU/EEA",
+      title: "Data Recipients and Transfers Outside EU/EEA",
       icon: <Globe className="w-6 h-6 text-brand-purple" />,
       content: (
         <div>
-          <div className="grid gap-4">
-            <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
-              <p className="text-green-800">
-                <strong>Information is not routinely disclosed to other parties.</strong> Information may be published only to the extent agreed with the customer.
-              </p>
-            </div>
-            <div className="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg">
-              <p className="text-orange-800">
-                Data may be transferred by the controller outside the EU or EEA only when adequate safeguards, such as standard contractual clauses approved by the European Commission, are in place. <strong>Data will not be transferred to the United States without express consent of the data subjects.</strong>
-              </p>
-            </div>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            We do not sell personal data and we do not disclose it for other parties' own marketing. Personal data is shared only with the following categories of recipients, and only to the extent needed to run the service:
+          </p>
+          <div className="grid gap-3">
+            {[
+              "Service providers acting as processors on our behalf: cloud hosting and database services, email delivery, and product analytics.",
+              "Payment provider and Merchant of Record: Paddle.com Market Limited processes orders, subscription payments, invoicing, tax compliance and refunds for paid subscriptions. Paddle acts as the reseller and Merchant of Record for these orders and handles the related payment data as its own controller.",
+              "Professional advisers, such as accounting and legal advisers, where necessary.",
+              "Authorities, where we are required to disclose information by law.",
+              "Your employer organization: if you join through an employer, aggregated and team-level activity data may be visible to that organization's Employer panel administrators."
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
+                <div className="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+          <div className="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg mt-4">
+            <p className="text-orange-800">
+              Data may be transferred outside the EU or EEA only when adequate safeguards, such as standard contractual clauses approved by the European Commission, are in place.
+            </p>
           </div>
         </div>
       )
     },
     {
       id: 8,
+      title: "Data Retention",
+      icon: <Clock className="w-6 h-6 text-brand-blue" />,
+      content: (
+        <div className="grid gap-3">
+          {[
+            "Account and profile data: retained while your account is active and deleted within 90 days after the account is closed or your organization ends its use of the service.",
+            "Activity, challenge and community content: retained while your account is active and deleted or anonymised within 90 days after account closure.",
+            "Survey answers and Activity Index data: retained in anonymised or aggregated form for reporting, with identifiable answers deleted within 12 months.",
+            "Contact and support messages: retained for up to 24 months.",
+            "Newsletter subscriptions: retained until you unsubscribe.",
+            "Billing and order records: retained by us and by Paddle for the period required by accounting and tax law, which in Finland is generally 6 years.",
+            "Data that is no longer needed for these purposes is deleted or anonymised."
+          ].map((item, index) => (
+            <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
+              <div className="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+              <span className="text-gray-700">{item}</span>
+            </div>
+          ))}
+        </div>
+      )
+    },
+
+    {
+      id: 9,
       title: "Principles of Register Protection",
       icon: <Lock className="w-6 h-6 text-brand-blue" />,
       content: (
@@ -209,7 +243,7 @@ const PrivacyPolicy = () => {
       )
     },
     {
-      id: 9,
+      id: 10,
       title: "Right to Inspect and Request Correction",
       icon: <Eye className="w-6 h-6 text-brand-purple" />,
       content: (
@@ -238,7 +272,7 @@ const PrivacyPolicy = () => {
       )
     },
     {
-      id: 10,
+      id: 11,
       title: "Other Rights Related to Processing Personal Data",
       icon: <UserCheck className="w-6 h-6 text-brand-blue" />,
       content: (
@@ -269,7 +303,7 @@ const PrivacyPolicy = () => {
       )
     },
     {
-      id: 11,
+      id: 12,
       title: "Health and Medical Data",
       icon: <Stethoscope className="w-6 h-6 text-red-500" />,
       content: (
@@ -284,7 +318,7 @@ const PrivacyPolicy = () => {
       )
     },
     {
-      id: 12,
+      id: 13,
       title: "Cookies and Analytics",
       icon: <Clock className="w-6 h-6 text-brand-purple" />,
       content: (
