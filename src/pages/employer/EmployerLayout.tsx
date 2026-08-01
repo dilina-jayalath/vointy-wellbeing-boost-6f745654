@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import BackButton from "@/components/BackButton";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
+import vointyMark from "@/assets/vointy-mark.png.asset.json";
+
 
 const EmployerLayout = () => {
   const { profile } = useAuth();
@@ -26,9 +28,13 @@ const EmployerLayout = () => {
               {showBack && (
                 <BackButton fallback="/employer" className="text-white hover:bg-white/10 hover:text-white px-2" />
               )}
-              <Link to="/" className="text-lg font-bold ml-2 hidden sm:inline">
+              <Link to="/" className="text-lg font-bold ml-2 hidden sm:flex items-center gap-2">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/90">
+                  <img src={vointyMark.url} alt="Vointy logo" className="h-5 w-auto" />
+                </span>
                 Vointy<span className="opacity-80">.life</span>
               </Link>
+
 
               {orgName && <span className="hidden md:inline text-sm text-white/80 ml-3">{orgName}</span>}
             </div>

@@ -7,6 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
+import vointyMark from "@/assets/vointy-mark.png.asset.json";
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -50,6 +52,7 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-br from-brand-purple-light to-white">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
+          <img src={vointyMark.url} alt="Vointy logo" className="mx-auto mb-3 h-12 w-auto" />
           <CardTitle className="text-2xl font-display">Log in to Vointy</CardTitle>
           <CardDescription>Welcome back — enter your details below.</CardDescription>
         </CardHeader>
