@@ -78,7 +78,40 @@ const Blog = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            {livePosts.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                {livePosts.map((post: any) => (
+                  <Card key={post.id} className="hover:shadow-lg transition-shadow group overflow-hidden">
+                    {post.media_url && post.media_type !== 'none' && (
+                      <div className="aspect-video bg-muted overflow-hidden">
+                        <BlogMedia
+                          path={post.media_url}
+                          type={post.media_type}
+                          alt={post.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <CardHeader>
+                      <CardTitle className="text-lg">{post.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground whitespace-pre-wrap line-clamp-6">
+                        {post.excerpt || post.content}
+                      </p>
+                      {post.published_at && (
+                        <p className="text-xs text-muted-foreground mt-4 flex items-center">
+                          <Calendar className="h-4 w-4 mr-1" />
+                          {new Date(post.published_at).toLocaleDateString()}
+                        </p>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
               {blogPosts.map((post, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow cursor-pointer group">
                   <div className="aspect-video bg-gray-200 rounded-t-lg overflow-hidden">
