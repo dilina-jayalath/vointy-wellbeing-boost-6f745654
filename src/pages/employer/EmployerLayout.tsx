@@ -1,11 +1,14 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { Bell, RefreshCw, User as UserIcon, Languages } from "lucide-react";
+import { Bell, RefreshCw, User as UserIcon, Languages, Loader2 } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { EmployerSidebar } from "@/components/employer/EmployerSidebar";
 import { Button } from "@/components/ui/button";
 import BackButton from "@/components/BackButton";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
+import { useSubscription } from "@/hooks/useSubscription";
+import EmployerPaywall from "@/components/employer/EmployerPaywall";
+import { PaymentTestModeBanner } from "@/components/PaymentTestModeBanner";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 
 
@@ -14,6 +17,26 @@ const EmployerLayout = () => {
   const { orgName } = useEmployerOrg();
   const { pathname } = useLocation();
   const showBack = pathname !== "/employer";
+
+  const { isActive, isTrialing, isPastDue, endsAt, loading } = useSubscription();
+  // Billing page stays reachable without a plan so companies can subscribe.
+  const isBillingPage = pathname.startsWith("/employer/subscriptions");
+  const locked = !loading && !isActive && !isBillingPage;
+
+  const daysLeft = endsAt
+    ? Math.max(0, Math.ceil((endsAt.getTime() - Date.now()) / 86400000))
+    : null;
+  const statusPill = loading
+    ? "Checking plan…"
+    : isTrialing && daysLeft !== null
+      ? `Free trial remaining: ${daysLeft}d`
+      : isPastDue
+        ? "Payment failed"
+        : isActive
+          ? "Employer panel active"
+          : "No active plan";
+
+
 
 
   return (
