@@ -10,7 +10,8 @@
       "inviteUsers": "Invita utenti",
       "invitedList": "Elenco invitati",
       "activateUsers": "Attiva utenti",
-      "teams": "Team"
+      "teams": "Team",
+      "activitySummary": "Riepilogo attività"
     },
     "paywall": {
       "title": "Attiva il pannello Datore di lavoro",
@@ -270,6 +271,37 @@
     "paymentBanner": {
       "text": "Tutti i pagamenti effettuati nell'anteprima sono in modalità di prova.",
       "readMore": "Scopri di più"
+    },
+    "activitySummary": {
+      "title": "Riepilogo attività",
+      "description": "Panoramica aggregata dell'attività della tua organizzazione. I dettagli individuali non vengono mai mostrati.",
+      "errorTitle": "Nessun accesso ai report",
+      "errorBody": "I report sulle attività sono disponibili per il proprietario dell'organizzazione. Chiedi l'accesso al tuo amministratore.",
+      "never": "Mai",
+      "noData": "Nessun dato di attività per ora.",
+      "noTeams": "Nessun team creato per ora.",
+      "monthlyTrend": "Andamento mensile (12 mesi)",
+      "topActivities": "Attività più popolari",
+      "teamComparison": "Confronto tra team",
+      "employeeSummary": "Riepilogo dipendenti",
+      "timesPerformed": "Volte svolta",
+      "kpi": {
+        "totalExercises": "Attività completate",
+        "totalPoints": "Punti attività",
+        "activeEmployees": "Dipendenti attivi",
+        "participation": "Tasso di partecipazione",
+        "last30Days": "Ultimi 30 giorni",
+        "avgPerEmployee": "Media per dipendente"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Membri",
+        "exercises": "Attività",
+        "points": "Punti",
+        "avgPerMember": "Media / membro",
+        "employee": "Dipendente",
+        "lastActive": "Ultima attività"
+      }
     }
   },
   "adminPanel": {

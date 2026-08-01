@@ -10,7 +10,8 @@
       "inviteUsers": "Gebruikers uitnodigen",
       "invitedList": "Uitnodigingslijst",
       "activateUsers": "Gebruikers activeren",
-      "teams": "Teams"
+      "teams": "Teams",
+      "activitySummary": "Activiteitsoverzicht"
     },
     "paywall": {
       "title": "Activeer het werkgeverspaneel",
@@ -270,6 +271,37 @@
     "paymentBanner": {
       "text": "Alle betalingen in de preview vinden plaats in testmodus.",
       "readMore": "Meer lezen"
+    },
+    "activitySummary": {
+      "title": "Activiteitsoverzicht",
+      "description": "Geaggregeerd overzicht van de activiteit van je organisatie. Individuele details worden nooit weergegeven.",
+      "errorTitle": "Geen toegang tot rapporten",
+      "errorBody": "Activiteitsrapporten zijn beschikbaar voor de eigenaar van de organisatie. Vraag je beheerder om toegang.",
+      "never": "Nooit",
+      "noData": "Nog geen activiteitsgegevens.",
+      "noTeams": "Nog geen teams aangemaakt.",
+      "monthlyTrend": "Maandelijkse ontwikkeling (12 maanden)",
+      "topActivities": "Populairste activiteiten",
+      "teamComparison": "Teamvergelijking",
+      "employeeSummary": "Overzicht per medewerker",
+      "timesPerformed": "Aantal keren",
+      "kpi": {
+        "totalExercises": "Voltooide activiteiten",
+        "totalPoints": "Activiteitspunten",
+        "activeEmployees": "Actieve medewerkers",
+        "participation": "Deelnamegraad",
+        "last30Days": "Laatste 30 dagen",
+        "avgPerEmployee": "Gemiddelde per medewerker"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Leden",
+        "exercises": "Activiteiten",
+        "points": "Punten",
+        "avgPerMember": "Gem. / lid",
+        "employee": "Medewerker",
+        "lastActive": "Laatst actief"
+      }
     }
   },
   "adminPanel": {

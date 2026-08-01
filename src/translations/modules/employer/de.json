@@ -10,7 +10,8 @@
       "inviteUsers": "Nutzer einladen",
       "invitedList": "Eingeladene",
       "activateUsers": "Nutzer aktivieren",
-      "teams": "Teams"
+      "teams": "Teams",
+      "activitySummary": "Aktivitätsübersicht"
     },
     "paywall": {
       "title": "Employer-Panel aktivieren",
@@ -270,6 +271,37 @@
     "paymentBanner": {
       "text": "Alle Zahlungen in der Vorschau erfolgen im Testmodus.",
       "readMore": "Mehr erfahren"
+    },
+    "activitySummary": {
+      "title": "Aktivitätsübersicht",
+      "description": "Aggregierte Übersicht der Aktivität Ihrer Organisation. Einzelne Übungsdetails werden nie angezeigt.",
+      "errorTitle": "Kein Zugriff auf Berichte",
+      "errorBody": "Aktivitätsberichte sind für die Eigentümerin bzw. den Eigentümer der Organisation verfügbar. Bitten Sie Ihre Administration um Zugriff.",
+      "never": "Nie",
+      "noData": "Noch keine Aktivitätsdaten.",
+      "noTeams": "Noch keine Teams erstellt.",
+      "monthlyTrend": "Monatliche Entwicklung (12 Monate)",
+      "topActivities": "Beliebteste Aktivitäten",
+      "teamComparison": "Teamvergleich",
+      "employeeSummary": "Übersicht der Mitarbeitenden",
+      "timesPerformed": "Durchführungen",
+      "kpi": {
+        "totalExercises": "Abgeschlossene Aktivitäten",
+        "totalPoints": "Aktivitätspunkte",
+        "activeEmployees": "Aktive Mitarbeitende",
+        "participation": "Teilnahmequote",
+        "last30Days": "Letzte 30 Tage",
+        "avgPerEmployee": "Durchschnitt pro Person"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Mitglieder",
+        "exercises": "Aktivitäten",
+        "points": "Punkte",
+        "avgPerMember": "Ø / Mitglied",
+        "employee": "Mitarbeitende",
+        "lastActive": "Zuletzt aktiv"
+      }
     }
   },
   "adminPanel": {

@@ -10,7 +10,8 @@
       "inviteUsers": "Inviter des utilisateurs",
       "invitedList": "Liste des invités",
       "activateUsers": "Activer des utilisateurs",
-      "teams": "Équipes"
+      "teams": "Équipes",
+      "activitySummary": "Synthèse d'activité"
     },
     "paywall": {
       "title": "Activer le panneau Employeur",
@@ -270,6 +271,37 @@
     "paymentBanner": {
       "text": "Tous les paiements effectués dans l'aperçu sont en mode test.",
       "readMore": "En savoir plus"
+    },
+    "activitySummary": {
+      "title": "Synthèse d'activité",
+      "description": "Vue agrégée de l'activité de votre organisation. Les détails individuels ne sont jamais affichés.",
+      "errorTitle": "Aucun accès aux rapports",
+      "errorBody": "Les rapports d'activité sont accessibles au propriétaire de l'organisation. Demandez l'accès à votre administrateur.",
+      "never": "Jamais",
+      "noData": "Aucune donnée d'activité pour le moment.",
+      "noTeams": "Aucune équipe créée pour le moment.",
+      "monthlyTrend": "Évolution mensuelle (12 mois)",
+      "topActivities": "Activités les plus populaires",
+      "teamComparison": "Comparaison des équipes",
+      "employeeSummary": "Synthèse par employé",
+      "timesPerformed": "Nombre de fois",
+      "kpi": {
+        "totalExercises": "Activités réalisées",
+        "totalPoints": "Points d'activité",
+        "activeEmployees": "Employés actifs",
+        "participation": "Taux de participation",
+        "last30Days": "30 derniers jours",
+        "avgPerEmployee": "Moyenne par employé"
+      },
+      "table": {
+        "team": "Équipe",
+        "members": "Membres",
+        "exercises": "Activités",
+        "points": "Points",
+        "avgPerMember": "Moy. / membre",
+        "employee": "Employé",
+        "lastActive": "Dernière activité"
+      }
     }
   },
   "adminPanel": {

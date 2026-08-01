@@ -10,7 +10,8 @@
       "inviteUsers": "Invite Users",
       "invitedList": "Invited List",
       "activateUsers": "Activate Users",
-      "teams": "Teams"
+      "teams": "Teams",
+      "activitySummary": "Activity summary"
     },
     "paywall": {
       "title": "Activate the Employer panel",
@@ -83,10 +84,22 @@
       "title": "Challenges",
       "description": "Launch team challenges to boost activity, sleep, hydration and more.",
       "sections": {
-        "active": { "title": "Active Challenges", "body": "Ongoing challenges with participation and progress." },
-        "create": { "title": "Create Challenge", "body": "Set title, activity type, target, duration and teams." },
-        "library": { "title": "Challenge Library", "body": "Prebuilt challenges: 10k steps, water goal, mindfulness week." },
-        "leaderboard": { "title": "Leaderboard", "body": "Ranking of teams and individuals per challenge." }
+        "active": {
+          "title": "Active Challenges",
+          "body": "Ongoing challenges with participation and progress."
+        },
+        "create": {
+          "title": "Create Challenge",
+          "body": "Set title, activity type, target, duration and teams."
+        },
+        "library": {
+          "title": "Challenge Library",
+          "body": "Prebuilt challenges: 10k steps, water goal, mindfulness week."
+        },
+        "leaderboard": {
+          "title": "Leaderboard",
+          "body": "Ranking of teams and individuals per challenge."
+        }
       }
     },
     "inviteUsers": {
@@ -213,7 +226,10 @@
       "createdByYou": "You",
       "createdToastTitle": "Team created",
       "createdToastDescription": "\"{name}\" has been added.",
-      "tabs": { "teams": "Teams", "leaderboard": "Leaderboard" },
+      "tabs": {
+        "teams": "Teams",
+        "leaderboard": "Leaderboard"
+      },
       "columns": {
         "teamName": "Team Name",
         "description": "Description",
@@ -222,7 +238,12 @@
         "actions": "Actions"
       },
       "noTeams": "No teams found. Create a new team to get started.",
-      "leaderboardColumns": { "rank": "#", "team": "Team", "members": "Members", "score": "Score" },
+      "leaderboardColumns": {
+        "rank": "#",
+        "team": "Team",
+        "members": "Members",
+        "score": "Score"
+      },
       "noLeaderboard": "No leaderboard data yet."
     },
     "wellbeingIndex": {
@@ -233,14 +254,54 @@
           "title": "How it is calculated",
           "body": "Every completed activity gives an employee 1 point. Points are summed per month and accumulated over the membership year that starts when the employee joins."
         },
-        "monthlyPoints": { "title": "Monthly points", "body": "Total activity points per month across all active teams and employees." },
-        "yearlyTotal": { "title": "Yearly total", "body": "Accumulated points per employee since they joined." },
-        "teamBreakdown": { "title": "Team Breakdown", "body": "Per-team activity points with drill-down." }
+        "monthlyPoints": {
+          "title": "Monthly points",
+          "body": "Total activity points per month across all active teams and employees."
+        },
+        "yearlyTotal": {
+          "title": "Yearly total",
+          "body": "Accumulated points per employee since they joined."
+        },
+        "teamBreakdown": {
+          "title": "Team Breakdown",
+          "body": "Per-team activity points with drill-down."
+        }
       }
     },
     "paymentBanner": {
       "text": "All payments made in the preview are in test mode.",
       "readMore": "Read more"
+    },
+    "activitySummary": {
+      "title": "Activity summary",
+      "description": "Aggregated overview of your organization's activity. Individual exercise details are never shown.",
+      "errorTitle": "No access to reports",
+      "errorBody": "Activity reports are available to the organization owner. Ask your administrator for access.",
+      "never": "Never",
+      "noData": "No activity data yet.",
+      "noTeams": "No teams created yet.",
+      "monthlyTrend": "Monthly development (12 months)",
+      "topActivities": "Most popular activities",
+      "teamComparison": "Team comparison",
+      "employeeSummary": "Employee summary",
+      "timesPerformed": "Times performed",
+      "kpi": {
+        "totalExercises": "Completed activities",
+        "totalPoints": "Activity points",
+        "activeEmployees": "Active employees",
+        "participation": "Participation rate",
+        "last30Days": "Last 30 days",
+        "avgPerEmployee": "Average per employee"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Members",
+        "exercises": "Activities",
+        "points": "Points",
+        "avgPerMember": "Avg / member",
+        "employee": "Employee",
+        "lastActive": "Last active"
+      }
     }
   },
   "adminPanel": {
@@ -317,14 +378,20 @@
       "pageViewsLegend": "Page views",
       "visitorsLegend": "Visitors",
       "topPagesTitle": "Most visited pages",
-      "columns": { "path": "Path", "views": "Views" },
+      "columns": {
+        "path": "Path",
+        "views": "Views"
+      },
       "noVisits": "No tracked visits yet."
     },
     "activities": {
       "monthlyChartTitle": "Performed activities per month",
       "activitiesLegend": "Activities",
       "topActivitiesTitle": "Most used activities",
-      "columns": { "activity": "Activity", "timesPerformed": "Times performed" },
+      "columns": {
+        "activity": "Activity",
+        "timesPerformed": "Times performed"
+      },
       "noActivities": "No activities performed yet."
     }
   }
