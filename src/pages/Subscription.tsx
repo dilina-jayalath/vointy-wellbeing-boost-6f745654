@@ -139,11 +139,14 @@ const Subscription = () => {
                     ))}
                   </ul>
                   <Button
-                    asChild
+                    onClick={handleUpgrade}
+                    disabled={checkoutLoading}
                     className="w-full h-12 text-lg font-semibold bg-brand-purple hover:bg-brand-purple-dark text-white"
                   >
-                    <Link to="/company-signup">Start free 30-day trial</Link>
+                    {checkoutLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
+                    Start free 30-day trial
                   </Button>
+
                 </CardContent>
               </Card>
             </div>
