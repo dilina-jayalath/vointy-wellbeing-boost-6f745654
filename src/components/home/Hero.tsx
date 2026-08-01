@@ -39,7 +39,7 @@ const Hero = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <img 
                 src={heroImage} 
-                alt="Diverse team stretching together outdoors" 
+                alt={t('homeExtra.altHero')} 
                 className="w-full h-auto object-cover"
               />
             </div>
