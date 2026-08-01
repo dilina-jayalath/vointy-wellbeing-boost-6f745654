@@ -69,6 +69,8 @@ const App = () => (
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />
+              <Route path="/refund-policy" element={<RefundPolicy />} />
+
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/reset-password" element={<ResetPassword />} />
