@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
-import { FileText, Shield, Users, Lock, AlertTriangle, Scale, Clock, Mail, Building, Stethoscope, Info } from 'lucide-react';
+import { FileText, Shield, Users, Lock, AlertTriangle, Scale, Clock, Mail, Building, Stethoscope, Info, CreditCard } from 'lucide-react';
 
 const TermsOfService = () => {
   const sections = [
@@ -166,7 +166,7 @@ const TermsOfService = () => {
     },
     {
 
-      id: 6,
+      id: 9,
       title: "Accounts",
       icon: <Lock className="w-6 h-6 text-brand-blue" />,
       content: (
@@ -185,7 +185,7 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 7,
+      id: 10,
       title: "License to Use",
       icon: <Scale className="w-6 h-6 text-brand-purple" />,
       content: (
@@ -197,7 +197,7 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 8,
+      id: 11,
       title: "User Responsibilities",
       icon: <Users className="w-6 h-6 text-brand-blue" />,
       content: (
@@ -218,7 +218,7 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 9,
+      id: 12,
       title: "Prohibited Conduct",
       icon: <AlertTriangle className="w-6 h-6 text-red-500" />,
       content: (
@@ -243,7 +243,7 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 10,
+      id: 13,
       title: "Data & Privacy",
       icon: <Lock className="w-6 h-6 text-brand-purple" />,
       content: (
@@ -255,7 +255,7 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 11,
+      id: 14,
       title: "Intellectual Property",
       icon: <Shield className="w-6 h-6 text-brand-blue" />,
       content: (
@@ -265,7 +265,7 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 12,
+      id: 15,
       title: "Availability and Changes",
       icon: <Clock className="w-6 h-6 text-brand-purple" />,
       content: (
@@ -277,7 +277,7 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 13,
+      id: 16,
       title: "Limitation of Liability",
       icon: <AlertTriangle className="w-6 h-6 text-red-500" />,
       content: (
@@ -292,7 +292,7 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 14,
+      id: 17,
       title: "Applicable Law",
       icon: <Scale className="w-6 h-6 text-brand-purple" />,
       content: (
