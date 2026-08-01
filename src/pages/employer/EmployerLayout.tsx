@@ -14,7 +14,7 @@ import { useTranslation } from "@/lib/i18n";
 
 
 const EmployerLayout = () => {
-  const { profile } = useAuth();
+  const { profile, isAdmin } = useAuth();
   const { orgName } = useEmployerOrg();
   const { pathname } = useLocation();
   const { t } = useTranslation();
@@ -23,7 +23,8 @@ const EmployerLayout = () => {
   const { isActive, isTrialing, isPastDue, endsAt, loading } = useSubscription();
   // Billing page stays reachable without a plan so companies can subscribe.
   const isBillingPage = pathname.startsWith("/employer/subscriptions");
-  const locked = !loading && !isActive && !isBillingPage;
+  // Platform admins can review the panel (incl. analytics) without a paid plan.
+  const locked = !loading && !isActive && !isBillingPage && !isAdmin;
 
   const daysLeft = endsAt
     ? Math.max(0, Math.ceil((endsAt.getTime() - Date.now()) / 86400000))
