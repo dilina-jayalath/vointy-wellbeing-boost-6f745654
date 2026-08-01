@@ -12,8 +12,7 @@
       "activateUsers": "Activate Users",
       "teams": "Teams",
       "activitySummary": "Activity summary",
-      "engagement": "Engagement",
-      "wellbeing": "Wellbeing"
+      "engagement": "Engagement"
     },
     "paywall": {
       "title": "Activate the Employer panel",
@@ -343,41 +342,36 @@
         "completionRate": "Completion rate"
       }
     },
-    "wellbeing": {
-      "title": "Wellbeing",
-      "description": "Wellbeing survey results for your organization, aggregated so individual answers stay private.",
-      "errorTitle": "Could not load wellbeing data",
-      "errorBody": "Only organization managers can view aggregated wellbeing reports.",
-      "noData": "No survey data yet.",
-      "monthlyTitle": "Wellbeing development (12 months)",
-      "questionsTitle": "Average score per question (lowest first)",
-      "distributionTitle": "Wellbeing distribution",
-      "teamsTitle": "Wellbeing by team",
-      "privacyNote": "Groups are shown as counts only — individual answers are never revealed.",
+    "activityIndexReport": {
+      "title": "Activity Index",
+      "description": "The Activity Index is built from performed activities: each completed activity gives one point, summed per month and over the year.",
+      "errorTitle": "Could not load Activity Index",
+      "errorBody": "Only organization managers can view aggregated reports.",
+      "noData": "No activity data yet.",
+      "monthlyTitle": "Activity Index development (12 months)",
+      "teamsTitle": "Activity Index by team",
+      "calculationTitle": "How the index is calculated",
+      "calculationBody": "Every activity an employee completes is worth 1 point. Points are summed monthly and accumulated over the year from the moment the employee joined. The index per employee is the organization's total points divided by the number of employees.",
       "kpi": {
-        "avgScore": "Average wellbeing score",
-        "last30Days": "Last 30 days",
+        "indexPerEmployee": "Index per employee",
+        "thisMonth": "This month",
         "change": "Change",
-        "vsPrev30Days": "Previous 30 days",
-        "responseRate": "Response rate",
-        "answers": "Survey answers",
-        "activeSurveys": "Active surveys"
+        "prevMonth": "Previous month",
+        "participation": "Participation",
+        "last30Days": "last 30 days",
+        "points12m": "Points (12 months)",
+        "pointsTotal": "All time"
       },
       "chart": {
-        "score": "Score",
-        "respondents": "Respondents"
-      },
-      "buckets": {
-        "low": "Needs attention",
-        "medium": "Moderate",
-        "high": "Good"
+        "index": "Index per employee",
+        "active": "Active employees"
       },
       "table": {
         "team": "Team",
         "members": "Members",
-        "respondents": "Respondents",
-        "responseRate": "Response rate",
-        "avgScore": "Average score"
+        "activeMembers": "Active",
+        "points": "Points",
+        "indexPerMember": "Index per member"
       }
     }
   },

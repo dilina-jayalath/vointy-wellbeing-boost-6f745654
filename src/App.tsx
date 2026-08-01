@@ -31,7 +31,6 @@ import EmployerDashboard from "./pages/employer/Dashboard";
 import EmployerWellbeing from "./pages/employer/WellbeingIndex";
 import EmployerActivitySummary from "./pages/employer/ActivitySummary";
 import EmployerEngagement from "./pages/employer/Engagement";
-import EmployerWellbeingReport from "./pages/employer/Wellbeing";
 import EmployerSurveys from "./pages/employer/Surveys";
 import EmployerChallenges from "./pages/employer/Challenges";
 import EmployerSubscriptions from "./pages/employer/Subscriptions";
@@ -108,7 +107,6 @@ const App = () => (
                 <Route path="wellbeing" element={<EmployerWellbeing />} />
                 <Route path="activity-summary" element={<EmployerActivitySummary />} />
                 <Route path="engagement" element={<EmployerEngagement />} />
-                <Route path="wellbeing-report" element={<EmployerWellbeingReport />} />
                 <Route path="activities" element={<EmployerActivities />} />
                 <Route path="surveys" element={<EmployerSurveys />} />
                 <Route path="challenges" element={<EmployerChallenges />} />

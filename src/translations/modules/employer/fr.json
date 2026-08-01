@@ -12,8 +12,7 @@
       "activateUsers": "Activer des utilisateurs",
       "teams": "Équipes",
       "activitySummary": "Synthèse d'activité",
-      "engagement": "Engagement",
-      "wellbeing": "Bien-être"
+      "engagement": "Engagement"
     },
     "paywall": {
       "title": "Activer le panneau Employeur",
@@ -343,41 +342,36 @@
         "completionRate": "Taux de réussite"
       }
     },
-    "wellbeing": {
-      "title": "Bien-être",
-      "description": "Résultats des enquêtes de bien-être de votre organisation, agrégés pour préserver la confidentialité des réponses.",
-      "errorTitle": "Impossible de charger les données de bien-être",
+    "activityIndexReport": {
+      "title": "Indice d'activité",
+      "description": "L'indice d'activité repose sur les activités réalisées : chaque activité terminée vaut un point, cumulé par mois et sur l'année.",
+      "errorTitle": "Impossible de charger l'indice d'activité",
       "errorBody": "Seuls les responsables de l'organisation voient les rapports agrégés.",
-      "noData": "Aucune donnée d'enquête pour le moment.",
-      "monthlyTitle": "Évolution du bien-être (12 mois)",
-      "questionsTitle": "Score moyen par question (les plus bas d'abord)",
-      "distributionTitle": "Répartition du bien-être",
-      "teamsTitle": "Bien-être par équipe",
-      "privacyNote": "Les groupes sont affichés en nombre uniquement – aucune réponse individuelle.",
+      "noData": "Aucune donnée d'activité pour le moment.",
+      "monthlyTitle": "Évolution de l'indice d'activité (12 mois)",
+      "teamsTitle": "Indice d'activité par équipe",
+      "calculationTitle": "Calcul de l'indice",
+      "calculationBody": "Chaque activité réalisée par un employé vaut 1 point. Les points sont cumulés chaque mois et sur l'année à partir de l'inscription. L'indice par employé correspond au total des points divisé par le nombre d'employés.",
       "kpi": {
-        "avgScore": "Score moyen de bien-être",
-        "last30Days": "30 derniers jours",
+        "indexPerEmployee": "Indice par employé",
+        "thisMonth": "Ce mois",
         "change": "Évolution",
-        "vsPrev30Days": "30 jours précédents",
-        "responseRate": "Taux de réponse",
-        "answers": "Réponses aux enquêtes",
-        "activeSurveys": "Enquêtes actives"
+        "prevMonth": "Mois précédent",
+        "participation": "Participation",
+        "last30Days": "30 derniers jours",
+        "points12m": "Points (12 mois)",
+        "pointsTotal": "Total"
       },
       "chart": {
-        "score": "Score",
-        "respondents": "Répondants"
-      },
-      "buckets": {
-        "low": "À surveiller",
-        "medium": "Moyen",
-        "high": "Bon"
+        "index": "Indice par employé",
+        "active": "Employés actifs"
       },
       "table": {
         "team": "Équipe",
         "members": "Membres",
-        "respondents": "Répondants",
-        "responseRate": "Taux de réponse",
-        "avgScore": "Score moyen"
+        "activeMembers": "Actifs",
+        "points": "Points",
+        "indexPerMember": "Indice par membre"
       }
     }
   },

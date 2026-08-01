@@ -12,8 +12,7 @@
       "activateUsers": "Nutzer aktivieren",
       "teams": "Teams",
       "activitySummary": "Aktivitätsübersicht",
-      "engagement": "Engagement",
-      "wellbeing": "Wohlbefinden"
+      "engagement": "Engagement"
     },
     "paywall": {
       "title": "Employer-Panel aktivieren",
@@ -343,41 +342,36 @@
         "completionRate": "Abschlussquote"
       }
     },
-    "wellbeing": {
-      "title": "Wohlbefinden",
-      "description": "Ergebnisse der Wohlbefindens-Umfragen Ihrer Organisation, aggregiert – einzelne Antworten bleiben privat.",
-      "errorTitle": "Wohlbefindens-Daten konnten nicht geladen werden",
+    "activityIndexReport": {
+      "title": "Aktivitätsindex",
+      "description": "Der Aktivitätsindex basiert auf absolvierten Aktivitäten: jede abgeschlossene Aktivität ergibt einen Punkt, monatlich und über das Jahr summiert.",
+      "errorTitle": "Aktivitätsindex konnte nicht geladen werden",
       "errorBody": "Nur Organisationsverantwortliche sehen aggregierte Berichte.",
-      "noData": "Noch keine Umfragedaten.",
-      "monthlyTitle": "Entwicklung des Wohlbefindens (12 Monate)",
-      "questionsTitle": "Durchschnitt pro Frage (niedrigste zuerst)",
-      "distributionTitle": "Verteilung des Wohlbefindens",
-      "teamsTitle": "Wohlbefinden je Team",
-      "privacyNote": "Gruppen werden nur als Anzahl gezeigt – einzelne Antworten nie.",
+      "noData": "Noch keine Aktivitätsdaten.",
+      "monthlyTitle": "Entwicklung des Aktivitätsindex (12 Monate)",
+      "teamsTitle": "Aktivitätsindex je Team",
+      "calculationTitle": "So wird der Index berechnet",
+      "calculationBody": "Jede abgeschlossene Aktivität zählt 1 Punkt. Punkte werden monatlich summiert und ab dem Beitritt über das Jahr kumuliert. Der Index je Mitarbeitendem ist die Gesamtpunktzahl geteilt durch die Anzahl der Mitarbeitenden.",
       "kpi": {
-        "avgScore": "Durchschnittlicher Wert",
-        "last30Days": "Letzte 30 Tage",
+        "indexPerEmployee": "Index je Mitarbeitendem",
+        "thisMonth": "Dieser Monat",
         "change": "Veränderung",
-        "vsPrev30Days": "Vorherige 30 Tage",
-        "responseRate": "Rücklaufquote",
-        "answers": "Umfrageantworten",
-        "activeSurveys": "Aktive Umfragen"
+        "prevMonth": "Vormonat",
+        "participation": "Beteiligung",
+        "last30Days": "letzte 30 Tage",
+        "points12m": "Punkte (12 Monate)",
+        "pointsTotal": "Gesamt"
       },
       "chart": {
-        "score": "Punkte",
-        "respondents": "Teilnehmende"
-      },
-      "buckets": {
-        "low": "Handlungsbedarf",
-        "medium": "Mittel",
-        "high": "Gut"
+        "index": "Index je Mitarbeitendem",
+        "active": "Aktive Mitarbeitende"
       },
       "table": {
         "team": "Team",
         "members": "Mitglieder",
-        "respondents": "Teilnehmende",
-        "responseRate": "Rücklaufquote",
-        "avgScore": "Durchschnitt"
+        "activeMembers": "Aktiv",
+        "points": "Punkte",
+        "indexPerMember": "Index je Mitglied"
       }
     }
   },
