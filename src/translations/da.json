@@ -13,10 +13,9 @@
     "slogan": "Build healthier habits, together."
   },
   "hero": {
-    "title": "Vointy er dit teams kollektive motivator.",
-    "subtitle": "Prøv Vointy gratis i dag og oplev, hvordan dets aktiviteter kan transformere din arbejdsdag. Udfordr og inviter andre teammedlemmer til at deltage!",
-    "ctaDemo": "Se demo",
-    "ctaFree": "Prøv Vointy gratis"
+    "title": "Byg et sundere, mere produktivt team.",
+    "subtitle": "Hjælp dine medarbejdere med at forblive aktive, motiverede og energiske med enkle daglige udfordringer. Vointy gør det nemt for ethvert team at forbedre trivslen på arbejdspladsen.",
+    "ctaFree": "Start gratis"
   },
   "freeTeam": {
     "title": "For teams op til 10 personer",
@@ -85,7 +84,7 @@
     "description": "Hver deltager får adgang til en app, der opmuntrer dem til at deltage i fysiske aktiviteter og andre fritidsrelaterede udfordringer på deres egne præmisser. De kan invitere venner til at deltage, optjene point og forblive motiverede sammen. Aktivitetsniveauer kan spores gennem en aktivitetsscore, hvilket gør det nemt at sammenligne fremskridt og se, hvordan andre engagerer sig. Udvalget af aktiviteter er bredt og spænder fra fitness til kultur. Samtidig får virksomhedsledelsen synlighed i, hvordan medarbejdernes aktivitet og generelle trivsel udvikler sig uden for arbejdet."
   },
   "video": {
-    "title": "Byg sundere vaner sammen.",
+    "title": "Build healthier habits, together.",
     "description": "Se, hvordan teams bruger Vointy til at opbygge sundere vaner og stærkere forbindelser."
   },
   "license": {
@@ -146,7 +145,7 @@
     "saved": "Profil opdateret."
   },
   "admin": {
-    "title": "Admin dashboard",
+    "title": "Adminpanel",
     "contacts": "Kontakthenvendelser",
     "subscribers": "Nyhedsbrevsabonnenter",
     "noContacts": "Ingen kontakthenvendelser endnu.",
@@ -157,58 +156,58 @@
     "generic": "Noget gik galt. Prøv venligst igen."
   },
   "pricing": {
-    "title": "Choose Your Wellness Plan",
-    "subtitle": "Invest in your team's wellbeing with our flexible subscription options. Select the plan that best fits your organization's needs.",
-    "mostPopular": "Most Popular",
-    "perMonth": "/month per user",
+    "title": "Vælg din wellnessplan",
+    "subtitle": "Invester i dit teams trivsel med vores fleksible abonnementsmuligheder. Vælg den plan, der passer bedst til din organisations behov.",
+    "mostPopular": "Mest populær",
+    "perMonth": "/måned pr. bruger",
     "basic": {
       "name": "Basic",
       "price": "€12",
-      "description": "For small teams looking to get started with wellness activities",
+      "description": "For små teams, der ønsker at komme i gang med wellnessaktiviteter",
       "features": [
-        "Up to 15 team members",
-        "Basic wellness challenges",
-        "Monthly reports",
-        "Email support"
+        "Op til 15 teammedlemmer",
+        "Grundlæggende wellnessudfordringer",
+        "Månedlige rapporter",
+        "E-mailsupport"
       ],
-      "cta": "Get Started"
+      "cta": "Kom i gang"
     },
     "pro": {
       "name": "Pro",
       "price": "€24",
-      "description": "For growing teams that need more features and engagement",
+      "description": "For voksende teams, der har brug for flere funktioner og engagement",
       "features": [
-        "Up to 50 team members",
-        "Advanced wellness challenges",
-        "Weekly reports",
-        "Priority support",
-        "Custom wellness programs",
-        "Team analytics dashboard"
+        "Op til 50 teammedlemmer",
+        "Avancerede wellnessudfordringer",
+        "Ugentlige rapporter",
+        "Prioriteret support",
+        "Skræddersyede wellnessprogrammer",
+        "Team-analysedashboard"
       ],
-      "cta": "Start Free Trial"
+      "cta": "Start gratis prøveperiode"
     },
     "enterprise": {
       "name": "Enterprise",
       "price": "€49",
-      "description": "For large organizations requiring custom solutions",
+      "description": "For store organisationer, der har brug for skræddersyede løsninger",
       "features": [
-        "Unlimited team members",
-        "Custom wellness programs",
-        "Detailed analytics",
-        "Dedicated account manager",
-        "API access",
-        "SSO integration",
+        "Ubegrænset antal teammedlemmer",
+        "Skræddersyede wellnessprogrammer",
+        "Detaljeret analyse",
+        "Dedikeret kontoansvarlig",
+        "API-adgang",
+        "SSO-integration",
         "White labeling"
       ],
-      "cta": "Contact Sales"
+      "cta": "Kontakt salg"
     },
-    "formTitle": "Get Started with Vointy",
-    "formSubtitle": "Fill out the form and we will contact you immediately.",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email Address",
-    "companyName": "Company Name",
-    "teamSize": "Team Size",
+    "formTitle": "Kom i gang med Vointy",
+    "formSubtitle": "Udfyld formularen, og vi kontakter dig med det samme.",
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "email": "E-mailadresse",
+    "companyName": "Virksomhedsnavn",
+    "teamSize": "Teamstørrelse",
     "teamSizeOptions": {
       "1-10": "1-10",
       "11-50": "11-50",
@@ -216,9 +215,9 @@
       "201-500": "201-500",
       "501+": "501+"
     },
-    "message": "Message (optional)",
-    "submit": "Request Subscription",
-    "successTitle": "Request received!",
-    "successMessage": "We'll contact you shortly about your {plan} subscription."
+    "message": "Besked (valgfri)",
+    "submit": "Anmod om abonnement",
+    "successTitle": "Anmodning modtaget!",
+    "successMessage": "Vi kontakter dig snart angående dit {plan}-abonnement."
   }
 }

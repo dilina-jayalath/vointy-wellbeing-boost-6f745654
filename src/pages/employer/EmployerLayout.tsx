@@ -10,12 +10,14 @@ import { useSubscription } from "@/hooks/useSubscription";
 import EmployerPaywall from "@/components/employer/EmployerPaywall";
 import { PaymentTestModeBanner } from "@/components/PaymentTestModeBanner";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
+import { useTranslation } from "@/lib/i18n";
 
 
 const EmployerLayout = () => {
   const { profile } = useAuth();
   const { orgName } = useEmployerOrg();
   const { pathname } = useLocation();
+  const { t } = useTranslation();
   const showBack = pathname !== "/employer";
 
   const { isActive, isTrialing, isPastDue, endsAt, loading } = useSubscription();
@@ -27,14 +29,14 @@ const EmployerLayout = () => {
     ? Math.max(0, Math.ceil((endsAt.getTime() - Date.now()) / 86400000))
     : null;
   const statusPill = loading
-    ? "Checking plan…"
+    ? t("employerPanel.layout.checkingPlan")
     : isTrialing && daysLeft !== null
-      ? `Free trial remaining: ${daysLeft}d`
+      ? (t("employerPanel.layout.trialRemaining") as string).replace("{days}", String(daysLeft))
       : isPastDue
-        ? "Payment failed"
+        ? t("employerPanel.layout.paymentFailed")
         : isActive
-          ? "Employer panel active"
-          : "No active plan";
+          ? t("employerPanel.layout.panelActive")
+          : t("employerPanel.layout.noActivePlan");
 
 
 
@@ -57,7 +59,7 @@ const EmployerLayout = () => {
                 </span>
                 <div className="flex flex-col leading-none">
                   <span>Vointy<span className="opacity-80">.life</span></span>
-                  <span className="text-[9px] font-normal tracking-wide opacity-90">Build healthier habits, together.</span>
+                  <span className="text-[9px] font-normal tracking-wide opacity-90">{t("employerPanel.layout.brandTagline")}</span>
                 </div>
               </Link>
 

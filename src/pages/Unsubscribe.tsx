@@ -3,6 +3,7 @@ import { useSearchParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { supabase } from "@/integrations/supabase/client";
+import { useTranslation } from "@/lib/i18n";
 import { Loader2, MailX, CheckCircle2, AlertTriangle } from "lucide-react";
 
 type State = "loading" | "valid" | "already" | "invalid" | "done" | "error";
@@ -15,6 +16,7 @@ const Unsubscribe = () => {
   const token = params.get("token") ?? "";
   const [state, setState] = useState<State>("loading");
   const [busy, setBusy] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (!token) {
@@ -66,16 +68,16 @@ const Unsubscribe = () => {
               <div className="w-16 h-16 bg-brand-purple/10 text-brand-purple rounded-full flex items-center justify-center mx-auto">
                 <MailX size={30} />
               </div>
-              <h1 className="text-2xl font-bold text-brand-dark">Unsubscribe from Vointy emails</h1>
+              <h1 className="text-2xl font-bold text-brand-dark">{t("unsubscribe.heading")}</h1>
               <p className="text-muted-foreground">
-                You will no longer receive emails from Vointy at this address.
+                {t("unsubscribe.description")}
               </p>
               <Button
                 onClick={confirm}
                 disabled={busy}
                 className="w-full bg-brand-purple hover:bg-brand-purple-dark"
               >
-                {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : "Confirm unsubscribe"}
+                {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : t("unsubscribe.confirmButton")}
               </Button>
             </>
           )}
@@ -85,20 +87,20 @@ const Unsubscribe = () => {
               <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto">
                 <CheckCircle2 size={30} />
               </div>
-              <h1 className="text-2xl font-bold text-brand-dark">You're unsubscribed</h1>
-              <p className="text-muted-foreground">We won't email this address again.</p>
+              <h1 className="text-2xl font-bold text-brand-dark">{t("unsubscribe.doneHeading")}</h1>
+              <p className="text-muted-foreground">{t("unsubscribe.doneDescription")}</p>
               <Button asChild variant="outline">
-                <Link to="/">Back to Vointy</Link>
+                <Link to="/">{t("unsubscribe.backToVointy")}</Link>
               </Button>
             </>
           )}
 
           {state === "already" && (
             <>
-              <h1 className="text-2xl font-bold text-brand-dark">Already unsubscribed</h1>
-              <p className="text-muted-foreground">This address is already opted out.</p>
+              <h1 className="text-2xl font-bold text-brand-dark">{t("unsubscribe.alreadyHeading")}</h1>
+              <p className="text-muted-foreground">{t("unsubscribe.alreadyDescription")}</p>
               <Button asChild variant="outline">
-                <Link to="/">Back to Vointy</Link>
+                <Link to="/">{t("unsubscribe.backToVointy")}</Link>
               </Button>
             </>
           )}
@@ -108,12 +110,12 @@ const Unsubscribe = () => {
               <div className="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto">
                 <AlertTriangle size={30} />
               </div>
-              <h1 className="text-2xl font-bold text-brand-dark">Link not valid</h1>
+              <h1 className="text-2xl font-bold text-brand-dark">{t("unsubscribe.invalidHeading")}</h1>
               <p className="text-muted-foreground">
-                This unsubscribe link is invalid or has expired.
+                {t("unsubscribe.invalidDescription")}
               </p>
               <Button asChild variant="outline">
-                <Link to="/">Back to Vointy</Link>
+                <Link to="/">{t("unsubscribe.backToVointy")}</Link>
               </Button>
             </>
           )}

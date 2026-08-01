@@ -5,6 +5,16 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 import { usePaddleCheckout } from "@/hooks/usePaddleCheckout";
 import { EMPLOYER_PRICE_ID } from "@/lib/paddle";
+import { useTranslation } from "@/lib/i18n";
+
+export const PLAN_FEATURES_KEYS = [
+  "unlimitedEmployees",
+  "unlimitedTeams",
+  "allActivities",
+  "managementDashboard",
+  "reporting",
+  "noPerUserFees",
+] as const;
 
 export const PLAN_FEATURES = [
   "Unlimited employees",
@@ -20,6 +30,7 @@ const EmployerPaywall = () => {
   const { user } = useAuth();
   const { orgId, orgName } = useEmployerOrg();
   const { openCheckout, loading } = usePaddleCheckout();
+  const { t } = useTranslation();
 
   const startCheckout = () => {
     if (!user) return;
@@ -34,6 +45,11 @@ const EmployerPaywall = () => {
     });
   };
 
+  const description = (t("employerPanel.paywall.description") as string).replace(
+    "{orgPrefix}",
+    orgName ? `${orgName} — ` : ""
+  );
+
   return (
     <div className="min-h-[70vh] flex items-center justify-center p-6">
       <Card className="max-w-xl w-full border-brand-purple">
@@ -42,22 +58,20 @@ const EmployerPaywall = () => {
             <Lock className="h-6 w-6 text-brand-purple" />
           </div>
           <CardTitle className="text-2xl text-brand-purple">
-            Activate the Employer panel
+            {t("employerPanel.paywall.title")}
           </CardTitle>
-          <p className="text-sm text-muted-foreground">
-            {orgName ? `${orgName} — ` : ""}Vointy is free for companies and employees. The
-            Employer panel with tracking, analytics, campaigns and events is €149/month.
-          </p>
+          <p className="text-sm text-muted-foreground">{description}</p>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="rounded-lg bg-slate-50 p-4 text-center">
             <p className="text-3xl font-bold text-brand-purple">€149</p>
-            <p className="text-sm text-muted-foreground">per month · free 30-day trial</p>
+            <p className="text-sm text-muted-foreground">{t("employerPanel.paywall.priceSuffix")}</p>
           </div>
           <ul className="space-y-1 text-sm">
-            {PLAN_FEATURES.map((f) => (
+            {PLAN_FEATURES_KEYS.map((f) => (
               <li key={f} className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-brand-purple" /> {f}
+                <CheckCircle2 className="h-4 w-4 text-brand-purple" />{" "}
+                {t(`employerPanel.paywall.features.${f}`)}
               </li>
             ))}
           </ul>
@@ -67,11 +81,10 @@ const EmployerPaywall = () => {
             disabled={loading || !user}
           >
             {loading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
-            Start free 30-day trial
+            {t("employerPanel.paywall.startTrial")}
           </Button>
           <p className="text-xs text-center text-muted-foreground">
-            No setup fee · cancel anytime · card required to start the trial, first charge after
-            30 days.
+            {t("employerPanel.paywall.disclaimer")}
           </p>
         </CardContent>
       </Card>

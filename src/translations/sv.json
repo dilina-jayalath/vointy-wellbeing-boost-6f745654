@@ -13,10 +13,9 @@
     "slogan": "Build healthier habits, together."
   },
   "hero": {
-    "title": "Vointy är ditt teams kollektiva motivatör.",
-    "subtitle": "Prova Vointy gratis idag och upplev hur dess aktiviteter kan förvandla din arbetsdag. Utmana och bjud in andra teammedlemmar att gå med!",
-    "ctaDemo": "Visa demo",
-    "ctaFree": "Prova Vointy gratis"
+    "title": "Bygg ett hälsosammare, mer produktivt team.",
+    "subtitle": "Hjälp dina anställda att hålla sig aktiva, motiverade och energiska med enkla dagliga utmaningar. Vointy gör det enkelt att förbättra välbefinnandet på jobbet – för alla team.",
+    "ctaFree": "Kom igång gratis"
   },
   "freeTeam": {
     "title": "För team upp till 10 personer",
@@ -85,7 +84,7 @@
     "description": "Varje deltagare får tillgång till en app som uppmuntrar dem att delta i fysiska aktiviteter och andra fritidsrelaterade utmaningar på sina egna villkor. De kan bjuda in vänner att gå med, tjäna poäng och hålla sig motiverade tillsammans. Aktivitetsnivåer kan spåras genom en aktivitetspoäng, vilket gör det enkelt att jämföra framsteg och se hur andra engagerar sig. Utbudet av aktiviteter är brett, från fitness till kultur. Samtidigt får företagsledningen insyn i hur anställdas aktivitet och övergripande välbefinnande utvecklas utanför arbetet."
   },
   "video": {
-    "title": "Bygg hälsosammare vanor, tillsammans.",
+    "title": "Build healthier habits, together.",
     "description": "Se hur team använder Vointy för att bygga hälsosammare vanor och starkare kontakter."
   },
   "license": {
@@ -157,58 +156,58 @@
     "generic": "Något gick fel. Försök igen."
   },
   "pricing": {
-    "title": "Choose Your Wellness Plan",
-    "subtitle": "Invest in your team's wellbeing with our flexible subscription options. Select the plan that best fits your organization's needs.",
-    "mostPopular": "Most Popular",
-    "perMonth": "/month per user",
+    "title": "Välj din wellnessplan",
+    "subtitle": "Investera i ditt teams välbefinnande med våra flexibla prenumerationsalternativ. Välj den plan som bäst passar din organisations behov.",
+    "mostPopular": "Mest populär",
+    "perMonth": "/månad per användare",
     "basic": {
       "name": "Basic",
       "price": "€12",
-      "description": "For small teams looking to get started with wellness activities",
+      "description": "För små team som vill komma igång med wellnessaktiviteter",
       "features": [
-        "Up to 15 team members",
-        "Basic wellness challenges",
-        "Monthly reports",
-        "Email support"
+        "Upp till 15 teammedlemmar",
+        "Grundläggande wellnessutmaningar",
+        "Månadsrapporter",
+        "E-postsupport"
       ],
-      "cta": "Get Started"
+      "cta": "Kom igång"
     },
     "pro": {
       "name": "Pro",
       "price": "€24",
-      "description": "For growing teams that need more features and engagement",
+      "description": "För växande team som behöver fler funktioner och ökat engagemang",
       "features": [
-        "Up to 50 team members",
-        "Advanced wellness challenges",
-        "Weekly reports",
-        "Priority support",
-        "Custom wellness programs",
-        "Team analytics dashboard"
+        "Upp till 50 teammedlemmar",
+        "Avancerade wellnessutmaningar",
+        "Veckorapporter",
+        "Prioriterad support",
+        "Anpassade wellnessprogram",
+        "Analyspanel för team"
       ],
-      "cta": "Start Free Trial"
+      "cta": "Starta kostnadsfri provperiod"
     },
     "enterprise": {
       "name": "Enterprise",
       "price": "€49",
-      "description": "For large organizations requiring custom solutions",
+      "description": "För stora organisationer som behöver anpassade lösningar",
       "features": [
-        "Unlimited team members",
-        "Custom wellness programs",
-        "Detailed analytics",
-        "Dedicated account manager",
-        "API access",
-        "SSO integration",
+        "Obegränsat antal teammedlemmar",
+        "Anpassade wellnessprogram",
+        "Detaljerad analys",
+        "Dedikerad kontoansvarig",
+        "API-åtkomst",
+        "SSO-integration",
         "White labeling"
       ],
-      "cta": "Contact Sales"
+      "cta": "Kontakta försäljning"
     },
-    "formTitle": "Get Started with Vointy",
-    "formSubtitle": "Fill out the form and we will contact you immediately.",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email Address",
-    "companyName": "Company Name",
-    "teamSize": "Team Size",
+    "formTitle": "Kom igång med Vointy",
+    "formSubtitle": "Fyll i formuläret så kontaktar vi dig omedelbart.",
+    "firstName": "Förnamn",
+    "lastName": "Efternamn",
+    "email": "E-postadress",
+    "companyName": "Företagsnamn",
+    "teamSize": "Teamstorlek",
     "teamSizeOptions": {
       "1-10": "1-10",
       "11-50": "11-50",
@@ -216,9 +215,9 @@
       "201-500": "201-500",
       "501+": "501+"
     },
-    "message": "Message (optional)",
-    "submit": "Request Subscription",
-    "successTitle": "Request received!",
-    "successMessage": "We'll contact you shortly about your {plan} subscription."
+    "message": "Meddelande (valfritt)",
+    "submit": "Begär prenumeration",
+    "successTitle": "Förfrågan mottagen!",
+    "successMessage": "Vi kontaktar dig snart angående din {plan}-prenumeration."
   }
 }

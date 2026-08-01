@@ -1,0 +1,214 @@
+{
+  "appPanel": {
+    "nav": {
+      "home": "Home",
+      "activities": "Activities",
+      "challenges": "Challenges",
+      "community": "Community",
+      "index": "Index",
+      "tagline": "Build healthier habits, together.",
+      "profileAria": "Profile"
+    },
+    "home": {
+      "welcomeBack": "Welcome back",
+      "hiGreeting": "Hi, {name}",
+      "defaultName": "there",
+      "activityIndex": "Activity Index",
+      "pointsThisYear": "points this year",
+      "view": "View",
+      "pointsToday": "Points today",
+      "activeChallenges": "Active challenges",
+      "surveyOpen": "Survey open",
+      "surveyDesc": "Answer a few quick questions.",
+      "answer": "Answer",
+      "myChallenges": "My challenges",
+      "all": "All",
+      "noChallenges": "You haven't joined any challenge yet.",
+      "openInvitations": "Open invitations",
+      "join": "Join",
+      "recentActivity": "Recent activity",
+      "noLoggedActivities": "No logged activities yet.",
+      "activityFallback": "Activity"
+    },
+    "activities": {
+      "title": "Activities",
+      "tabs": {
+        "all": "All",
+        "mine": "My own",
+        "history": "History"
+      },
+      "loading": "Loading…",
+      "noActivities": "No activities yet. They will appear here once the activity catalogue is imported.",
+      "video": "Video",
+      "guide": "Guide",
+      "openGuide": "Open guide",
+      "nothingLogged": "Nothing logged yet.",
+      "amount": "Amount ({unit})",
+      "amountPlaceholder": "30",
+      "note": "Note (optional)",
+      "saving": "Saving…",
+      "logActivity": "Log activity",
+      "activityFallback": "Activity",
+      "toast": {
+        "enterAmount": "Enter an amount",
+        "couldNotSave": "Could not save",
+        "logged": "Activity logged"
+      }
+    },
+    "challenges": {
+      "title": "Challenges",
+      "tabs": {
+        "mine": "Mine",
+        "open": "Open",
+        "board": "Leaderboard"
+      },
+      "loading": "Loading…",
+      "noneJoined": "You haven't joined any challenge yet.",
+      "noneOpen": "No open challenges right now.",
+      "joinChallenge": "Join challenge",
+      "participants": "participants",
+      "endsOn": "ends {date}",
+      "noResults": "No results yet.",
+      "you": "You",
+      "member": "Member {n}",
+      "toast": {
+        "couldNotJoin": "Could not join",
+        "joined": "Joined challenge"
+      }
+    },
+    "community": {
+      "title": "Community",
+      "placeholder": "Share what you did today…",
+      "post": "Post",
+      "loading": "Loading…",
+      "noPosts": "No posts yet. Be the first to share.",
+      "writeComment": "Write a comment…",
+      "toast": {
+        "couldNotPost": "Could not post",
+        "couldNotComment": "Could not comment"
+      }
+    },
+    "profile": {
+      "title": "Profile",
+      "defaultName": "Vointy user",
+      "settings": "Settings",
+      "displayName": "Display name",
+      "avatarUrl": "Profile picture URL",
+      "profilePictureAlt": "Profile picture",
+      "language": "Language",
+      "save": "Save",
+      "saving": "Saving…",
+      "employerPanel": "Employer panel",
+      "signOut": "Sign out",
+      "toast": {
+        "couldNotSave": "Could not save",
+        "updated": "Profile updated"
+      }
+    },
+    "wellbeing": {
+      "title": "Activity Index",
+      "pointsThisMembershipYear": "points this membership year",
+      "pointsThisMonth": "{n} points this month",
+      "explanation": "Every completed activity earns 1 point. Points are summed per month and accumulated over your membership year, starting from the day you joined.",
+      "monthlyPoints": "Monthly points · {year}",
+      "saving": "Saving…",
+      "submit": "Submit",
+      "toast": {
+        "couldNotSubmit": "Could not submit",
+        "thanksTitle": "Thanks!",
+        "thanksDesc": "Your answers were saved."
+      }
+    },
+    "activityForm": {
+      "editTitle": "Edit activity",
+      "createTitle": "Create activity",
+      "description": "Add your own activity with a description, duration and an image or YouTube video.",
+      "titleLabel": "Title",
+      "titlePlaceholder": "Morning mobility routine",
+      "descLabel": "Description",
+      "descPlaceholder": "What is done, how and why?",
+      "durationLabel": "Duration (minutes)",
+      "durationPlaceholder": "30",
+      "imageLabel": "Image",
+      "imageUrlPlaceholder": "https://…/photo.jpg",
+      "uploadImage": "Upload image",
+      "uploading": "Uploading…",
+      "orPasteUrl": "or paste a URL above",
+      "imagePreviewAlt": "Activity preview",
+      "linkLabel": "YouTube video link",
+      "linkPlaceholder": "https://www.youtube.com/watch?v=…",
+      "visibilityLabel": "Visibility",
+      "visibility": {
+        "private": "Only me",
+        "organization": "My company",
+        "public": "Everyone"
+      },
+      "cancel": "Cancel",
+      "saving": "Saving…",
+      "saveChanges": "Save changes",
+      "createActivity": "Create activity",
+      "toast": {
+        "selectImage": "Select an image file",
+        "imageTooLarge": "Image must be smaller than 5 MB",
+        "uploadFailed": "Upload failed",
+        "imageUploaded": "Image uploaded",
+        "signFailed": "Could not get image link",
+        "titleRequired": "Title is required",
+        "invalidDuration": "Enter a valid duration in minutes",
+        "couldNotSave": "Could not save activity",
+        "updated": "Activity updated",
+        "created": "Activity created"
+      }
+    },
+    "activityInvite": {
+      "titlePrefix": "Invite to “{title}”",
+      "description": "Invite people one by one or import a list from a CSV file.",
+      "name": "Name",
+      "email": "Email",
+      "add": "Add",
+      "uploadCsv": "Upload CSV",
+      "template": "Template",
+      "sendOne": "Send 1 invitation",
+      "sendMany": "Send {n} invitations",
+      "invitationsTitle": "Invitations",
+      "noInvitations": "No invitations yet.",
+      "copyLinkTitle": "Copy link",
+      "removeTitle": "Remove",
+      "toast": {
+        "invalidEmail": "Enter a valid email address",
+        "csvImportedTitle": "CSV imported",
+        "csvImportedDesc": "{n} recipient(s) added.",
+        "couldNotCreate": "Could not create invitations",
+        "sentTitle": "Invitations sent",
+        "sentDesc": "{n} invitation(s) created.",
+        "linkCopied": "Invitation link copied"
+      }
+    },
+    "myActivities": {
+      "description": "Create your own activities and invite others to join them.",
+      "newActivity": "New activity",
+      "loading": "Loading…",
+      "none": "You have not created any activities yet.",
+      "invite": "Invite",
+      "edit": "Edit",
+      "delete": "Delete",
+      "video": "Video",
+      "minutesSuffix": "min",
+      "visibility": {
+        "private": "Only me",
+        "organization": "My company",
+        "public": "Everyone"
+      },
+      "imageAlt": "Show larger image of {title}",
+      "deleteConfirmTitle": "Delete this activity?",
+      "deleteConfirmDesc": "“{title}” and its invitations will be removed permanently.",
+      "cancel": "Cancel",
+      "deleteAction": "Delete",
+      "toast": {
+        "couldNotLoad": "Could not load your activities",
+        "couldNotDelete": "Could not delete",
+        "deleted": "Activity deleted"
+      }
+    }
+  }
+}

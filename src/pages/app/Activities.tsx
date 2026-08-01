@@ -3,6 +3,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useActivities, usePerformedExercises } from "@/hooks/useAppData";
+import { useTranslation } from "@/lib/i18n";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -29,6 +30,7 @@ const youTubeId = (url?: string | null) => {
 
 const AppActivities = () => {
   const { user } = useAuth();
+  const { t } = useTranslation();
   const qc = useQueryClient();
   const { data: activities, isLoading } = useActivities();
   const { data: history } = usePerformedExercises();
@@ -41,7 +43,7 @@ const AppActivities = () => {
     if (!user || !selected) return;
     const value = Number(amount);
     if (!value || value <= 0) {
-      toast({ title: "Enter an amount", variant: "destructive" });
+      toast({ title: t("appPanel.activities.toast.enterAmount"), variant: "destructive" });
       return;
     }
     setSaving(true);
@@ -55,10 +57,10 @@ const AppActivities = () => {
     });
     setSaving(false);
     if (error) {
-      toast({ title: "Could not save", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.activities.toast.couldNotSave"), description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: "Activity logged", description: `${selected.title}: ${value} ${selected.unit}` });
+    toast({ title: t("appPanel.activities.toast.logged"), description: `${selected.title}: ${value} ${selected.unit}` });
     setSelected(null);
     setAmount("");
     setNote("");
@@ -67,13 +69,13 @@ const AppActivities = () => {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-2xl font-bold">Activities</h1>
+      <h1 className="text-2xl font-bold">{t("appPanel.activities.title")}</h1>
 
       <Tabs defaultValue="all">
         <TabsList className="w-full">
-          <TabsTrigger value="all" className="flex-1">All</TabsTrigger>
-          <TabsTrigger value="mine" className="flex-1">My own</TabsTrigger>
-          <TabsTrigger value="history" className="flex-1">History</TabsTrigger>
+          <TabsTrigger value="all" className="flex-1">{t("appPanel.activities.tabs.all")}</TabsTrigger>
+          <TabsTrigger value="mine" className="flex-1">{t("appPanel.activities.tabs.mine")}</TabsTrigger>
+          <TabsTrigger value="history" className="flex-1">{t("appPanel.activities.tabs.history")}</TabsTrigger>
         </TabsList>
 
         <TabsContent value="mine" className="mt-4">
@@ -82,10 +84,10 @@ const AppActivities = () => {
 
 
         <TabsContent value="all" className="space-y-3 mt-4">
-          {isLoading && <p className="text-sm text-muted-foreground">Loading…</p>}
+          {isLoading && <p className="text-sm text-muted-foreground">{t("appPanel.activities.loading")}</p>}
           {!isLoading && (activities?.length ?? 0) === 0 && (
             <p className="text-sm text-muted-foreground">
-              No activities yet. They will appear here once the activity catalogue is imported.
+              {t("appPanel.activities.noActivities")}
             </p>
           )}
           {(activities ?? []).map((a: any) => (
@@ -109,7 +111,7 @@ const AppActivities = () => {
                   {a.link && (
                     <span className="mt-1 inline-flex items-center gap-1 text-xs text-muted-foreground">
                       <PlayCircle className="h-3.5 w-3.5" />
-                      {youTubeId(a.link) ? "Video" : "Guide"}
+                      {youTubeId(a.link) ? t("appPanel.activities.video") : t("appPanel.activities.guide")}
                     </span>
                   )}
                 </div>
@@ -123,13 +125,13 @@ const AppActivities = () => {
 
         <TabsContent value="history" className="space-y-3 mt-4">
           {(history ?? []).length === 0 && (
-            <p className="text-sm text-muted-foreground">Nothing logged yet.</p>
+            <p className="text-sm text-muted-foreground">{t("appPanel.activities.nothingLogged")}</p>
           )}
           {(history ?? []).map((e: any) => (
             <Card key={e.id}>
               <CardContent className="p-4 flex items-center justify-between">
                 <div>
-                  <p className="font-medium">{e.activities?.title ?? "Activity"}</p>
+                  <p className="font-medium">{e.activities?.title ?? t("appPanel.activities.activityFallback")}</p>
                   <p className="text-xs text-muted-foreground">
                     {new Date(e.performed_at).toLocaleDateString()}
                   </p>
@@ -168,30 +170,30 @@ const AppActivities = () => {
                 rel="noopener noreferrer"
                 className="text-sm underline text-muted-foreground"
               >
-                Open guide
+                {t("appPanel.activities.openGuide")}
               </a>
             ) : null}
             {selected?.description && (
               <p className="text-sm text-muted-foreground">{selected.description}</p>
             )}
             <div>
-              <Label htmlFor="amount">Amount ({selected?.unit})</Label>
+              <Label htmlFor="amount">{(t("appPanel.activities.amount") as string).replace("{unit}", selected?.unit ?? "")}</Label>
               <Input
                 id="amount"
                 type="number"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
-                placeholder="30"
+                placeholder={t("appPanel.activities.amountPlaceholder")}
               />
             </div>
             <div>
-              <Label htmlFor="note">Note (optional)</Label>
+              <Label htmlFor="note">{t("appPanel.activities.note")}</Label>
               <Input id="note" value={note} onChange={(e) => setNote(e.target.value)} />
             </div>
           </div>
           <DialogFooter>
             <Button onClick={log} disabled={saving}>
-              {saving ? "Saving…" : "Log activity"}
+              {saving ? t("appPanel.activities.saving") : t("appPanel.activities.logActivity")}
             </Button>
           </DialogFooter>
         </DialogContent>

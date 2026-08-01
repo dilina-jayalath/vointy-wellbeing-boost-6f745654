@@ -18,7 +18,7 @@ const monthKey = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).pad
 
 const AppActivityIndex = () => {
   const { user } = useAuth();
-  const { language } = useTranslation();
+  const { language, t } = useTranslation();
   const qc = useQueryClient();
   const { data: log } = useActivityLog();
   const { data: surveys } = useOpenSurveys();
@@ -81,10 +81,10 @@ const AppActivityIndex = () => {
     );
     setSaving(false);
     if (error) {
-      toast({ title: "Could not submit", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.wellbeing.toast.couldNotSubmit"), description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: "Thanks!", description: "Your answers were saved." });
+    toast({ title: t("appPanel.wellbeing.toast.thanksTitle"), description: t("appPanel.wellbeing.toast.thanksDesc") });
     setAnswers({});
     qc.invalidateQueries({ queryKey: ["open-surveys"] });
   };
@@ -92,26 +92,25 @@ const AppActivityIndex = () => {
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-bold flex items-center gap-2">
-        <ActivityIcon className="h-6 w-6 text-brand-purple" /> Activity Index
+        <ActivityIcon className="h-6 w-6 text-brand-purple" /> {t("appPanel.wellbeing.title")}
       </h1>
 
       <Card className="bg-gradient-to-br from-brand-purple to-brand-blue text-primary-foreground border-0">
         <CardContent className="p-6 text-center">
           <p className="text-5xl font-bold">{yearTotal}</p>
-          <p className="text-sm opacity-90">points this membership year</p>
-          <p className="text-xs opacity-75 mt-1">{thisMonth} points this month</p>
+          <p className="text-sm opacity-90">{t("appPanel.wellbeing.pointsThisMembershipYear")}</p>
+          <p className="text-xs opacity-75 mt-1">{(t("appPanel.wellbeing.pointsThisMonth") as string).replace("{n}", String(thisMonth))}</p>
         </CardContent>
       </Card>
 
       <p className="text-xs text-muted-foreground">
-        Every completed activity earns 1 point. Points are summed per month and accumulated over
-        your membership year, starting from the day you joined.
+        {t("appPanel.wellbeing.explanation")}
       </p>
 
       {chartData.length > 0 && (
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle className="text-base">Monthly points · {yearLabel}</CardTitle>
+            <CardTitle className="text-base">{(t("appPanel.wellbeing.monthlyPoints") as string).replace("{year}", yearLabel)}</CardTitle>
           </CardHeader>
           <CardContent className="h-48">
             <ResponsiveContainer width="100%" height="100%">
@@ -147,7 +146,7 @@ const AppActivityIndex = () => {
               </div>
             ))}
             <Button className="w-full" onClick={submit} disabled={saving}>
-              {saving ? "Saving…" : "Submit"}
+              {saving ? t("appPanel.wellbeing.saving") : t("appPanel.wellbeing.submit")}
             </Button>
           </CardContent>
         </Card>

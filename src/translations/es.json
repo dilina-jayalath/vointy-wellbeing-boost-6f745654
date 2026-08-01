@@ -13,10 +13,9 @@
     "slogan": "Build healthier habits, together."
   },
   "hero": {
-    "title": "Vointy es el motivador colectivo de tu equipo.",
-    "subtitle": "Prueba Vointy gratis hoy mismo y experimenta cómo sus actividades pueden transformar tu jornada laboral. ¡Desafía e invita a otros miembros del equipo a unirse!",
-    "ctaDemo": "Ver Demo",
-    "ctaFree": "Probar Vointy gratis"
+    "title": "Construye un equipo más saludable y productivo.",
+    "subtitle": "Ayuda a tus empleados a mantenerse activos, motivados y llenos de energía con sencillos desafíos diarios. Vointy facilita mejorar el bienestar laboral, para cualquier equipo.",
+    "ctaFree": "Empezar gratis"
   },
   "freeTeam": {
     "title": "Para equipos de hasta 10 personas",
@@ -85,7 +84,7 @@
     "description": "Cada participante tiene acceso a una aplicación que les anima a participar en actividades físicas y otros desafíos relacionados con el ocio en sus propios términos. Pueden invitar a amigos a unirse, ganar puntos y mantenerse motivados juntos. Los niveles de actividad se pueden seguir a través de una puntuación de actividad, lo que facilita comparar el progreso y ver cómo otros están participando. La variedad de actividades es amplia, desde fitness hasta cultura. Al mismo tiempo, el liderazgo de la empresa gana visibilidad sobre cómo se desarrollan la actividad de los empleados y el bienestar general fuera del trabajo."
   },
   "video": {
-    "title": "Construye hábitos más saludables, juntos.",
+    "title": "Build healthier habits, together.",
     "description": "Mira cómo los equipos usan Vointy para crear hábitos más saludables y conexiones más fuertes."
   },
   "license": {
@@ -157,58 +156,58 @@
     "generic": "Algo salió mal. Por favor, inténtalo de nuevo."
   },
   "pricing": {
-    "title": "Choose Your Wellness Plan",
-    "subtitle": "Invest in your team's wellbeing with our flexible subscription options. Select the plan that best fits your organization's needs.",
-    "mostPopular": "Most Popular",
-    "perMonth": "/month per user",
+    "title": "Elige tu plan de bienestar",
+    "subtitle": "Invierte en el bienestar de tu equipo con nuestras opciones de suscripción flexibles. Selecciona el plan que mejor se adapte a las necesidades de tu organización.",
+    "mostPopular": "Más popular",
+    "perMonth": "/mes por usuario",
     "basic": {
       "name": "Basic",
       "price": "€12",
-      "description": "For small teams looking to get started with wellness activities",
+      "description": "Para equipos pequeños que quieren empezar con actividades de bienestar",
       "features": [
-        "Up to 15 team members",
-        "Basic wellness challenges",
-        "Monthly reports",
-        "Email support"
+        "Hasta 15 miembros del equipo",
+        "Desafíos básicos de bienestar",
+        "Informes mensuales",
+        "Soporte por correo electrónico"
       ],
-      "cta": "Get Started"
+      "cta": "Empezar"
     },
     "pro": {
       "name": "Pro",
       "price": "€24",
-      "description": "For growing teams that need more features and engagement",
+      "description": "Para equipos en crecimiento que necesitan más funciones y compromiso",
       "features": [
-        "Up to 50 team members",
-        "Advanced wellness challenges",
-        "Weekly reports",
-        "Priority support",
-        "Custom wellness programs",
-        "Team analytics dashboard"
+        "Hasta 50 miembros del equipo",
+        "Desafíos avanzados de bienestar",
+        "Informes semanales",
+        "Soporte prioritario",
+        "Programas de bienestar personalizados",
+        "Panel de análisis del equipo"
       ],
-      "cta": "Start Free Trial"
+      "cta": "Iniciar prueba gratuita"
     },
     "enterprise": {
       "name": "Enterprise",
       "price": "€49",
-      "description": "For large organizations requiring custom solutions",
+      "description": "Para grandes organizaciones que requieren soluciones personalizadas",
       "features": [
-        "Unlimited team members",
-        "Custom wellness programs",
-        "Detailed analytics",
-        "Dedicated account manager",
-        "API access",
-        "SSO integration",
-        "White labeling"
+        "Miembros de equipo ilimitados",
+        "Programas de bienestar personalizados",
+        "Análisis detallados",
+        "Gestor de cuenta dedicado",
+        "Acceso a la API",
+        "Integración SSO",
+        "Marca blanca"
       ],
-      "cta": "Contact Sales"
+      "cta": "Contactar con ventas"
     },
-    "formTitle": "Get Started with Vointy",
-    "formSubtitle": "Fill out the form and we will contact you immediately.",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email Address",
-    "companyName": "Company Name",
-    "teamSize": "Team Size",
+    "formTitle": "Empieza con Vointy",
+    "formSubtitle": "Rellena el formulario y nos pondremos en contacto contigo de inmediato.",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "companyName": "Nombre de la empresa",
+    "teamSize": "Tamaño del equipo",
     "teamSizeOptions": {
       "1-10": "1-10",
       "11-50": "11-50",
@@ -216,9 +215,9 @@
       "201-500": "201-500",
       "501+": "501+"
     },
-    "message": "Message (optional)",
-    "submit": "Request Subscription",
-    "successTitle": "Request received!",
-    "successMessage": "We'll contact you shortly about your {plan} subscription."
+    "message": "Mensaje (opcional)",
+    "submit": "Solicitar suscripción",
+    "successTitle": "¡Solicitud recibida!",
+    "successMessage": "Nos pondremos en contacto contigo en breve sobre tu suscripción {plan}."
   }
 }

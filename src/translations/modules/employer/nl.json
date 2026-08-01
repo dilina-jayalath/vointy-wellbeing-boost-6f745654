@@ -1,0 +1,331 @@
+{
+  "employerPanel": {
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "activityIndex": "Activiteitenindex",
+      "activities": "Activiteiten",
+      "surveys": "Enquêtes",
+      "challenges": "Uitdagingen",
+      "subscriptions": "Abonnementen",
+      "inviteUsers": "Gebruikers uitnodigen",
+      "invitedList": "Uitnodigingslijst",
+      "activateUsers": "Gebruikers activeren",
+      "teams": "Teams"
+    },
+    "paywall": {
+      "title": "Activeer het werkgeverspaneel",
+      "description": "{orgPrefix}Vointy is gratis voor bedrijven en werknemers. Het werkgeverspaneel met tracking, analyses, campagnes en events kost €149/maand.",
+      "priceSuffix": "per maand · 30 dagen gratis proefperiode",
+      "features": {
+        "unlimitedEmployees": "Onbeperkt aantal werknemers",
+        "unlimitedTeams": "Onbeperkt aantal teams",
+        "allActivities": "Alle activiteiten",
+        "managementDashboard": "Beheerdashboard",
+        "reporting": "Rapportage",
+        "noPerUserFees": "Geen kosten per gebruiker"
+      },
+      "startTrial": "Start 30 dagen gratis proefperiode",
+      "disclaimer": "Geen opstartkosten · op elk moment opzegbaar · kaart vereist om de proefperiode te starten, eerste betaling na 30 dagen."
+    },
+    "layout": {
+      "brandTagline": "Bouw samen aan gezondere gewoontes.",
+      "checkingPlan": "Abonnement controleren…",
+      "trialRemaining": "Resterende proefperiode: {days} d",
+      "paymentFailed": "Betaling mislukt",
+      "panelActive": "Werkgeverspaneel actief",
+      "noActivePlan": "Geen actief abonnement"
+    },
+    "dashboard": {
+      "title": "Werkgeversdashboard",
+      "userActivityStatus": "Activiteitsstatus gebruikers",
+      "totalUsers": "Totaal aantal gebruikers",
+      "employeeEngagement": "Betrokkenheid werknemers",
+      "challengeParticipation": "Deelname aan uitdagingen",
+      "surveyResponseRate": "Responspercentage enquêtes",
+      "currentPlan": "Huidig abonnement",
+      "free": "Gratis",
+      "usage": "Gebruik",
+      "planFeatures": {
+        "unlimitedUsers": "Onbeperkt aantal gebruikers",
+        "advancedAnalytics": "Geavanceerde analyses",
+        "customChallenges": "Aangepaste uitdagingen"
+      },
+      "challengesProgress": "Voortgang uitdagingen",
+      "activitiesInChallenges": "Activiteiten in uitdagingen",
+      "noActivityData": "Nog geen activiteitsgegevens.",
+      "chart": {
+        "registeredActivities": "Geregistreerde activiteiten",
+        "targetActivities": "Doelactiviteiten",
+        "steps": "Stappen",
+        "water": "Water",
+        "sleep": "Slaap",
+        "workout": "Training",
+        "active": "Actief",
+        "inactive": "Inactief"
+      }
+    },
+    "activateUsers": {
+      "title": "Gebruikers activeren",
+      "searchPlaceholder": "Zoek op naam of e-mail",
+      "name": "Naam",
+      "email": "E-mail",
+      "noUsersFound": "Geen gebruikers gevonden",
+      "send": "Verzenden",
+      "toastTitle": "Activeringsherinneringen verzonden",
+      "toastDescription": "{count} gebruiker(s) ontvangen een herinnering."
+    },
+    "activities": {
+      "title": "Activiteiten",
+      "description": "Maak bedrijfsactiviteiten aan en nodig werknemers individueel of via een lijst uit.",
+      "yourActivities": "Jouw activiteiten"
+    },
+    "challenges": {
+      "title": "Uitdagingen",
+      "description": "Start teamuitdagingen om activiteit, slaap, hydratatie en meer te stimuleren.",
+      "sections": {
+        "active": { "title": "Actieve uitdagingen", "body": "Lopende uitdagingen met deelname en voortgang." },
+        "create": { "title": "Uitdaging maken", "body": "Stel titel, activiteitstype, doel, duur en teams in." },
+        "library": { "title": "Uitdagingenbibliotheek", "body": "Kant-en-klare uitdagingen: 10.000 stappen, waterdoel, mindfulnessweek." },
+        "leaderboard": { "title": "Klassement", "body": "Ranglijst van teams en individuen per uitdaging." }
+      }
+    },
+    "inviteUsers": {
+      "title": "Werknemers uitnodigen",
+      "companyLabel": "Bedrijf: {orgName}",
+      "invalidEntryTitle": "Ongeldige invoer",
+      "invalidEntryDescription": "Voer een geldige naam en e-mailadres in.",
+      "csvImportedTitle": "CSV geïmporteerd",
+      "csvImportedDescription": "{count} ontvanger(s) toegevoegd.",
+      "linkCopied": "Uitnodigingslink gekopieerd",
+      "noCompanyTitle": "Geen bedrijf gevonden",
+      "noCompanyDescription": "De werkruimte van je bedrijf wordt nog aangemaakt. Herlaad de pagina en probeer het opnieuw.",
+      "createFailedTitle": "Kon uitnodigingen niet aanmaken",
+      "invitationsSentTitle": "Uitnodigingen verzonden",
+      "invitationsSentDescription": "{count} werknemer(s) hebben een uitnodigingse-mail ontvangen.",
+      "emailSentTitle": "Uitnodigingse-mail verzonden",
+      "emailSendFailedTitle": "Kon e-mail niet verzenden",
+      "addEmails": {
+        "title": "E-mailadressen toevoegen",
+        "name": "Naam",
+        "namePlaceholder": "Voer de volledige naam van de gebruiker in",
+        "email": "E-mailadres",
+        "add": "Toevoegen",
+        "helper": "Voer namen en e-mailadressen één voor één in en klik op \"Toevoegen\" of druk op Enter",
+        "sendOne": "Verstuur {count} uitnodiging",
+        "sendMany": "Verstuur {count} uitnodigingen"
+      },
+      "bulkUpload": {
+        "title": "Bulkupload vanuit CSV",
+        "uploadCsv": "CSV uploaden",
+        "downloadTemplate": "Sjabloon downloaden",
+        "info": "Upload een CSV-bestand met namen en e-mailadressen. Het bestand moet een kopregel bevatten met \"email,givenName\" of één e-mailadres en naam per regel. Download het sjabloon voor het juiste formaat."
+      },
+      "invitations": {
+        "title": "Uitnodigingen",
+        "empty": "Nog geen uitnodigingen.",
+        "resend": "Uitnodigingse-mail opnieuw verzenden",
+        "copyLink": "Uitnodigingslink kopiëren",
+        "cancel": "Uitnodiging annuleren"
+      },
+      "howItWorks": {
+        "title": "Zo werkt het",
+        "bullet1": "Voeg namen en e-mailadressen handmatig toe of upload een CSV-bestand voor bulkimport",
+        "bullet2": "Elke uitnodiging krijgt een persoonlijke deelnamelink die je kunt kopiëren en delen",
+        "bullet3": "Uitgenodigde werknemers maken hun wachtwoord aan en sluiten zich automatisch aan bij je bedrijf",
+        "bullet4": "Geaccepteerde uitnodigingen worden gemarkeerd in de lijst hierboven"
+      }
+    },
+    "invitedList": {
+      "title": "Uitnodigingslijst",
+      "description": "Alle uitgenodigde werknemers, hun uitnodigingsdatum en activeringsstatus.",
+      "cardTitle": "Uitnodigingen ({count}) · Geactiveerd: {activated}",
+      "empty": "Nog geen uitnodigingen.",
+      "columns": {
+        "name": "Naam",
+        "email": "E-mailadres",
+        "invitationDate": "Uitnodigingsdatum",
+        "activated": "Geactiveerd",
+        "activationDate": "Activeringsdatum",
+        "actions": "Acties"
+      },
+      "activated": "Geactiveerd",
+      "notActivated": "Niet geactiveerd",
+      "remove": "Verwijderen",
+      "removeConfirmTitle": "Uitnodiging verwijderen?",
+      "removeConfirmDescription": "Dit verwijdert de uitnodiging voor {email}. De uitnodigingslink werkt dan niet meer.",
+      "cancel": "Annuleren",
+      "removeFailedTitle": "Kon uitnodiging niet verwijderen",
+      "removedToast": "{email} verwijderd"
+    },
+    "subscriptions": {
+      "title": "Abonnement en facturering",
+      "description": "Beheer je abonnement voor het Vointy werkgeverspaneel.",
+      "pastDueWarning": "De laatste betaling is mislukt. Je toegang blijft actief terwijl we het opnieuw proberen — werk je betaalmethode bij in het facturatieportaal.",
+      "currentPlan": "Huidig abonnement: {status}",
+      "planLine": "Werkgeverspaneel — €149/maand",
+      "cancelsAtPeriodEnd": " (wordt beëindigd aan het einde van de periode)",
+      "trialEnds": "Proefperiode eindigt op ",
+      "accessEnds": "Toegang eindigt op ",
+      "renews": "Wordt verlengd op ",
+      "portalButton": "Facturen, betaalmethode en opzegging",
+      "noPlanDescription": "Vointy is gratis voor je werknemers en teams. Het werkgeverspaneel — tracking, analyses, campagnes en events — vereist een abonnement.",
+      "planCardTitle": "Werkgeverspaneel — €149/maand",
+      "onThisPlan": "Je hebt dit abonnement.",
+      "startTrial": "Start 30 dagen gratis proefperiode",
+      "planDisclaimer": "Geen opstartkosten · onbeperkt aantal werknemers · op elk moment opzegbaar.",
+      "statuses": {
+        "noPlan": "Geen abonnement",
+        "trial": "Gratis proefperiode",
+        "active": "Actief",
+        "pastDue": "Betaling mislukt",
+        "canceled": "Geannuleerd"
+      },
+      "checkoutSuccessTitle": "Bedankt!",
+      "checkoutSuccessDescription": "Je werkgeverspaneelabonnement wordt geactiveerd.",
+      "portalFailedTitle": "Kon facturatieportaal niet openen",
+      "features": {
+        "unlimitedEmployees": "Onbeperkt aantal werknemers",
+        "unlimitedTeams": "Onbeperkt aantal teams",
+        "allActivities": "Alle activiteiten",
+        "managementDashboard": "Beheerdashboard",
+        "reporting": "Rapportage",
+        "noPerUserFees": "Geen kosten per gebruiker"
+      }
+    },
+    "surveys": {
+      "title": "Enquête maken",
+      "titlePlaceholder": "Titel",
+      "descriptionPlaceholder": "Beschrijving",
+      "startDate": "Startdatum *",
+      "endDate": "Einddatum *",
+      "save": "Opslaan",
+      "savedToastTitle": "Enquête opgeslagen",
+      "savedToastDescription": "\"{title}\" gepland van {start} tot {end}."
+    },
+    "teams": {
+      "title": "Teambeheer",
+      "createTeam": "Team aanmaken",
+      "createDialogTitle": "Nieuw team aanmaken",
+      "teamName": "Teamnaam",
+      "description": "Beschrijving",
+      "create": "Aanmaken",
+      "createdBy": "Aangemaakt door",
+      "createdByYou": "Jij",
+      "createdToastTitle": "Team aangemaakt",
+      "createdToastDescription": "\"{name}\" is toegevoegd.",
+      "tabs": { "teams": "Teams", "leaderboard": "Klassement" },
+      "columns": {
+        "teamName": "Teamnaam",
+        "description": "Beschrijving",
+        "createdBy": "Aangemaakt door",
+        "members": "Leden",
+        "actions": "Acties"
+      },
+      "noTeams": "Geen teams gevonden. Maak een nieuw team aan om te beginnen.",
+      "leaderboardColumns": { "rank": "#", "team": "Team", "members": "Leden", "score": "Score" },
+      "noLeaderboard": "Nog geen klassementsgegevens."
+    },
+    "wellbeingIndex": {
+      "title": "Activiteitenindex",
+      "description": "Volg hoe actief je organisatie in de loop van de tijd is.",
+      "sections": {
+        "calculation": {
+          "title": "Hoe het wordt berekend",
+          "body": "Elke voltooide activiteit levert een werknemer 1 punt op. Punten worden per maand opgeteld en verzameld gedurende het lidmaatschapsjaar dat begint wanneer de werknemer zich aansluit."
+        },
+        "monthlyPoints": { "title": "Maandelijkse punten", "body": "Totaal aantal activiteitspunten per maand voor alle actieve teams en werknemers." },
+        "yearlyTotal": { "title": "Jaartotaal", "body": "Verzamelde punten per werknemer sinds aansluiting." },
+        "teamBreakdown": { "title": "Teamoverzicht", "body": "Activiteitspunten per team met verdere detaillering." }
+      }
+    },
+    "paymentBanner": {
+      "text": "Alle betalingen in de preview vinden plaats in testmodus.",
+      "readMore": "Meer lezen"
+    }
+  },
+  "adminPanel": {
+    "title": "Beheerderspaneel",
+    "stats": {
+      "companies": "Bedrijven",
+      "companiesHint": "{paid} betalend · {free} gratis",
+      "mrr": "MRR",
+      "mrrHint": "Terugkerende maandelijkse omzet",
+      "registeredEmployees": "Geregistreerde werknemers",
+      "registeredEmployeesHint": "{count} geactiveerde uitnodigingen",
+      "pageViews": "Paginaweergaven (recent)",
+      "pageViewsHint": "Laatste 5.000 bijgehouden weergaven"
+    },
+    "tabs": {
+      "messages": "Berichten ({count})",
+      "customers": "Klanten ({count})",
+      "revenue": "Omzet",
+      "employees": "Werknemers ({count})",
+      "site": "Site-analyse",
+      "activities": "Activiteitengebruik",
+      "newsletter": "Nieuwsbrief ({count})"
+    },
+    "messages": {
+      "contactTitle": "contact@vointy.life",
+      "contactDescription": "Berichten van het contactformulier op de website",
+      "licenseTitle": "Licentieaanvragen",
+      "licenseDescription": "Aanvragen verzonden via het licentieformulier",
+      "otherTitle": "Overige berichten",
+      "otherDescription": "Al het andere",
+      "empty": "Nog geen berichten."
+    },
+    "customers": {
+      "paying": "Betalende klanten",
+      "free": "Gratis bedrijven",
+      "columns": {
+        "company": "Bedrijf",
+        "plan": "Abonnement",
+        "monthly": "Maandelijks",
+        "employees": "Werknemers",
+        "joined": "Aangesloten",
+        "actions": "Acties"
+      },
+      "noCompanies": "Geen bedrijven.",
+      "paid": "Betaald",
+      "free_status": "Gratis",
+      "setFree": "Instellen als gratis",
+      "markPaid": "Markeren als betalend",
+      "updateFailedTitle": "Bijwerken mislukt",
+      "movedToFree": "Verplaatst naar gratis abonnement",
+      "markedPaying": "Gemarkeerd als betalende klant"
+    },
+    "revenue": {
+      "chartTitle": "Abonnementsomzet (laatste 12 maanden)",
+      "chartDescription": "Terugkerende maandelijkse omzet van betalende bedrijven, €{amount}/maand per bedrijf",
+      "mrrLegend": "MRR (€)",
+      "customersChartTitle": "Betalende klanten in de loop van de tijd",
+      "customersLegend": "Klanten"
+    },
+    "employees": {
+      "tableTitle": "Geregistreerde werknemers",
+      "tableDescription": "Alle gebruikers die een account hebben aangemaakt",
+      "columns": {
+        "name": "Naam",
+        "company": "Bedrijf",
+        "language": "Taal",
+        "role": "Rol",
+        "registered": "Geregistreerd"
+      },
+      "defaultRole": "gebruiker"
+    },
+    "site": {
+      "visitsTitle": "Bezoeken (laatste 30 dagen)",
+      "pageViewsLegend": "Paginaweergaven",
+      "visitorsLegend": "Bezoekers",
+      "topPagesTitle": "Meest bezochte pagina's",
+      "columns": { "path": "Pad", "views": "Weergaven" },
+      "noVisits": "Nog geen bijgehouden bezoeken."
+    },
+    "activities": {
+      "monthlyChartTitle": "Uitgevoerde activiteiten per maand",
+      "activitiesLegend": "Activiteiten",
+      "topActivitiesTitle": "Meest gebruikte activiteiten",
+      "columns": { "activity": "Activiteit", "timesPerformed": "Aantal keer uitgevoerd" },
+      "noActivities": "Nog geen activiteiten uitgevoerd."
+    }
+  }
+}

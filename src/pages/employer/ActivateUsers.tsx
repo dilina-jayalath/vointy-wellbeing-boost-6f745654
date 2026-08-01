@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "@/lib/i18n";
 
 interface Row { id: string; name: string; email: string; }
 
@@ -13,6 +14,7 @@ const ActivateUsers = () => {
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const users: Row[] = [];
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const filtered = useMemo(
     () =>
@@ -39,20 +41,23 @@ const ActivateUsers = () => {
 
   const send = () => {
     toast({
-      title: "Activation reminders sent",
-      description: `${selected.size} user(s) will receive a reminder.`,
+      title: t("employerPanel.activateUsers.toastTitle"),
+      description: (t("employerPanel.activateUsers.toastDescription") as string).replace(
+        "{count}",
+        String(selected.size)
+      ),
     });
     setSelected(new Set());
   };
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-bold text-brand-purple">Activate Users</h1>
+      <h1 className="text-3xl font-bold text-brand-purple">{t("employerPanel.activateUsers.title")}</h1>
 
       <Card>
         <CardContent className="p-6 space-y-4">
           <Input
-            placeholder="Search by Name or Email"
+            placeholder={t("employerPanel.activateUsers.searchPlaceholder") as string}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
@@ -62,11 +67,11 @@ const ActivateUsers = () => {
               <div className="col-span-1">
                 <Checkbox checked={allSelected} onCheckedChange={toggleAll} />
               </div>
-              <div className="col-span-5">Name</div>
-              <div className="col-span-6">Email</div>
+              <div className="col-span-5">{t("employerPanel.activateUsers.name")}</div>
+              <div className="col-span-6">{t("employerPanel.activateUsers.email")}</div>
             </div>
             {filtered.length === 0 ? (
-              <div className="py-8 text-center text-muted-foreground">No users found</div>
+              <div className="py-8 text-center text-muted-foreground">{t("employerPanel.activateUsers.noUsersFound")}</div>
             ) : (
               filtered.map((u) => (
                 <div key={u.id} className="grid grid-cols-12 px-4 py-3 border-b items-center text-sm">
@@ -86,7 +91,7 @@ const ActivateUsers = () => {
               disabled={selected.size === 0}
               className="bg-brand-purple hover:bg-brand-purple-dark uppercase"
             >
-              <Send className="h-4 w-4 mr-1" /> Send
+              <Send className="h-4 w-4 mr-1" /> {t("employerPanel.activateUsers.send")}
             </Button>
           </div>
         </CardContent>

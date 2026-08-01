@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Save } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/lib/i18n";
 
 const LANGS = ["EN", "FI", "SV", "DE", "FR", "IT", "ES"] as const;
 type Lang = (typeof LANGS)[number];
@@ -43,6 +44,7 @@ const LangTabs = ({
 
 const Surveys = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [titleLang, setTitleLang] = useState<Lang>("EN");
   const [descLang, setDescLang] = useState<Lang>("EN");
   const [titles, setTitles] = useState<LangMap>(emptyLangMap());
@@ -55,8 +57,11 @@ const Surveys = () => {
 
   const handleSave = () => {
     toast({
-      title: "Survey saved",
-      description: `"${titles.EN}" scheduled ${startDate} → ${endDate}.`,
+      title: t("employerPanel.surveys.savedToastTitle") as string,
+      description: (t("employerPanel.surveys.savedToastDescription") as string)
+        .replace("{title}", titles.EN)
+        .replace("{start}", startDate)
+        .replace("{end}", endDate),
     });
     setTitles(emptyLangMap());
     setDescriptions(emptyLangMap());
@@ -66,14 +71,14 @@ const Surveys = () => {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-bold text-brand-purple">Create a survey</h1>
+      <h1 className="text-3xl font-bold text-brand-purple">{t("employerPanel.surveys.title")}</h1>
 
       <Card>
         <CardContent className="p-6 space-y-8">
           <div className="space-y-3">
             <LangTabs active={titleLang} onChange={setTitleLang} />
             <Input
-              placeholder="Title"
+              placeholder={t("employerPanel.surveys.titlePlaceholder") as string}
               value={titles[titleLang]}
               onChange={(e) =>
                 setTitles({ ...titles, [titleLang]: e.target.value })
@@ -84,7 +89,7 @@ const Surveys = () => {
           <div className="space-y-3">
             <LangTabs active={descLang} onChange={setDescLang} />
             <Textarea
-              placeholder="Description"
+              placeholder={t("employerPanel.surveys.descriptionPlaceholder") as string}
               rows={4}
               value={descriptions[descLang]}
               onChange={(e) =>
@@ -96,7 +101,7 @@ const Surveys = () => {
           <div className="grid gap-4 max-w-sm">
             <div className="space-y-1">
               <Label htmlFor="start-date" className="text-xs text-muted-foreground">
-                Start Date *
+                {t("employerPanel.surveys.startDate")}
               </Label>
               <Input
                 id="start-date"
@@ -107,7 +112,7 @@ const Surveys = () => {
             </div>
             <div className="space-y-1">
               <Label htmlFor="end-date" className="text-xs text-muted-foreground">
-                End Date *
+                {t("employerPanel.surveys.endDate")}
               </Label>
               <Input
                 id="end-date"
@@ -124,7 +129,7 @@ const Surveys = () => {
               disabled={!canSave}
               className="bg-brand-purple hover:bg-brand-purple-dark uppercase"
             >
-              <Save className="h-4 w-4 mr-2" /> Save
+              <Save className="h-4 w-4 mr-2" /> {t("employerPanel.surveys.save")}
             </Button>
           </div>
         </CardContent>

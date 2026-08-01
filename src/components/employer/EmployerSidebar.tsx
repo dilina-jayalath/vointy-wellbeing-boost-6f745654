@@ -20,24 +20,26 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-
-const items = [
-  { title: "Dashboard", url: "/employer", icon: LayoutDashboard, end: true },
-  { title: "Activity Index", url: "/employer/wellbeing", icon: Building2 },
-  { title: "Activities", url: "/employer/activities", icon: Dumbbell },
-  { title: "Surveys", url: "/employer/surveys", icon: ClipboardList },
-  { title: "Challenges", url: "/employer/challenges", icon: Trophy },
-  { title: "Subscriptions", url: "/employer/subscriptions", icon: CreditCard },
-  { title: "Invite Users", url: "/employer/invite", icon: UserPlus },
-  { title: "Invited List", url: "/employer/invited", icon: MailCheck },
-  { title: "Activate Users", url: "/employer/activate", icon: UserCheck },
-  { title: "Teams", url: "/employer/teams", icon: Users },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export function EmployerSidebar() {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
   const isActive = (url: string, end?: boolean) =>
     end ? pathname === url : pathname === url || pathname.startsWith(url + "/");
+
+  const items = [
+    { title: t("employerPanel.sidebar.dashboard"), url: "/employer", icon: LayoutDashboard, end: true },
+    { title: t("employerPanel.sidebar.activityIndex"), url: "/employer/wellbeing", icon: Building2 },
+    { title: t("employerPanel.sidebar.activities"), url: "/employer/activities", icon: Dumbbell },
+    { title: t("employerPanel.sidebar.surveys"), url: "/employer/surveys", icon: ClipboardList },
+    { title: t("employerPanel.sidebar.challenges"), url: "/employer/challenges", icon: Trophy },
+    { title: t("employerPanel.sidebar.subscriptions"), url: "/employer/subscriptions", icon: CreditCard },
+    { title: t("employerPanel.sidebar.inviteUsers"), url: "/employer/invite", icon: UserPlus },
+    { title: t("employerPanel.sidebar.invitedList"), url: "/employer/invited", icon: MailCheck },
+    { title: t("employerPanel.sidebar.activateUsers"), url: "/employer/activate", icon: UserCheck },
+    { title: t("employerPanel.sidebar.teams"), url: "/employer/teams", icon: Users },
+  ];
 
   return (
     <Sidebar collapsible="icon">

@@ -22,8 +22,8 @@ const Header = () => {
     { label: t('nav.benefits'), href: '#benefits' },
     { label: t('nav.testimonials'), href: '#testimonials' },
     { label: t('nav.pricing'), href: '/subscription', isLink: true },
-    ...(user ? [{ label: 'My Vointy', href: '/app', isLink: true }] : []),
-    { label: 'Employer panel', href: '/employer', isLink: true },
+    ...(user ? [{ label: t('navExtra.myVointy'), href: '/app', isLink: true }] : []),
+    { label: t('navExtra.employerPanel'), href: '/employer', isLink: true },
   ];
 
   return (
@@ -36,7 +36,7 @@ const Header = () => {
               <img src={vointyMark.url} alt="Vointy logo" className="h-9 w-auto" />
               <div className="flex flex-col leading-none">
                 <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.life</span></span>
-                <span className="text-[11px] text-gray-500 font-medium tracking-wide">Build healthier habits, together.</span>
+                <span className="text-[11px] text-gray-500 font-medium tracking-wide">{t('hero.slogan', { defaultValue: 'Build healthier habits, together.' })}</span>
               </div>
             </Link>
           </div>

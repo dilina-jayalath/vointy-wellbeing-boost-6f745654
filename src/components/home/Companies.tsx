@@ -21,15 +21,14 @@ const Companies = () => {
               <span className="uppercase tracking-widest">{t('companies.title')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              Free for companies. <span className="text-brand-blue">Pay only</span> for the employer dashboard.
+              {t('homeExtra.compTitlePart1')} <span className="text-brand-blue">{t('homeExtra.compTitleHighlight')}</span> {t('homeExtra.compTitlePart2')}
             </h2>
             <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-              Join Vointy for free and share credentials with your employees across unlimited teams — no per-user fees.
-              Upgrade to the employer dashboard when you want tracking, analytics, campaigns and events.
+              {t('homeExtra.compText')}
             </p>
             
             <div className="space-y-4 mb-10">
-              {['Unlimited employees', 'Unlimited teams', 'All activities', 'Employer dashboard', 'Reporting & analytics', 'No per-user fees'].map((feat) => (
+              {(t('homeExtra.compFeatures') as unknown as string[]).map((feat) => (
                 <div key={feat} className="flex items-center gap-3">
                   <CheckCircle2 className="text-brand-purple" size={20} />
                   <span className="text-gray-200 font-medium">{feat}</span>
@@ -39,7 +38,7 @@ const Companies = () => {
             
             <Link to="/subscription">
               <Button className="bg-brand-blue hover:bg-brand-blue/90 text-white px-10 py-6 h-auto text-lg rounded-full">
-                See pricing
+                {t('homeExtra.compCta')}
               </Button>
             </Link>
           </div>
@@ -49,26 +48,26 @@ const Companies = () => {
             <div className="bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10">
               <img 
                 src={leadershipImage} 
-                alt="Company leadership discussing employee wellbeing" 
+                alt={t('homeExtra.altCompanies')} 
                 className="w-full h-auto rounded-2xl object-cover mb-6"
               />
               <div className="text-center">
-                <div className="text-brand-blue text-sm font-bold uppercase tracking-tighter mb-2">Employer Dashboard</div>
+                <div className="text-brand-blue text-sm font-bold uppercase tracking-tighter mb-2">{t('homeExtra.dashboardLabel')}</div>
                 <div className="flex items-baseline justify-center gap-1 mb-2">
                   <span className="text-6xl md:text-7xl font-black">€149</span>
-                  <span className="text-xl text-gray-400 font-medium">/month</span>
+                  <span className="text-xl text-gray-400 font-medium">{t('homeExtra.perMonth')}</span>
                 </div>
-                <div className="text-sm text-gray-400">per company · unlimited users</div>
+                <div className="text-sm text-gray-400">{t('homeExtra.perCompany')}</div>
               </div>
               <div className="h-px w-full bg-white/10 my-6" />
               <div className="grid grid-cols-2 gap-8">
                 <div className="text-left">
-                  <div className="text-brand-purple font-bold text-2xl mb-1">30 days</div>
-                  <div className="text-sm text-gray-400 uppercase">Free trial</div>
+                  <div className="text-brand-purple font-bold text-2xl mb-1">{t('homeExtra.trialValue')}</div>
+                  <div className="text-sm text-gray-400 uppercase">{t('homeExtra.trialLabel')}</div>
                 </div>
                 <div className="text-left">
                   <div className="text-brand-purple font-bold text-2xl mb-1">€0</div>
-                  <div className="text-sm text-gray-400 uppercase">Setup fee</div>
+                  <div className="text-sm text-gray-400 uppercase">{t('homeExtra.setupLabel')}</div>
                 </div>
               </div>
             </div>

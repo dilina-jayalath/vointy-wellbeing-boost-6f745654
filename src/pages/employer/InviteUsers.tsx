@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
+import { useTranslation } from "@/lib/i18n";
 
 interface Recipient { id: string; name: string; email: string; }
 
@@ -33,6 +34,7 @@ const InviteUsers = () => {
   const { toast } = useToast();
   const { user } = useAuth();
   const { orgId, orgName, loading: orgLoading } = useEmployerOrg();
+  const { t } = useTranslation();
 
   const loadInvitations = useCallback(async () => {
     if (!orgId) return;
@@ -50,7 +52,11 @@ const InviteUsers = () => {
 
   const add = () => {
     if (!name.trim() || !emailRe.test(email)) {
-      toast({ title: "Invalid entry", description: "Please enter a valid name and email.", variant: "destructive" });
+      toast({
+        title: t("employerPanel.inviteUsers.invalidEntryTitle") as string,
+        description: t("employerPanel.inviteUsers.invalidEntryDescription") as string,
+        variant: "destructive",
+      });
       return;
     }
     setList((l) => [...l, { id: crypto.randomUUID(), name: name.trim(), email: email.trim() }]);
@@ -83,14 +89,20 @@ const InviteUsers = () => {
       if (em) parsed.push({ id: crypto.randomUUID(), name: nm, email: em });
     }
     setList((l) => [...l, ...parsed]);
-    toast({ title: "CSV imported", description: `${parsed.length} recipient(s) added.` });
+    toast({
+      title: t("employerPanel.inviteUsers.csvImportedTitle") as string,
+      description: (t("employerPanel.inviteUsers.csvImportedDescription") as string).replace(
+        "{count}",
+        String(parsed.length)
+      ),
+    });
   };
 
   const inviteLink = (token: string) => `${window.location.origin}/join?token=${token}`;
 
   const copyLink = async (token: string) => {
     await navigator.clipboard.writeText(inviteLink(token));
-    toast({ title: "Invitation link copied" });
+    toast({ title: t("employerPanel.inviteUsers.linkCopied") as string });
   };
 
   const cancelInvite = async (id: string) => {
@@ -128,9 +140,9 @@ const InviteUsers = () => {
           },
         },
       });
-      toast({ title: "Invitation email sent", description: inv.email });
+      toast({ title: t("employerPanel.inviteUsers.emailSentTitle") as string, description: inv.email });
     } catch (e) {
-      toast({ title: "Could not send email", variant: "destructive" });
+      toast({ title: t("employerPanel.inviteUsers.emailSendFailedTitle") as string, variant: "destructive" });
     } finally {
       setResending(null);
     }
@@ -140,8 +152,8 @@ const InviteUsers = () => {
     if (!user) return;
     if (!orgId) {
       toast({
-        title: "No company found",
-        description: "Your company workspace is still being created. Please reload the page and try again.",
+        title: t("employerPanel.inviteUsers.noCompanyTitle") as string,
+        description: t("employerPanel.inviteUsers.noCompanyDescription") as string,
         variant: "destructive",
       });
       return;
@@ -161,7 +173,11 @@ const InviteUsers = () => {
       .select("id, name, email, token, status, created_at");
     if (error) {
       setSending(false);
-      toast({ title: "Could not create invitations", description: error.message, variant: "destructive" });
+      toast({
+        title: t("employerPanel.inviteUsers.createFailedTitle") as string,
+        description: error.message,
+        variant: "destructive",
+      });
       return;
     }
     const created = (data as Invitation[]) ?? [];
@@ -170,8 +186,11 @@ const InviteUsers = () => {
     }
     setSending(false);
     toast({
-      title: "Invitations sent",
-      description: `${created.length} employee(s) received an invitation email.`,
+      title: t("employerPanel.inviteUsers.invitationsSentTitle") as string,
+      description: (t("employerPanel.inviteUsers.invitationsSentDescription") as string).replace(
+        "{count}",
+        String(created.length)
+      ),
     });
     setList([]);
     loadInvitations();
@@ -180,27 +199,31 @@ const InviteUsers = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold text-brand-purple">Invite employees</h1>
-        {orgName && <p className="text-muted-foreground mt-1">Company: {orgName}</p>}
+        <h1 className="text-3xl font-bold text-brand-purple">{t("employerPanel.inviteUsers.title")}</h1>
+        {orgName && (
+          <p className="text-muted-foreground mt-1">
+            {(t("employerPanel.inviteUsers.companyLabel") as string).replace("{orgName}", orgName)}
+          </p>
+        )}
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">Add Email Addresses</CardTitle>
+          <CardTitle className="text-lg">{t("employerPanel.inviteUsers.addEmails.title")}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid gap-4 md:grid-cols-[1fr_1fr_auto] items-end">
             <div className="space-y-1">
-              <Label htmlFor="inv-name">Name</Label>
+              <Label htmlFor="inv-name">{t("employerPanel.inviteUsers.addEmails.name")}</Label>
               <div className="relative">
                 <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-brand-blue" />
                 <Input id="inv-name" value={name} onChange={(e) => setName(e.target.value)} className="pl-9"
                   onKeyDown={(e) => e.key === "Enter" && add()} />
               </div>
-              <p className="text-xs text-muted-foreground">Enter the full name of the user</p>
+              <p className="text-xs text-muted-foreground">{t("employerPanel.inviteUsers.addEmails.namePlaceholder")}</p>
             </div>
             <div className="space-y-1">
-              <Label htmlFor="inv-email">Email Address</Label>
+              <Label htmlFor="inv-email">{t("employerPanel.inviteUsers.addEmails.email")}</Label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-brand-blue" />
                 <Input id="inv-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="pl-9"
@@ -208,11 +231,11 @@ const InviteUsers = () => {
               </div>
             </div>
             <Button onClick={add} className="bg-brand-blue hover:bg-brand-blue/90 uppercase h-10">
-              <Plus className="h-4 w-4 mr-1" /> Add
+              <Plus className="h-4 w-4 mr-1" /> {t("employerPanel.inviteUsers.addEmails.add")}
             </Button>
           </div>
           <p className="text-sm text-muted-foreground border-b pb-4">
-            Enter names and email addresses one by one and click "Add" or press Enter
+            {t("employerPanel.inviteUsers.addEmails.helper")}
           </p>
 
           {list.length > 0 && (
@@ -236,7 +259,12 @@ const InviteUsers = () => {
               <Button onClick={sendAll} disabled={sending || orgLoading}
                 className="bg-brand-purple hover:bg-brand-purple-dark uppercase">
                 {sending ? <Loader2 className="h-4 w-4 animate-spin" /> : (
-                  <><Send className="h-4 w-4 mr-1" /> Send {list.length} invitation{list.length > 1 ? "s" : ""}</>
+                  <>
+                    <Send className="h-4 w-4 mr-1" />{" "}
+                    {list.length > 1
+                      ? (t("employerPanel.inviteUsers.addEmails.sendMany") as string).replace("{count}", String(list.length))
+                      : (t("employerPanel.inviteUsers.addEmails.sendOne") as string).replace("{count}", String(list.length))}
+                  </>
                 )}
               </Button>
             </div>
@@ -246,7 +274,7 @@ const InviteUsers = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">Bulk Upload from CSV</CardTitle>
+          <CardTitle className="text-lg">{t("employerPanel.inviteUsers.bulkUpload.title")}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="flex flex-wrap gap-3">
@@ -258,31 +286,28 @@ const InviteUsers = () => {
               onChange={(e) => e.target.files?.[0] && onUpload(e.target.files[0])}
             />
             <Button variant="outline" className="border-brand-blue text-brand-blue uppercase" onClick={() => fileRef.current?.click()}>
-              <Upload className="h-4 w-4 mr-1" /> Upload CSV
+              <Upload className="h-4 w-4 mr-1" /> {t("employerPanel.inviteUsers.bulkUpload.uploadCsv")}
             </Button>
             <Button variant="ghost" className="text-brand-purple uppercase" onClick={downloadTemplate}>
-              <Download className="h-4 w-4 mr-1" /> Download Template
+              <Download className="h-4 w-4 mr-1" /> {t("employerPanel.inviteUsers.bulkUpload.downloadTemplate")}
             </Button>
           </div>
           <div className="flex gap-2 text-sm text-muted-foreground">
             <Info className="h-4 w-4 shrink-0 mt-0.5" />
-            <p>
-              Upload a CSV file with names and email addresses. The file should have a header row with "email,givenName"
-              or contain one email and name per line. Download the template for the correct format.
-            </p>
+            <p>{t("employerPanel.inviteUsers.bulkUpload.info")}</p>
           </div>
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">Invitations</CardTitle>
+          <CardTitle className="text-lg">{t("employerPanel.inviteUsers.invitations.title")}</CardTitle>
         </CardHeader>
         <CardContent>
           {orgLoading ? (
             <div className="flex justify-center py-6"><Loader2 className="h-5 w-5 animate-spin text-brand-purple" /></div>
           ) : invitations.length === 0 ? (
-            <p className="text-sm text-muted-foreground">No invitations yet.</p>
+            <p className="text-sm text-muted-foreground">{t("employerPanel.inviteUsers.invitations.empty")}</p>
           ) : (
             <div className="border rounded-md divide-y">
               {invitations.map((inv) => (
@@ -298,13 +323,13 @@ const InviteUsers = () => {
                     {inv.status === "pending" && (
                       <>
                         <Button size="icon" variant="ghost" disabled={resending === inv.id}
-                          onClick={() => resendInvite(inv)} title="Resend invitation email">
+                          onClick={() => resendInvite(inv)} title={t("employerPanel.inviteUsers.invitations.resend") as string}>
                           {resending === inv.id ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
                         </Button>
-                        <Button size="icon" variant="ghost" onClick={() => copyLink(inv.token)} title="Copy invitation link">
+                        <Button size="icon" variant="ghost" onClick={() => copyLink(inv.token)} title={t("employerPanel.inviteUsers.invitations.copyLink") as string}>
                           <Copy className="h-4 w-4" />
                         </Button>
-                        <Button size="icon" variant="ghost" onClick={() => cancelInvite(inv.id)} title="Cancel invitation">
+                        <Button size="icon" variant="ghost" onClick={() => cancelInvite(inv.id)} title={t("employerPanel.inviteUsers.invitations.cancel") as string}>
                           <Trash2 className="h-4 w-4" />
                         </Button>
                       </>
@@ -319,14 +344,14 @@ const InviteUsers = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">How it works</CardTitle>
+          <CardTitle className="text-lg">{t("employerPanel.inviteUsers.howItWorks.title")}</CardTitle>
         </CardHeader>
         <CardContent>
           <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-            <li>Add names and email addresses manually or upload a CSV file for bulk import</li>
-            <li>Each invitation gets a personal join link you can copy and share</li>
-            <li>Invited employees create their password and join your company automatically</li>
-            <li>Accepted invitations are marked in the list above</li>
+            <li>{t("employerPanel.inviteUsers.howItWorks.bullet1")}</li>
+            <li>{t("employerPanel.inviteUsers.howItWorks.bullet2")}</li>
+            <li>{t("employerPanel.inviteUsers.howItWorks.bullet3")}</li>
+            <li>{t("employerPanel.inviteUsers.howItWorks.bullet4")}</li>
           </ul>
         </CardContent>
       </Card>

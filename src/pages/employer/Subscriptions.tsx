@@ -7,9 +7,10 @@ import { usePaddleCheckout } from "@/hooks/usePaddleCheckout";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 import { EMPLOYER_PRICE_ID, getPaddleEnvironment } from "@/lib/paddle";
-import { PLAN_FEATURES } from "@/components/employer/EmployerPaywall";
+import { PLAN_FEATURES_KEYS } from "@/components/employer/EmployerPaywall";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
+import { useTranslation } from "@/lib/i18n";
 
 const formatDate = (d: Date | null) =>
   d ? d.toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" }) : "—";
@@ -21,16 +22,18 @@ const Subscriptions = () => {
     useSubscription();
   const { openCheckout, loading: checkoutLoading } = usePaddleCheckout();
   const [portalLoading, setPortalLoading] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (new URLSearchParams(window.location.search).get("checkout") === "success") {
       toast({
-        title: "Thanks!",
-        description: "Your Employer panel plan is being activated.",
+        title: t("employerPanel.subscriptions.checkoutSuccessTitle") as string,
+        description: t("employerPanel.subscriptions.checkoutSuccessDescription") as string,
       });
-      const t = setTimeout(refresh, 2500);
-      return () => clearTimeout(t);
+      const t2 = setTimeout(refresh, 2500);
+      return () => clearTimeout(t2);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refresh]);
 
   const startCheckout = () => {
@@ -55,7 +58,7 @@ const Subscriptions = () => {
       window.open(url, "_blank");
     } catch (e) {
       toast({
-        title: "Could not open billing portal",
+        title: t("employerPanel.subscriptions.portalFailedTitle") as string,
         description: (e as Error).message,
         variant: "destructive",
       });
@@ -65,32 +68,29 @@ const Subscriptions = () => {
   };
 
   const statusLabel = !subscription
-    ? "No plan"
+    ? (t("employerPanel.subscriptions.statuses.noPlan") as string)
     : isTrialing
-      ? "Free trial"
+      ? (t("employerPanel.subscriptions.statuses.trial") as string)
       : subscription.status === "active"
-        ? "Active"
+        ? (t("employerPanel.subscriptions.statuses.active") as string)
         : subscription.status === "past_due"
-          ? "Payment failed"
+          ? (t("employerPanel.subscriptions.statuses.pastDue") as string)
           : subscription.status === "canceled"
-            ? "Cancelled"
+            ? (t("employerPanel.subscriptions.statuses.canceled") as string)
             : subscription.status;
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold text-brand-purple">Subscription &amp; billing</h1>
-        <p className="text-muted-foreground mt-1">Manage your Vointy Employer panel plan.</p>
+        <h1 className="text-3xl font-bold text-brand-purple">{t("employerPanel.subscriptions.title")}</h1>
+        <p className="text-muted-foreground mt-1">{t("employerPanel.subscriptions.description")}</p>
       </div>
 
       {isPastDue && (
         <Card className="border-orange-400 bg-orange-50">
           <CardContent className="flex items-start gap-3 pt-6 text-sm text-orange-900">
             <AlertTriangle className="h-5 w-5 shrink-0" />
-            <p>
-              The last payment failed. Your access continues while we retry — please update your
-              payment method in the billing portal.
-            </p>
+            <p>{t("employerPanel.subscriptions.pastDueWarning")}</p>
           </CardContent>
         </Card>
       )}
@@ -98,21 +98,26 @@ const Subscriptions = () => {
       <div className="grid gap-4 md:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>Current plan: {loading ? "…" : statusLabel}</CardTitle>
+            <CardTitle>
+              {(t("employerPanel.subscriptions.currentPlan") as string).replace(
+                "{status}",
+                loading ? "…" : statusLabel
+              )}
+            </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-sm">
             {subscription ? (
               <>
                 <p>
-                  Employer panel — €149/month
-                  {subscription.cancel_at_period_end && " (cancels at period end)"}
+                  {t("employerPanel.subscriptions.planLine")}
+                  {subscription.cancel_at_period_end && t("employerPanel.subscriptions.cancelsAtPeriodEnd")}
                 </p>
                 <p className="text-muted-foreground">
                   {isTrialing
-                    ? "Trial ends "
+                    ? t("employerPanel.subscriptions.trialEnds")
                     : subscription.status === "canceled"
-                      ? "Access ends "
-                      : "Renews "}
+                      ? t("employerPanel.subscriptions.accessEnds")
+                      : t("employerPanel.subscriptions.renews")}
                   {formatDate(endsAt)}
                 </p>
                 <Button
@@ -126,32 +131,29 @@ const Subscriptions = () => {
                   ) : (
                     <ExternalLink className="h-4 w-4 mr-2" />
                   )}
-                  Invoices, payment method &amp; cancellation
+                  {t("employerPanel.subscriptions.portalButton")}
                 </Button>
               </>
             ) : (
-              <p>
-                Vointy is free for your employees and teams. The Employer panel — tracking,
-                analytics, campaigns and events — requires a subscription.
-              </p>
+              <p>{t("employerPanel.subscriptions.noPlanDescription")}</p>
             )}
           </CardContent>
         </Card>
 
         <Card className="border-brand-purple">
           <CardHeader>
-            <CardTitle>Employer panel — €149/month</CardTitle>
+            <CardTitle>{t("employerPanel.subscriptions.planCardTitle")}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-sm">
             <ul className="space-y-1">
-              {PLAN_FEATURES.map((f) => (
+              {PLAN_FEATURES_KEYS.map((f) => (
                 <li key={f} className="flex gap-2 items-center">
-                  <CheckCircle2 className="h-4 w-4 text-brand-purple" /> {f}
+                  <CheckCircle2 className="h-4 w-4 text-brand-purple" /> {t(`employerPanel.subscriptions.features.${f}`)}
                 </li>
               ))}
             </ul>
             {isActive ? (
-              <p className="text-muted-foreground">You are on this plan.</p>
+              <p className="text-muted-foreground">{t("employerPanel.subscriptions.onThisPlan")}</p>
             ) : (
               <Button
                 className="w-full bg-brand-purple hover:bg-brand-purple-dark"
@@ -159,11 +161,11 @@ const Subscriptions = () => {
                 disabled={checkoutLoading}
               >
                 {checkoutLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
-                Start free 30-day trial
+                {t("employerPanel.subscriptions.startTrial")}
               </Button>
             )}
             <p className="text-xs text-muted-foreground">
-              No setup fee · unlimited employees · cancel anytime.
+              {t("employerPanel.subscriptions.planDisclaimer")}
             </p>
           </CardContent>
         </Card>

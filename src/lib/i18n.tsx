@@ -10,6 +10,12 @@ import sv from '../translations/sv.json';
 import nl from '../translations/nl.json';
 import da from '../translations/da.json';
 
+// Page/area translation modules (deep-merged onto the base bundles above)
+const moduleBundles = import.meta.glob('../translations/modules/*/*.json', { eager: true }) as Record<
+  string,
+  { default: any }
+>;
+
 export type Language = 'en' | 'de' | 'fr' | 'es' | 'it' | 'fi' | 'sv' | 'nl' | 'da';
 
 export interface LanguageOption {
@@ -30,15 +36,51 @@ export const languages: LanguageOption[] = [
   { code: 'da', label: 'Dansk', flag: '🇩🇰' },
 ];
 
+const deepMerge = (target: any, source: any): any => {
+  if (!source || typeof source !== 'object' || Array.isArray(source)) return source ?? target;
+  const out = { ...(target && typeof target === 'object' && !Array.isArray(target) ? target : {}) };
+  for (const [k, v] of Object.entries(source)) {
+    out[k] = v && typeof v === 'object' && !Array.isArray(v) ? deepMerge(out[k], v) : v;
+  }
+  return out;
+};
+
 const translations: Record<Language, any> = {
   en, de, fr, es, it, fi, sv, nl, da
 };
 
+for (const [path, mod] of Object.entries(moduleBundles)) {
+  const lang = path.split('/').pop()!.replace('.json', '') as Language;
+  if (translations[lang]) {
+    translations[lang] = deepMerge(translations[lang], (mod as any).default);
+  }
+}
+
+
+type TVars = Record<string, string | number>;
+
 interface I18nContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (key: string, fallback?: string) => any;
+  t: (key: string, fallbackOrVars?: string | TVars) => any;
 }
+
+const interpolate = (value: any, vars?: TVars): any => {
+  if (typeof value !== 'string' || !vars) return value;
+  return value.replace(/\{\{?\s*(\w+)\s*\}?\}/g, (m, name) =>
+    name in vars ? String(vars[name]) : m
+  );
+};
+
+const lookup = (lang: Language, key: string): any => {
+  const keys = key.split('.');
+  let value: any = translations[lang];
+  for (const k of keys) {
+    if (value && typeof value === 'object' && k in value) value = value[k];
+    else return undefined;
+  }
+  return value;
+};
 
 // Reuse the same context instance across hot reloads so already-mounted
 // consumers keep matching the provider.
@@ -69,25 +111,19 @@ export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children
     document.documentElement.lang = language;
   }, [language]);
 
-  const t = useCallback((key: string, fallback?: string): any => {
-    const keys = key.split('.');
-    let value: any = translations[language];
+  const t = useCallback((key: string, fallbackOrVars?: string | TVars): any => {
+    const vars = typeof fallbackOrVars === 'object' ? fallbackOrVars : undefined;
+    const fallback = typeof fallbackOrVars === 'string' ? fallbackOrVars : undefined;
 
-    for (const k of keys) {
-      if (value && typeof value === 'object' && k in value) {
-        value = value[k];
-      } else {
-        value = undefined;
-        break;
-      }
-    }
+    let value = lookup(language, key);
+    if (value === undefined && language !== 'en') value = lookup('en', key);
 
     if (value === undefined) {
-      if (fallback !== undefined) return fallback;
-      return keys[keys.length - 1];
+      if (fallback !== undefined) return interpolate(fallback, vars);
+      return key.split('.').pop();
     }
 
-    return value;
+    return interpolate(value, vars);
   }, [language]);
 
   return (
@@ -97,15 +133,16 @@ export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children
   );
 };
 
-const fallbackT = (key: string, fallback?: string): any => {
-  const keys = key.split('.');
-  let value: any = translations.en;
-  for (const k of keys) {
-    if (value && typeof value === 'object' && k in value) value = value[k];
-    else return fallback !== undefined ? fallback : keys[keys.length - 1];
+const fallbackT = (key: string, fallbackOrVars?: string | TVars): any => {
+  const vars = typeof fallbackOrVars === 'object' ? fallbackOrVars : undefined;
+  const fallback = typeof fallbackOrVars === 'string' ? fallbackOrVars : undefined;
+  const value = lookup('en', key);
+  if (value === undefined) {
+    return fallback !== undefined ? interpolate(fallback, vars) : key.split('.').pop();
   }
-  return value;
+  return interpolate(value, vars);
 };
+
 
 export const useTranslation = () => {
   const context = useContext(I18nContext);

@@ -92,9 +92,9 @@ const ContactForm = () => {
                     <CheckCircle2 size={48} />
                   </div>
                   <h2 className="text-3xl font-bold text-brand-dark">{t('license.success')}</h2>
-                  <p className="text-gray-600 text-lg">We have received your message and will get back to you shortly.</p>
+                  <p className="text-gray-600 text-lg">{t('contactFormPage.successMessage')}</p>
                   <Button onClick={() => setIsSuccess(false)} variant="outline" className="mt-4">
-                    Send another message
+                    {t('contactFormPage.sendAnother')}
                   </Button>
                 </CardContent>
               </Card>
@@ -118,7 +118,7 @@ const ContactForm = () => {
                           name="firstName" 
                           value={formData.firstName} 
                           onChange={handleChange} 
-                          placeholder="John"
+                          placeholder={t('contactFormPage.placeholderFirstName')}
                           required 
                           className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
                         />
@@ -132,7 +132,7 @@ const ContactForm = () => {
                           name="lastName" 
                           value={formData.lastName} 
                           onChange={handleChange} 
-                          placeholder="Doe"
+                          placeholder={t('contactFormPage.placeholderLastName')}
                           required 
                           className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
                         />
@@ -150,7 +150,7 @@ const ContactForm = () => {
                           type="email" 
                           value={formData.email} 
                           onChange={handleChange} 
-                          placeholder="john@example.com"
+                          placeholder={t('contactFormPage.placeholderEmail')}
                           required 
                           className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
                         />
@@ -164,7 +164,7 @@ const ContactForm = () => {
                           name="companyName" 
                           value={formData.companyName} 
                           onChange={handleChange} 
-                          placeholder="Your Company"
+                          placeholder={t('contactFormPage.placeholderCompany')}
                           required 
                           className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
                         />
@@ -180,7 +180,7 @@ const ContactForm = () => {
                         name="subject" 
                         value={formData.subject} 
                         onChange={handleChange} 
-                        placeholder="Inquiry about Vointy"
+                        placeholder={t('contactFormPage.placeholderSubject')}
                         required 
                         className="h-12 border-gray-200 focus:border-brand-purple focus:ring-brand-purple"
                       />
@@ -196,7 +196,7 @@ const ContactForm = () => {
                         value={formData.message} 
                         onChange={handleChange} 
                         rows={6} 
-                        placeholder="How can we help you?"
+                        placeholder={t('contactFormPage.placeholderMessage')}
                         required 
                         className="border-gray-200 focus:border-brand-purple focus:ring-brand-purple resize-none"
                       />
@@ -207,7 +207,7 @@ const ContactForm = () => {
                       className="w-full btn-primary h-14 text-lg font-bold shadow-lg shadow-brand-purple/20 transition-all hover:-translate-y-0.5" 
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? 'Sending Message...' : t('license.submit')}
+                      {isSubmitting ? t('contactFormPage.sending') : t('license.submit')}
                     </Button>
                   </form>
                 </CardContent>

@@ -1,0 +1,272 @@
+{
+  "pricingPage": {
+    "headingPrefix": "Un prix simple. Salariés illimités. Équipes illimitées.",
+    "headingPrice": "149 €/mois.",
+    "subheading": "Les entreprises rejoignent Vointy gratuitement et partagent leurs identifiants avec leurs salariés dans un nombre illimité d'équipes. Passez à l'offre supérieure uniquement lorsque vous souhaitez le tableau de bord employeur avec analyses, campagnes et événements.",
+    "highlights": [
+      "Essai gratuit de 30 jours",
+      "149 €/mois",
+      "Aucun frais d'installation",
+      "Salariés illimités",
+      "Résiliable à tout moment"
+    ],
+    "freeTitle": "Gratuit",
+    "freeForever": "à vie",
+    "freeDescription": "Rejoignez en tant qu'entreprise et partagez vos identifiants Vointy avec vos salariés dans un nombre illimité d'équipes.",
+    "freeFeatures": [
+      "Salariés illimités",
+      "Équipes illimitées",
+      "Toutes les activités des salariés",
+      "Accès par équipe"
+    ],
+    "getStartedFree": "Commencer gratuitement",
+    "employerDashboardBadge": "Tableau de bord employeur",
+    "companyPlanTitle": "Offre Entreprise",
+    "perMonthPerCompany": "/mois / entreprise",
+    "companyPlanDescription": "Tout ce qui est inclus dans l'offre Gratuite, plus le tableau de bord employeur avec suivi, analyses, campagnes, événements et invitations.",
+    "planFeatures": [
+      "Salariés illimités",
+      "Équipes illimitées",
+      "Toutes les activités",
+      "Tableau de bord employeur",
+      "Rapports et analyses",
+      "Aucun frais par utilisateur"
+    ],
+    "startTrial": "Démarrer l'essai gratuit de 30 jours"
+  },
+  "aboutPage": {
+    "title": "À propos de Vointy.life",
+    "subtitle": "Notre mission est de transformer le bien-être au travail grâce à l'engagement social et aux analyses de données.",
+    "missionTitle": "Notre mission",
+    "missionP1": "Chez Vointy.life, nous croyons que des salariés en bonne santé et engagés sont le fondement des organisations performantes. Notre plateforme de bien-être social aide les entreprises à réduire l'absentéisme jusqu'à 32 % tout en favorisant une culture de connexion et de bien-être.",
+    "missionP2": "Nous combinons technologie de pointe et design centré sur l'humain pour créer des solutions qui rendent le bien-être au travail accessible, engageant et efficace pour les équipes de toutes tailles.",
+    "companiesServedLabel": "Entreprises accompagnées",
+    "sickLeaveReductionLabel": "Réduction de l'absentéisme",
+    "valuesTitle": "Nos valeurs",
+    "value1Title": "Le bien-être avant tout",
+    "value1Description": "Nous plaçons le bien-être des salariés au cœur de tout ce que nous faisons, convaincus que des équipes en bonne santé créent des entreprises prospères.",
+    "value2Title": "Connexion sociale",
+    "value2Description": "Nous favorisons des liens authentiques entre collègues, créant des communautés solidaires au sein des organisations.",
+    "value3Title": "Résultats fondés sur les données",
+    "value3Description": "Nous utilisons l'analyse et les données pour mesurer l'impact et améliorer en continu l'efficacité de notre plateforme."
+  },
+  "careersPage": {
+    "title": "Rejoignez notre mission",
+    "subtitle": "Aidez-nous à transformer le bien-être au travail et à construire l'avenir de l'engagement des salariés.",
+    "whyWorkTitle": "Pourquoi travailler chez Vointy.life ?",
+    "benefit1Title": "Culture Remote-First",
+    "benefit1Description": "Travaillez d'où vous voulez avec des horaires flexibles et un vrai équilibre vie pro/vie perso.",
+    "benefit2Title": "Focus sur l'innovation",
+    "benefit2Description": "Travaillez sur des technologies de pointe qui font une réelle différence dans la vie des gens.",
+    "benefit3Title": "Opportunités d'évolution",
+    "benefit3Description": "Apprentissage continu et développement grâce au mentorat et aux programmes de formation.",
+    "openPositionsTitle": "Postes ouverts",
+    "positions": [
+      {
+        "title": "Développeur·se Frontend Senior",
+        "department": "Ingénierie",
+        "location": "Télétravail",
+        "type": "Temps plein",
+        "description": "Rejoignez notre équipe d'ingénierie pour créer la prochaine génération de solutions de bien-être au travail avec React, TypeScript et les technologies web modernes."
+      },
+      {
+        "title": "Chef·fe de produit",
+        "department": "Produit",
+        "location": "San Francisco, CA",
+        "type": "Temps plein",
+        "description": "Pilotez la stratégie et le développement produit de notre plateforme de bien-être social, en étroite collaboration avec les équipes ingénierie et design."
+      },
+      {
+        "title": "Responsable Customer Success",
+        "department": "Customer Success",
+        "location": "Télétravail",
+        "type": "Temps plein",
+        "description": "Aidez nos clients entreprises à tirer le meilleur parti de Vointy.life et à favoriser son adoption au sein de leurs organisations."
+      },
+      {
+        "title": "Designer UI/UX",
+        "department": "Design",
+        "location": "New York, NY",
+        "type": "Temps plein",
+        "description": "Concevez des expériences utilisateur intuitives et engageantes qui rendent le bien-être au travail accessible et agréable pour tous les utilisateurs."
+      }
+    ],
+    "applyNow": "Postuler maintenant",
+    "noRoleText": "Vous ne trouvez pas le poste idéal ? Nous sommes toujours à la recherche de talents.",
+    "sendResume": "Envoyez-nous votre CV"
+  },
+  "blogPage": {
+    "title": "Blog Vointy.life",
+    "subtitle": "Analyses, recherches et bonnes pratiques pour le bien-être au travail et l'engagement des salariés.",
+    "categories": [
+      "Tout",
+      "Télétravail",
+      "Analyses",
+      "Culture d'entreprise",
+      "Santé mentale",
+      "Recherche",
+      "Mise en œuvre"
+    ],
+    "posts": [
+      {
+        "title": "5 façons de renforcer le bien-être des salariés en télétravail",
+        "excerpt": "Découvrez des stratégies concrètes pour maintenir la cohésion d'équipe et soutenir la santé mentale des salariés dans des environnements de travail décentralisés.",
+        "author": "Sarah Chen",
+        "date": "1 juin 2025",
+        "readTime": "5 min de lecture",
+        "category": "Télétravail"
+      },
+      {
+        "title": "Le ROI des programmes de bien-être des salariés : une analyse fondée sur les données",
+        "excerpt": "Découvrez comment les entreprises mesurent le retour sur investissement de leurs initiatives de bien-être et les indicateurs les plus importants.",
+        "author": "Mike Johnson",
+        "date": "28 mai 2025",
+        "readTime": "8 min de lecture",
+        "category": "Analyses"
+      },
+      {
+        "title": "Construire une culture du bien-être : les meilleures pratiques des grandes entreprises",
+        "excerpt": "Découvrez comment les leaders du secteur créent des cultures de bien-être durables qui engagent les salariés et génèrent des résultats.",
+        "author": "Emma Rodriguez",
+        "date": "25 mai 2025",
+        "readTime": "6 min de lecture",
+        "category": "Culture d'entreprise"
+      },
+      {
+        "title": "La santé mentale au travail : faire tomber les barrières",
+        "excerpt": "Comprendre l'importance du soutien à la santé mentale et comment créer un environnement où les salariés se sentent en sécurité pour demander de l'aide.",
+        "author": "Dr Alex Thompson",
+        "date": "22 mai 2025",
+        "readTime": "7 min de lecture",
+        "category": "Santé mentale"
+      },
+      {
+        "title": "La science derrière les plateformes de bien-être social",
+        "excerpt": "Plongez dans les recherches qui montrent comment les liens sociaux influencent la santé, la productivité et la satisfaction professionnelle des salariés.",
+        "author": "Équipe de recherche",
+        "date": "19 mai 2025",
+        "readTime": "10 min de lecture",
+        "category": "Recherche"
+      },
+      {
+        "title": "Mettre en place des programmes de bien-être : un guide étape par étape",
+        "excerpt": "Un guide complet pour les responsables RH souhaitant lancer des initiatives de bien-être réussies au sein de leur organisation.",
+        "author": "Lisa Park",
+        "date": "16 mai 2025",
+        "readTime": "12 min de lecture",
+        "category": "Mise en œuvre"
+      }
+    ],
+    "loadMore": "Charger plus d'articles"
+  },
+  "contactPage": {
+    "title": "Contactez-nous",
+    "subtitle": "Contactez notre équipe. Nous sommes là pour vous aider à transformer le bien-être au sein de votre entreprise.",
+    "conversationTitle": "Engageons la conversation",
+    "conversationDescription": "Prêt à découvrir Vointy en action ? Nous répondons à vos questions et vous montrons comment notre plateforme peut réduire l'absentéisme et améliorer le bien-être de vos salariés.",
+    "emailUsLabel": "Écrivez-nous",
+    "callUsLabel": "Appelez-nous",
+    "visitUsLabel": "Rendez-nous visite",
+    "addressLine1": "123 Wellness Street",
+    "addressLine2": "San Francisco, CA 94105",
+    "hoursLabel": "Horaires d'ouverture",
+    "hoursValue": "Lundi - Vendredi : 9h00 - 18h00 (PST)",
+    "requestDemo": "Demander une démo",
+    "whyChooseTitle": "Pourquoi choisir Vointy ?",
+    "reasons": [
+      {
+        "title": "Résultats prouvés",
+        "description": "Les entreprises qui utilisent Vointy constatent en moyenne une réduction de 30 % de l'absentéisme dès les 6 premiers mois."
+      },
+      {
+        "title": "Mise en place facile",
+        "description": "Démarrez en seulement 24 heures grâce à notre processus d'intégration simple et à notre équipe support dédiée."
+      },
+      {
+        "title": "Accompagnement personnalisé",
+        "description": "Nos experts en bien-être travaillent avec vous pour créer un programme sur mesure adapté à la culture de votre entreprise."
+      },
+      {
+        "title": "Analyses fondées sur les données",
+        "description": "Suivez vos progrès grâce à des analyses et rapports complets pour mesurer l'impact de votre programme de bien-être."
+      }
+    ]
+  },
+  "contactFormPage": {
+    "successMessage": "Nous avons bien reçu votre message et vous répondrons rapidement.",
+    "sendAnother": "Envoyer un autre message",
+    "sending": "Envoi du message...",
+    "placeholderFirstName": "Jean",
+    "placeholderLastName": "Dupont",
+    "placeholderEmail": "jean@exemple.com",
+    "placeholderCompany": "Votre entreprise",
+    "placeholderSubject": "Demande concernant Vointy",
+    "placeholderMessage": "Comment pouvons-nous vous aider ?"
+  },
+  "footerContactForm": {
+    "title": "Contactez-nous",
+    "description": "Envoyez-nous un message, nous vous répondrons rapidement.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "E-mail",
+    "companyOptional": "Entreprise (facultatif)",
+    "subject": "Objet",
+    "message": "Message",
+    "sending": "Envoi en cours...",
+    "sendMessage": "Envoyer le message",
+    "successToast": "Merci ! Votre message a bien été envoyé.",
+    "errorTitle": "Une erreur est survenue"
+  },
+  "navExtra": {
+    "employerPanel": "Espace employeur",
+    "myVointy": "Mon Vointy",
+    "language": "Langue"
+  },
+  "footerLinks": {
+    "aboutUs": "À propos",
+    "careers": "Carrières",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "refundPolicy": "Politique de remboursement",
+    "cookiePolicy": "Politique de cookies",
+    "admin": "Admin"
+  },
+  "notFound": {
+    "message": "Oups ! Page introuvable",
+    "returnHome": "Retour à l'accueil"
+  },
+  "backButton": {
+    "label": "Retour"
+  },
+  "homeExtra": {
+    "freeBadge": "Gratuit pour les entreprises",
+    "freeTitle": "Employés illimités. Équipes illimitées. Gratuit.",
+    "freeText": "Les entreprises rejoignent Vointy gratuitement et distribuent des accès à leurs employés dans un nombre illimité d'équipes — sans frais par utilisateur ni limite de taille. Vous ne payez que si vous voulez le tableau de bord employeur.",
+    "freeCta": "Commencer gratuitement",
+    "foreverFree": "Gratuit pour toujours",
+    "compTitlePart1": "Gratuit pour les entreprises.",
+    "compTitleHighlight": "Ne payez que",
+    "compTitlePart2": "pour le tableau de bord employeur.",
+    "compText": "Rejoignez Vointy gratuitement et partagez des accès avec vos employés dans un nombre illimité d'équipes — sans frais par utilisateur. Passez au tableau de bord employeur lorsque vous souhaitez du suivi, des analyses, des campagnes et des événements.",
+    "compFeatures": [
+      "Employés illimités",
+      "Équipes illimitées",
+      "Toutes les activités",
+      "Tableau de bord employeur",
+      "Rapports et analyses",
+      "Aucun frais par utilisateur"
+    ],
+    "compCta": "Voir les tarifs",
+    "dashboardLabel": "Tableau de bord employeur",
+    "perMonth": "/mois",
+    "perCompany": "par entreprise · utilisateurs illimités",
+    "trialValue": "30 jours",
+    "trialLabel": "Essai gratuit",
+    "setupLabel": "Frais d'installation",
+    "altHero": "Une équipe diverse s'étire ensemble en plein air",
+    "altWhy": "Tableau de bord de l'application Vointy avec les anneaux d'activité",
+    "altCompanies": "La direction de l'entreprise discute du bien-être des employés"
+  }
+}

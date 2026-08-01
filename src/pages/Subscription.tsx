@@ -9,26 +9,14 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useEmployerOrg } from '@/hooks/useEmployerOrg';
 import { usePaddleCheckout } from '@/hooks/usePaddleCheckout';
 import { EMPLOYER_PRICE_ID } from '@/lib/paddle';
+import { useTranslation } from '@/lib/i18n';
 
-
-const planFeatures = [
-  'Unlimited employees',
-  'Unlimited teams',
-  'All activities',
-  'Employer dashboard',
-  'Reporting & analytics',
-  'No per-user fees',
-];
-
-const highlights = [
-  'Free 30-day trial',
-  '€149/month',
-  'No setup fee',
-  'Unlimited employees',
-  'Cancel anytime',
-];
 
 const Subscription = () => {
+  const { t } = useTranslation();
+  const planFeatures = t('pricingPage.planFeatures') as string[];
+  const highlights = t('pricingPage.highlights') as string[];
+  const freeFeatures = t('pricingPage.freeFeatures') as string[];
   const { user } = useAuth();
   const { orgId } = useEmployerOrg();
   const { openCheckout, loading: checkoutLoading } = usePaddleCheckout();
@@ -57,13 +45,11 @@ const Subscription = () => {
         <section className="bg-gradient-to-b from-purple-50 to-white pt-16 pb-12">
           <div className="container mx-auto px-4 text-center max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-brand-dark leading-tight">
-              One simple price. Unlimited employees. Unlimited teams.{' '}
-              <span className="gradient-text">€149/month.</span>
+              {t('pricingPage.headingPrefix')}{' '}
+              <span className="gradient-text">{t('pricingPage.headingPrice')}</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              Companies join Vointy for free and share credentials with employees across unlimited
-              teams. Upgrade only when you want the employer dashboard with analytics, campaigns,
-              and events.
+              {t('pricingPage.subheading')}
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
               {highlights.map((h) => (
@@ -84,22 +70,16 @@ const Subscription = () => {
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
               <Card className="border border-gray-200 shadow-sm">
                 <CardContent className="p-8 flex flex-col h-full">
-                  <h3 className="text-2xl font-bold mb-2 text-brand-dark">Free</h3>
+                  <h3 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.freeTitle')}</h3>
                   <div className="flex items-end mb-4">
                     <span className="text-5xl font-bold text-brand-dark">€0</span>
-                    <span className="text-gray-500 ml-2 mb-1">forever</span>
+                    <span className="text-gray-500 ml-2 mb-1">{t('pricingPage.freeForever')}</span>
                   </div>
                   <p className="text-gray-600 mb-6">
-                    Join as a company and share Vointy credentials with your employees across
-                    unlimited teams.
+                    {t('pricingPage.freeDescription')}
                   </p>
                   <ul className="space-y-3 mb-8 flex-grow">
-                    {[
-                      'Unlimited employees',
-                      'Unlimited teams',
-                      'All employee activities',
-                      'Team-based access',
-                    ].map((f) => (
+                    {freeFeatures.map((f) => (
                       <li key={f} className="flex items-start">
                         <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{f}</span>
@@ -111,24 +91,23 @@ const Subscription = () => {
                     variant="outline"
                     className="w-full h-12 text-lg font-semibold border-2 border-brand-purple text-brand-purple hover:bg-brand-purple/5"
                   >
-                    <Link to="/company-signup">Get started free</Link>
+                    <Link to="/company-signup">{t('pricingPage.getStartedFree')}</Link>
                   </Button>
                 </CardContent>
               </Card>
 
               <Card className="border-2 border-brand-purple relative shadow-xl">
                 <div className="bg-brand-purple text-white py-1 px-4 text-sm font-medium absolute top-0 right-0 rounded-bl-lg">
-                  Employer Dashboard
+                  {t('pricingPage.employerDashboardBadge')}
                 </div>
                 <CardContent className="p-8 flex flex-col h-full">
-                  <h3 className="text-2xl font-bold mb-2 text-brand-dark">Company Plan</h3>
+                  <h3 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.companyPlanTitle')}</h3>
                   <div className="flex items-end mb-4">
                     <span className="text-5xl font-bold text-brand-dark">€149</span>
-                    <span className="text-gray-500 ml-2 mb-1">/month / company</span>
+                    <span className="text-gray-500 ml-2 mb-1">{t('pricingPage.perMonthPerCompany')}</span>
                   </div>
                   <p className="text-gray-600 mb-6">
-                    Everything in Free, plus the employer dashboard with tracking, analytics,
-                    campaigns, events and invitations.
+                    {t('pricingPage.companyPlanDescription')}
                   </p>
                   <ul className="space-y-3 mb-8 flex-grow">
                     {planFeatures.map((f) => (
@@ -144,7 +123,7 @@ const Subscription = () => {
                     className="w-full h-12 text-lg font-semibold bg-brand-purple hover:bg-brand-purple-dark text-white"
                   >
                     {checkoutLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
-                    Start free 30-day trial
+                    {t('pricingPage.startTrial')}
                   </Button>
 
                 </CardContent>

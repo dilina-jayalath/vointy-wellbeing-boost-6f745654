@@ -20,6 +20,7 @@ import {
   CartesianGrid,
   Tooltip,
 } from "recharts";
+import { useTranslation } from "@/lib/i18n";
 
 const PAID_AMOUNT = 149;
 
@@ -71,6 +72,7 @@ const AdminDashboard = () => {
   const { data, isLoading } = useAdminData();
   const queryClient = useQueryClient();
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const paidOrgs = useMemo(() => (data?.orgs ?? []).filter((o: any) => o.plan === "paid"), [data]);
   const freeOrgs = useMemo(() => (data?.orgs ?? []).filter((o: any) => o.plan !== "paid"), [data]);
@@ -150,10 +152,10 @@ const AdminDashboard = () => {
       })
       .eq("id", org.id);
     if (error) {
-      toast({ title: "Update failed", description: error.message, variant: "destructive" });
+      toast({ title: t("adminPanel.customers.updateFailedTitle") as string, description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: paid ? "Moved to free plan" : "Marked as paying customer" });
+    toast({ title: paid ? (t("adminPanel.customers.movedToFree") as string) : (t("adminPanel.customers.markedPaying") as string) });
     queryClient.invalidateQueries({ queryKey: ["admin-data"] });
   };
 
@@ -173,25 +175,51 @@ const AdminDashboard = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-6">
           <BackButton fallback="/" />
-          <h1 className="text-3xl font-display">Admin panel</h1>
+          <h1 className="text-3xl font-display">{t("adminPanel.title")}</h1>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-8">
-          <Stat label="Companies" value={data.orgs.length} hint={`${paidOrgs.length} paying · ${freeOrgs.length} free`} />
-          <Stat label="MRR" value={`€${mrr.toLocaleString()}`} hint="Recurring monthly revenue" />
-          <Stat label="Registered employees" value={data.profiles.length} hint={`${activatedEmployees} activated invitations`} />
-          <Stat label="Page views (recent)" value={data.views.length} hint="Last 5 000 tracked views" />
+          <Stat
+            label={t("adminPanel.stats.companies") as string}
+            value={data.orgs.length}
+            hint={(t("adminPanel.stats.companiesHint") as string)
+              .replace("{paid}", String(paidOrgs.length))
+              .replace("{free}", String(freeOrgs.length))}
+          />
+          <Stat
+            label={t("adminPanel.stats.mrr") as string}
+            value={`€${mrr.toLocaleString()}`}
+            hint={t("adminPanel.stats.mrrHint") as string}
+          />
+          <Stat
+            label={t("adminPanel.stats.registeredEmployees") as string}
+            value={data.profiles.length}
+            hint={(t("adminPanel.stats.registeredEmployeesHint") as string).replace("{count}", String(activatedEmployees))}
+          />
+          <Stat
+            label={t("adminPanel.stats.pageViews") as string}
+            value={data.views.length}
+            hint={t("adminPanel.stats.pageViewsHint") as string}
+          />
         </div>
 
         <Tabs defaultValue="messages">
           <TabsList className="flex-wrap h-auto">
-            <TabsTrigger value="messages">Messages ({data.messages.length})</TabsTrigger>
-            <TabsTrigger value="customers">Customers ({data.orgs.length})</TabsTrigger>
-            <TabsTrigger value="revenue">Revenue</TabsTrigger>
-            <TabsTrigger value="employees">Employees ({data.profiles.length})</TabsTrigger>
-            <TabsTrigger value="site">Site analytics</TabsTrigger>
-            <TabsTrigger value="activities">Activity usage</TabsTrigger>
-            <TabsTrigger value="newsletter">Newsletter ({data.subscribers.length})</TabsTrigger>
+            <TabsTrigger value="messages">
+              {(t("adminPanel.tabs.messages") as string).replace("{count}", String(data.messages.length))}
+            </TabsTrigger>
+            <TabsTrigger value="customers">
+              {(t("adminPanel.tabs.customers") as string).replace("{count}", String(data.orgs.length))}
+            </TabsTrigger>
+            <TabsTrigger value="revenue">{t("adminPanel.tabs.revenue")}</TabsTrigger>
+            <TabsTrigger value="employees">
+              {(t("adminPanel.tabs.employees") as string).replace("{count}", String(data.profiles.length))}
+            </TabsTrigger>
+            <TabsTrigger value="site">{t("adminPanel.tabs.site")}</TabsTrigger>
+            <TabsTrigger value="activities">{t("adminPanel.tabs.activities")}</TabsTrigger>
+            <TabsTrigger value="newsletter">
+              {(t("adminPanel.tabs.newsletter") as string).replace("{count}", String(data.subscribers.length))}
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="messages" className="mt-4">
@@ -199,20 +227,20 @@ const AdminDashboard = () => {
               {[
                 {
                   key: "contact",
-                  title: "contact@vointy.life",
-                  description: "Messages from the website contact form",
+                  title: t("adminPanel.messages.contactTitle") as string,
+                  description: t("adminPanel.messages.contactDescription") as string,
                   items: data.messages.filter((m: any) => m.category === "contact"),
                 },
                 {
                   key: "license",
-                  title: "License requests",
-                  description: "Requests sent through the license form",
+                  title: t("adminPanel.messages.licenseTitle") as string,
+                  description: t("adminPanel.messages.licenseDescription") as string,
                   items: data.messages.filter((m: any) => m.category === "license"),
                 },
                 {
                   key: "other",
-                  title: "Other messages",
-                  description: "Everything else",
+                  title: t("adminPanel.messages.otherTitle") as string,
+                  description: t("adminPanel.messages.otherDescription") as string,
                   items: data.messages.filter(
                     (m: any) => m.category !== "contact" && m.category !== "license",
                   ),
@@ -227,7 +255,7 @@ const AdminDashboard = () => {
                   </CardHeader>
                   <CardContent className="space-y-4 max-h-[600px] overflow-y-auto">
                     {box.items.length === 0 ? (
-                      <p className="text-sm text-muted-foreground">No messages yet.</p>
+                      <p className="text-sm text-muted-foreground">{t("adminPanel.messages.empty")}</p>
                     ) : (
                       box.items.map((m: any) => (
                         <div key={m.id} className="rounded-lg border p-4">
@@ -252,8 +280,8 @@ const AdminDashboard = () => {
 
           <TabsContent value="customers" className="mt-4 space-y-6">
             {[
-              { title: "Paying customers", rows: paidOrgs },
-              { title: "Free companies", rows: freeOrgs },
+              { title: t("adminPanel.customers.paying") as string, rows: paidOrgs },
+              { title: t("adminPanel.customers.free") as string, rows: freeOrgs },
             ].map((group) => (
               <Card key={group.title}>
                 <CardHeader>
@@ -265,19 +293,19 @@ const AdminDashboard = () => {
                   <Table>
                     <TableHeader>
                       <TableRow>
-                        <TableHead>Company</TableHead>
-                        <TableHead>Plan</TableHead>
-                        <TableHead>Monthly</TableHead>
-                        <TableHead>Employees</TableHead>
-                        <TableHead>Joined</TableHead>
-                        <TableHead className="text-right">Actions</TableHead>
+                        <TableHead>{t("adminPanel.customers.columns.company")}</TableHead>
+                        <TableHead>{t("adminPanel.customers.columns.plan")}</TableHead>
+                        <TableHead>{t("adminPanel.customers.columns.monthly")}</TableHead>
+                        <TableHead>{t("adminPanel.customers.columns.employees")}</TableHead>
+                        <TableHead>{t("adminPanel.customers.columns.joined")}</TableHead>
+                        <TableHead className="text-right">{t("adminPanel.customers.columns.actions")}</TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
                       {group.rows.length === 0 ? (
                         <TableRow>
                           <TableCell colSpan={6} className="text-muted-foreground">
-                            No companies.
+                            {t("adminPanel.customers.noCompanies")}
                           </TableCell>
                         </TableRow>
                       ) : (
@@ -286,7 +314,7 @@ const AdminDashboard = () => {
                             <TableCell className="font-medium">{o.name}</TableCell>
                             <TableCell>
                               <Badge variant={o.plan === "paid" ? "default" : "secondary"}>
-                                {o.plan === "paid" ? "Paid" : "Free"}
+                                {o.plan === "paid" ? t("adminPanel.customers.paid") : t("adminPanel.customers.free_status")}
                               </Badge>
                             </TableCell>
                             <TableCell>€{Number(o.monthly_amount || 0)}</TableCell>
@@ -296,7 +324,7 @@ const AdminDashboard = () => {
                             <TableCell>{new Date(o.created_at).toLocaleDateString()}</TableCell>
                             <TableCell className="text-right">
                               <Button size="sm" variant="outline" onClick={() => togglePlan(o)}>
-                                {o.plan === "paid" ? "Set free" : "Mark paid"}
+                                {o.plan === "paid" ? t("adminPanel.customers.setFree") : t("adminPanel.customers.markPaid")}
                               </Button>
                             </TableCell>
                           </TableRow>
@@ -312,8 +340,10 @@ const AdminDashboard = () => {
           <TabsContent value="revenue" className="mt-4 space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Subscription revenue (last 12 months)</CardTitle>
-                <CardDescription>Monthly recurring revenue from paying companies, €{PAID_AMOUNT}/month each</CardDescription>
+                <CardTitle className="text-lg">{t("adminPanel.revenue.chartTitle")}</CardTitle>
+                <CardDescription>
+                  {(t("adminPanel.revenue.chartDescription") as string).replace("{amount}", String(PAID_AMOUNT))}
+                </CardDescription>
               </CardHeader>
               <CardContent className="h-72">
                 <ResponsiveContainer width="100%" height="100%">
@@ -322,14 +352,14 @@ const AdminDashboard = () => {
                     <XAxis dataKey="month" />
                     <YAxis />
                     <Tooltip />
-                    <Line type="monotone" dataKey="mrr" name="MRR (€)" stroke="hsl(var(--primary))" strokeWidth={2} />
+                    <Line type="monotone" dataKey="mrr" name={t("adminPanel.revenue.mrrLegend") as string} stroke="hsl(var(--primary))" strokeWidth={2} />
                   </LineChart>
                 </ResponsiveContainer>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Paying customers over time</CardTitle>
+                <CardTitle className="text-lg">{t("adminPanel.revenue.customersChartTitle")}</CardTitle>
               </CardHeader>
               <CardContent className="h-64">
                 <ResponsiveContainer width="100%" height="100%">
@@ -338,7 +368,7 @@ const AdminDashboard = () => {
                     <XAxis dataKey="month" />
                     <YAxis allowDecimals={false} />
                     <Tooltip />
-                    <Bar dataKey="customers" name="Customers" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="customers" name={t("adminPanel.revenue.customersLegend") as string} fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>
@@ -348,18 +378,18 @@ const AdminDashboard = () => {
           <TabsContent value="employees" className="mt-4">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Registered employees</CardTitle>
-                <CardDescription>All users who have created an account</CardDescription>
+                <CardTitle className="text-lg">{t("adminPanel.employees.tableTitle")}</CardTitle>
+                <CardDescription>{t("adminPanel.employees.tableDescription")}</CardDescription>
               </CardHeader>
               <CardContent className="p-0">
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Name</TableHead>
-                      <TableHead>Company</TableHead>
-                      <TableHead>Language</TableHead>
-                      <TableHead>Role</TableHead>
-                      <TableHead>Registered</TableHead>
+                      <TableHead>{t("adminPanel.employees.columns.name")}</TableHead>
+                      <TableHead>{t("adminPanel.employees.columns.company")}</TableHead>
+                      <TableHead>{t("adminPanel.employees.columns.language")}</TableHead>
+                      <TableHead>{t("adminPanel.employees.columns.role")}</TableHead>
+                      <TableHead>{t("adminPanel.employees.columns.registered")}</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -370,7 +400,7 @@ const AdminDashboard = () => {
                           {data.orgs.find((o: any) => o.id === p.organization_id)?.name ?? "—"}
                         </TableCell>
                         <TableCell className="uppercase text-xs">{p.language ?? "—"}</TableCell>
-                        <TableCell>{p.role ?? "user"}</TableCell>
+                        <TableCell>{p.role ?? (t("adminPanel.employees.defaultRole") as string)}</TableCell>
                         <TableCell>{new Date(p.created_at).toLocaleDateString()}</TableCell>
                       </TableRow>
                     ))}
@@ -383,7 +413,7 @@ const AdminDashboard = () => {
           <TabsContent value="site" className="mt-4 space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Visits (last 30 days)</CardTitle>
+                <CardTitle className="text-lg">{t("adminPanel.site.visitsTitle")}</CardTitle>
               </CardHeader>
               <CardContent className="h-72">
                 <ResponsiveContainer width="100%" height="100%">
@@ -392,29 +422,29 @@ const AdminDashboard = () => {
                     <XAxis dataKey="day" />
                     <YAxis allowDecimals={false} />
                     <Tooltip />
-                    <Bar dataKey="views" name="Page views" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-                    <Bar dataKey="visitors" name="Visitors" fill="hsl(var(--accent))" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="views" name={t("adminPanel.site.pageViewsLegend") as string} fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="visitors" name={t("adminPanel.site.visitorsLegend") as string} fill="hsl(var(--accent))" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Most visited pages</CardTitle>
+                <CardTitle className="text-lg">{t("adminPanel.site.topPagesTitle")}</CardTitle>
               </CardHeader>
               <CardContent className="p-0">
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Path</TableHead>
-                      <TableHead className="text-right">Views</TableHead>
+                      <TableHead>{t("adminPanel.site.columns.path")}</TableHead>
+                      <TableHead className="text-right">{t("adminPanel.site.columns.views")}</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     {topPages.length === 0 ? (
                       <TableRow>
                         <TableCell colSpan={2} className="text-muted-foreground">
-                          No tracked visits yet.
+                          {t("adminPanel.site.noVisits")}
                         </TableCell>
                       </TableRow>
                     ) : (
@@ -434,7 +464,7 @@ const AdminDashboard = () => {
           <TabsContent value="activities" className="mt-4 space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Performed activities per month</CardTitle>
+                <CardTitle className="text-lg">{t("adminPanel.activities.monthlyChartTitle")}</CardTitle>
               </CardHeader>
               <CardContent className="h-72">
                 <ResponsiveContainer width="100%" height="100%">
@@ -443,28 +473,28 @@ const AdminDashboard = () => {
                     <XAxis dataKey="month" />
                     <YAxis allowDecimals={false} />
                     <Tooltip />
-                    <Bar dataKey="count" name="Activities" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="count" name={t("adminPanel.activities.activitiesLegend") as string} fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Most used activities</CardTitle>
+                <CardTitle className="text-lg">{t("adminPanel.activities.topActivitiesTitle")}</CardTitle>
               </CardHeader>
               <CardContent className="p-0">
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Activity</TableHead>
-                      <TableHead className="text-right">Times performed</TableHead>
+                      <TableHead>{t("adminPanel.activities.columns.activity")}</TableHead>
+                      <TableHead className="text-right">{t("adminPanel.activities.columns.timesPerformed")}</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     {topActivities.length === 0 ? (
                       <TableRow>
                         <TableCell colSpan={2} className="text-muted-foreground">
-                          No activities performed yet.
+                          {t("adminPanel.activities.noActivities")}
                         </TableCell>
                       </TableRow>
                     ) : (

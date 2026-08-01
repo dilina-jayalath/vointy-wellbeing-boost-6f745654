@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
+import { useTranslation } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -40,6 +41,7 @@ interface Props {
 
 export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityTitle }: Props) => {
   const { user } = useAuth();
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [list, setList] = useState<Recipient[]>([]);
@@ -63,7 +65,7 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
 
   const add = () => {
     if (!emailRe.test(email)) {
-      toast({ title: "Enter a valid email address", variant: "destructive" });
+      toast({ title: t("appPanel.activityInvite.toast.invalidEmail"), variant: "destructive" });
       return;
     }
     setList((l) => [...l, { id: crypto.randomUUID(), name: name.trim(), email: email.trim() }]);
@@ -94,7 +96,7 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
       if (em) parsed.push({ id: crypto.randomUUID(), name: nm, email: em });
     }
     setList((l) => [...l, ...parsed]);
-    toast({ title: "CSV imported", description: `${parsed.length} recipient(s) added.` });
+    toast({ title: t("appPanel.activityInvite.toast.csvImportedTitle"), description: (t("appPanel.activityInvite.toast.csvImportedDesc") as string).replace("{n}", String(parsed.length)) });
   };
 
   const inviteLink = (token: string) =>
@@ -102,7 +104,7 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
 
   const copyLink = async (token: string) => {
     await navigator.clipboard.writeText(inviteLink(token));
-    toast({ title: "Invitation link copied" });
+    toast({ title: t("appPanel.activityInvite.toast.linkCopied") });
   };
 
   const sendEmail = async (inv: Invitation) => {
@@ -142,13 +144,13 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
 
     if (error) {
       setSending(false);
-      toast({ title: "Could not create invitations", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.activityInvite.toast.couldNotCreate"), description: error.message, variant: "destructive" });
       return;
     }
     const created = (data as Invitation[]) ?? [];
     for (const inv of created) await sendEmail(inv);
     setSending(false);
-    toast({ title: "Invitations sent", description: `${created.length} invitation(s) created.` });
+    toast({ title: t("appPanel.activityInvite.toast.sentTitle"), description: (t("appPanel.activityInvite.toast.sentDesc") as string).replace("{n}", String(created.length)) });
     setList([]);
     load();
   };
@@ -162,20 +164,20 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle>Invite to “{activityTitle}”</DialogTitle>
+          <DialogTitle>{(t("appPanel.activityInvite.titlePrefix") as string).replace("{title}", activityTitle ?? "")}</DialogTitle>
           <DialogDescription>
-            Invite people one by one or import a list from a CSV file.
+            {t("appPanel.activityInvite.description")}
           </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4">
           <div className="grid gap-2 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
             <div>
-              <Label htmlFor="ai-name">Name</Label>
+              <Label htmlFor="ai-name">{t("appPanel.activityInvite.name")}</Label>
               <Input id="ai-name" value={name} onChange={(e) => setName(e.target.value)} />
             </div>
             <div>
-              <Label htmlFor="ai-email">Email</Label>
+              <Label htmlFor="ai-email">{t("appPanel.activityInvite.email")}</Label>
               <Input
                 id="ai-email"
                 type="email"
@@ -185,7 +187,7 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
               />
             </div>
             <Button onClick={add} className="h-10">
-              <Plus className="h-4 w-4 mr-1" /> Add
+              <Plus className="h-4 w-4 mr-1" /> {t("appPanel.activityInvite.add")}
             </Button>
           </div>
 
@@ -198,10 +200,10 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
               onChange={(e) => e.target.files?.[0] && onUpload(e.target.files[0])}
             />
             <Button variant="outline" size="sm" onClick={() => fileRef.current?.click()}>
-              <Upload className="h-4 w-4 mr-1" /> Upload CSV
+              <Upload className="h-4 w-4 mr-1" /> {t("appPanel.activityInvite.uploadCsv")}
             </Button>
             <Button variant="ghost" size="sm" onClick={downloadTemplate}>
-              <Download className="h-4 w-4 mr-1" /> Template
+              <Download className="h-4 w-4 mr-1" /> {t("appPanel.activityInvite.template")}
             </Button>
           </div>
 
@@ -231,17 +233,16 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
                 <Loader2 className="h-4 w-4 animate-spin" />
               ) : (
                 <>
-                  <Send className="h-4 w-4 mr-1" /> Send {list.length} invitation
-                  {list.length > 1 ? "s" : ""}
+                  <Send className="h-4 w-4 mr-1" /> {list.length > 1 ? (t("appPanel.activityInvite.sendMany") as string).replace("{n}", String(list.length)) : t("appPanel.activityInvite.sendOne")}
                 </>
               )}
             </Button>
           )}
 
           <div>
-            <p className="text-sm font-medium mb-2">Invitations</p>
+            <p className="text-sm font-medium mb-2">{t("appPanel.activityInvite.invitationsTitle")}</p>
             {invitations.length === 0 ? (
-              <p className="text-sm text-muted-foreground">No invitations yet.</p>
+              <p className="text-sm text-muted-foreground">{t("appPanel.activityInvite.noInvitations")}</p>
             ) : (
               <div className="rounded-md border divide-y">
                 {invitations.map((inv) => (
@@ -251,10 +252,10 @@ export const ActivityInviteDialog = ({ open, onOpenChange, activityId, activityT
                       <div className="text-muted-foreground truncate">{inv.email}</div>
                     </div>
                     <div className="flex items-center gap-1 shrink-0">
-                      <Button size="icon" variant="ghost" onClick={() => copyLink(inv.token)} title="Copy link">
+                      <Button size="icon" variant="ghost" onClick={() => copyLink(inv.token)} title={t("appPanel.activityInvite.copyLinkTitle")}>
                         <Copy className="h-4 w-4" />
                       </Button>
-                      <Button size="icon" variant="ghost" onClick={() => removeInvite(inv.id)} title="Remove">
+                      <Button size="icon" variant="ghost" onClick={() => removeInvite(inv.id)} title={t("appPanel.activityInvite.removeTitle")}>
                         <Trash2 className="h-4 w-4" />
                       </Button>
                     </div>

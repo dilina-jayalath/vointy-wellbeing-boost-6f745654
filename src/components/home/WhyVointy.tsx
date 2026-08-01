@@ -37,7 +37,7 @@ const WhyVointy = () => {
               <div className="absolute inset-0 bg-brand-blue/20 rounded-3xl blur-[60px] -z-10" />
               <img 
                 src={mobileImage} 
-                alt="Vointy app dashboard showing activity rings" 
+                alt={t('homeExtra.altWhy')} 
                 className="w-full h-auto rounded-3xl shadow-2xl border-4 border-white"
               />
             </div>

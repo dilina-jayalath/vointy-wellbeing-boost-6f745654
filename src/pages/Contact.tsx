@@ -6,8 +6,16 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from '@/lib/i18n';
+
+interface Reason {
+  title: string;
+  description: string;
+}
 
 const Contact = () => {
+  const { t } = useTranslation();
+  const reasons = t('contactPage.reasons') as Reason[];
   return (
     <div className="min-h-screen">
       <Header />
@@ -17,10 +25,10 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">
-              Contact Us
+              {t('contactPage.title')}
             </h1>
             <p className="text-xl opacity-90 mb-8">
-              Get in touch with our team. We're here to help you transform your workplace wellness.
+              {t('contactPage.subtitle')}
             </p>
           </div>
         </div>
@@ -34,10 +42,9 @@ const Contact = () => {
               
               {/* Contact Information */}
               <div>
-                <h2 className="text-3xl font-bold font-display mb-8">Let's Start a Conversation</h2>
+                <h2 className="text-3xl font-bold font-display mb-8">{t('contactPage.conversationTitle')}</h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Ready to see Vointy in action? We're here to answer your questions and show you 
-                  how our platform can reduce sick leaves and boost employee wellness at your company.
+                  {t('contactPage.conversationDescription')}
                 </p>
                 
                 <div className="space-y-6 mb-8">
@@ -46,7 +53,7 @@ const Contact = () => {
                       <Mail className="h-6 w-6 text-brand-purple" />
                     </div>
                     <div>
-                      <h3 className="font-semibold">Email Us</h3>
+                      <h3 className="font-semibold">{t('contactPage.emailUsLabel')}</h3>
                       <p className="text-gray-600">hello@vointy.life</p>
                     </div>
                   </div>
@@ -56,7 +63,7 @@ const Contact = () => {
                       <Phone className="h-6 w-6 text-brand-blue" />
                     </div>
                     <div>
-                      <h3 className="font-semibold">Call Us</h3>
+                      <h3 className="font-semibold">{t('contactPage.callUsLabel')}</h3>
                       <p className="text-gray-600">+1 (555) 123-4567</p>
                     </div>
                   </div>
@@ -66,8 +73,8 @@ const Contact = () => {
                       <MapPin className="h-6 w-6 text-brand-purple" />
                     </div>
                     <div>
-                      <h3 className="font-semibold">Visit Us</h3>
-                      <p className="text-gray-600">123 Wellness Street<br />San Francisco, CA 94105</p>
+                      <h3 className="font-semibold">{t('contactPage.visitUsLabel')}</h3>
+                      <p className="text-gray-600">{t('contactPage.addressLine1')}<br />{t('contactPage.addressLine2')}</p>
                     </div>
                   </div>
                   
@@ -76,15 +83,15 @@ const Contact = () => {
                       <Clock className="h-6 w-6 text-brand-blue" />
                     </div>
                     <div>
-                      <h3 className="font-semibold">Business Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+                      <h3 className="font-semibold">{t('contactPage.hoursLabel')}</h3>
+                      <p className="text-gray-600">{t('contactPage.hoursValue')}</p>
                     </div>
                   </div>
                 </div>
 
                 <Link to="/contact-form">
                   <Button className="btn-primary">
-                    Request a Demo
+                    {t('contactPage.requestDemo')}
                   </Button>
                 </Link>
               </div>
@@ -92,28 +99,15 @@ const Contact = () => {
               {/* Additional Information Card */}
               <Card className="shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl">Why Choose Vointy?</CardTitle>
+                  <CardTitle className="text-2xl">{t('contactPage.whyChooseTitle')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div>
-                    <h3 className="font-semibold mb-2">Proven Results</h3>
-                    <p className="text-gray-600">Companies using Vointy see an average 30% reduction in sick leaves within the first 6 months.</p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-semibold mb-2">Easy Implementation</h3>
-                    <p className="text-gray-600">Get started in just 24 hours with our simple onboarding process and dedicated support team.</p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-semibold mb-2">Personalized Support</h3>
-                    <p className="text-gray-600">Our wellness experts work with you to create a customized program that fits your company culture.</p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-semibold mb-2">Data-Driven Insights</h3>
-                    <p className="text-gray-600">Track progress with comprehensive analytics and reporting to measure your wellness program's impact.</p>
-                  </div>
+                  {reasons.map((reason) => (
+                    <div key={reason.title}>
+                      <h3 className="font-semibold mb-2">{reason.title}</h3>
+                      <p className="text-gray-600">{reason.description}</p>
+                    </div>
+                  ))}
                 </CardContent>
               </Card>
             </div>

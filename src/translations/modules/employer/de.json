@@ -1,0 +1,366 @@
+{
+  "employerPanel": {
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "activityIndex": "Aktivitätsindex",
+      "activities": "Aktivitäten",
+      "surveys": "Umfragen",
+      "challenges": "Challenges",
+      "subscriptions": "Abonnements",
+      "inviteUsers": "Nutzer einladen",
+      "invitedList": "Eingeladene",
+      "activateUsers": "Nutzer aktivieren",
+      "teams": "Teams"
+    },
+    "paywall": {
+      "title": "Employer-Panel aktivieren",
+      "description": "{orgPrefix}Vointy ist für Unternehmen und Mitarbeitende kostenlos. Das Employer-Panel mit Tracking, Analysen, Kampagnen und Events kostet 149 €/Monat.",
+      "priceSuffix": "pro Monat · kostenlose 30-Tage-Testphase",
+      "features": {
+        "unlimitedEmployees": "Unbegrenzte Mitarbeiterzahl",
+        "unlimitedTeams": "Unbegrenzte Teams",
+        "allActivities": "Alle Aktivitäten",
+        "managementDashboard": "Management-Dashboard",
+        "reporting": "Reporting",
+        "noPerUserFees": "Keine Kosten pro Nutzer"
+      },
+      "startTrial": "Kostenlose 30-Tage-Testphase starten",
+      "disclaimer": "Keine Einrichtungsgebühr · jederzeit kündbar · Zahlungsmethode für den Start der Testphase erforderlich, erste Abbuchung nach 30 Tagen."
+    },
+    "layout": {
+      "brandTagline": "Gemeinsam gesündere Gewohnheiten aufbauen.",
+      "checkingPlan": "Plan wird geprüft…",
+      "trialRemaining": "Verbleibende Testphase: {days} Tage",
+      "paymentFailed": "Zahlung fehlgeschlagen",
+      "panelActive": "Employer-Panel aktiv",
+      "noActivePlan": "Kein aktiver Plan"
+    },
+    "dashboard": {
+      "title": "Employer Dashboard",
+      "userActivityStatus": "Aktivitätsstatus der Nutzer",
+      "totalUsers": "Nutzer insgesamt",
+      "employeeEngagement": "Mitarbeiter-Engagement",
+      "challengeParticipation": "Challenge-Teilnahme",
+      "surveyResponseRate": "Umfrage-Rücklaufquote",
+      "currentPlan": "Aktueller Plan",
+      "free": "Kostenlos",
+      "usage": "Nutzung",
+      "planFeatures": {
+        "unlimitedUsers": "Unbegrenzte Nutzer",
+        "advancedAnalytics": "Erweiterte Analysen",
+        "customChallenges": "Individuelle Challenges"
+      },
+      "challengesProgress": "Challenge-Fortschritt",
+      "activitiesInChallenges": "Aktivitäten in Challenges",
+      "noActivityData": "Noch keine Aktivitätsdaten.",
+      "chart": {
+        "registeredActivities": "Erfasste Aktivitäten",
+        "targetActivities": "Zielaktivitäten",
+        "steps": "Schritte",
+        "water": "Wasser",
+        "sleep": "Schlaf",
+        "workout": "Training",
+        "active": "Aktiv",
+        "inactive": "Inaktiv"
+      }
+    },
+    "activateUsers": {
+      "title": "Nutzer aktivieren",
+      "searchPlaceholder": "Nach Name oder E-Mail suchen",
+      "name": "Name",
+      "email": "E-Mail",
+      "noUsersFound": "Keine Nutzer gefunden",
+      "send": "Senden",
+      "toastTitle": "Aktivierungserinnerungen gesendet",
+      "toastDescription": "{count} Nutzer erhalten eine Erinnerung."
+    },
+    "activities": {
+      "title": "Aktivitäten",
+      "description": "Erstellen Sie Unternehmensaktivitäten und laden Sie Mitarbeitende einzeln oder per Liste ein.",
+      "yourActivities": "Ihre Aktivitäten"
+    },
+    "challenges": {
+      "title": "Challenges",
+      "description": "Starten Sie Team-Challenges, um Aktivität, Schlaf, Trinkverhalten und mehr zu fördern.",
+      "sections": {
+        "active": {
+          "title": "Aktive Challenges",
+          "body": "Laufende Challenges mit Teilnahme und Fortschritt."
+        },
+        "create": {
+          "title": "Challenge erstellen",
+          "body": "Titel, Aktivitätstyp, Ziel, Dauer und Teams festlegen."
+        },
+        "library": {
+          "title": "Challenge-Bibliothek",
+          "body": "Vorgefertigte Challenges: 10.000 Schritte, Trinkziel, Achtsamkeitswoche."
+        },
+        "leaderboard": {
+          "title": "Bestenliste",
+          "body": "Ranking von Teams und Einzelpersonen pro Challenge."
+        }
+      }
+    },
+    "inviteUsers": {
+      "title": "Mitarbeitende einladen",
+      "companyLabel": "Unternehmen: {orgName}",
+      "invalidEntryTitle": "Ungültige Eingabe",
+      "invalidEntryDescription": "Bitte geben Sie einen gültigen Namen und eine gültige E-Mail-Adresse ein.",
+      "csvImportedTitle": "CSV importiert",
+      "csvImportedDescription": "{count} Empfänger hinzugefügt.",
+      "linkCopied": "Einladungslink kopiert",
+      "noCompanyTitle": "Kein Unternehmen gefunden",
+      "noCompanyDescription": "Ihr Unternehmensbereich wird noch erstellt. Bitte laden Sie die Seite neu und versuchen Sie es erneut.",
+      "createFailedTitle": "Einladungen konnten nicht erstellt werden",
+      "invitationsSentTitle": "Einladungen gesendet",
+      "invitationsSentDescription": "{count} Mitarbeitende haben eine Einladungs-E-Mail erhalten.",
+      "emailSentTitle": "Einladungs-E-Mail gesendet",
+      "emailSendFailedTitle": "E-Mail konnte nicht gesendet werden",
+      "addEmails": {
+        "title": "E-Mail-Adressen hinzufügen",
+        "name": "Name",
+        "namePlaceholder": "Vollständigen Namen des Nutzers eingeben",
+        "email": "E-Mail-Adresse",
+        "add": "Hinzufügen",
+        "helper": "Namen und E-Mail-Adressen einzeln eingeben und auf „Hinzufügen“ klicken oder Enter drücken",
+        "sendOne": "{count} Einladung senden",
+        "sendMany": "{count} Einladungen senden"
+      },
+      "bulkUpload": {
+        "title": "Massenupload per CSV",
+        "uploadCsv": "CSV hochladen",
+        "downloadTemplate": "Vorlage herunterladen",
+        "info": "Laden Sie eine CSV-Datei mit Namen und E-Mail-Adressen hoch. Die Datei sollte eine Kopfzeile mit „email,givenName“ enthalten oder pro Zeile eine E-Mail-Adresse und einen Namen. Laden Sie die Vorlage für das richtige Format herunter."
+      },
+      "invitations": {
+        "title": "Einladungen",
+        "empty": "Noch keine Einladungen.",
+        "resend": "Einladungs-E-Mail erneut senden",
+        "copyLink": "Einladungslink kopieren",
+        "cancel": "Einladung stornieren"
+      },
+      "howItWorks": {
+        "title": "So funktioniert es",
+        "bullet1": "Namen und E-Mail-Adressen manuell hinzufügen oder eine CSV-Datei für den Massenimport hochladen",
+        "bullet2": "Jede Einladung erhält einen persönlichen Beitrittslink, den Sie kopieren und teilen können",
+        "bullet3": "Eingeladene Mitarbeitende legen ihr Passwort fest und treten Ihrem Unternehmen automatisch bei",
+        "bullet4": "Akzeptierte Einladungen werden in der obigen Liste markiert"
+      }
+    },
+    "invitedList": {
+      "title": "Eingeladene",
+      "description": "Alle eingeladenen Mitarbeitenden, ihr Einladungsdatum und Aktivierungsstatus.",
+      "cardTitle": "Einladungen ({count}) · Aktiviert: {activated}",
+      "empty": "Noch keine Einladungen.",
+      "columns": {
+        "name": "Name",
+        "email": "E-Mail-Adresse",
+        "invitationDate": "Einladungsdatum",
+        "activated": "Aktiviert",
+        "activationDate": "Aktivierungsdatum",
+        "actions": "Aktionen"
+      },
+      "activated": "Aktiviert",
+      "notActivated": "Nicht aktiviert",
+      "remove": "Entfernen",
+      "removeConfirmTitle": "Einladung entfernen?",
+      "removeConfirmDescription": "Dies entfernt die Einladung für {email}. Der Einladungslink funktioniert danach nicht mehr.",
+      "cancel": "Abbrechen",
+      "removeFailedTitle": "Einladung konnte nicht entfernt werden",
+      "removedToast": "{email} entfernt"
+    },
+    "subscriptions": {
+      "title": "Abonnement & Rechnungsstellung",
+      "description": "Verwalten Sie Ihren Vointy Employer-Panel-Plan.",
+      "pastDueWarning": "Die letzte Zahlung ist fehlgeschlagen. Ihr Zugang bleibt bestehen, während wir es erneut versuchen — bitte aktualisieren Sie Ihre Zahlungsmethode im Kundenportal.",
+      "currentPlan": "Aktueller Plan: {status}",
+      "planLine": "Employer-Panel — 149 €/Monat",
+      "cancelsAtPeriodEnd": " (endet am Ende der Laufzeit)",
+      "trialEnds": "Testphase endet am ",
+      "accessEnds": "Zugang endet am ",
+      "renews": "Verlängert sich am ",
+      "portalButton": "Rechnungen, Zahlungsmethode & Kündigung",
+      "noPlanDescription": "Vointy ist für Ihre Mitarbeitenden und Teams kostenlos. Das Employer-Panel — Tracking, Analysen, Kampagnen und Events — erfordert ein Abonnement.",
+      "planCardTitle": "Employer-Panel — 149 €/Monat",
+      "onThisPlan": "Sie nutzen diesen Plan.",
+      "startTrial": "Kostenlose 30-Tage-Testphase starten",
+      "planDisclaimer": "Keine Einrichtungsgebühr · unbegrenzte Mitarbeiterzahl · jederzeit kündbar.",
+      "statuses": {
+        "noPlan": "Kein Plan",
+        "trial": "Kostenlose Testphase",
+        "active": "Aktiv",
+        "pastDue": "Zahlung fehlgeschlagen",
+        "canceled": "Gekündigt"
+      },
+      "checkoutSuccessTitle": "Vielen Dank!",
+      "checkoutSuccessDescription": "Ihr Employer-Panel-Plan wird aktiviert.",
+      "portalFailedTitle": "Kundenportal konnte nicht geöffnet werden",
+      "features": {
+        "unlimitedEmployees": "Unbegrenzte Mitarbeiterzahl",
+        "unlimitedTeams": "Unbegrenzte Teams",
+        "allActivities": "Alle Aktivitäten",
+        "managementDashboard": "Management-Dashboard",
+        "reporting": "Reporting",
+        "noPerUserFees": "Keine Kosten pro Nutzer"
+      }
+    },
+    "surveys": {
+      "title": "Umfrage erstellen",
+      "titlePlaceholder": "Titel",
+      "descriptionPlaceholder": "Beschreibung",
+      "startDate": "Startdatum *",
+      "endDate": "Enddatum *",
+      "save": "Speichern",
+      "savedToastTitle": "Umfrage gespeichert",
+      "savedToastDescription": "„{title}“ geplant von {start} bis {end}."
+    },
+    "teams": {
+      "title": "Teamverwaltung",
+      "createTeam": "Team erstellen",
+      "createDialogTitle": "Neues Team erstellen",
+      "teamName": "Teamname",
+      "description": "Beschreibung",
+      "create": "Erstellen",
+      "createdBy": "Erstellt von",
+      "createdByYou": "Sie",
+      "createdToastTitle": "Team erstellt",
+      "createdToastDescription": "„{name}“ wurde hinzugefügt.",
+      "tabs": {
+        "teams": "Teams",
+        "leaderboard": "Bestenliste"
+      },
+      "columns": {
+        "teamName": "Teamname",
+        "description": "Beschreibung",
+        "createdBy": "Erstellt von",
+        "members": "Mitglieder",
+        "actions": "Aktionen"
+      },
+      "noTeams": "Keine Teams gefunden. Erstellen Sie ein neues Team, um zu starten.",
+      "leaderboardColumns": {
+        "rank": "#",
+        "team": "Team",
+        "members": "Mitglieder",
+        "score": "Punkte"
+      },
+      "noLeaderboard": "Noch keine Bestenlisten-Daten."
+    },
+    "wellbeingIndex": {
+      "title": "Aktivitätsindex",
+      "description": "Verfolgen Sie, wie aktiv Ihr Unternehmen im Zeitverlauf ist.",
+      "sections": {
+        "calculation": {
+          "title": "So wird er berechnet",
+          "body": "Jede abgeschlossene Aktivität gibt einem Mitarbeitenden 1 Punkt. Punkte werden pro Monat summiert und über das Mitgliedschaftsjahr akkumuliert, das mit dem Eintritt des Mitarbeitenden beginnt."
+        },
+        "monthlyPoints": {
+          "title": "Monatliche Punkte",
+          "body": "Gesamte Aktivitätspunkte pro Monat über alle aktiven Teams und Mitarbeitenden."
+        },
+        "yearlyTotal": {
+          "title": "Jahresgesamtsumme",
+          "body": "Akkumulierte Punkte pro Mitarbeitendem seit dem Beitritt."
+        },
+        "teamBreakdown": {
+          "title": "Team-Aufschlüsselung",
+          "body": "Aktivitätspunkte pro Team mit Detailansicht."
+        }
+      }
+    },
+    "paymentBanner": {
+      "text": "Alle Zahlungen in der Vorschau erfolgen im Testmodus.",
+      "readMore": "Mehr erfahren"
+    }
+  },
+  "adminPanel": {
+    "title": "Admin-Panel",
+    "stats": {
+      "companies": "Unternehmen",
+      "companiesHint": "{paid} zahlend · {free} kostenlos",
+      "mrr": "MRR",
+      "mrrHint": "Wiederkehrender Monatsumsatz",
+      "registeredEmployees": "Registrierte Mitarbeitende",
+      "registeredEmployeesHint": "{count} aktivierte Einladungen",
+      "pageViews": "Seitenaufrufe (aktuell)",
+      "pageViewsHint": "Letzte 5.000 erfasste Aufrufe"
+    },
+    "tabs": {
+      "messages": "Nachrichten ({count})",
+      "customers": "Kunden ({count})",
+      "revenue": "Umsatz",
+      "employees": "Mitarbeitende ({count})",
+      "site": "Website-Analyse",
+      "activities": "Aktivitätsnutzung",
+      "newsletter": "Newsletter ({count})"
+    },
+    "messages": {
+      "contactTitle": "contact@vointy.life",
+      "contactDescription": "Nachrichten aus dem Kontaktformular der Website",
+      "licenseTitle": "Lizenzanfragen",
+      "licenseDescription": "Über das Lizenzformular gesendete Anfragen",
+      "otherTitle": "Sonstige Nachrichten",
+      "otherDescription": "Alles andere",
+      "empty": "Noch keine Nachrichten."
+    },
+    "customers": {
+      "paying": "Zahlende Kunden",
+      "free": "Kostenlose Unternehmen",
+      "columns": {
+        "company": "Unternehmen",
+        "plan": "Plan",
+        "monthly": "Monatlich",
+        "employees": "Mitarbeitende",
+        "joined": "Beigetreten",
+        "actions": "Aktionen"
+      },
+      "noCompanies": "Keine Unternehmen.",
+      "paid": "Kostenpflichtig",
+      "free_status": "Kostenlos",
+      "setFree": "Auf kostenlos setzen",
+      "markPaid": "Als kostenpflichtig markieren",
+      "updateFailedTitle": "Aktualisierung fehlgeschlagen",
+      "movedToFree": "Auf kostenlosen Plan umgestellt",
+      "markedPaying": "Als zahlender Kunde markiert"
+    },
+    "revenue": {
+      "chartTitle": "Abo-Umsatz (letzte 12 Monate)",
+      "chartDescription": "Wiederkehrender Monatsumsatz zahlender Unternehmen, je {amount} €/Monat",
+      "mrrLegend": "MRR (€)",
+      "customersChartTitle": "Zahlende Kunden im Zeitverlauf",
+      "customersLegend": "Kunden"
+    },
+    "employees": {
+      "tableTitle": "Registrierte Mitarbeitende",
+      "tableDescription": "Alle Nutzer, die ein Konto erstellt haben",
+      "columns": {
+        "name": "Name",
+        "company": "Unternehmen",
+        "language": "Sprache",
+        "role": "Rolle",
+        "registered": "Registriert"
+      },
+      "defaultRole": "Nutzer"
+    },
+    "site": {
+      "visitsTitle": "Besuche (letzte 30 Tage)",
+      "pageViewsLegend": "Seitenaufrufe",
+      "visitorsLegend": "Besucher",
+      "topPagesTitle": "Meistbesuchte Seiten",
+      "columns": {
+        "path": "Pfad",
+        "views": "Aufrufe"
+      },
+      "noVisits": "Noch keine erfassten Besuche."
+    },
+    "activities": {
+      "monthlyChartTitle": "Ausgeführte Aktivitäten pro Monat",
+      "activitiesLegend": "Aktivitäten",
+      "topActivitiesTitle": "Meistgenutzte Aktivitäten",
+      "columns": {
+        "activity": "Aktivität",
+        "timesPerformed": "Ausführungen"
+      },
+      "noActivities": "Noch keine ausgeführten Aktivitäten."
+    }
+  }
+}

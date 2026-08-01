@@ -5,66 +5,21 @@ import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import { useTranslation } from '@/lib/i18n';
+
+interface BlogPost {
+  title: string;
+  excerpt: string;
+  author: string;
+  date: string;
+  readTime: string;
+  category: string;
+}
 
 const Blog = () => {
-  const blogPosts = [
-    {
-      title: "5 Ways to Boost Employee Wellbeing in Remote Teams",
-      excerpt: "Discover practical strategies to maintain team connection and support employee mental health in distributed work environments.",
-      author: "Sarah Chen",
-      date: "June 1, 2025",
-      readTime: "5 min read",
-      category: "Remote Work",
-      image: "/placeholder.svg"
-    },
-    {
-      title: "The ROI of Employee Wellness Programs: A Data-Driven Analysis",
-      excerpt: "Learn how companies are measuring the return on investment of their wellness initiatives and the metrics that matter most.",
-      author: "Mike Johnson",
-      date: "May 28, 2025",
-      readTime: "8 min read",
-      category: "Analytics",
-      image: "/placeholder.svg"
-    },
-    {
-      title: "Building a Culture of Wellness: Best Practices from Top Companies",
-      excerpt: "Explore how industry leaders are creating sustainable wellness cultures that engage employees and drive business results.",
-      author: "Emma Rodriguez",
-      date: "May 25, 2025",
-      readTime: "6 min read",
-      category: "Company Culture",
-      image: "/placeholder.svg"
-    },
-    {
-      title: "Mental Health in the Workplace: Breaking Down Barriers",
-      excerpt: "Understanding the importance of mental health support and how to create an environment where employees feel safe to seek help.",
-      author: "Dr. Alex Thompson",
-      date: "May 22, 2025",
-      readTime: "7 min read",
-      category: "Mental Health",
-      image: "/placeholder.svg"
-    },
-    {
-      title: "The Science Behind Social Wellness Platforms",
-      excerpt: "Dive deep into the research that shows how social connections impact employee health, productivity, and job satisfaction.",
-      author: "Research Team",
-      date: "May 19, 2025",
-      readTime: "10 min read",
-      category: "Research",
-      image: "/placeholder.svg"
-    },
-    {
-      title: "Implementing Wellness Programs: A Step-by-Step Guide",
-      excerpt: "A comprehensive guide for HR leaders looking to launch successful employee wellness initiatives in their organizations.",
-      author: "Lisa Park",
-      date: "May 16, 2025",
-      readTime: "12 min read",
-      category: "Implementation",
-      image: "/placeholder.svg"
-    }
-  ];
-
-  const categories = ["All", "Remote Work", "Analytics", "Company Culture", "Mental Health", "Research", "Implementation"];
+  const { t } = useTranslation();
+  const blogPosts = (t('blogPage.posts') as BlogPost[]).map((post) => ({ ...post, image: '/placeholder.svg' }));
+  const categories = t('blogPage.categories') as string[];
 
   return (
     <div className="min-h-screen">
@@ -75,10 +30,10 @@ const Blog = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">
-              Vointy.life Blog
+              {t('blogPage.title')}
             </h1>
             <p className="text-xl opacity-90 mb-8">
-              Insights, research, and best practices for workplace wellness and employee engagement.
+              {t('blogPage.subtitle')}
             </p>
           </div>
         </div>
@@ -146,7 +101,7 @@ const Blog = () => {
             
             <div className="text-center mt-12">
               <Button variant="outline" className="btn-secondary">
-                Load More Posts
+                {t('blogPage.loadMore')}
               </Button>
             </div>
           </div>

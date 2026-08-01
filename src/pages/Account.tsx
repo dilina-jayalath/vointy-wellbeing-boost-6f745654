@@ -96,7 +96,7 @@ const Account = () => {
           <CardContent className="py-6 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             <div>
               <p className="font-medium">{t("auth.logout")}</p>
-              <p className="text-sm text-muted-foreground">End your session on this device.</p>
+              <p className="text-sm text-muted-foreground">{t("accountPage.endSession")}</p>
             </div>
             <Button variant="outline" onClick={handleLogout}>
               {t("auth.logout")}
@@ -109,7 +109,7 @@ const Account = () => {
             <CardContent className="py-6 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
               <div>
                 <p className="font-medium">{t("admin.title")}</p>
-                <p className="text-sm text-muted-foreground">View contact submissions and newsletter subscribers.</p>
+                <p className="text-sm text-muted-foreground">{t("accountPage.adminSubtitle")}</p>
               </div>
               <Button onClick={() => navigate("/admin")}>{t("nav.admin")}</Button>
             </CardContent>

@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 const ResetPassword = () => {
   const [mode, setMode] = useState<"request" | "update">("request");
@@ -15,6 +16,7 @@ const ResetPassword = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const { resetPassword, updatePassword } = useAuth();
+  const { t } = useTranslation();
   const { toast } = useToast();
   const navigate = useNavigate();
 
@@ -31,26 +33,26 @@ const ResetPassword = () => {
     const { error } = await resetPassword(email);
     setIsLoading(false);
     if (error) {
-      toast({ title: "Request failed", description: error.message, variant: "destructive" });
+      toast({ title: t("authPages.requestFailed"), description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: "Reset email sent", description: "Check your inbox for the reset link." });
+    toast({ title: t("authPages.resetEmailSent"), description: t("authPages.checkInboxForResetLink") });
   };
 
   const handleUpdate = async (e: React.FormEvent) => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      toast({ title: "Passwords do not match", variant: "destructive" });
+      toast({ title: t("auth.passwordMismatch"), variant: "destructive" });
       return;
     }
     setIsLoading(true);
     const { error } = await updatePassword(password);
     setIsLoading(false);
     if (error) {
-      toast({ title: "Update failed", description: error.message, variant: "destructive" });
+      toast({ title: t("authPages.updateFailed"), description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: "Password updated", description: "You can now log in with your new password." });
+    toast({ title: t("authPages.passwordUpdated"), description: t("authPages.canNowLogin") });
     navigate("/login");
   };
 
@@ -59,19 +61,19 @@ const ResetPassword = () => {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-display">
-            {mode === "update" ? "Set a new password" : "Reset your password"}
+            {mode === "update" ? t("authPages.setNewPassword") : t("authPages.resetYourPassword")}
           </CardTitle>
           <CardDescription>
             {mode === "update"
-              ? "Enter your new password below."
-              : "We will send you a link to reset your password."}
+              ? t("authPages.enterNewPasswordBelow")
+              : t("authPages.willSendResetLink")}
           </CardDescription>
         </CardHeader>
         <CardContent>
           {mode === "request" ? (
             <form onSubmit={handleRequest} className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email">{t("auth.email")}</Label>
                 <Input
                   id="email"
                   type="email"
@@ -82,13 +84,13 @@ const ResetPassword = () => {
                 />
               </div>
               <Button type="submit" className="w-full bg-brand-purple hover:bg-brand-purple-dark" disabled={isLoading}>
-                {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Send reset link"}
+                {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : t("auth.resetButton")}
               </Button>
             </form>
           ) : (
             <form onSubmit={handleUpdate} className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="password">New password</Label>
+                <Label htmlFor="password">{t("authPages.newPassword")}</Label>
                 <Input
                   id="password"
                   type="password"
@@ -99,7 +101,7 @@ const ResetPassword = () => {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="confirmPassword">Confirm new password</Label>
+                <Label htmlFor="confirmPassword">{t("authPages.confirmNewPassword")}</Label>
                 <Input
                   id="confirmPassword"
                   type="password"
@@ -110,7 +112,7 @@ const ResetPassword = () => {
                 />
               </div>
               <Button type="submit" className="w-full bg-brand-purple hover:bg-brand-purple-dark" disabled={isLoading}>
-                {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Update password"}
+                {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : t("auth.updatePasswordButton")}
               </Button>
             </form>
           )}
