@@ -1,9 +1,18 @@
-import { Outlet, Link, useLocation } from "react-router-dom";
-import { Bell, RefreshCw, User as UserIcon, Languages, Loader2 } from "lucide-react";
+import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
+import { Bell, RefreshCw, User as UserIcon, Languages, Loader2, CreditCard, LogOut } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { EmployerSidebar } from "@/components/employer/EmployerSidebar";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import BackButton from "@/components/BackButton";
+
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 import { useSubscription } from "@/hooks/useSubscription";
