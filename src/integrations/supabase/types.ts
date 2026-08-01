@@ -1189,6 +1189,15 @@ export type Database = {
         }
         Returns: number
       }
+      org_activity_forecast: {
+        Args: never
+        Returns: {
+          forecast: number
+          index_per_employee: number
+          is_forecast: boolean
+          month: string
+        }[]
+      }
       org_activity_index_monthly: {
         Args: never
         Returns: {
@@ -1268,6 +1277,20 @@ export type Database = {
           user_id: string
         }[]
       }
+      org_employee_risk: {
+        Args: never
+        Returns: {
+          change_pct: number
+          days_since_active: number
+          display_name: string
+          last_active: string
+          points_30d: number
+          points_prev_30d: number
+          risk_level: string
+          risk_score: number
+          user_id: string
+        }[]
+      }
       org_engagement_monthly: {
         Args: never
         Returns: {
@@ -1298,6 +1321,22 @@ export type Database = {
       org_has_active_subscription: {
         Args: { check_env?: string; org_uuid: string }
         Returns: boolean
+      }
+      org_predictive_overview: {
+        Args: never
+        Returns: {
+          forecast_next_month: number
+          high_risk_employees: number
+          high_risk_teams: number
+          index_prev_month: number
+          index_this_month: number
+          medium_risk_employees: number
+          projected_savings_next_12m: number
+          projected_sick_days_next_12m: number
+          total_employees: number
+          trend_direction: string
+          trend_slope: number
+        }[]
       }
       org_roi_monthly: {
         Args: never
@@ -1349,6 +1388,20 @@ export type Database = {
           likes: number
           members: number
           posts: number
+          team_id: string
+          team_name: string
+        }[]
+      }
+      org_team_risk: {
+        Args: never
+        Returns: {
+          active_members_30d: number
+          change_pct: number
+          members: number
+          participation_rate: number
+          points_30d: number
+          points_prev_30d: number
+          risk_level: string
           team_id: string
           team_name: string
         }[]
