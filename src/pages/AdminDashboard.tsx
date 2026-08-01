@@ -268,6 +268,8 @@ const AdminDashboard = () => {
                           <p className="text-xs text-muted-foreground mt-3">
                             {new Date(m.created_at).toLocaleString()}
                           </p>
+                          <MessageReply submission={m} />
+
                         </div>
                       ))
                     )}
