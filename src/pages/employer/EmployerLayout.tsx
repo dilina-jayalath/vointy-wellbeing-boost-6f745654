@@ -23,9 +23,11 @@ import { useTranslation } from "@/lib/i18n";
 
 
 const EmployerLayout = () => {
-  const { profile, isAdmin } = useAuth();
+  const { profile, isAdmin, user, signOut } = useAuth();
   const { orgName } = useEmployerOrg();
   const { pathname } = useLocation();
+  const navigate = useNavigate();
+
   const { t } = useTranslation();
   const showBack = pathname !== "/employer";
 
