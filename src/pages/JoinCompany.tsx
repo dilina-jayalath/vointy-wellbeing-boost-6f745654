@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
+import { useTranslation } from "@/lib/i18n";
 import { Loader2, MailCheck, PartyPopper } from "lucide-react";
 
 interface InviteInfo {
@@ -20,6 +21,7 @@ const JoinCompany = () => {
   const [params] = useSearchParams();
   const token = params.get("token") ?? "";
   const { user, loading: authLoading } = useAuth();
+  const { t } = useTranslation();
   const { toast } = useToast();
   const navigate = useNavigate();
 
@@ -50,17 +52,17 @@ const JoinCompany = () => {
     const { error } = await supabase.rpc("accept_invitation", { _token: token });
     setBusy(false);
     if (error) {
-      toast({ title: "Could not join", description: error.message, variant: "destructive" });
+      toast({ title: t("joinCompany.couldNotJoin"), description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: `Welcome to ${info?.organization_name}!` });
+    toast({ title: t("joinCompany.welcomeTo").replace("{{name}}", info?.organization_name ?? "") });
     navigate("/app");
   };
 
   const signUpAndJoin = async (e: React.FormEvent) => {
     e.preventDefault();
     if (password.length < 8) {
-      toast({ title: "Password too short", description: "Use at least 8 characters.", variant: "destructive" });
+      toast({ title: t("joinCompany.passwordTooShort"), description: t("joinCompany.useAtLeast8Chars"), variant: "destructive" });
       return;
     }
     setBusy(true);
@@ -74,7 +76,7 @@ const JoinCompany = () => {
     });
     setBusy(false);
     if (error) {
-      toast({ title: "Sign up failed", description: error.message, variant: "destructive" });
+      toast({ title: t("joinCompany.signUpFailed"), description: error.message, variant: "destructive" });
       return;
     }
     if (data.session) {
@@ -99,10 +101,10 @@ const JoinCompany = () => {
       <Card className="w-full max-w-md">
         {invalid ? (
           <CardContent className="p-10 text-center space-y-4">
-            <h1 className="text-2xl font-bold text-brand-dark">Invitation not valid</h1>
-            <p className="text-gray-600">This invitation link is invalid or has already been used.</p>
+            <h1 className="text-2xl font-bold text-brand-dark">{t("joinCompany.invitationNotValid")}</h1>
+            <p className="text-gray-600">{t("joinCompany.invitationInvalidText")}</p>
             <Button asChild variant="outline">
-              <Link to="/">Back to Vointy</Link>
+              <Link to="/">{t("joinCompany.backToVointy")}</Link>
             </Button>
           </CardContent>
         ) : sent ? (
@@ -110,10 +112,9 @@ const JoinCompany = () => {
             <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto">
               <MailCheck size={40} />
             </div>
-            <h1 className="text-2xl font-bold text-brand-dark">Check your email</h1>
+            <h1 className="text-2xl font-bold text-brand-dark">{t("joinCompany.checkYourEmail")}</h1>
             <p className="text-gray-600">
-              We sent a confirmation link to <strong>{info!.email}</strong>. Click it to join{" "}
-              {info!.organization_name}.
+              {t("joinCompany.confirmationSentTo").replace("{{email}}", info!.email).replace("{{organization}}", info!.organization_name)}
             </p>
           </CardContent>
         ) : (
@@ -123,27 +124,27 @@ const JoinCompany = () => {
                 <PartyPopper size={26} />
               </div>
               <CardTitle className="text-2xl font-display">
-                {info!.organization_name} invited you to Vointy
+                {t("joinCompany.invitedYou").replace("{{organization}}", info!.organization_name)}
               </CardTitle>
               <CardDescription>{info!.email}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               {user ? (
                 <Button onClick={accept} disabled={busy} className="w-full bg-brand-purple hover:bg-brand-purple-dark">
-                  {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : `Join ${info!.organization_name}`}
+                  {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : t("joinCompany.join").replace("{{organization}}", info!.organization_name)}
                 </Button>
               ) : (
                 <form onSubmit={signUpAndJoin} className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="join-name">Your name</Label>
+                    <Label htmlFor="join-name">{t("joinCompany.yourName")}</Label>
                     <Input id="join-name" value={name} onChange={(e) => setName(e.target.value)} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="join-email">Email</Label>
+                    <Label htmlFor="join-email">{t("joinCompany.email")}</Label>
                     <Input id="join-email" value={info!.email} readOnly disabled />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="join-password">Choose a password</Label>
+                    <Label htmlFor="join-password">{t("joinCompany.choosePassword")}</Label>
                     <Input
                       id="join-password"
                       type="password"
@@ -153,14 +154,14 @@ const JoinCompany = () => {
                     />
                   </div>
                   <Button type="submit" disabled={busy} className="w-full bg-brand-purple hover:bg-brand-purple-dark">
-                    {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : "Create account & join"}
+                    {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : t("joinCompany.createAccountAndJoin")}
                   </Button>
                   <p className="text-center text-sm">
-                    Already have an account?{" "}
+                    {t("joinCompany.alreadyHaveAccount")}{" "}
                     <Link to="/login" className="text-brand-purple hover:underline font-medium">
-                      Log in
+                      {t("joinCompany.logIn")}
                     </Link>{" "}
-                    and open this link again.
+                    {t("joinCompany.andOpenLinkAgain")}
                   </p>
                 </form>
               )}

@@ -9,17 +9,12 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
+import { useTranslation } from "@/lib/i18n";
 
 import { CheckCircle2, Loader2, MailCheck } from "lucide-react";
 
-const perks = [
-  "Unlimited employees",
-  "Unlimited teams",
-  "All activities",
-  "No per-user fees",
-];
-
 const CompanySignup = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [done, setDone] = useState(false);
@@ -31,6 +26,13 @@ const CompanySignup = () => {
     confirmPassword: "",
   });
 
+  const perks = [
+    t("companySignup.perkUnlimitedEmployees"),
+    t("companySignup.perkUnlimitedTeams"),
+    t("companySignup.perkAllActivities"),
+    t("companySignup.perkNoPerUserFees"),
+  ];
+
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setForm((f) => ({ ...f, [name]: value }));
@@ -39,11 +41,11 @@ const CompanySignup = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (form.password.length < 8) {
-      toast({ title: "Password too short", description: "Use at least 8 characters.", variant: "destructive" });
+      toast({ title: t("companySignup.passwordTooShort"), description: t("companySignup.useAtLeast8Chars"), variant: "destructive" });
       return;
     }
     if (form.password !== form.confirmPassword) {
-      toast({ title: "Passwords do not match", variant: "destructive" });
+      toast({ title: t("auth.passwordMismatch"), variant: "destructive" });
       return;
     }
     setIsLoading(true);
@@ -61,7 +63,7 @@ const CompanySignup = () => {
     });
     setIsLoading(false);
     if (error) {
-      toast({ title: "Registration failed", description: error.message, variant: "destructive" });
+      toast({ title: t("companySignup.registrationFailed"), description: error.message, variant: "destructive" });
       return;
     }
     setDone(true);
@@ -75,14 +77,13 @@ const CompanySignup = () => {
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
             <div>
               <img src={vointyMark.url} alt="Vointy logo" className="h-14 w-auto mb-2" />
-              <p className="text-sm text-brand-purple font-medium tracking-wide mb-4">Build healthier habits, together.</p>
+              <p className="text-sm text-brand-purple font-medium tracking-wide mb-4">{t("authPages.slogan")}</p>
               <h1 className="text-4xl md:text-5xl font-bold font-display text-brand-dark mb-4 leading-tight">
-                Join Vointy <span className="gradient-text">free</span> as a company
+                {t("companySignup.headingPre")} <span className="gradient-text">{t("companySignup.headingFree")}</span> {t("companySignup.headingPost")}
               </h1>
 
               <p className="text-lg text-gray-600 mb-6">
-                Register your company, get your credentials by email, and invite your employees from your own
-                company panel. Unlimited employees, unlimited teams — no cost.
+                {t("companySignup.description")}
               </p>
               <ul className="space-y-3">
                 {perks.map((p) => (
@@ -93,9 +94,9 @@ const CompanySignup = () => {
                 ))}
               </ul>
               <p className="text-sm text-gray-500 mt-8">
-                Need analytics, campaigns and events?{" "}
+                {t("companySignup.needAnalytics")}{" "}
                 <Link to="/subscription" className="text-brand-purple font-medium hover:underline">
-                  See the €149/month Employer Dashboard
+                  {t("companySignup.seeEmployerDashboard")}
                 </Link>
               </p>
             </div>
@@ -106,54 +107,53 @@ const CompanySignup = () => {
                   <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto">
                     <MailCheck size={40} />
                   </div>
-                  <h2 className="text-2xl font-bold text-brand-dark">Check your email</h2>
+                  <h2 className="text-2xl font-bold text-brand-dark">{t("companySignup.checkYourEmail")}</h2>
                   <p className="text-gray-600">
-                    We sent a confirmation link to <strong>{form.email}</strong>. Confirm it to activate your
-                    credentials, then sign in to your company panel and start inviting employees.
+                    {t("companySignup.confirmationSentTo").replace("{{email}}", form.email)}
                   </p>
                   <Button asChild className="bg-brand-purple hover:bg-brand-purple-dark">
-                    <Link to="/login">Go to login</Link>
+                    <Link to="/login">{t("companySignup.goToLogin")}</Link>
                   </Button>
                 </CardContent>
               </Card>
             ) : (
               <Card className="shadow-2xl border-none overflow-hidden">
                 <CardHeader className="bg-brand-purple text-white p-8">
-                  <CardTitle className="text-2xl">Create your company account</CardTitle>
+                  <CardTitle className="text-2xl">{t("companySignup.createYourCompanyAccount")}</CardTitle>
                   <CardDescription className="text-white/80">
-                    Free forever. No credit card required.
+                    {t("companySignup.freeForever")}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8 bg-white">
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="space-y-2">
-                      <Label htmlFor="companyName">Company name *</Label>
+                      <Label htmlFor="companyName">{t("companySignup.companyName")}</Label>
                       <Input id="companyName" name="companyName" value={form.companyName} onChange={onChange} required className="h-12" />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="contactName">Contact person *</Label>
+                      <Label htmlFor="contactName">{t("companySignup.contactPerson")}</Label>
                       <Input id="contactName" name="contactName" value={form.contactName} onChange={onChange} required className="h-12" />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Work email *</Label>
+                      <Label htmlFor="email">{t("companySignup.workEmail")}</Label>
                       <Input id="email" name="email" type="email" value={form.email} onChange={onChange} required className="h-12" />
                     </div>
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="password">Password *</Label>
+                        <Label htmlFor="password">{t("companySignup.password")}</Label>
                         <Input id="password" name="password" type="password" value={form.password} onChange={onChange} required className="h-12" />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="confirmPassword">Confirm password *</Label>
+                        <Label htmlFor="confirmPassword">{t("companySignup.confirmPassword")}</Label>
                         <Input id="confirmPassword" name="confirmPassword" type="password" value={form.confirmPassword} onChange={onChange} required className="h-12" />
                       </div>
                     </div>
                     <Button type="submit" className="w-full btn-primary h-12 text-lg font-bold" disabled={isLoading}>
-                      {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : "Create free company account"}
+                      {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : t("companySignup.createFreeAccount")}
                     </Button>
                     <p className="text-sm text-gray-500 text-center">
-                      Already registered?{" "}
-                      <Link to="/login" className="text-brand-purple hover:underline">Log in</Link>
+                      {t("companySignup.alreadyRegistered")}{" "}
+                      <Link to="/login" className="text-brand-purple hover:underline">{t("companySignup.logIn")}</Link>
                     </p>
                   </form>
                 </CardContent>

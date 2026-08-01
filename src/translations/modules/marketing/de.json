@@ -1,0 +1,205 @@
+{
+  "pricingPage": {
+    "headingPrefix": "Ein einfacher Preis. Unbegrenzt viele Mitarbeitende. Unbegrenzt viele Teams.",
+    "headingPrice": "€149/Monat.",
+    "subheading": "Unternehmen treten Vointy kostenlos bei und teilen Zugangsdaten mit Mitarbeitenden in unbegrenzt vielen Teams. Ein Upgrade lohnt sich erst, wenn Sie das Arbeitgeber-Dashboard mit Analysen, Kampagnen und Events nutzen möchten.",
+    "highlights": ["Kostenlose 30-Tage-Testphase", "€149/Monat", "Keine Einrichtungsgebühr", "Unbegrenzt viele Mitarbeitende", "Jederzeit kündbar"],
+    "freeTitle": "Kostenlos",
+    "freeForever": "dauerhaft",
+    "freeDescription": "Treten Sie als Unternehmen bei und teilen Sie Vointy-Zugangsdaten mit Ihren Mitarbeitenden in unbegrenzt vielen Teams.",
+    "freeFeatures": ["Unbegrenzt viele Mitarbeitende", "Unbegrenzt viele Teams", "Alle Mitarbeiteraktivitäten", "Teambasierter Zugriff"],
+    "getStartedFree": "Kostenlos starten",
+    "employerDashboardBadge": "Arbeitgeber-Dashboard",
+    "companyPlanTitle": "Unternehmensplan",
+    "perMonthPerCompany": "/Monat / Unternehmen",
+    "companyPlanDescription": "Alles aus Kostenlos, plus das Arbeitgeber-Dashboard mit Tracking, Analysen, Kampagnen, Events und Einladungen.",
+    "planFeatures": ["Unbegrenzt viele Mitarbeitende", "Unbegrenzt viele Teams", "Alle Aktivitäten", "Arbeitgeber-Dashboard", "Berichte & Analysen", "Keine Gebühren pro Nutzer"],
+    "startTrial": "Kostenlose 30-Tage-Testphase starten"
+  },
+  "aboutPage": {
+    "title": "Über Vointy.life",
+    "subtitle": "Unsere Mission ist es, das Wohlbefinden am Arbeitsplatz durch soziales Engagement und datenbasierte Erkenntnisse zu verändern.",
+    "missionTitle": "Unsere Mission",
+    "missionP1": "Bei Vointy.life glauben wir, dass gesunde, engagierte Mitarbeitende die Grundlage erfolgreicher Organisationen sind. Unsere soziale Wellness-Plattform hilft Unternehmen, Krankheitstage um bis zu 32 % zu reduzieren und gleichzeitig eine Kultur der Verbundenheit und des Wohlbefindens zu fördern.",
+    "missionP2": "Wir kombinieren modernste Technologie mit menschzentriertem Design, um Lösungen zu schaffen, die Wellness am Arbeitsplatz zugänglich, ansprechend und wirksam für Teams jeder Größe machen.",
+    "companiesServedLabel": "Betreute Unternehmen",
+    "sickLeaveReductionLabel": "Weniger Krankheitstage",
+    "valuesTitle": "Unsere Werte",
+    "value1Title": "Wohlbefinden zuerst",
+    "value1Description": "Wir stellen das Wohlbefinden der Mitarbeitenden in den Mittelpunkt all unseres Handelns, denn gesunde Teams schaffen erfolgreiche Unternehmen.",
+    "value2Title": "Soziale Verbindung",
+    "value2Description": "Wir fördern sinnvolle Verbindungen zwischen Kolleginnen und Kollegen und schaffen unterstützende Gemeinschaften innerhalb von Organisationen.",
+    "value3Title": "Datenbasierte Ergebnisse",
+    "value3Description": "Wir nutzen Analysen und Erkenntnisse, um Wirkung zu messen und die Effektivität unserer Plattform kontinuierlich zu verbessern."
+  },
+  "careersPage": {
+    "title": "Werde Teil unserer Mission",
+    "subtitle": "Hilf uns, das Wohlbefinden am Arbeitsplatz zu verändern und die Zukunft der Mitarbeiterbindung zu gestalten.",
+    "whyWorkTitle": "Warum bei Vointy.life arbeiten?",
+    "benefit1Title": "Remote-First-Kultur",
+    "benefit1Description": "Arbeite von überall mit flexiblen Arbeitszeiten und Fokus auf Work-Life-Balance.",
+    "benefit2Title": "Innovationsfokus",
+    "benefit2Description": "Arbeite an modernster Technologie, die im Leben der Menschen wirklich etwas bewirkt.",
+    "benefit3Title": "Entwicklungsmöglichkeiten",
+    "benefit3Description": "Kontinuierliches Lernen und Weiterentwicklung mit Mentoring- und Schulungsprogrammen.",
+    "openPositionsTitle": "Offene Stellen",
+    "positions": [
+      {
+        "title": "Senior Frontend Developer",
+        "department": "Engineering",
+        "location": "Remote",
+        "type": "Vollzeit",
+        "description": "Werde Teil unseres Engineering-Teams und baue die nächste Generation von Wellness-Lösungen für den Arbeitsplatz mit React, TypeScript und modernen Webtechnologien."
+      },
+      {
+        "title": "Product Manager",
+        "department": "Produkt",
+        "location": "San Francisco, CA",
+        "type": "Vollzeit",
+        "description": "Leite die Produktstrategie und -entwicklung für unsere soziale Wellness-Plattform in enger Zusammenarbeit mit Engineering- und Design-Teams."
+      },
+      {
+        "title": "Customer Success Manager",
+        "department": "Customer Success",
+        "location": "Remote",
+        "type": "Vollzeit",
+        "description": "Hilf unseren Geschäftskunden, den Wert von Vointy.life zu maximieren, und fördere die Nutzung in ihren Organisationen."
+      },
+      {
+        "title": "UI/UX Designer",
+        "department": "Design",
+        "location": "New York, NY",
+        "type": "Vollzeit",
+        "description": "Gestalte intuitive und ansprechende Nutzererlebnisse, die Wellness am Arbeitsplatz für alle Nutzer zugänglich und angenehm machen."
+      }
+    ],
+    "applyNow": "Jetzt bewerben",
+    "noRoleText": "Keine passende Stelle gefunden? Wir suchen immer nach talentierten Menschen.",
+    "sendResume": "Lebenslauf senden"
+  },
+  "blogPage": {
+    "title": "Vointy.life Blog",
+    "subtitle": "Einblicke, Forschung und Best Practices für Wellness am Arbeitsplatz und Mitarbeiterengagement.",
+    "categories": ["Alle", "Remote-Arbeit", "Analysen", "Unternehmenskultur", "Mentale Gesundheit", "Forschung", "Umsetzung"],
+    "posts": [
+      {
+        "title": "5 Wege, das Wohlbefinden von Mitarbeitenden in Remote-Teams zu steigern",
+        "excerpt": "Entdecken Sie praktische Strategien, um den Teamzusammenhalt zu erhalten und die mentale Gesundheit von Mitarbeitenden in verteilten Arbeitsumgebungen zu unterstützen.",
+        "author": "Sarah Chen",
+        "date": "1. Juni 2025",
+        "readTime": "5 Min. Lesezeit",
+        "category": "Remote-Arbeit"
+      },
+      {
+        "title": "Der ROI von Wellness-Programmen: Eine datenbasierte Analyse",
+        "excerpt": "Erfahren Sie, wie Unternehmen den Return on Investment ihrer Wellness-Initiativen messen und welche Kennzahlen am wichtigsten sind.",
+        "author": "Mike Johnson",
+        "date": "28. Mai 2025",
+        "readTime": "8 Min. Lesezeit",
+        "category": "Analysen"
+      },
+      {
+        "title": "Eine Wellness-Kultur aufbauen: Best Practices führender Unternehmen",
+        "excerpt": "Erfahren Sie, wie Branchenführer nachhaltige Wellness-Kulturen schaffen, die Mitarbeitende einbinden und Geschäftsergebnisse fördern.",
+        "author": "Emma Rodriguez",
+        "date": "25. Mai 2025",
+        "readTime": "6 Min. Lesezeit",
+        "category": "Unternehmenskultur"
+      },
+      {
+        "title": "Mentale Gesundheit am Arbeitsplatz: Barrieren abbauen",
+        "excerpt": "Verstehen Sie die Bedeutung von psychischer Unterstützung und wie man ein Umfeld schafft, in dem sich Mitarbeitende trauen, Hilfe zu suchen.",
+        "author": "Dr. Alex Thompson",
+        "date": "22. Mai 2025",
+        "readTime": "7 Min. Lesezeit",
+        "category": "Mentale Gesundheit"
+      },
+      {
+        "title": "Die Wissenschaft hinter sozialen Wellness-Plattformen",
+        "excerpt": "Ein tiefer Einblick in die Forschung, die zeigt, wie soziale Verbindungen Gesundheit, Produktivität und Arbeitszufriedenheit beeinflussen.",
+        "author": "Research Team",
+        "date": "19. Mai 2025",
+        "readTime": "10 Min. Lesezeit",
+        "category": "Forschung"
+      },
+      {
+        "title": "Wellness-Programme einführen: Eine Schritt-für-Schritt-Anleitung",
+        "excerpt": "Ein umfassender Leitfaden für HR-Verantwortliche, die erfolgreiche Wellness-Initiativen in ihren Organisationen starten möchten.",
+        "author": "Lisa Park",
+        "date": "16. Mai 2025",
+        "readTime": "12 Min. Lesezeit",
+        "category": "Umsetzung"
+      }
+    ],
+    "loadMore": "Weitere Beiträge laden"
+  },
+  "contactPage": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Nehmen Sie Kontakt mit unserem Team auf. Wir helfen Ihnen gerne, das Wohlbefinden an Ihrem Arbeitsplatz zu verbessern.",
+    "conversationTitle": "Lassen Sie uns ins Gespräch kommen",
+    "conversationDescription": "Bereit, Vointy in Aktion zu sehen? Wir beantworten Ihre Fragen und zeigen Ihnen, wie unsere Plattform Krankheitstage reduzieren und das Wohlbefinden Ihrer Mitarbeitenden steigern kann.",
+    "emailUsLabel": "Schreiben Sie uns",
+    "callUsLabel": "Rufen Sie uns an",
+    "visitUsLabel": "Besuchen Sie uns",
+    "addressLine1": "123 Wellness Street",
+    "addressLine2": "San Francisco, CA 94105",
+    "hoursLabel": "Geschäftszeiten",
+    "hoursValue": "Montag - Freitag: 9:00 - 18:00 Uhr PST",
+    "requestDemo": "Demo anfordern",
+    "whyChooseTitle": "Warum Vointy wählen?",
+    "reasons": [
+      { "title": "Bewährte Ergebnisse", "description": "Unternehmen, die Vointy nutzen, verzeichnen innerhalb der ersten 6 Monate eine durchschnittliche Reduktion der Krankheitstage um 30 %." },
+      { "title": "Einfache Einführung", "description": "Starten Sie innerhalb von 24 Stunden mit unserem einfachen Onboarding-Prozess und engagierten Support-Team." },
+      { "title": "Persönliche Unterstützung", "description": "Unsere Wellness-Experten arbeiten mit Ihnen zusammen, um ein maßgeschneidertes Programm für Ihre Unternehmenskultur zu entwickeln." },
+      { "title": "Datenbasierte Einblicke", "description": "Verfolgen Sie Fortschritte mit umfassenden Analysen und Berichten, um die Wirkung Ihres Wellness-Programms zu messen." }
+    ]
+  },
+  "contactFormPage": {
+    "successMessage": "Wir haben Ihre Nachricht erhalten und melden uns in Kürze bei Ihnen.",
+    "sendAnother": "Weitere Nachricht senden",
+    "sending": "Nachricht wird gesendet...",
+    "placeholderFirstName": "Max",
+    "placeholderLastName": "Mustermann",
+    "placeholderEmail": "max@beispiel.de",
+    "placeholderCompany": "Ihr Unternehmen",
+    "placeholderSubject": "Anfrage zu Vointy",
+    "placeholderMessage": "Wie können wir Ihnen helfen?"
+  },
+  "footerContactForm": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Senden Sie uns eine Nachricht und wir melden uns bei Ihnen.",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "companyOptional": "Unternehmen (optional)",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "sending": "Wird gesendet...",
+    "sendMessage": "Nachricht senden",
+    "successToast": "Vielen Dank! Ihre Nachricht wurde gesendet.",
+    "errorTitle": "Etwas ist schiefgelaufen"
+  },
+  "navExtra": {
+    "employerPanel": "Arbeitgeber-Panel",
+    "myVointy": "Mein Vointy",
+    "language": "Sprache"
+  },
+  "footerLinks": {
+    "aboutUs": "Über uns",
+    "careers": "Karriere",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen",
+    "refundPolicy": "Rückerstattungsrichtlinie",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "admin": "Admin"
+  },
+  "notFound": {
+    "message": "Hoppla! Seite nicht gefunden",
+    "returnHome": "Zurück zur Startseite"
+  },
+  "backButton": {
+    "label": "Zurück"
+  }
+}

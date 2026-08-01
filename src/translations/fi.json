@@ -84,7 +84,7 @@
     "description": "Jokainen osallistuja saa käyttöönsä sovelluksen, joka rohkaisee heitä osallistumaan fyysisiin aktiviteetteihin ja muihin vapaa-ajan haasteisiin omilla ehdoillaan. He voivat kutsua ystäviä mukaan, kerätä pisteitä ja pysyä motivoituneina yhdessä. Aktiivisuustasoa voidaan seurata aktiviteettipisteiden avulla, mikä tekee edistymisen vertailusta ja muiden osallistumisen seuraamisesta helppoa. Aktiviteettien valikoima on laaja, kuntosalista kulttuuriin. Samalla yritysjohto saa näkyvyyttä siihen, miten työntekijöiden aktiivisuus ja kokonaisvaltainen hyvinvointi kehittyvät työn ulkopuolella."
   },
   "video": {
-    "title": "Rakenna terveellisempiä tapoja yhdessä.",
+    "title": "Build healthier habits, together.",
     "description": "Lisää myös omat aktiviteetit tiimien käyttöön"
   },
   "license": {
@@ -156,58 +156,58 @@
     "generic": "Jotain meni pieleen. Yritä uudelleen."
   },
   "pricing": {
-    "title": "Choose Your Wellness Plan",
-    "subtitle": "Invest in your team's wellbeing with our flexible subscription options. Select the plan that best fits your organization's needs.",
-    "mostPopular": "Most Popular",
-    "perMonth": "/month per user",
+    "title": "Valitse hyvinvointisuunnitelmasi",
+    "subtitle": "Panosta tiimisi hyvinvointiin joustavilla tilausvaihtoehdoillamme. Valitse organisaatiollesi parhaiten sopiva suunnitelma.",
+    "mostPopular": "Suosituin",
+    "perMonth": "/kk per käyttäjä",
     "basic": {
       "name": "Basic",
       "price": "€12",
-      "description": "For small teams looking to get started with wellness activities",
+      "description": "Pienille tiimeille, jotka haluavat aloittaa hyvinvointiaktiviteetit",
       "features": [
-        "Up to 15 team members",
-        "Basic wellness challenges",
-        "Monthly reports",
-        "Email support"
+        "Jopa 15 tiimin jäsentä",
+        "Perushyvinvointihaasteet",
+        "Kuukausiraportit",
+        "Sähköpostituki"
       ],
-      "cta": "Get Started"
+      "cta": "Aloita"
     },
     "pro": {
       "name": "Pro",
       "price": "€24",
-      "description": "For growing teams that need more features and engagement",
+      "description": "Kasvaville tiimeille, jotka tarvitsevat lisää ominaisuuksia ja sitoutumista",
       "features": [
-        "Up to 50 team members",
-        "Advanced wellness challenges",
-        "Weekly reports",
-        "Priority support",
-        "Custom wellness programs",
-        "Team analytics dashboard"
+        "Jopa 50 tiimin jäsentä",
+        "Edistyneet hyvinvointihaasteet",
+        "Viikoittaiset raportit",
+        "Ensisijainen tuki",
+        "Räätälöidyt hyvinvointiohjelmat",
+        "Tiimin analytiikkanäkymä"
       ],
-      "cta": "Start Free Trial"
+      "cta": "Aloita ilmainen kokeilu"
     },
     "enterprise": {
       "name": "Enterprise",
       "price": "€49",
-      "description": "For large organizations requiring custom solutions",
+      "description": "Suurille organisaatioille, jotka tarvitsevat räätälöityjä ratkaisuja",
       "features": [
-        "Unlimited team members",
-        "Custom wellness programs",
-        "Detailed analytics",
-        "Dedicated account manager",
-        "API access",
-        "SSO integration",
-        "White labeling"
+        "Rajattomasti tiimin jäseniä",
+        "Räätälöidyt hyvinvointiohjelmat",
+        "Yksityiskohtainen analytiikka",
+        "Oma asiakasvastaava",
+        "API-käyttöoikeus",
+        "SSO-integraatio",
+        "White labeling -ratkaisu"
       ],
-      "cta": "Contact Sales"
+      "cta": "Ota yhteyttä myyntiin"
     },
-    "formTitle": "Get Started with Vointy",
-    "formSubtitle": "Fill out the form and we will contact you immediately.",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email Address",
-    "companyName": "Company Name",
-    "teamSize": "Team Size",
+    "formTitle": "Aloita Vointyn kanssa",
+    "formSubtitle": "Täytä lomake ja otamme sinuun yhteyttä välittömästi.",
+    "firstName": "Etunimi",
+    "lastName": "Sukunimi",
+    "email": "Sähköpostiosoite",
+    "companyName": "Yrityksen nimi",
+    "teamSize": "Tiimin koko",
     "teamSizeOptions": {
       "1-10": "1-10",
       "11-50": "11-50",
@@ -215,9 +215,9 @@
       "201-500": "201-500",
       "501+": "501+"
     },
-    "message": "Message (optional)",
-    "submit": "Request Subscription",
-    "successTitle": "Request received!",
-    "successMessage": "We'll contact you shortly about your {plan} subscription."
+    "message": "Viesti (valinnainen)",
+    "submit": "Pyydä tilausta",
+    "successTitle": "Pyyntö vastaanotettu!",
+    "successMessage": "Otamme sinuun pian yhteyttä {plan}-tilauksestasi."
   }
 }

@@ -1,18 +1,31 @@
 import Placeholder from "./Placeholder";
+import { useTranslation } from "@/lib/i18n";
 
-const ActivityIndex = () => (
-  <Placeholder
-    title="Activity Index"
-    description="Track how active your organisation is over time."
-    sections={[
-      {
-        title: "How it is calculated",
-        body: "Every completed activity gives an employee 1 point. Points are summed per month and accumulated over the membership year that starts when the employee joins.",
-      },
-      { title: "Monthly points", body: "Total activity points per month across all active teams and employees." },
-      { title: "Yearly total", body: "Accumulated points per employee since they joined." },
-      { title: "Team Breakdown", body: "Per-team activity points with drill-down." },
-    ]}
-  />
-);
+const ActivityIndex = () => {
+  const { t } = useTranslation();
+  return (
+    <Placeholder
+      title={t("employerPanel.wellbeingIndex.title") as string}
+      description={t("employerPanel.wellbeingIndex.description") as string}
+      sections={[
+        {
+          title: t("employerPanel.wellbeingIndex.sections.calculation.title") as string,
+          body: t("employerPanel.wellbeingIndex.sections.calculation.body") as string,
+        },
+        {
+          title: t("employerPanel.wellbeingIndex.sections.monthlyPoints.title") as string,
+          body: t("employerPanel.wellbeingIndex.sections.monthlyPoints.body") as string,
+        },
+        {
+          title: t("employerPanel.wellbeingIndex.sections.yearlyTotal.title") as string,
+          body: t("employerPanel.wellbeingIndex.sections.yearlyTotal.body") as string,
+        },
+        {
+          title: t("employerPanel.wellbeingIndex.sections.teamBreakdown.title") as string,
+          body: t("employerPanel.wellbeingIndex.sections.teamBreakdown.body") as string,
+        },
+      ]}
+    />
+  );
+};
 export default ActivityIndex;

@@ -1,0 +1,205 @@
+{
+  "pricingPage": {
+    "headingPrefix": "Yksi yksinkertainen hinta. Rajattomasti työntekijöitä. Rajattomasti tiimejä.",
+    "headingPrice": "149 €/kk.",
+    "subheading": "Yritykset liittyvät Vointyyn ilmaiseksi ja jakavat tunnukset työntekijöilleen rajattomassa määrässä tiimejä. Päivitä vasta, kun haluat työnantajan hallintapaneelin analytiikalla, kampanjoilla ja tapahtumilla.",
+    "highlights": ["Ilmainen 30 päivän kokeilu", "149 €/kk", "Ei käyttöönottomaksua", "Rajattomasti työntekijöitä", "Peru milloin tahansa"],
+    "freeTitle": "Ilmainen",
+    "freeForever": "ikuisesti",
+    "freeDescription": "Liity yrityksenä ja jaa Vointy-tunnukset työntekijöillesi rajattomassa määrässä tiimejä.",
+    "freeFeatures": ["Rajattomasti työntekijöitä", "Rajattomasti tiimejä", "Kaikki työntekijöiden aktiviteetit", "Tiimipohjainen käyttöoikeus"],
+    "getStartedFree": "Aloita ilmaiseksi",
+    "employerDashboardBadge": "Työnantajan hallintapaneeli",
+    "companyPlanTitle": "Yrityspaketti",
+    "perMonthPerCompany": "/kk / yritys",
+    "companyPlanDescription": "Kaikki Ilmainen-paketin ominaisuudet sekä työnantajan hallintapaneeli seurannalla, analytiikalla, kampanjoilla, tapahtumilla ja kutsuilla.",
+    "planFeatures": ["Rajattomasti työntekijöitä", "Rajattomasti tiimejä", "Kaikki aktiviteetit", "Työnantajan hallintapaneeli", "Raportointi ja analytiikka", "Ei käyttäjäkohtaisia maksuja"],
+    "startTrial": "Aloita ilmainen 30 päivän kokeilu"
+  },
+  "aboutPage": {
+    "title": "Tietoa Vointy.lifesta",
+    "subtitle": "Missiomme on muuttaa työhyvinvointia sosiaalisen sitoutumisen ja dataan perustuvien oivallusten avulla.",
+    "missionTitle": "Missiomme",
+    "missionP1": "Vointy.lifessa uskomme, että terveet ja sitoutuneet työntekijät ovat menestyvien organisaatioiden perusta. Sosiaalinen hyvinvointialustamme auttaa yrityksiä vähentämään sairauspoissaoloja jopa 32 % samalla vahvistaen yhteisöllisyyden ja hyvinvoinnin kulttuuria.",
+    "missionP2": "Yhdistämme huippuluokan teknologian ihmiskeskeiseen suunnitteluun ja luomme ratkaisuja, jotka tekevät työhyvinvoinnista saavutettavaa, kiinnostavaa ja tehokasta kaikenkokoisille tiimeille.",
+    "companiesServedLabel": "Palveltua yritystä",
+    "sickLeaveReductionLabel": "Sairauspoissaolojen vähennys",
+    "valuesTitle": "Arvomme",
+    "value1Title": "Hyvinvointi etusijalla",
+    "value1Description": "Asetamme työntekijöiden hyvinvoinnin kaiken toimintamme keskiöön, sillä uskomme, että terveet tiimit rakentavat menestyviä yrityksiä.",
+    "value2Title": "Sosiaalinen yhteys",
+    "value2Description": "Vaalimme merkityksellisiä yhteyksiä työtovereiden välillä ja luomme tukevia yhteisöjä organisaatioiden sisällä.",
+    "value3Title": "Dataan perustuvat tulokset",
+    "value3Description": "Käytämme analytiikkaa ja oivalluksia vaikutuksen mittaamiseen ja alustamme tehokkuuden jatkuvaan parantamiseen."
+  },
+  "careersPage": {
+    "title": "Liity missioomme",
+    "subtitle": "Auta meitä muuttamaan työhyvinvointia ja rakentamaan työntekijöiden sitoutumisen tulevaisuutta.",
+    "whyWorkTitle": "Miksi työskennellä Vointy.lifessa?",
+    "benefit1Title": "Etätyö edellä -kulttuuri",
+    "benefit1Description": "Työskentele mistä tahansa joustavilla työajoilla ja työn ja vapaa-ajan tasapainoon keskittyen.",
+    "benefit2Title": "Innovaatiokeskeisyys",
+    "benefit2Description": "Työskentele huippuluokan teknologian parissa, joka tekee todellisen eron ihmisten elämässä.",
+    "benefit3Title": "Kasvumahdollisuudet",
+    "benefit3Description": "Jatkuvaa oppimista ja kehittymistä mentorointi- ja koulutusohjelmien avulla.",
+    "openPositionsTitle": "Avoimet työpaikat",
+    "positions": [
+      {
+        "title": "Senior Frontend Developer",
+        "department": "Tekniikka",
+        "location": "Etätyö",
+        "type": "Kokoaikainen",
+        "description": "Liity tekniikkatiimiimme rakentamaan seuraavan sukupolven työhyvinvointiratkaisuja Reactilla, TypeScriptillä ja modernilla web-teknologialla."
+      },
+      {
+        "title": "Tuotepäällikkö",
+        "department": "Tuote",
+        "location": "San Francisco, CA",
+        "type": "Kokoaikainen",
+        "description": "Johda tuotestrategiaa ja -kehitystä sosiaaliselle hyvinvointialustallemme yhteistyössä tekniikka- ja suunnittelutiimien kanssa."
+      },
+      {
+        "title": "Customer Success Manager",
+        "department": "Customer Success",
+        "location": "Etätyö",
+        "type": "Kokoaikainen",
+        "description": "Auta yritysasiakkaitamme maksimoimaan Vointy.lifen arvo ja edistä sen käyttöönottoa heidän organisaatioissaan."
+      },
+      {
+        "title": "UI/UX-suunnittelija",
+        "department": "Suunnittelu",
+        "location": "New York, NY",
+        "type": "Kokoaikainen",
+        "description": "Suunnittele intuitiivisia ja kiinnostavia käyttökokemuksia, jotka tekevät työhyvinvoinnista saavutettavaa ja miellyttävää kaikille käyttäjille."
+      }
+    ],
+    "applyNow": "Hae nyt",
+    "noRoleText": "Etkö löytänyt sopivaa roolia? Etsimme aina lahjakkaita ihmisiä.",
+    "sendResume": "Lähetä meille ansioluettelosi"
+  },
+  "blogPage": {
+    "title": "Vointy.life-blogi",
+    "subtitle": "Oivalluksia, tutkimusta ja parhaita käytäntöjä työhyvinvointiin ja työntekijöiden sitoutumiseen.",
+    "categories": ["Kaikki", "Etätyö", "Analytiikka", "Yrityskulttuuri", "Mielenterveys", "Tutkimus", "Käyttöönotto"],
+    "posts": [
+      {
+        "title": "5 tapaa parantaa työntekijöiden hyvinvointia etätiimeissä",
+        "excerpt": "Löydä käytännön strategioita tiimin yhteenkuuluvuuden ylläpitämiseen ja työntekijöiden mielenterveyden tukemiseen hajautetuissa työympäristöissä.",
+        "author": "Sarah Chen",
+        "date": "1. kesäkuuta 2025",
+        "readTime": "5 min lukuaika",
+        "category": "Etätyö"
+      },
+      {
+        "title": "Työhyvinvointiohjelmien ROI: dataan perustuva analyysi",
+        "excerpt": "Opi, miten yritykset mittaavat hyvinvointi-investointiensa tuottoa ja mitkä mittarit ovat tärkeimpiä.",
+        "author": "Mike Johnson",
+        "date": "28. toukokuuta 2025",
+        "readTime": "8 min lukuaika",
+        "category": "Analytiikka"
+      },
+      {
+        "title": "Hyvinvointikulttuurin rakentaminen: huippuyritysten parhaat käytännöt",
+        "excerpt": "Tutustu siihen, miten alan edelläkävijät luovat kestäviä hyvinvointikulttuureja, jotka sitouttavat työntekijöitä ja tuottavat liiketoimintatuloksia.",
+        "author": "Emma Rodriguez",
+        "date": "25. toukokuuta 2025",
+        "readTime": "6 min lukuaika",
+        "category": "Yrityskulttuuri"
+      },
+      {
+        "title": "Mielenterveys työpaikalla: esteiden purkaminen",
+        "excerpt": "Ymmärrä mielenterveyden tuen merkitys ja miten luoda ympäristö, jossa työntekijät uskaltavat pyytää apua.",
+        "author": "Tri Alex Thompson",
+        "date": "22. toukokuuta 2025",
+        "readTime": "7 min lukuaika",
+        "category": "Mielenterveys"
+      },
+      {
+        "title": "Sosiaalisten hyvinvointialustojen tiede",
+        "excerpt": "Sukella tutkimukseen, joka osoittaa, miten sosiaaliset suhteet vaikuttavat työntekijöiden terveyteen, tuottavuuteen ja työtyytyväisyyteen.",
+        "author": "Tutkimustiimi",
+        "date": "19. toukokuuta 2025",
+        "readTime": "10 min lukuaika",
+        "category": "Tutkimus"
+      },
+      {
+        "title": "Hyvinvointiohjelmien käyttöönotto: vaiheittainen opas",
+        "excerpt": "Kattava opas HR-johtajille, jotka haluavat käynnistää onnistuneita hyvinvointialoitteita organisaatioissaan.",
+        "author": "Lisa Park",
+        "date": "16. toukokuuta 2025",
+        "readTime": "12 min lukuaika",
+        "category": "Käyttöönotto"
+      }
+    ],
+    "loadMore": "Lataa lisää artikkeleita"
+  },
+  "contactPage": {
+    "title": "Ota yhteyttä",
+    "subtitle": "Ota yhteyttä tiimiimme. Autamme mielellämme sinua muuttamaan työhyvinvointia yrityksessäsi.",
+    "conversationTitle": "Aloitetaan keskustelu",
+    "conversationDescription": "Valmiina näkemään Vointyn toiminnassa? Vastaamme kysymyksiisi ja näytämme, miten alustamme voi vähentää sairauspoissaoloja ja parantaa työntekijöiden hyvinvointia yrityksessäsi.",
+    "emailUsLabel": "Lähetä sähköpostia",
+    "callUsLabel": "Soita meille",
+    "visitUsLabel": "Käy luonamme",
+    "addressLine1": "123 Wellness Street",
+    "addressLine2": "San Francisco, CA 94105",
+    "hoursLabel": "Aukioloajat",
+    "hoursValue": "Maanantai - perjantai: 9.00 - 18.00 (PST)",
+    "requestDemo": "Pyydä esittely",
+    "whyChooseTitle": "Miksi valita Vointy?",
+    "reasons": [
+      { "title": "Todistetut tulokset", "description": "Vointyä käyttävät yritykset näkevät keskimäärin 30 % vähemmän sairauspoissaoloja ensimmäisten 6 kuukauden aikana." },
+      { "title": "Helppo käyttöönotto", "description": "Pääset alkuun vain 24 tunnissa yksinkertaisen käyttöönottoprosessimme ja omistautuneen tukitiimimme ansiosta." },
+      { "title": "Henkilökohtainen tuki", "description": "Hyvinvointiasiantuntijamme työskentelevät kanssasi luodakseen yrityskulttuuriisi sopivan räätälöidyn ohjelman." },
+      { "title": "Dataan perustuvat oivallukset", "description": "Seuraa edistymistä kattavan analytiikan ja raportoinnin avulla ja mittaa hyvinvointiohjelmasi vaikutusta." }
+    ]
+  },
+  "contactFormPage": {
+    "successMessage": "Olemme vastaanottaneet viestisi ja palaamme asiaan pian.",
+    "sendAnother": "Lähetä toinen viesti",
+    "sending": "Lähetetään viestiä...",
+    "placeholderFirstName": "Matti",
+    "placeholderLastName": "Meikäläinen",
+    "placeholderEmail": "matti@esimerkki.fi",
+    "placeholderCompany": "Yrityksesi",
+    "placeholderSubject": "Kysymys Vointysta",
+    "placeholderMessage": "Miten voimme auttaa sinua?"
+  },
+  "footerContactForm": {
+    "title": "Ota yhteyttä",
+    "description": "Lähetä meille viesti, niin vastaamme sinulle pian.",
+    "firstName": "Etunimi",
+    "lastName": "Sukunimi",
+    "email": "Sähköposti",
+    "companyOptional": "Yritys (valinnainen)",
+    "subject": "Aihe",
+    "message": "Viesti",
+    "sending": "Lähetetään...",
+    "sendMessage": "Lähetä viesti",
+    "successToast": "Kiitos! Viestisi on lähetetty.",
+    "errorTitle": "Jokin meni pieleen"
+  },
+  "navExtra": {
+    "employerPanel": "Työnantajapaneeli",
+    "myVointy": "Oma Vointy",
+    "language": "Kieli"
+  },
+  "footerLinks": {
+    "aboutUs": "Tietoa meistä",
+    "careers": "Ura",
+    "blog": "Blogi",
+    "contact": "Yhteystiedot",
+    "privacyPolicy": "Tietosuojakäytäntö",
+    "termsOfService": "Käyttöehdot",
+    "refundPolicy": "Palautuskäytäntö",
+    "cookiePolicy": "Evästekäytäntö",
+    "admin": "Ylläpito"
+  },
+  "notFound": {
+    "message": "Hups! Sivua ei löytynyt",
+    "returnHome": "Palaa etusivulle"
+  },
+  "backButton": {
+    "label": "Takaisin"
+  }
+}

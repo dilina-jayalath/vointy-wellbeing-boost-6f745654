@@ -6,8 +6,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Mail, Send } from 'lucide-react';
+import { useTranslation } from '@/lib/i18n';
 
 const FooterContactForm = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
@@ -43,7 +45,7 @@ const FooterContactForm = () => {
       ]);
       if (error) throw error;
 
-      toast({ title: 'Thank you! Your message has been sent.' });
+      toast({ title: t('footerContactForm.successToast') });
       setForm({
         firstName: '',
         lastName: '',
@@ -55,7 +57,7 @@ const FooterContactForm = () => {
     } catch (error: any) {
       console.error('Contact form error:', error);
       toast({
-        title: 'Something went wrong',
+        title: t('footerContactForm.errorTitle'),
         description: error.message,
         variant: 'destructive',
       });
@@ -69,9 +71,9 @@ const FooterContactForm = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-brand-dark mb-3">Contact us</h2>
+            <h2 className="text-3xl font-bold text-brand-dark mb-3">{t('footerContactForm.title')}</h2>
             <p className="text-muted-foreground">
-              Send us a message and we will get back to you.
+              {t('footerContactForm.description')}
             </p>
             <div className="mt-4 inline-flex items-center gap-2 text-brand-purple">
               <Mail size={18} />
@@ -82,39 +84,39 @@ const FooterContactForm = () => {
           <form onSubmit={handleSubmit} className="space-y-5 bg-card p-6 sm:p-8 rounded-xl border shadow-sm">
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="fc-firstName">First name</Label>
+                <Label htmlFor="fc-firstName">{t('footerContactForm.firstName')}</Label>
                 <Input id="fc-firstName" name="firstName" value={form.firstName} onChange={handleChange} required />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="fc-lastName">Last name</Label>
+                <Label htmlFor="fc-lastName">{t('footerContactForm.lastName')}</Label>
                 <Input id="fc-lastName" name="lastName" value={form.lastName} onChange={handleChange} required />
               </div>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="fc-email">Email</Label>
+                <Label htmlFor="fc-email">{t('footerContactForm.email')}</Label>
                 <Input id="fc-email" name="email" type="email" value={form.email} onChange={handleChange} required />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="fc-companyName">Company (optional)</Label>
+                <Label htmlFor="fc-companyName">{t('footerContactForm.companyOptional')}</Label>
                 <Input id="fc-companyName" name="companyName" value={form.companyName} onChange={handleChange} />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="fc-subject">Subject</Label>
+              <Label htmlFor="fc-subject">{t('footerContactForm.subject')}</Label>
               <Input id="fc-subject" name="subject" value={form.subject} onChange={handleChange} required />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="fc-message">Message</Label>
+              <Label htmlFor="fc-message">{t('footerContactForm.message')}</Label>
               <Textarea id="fc-message" name="message" value={form.message} onChange={handleChange} rows={5} required />
             </div>
 
             <Button type="submit" className="w-full btn-primary h-12" disabled={isSubmitting}>
               <Send size={18} className="mr-2" />
-              {isSubmitting ? 'Sending...' : 'Send message'}
+              {isSubmitting ? t('footerContactForm.sending') : t('footerContactForm.sendMessage')}
             </Button>
           </form>
         </div>

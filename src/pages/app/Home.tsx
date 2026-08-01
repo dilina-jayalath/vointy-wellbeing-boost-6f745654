@@ -6,6 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { HeartPulse, Trophy, Activity as ActivityIcon, ClipboardList, ChevronRight } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import { useTranslation } from "@/lib/i18n";
 import {
   useActivityLog,
   usePerformedExercises,
@@ -15,6 +16,7 @@ import {
 
 const AppHome = () => {
   const { user, profile } = useAuth();
+  const { t } = useTranslation();
   const { data: log } = useActivityLog();
   const { data: exercises } = usePerformedExercises();
   const { data: challenges } = useChallenges();
@@ -43,13 +45,13 @@ const AppHome = () => {
     (c: any) => !c.challenge_participants?.some((p: any) => p.user_id === user?.id)
   );
 
-  const greeting = profile?.display_name?.split(" ")[0] ?? "there";
+  const greeting = profile?.display_name?.split(" ")[0] ?? t("appPanel.home.defaultName");
 
   return (
     <div className="space-y-4">
       <div>
-        <p className="text-sm text-muted-foreground">Welcome back</p>
-        <h1 className="text-2xl font-bold">Hi, {greeting}</h1>
+        <p className="text-sm text-muted-foreground">{t("appPanel.home.welcomeBack")}</p>
+        <h1 className="text-2xl font-bold">{(t("appPanel.home.hiGreeting") as string).replace("{name}", greeting)}</h1>
       </div>
 
       <Card className="bg-gradient-to-br from-brand-purple to-brand-blue text-primary-foreground border-0">
@@ -57,13 +59,13 @@ const AppHome = () => {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm opacity-90 flex items-center gap-1">
-                <HeartPulse className="h-4 w-4" /> Activity Index
+                <HeartPulse className="h-4 w-4" /> {t("appPanel.home.activityIndex")}
               </p>
               <p className="text-4xl font-bold mt-1">{yearPoints}</p>
-              <p className="text-xs opacity-80">points this year</p>
+              <p className="text-xs opacity-80">{t("appPanel.home.pointsThisYear")}</p>
             </div>
             <Button asChild variant="secondary" size="sm">
-              <Link to="/app/wellbeing">View</Link>
+              <Link to="/app/wellbeing">{t("appPanel.home.view")}</Link>
             </Button>
           </div>
         </CardContent>
@@ -74,14 +76,14 @@ const AppHome = () => {
           <CardContent className="p-4">
             <ActivityIcon className="h-5 w-5 text-brand-purple mb-2" />
             <p className="text-2xl font-bold">{todayPoints}</p>
-            <p className="text-xs text-muted-foreground">Points today</p>
+            <p className="text-xs text-muted-foreground">{t("appPanel.home.pointsToday")}</p>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-4">
             <Trophy className="h-5 w-5 text-brand-blue mb-2" />
             <p className="text-2xl font-bold">{myChallenges.length}</p>
-            <p className="text-xs text-muted-foreground">Active challenges</p>
+            <p className="text-xs text-muted-foreground">{t("appPanel.home.activeChallenges")}</p>
           </CardContent>
         </Card>
       </div>
@@ -91,12 +93,12 @@ const AppHome = () => {
           <CardContent className="p-4 flex items-center justify-between gap-3">
             <div>
               <p className="font-medium flex items-center gap-2">
-                <ClipboardList className="h-4 w-4 text-brand-purple" /> Survey open
+                <ClipboardList className="h-4 w-4 text-brand-purple" /> {t("appPanel.home.surveyOpen")}
               </p>
-              <p className="text-sm text-muted-foreground">Answer a few quick questions.</p>
+              <p className="text-sm text-muted-foreground">{t("appPanel.home.surveyDesc")}</p>
             </div>
             <Button asChild size="sm">
-              <Link to="/app/wellbeing">Answer</Link>
+              <Link to="/app/wellbeing">{t("appPanel.home.answer")}</Link>
             </Button>
           </CardContent>
         </Card>
@@ -104,13 +106,13 @@ const AppHome = () => {
 
       <section className="space-y-2">
         <div className="flex items-center justify-between">
-          <h2 className="font-semibold">My challenges</h2>
+          <h2 className="font-semibold">{t("appPanel.home.myChallenges")}</h2>
           <Link to="/app/challenges" className="text-sm text-brand-purple flex items-center">
-            All <ChevronRight className="h-4 w-4" />
+            {t("appPanel.home.all")} <ChevronRight className="h-4 w-4" />
           </Link>
         </div>
         {myChallenges.length === 0 && (
-          <p className="text-sm text-muted-foreground">You haven't joined any challenge yet.</p>
+          <p className="text-sm text-muted-foreground">{t("appPanel.home.noChallenges")}</p>
         )}
         {myChallenges.slice(0, 3).map((c: any) => {
           const mine = c.challenge_participants.find((p: any) => p.user_id === user?.id);
@@ -134,7 +136,7 @@ const AppHome = () => {
 
       {openChallenges.length > 0 && (
         <section className="space-y-2">
-          <h2 className="font-semibold">Open invitations</h2>
+          <h2 className="font-semibold">{t("appPanel.home.openInvitations")}</h2>
           {openChallenges.slice(0, 3).map((c: any) => (
             <Card key={c.id}>
               <CardContent className="p-4 flex items-center justify-between gap-3">
@@ -143,7 +145,7 @@ const AppHome = () => {
                   <p className="text-xs text-muted-foreground line-clamp-1">{c.description}</p>
                 </div>
                 <Button asChild size="sm" variant="outline">
-                  <Link to="/app/challenges">Join</Link>
+                  <Link to="/app/challenges">{t("appPanel.home.join")}</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -153,19 +155,19 @@ const AppHome = () => {
 
       <Card>
         <CardHeader className="pb-2">
-          <CardTitle className="text-base">Recent activity</CardTitle>
+          <CardTitle className="text-base">{t("appPanel.home.recentActivity")}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">
           {(exercises ?? []).slice(0, 5).map((e: any) => (
             <div key={e.id} className="flex items-center justify-between text-sm">
-              <span>{e.activities?.title ?? "Activity"}</span>
+              <span>{e.activities?.title ?? t("appPanel.home.activityFallback")}</span>
               <span className="text-muted-foreground">
                 {Number(e.amount)} {e.unit ?? e.activities?.unit ?? ""}
               </span>
             </div>
           ))}
           {(exercises?.length ?? 0) === 0 && (
-            <p className="text-sm text-muted-foreground">No logged activities yet.</p>
+            <p className="text-sm text-muted-foreground">{t("appPanel.home.noLoggedActivities")}</p>
           )}
         </CardContent>
       </Card>

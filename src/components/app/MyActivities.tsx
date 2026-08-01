@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
+import { useTranslation } from "@/lib/i18n";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -20,14 +21,9 @@ import { Pencil, Plus, Trash2, UserPlus, Clock, PlayCircle } from "lucide-react"
 import { ActivityForm, type CustomActivity } from "./ActivityForm";
 import { ActivityInviteDialog } from "./ActivityInviteDialog";
 
-const visibilityLabel: Record<string, string> = {
-  private: "Only me",
-  organization: "My company",
-  public: "Everyone",
-};
-
 export const MyActivities = () => {
   const { user } = useAuth();
+  const { t } = useTranslation();
   const qc = useQueryClient();
   const [items, setItems] = useState<CustomActivity[]>([]);
   const [loading, setLoading] = useState(true);
@@ -36,6 +32,12 @@ export const MyActivities = () => {
   const [inviteFor, setInviteFor] = useState<CustomActivity | null>(null);
   const [deleting, setDeleting] = useState<CustomActivity | null>(null);
   const [preview, setPreview] = useState<CustomActivity | null>(null);
+
+  const visibilityLabel: Record<string, string> = {
+    private: t("appPanel.myActivities.visibility.private"),
+    organization: t("appPanel.myActivities.visibility.organization"),
+    public: t("appPanel.myActivities.visibility.public"),
+  };
 
   const load = useCallback(async () => {
     if (!user) return;
@@ -47,7 +49,7 @@ export const MyActivities = () => {
       .order("created_at", { ascending: false });
     setLoading(false);
     if (error) {
-      toast({ title: "Could not load your activities", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.myActivities.toast.couldNotLoad"), description: error.message, variant: "destructive" });
       return;
     }
     setItems((data as CustomActivity[]) ?? []);
@@ -67,10 +69,10 @@ export const MyActivities = () => {
     const { error } = await supabase.from("activities").delete().eq("id", deleting.id);
     setDeleting(null);
     if (error) {
-      toast({ title: "Could not delete", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.myActivities.toast.couldNotDelete"), description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: "Activity deleted" });
+    toast({ title: t("appPanel.myActivities.toast.deleted") });
     afterSave();
   };
 
@@ -78,7 +80,7 @@ export const MyActivities = () => {
     <div className="space-y-3">
       <div className="flex items-center justify-between">
         <p className="text-sm text-muted-foreground">
-          Create your own activities and invite others to join them.
+          {t("appPanel.myActivities.description")}
         </p>
         <Button
           size="sm"
@@ -87,14 +89,14 @@ export const MyActivities = () => {
             setFormOpen(true);
           }}
         >
-          <Plus className="h-4 w-4 mr-1" /> New activity
+          <Plus className="h-4 w-4 mr-1" /> {t("appPanel.myActivities.newActivity")}
         </Button>
       </div>
 
-      {loading && <p className="text-sm text-muted-foreground">Loading…</p>}
+      {loading && <p className="text-sm text-muted-foreground">{t("appPanel.myActivities.loading")}</p>}
       {!loading && items.length === 0 && (
         <p className="text-sm text-muted-foreground">
-          You have not created any activities yet.
+          {t("appPanel.myActivities.none")}
         </p>
       )}
 
@@ -107,7 +109,7 @@ export const MyActivities = () => {
                   type="button"
                   onClick={() => setPreview(a)}
                   className="flex-shrink-0 rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
-                  aria-label={`Show larger image of ${a.title}`}
+                  aria-label={(t("appPanel.myActivities.imageAlt") as string).replace("{title}", a.title)}
                 >
                   <img
                     src={a.image_url}
@@ -126,12 +128,12 @@ export const MyActivities = () => {
                 <div className="mt-1 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
                   {a.duration_minutes ? (
                     <span className="inline-flex items-center gap-1">
-                      <Clock className="h-3.5 w-3.5" /> {a.duration_minutes} min
+                      <Clock className="h-3.5 w-3.5" /> {a.duration_minutes} {t("appPanel.myActivities.minutesSuffix")}
                     </span>
                   ) : null}
                   {a.link ? (
                     <span className="inline-flex items-center gap-1">
-                      <PlayCircle className="h-3.5 w-3.5" /> Video
+                      <PlayCircle className="h-3.5 w-3.5" /> {t("appPanel.myActivities.video")}
                     </span>
                   ) : null}
                   <span>{visibilityLabel[a.visibility] ?? a.visibility}</span>
@@ -140,7 +142,7 @@ export const MyActivities = () => {
             </div>
             <div className="flex flex-wrap gap-2">
               <Button size="sm" variant="outline" onClick={() => setInviteFor(a)}>
-                <UserPlus className="h-4 w-4 mr-1" /> Invite
+                <UserPlus className="h-4 w-4 mr-1" /> {t("appPanel.myActivities.invite")}
               </Button>
               <Button
                 size="sm"
@@ -150,10 +152,10 @@ export const MyActivities = () => {
                   setFormOpen(true);
                 }}
               >
-                <Pencil className="h-4 w-4 mr-1" /> Edit
+                <Pencil className="h-4 w-4 mr-1" /> {t("appPanel.myActivities.edit")}
               </Button>
               <Button size="sm" variant="ghost" onClick={() => setDeleting(a)}>
-                <Trash2 className="h-4 w-4 mr-1" /> Delete
+                <Trash2 className="h-4 w-4 mr-1" /> {t("appPanel.myActivities.delete")}
               </Button>
             </div>
           </CardContent>
@@ -194,14 +196,14 @@ export const MyActivities = () => {
       <AlertDialog open={!!deleting} onOpenChange={(o) => !o && setDeleting(null)}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Delete this activity?</AlertDialogTitle>
+            <AlertDialogTitle>{t("appPanel.myActivities.deleteConfirmTitle")}</AlertDialogTitle>
             <AlertDialogDescription>
-              “{deleting?.title}” and its invitations will be removed permanently.
+              {(t("appPanel.myActivities.deleteConfirmDesc") as string).replace("{title}", deleting?.title ?? "")}
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction onClick={confirmDelete}>Delete</AlertDialogAction>
+            <AlertDialogCancel>{t("appPanel.myActivities.cancel")}</AlertDialogCancel>
+            <AlertDialogAction onClick={confirmDelete}>{t("appPanel.myActivities.deleteAction")}</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>

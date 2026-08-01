@@ -3,6 +3,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useCommunityFeed } from "@/hooks/useAppData";
+import { useTranslation } from "@/lib/i18n";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,6 +13,7 @@ import { Heart, MessageCircle, Send } from "lucide-react";
 
 const AppCommunity = () => {
   const { user, profile } = useAuth();
+  const { t } = useTranslation();
   const qc = useQueryClient();
   const { data: posts, isLoading } = useCommunityFeed();
   const [content, setContent] = useState("");
@@ -28,7 +30,7 @@ const AppCommunity = () => {
       content: content.trim(),
     });
     if (error) {
-      toast({ title: "Could not post", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.community.toast.couldNotPost"), description: error.message, variant: "destructive" });
       return;
     }
     setContent("");
@@ -52,7 +54,7 @@ const AppCommunity = () => {
       .from("post_comments")
       .insert({ post_id: postId, user_id: user.id, content: commentText.trim() });
     if (error) {
-      toast({ title: "Could not comment", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.community.toast.couldNotComment"), description: error.message, variant: "destructive" });
       return;
     }
     setCommentText("");
@@ -61,25 +63,25 @@ const AppCommunity = () => {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-2xl font-bold">Community</h1>
+      <h1 className="text-2xl font-bold">{t("appPanel.community.title")}</h1>
 
       <Card>
         <CardContent className="p-4 space-y-2">
           <Textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            placeholder="Share what you did today…"
+            placeholder={t("appPanel.community.placeholder")}
             rows={3}
           />
           <Button size="sm" className="w-full" onClick={createPost} disabled={!content.trim()}>
-            Post
+            {t("appPanel.community.post")}
           </Button>
         </CardContent>
       </Card>
 
-      {isLoading && <p className="text-sm text-muted-foreground">Loading…</p>}
+      {isLoading && <p className="text-sm text-muted-foreground">{t("appPanel.community.loading")}</p>}
       {!isLoading && (posts?.length ?? 0) === 0 && (
-        <p className="text-sm text-muted-foreground">No posts yet. Be the first to share.</p>
+        <p className="text-sm text-muted-foreground">{t("appPanel.community.noPosts")}</p>
       )}
 
       {(posts ?? []).map((p: any) => {
@@ -125,7 +127,7 @@ const AppCommunity = () => {
                     <Input
                       value={commentText}
                       onChange={(e) => setCommentText(e.target.value)}
-                      placeholder="Write a comment…"
+                      placeholder={t("appPanel.community.writeComment")}
                     />
                     <Button size="icon" onClick={() => addComment(p.id)}>
                       <Send className="h-4 w-4" />

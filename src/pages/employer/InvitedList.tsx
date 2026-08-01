@@ -24,6 +24,7 @@ import { Loader2, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
+import { useTranslation } from "@/lib/i18n";
 
 
 interface Row {
@@ -43,6 +44,7 @@ const InvitedList = () => {
   const [rows, setRows] = useState<Row[]>([]);
   const [loading, setLoading] = useState(true);
   const [removingId, setRemovingId] = useState<string | null>(null);
+  const { t } = useTranslation();
 
   const handleRemove = async (row: Row) => {
     setRemovingId(row.id);
@@ -52,11 +54,11 @@ const InvitedList = () => {
       .eq("id", row.id);
     setRemovingId(null);
     if (error) {
-      toast.error("Could not remove invitation", { description: error.message });
+      toast.error(t("employerPanel.invitedList.removeFailedTitle") as string, { description: error.message });
       return;
     }
     setRows((prev) => prev.filter((r) => r.id !== row.id));
-    toast.success(`Removed ${row.email}`);
+    toast.success((t("employerPanel.invitedList.removedToast") as string).replace("{email}", row.email));
   };
 
 
@@ -84,16 +86,18 @@ const InvitedList = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold text-brand-purple">Invited List</h1>
+        <h1 className="text-3xl font-bold text-brand-purple">{t("employerPanel.invitedList.title")}</h1>
         <p className="text-muted-foreground mt-1">
-          All invited employees, their invitation date and activation status.
+          {t("employerPanel.invitedList.description")}
         </p>
       </div>
 
       <Card>
         <CardHeader>
           <CardTitle className="text-lg">
-            Invitations ({rows.length}) · Activated: {activated}
+            {(t("employerPanel.invitedList.cardTitle") as string)
+              .replace("{count}", String(rows.length))
+              .replace("{activated}", String(activated))}
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -102,17 +106,17 @@ const InvitedList = () => {
               <Loader2 className="h-5 w-5 animate-spin text-brand-purple" />
             </div>
           ) : rows.length === 0 ? (
-            <p className="text-sm text-muted-foreground">No invitations yet.</p>
+            <p className="text-sm text-muted-foreground">{t("employerPanel.invitedList.empty")}</p>
           ) : (
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead>Name</TableHead>
-                  <TableHead>Email address</TableHead>
-                  <TableHead>Invitation date</TableHead>
-                  <TableHead>Activated</TableHead>
-                  <TableHead>Activation date</TableHead>
-                  <TableHead className="text-right">Actions</TableHead>
+                  <TableHead>{t("employerPanel.invitedList.columns.name")}</TableHead>
+                  <TableHead>{t("employerPanel.invitedList.columns.email")}</TableHead>
+                  <TableHead>{t("employerPanel.invitedList.columns.invitationDate")}</TableHead>
+                  <TableHead>{t("employerPanel.invitedList.columns.activated")}</TableHead>
+                  <TableHead>{t("employerPanel.invitedList.columns.activationDate")}</TableHead>
+                  <TableHead className="text-right">{t("employerPanel.invitedList.columns.actions")}</TableHead>
 
                 </TableRow>
               </TableHeader>
@@ -130,7 +134,7 @@ const InvitedList = () => {
                             : "bg-amber-100 text-amber-700"
                         }`}
                       >
-                        {r.status === "accepted" ? "Activated" : "Not activated"}
+                        {r.status === "accepted" ? t("employerPanel.invitedList.activated") : t("employerPanel.invitedList.notActivated")}
                       </span>
                     </TableCell>
                     <TableCell>{fmt(r.accepted_at)}</TableCell>
@@ -148,23 +152,23 @@ const InvitedList = () => {
                             ) : (
                               <Trash2 className="h-4 w-4" />
                             )}
-                            Remove
+                            {t("employerPanel.invitedList.remove")}
                           </Button>
                         </AlertDialogTrigger>
                         <AlertDialogContent>
                           <AlertDialogHeader>
-                            <AlertDialogTitle>Remove invitation?</AlertDialogTitle>
+                            <AlertDialogTitle>{t("employerPanel.invitedList.removeConfirmTitle")}</AlertDialogTitle>
                             <AlertDialogDescription>
-                              This removes the invitation for {r.email}. The invitation link will stop working.
+                              {(t("employerPanel.invitedList.removeConfirmDescription") as string).replace("{email}", r.email)}
                             </AlertDialogDescription>
                           </AlertDialogHeader>
                           <AlertDialogFooter>
-                            <AlertDialogCancel>Cancel</AlertDialogCancel>
+                            <AlertDialogCancel>{t("employerPanel.invitedList.cancel")}</AlertDialogCancel>
                             <AlertDialogAction
                               onClick={() => handleRemove(r)}
                               className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
                             >
-                              Remove
+                              {t("employerPanel.invitedList.remove")}
                             </AlertDialogAction>
                           </AlertDialogFooter>
                         </AlertDialogContent>

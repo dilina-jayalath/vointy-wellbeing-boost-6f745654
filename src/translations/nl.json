@@ -13,10 +13,9 @@
     "slogan": "Build healthier habits, together."
   },
   "hero": {
-    "title": "Vointy is de collectieve motivator van jouw team.",
-    "subtitle": "Probeer Vointy vandaag gratis en ervaar hoe de activiteiten je werkdag kunnen transformeren. Daag andere teamleden uit en nodig ze uit om mee te doen!",
-    "ctaDemo": "Bekijk demo",
-    "ctaFree": "Probeer Vointy gratis"
+    "title": "Bouw een gezonder, productiever team.",
+    "subtitle": "Help je medewerkers actief, gemotiveerd en energiek te blijven met eenvoudige dagelijkse uitdagingen. Vointy maakt het voor elk team gemakkelijk om het welzijn op de werkvloer te verbeteren.",
+    "ctaFree": "Gratis starten"
   },
   "freeTeam": {
     "title": "Voor teams tot 10 personen",
@@ -85,7 +84,7 @@
     "description": "Elke deelnemer krijgt toegang tot een app die hen aanmoedigt om op hun eigen voorwaarden deel te nemen aan fysieke activiteiten en andere vrijetijdsgerelateerde uitdagingen. Ze kunnen vrienden uitnodigen om mee te doen, punten verdienen en samen gemotiveerd blijven. Activiteitsniveaus kunnen worden gevolgd via een activiteitsscore, waardoor het eenvoudig is om voortgang te vergelijken en te zien hoe anderen betrokken zijn. De variëteit aan activiteiten is groot, variërend van fitness tot cultuur. Tegelijkertijd krijgt de bedrijfsleiding inzicht in hoe de activiteit van medewerkers en het algemene welzijn zich buiten het werk ontwikkelen."
   },
   "video": {
-    "title": "Bouw gezondere gewoonten, samen.",
+    "title": "Build healthier habits, together.",
     "description": "Bekijk hoe teams Vointy gebruiken om gezondere gewoonten en sterkere verbindingen op te bouwen."
   },
   "license": {
@@ -157,58 +156,58 @@
     "generic": "Er is iets misgegaan. Probeer het opnieuw."
   },
   "pricing": {
-    "title": "Choose Your Wellness Plan",
-    "subtitle": "Invest in your team's wellbeing with our flexible subscription options. Select the plan that best fits your organization's needs.",
-    "mostPopular": "Most Popular",
-    "perMonth": "/month per user",
+    "title": "Kies je wellnessplan",
+    "subtitle": "Investeer in het welzijn van je team met onze flexibele abonnementsopties. Kies het plan dat het beste past bij de behoeften van jouw organisatie.",
+    "mostPopular": "Meest populair",
+    "perMonth": "/maand per gebruiker",
     "basic": {
       "name": "Basic",
       "price": "€12",
-      "description": "For small teams looking to get started with wellness activities",
+      "description": "Voor kleine teams die willen beginnen met welzijnsactiviteiten",
       "features": [
-        "Up to 15 team members",
-        "Basic wellness challenges",
-        "Monthly reports",
-        "Email support"
+        "Tot 15 teamleden",
+        "Basis welzijnsuitdagingen",
+        "Maandelijkse rapporten",
+        "E-mailondersteuning"
       ],
-      "cta": "Get Started"
+      "cta": "Aan de slag"
     },
     "pro": {
       "name": "Pro",
       "price": "€24",
-      "description": "For growing teams that need more features and engagement",
+      "description": "Voor groeiende teams die meer functies en betrokkenheid nodig hebben",
       "features": [
-        "Up to 50 team members",
-        "Advanced wellness challenges",
-        "Weekly reports",
-        "Priority support",
-        "Custom wellness programs",
-        "Team analytics dashboard"
+        "Tot 50 teamleden",
+        "Geavanceerde welzijnsuitdagingen",
+        "Wekelijkse rapporten",
+        "Prioritaire ondersteuning",
+        "Aangepaste welzijnsprogramma's",
+        "Team-analysedashboard"
       ],
-      "cta": "Start Free Trial"
+      "cta": "Start gratis proefperiode"
     },
     "enterprise": {
       "name": "Enterprise",
       "price": "€49",
-      "description": "For large organizations requiring custom solutions",
+      "description": "Voor grote organisaties die maatwerkoplossingen nodig hebben",
       "features": [
-        "Unlimited team members",
-        "Custom wellness programs",
-        "Detailed analytics",
-        "Dedicated account manager",
-        "API access",
-        "SSO integration",
+        "Onbeperkt aantal teamleden",
+        "Aangepaste welzijnsprogramma's",
+        "Gedetailleerde analyses",
+        "Toegewijde accountmanager",
+        "API-toegang",
+        "SSO-integratie",
         "White labeling"
       ],
-      "cta": "Contact Sales"
+      "cta": "Contact met sales"
     },
-    "formTitle": "Get Started with Vointy",
-    "formSubtitle": "Fill out the form and we will contact you immediately.",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email Address",
-    "companyName": "Company Name",
-    "teamSize": "Team Size",
+    "formTitle": "Aan de slag met Vointy",
+    "formSubtitle": "Vul het formulier in en we nemen direct contact met je op.",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "E-mailadres",
+    "companyName": "Bedrijfsnaam",
+    "teamSize": "Teamgrootte",
     "teamSizeOptions": {
       "1-10": "1-10",
       "11-50": "11-50",
@@ -216,9 +215,9 @@
       "201-500": "201-500",
       "501+": "501+"
     },
-    "message": "Message (optional)",
-    "submit": "Request Subscription",
-    "successTitle": "Request received!",
-    "successMessage": "We'll contact you shortly about your {plan} subscription."
+    "message": "Bericht (optioneel)",
+    "submit": "Abonnement aanvragen",
+    "successTitle": "Aanvraag ontvangen!",
+    "successMessage": "We nemen binnenkort contact met je op over je {plan}-abonnement."
   }
 }

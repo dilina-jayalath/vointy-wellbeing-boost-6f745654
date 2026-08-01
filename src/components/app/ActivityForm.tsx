@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Upload } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
+import { useTranslation } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -51,6 +52,7 @@ const empty = {
 
 export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) => {
   const { user } = useAuth();
+  const { t } = useTranslation();
   const [form, setForm] = useState(empty);
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
@@ -59,11 +61,11 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
   const uploadImage = async (file: File) => {
     if (!user) return;
     if (!file.type.startsWith("image/")) {
-      toast({ title: "Select an image file", variant: "destructive" });
+      toast({ title: t("appPanel.activityForm.toast.selectImage"), variant: "destructive" });
       return;
     }
     if (file.size > 5 * 1024 * 1024) {
-      toast({ title: "Image must be smaller than 5 MB", variant: "destructive" });
+      toast({ title: t("appPanel.activityForm.toast.imageTooLarge"), variant: "destructive" });
       return;
     }
     setUploading(true);
@@ -74,7 +76,7 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
       .upload(path, file, { contentType: file.type, upsert: false });
     if (error) {
       setUploading(false);
-      toast({ title: "Upload failed", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.activityForm.toast.uploadFailed"), description: error.message, variant: "destructive" });
       return;
     }
     const { data, error: signErr } = await supabase.storage
@@ -82,11 +84,11 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
       .createSignedUrl(path, 60 * 60 * 24 * 365 * 10);
     setUploading(false);
     if (signErr || !data?.signedUrl) {
-      toast({ title: "Could not get image link", description: signErr?.message, variant: "destructive" });
+      toast({ title: t("appPanel.activityForm.toast.signFailed"), description: signErr?.message, variant: "destructive" });
       return;
     }
     setForm((f) => ({ ...f, image_url: data.signedUrl }));
-    toast({ title: "Image uploaded" });
+    toast({ title: t("appPanel.activityForm.toast.imageUploaded") });
   };
 
 
@@ -113,12 +115,12 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
   const save = async () => {
     if (!user) return;
     if (!form.title.trim()) {
-      toast({ title: "Title is required", variant: "destructive" });
+      toast({ title: t("appPanel.activityForm.toast.titleRequired"), variant: "destructive" });
       return;
     }
     const duration = form.duration_minutes ? Number(form.duration_minutes) : null;
     if (duration !== null && (!Number.isFinite(duration) || duration <= 0)) {
-      toast({ title: "Enter a valid duration in minutes", variant: "destructive" });
+      toast({ title: t("appPanel.activityForm.toast.invalidDuration"), variant: "destructive" });
       return;
     }
     setSaving(true);
@@ -153,10 +155,10 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
 
     setSaving(false);
     if (error) {
-      toast({ title: "Could not save activity", description: error.message, variant: "destructive" });
+      toast({ title: t("appPanel.activityForm.toast.couldNotSave"), description: error.message, variant: "destructive" });
       return;
     }
-    toast({ title: activity ? "Activity updated" : "Activity created" });
+    toast({ title: activity ? t("appPanel.activityForm.toast.updated") : t("appPanel.activityForm.toast.created") });
     onOpenChange(false);
     onSaved();
   };
@@ -165,53 +167,53 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle>{activity ? "Edit activity" : "Create activity"}</DialogTitle>
+          <DialogTitle>{activity ? t("appPanel.activityForm.editTitle") : t("appPanel.activityForm.createTitle")}</DialogTitle>
           <DialogDescription>
-            Add your own activity with a description, duration and an image or YouTube video.
+            {t("appPanel.activityForm.description")}
           </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-3">
           <div>
-            <Label htmlFor="ca-title">Title</Label>
+            <Label htmlFor="ca-title">{t("appPanel.activityForm.titleLabel")}</Label>
             <Input
               id="ca-title"
               value={form.title}
               onChange={(e) => set("title", e.target.value)}
               maxLength={120}
-              placeholder="Morning mobility routine"
+              placeholder={t("appPanel.activityForm.titlePlaceholder")}
             />
           </div>
           <div>
-            <Label htmlFor="ca-desc">Description</Label>
+            <Label htmlFor="ca-desc">{t("appPanel.activityForm.descLabel")}</Label>
             <Textarea
               id="ca-desc"
               value={form.description}
               onChange={(e) => set("description", e.target.value)}
               maxLength={1000}
               rows={4}
-              placeholder="What is done, how and why?"
+              placeholder={t("appPanel.activityForm.descPlaceholder")}
             />
           </div>
           <div>
-            <Label htmlFor="ca-duration">Duration (minutes)</Label>
+            <Label htmlFor="ca-duration">{t("appPanel.activityForm.durationLabel")}</Label>
             <Input
               id="ca-duration"
               type="number"
               min={1}
               value={form.duration_minutes}
               onChange={(e) => set("duration_minutes", e.target.value)}
-              placeholder="30"
+              placeholder={t("appPanel.activityForm.durationPlaceholder")}
             />
           </div>
           <div>
-            <Label htmlFor="ca-image">Image</Label>
+            <Label htmlFor="ca-image">{t("appPanel.activityForm.imageLabel")}</Label>
             <div className="flex flex-col gap-2">
               <Input
                 id="ca-image"
                 value={form.image_url}
                 onChange={(e) => set("image_url", e.target.value)}
-                placeholder="https://…/photo.jpg"
+                placeholder={t("appPanel.activityForm.imageUrlPlaceholder")}
               />
               <div className="flex items-center gap-2">
                 <input
@@ -233,14 +235,14 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
                   onClick={() => fileRef.current?.click()}
                 >
                   <Upload className="h-4 w-4 mr-1" />
-                  {uploading ? "Uploading…" : "Upload image"}
+                  {uploading ? t("appPanel.activityForm.uploading") : t("appPanel.activityForm.uploadImage")}
                 </Button>
-                <span className="text-xs text-muted-foreground">or paste a URL above</span>
+                <span className="text-xs text-muted-foreground">{t("appPanel.activityForm.orPasteUrl")}</span>
               </div>
               {form.image_url && (
                 <img
                   src={form.image_url}
-                  alt="Activity preview"
+                  alt={t("appPanel.activityForm.imagePreviewAlt")}
                   loading="lazy"
                   className="h-24 w-24 rounded-md object-cover"
                 />
@@ -249,24 +251,24 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
           </div>
 
           <div>
-            <Label htmlFor="ca-link">YouTube video link</Label>
+            <Label htmlFor="ca-link">{t("appPanel.activityForm.linkLabel")}</Label>
             <Input
               id="ca-link"
               value={form.link}
               onChange={(e) => set("link", e.target.value)}
-              placeholder="https://www.youtube.com/watch?v=…"
+              placeholder={t("appPanel.activityForm.linkPlaceholder")}
             />
           </div>
           <div>
-            <Label>Visibility</Label>
+            <Label>{t("appPanel.activityForm.visibilityLabel")}</Label>
             <Select value={form.visibility} onValueChange={(v) => set("visibility", v)}>
               <SelectTrigger>
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="private">Only me</SelectItem>
-                <SelectItem value="organization">My company</SelectItem>
-                <SelectItem value="public">Everyone</SelectItem>
+                <SelectItem value="private">{t("appPanel.activityForm.visibility.private")}</SelectItem>
+                <SelectItem value="organization">{t("appPanel.activityForm.visibility.organization")}</SelectItem>
+                <SelectItem value="public">{t("appPanel.activityForm.visibility.public")}</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -274,10 +276,10 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
 
         <DialogFooter>
           <Button variant="outline" onClick={() => onOpenChange(false)}>
-            Cancel
+            {t("appPanel.activityForm.cancel")}
           </Button>
           <Button onClick={save} disabled={saving}>
-            {saving ? "Saving…" : activity ? "Save changes" : "Create activity"}
+            {saving ? t("appPanel.activityForm.saving") : activity ? t("appPanel.activityForm.saveChanges") : t("appPanel.activityForm.createActivity")}
           </Button>
         </DialogFooter>
       </DialogContent>

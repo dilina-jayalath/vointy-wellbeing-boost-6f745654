@@ -1,0 +1,205 @@
+{
+  "pricingPage": {
+    "headingPrefix": "Un prezzo semplice. Dipendenti illimitati. Team illimitati.",
+    "headingPrice": "€149/mese.",
+    "subheading": "Le aziende si iscrivono a Vointy gratuitamente e condividono le credenziali con i dipendenti in team illimitati. Effettua l'upgrade solo quando vuoi la dashboard del datore di lavoro con analisi, campagne ed eventi.",
+    "highlights": ["Prova gratuita di 30 giorni", "€149/mese", "Nessun costo di attivazione", "Dipendenti illimitati", "Annulla quando vuoi"],
+    "freeTitle": "Gratis",
+    "freeForever": "per sempre",
+    "freeDescription": "Iscriviti come azienda e condividi le credenziali Vointy con i tuoi dipendenti in team illimitati.",
+    "freeFeatures": ["Dipendenti illimitati", "Team illimitati", "Tutte le attività dei dipendenti", "Accesso basato sul team"],
+    "getStartedFree": "Inizia gratis",
+    "employerDashboardBadge": "Dashboard datore di lavoro",
+    "companyPlanTitle": "Piano Azienda",
+    "perMonthPerCompany": "/mese / azienda",
+    "companyPlanDescription": "Tutto ciò che è incluso nel piano Gratis, più la dashboard del datore di lavoro con monitoraggio, analisi, campagne, eventi e inviti.",
+    "planFeatures": ["Dipendenti illimitati", "Team illimitati", "Tutte le attività", "Dashboard datore di lavoro", "Report e analisi", "Nessun costo per utente"],
+    "startTrial": "Avvia la prova gratuita di 30 giorni"
+  },
+  "aboutPage": {
+    "title": "Chi è Vointy.life",
+    "subtitle": "La nostra missione è trasformare il benessere sul lavoro attraverso l'impegno sociale e i dati.",
+    "missionTitle": "La nostra missione",
+    "missionP1": "In Vointy.life crediamo che dipendenti sani e coinvolti siano il fondamento delle organizzazioni di successo. La nostra piattaforma di benessere sociale aiuta le aziende a ridurre le assenze per malattia fino al 32%, favorendo al contempo una cultura di connessione e benessere.",
+    "missionP2": "Combiniamo tecnologia all'avanguardia con un design incentrato sulle persone per creare soluzioni che rendono il benessere sul lavoro accessibile, coinvolgente ed efficace per team di ogni dimensione.",
+    "companiesServedLabel": "Aziende servite",
+    "sickLeaveReductionLabel": "Riduzione assenze per malattia",
+    "valuesTitle": "I nostri valori",
+    "value1Title": "Il benessere prima di tutto",
+    "value1Description": "Mettiamo il benessere dei dipendenti al centro di tutto ciò che facciamo, convinti che team sani creino aziende di successo.",
+    "value2Title": "Connessione sociale",
+    "value2Description": "Favoriamo connessioni significative tra colleghi, creando comunità di supporto all'interno delle organizzazioni.",
+    "value3Title": "Risultati basati sui dati",
+    "value3Description": "Utilizziamo analisi e insight per misurare l'impatto e migliorare continuamente l'efficacia della nostra piattaforma."
+  },
+  "careersPage": {
+    "title": "Unisciti alla nostra missione",
+    "subtitle": "Aiutaci a trasformare il benessere sul lavoro e a costruire il futuro del coinvolgimento dei dipendenti.",
+    "whyWorkTitle": "Perché lavorare in Vointy.life?",
+    "benefit1Title": "Cultura remote-first",
+    "benefit1Description": "Lavora da qualsiasi luogo con orari flessibili e attenzione all'equilibrio tra vita privata e lavoro.",
+    "benefit2Title": "Focus sull'innovazione",
+    "benefit2Description": "Lavora su tecnologie all'avanguardia che fanno davvero la differenza nella vita delle persone.",
+    "benefit3Title": "Opportunità di crescita",
+    "benefit3Description": "Apprendimento e sviluppo continui con programmi di mentoring e formazione.",
+    "openPositionsTitle": "Posizioni aperte",
+    "positions": [
+      {
+        "title": "Senior Frontend Developer",
+        "department": "Ingegneria",
+        "location": "Remoto",
+        "type": "Tempo pieno",
+        "description": "Unisciti al nostro team di ingegneria per costruire la prossima generazione di soluzioni per il benessere sul lavoro con React, TypeScript e tecnologie web moderne."
+      },
+      {
+        "title": "Product Manager",
+        "department": "Prodotto",
+        "location": "San Francisco, CA",
+        "type": "Tempo pieno",
+        "description": "Guida la strategia e lo sviluppo del prodotto per la nostra piattaforma di benessere sociale, lavorando a stretto contatto con i team di ingegneria e design."
+      },
+      {
+        "title": "Customer Success Manager",
+        "department": "Customer Success",
+        "location": "Remoto",
+        "type": "Tempo pieno",
+        "description": "Aiuta i nostri clienti aziendali a massimizzare il valore di Vointy.life e a favorirne l'adozione nelle loro organizzazioni."
+      },
+      {
+        "title": "UI/UX Designer",
+        "department": "Design",
+        "location": "New York, NY",
+        "type": "Tempo pieno",
+        "description": "Progetta esperienze utente intuitive e coinvolgenti che rendano il benessere sul lavoro accessibile e piacevole per tutti gli utenti."
+      }
+    ],
+    "applyNow": "Candidati ora",
+    "noRoleText": "Non trovi il ruolo giusto? Siamo sempre alla ricerca di persone di talento.",
+    "sendResume": "Inviaci il tuo CV"
+  },
+  "blogPage": {
+    "title": "Blog di Vointy.life",
+    "subtitle": "Approfondimenti, ricerche e best practice per il benessere sul lavoro e il coinvolgimento dei dipendenti.",
+    "categories": ["Tutti", "Lavoro remoto", "Analisi", "Cultura aziendale", "Salute mentale", "Ricerca", "Implementazione"],
+    "posts": [
+      {
+        "title": "5 modi per aumentare il benessere dei dipendenti nei team remoti",
+        "excerpt": "Scopri strategie pratiche per mantenere la coesione del team e supportare la salute mentale dei dipendenti in ambienti di lavoro distribuiti.",
+        "author": "Sarah Chen",
+        "date": "1 giugno 2025",
+        "readTime": "5 min di lettura",
+        "category": "Lavoro remoto"
+      },
+      {
+        "title": "Il ROI dei programmi di benessere: un'analisi basata sui dati",
+        "excerpt": "Scopri come le aziende misurano il ritorno sull'investimento delle loro iniziative di benessere e quali metriche contano di più.",
+        "author": "Mike Johnson",
+        "date": "28 maggio 2025",
+        "readTime": "8 min di lettura",
+        "category": "Analisi"
+      },
+      {
+        "title": "Costruire una cultura del benessere: le best practice delle aziende leader",
+        "excerpt": "Scopri come i leader di settore creano culture del benessere sostenibili che coinvolgono i dipendenti e generano risultati di business.",
+        "author": "Emma Rodriguez",
+        "date": "25 maggio 2025",
+        "readTime": "6 min di lettura",
+        "category": "Cultura aziendale"
+      },
+      {
+        "title": "Salute mentale sul lavoro: abbattere le barriere",
+        "excerpt": "Comprendere l'importanza del supporto alla salute mentale e come creare un ambiente in cui i dipendenti si sentano sicuri nel chiedere aiuto.",
+        "author": "Dott. Alex Thompson",
+        "date": "22 maggio 2025",
+        "readTime": "7 min di lettura",
+        "category": "Salute mentale"
+      },
+      {
+        "title": "La scienza dietro le piattaforme di benessere sociale",
+        "excerpt": "Approfondisci la ricerca che dimostra come le connessioni sociali influenzino la salute, la produttività e la soddisfazione lavorativa dei dipendenti.",
+        "author": "Team di Ricerca",
+        "date": "19 maggio 2025",
+        "readTime": "10 min di lettura",
+        "category": "Ricerca"
+      },
+      {
+        "title": "Implementare programmi di benessere: una guida passo dopo passo",
+        "excerpt": "Una guida completa per i responsabili HR che desiderano lanciare iniziative di benessere di successo nelle loro organizzazioni.",
+        "author": "Lisa Park",
+        "date": "16 maggio 2025",
+        "readTime": "12 min di lettura",
+        "category": "Implementazione"
+      }
+    ],
+    "loadMore": "Carica altri articoli"
+  },
+  "contactPage": {
+    "title": "Contattaci",
+    "subtitle": "Mettiti in contatto con il nostro team. Siamo qui per aiutarti a trasformare il benessere nella tua azienda.",
+    "conversationTitle": "Iniziamo una conversazione",
+    "conversationDescription": "Pronto a vedere Vointy in azione? Siamo qui per rispondere alle tue domande e mostrarti come la nostra piattaforma può ridurre le assenze per malattia e migliorare il benessere dei tuoi dipendenti.",
+    "emailUsLabel": "Scrivici",
+    "callUsLabel": "Chiamaci",
+    "visitUsLabel": "Vieni a trovarci",
+    "addressLine1": "123 Wellness Street",
+    "addressLine2": "San Francisco, CA 94105",
+    "hoursLabel": "Orari di apertura",
+    "hoursValue": "Lunedì - Venerdì: 9:00 - 18:00 (PST)",
+    "requestDemo": "Richiedi una demo",
+    "whyChooseTitle": "Perché scegliere Vointy?",
+    "reasons": [
+      { "title": "Risultati comprovati", "description": "Le aziende che utilizzano Vointy registrano in media una riduzione del 30% delle assenze per malattia nei primi 6 mesi." },
+      { "title": "Implementazione semplice", "description": "Inizia in sole 24 ore grazie al nostro semplice processo di onboarding e a un team di supporto dedicato." },
+      { "title": "Supporto personalizzato", "description": "I nostri esperti di benessere lavorano con te per creare un programma su misura adatto alla cultura della tua azienda." },
+      { "title": "Insight basati sui dati", "description": "Monitora i progressi con analisi e report completi per misurare l'impatto del tuo programma di benessere." }
+    ]
+  },
+  "contactFormPage": {
+    "successMessage": "Abbiamo ricevuto il tuo messaggio e ti risponderemo a breve.",
+    "sendAnother": "Invia un altro messaggio",
+    "sending": "Invio del messaggio...",
+    "placeholderFirstName": "Mario",
+    "placeholderLastName": "Rossi",
+    "placeholderEmail": "mario@esempio.com",
+    "placeholderCompany": "La tua azienda",
+    "placeholderSubject": "Richiesta informazioni su Vointy",
+    "placeholderMessage": "Come possiamo aiutarti?"
+  },
+  "footerContactForm": {
+    "title": "Contattaci",
+    "description": "Inviaci un messaggio e ti risponderemo al più presto.",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Email",
+    "companyOptional": "Azienda (facoltativo)",
+    "subject": "Oggetto",
+    "message": "Messaggio",
+    "sending": "Invio in corso...",
+    "sendMessage": "Invia messaggio",
+    "successToast": "Grazie! Il tuo messaggio è stato inviato.",
+    "errorTitle": "Qualcosa è andato storto"
+  },
+  "navExtra": {
+    "employerPanel": "Pannello datore di lavoro",
+    "myVointy": "Il mio Vointy",
+    "language": "Lingua"
+  },
+  "footerLinks": {
+    "aboutUs": "Chi siamo",
+    "careers": "Lavora con noi",
+    "blog": "Blog",
+    "contact": "Contatti",
+    "privacyPolicy": "Informativa sulla privacy",
+    "termsOfService": "Termini di servizio",
+    "refundPolicy": "Politica di rimborso",
+    "cookiePolicy": "Politica sui cookie",
+    "admin": "Admin"
+  },
+  "notFound": {
+    "message": "Ops! Pagina non trovata",
+    "returnHome": "Torna alla home"
+  },
+  "backButton": {
+    "label": "Indietro"
+  }
+}
