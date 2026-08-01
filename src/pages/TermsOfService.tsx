@@ -1,9 +1,8 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
-import { FileText, Shield, Users, Lock, AlertTriangle, Scale, Clock, Mail, Phone } from 'lucide-react';
+import { FileText, Shield, Users, Lock, AlertTriangle, Scale, Clock, Mail, Building, Stethoscope, Info } from 'lucide-react';
 
 const TermsOfService = () => {
   const sections = [
@@ -13,57 +12,56 @@ const TermsOfService = () => {
       icon: <FileText className="w-6 h-6 text-brand-purple" />,
       content: (
         <p className="text-gray-700 leading-relaxed">
-          By accessing and using Vointy.life's workplace wellness platform, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+          By accessing and using Vointy.life, you accept and agree to be bound by these Terms of Service. If you do not agree to all of these terms, please do not use the service.
         </p>
       )
     },
     {
       id: 2,
-      title: "Eligibility",
-      icon: <Users className="w-6 h-6 text-brand-blue" />,
+      title: "Company Information",
+      icon: <Building className="w-6 h-6 text-brand-blue" />,
       content: (
         <div className="bg-blue-50 border-l-4 border-brand-blue p-4 rounded-r-lg">
+          <p className="text-gray-700 leading-relaxed mb-2">
+            <strong>Wellthyforce Oy</strong> (Business ID 3254418-4)
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-2">
+            Vasantie 43, 90310 Oulu, Finland
+          </p>
           <p className="text-gray-700 leading-relaxed">
-            You must be at least <strong>18 years old</strong> and authorized by your employer or organization to use Vointy.life.
+            Email: <a href="mailto:contact@vointy.life" className="text-brand-blue hover:underline">contact@vointy.life</a>
           </p>
         </div>
       )
     },
     {
       id: 3,
-      title: "Service Description",
-      icon: <Shield className="w-6 h-6 text-brand-purple" />,
+      title: "Important Notice: Not a Healthcare Service",
+      icon: <Stethoscope className="w-6 h-6 text-red-500" />,
       content: (
-        <div>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Vointy.life provides a workplace wellness platform that helps organizations improve employee wellbeing through social engagement, wellness tracking, and data-driven insights.
+        <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+          <p className="text-gray-700 leading-relaxed mb-4">
+            <strong>Vointy.life is not a healthcare service.</strong> The platform does not provide medical advice, diagnoses, treatments, or other health-related guidance.
           </p>
-          <div className="grid gap-3">
-            {[
-              "Wellness program management and tracking",
-              "Social engagement features for employees",
-              "Analytics and reporting for employers",
-              "Health and wellness content and resources"
-            ].map((item, index) => (
-              <div key={index} className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg">
-                <div className="w-2 h-2 bg-brand-purple rounded-full flex-shrink-0"></div>
-                <span className="text-gray-700">{item}</span>
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Vointy.life is an <strong>information service</strong> that enables workplace teams and individuals to discover, organize, and track wellbeing-related activities and challenges.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            <strong>Each user is solely responsible</strong> for the activities they choose to perform and for any consequences resulting from those activities. Always consult a qualified healthcare professional before beginning any new physical activity or wellness program, especially if you have any medical condition or concern.
+          </p>
         </div>
       )
     },
     {
       id: 4,
-      title: "Accounts",
-      icon: <Lock className="w-6 h-6 text-brand-blue" />,
+      title: "Eligibility",
+      icon: <Users className="w-6 h-6 text-brand-blue" />,
       content: (
         <div className="grid gap-3">
           {[
-            "You are responsible for safeguarding your login credentials",
-            "You agree to provide accurate, current information",
-            "You must notify us immediately of any unauthorized use of your account"
+            "You must be at least 18 years old to use Vointy.life.",
+            "If you use Vointy.life through your employer or organization, you must be authorized to participate.",
+            "By using the service, you represent that you meet these eligibility requirements."
           ].map((item, index) => (
             <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
               <div className="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
@@ -75,28 +73,39 @@ const TermsOfService = () => {
     },
     {
       id: 5,
-      title: "License to Use",
-      icon: <Scale className="w-6 h-6 text-brand-purple" />,
+      title: "Service Description",
+      icon: <Shield className="w-6 h-6 text-brand-purple" />,
       content: (
-        <div className="bg-purple-50 border-l-4 border-brand-purple p-4 rounded-r-lg">
-          <p className="text-gray-700 leading-relaxed">
-            We grant you a <strong>non-transferable, limited license</strong> to use Vointy.life in accordance with these Terms for your organization's wellness programs.
+        <div>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Vointy.life provides an online platform that helps organizations and teams support employee wellbeing through social engagement, activity tracking, and employer-facing analytics.
           </p>
+          <div className="grid gap-3">
+            {[
+              "Activity and challenge management",
+              "Social engagement features for employees",
+              "Analytics and reporting for paying employer accounts",
+              "Informational content related to wellbeing activities"
+            ].map((item, index) => (
+              <div key={index} className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg">
+                <div className="w-2 h-2 bg-brand-purple rounded-full flex-shrink-0"></div>
+                <span className="text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
       )
     },
     {
       id: 6,
-      title: "User Responsibilities",
-      icon: <Users className="w-6 h-6 text-brand-blue" />,
+      title: "Accounts",
+      icon: <Lock className="w-6 h-6 text-brand-blue" />,
       content: (
         <div className="grid gap-3">
           {[
-            "Provide accurate and complete information",
-            "Maintain the confidentiality of your account credentials",
-            "Use the platform in compliance with applicable laws",
-            "Respect other users and maintain professional conduct",
-            "Not share personal health information of others without consent"
+            "You are responsible for safeguarding your login credentials.",
+            "You agree to provide accurate and current information.",
+            "You must notify us immediately of any unauthorized use of your account."
           ].map((item, index) => (
             <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
               <div className="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
@@ -108,6 +117,39 @@ const TermsOfService = () => {
     },
     {
       id: 7,
+      title: "License to Use",
+      icon: <Scale className="w-6 h-6 text-brand-purple" />,
+      content: (
+        <div className="bg-purple-50 border-l-4 border-brand-purple p-4 rounded-r-lg">
+          <p className="text-gray-700 leading-relaxed">
+            We grant you a <strong>non-transferable, limited, non-exclusive license</strong> to use Vointy.life in accordance with these Terms for your organization's wellbeing activities.
+          </p>
+        </div>
+      )
+    },
+    {
+      id: 8,
+      title: "User Responsibilities",
+      icon: <Users className="w-6 h-6 text-brand-blue" />,
+      content: (
+        <div className="grid gap-3">
+          {[
+            "Provide accurate and complete information.",
+            "Maintain the confidentiality of your account credentials.",
+            "Use the platform in compliance with applicable laws.",
+            "Respect other users and maintain professional conduct.",
+            "Choose activities responsibly and assess your own ability and safety before participating."
+          ].map((item, index) => (
+            <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
+              <div className="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+              <span className="text-gray-700">{item}</span>
+            </div>
+          ))}
+        </div>
+      )
+    },
+    {
+      id: 9,
       title: "Prohibited Conduct",
       icon: <AlertTriangle className="w-6 h-6 text-red-500" />,
       content: (
@@ -115,12 +157,12 @@ const TermsOfService = () => {
           <p className="text-gray-700 mb-4 leading-relaxed">You agree not to:</p>
           <div className="grid gap-3">
             {[
-              "Share harmful, illegal, or offensive content",
-              "Use the service to harass others",
-              "Reverse engineer or hack the platform",
-              "Use it for any commercial purpose without consent",
-              "Violate any international, federal, provincial, or state regulations",
-              "Submit false or misleading information"
+              "Share harmful, illegal, or offensive content.",
+              "Use the service to harass, discriminate against, or harm others.",
+              "Reverse engineer, hack, or attempt to gain unauthorized access to the platform.",
+              "Use the service for any commercial purpose without our written consent.",
+              "Submit false, misleading, or impersonating information.",
+              "Violate any applicable local, national, or international law or regulation."
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border-l-4 border-red-200">
                 <AlertTriangle className="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" />
@@ -132,36 +174,74 @@ const TermsOfService = () => {
       )
     },
     {
-      id: 8,
+      id: 10,
       title: "Data & Privacy",
       icon: <Lock className="w-6 h-6 text-brand-purple" />,
       content: (
         <div className="bg-purple-50 border-l-4 border-brand-purple p-4 rounded-r-lg">
           <p className="text-gray-700 leading-relaxed">
-            Your data is processed according to our <strong>Privacy Policy</strong>. We are committed to protecting your personal information and comply with applicable data protection laws.
+            Your data is processed according to our <strong>Privacy Policy</strong>. We are committed to protecting your personal information and comply with applicable data protection laws, including the EU General Data Protection Regulation.
           </p>
         </div>
       )
     },
     {
-      id: 9,
+      id: 11,
       title: "Intellectual Property",
       icon: <Shield className="w-6 h-6 text-brand-blue" />,
       content: (
         <p className="text-gray-700 leading-relaxed">
-          The service and its original content, features, and functionality are and will remain the exclusive property of Vointy.life and its licensors. The service is protected by copyright, trademark, and other laws.
+          The service and its original content, features, and functionality are and will remain the exclusive property of Wellthyforce Oy and its licensors. The service is protected by copyright, trademark, and other applicable laws.
         </p>
       )
     },
     {
-      id: 10,
-      title: "Availability",
+      id: 12,
+      title: "Availability and Changes",
       icon: <Clock className="w-6 h-6 text-brand-purple" />,
       content: (
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
           <p className="text-gray-700 leading-relaxed">
-            We strive to keep the service available but do not guarantee uninterrupted or error-free access. We may perform maintenance or updates that temporarily affect service availability.
+            We strive to keep the service available but do not guarantee uninterrupted or error-free access. We may update, modify, or discontinue features at any time. We may also update these Terms from time to time; continued use of the service after changes constitutes acceptance of the revised Terms.
           </p>
+        </div>
+      )
+    },
+    {
+      id: 13,
+      title: "Limitation of Liability",
+      icon: <AlertTriangle className="w-6 h-6 text-red-500" />,
+      content: (
+        <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+          <p className="text-gray-700 leading-relaxed mb-4">
+            To the fullest extent permitted by law, Wellthyforce Oy shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation loss of profits, data, use, goodwill, or other intangible losses.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Because Vointy.life is an information service and not a healthcare service, Wellthyforce Oy is not responsible for any injury, health condition, or other consequence arising from activities performed by users.
+          </p>
+        </div>
+      )
+    },
+    {
+      id: 14,
+      title: "Applicable Law",
+      icon: <Scale className="w-6 h-6 text-brand-purple" />,
+      content: (
+        <div className="bg-purple-50 border-l-4 border-brand-purple p-4 rounded-r-lg">
+          <p className="text-gray-700 leading-relaxed mb-4">
+            These terms are governed by Finnish law. Disputes shall be resolved primarily by negotiation, and secondarily settled finally by arbitration under the Arbitration Rules of the Finland Chamber of Commerce.
+          </p>
+          <div className="grid gap-2">
+            <p className="text-gray-700 leading-relaxed">
+              (a) The arbitral tribunal consists of one member
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              (b) The seat of arbitration is Helsinki, Finland
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              (c) The language of the arbitration is English.
+            </p>
+          </div>
         </div>
       )
     }
@@ -223,20 +303,7 @@ const TermsOfService = () => {
               ))}
             </div>
 
-            {/* Additional Important Sections */}
             <div className="grid md:grid-cols-2 gap-6 mt-12">
-              <Card className="bg-red-50 border-red-200 border-2">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <AlertTriangle className="w-6 h-6 text-red-600" />
-                    <h3 className="text-xl font-bold text-red-800">Limitation of Liability</h3>
-                  </div>
-                  <p className="text-red-700 text-sm leading-relaxed">
-                    In no event shall Vointy.life be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
-                  </p>
-                </CardContent>
-              </Card>
-
               <Card className="bg-orange-50 border-orange-200 border-2">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
@@ -244,13 +311,24 @@ const TermsOfService = () => {
                     <h3 className="text-xl font-bold text-orange-800">Termination</h3>
                   </div>
                   <p className="text-orange-700 text-sm leading-relaxed">
-                    We may terminate or suspend your account immediately, without prior notice, for any reason including breach of these Terms.
+                    We may terminate or suspend your account immediately, without prior notice, for any reason including breach of these Terms. You may also close your account at any time by contacting us.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-blue-50 border-blue-200 border-2">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Info className="w-6 h-6 text-blue-600" />
+                    <h3 className="text-xl font-bold text-blue-800">Information Service</h3>
+                  </div>
+                  <p className="text-blue-700 text-sm leading-relaxed">
+                    Vointy.life is an information service only. It is not a healthcare service and does not provide health advice. Users are responsible for their own activities.
                   </p>
                 </CardContent>
               </Card>
             </div>
 
-            {/* Contact Section */}
             <Card className="mt-12 bg-gradient-to-r from-brand-blue to-brand-purple text-white border-0">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">Questions About These Terms?</h3>
@@ -261,12 +339,12 @@ const TermsOfService = () => {
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                     <Mail className="w-6 h-6 mx-auto mb-2" />
                     <div className="font-medium">Email</div>
-                    <div className="text-white/80">legal@vointy.life</div>
+                    <div className="text-white/80">contact@vointy.life</div>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                    <Phone className="w-6 h-6 mx-auto mb-2" />
+                    <Building className="w-6 h-6 mx-auto mb-2" />
                     <div className="font-medium">Address</div>
-                    <div className="text-white/80">[Your Company Address]</div>
+                    <div className="text-white/80">Vasantie 43, 90310 Oulu, Finland</div>
                   </div>
                 </div>
               </CardContent>
