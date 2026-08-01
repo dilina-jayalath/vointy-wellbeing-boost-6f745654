@@ -1123,6 +1123,7 @@ export type Database = {
           status: string
         }[]
       }
+      is_org_manager: { Args: never; Returns: boolean }
       move_to_dlq: {
         Args: {
           dlq_name: string
@@ -1132,9 +1133,61 @@ export type Database = {
         }
         Returns: number
       }
+      org_activity_monthly: {
+        Args: never
+        Returns: {
+          active_employees: number
+          exercises: number
+          month: string
+          points: number
+        }[]
+      }
+      org_activity_overview: {
+        Args: never
+        Returns: {
+          active_employees: number
+          avg_points_per_employee: number
+          exercises_30d: number
+          points_30d: number
+          total_employees: number
+          total_exercises: number
+          total_points: number
+        }[]
+      }
+      org_employee_activity: {
+        Args: never
+        Returns: {
+          display_name: string
+          exercises: number
+          last_active: string
+          points: number
+          user_id: string
+        }[]
+      }
       org_has_active_subscription: {
         Args: { check_env?: string; org_uuid: string }
         Returns: boolean
+      }
+      org_team_activity: {
+        Args: never
+        Returns: {
+          avg_points_per_member: number
+          exercises: number
+          members: number
+          points: number
+          team_id: string
+          team_name: string
+        }[]
+      }
+      org_top_activities: {
+        Args: { _limit?: number }
+        Returns: {
+          activity_id: string
+          category: string
+          points: number
+          times_performed: number
+          title: string
+        }[]
       }
       read_email_batch: {
         Args: { batch_size: number; queue_name: string; vt: number }
