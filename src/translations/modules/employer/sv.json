@@ -11,7 +11,8 @@
       "invitedList": "Inbjudningslista",
       "activateUsers": "Aktivera användare",
       "teams": "Team",
-      "activitySummary": "Aktivitetssammanfattning"
+      "activitySummary": "Aktivitetssammanfattning",
+      "engagement": "Engagemang"
     },
     "paywall": {
       "title": "Aktivera arbetsgivarpanelen",
@@ -301,6 +302,44 @@
         "avgPerMember": "Snitt / medlem",
         "employee": "Anställd",
         "lastActive": "Senast aktiv"
+      }
+    },
+    "engagement": {
+      "title": "Engagemang och gemenskap",
+      "description": "Sammanställd bild av deltagandet i gemenskapen. Innehållet i inlägg och kommentarer visas aldrig.",
+      "errorTitle": "Ingen åtkomst till rapporter",
+      "errorBody": "Engagemangsrapporter visas för organisationens ägare. Be din administratör om åtkomst.",
+      "never": "Aldrig",
+      "noData": "Ingen engagemangsdata än.",
+      "noTeams": "Inga team skapade än.",
+      "noChallenges": "Inga utmaningar skapade än.",
+      "monthlyTrend": "Gemenskapens aktivitet per månad (12 mån)",
+      "teamInteraction": "Teamens interaktion",
+      "topContributors": "Mest engagerade anställda",
+      "challengeParticipation": "Deltagande i utmaningar",
+      "kpi": {
+        "posts": "Inlägg",
+        "comments": "Kommentarer",
+        "likes": "Gillamarkeringar",
+        "engagementRate": "Engagemangsgrad",
+        "last30Days": "Senaste 30 dagarna",
+        "challengeParticipants": "Deltagare i utmaningar",
+        "challengeCompletions": "Slutförda utmaningar",
+        "surveyRespondents": "Svarande i enkäter"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Medlemmar",
+        "activeMembers": "Aktiva medlemmar",
+        "perMember": "Interaktioner / medlem",
+        "employee": "Anställd",
+        "score": "Engagemangspoäng",
+        "lastActivity": "Senaste aktivitet",
+        "challenge": "Utmaning",
+        "status": "Status",
+        "participants": "Deltagare",
+        "completed": "Slutförda",
+        "completionRate": "Slutförandegrad"
       }
     }
   },

@@ -11,7 +11,8 @@
       "invitedList": "Kutsuttujen lista",
       "activateUsers": "Aktivoi käyttäjiä",
       "teams": "Tiimit",
-      "activitySummary": "Aktiivisuustiivistelmä"
+      "activitySummary": "Aktiivisuustiivistelmä",
+      "engagement": "Sitoutuminen"
     },
     "paywall": {
       "title": "Aktivoi Työnantajapaneeli",
@@ -301,6 +302,44 @@
         "avgPerMember": "Ka / jäsen",
         "employee": "Työntekijä",
         "lastActive": "Viimeksi aktiivinen"
+      }
+    },
+    "engagement": {
+      "title": "Sitoutuminen ja yhteisöllisyys",
+      "description": "Koostettu näkymä yhteisön osallistumisesta. Julkaisujen ja kommenttien sisältöä ei näytetä.",
+      "errorTitle": "Ei käyttöoikeutta raportteihin",
+      "errorBody": "Sitoutumisraportit näkyvät organisaation omistajalle. Pyydä käyttöoikeus ylläpitäjältä.",
+      "never": "Ei koskaan",
+      "noData": "Ei vielä sitoutumistietoja.",
+      "noTeams": "Tiimejä ei ole vielä luotu.",
+      "noChallenges": "Haasteita ei ole vielä luotu.",
+      "monthlyTrend": "Yhteisön aktiivisuus kuukausittain (12 kk)",
+      "teamInteraction": "Tiimien vuorovaikutus",
+      "topContributors": "Sitoutuneimmat työntekijät",
+      "challengeParticipation": "Haasteiden osallistuminen",
+      "kpi": {
+        "posts": "Julkaisut",
+        "comments": "Kommentit",
+        "likes": "Tykkäykset",
+        "engagementRate": "Sitoutumisaste",
+        "last30Days": "Viimeiset 30 päivää",
+        "challengeParticipants": "Haasteisiin osallistujat",
+        "challengeCompletions": "Suoritetut haasteet",
+        "surveyRespondents": "Kyselyihin vastanneet"
+      },
+      "table": {
+        "team": "Tiimi",
+        "members": "Jäsenet",
+        "activeMembers": "Aktiiviset jäsenet",
+        "perMember": "Vuorovaikutus / jäsen",
+        "employee": "Työntekijä",
+        "score": "Sitoutumispisteet",
+        "lastActivity": "Viimeisin toiminta",
+        "challenge": "Haaste",
+        "status": "Tila",
+        "participants": "Osallistujat",
+        "completed": "Suoritettu",
+        "completionRate": "Suoritusaste"
       }
     }
   },

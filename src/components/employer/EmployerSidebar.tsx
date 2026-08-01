@@ -11,6 +11,7 @@ import {
   MailCheck,
   Dumbbell,
   BarChart3,
+  Heart,
 } from "lucide-react";
 import {
   Sidebar,
@@ -33,6 +34,7 @@ export function EmployerSidebar() {
     { title: t("employerPanel.sidebar.dashboard"), url: "/employer", icon: LayoutDashboard, end: true },
     { title: t("employerPanel.sidebar.activityIndex"), url: "/employer/wellbeing", icon: Building2 },
     { title: t("employerPanel.sidebar.activitySummary"), url: "/employer/activity-summary", icon: BarChart3 },
+    { title: t("employerPanel.sidebar.engagement"), url: "/employer/engagement", icon: Heart },
     { title: t("employerPanel.sidebar.activities"), url: "/employer/activities", icon: Dumbbell },
     { title: t("employerPanel.sidebar.surveys"), url: "/employer/surveys", icon: ClipboardList },
     { title: t("employerPanel.sidebar.challenges"), url: "/employer/challenges", icon: Trophy },

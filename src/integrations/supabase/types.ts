@@ -1154,6 +1154,17 @@ export type Database = {
           total_points: number
         }[]
       }
+      org_challenge_engagement: {
+        Args: never
+        Returns: {
+          challenge_id: string
+          completed: number
+          completion_rate: number
+          participants: number
+          status: string
+          title: string
+        }[]
+      }
       org_employee_activity: {
         Args: never
         Returns: {
@@ -1162,6 +1173,33 @@ export type Database = {
           last_active: string
           points: number
           user_id: string
+        }[]
+      }
+      org_engagement_monthly: {
+        Args: never
+        Returns: {
+          comments: number
+          contributors: number
+          likes: number
+          month: string
+          posts: number
+        }[]
+      }
+      org_engagement_overview: {
+        Args: never
+        Returns: {
+          challenge_completions: number
+          challenge_participants: number
+          comments: number
+          comments_30d: number
+          engaged_employees_30d: number
+          likes: number
+          likes_30d: number
+          posters_30d: number
+          posts: number
+          posts_30d: number
+          survey_respondents: number
+          total_employees: number
         }[]
       }
       org_has_active_subscription: {
@@ -1179,6 +1217,19 @@ export type Database = {
           team_name: string
         }[]
       }
+      org_team_engagement: {
+        Args: never
+        Returns: {
+          active_members: number
+          comments: number
+          engagement_per_member: number
+          likes: number
+          members: number
+          posts: number
+          team_id: string
+          team_name: string
+        }[]
+      }
       org_top_activities: {
         Args: { _limit?: number }
         Returns: {
@@ -1187,6 +1238,18 @@ export type Database = {
           points: number
           times_performed: number
           title: string
+        }[]
+      }
+      org_top_contributors: {
+        Args: { _limit?: number }
+        Returns: {
+          comments: number
+          display_name: string
+          engagement_score: number
+          last_activity: string
+          likes: number
+          posts: number
+          user_id: string
         }[]
       }
       read_email_batch: {
