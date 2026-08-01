@@ -3,6 +3,8 @@ import { Home, Activity, Trophy, Users, BarChart3 as ActivityIcon2, User as User
 import { useAuth } from "@/contexts/AuthContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import BackButton from "@/components/BackButton";
+import vointyMark from "@/assets/vointy-mark.png.asset.json";
+
 
 const navItems = [
   { to: "/app", end: true, icon: Home, label: "Home" },
