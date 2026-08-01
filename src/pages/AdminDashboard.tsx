@@ -22,6 +22,8 @@ import {
 } from "recharts";
 import { useTranslation } from "@/lib/i18n";
 import MessageReply from "@/components/admin/MessageReply";
+import BlogManager from "@/components/admin/BlogManager";
+
 
 
 const PAID_AMOUNT = 149;
