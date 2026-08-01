@@ -28,9 +28,13 @@ const AppLayout = () => {
             {showBack && (
               <BackButton fallback="/app" className="text-primary-foreground hover:bg-white/10 hover:text-primary-foreground px-2" />
             )}
-            <Link to="/app" className="font-bold text-lg">
+            <Link to="/app" className="font-bold text-lg flex items-center gap-2">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/90">
+                <img src={vointyMark.url} alt="Vointy logo" className="h-5 w-auto" />
+              </span>
               Vointy<span className="opacity-80">.life</span>
             </Link>
+
           </div>
 
           <div className="flex items-center gap-2">
