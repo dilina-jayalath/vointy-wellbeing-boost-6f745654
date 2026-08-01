@@ -43,17 +43,12 @@ const PrivacyPolicy = () => {
       icon: <UserCheck className="w-6 h-6 text-brand-blue" />,
       content: (
         <div className="bg-brand-blue-light p-6 rounded-lg">
-          <h3 className="font-bold text-brand-blue text-lg mb-4">Riina Manner</h3>
+          <h3 className="font-bold text-brand-blue text-lg mb-4">Paavo Vasala</h3>
           <div className="space-y-3">
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-brand-blue flex-shrink-0" />
               <span className="font-medium text-brand-blue">Email:</span>
               <a href="mailto:contact@vointy.life" className="text-gray-700 hover:text-brand-blue hover:underline">contact@vointy.life</a>
-            </div>
-            <div className="flex items-center gap-3">
-              <Phone className="w-5 h-5 text-brand-blue flex-shrink-0" />
-              <span className="font-medium text-brand-blue">Phone:</span>
-              <span className="text-gray-700">0405282670</span>
             </div>
           </div>
         </div>
