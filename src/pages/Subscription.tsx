@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Check, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
-import { supabase } from '@/integrations/supabase/client';
+import { Card, CardContent } from '@/components/ui/card';
 
 const planFeatures = [
   'Unlimited employees',
@@ -29,55 +24,6 @@ const highlights = [
 ];
 
 const Subscription = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    companyName: '',
-    message: '',
-  });
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const scrollToForm = () => {
-    document.getElementById('subscription-form')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    try {
-      const { error } = await supabase.from('contact_submissions').insert([
-        {
-          first_name: formData.firstName,
-          last_name: formData.lastName,
-          email: formData.email,
-          company_name: formData.companyName,
-          subject: 'Employer dashboard subscription — €149/month',
-          message:
-            `Plan: Employer Dashboard (€149/month)\n\n` +
-            (formData.message ? `Message: ${formData.message}` : ''),
-        },
-      ]);
-      if (error) throw error;
-      toast({ title: 'Request received!' });
-      setIsSuccess(true);
-      setFormData({ firstName: '', lastName: '', email: '', companyName: '', message: '' });
-    } catch (error: any) {
-      toast({ title: 'Something went wrong', description: error.message, variant: 'destructive' });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
