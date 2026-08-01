@@ -12,7 +12,8 @@
       "activateUsers": "Activer des utilisateurs",
       "teams": "Équipes",
       "activitySummary": "Synthèse d'activité",
-      "engagement": "Engagement"
+      "engagement": "Engagement",
+      "wellbeing": "Bien-être"
     },
     "paywall": {
       "title": "Activer le panneau Employeur",
@@ -340,6 +341,43 @@
         "participants": "Participants",
         "completed": "Terminés",
         "completionRate": "Taux de réussite"
+      }
+    },
+    "wellbeing": {
+      "title": "Bien-être",
+      "description": "Résultats des enquêtes de bien-être de votre organisation, agrégés pour préserver la confidentialité des réponses.",
+      "errorTitle": "Impossible de charger les données de bien-être",
+      "errorBody": "Seuls les responsables de l'organisation voient les rapports agrégés.",
+      "noData": "Aucune donnée d'enquête pour le moment.",
+      "monthlyTitle": "Évolution du bien-être (12 mois)",
+      "questionsTitle": "Score moyen par question (les plus bas d'abord)",
+      "distributionTitle": "Répartition du bien-être",
+      "teamsTitle": "Bien-être par équipe",
+      "privacyNote": "Les groupes sont affichés en nombre uniquement – aucune réponse individuelle.",
+      "kpi": {
+        "avgScore": "Score moyen de bien-être",
+        "last30Days": "30 derniers jours",
+        "change": "Évolution",
+        "vsPrev30Days": "30 jours précédents",
+        "responseRate": "Taux de réponse",
+        "answers": "Réponses aux enquêtes",
+        "activeSurveys": "Enquêtes actives"
+      },
+      "chart": {
+        "score": "Score",
+        "respondents": "Répondants"
+      },
+      "buckets": {
+        "low": "À surveiller",
+        "medium": "Moyen",
+        "high": "Bon"
+      },
+      "table": {
+        "team": "Équipe",
+        "members": "Membres",
+        "respondents": "Répondants",
+        "responseRate": "Taux de réponse",
+        "avgScore": "Score moyen"
       }
     }
   },

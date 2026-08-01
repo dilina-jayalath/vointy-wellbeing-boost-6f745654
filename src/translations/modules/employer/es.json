@@ -12,7 +12,8 @@
       "activateUsers": "Activar usuarios",
       "teams": "Equipos",
       "activitySummary": "Resumen de actividad",
-      "engagement": "Compromiso"
+      "engagement": "Compromiso",
+      "wellbeing": "Bienestar"
     },
     "paywall": {
       "title": "Activar el panel de Empleador",
@@ -340,6 +341,43 @@
         "participants": "Participantes",
         "completed": "Completados",
         "completionRate": "Tasa de finalización"
+      }
+    },
+    "wellbeing": {
+      "title": "Bienestar",
+      "description": "Resultados de las encuestas de bienestar de tu organización, agregados para mantener privadas las respuestas individuales.",
+      "errorTitle": "No se pudieron cargar los datos de bienestar",
+      "errorBody": "Solo los responsables de la organización ven informes agregados.",
+      "noData": "Aún no hay datos de encuestas.",
+      "monthlyTitle": "Evolución del bienestar (12 meses)",
+      "questionsTitle": "Puntuación media por pregunta (menor primero)",
+      "distributionTitle": "Distribución del bienestar",
+      "teamsTitle": "Bienestar por equipo",
+      "privacyNote": "Los grupos se muestran solo como recuentos: nunca respuestas individuales.",
+      "kpi": {
+        "avgScore": "Puntuación media de bienestar",
+        "last30Days": "Últimos 30 días",
+        "change": "Cambio",
+        "vsPrev30Days": "30 días anteriores",
+        "responseRate": "Tasa de respuesta",
+        "answers": "Respuestas de encuesta",
+        "activeSurveys": "Encuestas activas"
+      },
+      "chart": {
+        "score": "Puntuación",
+        "respondents": "Participantes"
+      },
+      "buckets": {
+        "low": "Requiere atención",
+        "medium": "Moderado",
+        "high": "Bueno"
+      },
+      "table": {
+        "team": "Equipo",
+        "members": "Miembros",
+        "respondents": "Participantes",
+        "responseRate": "Tasa de respuesta",
+        "avgScore": "Puntuación media"
       }
     }
   },

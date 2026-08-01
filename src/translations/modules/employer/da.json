@@ -12,7 +12,8 @@
       "activateUsers": "Aktivér brugere",
       "teams": "Teams",
       "activitySummary": "Aktivitetsoversigt",
-      "engagement": "Engagement"
+      "engagement": "Engagement",
+      "wellbeing": "Trivsel"
     },
     "paywall": {
       "title": "Aktivér arbejdsgiverpanelet",
@@ -340,6 +341,43 @@
         "participants": "Deltagere",
         "completed": "Gennemført",
         "completionRate": "Gennemførelsesgrad"
+      }
+    },
+    "wellbeing": {
+      "title": "Trivsel",
+      "description": "Resultater fra trivselsundersøgelser i din organisation, samlet så individuelle svar forbliver private.",
+      "errorTitle": "Kunne ikke indlæse trivselsdata",
+      "errorBody": "Kun organisationens ansvarlige kan se samlede rapporter.",
+      "noData": "Endnu ingen undersøgelsesdata.",
+      "monthlyTitle": "Udvikling i trivsel (12 måneder)",
+      "questionsTitle": "Gennemsnit pr. spørgsmål (laveste først)",
+      "distributionTitle": "Fordeling af trivsel",
+      "teamsTitle": "Trivsel pr. team",
+      "privacyNote": "Grupper vises kun som antal – individuelle svar afsløres aldrig.",
+      "kpi": {
+        "avgScore": "Gennemsnitlig trivselsscore",
+        "last30Days": "Seneste 30 dage",
+        "change": "Ændring",
+        "vsPrev30Days": "Forrige 30 dage",
+        "responseRate": "Svarprocent",
+        "answers": "Undersøgelsessvar",
+        "activeSurveys": "Aktive undersøgelser"
+      },
+      "chart": {
+        "score": "Score",
+        "respondents": "Respondenter"
+      },
+      "buckets": {
+        "low": "Kræver opmærksomhed",
+        "medium": "Moderat",
+        "high": "God"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Medlemmer",
+        "respondents": "Respondenter",
+        "responseRate": "Svarprocent",
+        "avgScore": "Gennemsnitsscore"
       }
     }
   },

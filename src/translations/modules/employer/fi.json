@@ -12,7 +12,8 @@
       "activateUsers": "Aktivoi käyttäjiä",
       "teams": "Tiimit",
       "activitySummary": "Aktiivisuustiivistelmä",
-      "engagement": "Sitoutuminen"
+      "engagement": "Sitoutuminen",
+      "wellbeing": "Hyvinvointi"
     },
     "paywall": {
       "title": "Aktivoi Työnantajapaneeli",
@@ -340,6 +341,43 @@
         "participants": "Osallistujat",
         "completed": "Suoritettu",
         "completionRate": "Suoritusaste"
+      }
+    },
+    "wellbeing": {
+      "title": "Hyvinvointi",
+      "description": "Organisaatiosi hyvinvointikyselyjen tulokset koostettuna niin, että yksittäiset vastaukset pysyvät yksityisinä.",
+      "errorTitle": "Hyvinvointitietoja ei voitu ladata",
+      "errorBody": "Vain organisaation vastuuhenkilöt näkevät koostetut hyvinvointiraportit.",
+      "noData": "Ei vielä kyselydataa.",
+      "monthlyTitle": "Hyvinvoinnin kehitys (12 kk)",
+      "questionsTitle": "Keskiarvo kysymyksittäin (matalimmat ensin)",
+      "distributionTitle": "Hyvinvoinnin jakauma",
+      "teamsTitle": "Hyvinvointi tiimeittäin",
+      "privacyNote": "Ryhmät näytetään vain lukumäärinä – yksittäisiä vastauksia ei paljasteta.",
+      "kpi": {
+        "avgScore": "Hyvinvoinnin keskiarvo",
+        "last30Days": "Viimeiset 30 pv",
+        "change": "Muutos",
+        "vsPrev30Days": "Edelliset 30 pv",
+        "responseRate": "Vastausprosentti",
+        "answers": "Kyselyvastaukset",
+        "activeSurveys": "Aktiiviset kyselyt"
+      },
+      "chart": {
+        "score": "Pisteet",
+        "respondents": "Vastaajat"
+      },
+      "buckets": {
+        "low": "Vaatii huomiota",
+        "medium": "Kohtalainen",
+        "high": "Hyvä"
+      },
+      "table": {
+        "team": "Tiimi",
+        "members": "Jäsenet",
+        "respondents": "Vastaajat",
+        "responseRate": "Vastausprosentti",
+        "avgScore": "Keskiarvo"
       }
     }
   },
