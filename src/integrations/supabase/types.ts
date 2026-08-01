@@ -1133,6 +1133,43 @@ export type Database = {
         }
         Returns: number
       }
+      org_activity_index_monthly: {
+        Args: never
+        Returns: {
+          active_employees: number
+          exercises: number
+          index_per_employee: number
+          month: string
+          points: number
+        }[]
+      }
+      org_activity_index_overview: {
+        Args: never
+        Returns: {
+          active_employees_30d: number
+          index_change: number
+          index_per_employee: number
+          index_prev_month: number
+          index_this_month: number
+          participation_rate: number
+          points_12m: number
+          points_prev_month: number
+          points_this_month: number
+          points_total: number
+          total_employees: number
+        }[]
+      }
+      org_activity_index_teams: {
+        Args: never
+        Returns: {
+          active_members: number
+          index_per_member: number
+          members: number
+          points: number
+          team_id: string
+          team_name: string
+        }[]
+      }
       org_activity_monthly: {
         Args: never
         Returns: {
@@ -1230,17 +1267,6 @@ export type Database = {
           team_name: string
         }[]
       }
-      org_team_wellbeing: {
-        Args: never
-        Returns: {
-          avg_score: number
-          members: number
-          respondents: number
-          response_rate: number
-          team_id: string
-          team_name: string
-        }[]
-      }
       org_top_activities: {
         Args: { _limit?: number }
         Returns: {
@@ -1261,48 +1287,6 @@ export type Database = {
           likes: number
           posts: number
           user_id: string
-        }[]
-      }
-      org_wellbeing_distribution: {
-        Args: never
-        Returns: {
-          bucket: string
-          employees: number
-        }[]
-      }
-      org_wellbeing_monthly: {
-        Args: never
-        Returns: {
-          answers: number
-          avg_score: number
-          month: string
-          respondents: number
-        }[]
-      }
-      org_wellbeing_overview: {
-        Args: never
-        Returns: {
-          active_surveys: number
-          avg_score: number
-          avg_score_30d: number
-          avg_score_prev_30d: number
-          respondents: number
-          respondents_30d: number
-          response_rate: number
-          score_change: number
-          total_answers: number
-          total_employees: number
-        }[]
-      }
-      org_wellbeing_questions: {
-        Args: never
-        Returns: {
-          avg_score: number
-          question: Json
-          question_id: string
-          question_type: string
-          respondents: number
-          responses: number
         }[]
       }
       read_email_batch: {
