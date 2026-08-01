@@ -47,49 +47,13 @@
     "value3Description": "Entwickelt von Wellthyforce Oy, im Besitz und finanziert von privaten Unternehmern."
   },
   "careersPage": {
-    "title": "Werde Teil unserer Mission",
-    "subtitle": "Hilf uns, das Wohlbefinden am Arbeitsplatz zu verändern und die Zukunft der Mitarbeiterbindung zu gestalten.",
-    "whyWorkTitle": "Warum bei Vointy.life arbeiten?",
-    "benefit1Title": "Remote-First-Kultur",
-    "benefit1Description": "Arbeite von überall mit flexiblen Arbeitszeiten und Fokus auf Work-Life-Balance.",
-    "benefit2Title": "Innovationsfokus",
-    "benefit2Description": "Arbeite an modernster Technologie, die im Leben der Menschen wirklich etwas bewirkt.",
-    "benefit3Title": "Entwicklungsmöglichkeiten",
-    "benefit3Description": "Kontinuierliches Lernen und Weiterentwicklung mit Mentoring- und Schulungsprogrammen.",
-    "openPositionsTitle": "Offene Stellen",
-    "positions": [
-      {
-        "title": "Senior Frontend Developer",
-        "department": "Engineering",
-        "location": "Remote",
-        "type": "Vollzeit",
-        "description": "Werde Teil unseres Engineering-Teams und baue die nächste Generation von Wellness-Lösungen für den Arbeitsplatz mit React, TypeScript und modernen Webtechnologien."
-      },
-      {
-        "title": "Product Manager",
-        "department": "Produkt",
-        "location": "San Francisco, CA",
-        "type": "Vollzeit",
-        "description": "Leite die Produktstrategie und -entwicklung für unsere soziale Wellness-Plattform in enger Zusammenarbeit mit Engineering- und Design-Teams."
-      },
-      {
-        "title": "Customer Success Manager",
-        "department": "Customer Success",
-        "location": "Remote",
-        "type": "Vollzeit",
-        "description": "Hilf unseren Geschäftskunden, den Wert von Vointy.life zu maximieren, und fördere die Nutzung in ihren Organisationen."
-      },
-      {
-        "title": "UI/UX Designer",
-        "department": "Design",
-        "location": "New York, NY",
-        "type": "Vollzeit",
-        "description": "Gestalte intuitive und ansprechende Nutzererlebnisse, die Wellness am Arbeitsplatz für alle Nutzer zugänglich und angenehm machen."
-      }
-    ],
-    "applyNow": "Jetzt bewerben",
-    "noRoleText": "Keine passende Stelle gefunden? Wir suchen immer nach talentierten Menschen.",
-    "sendResume": "Lebenslauf senden"
+    "title": "Karriere",
+    "subtitle": "Vointy.life expandiert weltweit und ist in zahlreichen Sprachen aktiv.",
+    "intro": "Wir suchen folgende Fachkräfte für unser Team:",
+    "salesTitle": "Vertriebsvertreter",
+    "salesText": "Wir bieten selbstständigen Verkäufern eine provisionsbasierte Vereinbarung zum Verkauf von Vointy.life-Dienstleistungen an Unternehmen. Wir zahlen eine Provision von 35% auf realisierte Verkäufe. Mehr erfahren unter contact@vointy.life",
+    "partnerTitle": "Vertragspartner",
+    "partnerText": "Wir suchen Vertragspartner für den Vertrieb, die im Bereich der Verbesserung der Arbeitsfähigkeit von Mitarbeitern tätig sind. Vointy.life bietet eine gute zusätzliche Möglichkeit, auch andere betriebliche Gesundheitsdienstleistungen an Kunden zu verkaufen. Mehr erfahren unter contact@vointy.life"
   },
   "blogPage": {
     "title": "Vointy.life Blog",

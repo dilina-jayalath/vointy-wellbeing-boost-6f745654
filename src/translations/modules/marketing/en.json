@@ -47,49 +47,13 @@
     "value3Description": "Designed and developed by Wellthyforce Oy, owned and financed by private entrepreneurs."
   },
   "careersPage": {
-    "title": "Join Our Mission",
-    "subtitle": "Help us transform workplace wellbeing and build the future of employee engagement.",
-    "whyWorkTitle": "Why Work at Vointy.life?",
-    "benefit1Title": "Remote-First Culture",
-    "benefit1Description": "Work from anywhere with flexible hours and a focus on work-life balance.",
-    "benefit2Title": "Innovation Focus",
-    "benefit2Description": "Work on cutting-edge technology that makes a real difference in people's lives.",
-    "benefit3Title": "Growth Opportunities",
-    "benefit3Description": "Continuous learning and development with mentorship and training programs.",
-    "openPositionsTitle": "Open Positions",
-    "positions": [
-      {
-        "title": "Senior Frontend Developer",
-        "department": "Engineering",
-        "location": "Remote",
-        "type": "Full-time",
-        "description": "Join our engineering team to build the next generation of workplace wellness solutions using React, TypeScript, and modern web technologies."
-      },
-      {
-        "title": "Product Manager",
-        "department": "Product",
-        "location": "San Francisco, CA",
-        "type": "Full-time",
-        "description": "Lead product strategy and development for our social wellness platform, working closely with engineering and design teams."
-      },
-      {
-        "title": "Customer Success Manager",
-        "department": "Customer Success",
-        "location": "Remote",
-        "type": "Full-time",
-        "description": "Help our enterprise customers maximize the value of Vointy.life and drive adoption across their organizations."
-      },
-      {
-        "title": "UI/UX Designer",
-        "department": "Design",
-        "location": "New York, NY",
-        "type": "Full-time",
-        "description": "Design intuitive and engaging user experiences that make workplace wellness accessible and enjoyable for all users."
-      }
-    ],
-    "applyNow": "Apply Now",
-    "noRoleText": "Don't see a role that fits? We're always looking for talented people.",
-    "sendResume": "Send Us Your Resume"
+    "title": "Careers",
+    "subtitle": "Vointy.life is expanding globally and operating in numerous languages.",
+    "intro": "We are looking for the following professionals to join our team:",
+    "salesTitle": "Sales Representatives",
+    "salesText": "We offer independent salespeople a commission-based agreement to sell Vointy.life services to companies. We pay a 35% commission on realized sales. Ask more at contact@vointy.life",
+    "partnerTitle": "Partnership Partners",
+    "partnerText": "We are looking for partnership partners for sales who operate in the field of improving employees' work ability. Vointy.life provides a great additional opportunity to sell other occupational wellbeing services to customers. Ask more at contact@vointy.life"
   },
   "blogPage": {
     "title": "Vointy.life Blog",

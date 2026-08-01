@@ -47,49 +47,13 @@
     "value3Description": "Ontworpen en ontwikkeld door Wellthyforce Oy, eigendom van en gefinancierd door particuliere ondernemers."
   },
   "careersPage": {
-    "title": "Sluit je aan bij onze missie",
-    "subtitle": "Help ons het welzijn op de werkvloer te transformeren en de toekomst van medewerkersbetrokkenheid te bouwen.",
-    "whyWorkTitle": "Waarom werken bij Vointy.life?",
-    "benefit1Title": "Remote-first cultuur",
-    "benefit1Description": "Werk overal met flexibele uren en aandacht voor de balans tussen werk en privéleven.",
-    "benefit2Title": "Focus op innovatie",
-    "benefit2Description": "Werk aan geavanceerde technologie die een écht verschil maakt in het leven van mensen.",
-    "benefit3Title": "Groeimogelijkheden",
-    "benefit3Description": "Continu leren en ontwikkelen met mentorschap en trainingsprogramma's.",
-    "openPositionsTitle": "Openstaande vacatures",
-    "positions": [
-      {
-        "title": "Senior Frontend Developer",
-        "department": "Engineering",
-        "location": "Remote",
-        "type": "Voltijd",
-        "description": "Sluit je aan bij ons engineeringteam om de volgende generatie oplossingen voor welzijn op de werkvloer te bouwen met React, TypeScript en moderne webtechnologieën."
-      },
-      {
-        "title": "Product Manager",
-        "department": "Product",
-        "location": "San Francisco, CA",
-        "type": "Voltijd",
-        "description": "Leid de productstrategie en -ontwikkeling voor ons sociale welzijnsplatform, in nauwe samenwerking met engineering- en designteams."
-      },
-      {
-        "title": "Customer Success Manager",
-        "department": "Customer Success",
-        "location": "Remote",
-        "type": "Voltijd",
-        "description": "Help onze zakelijke klanten optimaal profijt te halen uit Vointy.life en stimuleer adoptie binnen hun organisaties."
-      },
-      {
-        "title": "UI/UX Designer",
-        "department": "Design",
-        "location": "New York, NY",
-        "type": "Voltijd",
-        "description": "Ontwerp intuïtieve en boeiende gebruikerservaringen die welzijn op de werkvloer toegankelijk en plezierig maken voor alle gebruikers."
-      }
-    ],
-    "applyNow": "Solliciteer nu",
-    "noRoleText": "Zie je geen passende functie? We zijn altijd op zoek naar getalenteerde mensen.",
-    "sendResume": "Stuur ons je cv"
+    "title": "Carrière",
+    "subtitle": "Vointy.life breidt wereldwijd uit en is actief in talrijke talen.",
+    "intro": "Wij zijn op zoek naar de volgende professionals voor ons team:",
+    "salesTitle": "Verkoopvertegenwoordigers",
+    "salesText": "Wij bieden onafhankelijke verkopers een op commissie gebaseerde overeenkomst om Vointy.life-diensten aan bedrijven te verkopen. Wij betalen 35% commissie op gerealiseerde verkopen. Vraag meer informatie aan via contact@vointy.life",
+    "partnerTitle": "Contractpartners",
+    "partnerText": "Wij zijn op zoek naar contractpartners voor verkoop die actief zijn op het gebied van het verbeteren van de arbeidsvermogen van werknemers. Vointy.life biedt een goede extra mogelijkheid om ook andere arbeidsgezondheidsdiensten aan klanten te verkopen. Vraag meer informatie aan via contact@vointy.life"
   },
   "blogPage": {
     "title": "Vointy.life-blog",
