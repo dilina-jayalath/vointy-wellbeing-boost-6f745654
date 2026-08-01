@@ -12,7 +12,8 @@
       "activateUsers": "Activar usuarios",
       "teams": "Equipos",
       "activitySummary": "Resumen de actividad",
-      "engagement": "Compromiso"
+      "engagement": "Compromiso",
+      "roi": "Administración y ROI"
     },
     "paywall": {
       "title": "Activar el panel de Empleador",
@@ -372,6 +373,57 @@
         "activeMembers": "Activos",
         "points": "Puntos",
         "indexPerMember": "Índice por miembro"
+      }
+    },
+    "roi": {
+      "title": "Administración y ROI",
+      "description": "Sube tus propios datos de bajas por enfermedad y compáralos con los datos de actividad de Vointy para ver el retorno de la inversión.",
+      "errorTitle": "No se pudieron cargar los datos de ROI",
+      "errorBody": "Solo los responsables de la organización ven informes de ROI agregados.",
+      "noData": "Todavía no se han subido datos de bajas.",
+      "chartTitle": "Días de baja vs. índice de actividad",
+      "tableTitle": "Comparación mensual",
+      "upload": {
+        "title": "Subir datos de bajas por enfermedad",
+        "help": "Sube un archivo CSV con una fila por mes (y opcionalmente por equipo). Columnas reconocidas: month, sick_days, team, absent_employees, headcount. Los meses existentes se actualizan.",
+        "clear": "Eliminar datos subidos",
+        "privacyNote": "Sube solo cifras agregadas: sin nombres ni datos de salud.",
+        "successTitle": "Datos importados",
+        "errorTitle": "Error en la importación",
+        "noRows": "No se encontraron filas válidas. Comprueba las columnas month y sick_days.",
+        "noOrg": "Tu cuenta no está vinculada a una organización.",
+        "rowsImported": "filas importadas",
+        "rowsSkipped": "omitidas"
+      },
+      "settings": {
+        "title": "Supuestos del ROI",
+        "costPerDay": "Coste por día de baja (€)",
+        "monthlyCost": "Coste de Vointy al mes (€)",
+        "save": "Guardar",
+        "saved": "Supuestos guardados",
+        "errorTitle": "No se pudo guardar"
+      },
+      "kpi": {
+        "sickDays12m": "Días de baja (12 meses)",
+        "prev12m": "12 meses anteriores",
+        "change": "Cambio",
+        "perEmployee": "Por empleado",
+        "savings": "Ahorro estimado",
+        "subscriptionCost": "Coste de Vointy (12 meses)",
+        "roi": "ROI",
+        "monthsWithData": "Meses con datos"
+      },
+      "chart": {
+        "sickDays": "Días de baja",
+        "index": "Índice de actividad / empleado"
+      },
+      "table": {
+        "month": "Mes",
+        "sickDays": "Días de baja",
+        "cost": "Coste",
+        "points": "Puntos de actividad",
+        "activeEmployees": "Empleados activos",
+        "index": "Índice / empleado"
       }
     }
   },

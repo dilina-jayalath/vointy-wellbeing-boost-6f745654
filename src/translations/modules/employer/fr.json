@@ -12,7 +12,8 @@
       "activateUsers": "Activer des utilisateurs",
       "teams": "Équipes",
       "activitySummary": "Synthèse d'activité",
-      "engagement": "Engagement"
+      "engagement": "Engagement",
+      "roi": "Administration & ROI"
     },
     "paywall": {
       "title": "Activer le panneau Employeur",
@@ -372,6 +373,57 @@
         "activeMembers": "Actifs",
         "points": "Points",
         "indexPerMember": "Indice par membre"
+      }
+    },
+    "roi": {
+      "title": "Administration et ROI",
+      "description": "Importez vos données d'absence maladie et comparez-les aux données d'activité Vointy pour mesurer le retour sur investissement.",
+      "errorTitle": "Impossible de charger les données ROI",
+      "errorBody": "Seuls les responsables de l'organisation voient les rapports ROI agrégés.",
+      "noData": "Aucune donnée d'absence importée pour le moment.",
+      "chartTitle": "Jours d'absence vs indice d'activité",
+      "tableTitle": "Comparaison mensuelle",
+      "upload": {
+        "title": "Importer les données d'absence maladie",
+        "help": "Importez un fichier CSV avec une ligne par mois (et éventuellement par équipe). Colonnes reconnues : month, sick_days, team, absent_employees, headcount. Les mois existants sont mis à jour.",
+        "clear": "Supprimer les données importées",
+        "privacyNote": "N'importez que des chiffres agrégés – aucun nom ni donnée de santé.",
+        "successTitle": "Données importées",
+        "errorTitle": "Échec de l'import",
+        "noRows": "Aucune ligne valide. Vérifiez les colonnes month et sick_days.",
+        "noOrg": "Votre compte n'est pas rattaché à une organisation.",
+        "rowsImported": "lignes importées",
+        "rowsSkipped": "ignorées"
+      },
+      "settings": {
+        "title": "Hypothèses ROI",
+        "costPerDay": "Coût par jour d'absence (€)",
+        "monthlyCost": "Coût Vointy par mois (€)",
+        "save": "Enregistrer",
+        "saved": "Hypothèses enregistrées",
+        "errorTitle": "Enregistrement impossible"
+      },
+      "kpi": {
+        "sickDays12m": "Jours d'absence (12 mois)",
+        "prev12m": "12 mois précédents",
+        "change": "Évolution",
+        "perEmployee": "Par employé",
+        "savings": "Économies estimées",
+        "subscriptionCost": "Coût Vointy (12 mois)",
+        "roi": "ROI",
+        "monthsWithData": "Mois avec données"
+      },
+      "chart": {
+        "sickDays": "Jours d'absence",
+        "index": "Indice d'activité / employé"
+      },
+      "table": {
+        "month": "Mois",
+        "sickDays": "Jours d'absence",
+        "cost": "Coût",
+        "points": "Points d'activité",
+        "activeEmployees": "Employés actifs",
+        "index": "Indice / employé"
       }
     }
   },

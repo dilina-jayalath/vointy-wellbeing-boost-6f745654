@@ -12,7 +12,8 @@
       "activateUsers": "Aktivér brugere",
       "teams": "Teams",
       "activitySummary": "Aktivitetsoversigt",
-      "engagement": "Engagement"
+      "engagement": "Engagement",
+      "roi": "Administration & ROI"
     },
     "paywall": {
       "title": "Aktivér arbejdsgiverpanelet",
@@ -372,6 +373,57 @@
         "activeMembers": "Aktive",
         "points": "Point",
         "indexPerMember": "Indeks pr. medlem"
+      }
+    },
+    "roi": {
+      "title": "Administration og ROI",
+      "description": "Upload dine egne sygefraværsdata og sammenlign dem med Vointys aktivitetsdata for at se afkastet.",
+      "errorTitle": "Kunne ikke indlæse ROI-data",
+      "errorBody": "Kun organisationens ansvarlige kan se samlede ROI-rapporter.",
+      "noData": "Der er endnu ikke uploadet sygefraværsdata.",
+      "chartTitle": "Sygedage vs. aktivitetsindeks",
+      "tableTitle": "Månedlig sammenligning",
+      "upload": {
+        "title": "Upload sygefraværsdata",
+        "help": "Upload en CSV-fil med én række pr. måned (og eventuelt pr. team). Genkendte kolonner: month, sick_days, team, absent_employees, headcount. Eksisterende måneder opdateres.",
+        "clear": "Fjern uploadede data",
+        "privacyNote": "Upload kun samlede tal – ingen navne eller helbredsoplysninger.",
+        "successTitle": "Data importeret",
+        "errorTitle": "Import mislykkedes",
+        "noRows": "Ingen gyldige rækker fundet. Kontrollér kolonnerne month og sick_days.",
+        "noOrg": "Din konto er ikke tilknyttet en organisation.",
+        "rowsImported": "rækker importeret",
+        "rowsSkipped": "sprunget over"
+      },
+      "settings": {
+        "title": "ROI-antagelser",
+        "costPerDay": "Omkostning pr. sygedag (€)",
+        "monthlyCost": "Vointy-omkostning pr. måned (€)",
+        "save": "Gem",
+        "saved": "Antagelser gemt",
+        "errorTitle": "Kunne ikke gemme"
+      },
+      "kpi": {
+        "sickDays12m": "Sygedage (12 måneder)",
+        "prev12m": "Forrige 12 måneder",
+        "change": "Ændring",
+        "perEmployee": "Pr. medarbejder",
+        "savings": "Estimeret besparelse",
+        "subscriptionCost": "Vointy-omkostning (12 måneder)",
+        "roi": "ROI",
+        "monthsWithData": "Måneder med data"
+      },
+      "chart": {
+        "sickDays": "Sygedage",
+        "index": "Aktivitetsindeks / medarbejder"
+      },
+      "table": {
+        "month": "Måned",
+        "sickDays": "Sygedage",
+        "cost": "Omkostning",
+        "points": "Aktivitetspoint",
+        "activeEmployees": "Aktive medarbejdere",
+        "index": "Indeks / medarbejder"
       }
     }
   },

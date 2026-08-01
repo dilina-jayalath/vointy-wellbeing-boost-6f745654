@@ -12,7 +12,8 @@
       "activateUsers": "Nutzer aktivieren",
       "teams": "Teams",
       "activitySummary": "Aktivitätsübersicht",
-      "engagement": "Engagement"
+      "engagement": "Engagement",
+      "roi": "Verwaltung & ROI"
     },
     "paywall": {
       "title": "Employer-Panel aktivieren",
@@ -372,6 +373,57 @@
         "activeMembers": "Aktiv",
         "points": "Punkte",
         "indexPerMember": "Index je Mitglied"
+      }
+    },
+    "roi": {
+      "title": "Verwaltung und ROI",
+      "description": "Laden Sie eigene Krankheitsdaten hoch und vergleichen Sie sie mit den Vointy-Aktivitätsdaten, um den Return on Investment zu sehen.",
+      "errorTitle": "ROI-Daten konnten nicht geladen werden",
+      "errorBody": "Nur Organisationsverantwortliche sehen aggregierte ROI-Berichte.",
+      "noData": "Noch keine Krankheitsdaten hochgeladen.",
+      "chartTitle": "Krankheitstage vs. Aktivitätsindex",
+      "tableTitle": "Monatsvergleich",
+      "upload": {
+        "title": "Krankheitsdaten hochladen",
+        "help": "Laden Sie eine CSV-Datei mit einer Zeile pro Monat (optional pro Team) hoch. Erkannte Spalten: month, sick_days, team, absent_employees, headcount. Vorhandene Monate werden aktualisiert.",
+        "clear": "Hochgeladene Daten entfernen",
+        "privacyNote": "Nur aggregierte Zahlen hochladen – keine Namen oder Gesundheitsdaten.",
+        "successTitle": "Krankheitsdaten importiert",
+        "errorTitle": "Import fehlgeschlagen",
+        "noRows": "Keine gültigen Zeilen gefunden. Prüfen Sie die Spalten month und sick_days.",
+        "noOrg": "Ihr Konto ist keiner Organisation zugeordnet.",
+        "rowsImported": "Zeilen importiert",
+        "rowsSkipped": "übersprungen"
+      },
+      "settings": {
+        "title": "ROI-Annahmen",
+        "costPerDay": "Kosten pro Krankheitstag (€)",
+        "monthlyCost": "Vointy-Kosten pro Monat (€)",
+        "save": "Speichern",
+        "saved": "Annahmen gespeichert",
+        "errorTitle": "Speichern fehlgeschlagen"
+      },
+      "kpi": {
+        "sickDays12m": "Krankheitstage (12 Monate)",
+        "prev12m": "Vorherige 12 Monate",
+        "change": "Veränderung",
+        "perEmployee": "Je Mitarbeitendem",
+        "savings": "Geschätzte Einsparung",
+        "subscriptionCost": "Vointy-Kosten (12 Monate)",
+        "roi": "ROI",
+        "monthsWithData": "Monate mit Daten"
+      },
+      "chart": {
+        "sickDays": "Krankheitstage",
+        "index": "Aktivitätsindex / Mitarbeitendem"
+      },
+      "table": {
+        "month": "Monat",
+        "sickDays": "Krankheitstage",
+        "cost": "Kosten",
+        "points": "Aktivitätspunkte",
+        "activeEmployees": "Aktive Mitarbeitende",
+        "index": "Index / Mitarbeitendem"
       }
     }
   },

@@ -12,7 +12,8 @@
       "activateUsers": "Activate Users",
       "teams": "Teams",
       "activitySummary": "Activity summary",
-      "engagement": "Engagement"
+      "engagement": "Engagement",
+      "roi": "Admin & ROI"
     },
     "paywall": {
       "title": "Activate the Employer panel",
@@ -372,6 +373,57 @@
         "activeMembers": "Active",
         "points": "Points",
         "indexPerMember": "Index per member"
+      }
+    },
+    "roi": {
+      "title": "Administration & ROI",
+      "description": "Upload your own sick leave data and compare it with Vointy activity data to see the return on investment.",
+      "errorTitle": "Could not load ROI data",
+      "errorBody": "Only organization managers can view aggregated ROI reports.",
+      "noData": "No sick leave data uploaded yet.",
+      "chartTitle": "Sick leave days vs. Activity Index",
+      "tableTitle": "Monthly comparison",
+      "upload": {
+        "title": "Upload sick leave data",
+        "help": "Upload a CSV file with one row per month (and optionally per team). Recognised columns: month, sick_days, team, absent_employees, headcount. Existing months are updated.",
+        "clear": "Remove uploaded data",
+        "privacyNote": "Upload aggregated figures only — do not include names or personal health details.",
+        "successTitle": "Sick leave data imported",
+        "errorTitle": "Import failed",
+        "noRows": "No valid rows found. Check that the file has month and sick_days columns.",
+        "noOrg": "Your account is not linked to an organization.",
+        "rowsImported": "rows imported",
+        "rowsSkipped": "skipped"
+      },
+      "settings": {
+        "title": "ROI assumptions",
+        "costPerDay": "Cost per sick day (€)",
+        "monthlyCost": "Vointy cost per month (€)",
+        "save": "Save",
+        "saved": "Assumptions saved",
+        "errorTitle": "Could not save"
+      },
+      "kpi": {
+        "sickDays12m": "Sick days (12 months)",
+        "prev12m": "Previous 12 months",
+        "change": "Change",
+        "perEmployee": "Per employee",
+        "savings": "Estimated savings",
+        "subscriptionCost": "Vointy cost (12 months)",
+        "roi": "ROI",
+        "monthsWithData": "Months with data"
+      },
+      "chart": {
+        "sickDays": "Sick days",
+        "index": "Activity Index / employee"
+      },
+      "table": {
+        "month": "Month",
+        "sickDays": "Sick days",
+        "cost": "Cost",
+        "points": "Activity points",
+        "activeEmployees": "Active employees",
+        "index": "Index / employee"
       }
     }
   },

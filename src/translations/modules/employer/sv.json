@@ -12,7 +12,8 @@
       "activateUsers": "Aktivera användare",
       "teams": "Team",
       "activitySummary": "Aktivitetssammanfattning",
-      "engagement": "Engagemang"
+      "engagement": "Engagemang",
+      "roi": "Administration & ROI"
     },
     "paywall": {
       "title": "Aktivera arbetsgivarpanelen",
@@ -372,6 +373,57 @@
         "activeMembers": "Aktiva",
         "points": "Poäng",
         "indexPerMember": "Index per medlem"
+      }
+    },
+    "roi": {
+      "title": "Administration och ROI",
+      "description": "Ladda upp egen sjukfrånvarodata och jämför den med Vointys aktivitetsdata för att se avkastningen.",
+      "errorTitle": "Kunde inte läsa in ROI-data",
+      "errorBody": "Endast organisationens ansvariga kan se sammanställda ROI-rapporter.",
+      "noData": "Ingen sjukfrånvarodata uppladdad än.",
+      "chartTitle": "Sjukdagar vs. aktivitetsindex",
+      "tableTitle": "Månadsjämförelse",
+      "upload": {
+        "title": "Ladda upp sjukfrånvarodata",
+        "help": "Ladda upp en CSV-fil med en rad per månad (och eventuellt per team). Kolumner som känns igen: month, sick_days, team, absent_employees, headcount. Befintliga månader uppdateras.",
+        "clear": "Ta bort uppladdad data",
+        "privacyNote": "Ladda endast upp sammanställda siffror – inga namn eller hälsouppgifter.",
+        "successTitle": "Sjukfrånvarodata importerad",
+        "errorTitle": "Importen misslyckades",
+        "noRows": "Inga giltiga rader hittades. Kontrollera kolumnerna month och sick_days.",
+        "noOrg": "Ditt konto är inte kopplat till en organisation.",
+        "rowsImported": "rader importerade",
+        "rowsSkipped": "överhoppade"
+      },
+      "settings": {
+        "title": "ROI-antaganden",
+        "costPerDay": "Kostnad per sjukdag (€)",
+        "monthlyCost": "Vointy-kostnad per månad (€)",
+        "save": "Spara",
+        "saved": "Antaganden sparade",
+        "errorTitle": "Kunde inte spara"
+      },
+      "kpi": {
+        "sickDays12m": "Sjukdagar (12 månader)",
+        "prev12m": "Föregående 12 månader",
+        "change": "Förändring",
+        "perEmployee": "Per medarbetare",
+        "savings": "Uppskattad besparing",
+        "subscriptionCost": "Vointy-kostnad (12 månader)",
+        "roi": "ROI",
+        "monthsWithData": "Månader med data"
+      },
+      "chart": {
+        "sickDays": "Sjukdagar",
+        "index": "Aktivitetsindex / medarbetare"
+      },
+      "table": {
+        "month": "Månad",
+        "sickDays": "Sjukdagar",
+        "cost": "Kostnad",
+        "points": "Aktivitetspoäng",
+        "activeEmployees": "Aktiva medarbetare",
+        "index": "Index / medarbetare"
       }
     }
   },
