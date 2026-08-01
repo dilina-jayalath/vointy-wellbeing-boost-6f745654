@@ -64,24 +64,19 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">{t('footer.product')}</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/#features" className="text-gray-300 hover:text-white transition-colors">
                   {t('nav.features')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/#benefits" className="text-gray-300 hover:text-white transition-colors">
                   {t('nav.benefits')}
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to="/subscription" className="text-gray-300 hover:text-white transition-colors">
                   {t('nav.pricing')}
                 </Link>
-              </li>
-              <li>
-                <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">
-                  {t('nav.testimonials')}
-                </a>
               </li>
             </ul>
           </div>
