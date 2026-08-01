@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
-import { Cookie, Settings, BarChart3, Zap, Users, Globe, Shield, Mail, Phone } from 'lucide-react';
+import { Cookie, Settings, BarChart3, Zap, Users, Globe, Shield, Mail, Building } from 'lucide-react';
 
 const CookiePolicy = () => {
   const sections = [
@@ -248,12 +248,12 @@ const CookiePolicy = () => {
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                     <Mail className="w-6 h-6 mx-auto mb-2" />
                     <div className="font-medium">Email</div>
-                    <div className="text-white/80">privacy@vointy.life</div>
+                    <div className="text-white/80">contact@vointy.life</div>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                    <Phone className="w-6 h-6 mx-auto mb-2" />
+                    <Building className="w-6 h-6 mx-auto mb-2" />
                     <div className="font-medium">Address</div>
-                    <div className="text-white/80">[Your Company Address]</div>
+                    <div className="text-white/80">Vasantie 43, 90310 Oulu, Finland</div>
                   </div>
                 </div>
               </CardContent>
