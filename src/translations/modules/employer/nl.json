@@ -12,8 +12,7 @@
       "activateUsers": "Gebruikers activeren",
       "teams": "Teams",
       "activitySummary": "Activiteitsoverzicht",
-      "engagement": "Betrokkenheid",
-      "wellbeing": "Welzijn"
+      "engagement": "Betrokkenheid"
     },
     "paywall": {
       "title": "Activeer het werkgeverspaneel",
@@ -343,41 +342,36 @@
         "completionRate": "Voltooiingspercentage"
       }
     },
-    "wellbeing": {
-      "title": "Welzijn",
-      "description": "Resultaten van welzijnsonderzoeken in je organisatie, geaggregeerd zodat individuele antwoorden privé blijven.",
-      "errorTitle": "Welzijnsgegevens konden niet worden geladen",
+    "activityIndexReport": {
+      "title": "Activiteitsindex",
+      "description": "De activiteitsindex is gebaseerd op uitgevoerde activiteiten: elke voltooide activiteit levert één punt op, per maand en over het jaar opgeteld.",
+      "errorTitle": "Activiteitsindex kon niet worden geladen",
       "errorBody": "Alleen organisatiebeheerders zien geaggregeerde rapporten.",
-      "noData": "Nog geen enquêtegegevens.",
-      "monthlyTitle": "Ontwikkeling van welzijn (12 maanden)",
-      "questionsTitle": "Gemiddelde score per vraag (laagste eerst)",
-      "distributionTitle": "Verdeling van welzijn",
-      "teamsTitle": "Welzijn per team",
-      "privacyNote": "Groepen worden alleen als aantallen weergegeven – nooit individuele antwoorden.",
+      "noData": "Nog geen activiteitsgegevens.",
+      "monthlyTitle": "Ontwikkeling activiteitsindex (12 maanden)",
+      "teamsTitle": "Activiteitsindex per team",
+      "calculationTitle": "Hoe de index wordt berekend",
+      "calculationBody": "Elke voltooide activiteit is 1 punt waard. Punten worden maandelijks opgeteld en over het jaar opgebouwd vanaf het moment van aanmelden. De index per medewerker is het totaal aan punten gedeeld door het aantal medewerkers.",
       "kpi": {
-        "avgScore": "Gemiddelde welzijnsscore",
-        "last30Days": "Laatste 30 dagen",
+        "indexPerEmployee": "Index per medewerker",
+        "thisMonth": "Deze maand",
         "change": "Verandering",
-        "vsPrev30Days": "Vorige 30 dagen",
-        "responseRate": "Responspercentage",
-        "answers": "Enquêteantwoorden",
-        "activeSurveys": "Actieve enquêtes"
+        "prevMonth": "Vorige maand",
+        "participation": "Deelname",
+        "last30Days": "laatste 30 dagen",
+        "points12m": "Punten (12 maanden)",
+        "pointsTotal": "Totaal"
       },
       "chart": {
-        "score": "Score",
-        "respondents": "Respondenten"
-      },
-      "buckets": {
-        "low": "Vraagt aandacht",
-        "medium": "Gemiddeld",
-        "high": "Goed"
+        "index": "Index per medewerker",
+        "active": "Actieve medewerkers"
       },
       "table": {
         "team": "Team",
         "members": "Leden",
-        "respondents": "Respondenten",
-        "responseRate": "Responspercentage",
-        "avgScore": "Gemiddelde score"
+        "activeMembers": "Actief",
+        "points": "Punten",
+        "indexPerMember": "Index per lid"
       }
     }
   },

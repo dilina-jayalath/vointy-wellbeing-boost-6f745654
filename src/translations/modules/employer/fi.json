@@ -12,8 +12,7 @@
       "activateUsers": "Aktivoi käyttäjiä",
       "teams": "Tiimit",
       "activitySummary": "Aktiivisuustiivistelmä",
-      "engagement": "Sitoutuminen",
-      "wellbeing": "Hyvinvointi"
+      "engagement": "Sitoutuminen"
     },
     "paywall": {
       "title": "Aktivoi Työnantajapaneeli",
@@ -343,41 +342,36 @@
         "completionRate": "Suoritusaste"
       }
     },
-    "wellbeing": {
-      "title": "Hyvinvointi",
-      "description": "Organisaatiosi hyvinvointikyselyjen tulokset koostettuna niin, että yksittäiset vastaukset pysyvät yksityisinä.",
-      "errorTitle": "Hyvinvointitietoja ei voitu ladata",
-      "errorBody": "Vain organisaation vastuuhenkilöt näkevät koostetut hyvinvointiraportit.",
-      "noData": "Ei vielä kyselydataa.",
-      "monthlyTitle": "Hyvinvoinnin kehitys (12 kk)",
-      "questionsTitle": "Keskiarvo kysymyksittäin (matalimmat ensin)",
-      "distributionTitle": "Hyvinvoinnin jakauma",
-      "teamsTitle": "Hyvinvointi tiimeittäin",
-      "privacyNote": "Ryhmät näytetään vain lukumäärinä – yksittäisiä vastauksia ei paljasteta.",
+    "activityIndexReport": {
+      "title": "Aktiivisuusindeksi",
+      "description": "Aktiivisuusindeksi muodostuu suoritetuista aktiviteeteista: jokainen suoritus on yksi piste, jotka lasketaan yhteen kuukausittain ja vuoden ajalta.",
+      "errorTitle": "Aktiivisuusindeksiä ei voitu ladata",
+      "errorBody": "Vain organisaation vastuuhenkilöt näkevät koostetut raportit.",
+      "noData": "Ei vielä aktiviteettidataa.",
+      "monthlyTitle": "Aktiivisuusindeksin kehitys (12 kk)",
+      "teamsTitle": "Aktiivisuusindeksi tiimeittäin",
+      "calculationTitle": "Miten indeksi lasketaan",
+      "calculationBody": "Jokainen työntekijän suorittama aktiviteetti on 1 piste. Pisteet lasketaan yhteen kuukausittain ja kumuloituvat vuoden ajalta liittymishetkestä alkaen. Indeksi työntekijää kohti on organisaation kokonaispisteet jaettuna työntekijöiden määrällä.",
       "kpi": {
-        "avgScore": "Hyvinvoinnin keskiarvo",
-        "last30Days": "Viimeiset 30 pv",
+        "indexPerEmployee": "Indeksi / työntekijä",
+        "thisMonth": "Tämä kuukausi",
         "change": "Muutos",
-        "vsPrev30Days": "Edelliset 30 pv",
-        "responseRate": "Vastausprosentti",
-        "answers": "Kyselyvastaukset",
-        "activeSurveys": "Aktiiviset kyselyt"
+        "prevMonth": "Edellinen kuukausi",
+        "participation": "Osallistumisaste",
+        "last30Days": "viimeiset 30 pv",
+        "points12m": "Pisteet (12 kk)",
+        "pointsTotal": "Kaikkiaan"
       },
       "chart": {
-        "score": "Pisteet",
-        "respondents": "Vastaajat"
-      },
-      "buckets": {
-        "low": "Vaatii huomiota",
-        "medium": "Kohtalainen",
-        "high": "Hyvä"
+        "index": "Indeksi / työntekijä",
+        "active": "Aktiiviset työntekijät"
       },
       "table": {
         "team": "Tiimi",
         "members": "Jäsenet",
-        "respondents": "Vastaajat",
-        "responseRate": "Vastausprosentti",
-        "avgScore": "Keskiarvo"
+        "activeMembers": "Aktiiviset",
+        "points": "Pisteet",
+        "indexPerMember": "Indeksi / jäsen"
       }
     }
   },

@@ -12,8 +12,7 @@
       "activateUsers": "Attiva utenti",
       "teams": "Team",
       "activitySummary": "Riepilogo attività",
-      "engagement": "Coinvolgimento",
-      "wellbeing": "Benessere"
+      "engagement": "Coinvolgimento"
     },
     "paywall": {
       "title": "Attiva il pannello Datore di lavoro",
@@ -343,41 +342,36 @@
         "completionRate": "Tasso di completamento"
       }
     },
-    "wellbeing": {
-      "title": "Benessere",
-      "description": "Risultati dei sondaggi sul benessere della tua organizzazione, aggregati per mantenere private le risposte individuali.",
-      "errorTitle": "Impossibile caricare i dati sul benessere",
+    "activityIndexReport": {
+      "title": "Indice di attività",
+      "description": "L'indice di attività si basa sulle attività svolte: ogni attività completata vale un punto, sommato per mese e nell'anno.",
+      "errorTitle": "Impossibile caricare l'indice di attività",
       "errorBody": "Solo i responsabili dell'organizzazione vedono i report aggregati.",
-      "noData": "Nessun dato dai sondaggi.",
-      "monthlyTitle": "Andamento del benessere (12 mesi)",
-      "questionsTitle": "Punteggio medio per domanda (dal più basso)",
-      "distributionTitle": "Distribuzione del benessere",
-      "teamsTitle": "Benessere per team",
-      "privacyNote": "I gruppi sono mostrati solo come conteggi: nessuna risposta individuale.",
+      "noData": "Nessun dato di attività.",
+      "monthlyTitle": "Andamento dell'indice di attività (12 mesi)",
+      "teamsTitle": "Indice di attività per team",
+      "calculationTitle": "Come si calcola l'indice",
+      "calculationBody": "Ogni attività completata da un dipendente vale 1 punto. I punti sono sommati mensilmente e accumulati nell'anno dall'iscrizione. L'indice per dipendente è il totale dei punti diviso il numero di dipendenti.",
       "kpi": {
-        "avgScore": "Punteggio medio di benessere",
-        "last30Days": "Ultimi 30 giorni",
+        "indexPerEmployee": "Indice per dipendente",
+        "thisMonth": "Questo mese",
         "change": "Variazione",
-        "vsPrev30Days": "30 giorni precedenti",
-        "responseRate": "Tasso di risposta",
-        "answers": "Risposte ai sondaggi",
-        "activeSurveys": "Sondaggi attivi"
+        "prevMonth": "Mese precedente",
+        "participation": "Partecipazione",
+        "last30Days": "ultimi 30 giorni",
+        "points12m": "Punti (12 mesi)",
+        "pointsTotal": "Totale"
       },
       "chart": {
-        "score": "Punteggio",
-        "respondents": "Rispondenti"
-      },
-      "buckets": {
-        "low": "Richiede attenzione",
-        "medium": "Moderato",
-        "high": "Buono"
+        "index": "Indice per dipendente",
+        "active": "Dipendenti attivi"
       },
       "table": {
         "team": "Team",
         "members": "Membri",
-        "respondents": "Rispondenti",
-        "responseRate": "Tasso di risposta",
-        "avgScore": "Punteggio medio"
+        "activeMembers": "Attivi",
+        "points": "Punti",
+        "indexPerMember": "Indice per membro"
       }
     }
   },

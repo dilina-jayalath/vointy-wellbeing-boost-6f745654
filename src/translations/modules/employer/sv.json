@@ -12,8 +12,7 @@
       "activateUsers": "Aktivera användare",
       "teams": "Team",
       "activitySummary": "Aktivitetssammanfattning",
-      "engagement": "Engagemang",
-      "wellbeing": "Välbefinnande"
+      "engagement": "Engagemang"
     },
     "paywall": {
       "title": "Aktivera arbetsgivarpanelen",
@@ -343,41 +342,36 @@
         "completionRate": "Slutförandegrad"
       }
     },
-    "wellbeing": {
-      "title": "Välbefinnande",
-      "description": "Resultat från välbefinnandeenkäter i din organisation, sammanställda så att enskilda svar förblir privata.",
-      "errorTitle": "Kunde inte läsa in välbefinnandedata",
+    "activityIndexReport": {
+      "title": "Aktivitetsindex",
+      "description": "Aktivitetsindex bygger på utförda aktiviteter: varje genomförd aktivitet ger en poäng, summerade per månad och över året.",
+      "errorTitle": "Kunde inte läsa in aktivitetsindex",
       "errorBody": "Endast organisationens ansvariga kan se sammanställda rapporter.",
-      "noData": "Ingen enkätdata ännu.",
-      "monthlyTitle": "Utveckling av välbefinnande (12 månader)",
-      "questionsTitle": "Snittpoäng per fråga (lägsta först)",
-      "distributionTitle": "Fördelning av välbefinnande",
-      "teamsTitle": "Välbefinnande per team",
-      "privacyNote": "Grupper visas endast som antal – enskilda svar avslöjas aldrig.",
+      "noData": "Ingen aktivitetsdata ännu.",
+      "monthlyTitle": "Utveckling av aktivitetsindex (12 månader)",
+      "teamsTitle": "Aktivitetsindex per team",
+      "calculationTitle": "Så beräknas indexet",
+      "calculationBody": "Varje aktivitet en medarbetare genomför ger 1 poäng. Poängen summeras månadsvis och ackumuleras över året från anslutningen. Index per medarbetare är organisationens totala poäng dividerat med antalet medarbetare.",
       "kpi": {
-        "avgScore": "Genomsnittligt välbefinnande",
-        "last30Days": "Senaste 30 dagarna",
+        "indexPerEmployee": "Index per medarbetare",
+        "thisMonth": "Denna månad",
         "change": "Förändring",
-        "vsPrev30Days": "Föregående 30 dagar",
-        "responseRate": "Svarsfrekvens",
-        "answers": "Enkätsvar",
-        "activeSurveys": "Aktiva enkäter"
+        "prevMonth": "Föregående månad",
+        "participation": "Deltagande",
+        "last30Days": "senaste 30 dagarna",
+        "points12m": "Poäng (12 månader)",
+        "pointsTotal": "Totalt"
       },
       "chart": {
-        "score": "Poäng",
-        "respondents": "Svarande"
-      },
-      "buckets": {
-        "low": "Kräver uppmärksamhet",
-        "medium": "Måttlig",
-        "high": "God"
+        "index": "Index per medarbetare",
+        "active": "Aktiva medarbetare"
       },
       "table": {
         "team": "Team",
         "members": "Medlemmar",
-        "respondents": "Svarande",
-        "responseRate": "Svarsfrekvens",
-        "avgScore": "Snittpoäng"
+        "activeMembers": "Aktiva",
+        "points": "Poäng",
+        "indexPerMember": "Index per medlem"
       }
     }
   },

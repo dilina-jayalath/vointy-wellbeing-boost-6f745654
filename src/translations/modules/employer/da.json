@@ -12,8 +12,7 @@
       "activateUsers": "Aktivér brugere",
       "teams": "Teams",
       "activitySummary": "Aktivitetsoversigt",
-      "engagement": "Engagement",
-      "wellbeing": "Trivsel"
+      "engagement": "Engagement"
     },
     "paywall": {
       "title": "Aktivér arbejdsgiverpanelet",
@@ -343,41 +342,36 @@
         "completionRate": "Gennemførelsesgrad"
       }
     },
-    "wellbeing": {
-      "title": "Trivsel",
-      "description": "Resultater fra trivselsundersøgelser i din organisation, samlet så individuelle svar forbliver private.",
-      "errorTitle": "Kunne ikke indlæse trivselsdata",
+    "activityIndexReport": {
+      "title": "Aktivitetsindeks",
+      "description": "Aktivitetsindekset bygger på udførte aktiviteter: hver gennemført aktivitet giver ét point, summeret pr. måned og over året.",
+      "errorTitle": "Kunne ikke indlæse aktivitetsindeks",
       "errorBody": "Kun organisationens ansvarlige kan se samlede rapporter.",
-      "noData": "Endnu ingen undersøgelsesdata.",
-      "monthlyTitle": "Udvikling i trivsel (12 måneder)",
-      "questionsTitle": "Gennemsnit pr. spørgsmål (laveste først)",
-      "distributionTitle": "Fordeling af trivsel",
-      "teamsTitle": "Trivsel pr. team",
-      "privacyNote": "Grupper vises kun som antal – individuelle svar afsløres aldrig.",
+      "noData": "Endnu ingen aktivitetsdata.",
+      "monthlyTitle": "Udvikling i aktivitetsindeks (12 måneder)",
+      "teamsTitle": "Aktivitetsindeks pr. team",
+      "calculationTitle": "Sådan beregnes indekset",
+      "calculationBody": "Hver gennemført aktivitet giver 1 point. Point summeres månedligt og akkumuleres over året fra tilmeldingen. Indeks pr. medarbejder er organisationens samlede point divideret med antallet af medarbejdere.",
       "kpi": {
-        "avgScore": "Gennemsnitlig trivselsscore",
-        "last30Days": "Seneste 30 dage",
+        "indexPerEmployee": "Indeks pr. medarbejder",
+        "thisMonth": "Denne måned",
         "change": "Ændring",
-        "vsPrev30Days": "Forrige 30 dage",
-        "responseRate": "Svarprocent",
-        "answers": "Undersøgelsessvar",
-        "activeSurveys": "Aktive undersøgelser"
+        "prevMonth": "Forrige måned",
+        "participation": "Deltagelse",
+        "last30Days": "seneste 30 dage",
+        "points12m": "Point (12 måneder)",
+        "pointsTotal": "I alt"
       },
       "chart": {
-        "score": "Score",
-        "respondents": "Respondenter"
-      },
-      "buckets": {
-        "low": "Kræver opmærksomhed",
-        "medium": "Moderat",
-        "high": "God"
+        "index": "Indeks pr. medarbejder",
+        "active": "Aktive medarbejdere"
       },
       "table": {
         "team": "Team",
         "members": "Medlemmer",
-        "respondents": "Respondenter",
-        "responseRate": "Svarprocent",
-        "avgScore": "Gennemsnitsscore"
+        "activeMembers": "Aktive",
+        "points": "Point",
+        "indexPerMember": "Indeks pr. medlem"
       }
     }
   },
