@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from '@/lib/i18n';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
+import vointyMark from '@/assets/vointy-mark.png.asset.json';
+
 
 const Footer = () => {
   const { t, language } = useTranslation();
