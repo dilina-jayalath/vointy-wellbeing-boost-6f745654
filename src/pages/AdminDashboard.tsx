@@ -227,11 +227,17 @@ const AdminDashboard = () => {
               {(t("adminPanel.tabs.newsletter") as string).replace("{count}", String(data.subscribers.length))}
             </TabsTrigger>
             <TabsTrigger value="blog">Blog</TabsTrigger>
+            <TabsTrigger value="admins">Admins</TabsTrigger>
           </TabsList>
 
           <TabsContent value="blog" className="mt-4">
             <BlogManager />
           </TabsContent>
+
+          <TabsContent value="admins" className="mt-4">
+            <AdminRoles />
+          </TabsContent>
+
 
 
           <TabsContent value="messages" className="mt-4">
