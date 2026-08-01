@@ -10,7 +10,8 @@
       "inviteUsers": "Bjud in användare",
       "invitedList": "Inbjudningslista",
       "activateUsers": "Aktivera användare",
-      "teams": "Team"
+      "teams": "Team",
+      "activitySummary": "Aktivitetssammanfattning"
     },
     "paywall": {
       "title": "Aktivera arbetsgivarpanelen",
@@ -270,6 +271,37 @@
     "paymentBanner": {
       "text": "Alla betalningar i förhandsgranskningen görs i testläge.",
       "readMore": "Läs mer"
+    },
+    "activitySummary": {
+      "title": "Aktivitetssammanfattning",
+      "description": "Sammanställd överblick över organisationens aktivitet. Enskilda utföranden visas aldrig.",
+      "errorTitle": "Ingen åtkomst till rapporter",
+      "errorBody": "Aktivitetsrapporter visas för organisationens ägare. Be din administratör om åtkomst.",
+      "never": "Aldrig",
+      "noData": "Ingen aktivitetsdata än.",
+      "noTeams": "Inga team skapade än.",
+      "monthlyTrend": "Månadsutveckling (12 mån)",
+      "topActivities": "Populäraste aktiviteterna",
+      "teamComparison": "Jämförelse av team",
+      "employeeSummary": "Sammanfattning per anställd",
+      "timesPerformed": "Antal gånger",
+      "kpi": {
+        "totalExercises": "Genomförda aktiviteter",
+        "totalPoints": "Aktivitetspoäng",
+        "activeEmployees": "Aktiva anställda",
+        "participation": "Deltagandegrad",
+        "last30Days": "Senaste 30 dagarna",
+        "avgPerEmployee": "Genomsnitt per anställd"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Medlemmar",
+        "exercises": "Aktiviteter",
+        "points": "Poäng",
+        "avgPerMember": "Snitt / medlem",
+        "employee": "Anställd",
+        "lastActive": "Senast aktiv"
+      }
     }
   },
   "adminPanel": {

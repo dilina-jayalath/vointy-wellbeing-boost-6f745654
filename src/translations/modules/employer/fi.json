@@ -10,7 +10,8 @@
       "inviteUsers": "Kutsu käyttäjiä",
       "invitedList": "Kutsuttujen lista",
       "activateUsers": "Aktivoi käyttäjiä",
-      "teams": "Tiimit"
+      "teams": "Tiimit",
+      "activitySummary": "Aktiivisuustiivistelmä"
     },
     "paywall": {
       "title": "Aktivoi Työnantajapaneeli",
@@ -270,6 +271,37 @@
     "paymentBanner": {
       "text": "Kaikki esikatselussa tehdyt maksut ovat testitilassa.",
       "readMore": "Lue lisää"
+    },
+    "activitySummary": {
+      "title": "Aktiivisuustiivistelmä",
+      "description": "Koostettu yhteenveto organisaatiosi aktiivisuudesta. Yksittäisten suoritusten tietoja ei näytetä.",
+      "errorTitle": "Ei käyttöoikeutta raportteihin",
+      "errorBody": "Aktiivisuusraportit näkyvät organisaation omistajalle. Pyydä käyttöoikeus ylläpitäjältä.",
+      "never": "Ei koskaan",
+      "noData": "Ei vielä aktiivisuustietoja.",
+      "noTeams": "Tiimejä ei ole vielä luotu.",
+      "monthlyTrend": "Kuukausikehitys (12 kk)",
+      "topActivities": "Suosituimmat aktiviteetit",
+      "teamComparison": "Tiimien vertailu",
+      "employeeSummary": "Työntekijöiden yhteenveto",
+      "timesPerformed": "Suorituskerrat",
+      "kpi": {
+        "totalExercises": "Suoritetut aktiviteetit",
+        "totalPoints": "Aktiivisuuspisteet",
+        "activeEmployees": "Aktiiviset työntekijät",
+        "participation": "Osallistumisaste",
+        "last30Days": "Viimeiset 30 päivää",
+        "avgPerEmployee": "Keskiarvo / työntekijä"
+      },
+      "table": {
+        "team": "Tiimi",
+        "members": "Jäsenet",
+        "exercises": "Aktiviteetit",
+        "points": "Pisteet",
+        "avgPerMember": "Ka / jäsen",
+        "employee": "Työntekijä",
+        "lastActive": "Viimeksi aktiivinen"
+      }
     }
   },
   "adminPanel": {

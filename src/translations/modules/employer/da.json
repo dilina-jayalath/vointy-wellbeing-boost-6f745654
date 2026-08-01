@@ -10,7 +10,8 @@
       "inviteUsers": "Inviter brugere",
       "invitedList": "Inviterede liste",
       "activateUsers": "Aktivér brugere",
-      "teams": "Teams"
+      "teams": "Teams",
+      "activitySummary": "Aktivitetsoversigt"
     },
     "paywall": {
       "title": "Aktivér arbejdsgiverpanelet",
@@ -270,6 +271,37 @@
     "paymentBanner": {
       "text": "Alle betalinger foretaget i eksempelvisningen er i testtilstand.",
       "readMore": "Læs mere"
+    },
+    "activitySummary": {
+      "title": "Aktivitetsoversigt",
+      "description": "Samlet overblik over din organisations aktivitet. Enkelte udførelser vises aldrig.",
+      "errorTitle": "Ingen adgang til rapporter",
+      "errorBody": "Aktivitetsrapporter er tilgængelige for organisationens ejer. Bed din administrator om adgang.",
+      "never": "Aldrig",
+      "noData": "Ingen aktivitetsdata endnu.",
+      "noTeams": "Der er endnu ikke oprettet teams.",
+      "monthlyTrend": "Månedlig udvikling (12 mdr.)",
+      "topActivities": "Mest populære aktiviteter",
+      "teamComparison": "Sammenligning af teams",
+      "employeeSummary": "Oversigt pr. medarbejder",
+      "timesPerformed": "Antal gange",
+      "kpi": {
+        "totalExercises": "Gennemførte aktiviteter",
+        "totalPoints": "Aktivitetspoint",
+        "activeEmployees": "Aktive medarbejdere",
+        "participation": "Deltagelsesgrad",
+        "last30Days": "Sidste 30 dage",
+        "avgPerEmployee": "Gennemsnit pr. medarbejder"
+      },
+      "table": {
+        "team": "Team",
+        "members": "Medlemmer",
+        "exercises": "Aktiviteter",
+        "points": "Point",
+        "avgPerMember": "Gns. / medlem",
+        "employee": "Medarbejder",
+        "lastActive": "Sidst aktiv"
+      }
     }
   },
   "adminPanel": {
