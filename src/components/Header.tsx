@@ -36,7 +36,7 @@ const Header = () => {
               <img src={vointyMark.url} alt="Vointy logo" className="h-9 w-auto" />
               <div className="flex flex-col leading-none">
                 <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.life</span></span>
-                <span className="text-[11px] text-gray-500 font-medium tracking-wide">{t('hero.slogan', { defaultValue: 'Build healthier habits, together.' })}</span>
+                <span className="text-[11px] text-gray-500 font-medium tracking-wide">Build healthier habits, together.</span>
               </div>
             </Link>
           </div>
