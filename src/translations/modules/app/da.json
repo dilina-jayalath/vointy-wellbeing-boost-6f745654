@@ -6,7 +6,7 @@
       "challenges": "Udfordringer",
       "community": "Fællesskab",
       "index": "Indeks",
-      "tagline": "Byg sundere vaner sammen.",
+      "tagline": "Build healthier habits, together.",
       "profileAria": "Profil"
     },
     "home": {
@@ -32,7 +32,11 @@
     },
     "activities": {
       "title": "Aktiviteter",
-      "tabs": { "all": "Alle", "mine": "Mine egne", "history": "Historik" },
+      "tabs": {
+        "all": "Alle",
+        "mine": "Mine egne",
+        "history": "Historik"
+      },
       "loading": "Indlæser…",
       "noActivities": "Ingen aktiviteter endnu. De vises her, når aktivitetskataloget er importeret.",
       "video": "Video",
@@ -53,7 +57,11 @@
     },
     "challenges": {
       "title": "Udfordringer",
-      "tabs": { "mine": "Mine", "open": "Åbne", "board": "Rangliste" },
+      "tabs": {
+        "mine": "Mine",
+        "open": "Åbne",
+        "board": "Rangliste"
+      },
       "loading": "Indlæser…",
       "noneJoined": "Du er ikke tilmeldt nogen udfordring endnu.",
       "noneOpen": "Ingen åbne udfordringer lige nu.",
@@ -63,7 +71,10 @@
       "noResults": "Ingen resultater endnu.",
       "you": "Dig",
       "member": "Medlem {n}",
-      "toast": { "couldNotJoin": "Kunne ikke deltage", "joined": "Tilmeldt udfordringen" }
+      "toast": {
+        "couldNotJoin": "Kunne ikke deltage",
+        "joined": "Tilmeldt udfordringen"
+      }
     },
     "community": {
       "title": "Fællesskab",
@@ -72,7 +83,10 @@
       "loading": "Indlæser…",
       "noPosts": "Ingen opslag endnu. Vær den første til at dele.",
       "writeComment": "Skriv en kommentar…",
-      "toast": { "couldNotPost": "Kunne ikke oprette opslag", "couldNotComment": "Kunne ikke kommentere" }
+      "toast": {
+        "couldNotPost": "Kunne ikke oprette opslag",
+        "couldNotComment": "Kunne ikke kommentere"
+      }
     },
     "profile": {
       "title": "Profil",
@@ -86,7 +100,10 @@
       "saving": "Gemmer…",
       "employerPanel": "Arbejdsgiverpanel",
       "signOut": "Log ud",
-      "toast": { "couldNotSave": "Kunne ikke gemme", "updated": "Profil opdateret" }
+      "toast": {
+        "couldNotSave": "Kunne ikke gemme",
+        "updated": "Profil opdateret"
+      }
     },
     "wellbeing": {
       "title": "Aktivitetsindeks",
@@ -96,7 +113,11 @@
       "monthlyPoints": "Månedlige point · {year}",
       "saving": "Gemmer…",
       "submit": "Send",
-      "toast": { "couldNotSubmit": "Kunne ikke sende", "thanksTitle": "Tak!", "thanksDesc": "Dine svar er gemt." }
+      "toast": {
+        "couldNotSubmit": "Kunne ikke sende",
+        "thanksTitle": "Tak!",
+        "thanksDesc": "Dine svar er gemt."
+      }
     },
     "activityForm": {
       "editTitle": "Rediger aktivitet",
@@ -117,7 +138,11 @@
       "linkLabel": "YouTube-videolink",
       "linkPlaceholder": "https://www.youtube.com/watch?v=…",
       "visibilityLabel": "Synlighed",
-      "visibility": { "private": "Kun mig", "organization": "Min virksomhed", "public": "Alle" },
+      "visibility": {
+        "private": "Kun mig",
+        "organization": "Min virksomhed",
+        "public": "Alle"
+      },
       "cancel": "Annullér",
       "saving": "Gemmer…",
       "saveChanges": "Gem ændringer",
@@ -169,7 +194,11 @@
       "delete": "Slet",
       "video": "Video",
       "minutesSuffix": "min",
-      "visibility": { "private": "Kun mig", "organization": "Min virksomhed", "public": "Alle" },
+      "visibility": {
+        "private": "Kun mig",
+        "organization": "Min virksomhed",
+        "public": "Alle"
+      },
       "imageAlt": "Vis større billede af {title}",
       "deleteConfirmTitle": "Slet denne aktivitet?",
       "deleteConfirmDesc": "“{title}” og tilhørende invitationer slettes permanent.",

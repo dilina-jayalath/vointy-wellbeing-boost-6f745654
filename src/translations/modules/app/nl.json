@@ -6,7 +6,7 @@
       "challenges": "Uitdagingen",
       "community": "Community",
       "index": "Index",
-      "tagline": "Bouw samen aan gezondere gewoontes.",
+      "tagline": "Build healthier habits, together.",
       "profileAria": "Profiel"
     },
     "home": {
@@ -32,7 +32,11 @@
     },
     "activities": {
       "title": "Activiteiten",
-      "tabs": { "all": "Alle", "mine": "Mijn eigen", "history": "Geschiedenis" },
+      "tabs": {
+        "all": "Alle",
+        "mine": "Mijn eigen",
+        "history": "Geschiedenis"
+      },
       "loading": "Laden…",
       "noActivities": "Nog geen activiteiten. Ze verschijnen hier zodra de activiteitencatalogus is geïmporteerd.",
       "video": "Video",
@@ -53,7 +57,11 @@
     },
     "challenges": {
       "title": "Uitdagingen",
-      "tabs": { "mine": "Mijn", "open": "Openstaand", "board": "Klassement" },
+      "tabs": {
+        "mine": "Mijn",
+        "open": "Openstaand",
+        "board": "Klassement"
+      },
       "loading": "Laden…",
       "noneJoined": "Je hebt nog geen uitdaging gedaan.",
       "noneOpen": "Op dit moment geen openstaande uitdagingen.",
@@ -63,7 +71,10 @@
       "noResults": "Nog geen resultaten.",
       "you": "Jij",
       "member": "Lid {n}",
-      "toast": { "couldNotJoin": "Deelname mislukt", "joined": "Deelgenomen aan uitdaging" }
+      "toast": {
+        "couldNotJoin": "Deelname mislukt",
+        "joined": "Deelgenomen aan uitdaging"
+      }
     },
     "community": {
       "title": "Community",
@@ -72,7 +83,10 @@
       "loading": "Laden…",
       "noPosts": "Nog geen berichten. Wees de eerste die iets deelt.",
       "writeComment": "Schrijf een reactie…",
-      "toast": { "couldNotPost": "Kon niet plaatsen", "couldNotComment": "Kon reactie niet plaatsen" }
+      "toast": {
+        "couldNotPost": "Kon niet plaatsen",
+        "couldNotComment": "Kon reactie niet plaatsen"
+      }
     },
     "profile": {
       "title": "Profiel",
@@ -86,7 +100,10 @@
       "saving": "Opslaan…",
       "employerPanel": "Werkgeverspaneel",
       "signOut": "Uitloggen",
-      "toast": { "couldNotSave": "Kon niet opslaan", "updated": "Profiel bijgewerkt" }
+      "toast": {
+        "couldNotSave": "Kon niet opslaan",
+        "updated": "Profiel bijgewerkt"
+      }
     },
     "wellbeing": {
       "title": "Activiteitenindex",
@@ -96,7 +113,11 @@
       "monthlyPoints": "Maandelijkse punten · {year}",
       "saving": "Opslaan…",
       "submit": "Verzenden",
-      "toast": { "couldNotSubmit": "Verzenden mislukt", "thanksTitle": "Bedankt!", "thanksDesc": "Je antwoorden zijn opgeslagen." }
+      "toast": {
+        "couldNotSubmit": "Verzenden mislukt",
+        "thanksTitle": "Bedankt!",
+        "thanksDesc": "Je antwoorden zijn opgeslagen."
+      }
     },
     "activityForm": {
       "editTitle": "Activiteit bewerken",
@@ -117,7 +138,11 @@
       "linkLabel": "YouTube-videolink",
       "linkPlaceholder": "https://www.youtube.com/watch?v=…",
       "visibilityLabel": "Zichtbaarheid",
-      "visibility": { "private": "Alleen ik", "organization": "Mijn bedrijf", "public": "Iedereen" },
+      "visibility": {
+        "private": "Alleen ik",
+        "organization": "Mijn bedrijf",
+        "public": "Iedereen"
+      },
       "cancel": "Annuleren",
       "saving": "Opslaan…",
       "saveChanges": "Wijzigingen opslaan",
@@ -169,7 +194,11 @@
       "delete": "Verwijderen",
       "video": "Video",
       "minutesSuffix": "min",
-      "visibility": { "private": "Alleen ik", "organization": "Mijn bedrijf", "public": "Iedereen" },
+      "visibility": {
+        "private": "Alleen ik",
+        "organization": "Mijn bedrijf",
+        "public": "Iedereen"
+      },
       "imageAlt": "Grotere afbeelding van {title} tonen",
       "deleteConfirmTitle": "Deze activiteit verwijderen?",
       "deleteConfirmDesc": "“{title}” en de bijbehorende uitnodigingen worden definitief verwijderd.",

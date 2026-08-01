@@ -28,7 +28,7 @@
       "disclaimer": "Ei käyttöönottomaksua · peru milloin tahansa · kortti vaaditaan kokeilun aloittamiseen, ensimmäinen veloitus 30 päivän jälkeen."
     },
     "layout": {
-      "brandTagline": "Rakennetaan terveellisempiä tapoja yhdessä.",
+      "brandTagline": "Build healthier habits, together.",
       "checkingPlan": "Tarkistetaan tilausta…",
       "trialRemaining": "Ilmaista kokeilua jäljellä: {days} pv",
       "paymentFailed": "Maksu epäonnistui",
@@ -83,10 +83,22 @@
       "title": "Haasteet",
       "description": "Käynnistä tiimihaasteita lisätäksesi aktiivisuutta, unta, nesteytystä ja muuta.",
       "sections": {
-        "active": { "title": "Aktiiviset haasteet", "body": "Käynnissä olevat haasteet osallistumisineen ja edistymisineen." },
-        "create": { "title": "Luo haaste", "body": "Aseta otsikko, aktiviteettityyppi, tavoite, kesto ja tiimit." },
-        "library": { "title": "Haastekirjasto", "body": "Valmiit haasteet: 10 000 askelta, vesitavoite, tietoisuusviikko." },
-        "leaderboard": { "title": "Tulostaulukko", "body": "Tiimien ja yksilöiden ranking kutakin haastetta kohden." }
+        "active": {
+          "title": "Aktiiviset haasteet",
+          "body": "Käynnissä olevat haasteet osallistumisineen ja edistymisineen."
+        },
+        "create": {
+          "title": "Luo haaste",
+          "body": "Aseta otsikko, aktiviteettityyppi, tavoite, kesto ja tiimit."
+        },
+        "library": {
+          "title": "Haastekirjasto",
+          "body": "Valmiit haasteet: 10 000 askelta, vesitavoite, tietoisuusviikko."
+        },
+        "leaderboard": {
+          "title": "Tulostaulukko",
+          "body": "Tiimien ja yksilöiden ranking kutakin haastetta kohden."
+        }
       }
     },
     "inviteUsers": {
@@ -213,7 +225,10 @@
       "createdByYou": "Sinä",
       "createdToastTitle": "Tiimi luotu",
       "createdToastDescription": "\"{name}\" on lisätty.",
-      "tabs": { "teams": "Tiimit", "leaderboard": "Tulostaulukko" },
+      "tabs": {
+        "teams": "Tiimit",
+        "leaderboard": "Tulostaulukko"
+      },
       "columns": {
         "teamName": "Tiimin nimi",
         "description": "Kuvaus",
@@ -222,7 +237,12 @@
         "actions": "Toiminnot"
       },
       "noTeams": "Tiimejä ei löytynyt. Luo uusi tiimi aloittaaksesi.",
-      "leaderboardColumns": { "rank": "#", "team": "Tiimi", "members": "Jäsenet", "score": "Pisteet" },
+      "leaderboardColumns": {
+        "rank": "#",
+        "team": "Tiimi",
+        "members": "Jäsenet",
+        "score": "Pisteet"
+      },
       "noLeaderboard": "Ei vielä tulostaulukkotietoja."
     },
     "wellbeingIndex": {
@@ -233,9 +253,18 @@
           "title": "Miten se lasketaan",
           "body": "Jokainen suoritettu aktiviteetti antaa työntekijälle 1 pisteen. Pisteet lasketaan yhteen kuukausittain ja kertyvät jäsenyysvuoden aikana, joka alkaa työntekijän liittyessä."
         },
-        "monthlyPoints": { "title": "Kuukausittaiset pisteet", "body": "Kaikkien aktiivisten tiimien ja työntekijöiden aktiivisuuspisteet yhteensä kuukausittain." },
-        "yearlyTotal": { "title": "Vuosittainen kokonaismäärä", "body": "Kertyneet pisteet työntekijää kohden liittymisestä lähtien." },
-        "teamBreakdown": { "title": "Tiimikohtainen erittely", "body": "Tiimikohtaiset aktiivisuuspisteet porautumismahdollisuudella." }
+        "monthlyPoints": {
+          "title": "Kuukausittaiset pisteet",
+          "body": "Kaikkien aktiivisten tiimien ja työntekijöiden aktiivisuuspisteet yhteensä kuukausittain."
+        },
+        "yearlyTotal": {
+          "title": "Vuosittainen kokonaismäärä",
+          "body": "Kertyneet pisteet työntekijää kohden liittymisestä lähtien."
+        },
+        "teamBreakdown": {
+          "title": "Tiimikohtainen erittely",
+          "body": "Tiimikohtaiset aktiivisuuspisteet porautumismahdollisuudella."
+        }
       }
     },
     "paymentBanner": {
@@ -317,14 +346,20 @@
       "pageViewsLegend": "Sivunäytöt",
       "visitorsLegend": "Kävijät",
       "topPagesTitle": "Vierailluimmat sivut",
-      "columns": { "path": "Polku", "views": "Näytöt" },
+      "columns": {
+        "path": "Polku",
+        "views": "Näytöt"
+      },
       "noVisits": "Ei vielä seurattuja vierailuja."
     },
     "activities": {
       "monthlyChartTitle": "Suoritetut aktiviteetit kuukausittain",
       "activitiesLegend": "Aktiviteetit",
       "topActivitiesTitle": "Käytetyimmät aktiviteetit",
-      "columns": { "activity": "Aktiviteetti", "timesPerformed": "Suorituskertoja" },
+      "columns": {
+        "activity": "Aktiviteetti",
+        "timesPerformed": "Suorituskertoja"
+      },
       "noActivities": "Aktiviteetteja ei ole vielä suoritettu."
     }
   }

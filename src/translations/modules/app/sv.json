@@ -6,7 +6,7 @@
       "challenges": "Utmaningar",
       "community": "Community",
       "index": "Index",
-      "tagline": "Bygg hälsosammare vanor tillsammans.",
+      "tagline": "Build healthier habits, together.",
       "profileAria": "Profil"
     },
     "home": {
@@ -32,7 +32,11 @@
     },
     "activities": {
       "title": "Aktiviteter",
-      "tabs": { "all": "Alla", "mine": "Mina egna", "history": "Historik" },
+      "tabs": {
+        "all": "Alla",
+        "mine": "Mina egna",
+        "history": "Historik"
+      },
       "loading": "Laddar…",
       "noActivities": "Inga aktiviteter ännu. De visas här när aktivitetskatalogen har importerats.",
       "video": "Video",
@@ -53,7 +57,11 @@
     },
     "challenges": {
       "title": "Utmaningar",
-      "tabs": { "mine": "Mina", "open": "Öppna", "board": "Topplista" },
+      "tabs": {
+        "mine": "Mina",
+        "open": "Öppna",
+        "board": "Topplista"
+      },
       "loading": "Laddar…",
       "noneJoined": "Du har inte gått med i någon utmaning ännu.",
       "noneOpen": "Inga öppna utmaningar just nu.",
@@ -63,7 +71,10 @@
       "noResults": "Inga resultat ännu.",
       "you": "Du",
       "member": "Medlem {n}",
-      "toast": { "couldNotJoin": "Kunde inte gå med", "joined": "Du har gått med i utmaningen" }
+      "toast": {
+        "couldNotJoin": "Kunde inte gå med",
+        "joined": "Du har gått med i utmaningen"
+      }
     },
     "community": {
       "title": "Community",
@@ -72,7 +83,10 @@
       "loading": "Laddar…",
       "noPosts": "Inga inlägg ännu. Bli den första att dela något.",
       "writeComment": "Skriv en kommentar…",
-      "toast": { "couldNotPost": "Kunde inte publicera", "couldNotComment": "Kunde inte kommentera" }
+      "toast": {
+        "couldNotPost": "Kunde inte publicera",
+        "couldNotComment": "Kunde inte kommentera"
+      }
     },
     "profile": {
       "title": "Profil",
@@ -86,7 +100,10 @@
       "saving": "Sparar…",
       "employerPanel": "Arbetsgivarpanel",
       "signOut": "Logga ut",
-      "toast": { "couldNotSave": "Kunde inte spara", "updated": "Profil uppdaterad" }
+      "toast": {
+        "couldNotSave": "Kunde inte spara",
+        "updated": "Profil uppdaterad"
+      }
     },
     "wellbeing": {
       "title": "Aktivitetsindex",
@@ -96,7 +113,11 @@
       "monthlyPoints": "Månadspoäng · {year}",
       "saving": "Sparar…",
       "submit": "Skicka",
-      "toast": { "couldNotSubmit": "Kunde inte skicka", "thanksTitle": "Tack!", "thanksDesc": "Dina svar har sparats." }
+      "toast": {
+        "couldNotSubmit": "Kunde inte skicka",
+        "thanksTitle": "Tack!",
+        "thanksDesc": "Dina svar har sparats."
+      }
     },
     "activityForm": {
       "editTitle": "Redigera aktivitet",
@@ -117,7 +138,11 @@
       "linkLabel": "Länk till YouTube-video",
       "linkPlaceholder": "https://www.youtube.com/watch?v=…",
       "visibilityLabel": "Synlighet",
-      "visibility": { "private": "Bara jag", "organization": "Mitt företag", "public": "Alla" },
+      "visibility": {
+        "private": "Bara jag",
+        "organization": "Mitt företag",
+        "public": "Alla"
+      },
       "cancel": "Avbryt",
       "saving": "Sparar…",
       "saveChanges": "Spara ändringar",
@@ -169,7 +194,11 @@
       "delete": "Ta bort",
       "video": "Video",
       "minutesSuffix": "min",
-      "visibility": { "private": "Bara jag", "organization": "Mitt företag", "public": "Alla" },
+      "visibility": {
+        "private": "Bara jag",
+        "organization": "Mitt företag",
+        "public": "Alla"
+      },
       "imageAlt": "Visa större bild av {title}",
       "deleteConfirmTitle": "Ta bort denna aktivitet?",
       "deleteConfirmDesc": "“{title}” och dess inbjudningar tas bort permanent.",

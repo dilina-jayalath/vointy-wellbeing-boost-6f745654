@@ -28,7 +28,7 @@
       "disclaimer": "Ingen opstartsgebyr · opsig når som helst · kort kræves for at starte prøveperioden, første opkrævning efter 30 dage."
     },
     "layout": {
-      "brandTagline": "Byg sundere vaner sammen.",
+      "brandTagline": "Build healthier habits, together.",
       "checkingPlan": "Kontrollerer abonnement…",
       "trialRemaining": "Resterende gratis prøveperiode: {days} dage",
       "paymentFailed": "Betaling mislykkedes",
@@ -83,10 +83,22 @@
       "title": "Udfordringer",
       "description": "Lancer teamudfordringer for at øge aktivitet, søvn, hydrering og meget mere.",
       "sections": {
-        "active": { "title": "Aktive udfordringer", "body": "Igangværende udfordringer med deltagelse og fremgang." },
-        "create": { "title": "Opret udfordring", "body": "Angiv titel, aktivitetstype, mål, varighed og teams." },
-        "library": { "title": "Udfordringsbibliotek", "body": "Færdiglavede udfordringer: 10.000 skridt, vandmål, mindfulness-uge." },
-        "leaderboard": { "title": "Resultattavle", "body": "Rangering af teams og enkeltpersoner pr. udfordring." }
+        "active": {
+          "title": "Aktive udfordringer",
+          "body": "Igangværende udfordringer med deltagelse og fremgang."
+        },
+        "create": {
+          "title": "Opret udfordring",
+          "body": "Angiv titel, aktivitetstype, mål, varighed og teams."
+        },
+        "library": {
+          "title": "Udfordringsbibliotek",
+          "body": "Færdiglavede udfordringer: 10.000 skridt, vandmål, mindfulness-uge."
+        },
+        "leaderboard": {
+          "title": "Resultattavle",
+          "body": "Rangering af teams og enkeltpersoner pr. udfordring."
+        }
       }
     },
     "inviteUsers": {
@@ -213,7 +225,10 @@
       "createdByYou": "Dig",
       "createdToastTitle": "Team oprettet",
       "createdToastDescription": "\"{name}\" er blevet tilføjet.",
-      "tabs": { "teams": "Teams", "leaderboard": "Resultattavle" },
+      "tabs": {
+        "teams": "Teams",
+        "leaderboard": "Resultattavle"
+      },
       "columns": {
         "teamName": "Teamnavn",
         "description": "Beskrivelse",
@@ -222,7 +237,12 @@
         "actions": "Handlinger"
       },
       "noTeams": "Ingen teams fundet. Opret et nyt team for at komme i gang.",
-      "leaderboardColumns": { "rank": "#", "team": "Team", "members": "Medlemmer", "score": "Point" },
+      "leaderboardColumns": {
+        "rank": "#",
+        "team": "Team",
+        "members": "Medlemmer",
+        "score": "Point"
+      },
       "noLeaderboard": "Ingen data for resultattavlen endnu."
     },
     "wellbeingIndex": {
@@ -233,9 +253,18 @@
           "title": "Sådan beregnes det",
           "body": "Hver gennemført aktivitet giver en medarbejder 1 point. Point summeres pr. måned og akkumuleres over medlemsåret, der starter, når medarbejderen tilmelder sig."
         },
-        "monthlyPoints": { "title": "Månedlige point", "body": "Samlede aktivitetspoint pr. måned på tværs af alle aktive teams og medarbejdere." },
-        "yearlyTotal": { "title": "Årlig total", "body": "Akkumulerede point pr. medarbejder siden tilmelding." },
-        "teamBreakdown": { "title": "Teamfordeling", "body": "Aktivitetspoint pr. team med mulighed for at dykke ned." }
+        "monthlyPoints": {
+          "title": "Månedlige point",
+          "body": "Samlede aktivitetspoint pr. måned på tværs af alle aktive teams og medarbejdere."
+        },
+        "yearlyTotal": {
+          "title": "Årlig total",
+          "body": "Akkumulerede point pr. medarbejder siden tilmelding."
+        },
+        "teamBreakdown": {
+          "title": "Teamfordeling",
+          "body": "Aktivitetspoint pr. team med mulighed for at dykke ned."
+        }
       }
     },
     "paymentBanner": {
@@ -317,14 +346,20 @@
       "pageViewsLegend": "Sidevisninger",
       "visitorsLegend": "Besøgende",
       "topPagesTitle": "Mest besøgte sider",
-      "columns": { "path": "Sti", "views": "Visninger" },
+      "columns": {
+        "path": "Sti",
+        "views": "Visninger"
+      },
       "noVisits": "Ingen sporede besøg endnu."
     },
     "activities": {
       "monthlyChartTitle": "Udførte aktiviteter pr. måned",
       "activitiesLegend": "Aktiviteter",
       "topActivitiesTitle": "Mest anvendte aktiviteter",
-      "columns": { "activity": "Aktivitet", "timesPerformed": "Antal gange udført" },
+      "columns": {
+        "activity": "Aktivitet",
+        "timesPerformed": "Antal gange udført"
+      },
       "noActivities": "Ingen aktiviteter udført endnu."
     }
   }

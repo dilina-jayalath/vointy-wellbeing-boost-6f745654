@@ -6,7 +6,7 @@
       "challenges": "Challenges",
       "community": "Community",
       "index": "Index",
-      "tagline": "Gemeinsam gesündere Gewohnheiten aufbauen.",
+      "tagline": "Build healthier habits, together.",
       "profileAria": "Profil"
     },
     "home": {
@@ -32,7 +32,11 @@
     },
     "activities": {
       "title": "Aktivitäten",
-      "tabs": { "all": "Alle", "mine": "Meine eigenen", "history": "Verlauf" },
+      "tabs": {
+        "all": "Alle",
+        "mine": "Meine eigenen",
+        "history": "Verlauf"
+      },
       "loading": "Wird geladen…",
       "noActivities": "Noch keine Aktivitäten. Sie erscheinen hier, sobald der Aktivitätenkatalog importiert wurde.",
       "video": "Video",
@@ -53,7 +57,11 @@
     },
     "challenges": {
       "title": "Challenges",
-      "tabs": { "mine": "Meine", "open": "Offen", "board": "Rangliste" },
+      "tabs": {
+        "mine": "Meine",
+        "open": "Offen",
+        "board": "Rangliste"
+      },
       "loading": "Wird geladen…",
       "noneJoined": "Du bist noch keiner Challenge beigetreten.",
       "noneOpen": "Momentan keine offenen Challenges.",
@@ -63,7 +71,10 @@
       "noResults": "Noch keine Ergebnisse.",
       "you": "Du",
       "member": "Mitglied {n}",
-      "toast": { "couldNotJoin": "Beitritt fehlgeschlagen", "joined": "Challenge beigetreten" }
+      "toast": {
+        "couldNotJoin": "Beitritt fehlgeschlagen",
+        "joined": "Challenge beigetreten"
+      }
     },
     "community": {
       "title": "Community",
@@ -72,7 +83,10 @@
       "loading": "Wird geladen…",
       "noPosts": "Noch keine Beiträge. Sei die/der Erste!",
       "writeComment": "Kommentar schreiben…",
-      "toast": { "couldNotPost": "Beitrag konnte nicht gepostet werden", "couldNotComment": "Kommentar konnte nicht gespeichert werden" }
+      "toast": {
+        "couldNotPost": "Beitrag konnte nicht gepostet werden",
+        "couldNotComment": "Kommentar konnte nicht gespeichert werden"
+      }
     },
     "profile": {
       "title": "Profil",
@@ -86,7 +100,10 @@
       "saving": "Wird gespeichert…",
       "employerPanel": "Arbeitgeber-Bereich",
       "signOut": "Abmelden",
-      "toast": { "couldNotSave": "Konnte nicht gespeichert werden", "updated": "Profil aktualisiert" }
+      "toast": {
+        "couldNotSave": "Konnte nicht gespeichert werden",
+        "updated": "Profil aktualisiert"
+      }
     },
     "wellbeing": {
       "title": "Aktivitätsindex",
@@ -96,7 +113,11 @@
       "monthlyPoints": "Monatliche Punkte · {year}",
       "saving": "Wird gespeichert…",
       "submit": "Absenden",
-      "toast": { "couldNotSubmit": "Konnte nicht gesendet werden", "thanksTitle": "Danke!", "thanksDesc": "Deine Antworten wurden gespeichert." }
+      "toast": {
+        "couldNotSubmit": "Konnte nicht gesendet werden",
+        "thanksTitle": "Danke!",
+        "thanksDesc": "Deine Antworten wurden gespeichert."
+      }
     },
     "activityForm": {
       "editTitle": "Aktivität bearbeiten",
@@ -117,7 +138,11 @@
       "linkLabel": "YouTube-Video-Link",
       "linkPlaceholder": "https://www.youtube.com/watch?v=…",
       "visibilityLabel": "Sichtbarkeit",
-      "visibility": { "private": "Nur ich", "organization": "Mein Unternehmen", "public": "Alle" },
+      "visibility": {
+        "private": "Nur ich",
+        "organization": "Mein Unternehmen",
+        "public": "Alle"
+      },
       "cancel": "Abbrechen",
       "saving": "Wird gespeichert…",
       "saveChanges": "Änderungen speichern",
@@ -169,7 +194,11 @@
       "delete": "Löschen",
       "video": "Video",
       "minutesSuffix": "Min.",
-      "visibility": { "private": "Nur ich", "organization": "Mein Unternehmen", "public": "Alle" },
+      "visibility": {
+        "private": "Nur ich",
+        "organization": "Mein Unternehmen",
+        "public": "Alle"
+      },
       "imageAlt": "Größeres Bild von {title} anzeigen",
       "deleteConfirmTitle": "Diese Aktivität löschen?",
       "deleteConfirmDesc": "„{title}“ und die zugehörigen Einladungen werden endgültig gelöscht.",
