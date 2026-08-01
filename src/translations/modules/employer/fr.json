@@ -13,7 +13,8 @@
       "teams": "Équipes",
       "activitySummary": "Synthèse d'activité",
       "engagement": "Engagement",
-      "roi": "Administration & ROI"
+      "roi": "Administration & ROI",
+      "predictive": "Analyse prédictive"
     },
     "paywall": {
       "title": "Activer le panneau Employeur",
@@ -424,6 +425,57 @@
         "points": "Points d'activité",
         "activeEmployees": "Employés actifs",
         "index": "Indice / employé"
+      }
+    },
+    "predictive": {
+      "title": "Analyse prédictive",
+      "description": "Prévision de l'indice d'activité et alertes précoces sur les employés et équipes dont l'activité baisse.",
+      "errorTitle": "Impossible de charger les données prédictives",
+      "errorBody": "Seuls les gestionnaires de l'organisation peuvent voir les rapports prédictifs.",
+      "chartTitle": "Indice d'activité : historique et prévision sur 3 mois",
+      "teamRiskTitle": "Équipes à risque de décrochage",
+      "employeeRiskTitle": "Employés nécessitant une attention",
+      "noTeams": "Aucune équipe pour le moment.",
+      "noRisk": "Aucun employé à risque actuellement.",
+      "never": "Jamais",
+      "methodTitle": "Comment les prévisions sont calculées",
+      "method1": "La prévision est une tendance linéaire ajustée sur l'indice d'activité des 12 derniers mois (points par employé).",
+      "method2": "Le niveau de risque combine les jours depuis la dernière activité, l'évolution entre les 30 derniers jours et les 30 précédents, et le niveau d'activité actuel.",
+      "method3": "La prévision des jours d'absence extrapole l'évolution entre les deux dernières périodes de 12 mois ; les économies utilisent votre coût par jour d'absence.",
+      "trend": {
+        "up": "Tendance à la hausse",
+        "down": "Tendance à la baisse",
+        "flat": "Tendance stable"
+      },
+      "risk": {
+        "high": "Élevé",
+        "medium": "Moyen",
+        "low": "Faible"
+      },
+      "kpi": {
+        "forecast": "Prévision d'indice, mois prochain",
+        "thisMonth": "Ce mois",
+        "highRiskEmployees": "Employés à risque élevé",
+        "mediumRisk": "Risque moyen",
+        "highRiskTeams": "Équipes à risque élevé",
+        "ofTeams": "Sur les équipes",
+        "projectedSickDays": "Jours d'absence prévus (12 mois)",
+        "projectedSavings": "Économies prévues"
+      },
+      "legend": {
+        "actual": "Réel",
+        "forecast": "Prévision"
+      },
+      "table": {
+        "team": "Équipe",
+        "employee": "Employé",
+        "members": "Actifs/membres",
+        "participation": "Participation",
+        "change": "Évolution (30 j)",
+        "risk": "Risque",
+        "riskScore": "Score de risque",
+        "lastActive": "Dernière activité",
+        "points30d": "Points 30 j (préc.)"
       }
     }
   },

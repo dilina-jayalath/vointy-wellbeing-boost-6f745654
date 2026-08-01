@@ -13,7 +13,8 @@
       "teams": "Team",
       "activitySummary": "Riepilogo attività",
       "engagement": "Coinvolgimento",
-      "roi": "Amministrazione e ROI"
+      "roi": "Amministrazione e ROI",
+      "predictive": "Analisi predittiva"
     },
     "paywall": {
       "title": "Attiva il pannello Datore di lavoro",
@@ -424,6 +425,57 @@
         "points": "Punti attività",
         "activeEmployees": "Dipendenti attivi",
         "index": "Indice / dipendente"
+      }
+    },
+    "predictive": {
+      "title": "Analisi predittiva",
+      "description": "Previsione dell'indice di attività e allerte precoci su dipendenti e team con attività in calo.",
+      "errorTitle": "Impossibile caricare i dati predittivi",
+      "errorBody": "Solo i gestori dell'organizzazione possono vedere i report predittivi.",
+      "chartTitle": "Indice di attività: storico e previsione a 3 mesi",
+      "teamRiskTitle": "Team a rischio di abbandono",
+      "employeeRiskTitle": "Dipendenti che richiedono attenzione",
+      "noTeams": "Nessun team ancora.",
+      "noRisk": "Nessun dipendente a rischio in questo momento.",
+      "never": "Mai",
+      "methodTitle": "Come vengono calcolate le previsioni",
+      "method1": "La previsione è una tendenza lineare adattata all'indice di attività degli ultimi 12 mesi (punti per dipendente).",
+      "method2": "Il livello di rischio combina i giorni dall'ultima attività, la variazione tra gli ultimi 30 giorni e i 30 precedenti e il livello di attività attuale.",
+      "method3": "La previsione dei giorni di malattia estrapola la variazione tra gli ultimi due periodi di 12 mesi; i risparmi usano il costo per giorno di malattia.",
+      "trend": {
+        "up": "Tendenza in crescita",
+        "down": "Tendenza in calo",
+        "flat": "Tendenza stabile"
+      },
+      "risk": {
+        "high": "Alto",
+        "medium": "Medio",
+        "low": "Basso"
+      },
+      "kpi": {
+        "forecast": "Previsione indice, prossimo mese",
+        "thisMonth": "Questo mese",
+        "highRiskEmployees": "Dipendenti ad alto rischio",
+        "mediumRisk": "Rischio medio",
+        "highRiskTeams": "Team ad alto rischio",
+        "ofTeams": "Sui team",
+        "projectedSickDays": "Giorni di malattia previsti (12 mesi)",
+        "projectedSavings": "Risparmio previsto"
+      },
+      "legend": {
+        "actual": "Effettivo",
+        "forecast": "Previsione"
+      },
+      "table": {
+        "team": "Team",
+        "employee": "Dipendente",
+        "members": "Attivi/membri",
+        "participation": "Partecipazione",
+        "change": "Variazione (30 gg)",
+        "risk": "Rischio",
+        "riskScore": "Punteggio di rischio",
+        "lastActive": "Ultima attività",
+        "points30d": "Punti 30 gg (prec.)"
       }
     }
   },

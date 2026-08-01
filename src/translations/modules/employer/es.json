@@ -13,7 +13,8 @@
       "teams": "Equipos",
       "activitySummary": "Resumen de actividad",
       "engagement": "Compromiso",
-      "roi": "Administración y ROI"
+      "roi": "Administración y ROI",
+      "predictive": "Análisis predictivo"
     },
     "paywall": {
       "title": "Activar el panel de Empleador",
@@ -424,6 +425,57 @@
         "points": "Puntos de actividad",
         "activeEmployees": "Empleados activos",
         "index": "Índice / empleado"
+      }
+    },
+    "predictive": {
+      "title": "Análisis predictivo",
+      "description": "Previsión del índice de actividad y alertas tempranas sobre empleados y equipos cuya actividad está bajando.",
+      "errorTitle": "No se pudieron cargar los datos predictivos",
+      "errorBody": "Solo los administradores de la organización pueden ver informes predictivos.",
+      "chartTitle": "Índice de actividad: historial y previsión a 3 meses",
+      "teamRiskTitle": "Equipos con riesgo de abandono",
+      "employeeRiskTitle": "Empleados que necesitan atención",
+      "noTeams": "Aún no hay equipos.",
+      "noRisk": "Ningún empleado en riesgo ahora mismo.",
+      "never": "Nunca",
+      "methodTitle": "Cómo se calculan las previsiones",
+      "method1": "La previsión es una tendencia lineal ajustada al índice de actividad de los últimos 12 meses (puntos por empleado).",
+      "method2": "El nivel de riesgo combina los días desde la última actividad, el cambio entre los últimos 30 días y los 30 anteriores, y el nivel de actividad actual.",
+      "method3": "La previsión de días de baja extrapola el cambio entre los dos últimos periodos de 12 meses; el ahorro usa tu coste por día de baja.",
+      "trend": {
+        "up": "Tendencia al alza",
+        "down": "Tendencia a la baja",
+        "flat": "Tendencia estable"
+      },
+      "risk": {
+        "high": "Alto",
+        "medium": "Medio",
+        "low": "Bajo"
+      },
+      "kpi": {
+        "forecast": "Previsión del índice, próximo mes",
+        "thisMonth": "Este mes",
+        "highRiskEmployees": "Empleados de riesgo alto",
+        "mediumRisk": "Riesgo medio",
+        "highRiskTeams": "Equipos de riesgo alto",
+        "ofTeams": "De equipos",
+        "projectedSickDays": "Días de baja previstos (12 meses)",
+        "projectedSavings": "Ahorro previsto"
+      },
+      "legend": {
+        "actual": "Real",
+        "forecast": "Previsión"
+      },
+      "table": {
+        "team": "Equipo",
+        "employee": "Empleado",
+        "members": "Activos/miembros",
+        "participation": "Participación",
+        "change": "Cambio (30 d)",
+        "risk": "Riesgo",
+        "riskScore": "Puntuación de riesgo",
+        "lastActive": "Última actividad",
+        "points30d": "Puntos 30 d (ant.)"
       }
     }
   },

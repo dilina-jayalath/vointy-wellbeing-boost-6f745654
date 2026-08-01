@@ -13,7 +13,8 @@
       "teams": "Tiimit",
       "activitySummary": "Aktiivisuustiivistelmä",
       "engagement": "Sitoutuminen",
-      "roi": "Hallinto & ROI"
+      "roi": "Hallinto & ROI",
+      "predictive": "Ennustava analytiikka"
     },
     "paywall": {
       "title": "Aktivoi Työnantajapaneeli",
@@ -424,6 +425,57 @@
         "points": "Aktiviteettipisteet",
         "activeEmployees": "Aktiiviset työntekijät",
         "index": "Indeksi / työntekijä"
+      }
+    },
+    "predictive": {
+      "title": "Ennustava analytiikka",
+      "description": "Aktiivisuusindeksin ennuste sekä varhaiset varoitukset työntekijöistä ja tiimeistä, joiden aktiivisuus laskee.",
+      "errorTitle": "Ennustetietoja ei voitu ladata",
+      "errorBody": "Vain organisaation hallinnoijat voivat nähdä ennusteraportit.",
+      "chartTitle": "Aktiivisuusindeksi: historia ja 3 kk ennuste",
+      "teamRiskTitle": "Tiimit, joilla on pudokkuusriski",
+      "employeeRiskTitle": "Huomiota tarvitsevat työntekijät",
+      "noTeams": "Ei vielä tiimejä.",
+      "noRisk": "Ei riskissä olevia työntekijöitä juuri nyt.",
+      "never": "Ei koskaan",
+      "methodTitle": "Miten ennusteet lasketaan",
+      "method1": "Ennuste on lineaarinen trendi, joka on sovitettu viimeisten 12 kuukauden aktiivisuusindeksiin (pisteet per työntekijä).",
+      "method2": "Riskitaso yhdistää viimeisestä aktiviteetista kuluneet päivät, muutoksen viimeisen 30 päivän ja sitä edeltävien 30 päivän välillä sekä nykyisen aktiivisuustason.",
+      "method3": "Sairauspäivien ennuste ekstrapoloi kahden viimeisen 12 kk jakson muutoksen; säästöt lasketaan sairauspäivän kustannuksella.",
+      "trend": {
+        "up": "Nouseva trendi",
+        "down": "Laskeva trendi",
+        "flat": "Vakaa trendi"
+      },
+      "risk": {
+        "high": "Korkea",
+        "medium": "Keskitaso",
+        "low": "Matala"
+      },
+      "kpi": {
+        "forecast": "Indeksiennuste, seuraava kuukausi",
+        "thisMonth": "Tämä kuukausi",
+        "highRiskEmployees": "Korkean riskin työntekijät",
+        "mediumRisk": "Keskitason riski",
+        "highRiskTeams": "Korkean riskin tiimit",
+        "ofTeams": "Tiimeistä",
+        "projectedSickDays": "Ennustetut sairauspäivät (12 kk)",
+        "projectedSavings": "Ennustettu säästö"
+      },
+      "legend": {
+        "actual": "Toteuma",
+        "forecast": "Ennuste"
+      },
+      "table": {
+        "team": "Tiimi",
+        "employee": "Työntekijä",
+        "members": "Aktiiviset/jäsenet",
+        "participation": "Osallistumisaste",
+        "change": "Muutos (30 pv)",
+        "risk": "Riski",
+        "riskScore": "Riskipisteet",
+        "lastActive": "Viimeksi aktiivinen",
+        "points30d": "Pisteet 30 pv (edell.)"
       }
     }
   },
