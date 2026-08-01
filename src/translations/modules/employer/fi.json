@@ -1,1 +1,331 @@
-{}
+{
+  "employerPanel": {
+    "sidebar": {
+      "dashboard": "Kojelauta",
+      "activityIndex": "Aktiivisuusindeksi",
+      "activities": "Aktiviteetit",
+      "surveys": "Kyselyt",
+      "challenges": "Haasteet",
+      "subscriptions": "Tilaukset",
+      "inviteUsers": "Kutsu käyttäjiä",
+      "invitedList": "Kutsuttujen lista",
+      "activateUsers": "Aktivoi käyttäjiä",
+      "teams": "Tiimit"
+    },
+    "paywall": {
+      "title": "Aktivoi Työnantajapaneeli",
+      "description": "{orgPrefix}Vointy on ilmainen yrityksille ja työntekijöille. Työnantajapaneeli, jossa on seuranta, analytiikka, kampanjat ja tapahtumat, maksaa €149/kk.",
+      "priceSuffix": "kuukaudessa · 30 päivän ilmainen kokeilu",
+      "features": {
+        "unlimitedEmployees": "Rajattomasti työntekijöitä",
+        "unlimitedTeams": "Rajattomasti tiimejä",
+        "allActivities": "Kaikki aktiviteetit",
+        "managementDashboard": "Hallintakojelauta",
+        "reporting": "Raportointi",
+        "noPerUserFees": "Ei käyttäjäkohtaisia maksuja"
+      },
+      "startTrial": "Aloita 30 päivän ilmainen kokeilu",
+      "disclaimer": "Ei käyttöönottomaksua · peru milloin tahansa · kortti vaaditaan kokeilun aloittamiseen, ensimmäinen veloitus 30 päivän jälkeen."
+    },
+    "layout": {
+      "brandTagline": "Rakennetaan terveellisempiä tapoja yhdessä.",
+      "checkingPlan": "Tarkistetaan tilausta…",
+      "trialRemaining": "Ilmaista kokeilua jäljellä: {days} pv",
+      "paymentFailed": "Maksu epäonnistui",
+      "panelActive": "Työnantajapaneeli aktiivinen",
+      "noActivePlan": "Ei aktiivista tilausta"
+    },
+    "dashboard": {
+      "title": "Työnantajan kojelauta",
+      "userActivityStatus": "Käyttäjien aktiivisuustila",
+      "totalUsers": "Käyttäjiä yhteensä",
+      "employeeEngagement": "Työntekijöiden sitoutuminen",
+      "challengeParticipation": "Osallistuminen haasteisiin",
+      "surveyResponseRate": "Kyselyiden vastausprosentti",
+      "currentPlan": "Nykyinen tilaus",
+      "free": "Ilmainen",
+      "usage": "Käyttö",
+      "planFeatures": {
+        "unlimitedUsers": "Rajattomasti käyttäjiä",
+        "advancedAnalytics": "Edistynyt analytiikka",
+        "customChallenges": "Mukautetut haasteet"
+      },
+      "challengesProgress": "Haasteiden edistyminen",
+      "activitiesInChallenges": "Aktiviteetit haasteissa",
+      "noActivityData": "Ei vielä aktiivisuustietoja.",
+      "chart": {
+        "registeredActivities": "Rekisteröidyt aktiviteetit",
+        "targetActivities": "Tavoiteaktiviteetit",
+        "steps": "Askeleet",
+        "water": "Vesi",
+        "sleep": "Uni",
+        "workout": "Treeni",
+        "active": "Aktiivinen",
+        "inactive": "Passiivinen"
+      }
+    },
+    "activateUsers": {
+      "title": "Aktivoi käyttäjiä",
+      "searchPlaceholder": "Hae nimellä tai sähköpostilla",
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "noUsersFound": "Käyttäjiä ei löytynyt",
+      "send": "Lähetä",
+      "toastTitle": "Aktivointimuistutukset lähetetty",
+      "toastDescription": "{count} käyttäjä(ä) saa muistutuksen."
+    },
+    "activities": {
+      "title": "Aktiviteetit",
+      "description": "Luo yrityksen aktiviteetteja ja kutsu työntekijöitä yksitellen tai listan avulla.",
+      "yourActivities": "Sinun aktiviteettisi"
+    },
+    "challenges": {
+      "title": "Haasteet",
+      "description": "Käynnistä tiimihaasteita lisätäksesi aktiivisuutta, unta, nesteytystä ja muuta.",
+      "sections": {
+        "active": { "title": "Aktiiviset haasteet", "body": "Käynnissä olevat haasteet osallistumisineen ja edistymisineen." },
+        "create": { "title": "Luo haaste", "body": "Aseta otsikko, aktiviteettityyppi, tavoite, kesto ja tiimit." },
+        "library": { "title": "Haastekirjasto", "body": "Valmiit haasteet: 10 000 askelta, vesitavoite, tietoisuusviikko." },
+        "leaderboard": { "title": "Tulostaulukko", "body": "Tiimien ja yksilöiden ranking kutakin haastetta kohden." }
+      }
+    },
+    "inviteUsers": {
+      "title": "Kutsu työntekijöitä",
+      "companyLabel": "Yritys: {orgName}",
+      "invalidEntryTitle": "Virheellinen syöte",
+      "invalidEntryDescription": "Anna kelvollinen nimi ja sähköpostiosoite.",
+      "csvImportedTitle": "CSV tuotu",
+      "csvImportedDescription": "{count} vastaanottaja(a) lisätty.",
+      "linkCopied": "Kutsulinkki kopioitu",
+      "noCompanyTitle": "Yritystä ei löytynyt",
+      "noCompanyDescription": "Yrityksesi työtilaa luodaan vielä. Lataa sivu uudelleen ja yritä uudelleen.",
+      "createFailedTitle": "Kutsujen luominen epäonnistui",
+      "invitationsSentTitle": "Kutsut lähetetty",
+      "invitationsSentDescription": "{count} työntekijä(ä) sai kutsusähköpostin.",
+      "emailSentTitle": "Kutsusähköposti lähetetty",
+      "emailSendFailedTitle": "Sähköpostin lähetys epäonnistui",
+      "addEmails": {
+        "title": "Lisää sähköpostiosoitteita",
+        "name": "Nimi",
+        "namePlaceholder": "Anna käyttäjän koko nimi",
+        "email": "Sähköpostiosoite",
+        "add": "Lisää",
+        "helper": "Syötä nimet ja sähköpostiosoitteet yksitellen ja napsauta \"Lisää\" tai paina Enter",
+        "sendOne": "Lähetä {count} kutsu",
+        "sendMany": "Lähetä {count} kutsua"
+      },
+      "bulkUpload": {
+        "title": "Massalataus CSV-tiedostosta",
+        "uploadCsv": "Lataa CSV",
+        "downloadTemplate": "Lataa malli",
+        "info": "Lataa CSV-tiedosto, jossa on nimiä ja sähköpostiosoitteita. Tiedostossa tulee olla otsikkorivi \"email,givenName\" tai yksi sähköposti ja nimi riviä kohden. Lataa malli oikeaa muotoa varten."
+      },
+      "invitations": {
+        "title": "Kutsut",
+        "empty": "Ei vielä kutsuja.",
+        "resend": "Lähetä kutsusähköposti uudelleen",
+        "copyLink": "Kopioi kutsulinkki",
+        "cancel": "Peruuta kutsu"
+      },
+      "howItWorks": {
+        "title": "Näin se toimii",
+        "bullet1": "Lisää nimet ja sähköpostiosoitteet manuaalisesti tai lataa CSV-tiedosto massatuontia varten",
+        "bullet2": "Jokainen kutsu saa henkilökohtaisen liittymislinkin, jonka voit kopioida ja jakaa",
+        "bullet3": "Kutsutut työntekijät luovat salasanansa ja liittyvät yritykseesi automaattisesti",
+        "bullet4": "Hyväksytyt kutsut merkitään yllä olevaan listaan"
+      }
+    },
+    "invitedList": {
+      "title": "Kutsuttujen lista",
+      "description": "Kaikki kutsutut työntekijät, heidän kutsupäivämääränsä ja aktivointitilansa.",
+      "cardTitle": "Kutsut ({count}) · Aktivoitu: {activated}",
+      "empty": "Ei vielä kutsuja.",
+      "columns": {
+        "name": "Nimi",
+        "email": "Sähköpostiosoite",
+        "invitationDate": "Kutsupäivä",
+        "activated": "Aktivoitu",
+        "activationDate": "Aktivointipäivä",
+        "actions": "Toiminnot"
+      },
+      "activated": "Aktivoitu",
+      "notActivated": "Ei aktivoitu",
+      "remove": "Poista",
+      "removeConfirmTitle": "Poistetaanko kutsu?",
+      "removeConfirmDescription": "Tämä poistaa kutsun osoitteelle {email}. Kutsulinkki lakkaa toimimasta.",
+      "cancel": "Peruuta",
+      "removeFailedTitle": "Kutsun poistaminen epäonnistui",
+      "removedToast": "{email} poistettu"
+    },
+    "subscriptions": {
+      "title": "Tilaus ja laskutus",
+      "description": "Hallinnoi Vointyn Työnantajapaneelin tilaustasi.",
+      "pastDueWarning": "Viimeisin maksu epäonnistui. Käyttöoikeutesi jatkuu, kun yritämme uudelleen — päivitä maksutapasi laskutusportaalissa.",
+      "currentPlan": "Nykyinen tilaus: {status}",
+      "planLine": "Työnantajapaneeli — €149/kk",
+      "cancelsAtPeriodEnd": " (peruuntuu kauden lopussa)",
+      "trialEnds": "Kokeilu päättyy ",
+      "accessEnds": "Käyttöoikeus päättyy ",
+      "renews": "Uusiutuu ",
+      "portalButton": "Laskut, maksutapa ja peruutus",
+      "noPlanDescription": "Vointy on ilmainen työntekijöillesi ja tiimeillesi. Työnantajapaneeli — seuranta, analytiikka, kampanjat ja tapahtumat — vaatii tilauksen.",
+      "planCardTitle": "Työnantajapaneeli — €149/kk",
+      "onThisPlan": "Olet tässä tilauksessa.",
+      "startTrial": "Aloita 30 päivän ilmainen kokeilu",
+      "planDisclaimer": "Ei käyttöönottomaksua · rajattomasti työntekijöitä · peru milloin tahansa.",
+      "statuses": {
+        "noPlan": "Ei tilausta",
+        "trial": "Ilmainen kokeilu",
+        "active": "Aktiivinen",
+        "pastDue": "Maksu epäonnistui",
+        "canceled": "Peruutettu"
+      },
+      "checkoutSuccessTitle": "Kiitos!",
+      "checkoutSuccessDescription": "Työnantajapaneelisi tilausta aktivoidaan.",
+      "portalFailedTitle": "Laskutusportaalia ei voitu avata",
+      "features": {
+        "unlimitedEmployees": "Rajattomasti työntekijöitä",
+        "unlimitedTeams": "Rajattomasti tiimejä",
+        "allActivities": "Kaikki aktiviteetit",
+        "managementDashboard": "Hallintakojelauta",
+        "reporting": "Raportointi",
+        "noPerUserFees": "Ei käyttäjäkohtaisia maksuja"
+      }
+    },
+    "surveys": {
+      "title": "Luo kysely",
+      "titlePlaceholder": "Otsikko",
+      "descriptionPlaceholder": "Kuvaus",
+      "startDate": "Alkamispäivä *",
+      "endDate": "Päättymispäivä *",
+      "save": "Tallenna",
+      "savedToastTitle": "Kysely tallennettu",
+      "savedToastDescription": "\"{title}\" ajoitettu {start} → {end}."
+    },
+    "teams": {
+      "title": "Tiimien hallinta",
+      "createTeam": "Luo tiimi",
+      "createDialogTitle": "Luo uusi tiimi",
+      "teamName": "Tiimin nimi",
+      "description": "Kuvaus",
+      "create": "Luo",
+      "createdBy": "Luonut",
+      "createdByYou": "Sinä",
+      "createdToastTitle": "Tiimi luotu",
+      "createdToastDescription": "\"{name}\" on lisätty.",
+      "tabs": { "teams": "Tiimit", "leaderboard": "Tulostaulukko" },
+      "columns": {
+        "teamName": "Tiimin nimi",
+        "description": "Kuvaus",
+        "createdBy": "Luonut",
+        "members": "Jäsenet",
+        "actions": "Toiminnot"
+      },
+      "noTeams": "Tiimejä ei löytynyt. Luo uusi tiimi aloittaaksesi.",
+      "leaderboardColumns": { "rank": "#", "team": "Tiimi", "members": "Jäsenet", "score": "Pisteet" },
+      "noLeaderboard": "Ei vielä tulostaulukkotietoja."
+    },
+    "wellbeingIndex": {
+      "title": "Aktiivisuusindeksi",
+      "description": "Seuraa, kuinka aktiivinen organisaatiosi on ajan mittaan.",
+      "sections": {
+        "calculation": {
+          "title": "Miten se lasketaan",
+          "body": "Jokainen suoritettu aktiviteetti antaa työntekijälle 1 pisteen. Pisteet lasketaan yhteen kuukausittain ja kertyvät jäsenyysvuoden aikana, joka alkaa työntekijän liittyessä."
+        },
+        "monthlyPoints": { "title": "Kuukausittaiset pisteet", "body": "Kaikkien aktiivisten tiimien ja työntekijöiden aktiivisuuspisteet yhteensä kuukausittain." },
+        "yearlyTotal": { "title": "Vuosittainen kokonaismäärä", "body": "Kertyneet pisteet työntekijää kohden liittymisestä lähtien." },
+        "teamBreakdown": { "title": "Tiimikohtainen erittely", "body": "Tiimikohtaiset aktiivisuuspisteet porautumismahdollisuudella." }
+      }
+    },
+    "paymentBanner": {
+      "text": "Kaikki esikatselussa tehdyt maksut ovat testitilassa.",
+      "readMore": "Lue lisää"
+    }
+  },
+  "adminPanel": {
+    "title": "Ylläpitopaneeli",
+    "stats": {
+      "companies": "Yritykset",
+      "companiesHint": "{paid} maksavaa · {free} ilmaista",
+      "mrr": "MRR",
+      "mrrHint": "Toistuvat kuukausitulot",
+      "registeredEmployees": "Rekisteröityneet työntekijät",
+      "registeredEmployeesHint": "{count} aktivoitua kutsua",
+      "pageViews": "Sivunäytöt (viimeaikaiset)",
+      "pageViewsHint": "Viimeiset 5 000 seurattua näyttöä"
+    },
+    "tabs": {
+      "messages": "Viestit ({count})",
+      "customers": "Asiakkaat ({count})",
+      "revenue": "Tulot",
+      "employees": "Työntekijät ({count})",
+      "site": "Sivustoanalytiikka",
+      "activities": "Aktiviteettien käyttö",
+      "newsletter": "Uutiskirje ({count})"
+    },
+    "messages": {
+      "contactTitle": "contact@vointy.life",
+      "contactDescription": "Viestit verkkosivuston yhteydenottolomakkeesta",
+      "licenseTitle": "Lisenssipyynnöt",
+      "licenseDescription": "Lisenssilomakkeen kautta lähetetyt pyynnöt",
+      "otherTitle": "Muut viestit",
+      "otherDescription": "Kaikki muu",
+      "empty": "Ei vielä viestejä."
+    },
+    "customers": {
+      "paying": "Maksavat asiakkaat",
+      "free": "Ilmaiset yritykset",
+      "columns": {
+        "company": "Yritys",
+        "plan": "Tilaus",
+        "monthly": "Kuukausittain",
+        "employees": "Työntekijät",
+        "joined": "Liittyi",
+        "actions": "Toiminnot"
+      },
+      "noCompanies": "Ei yrityksiä.",
+      "paid": "Maksava",
+      "free_status": "Ilmainen",
+      "setFree": "Aseta ilmaiseksi",
+      "markPaid": "Merkitse maksavaksi",
+      "updateFailedTitle": "Päivitys epäonnistui",
+      "movedToFree": "Siirretty ilmaiseen tilaukseen",
+      "markedPaying": "Merkitty maksavaksi asiakkaaksi"
+    },
+    "revenue": {
+      "chartTitle": "Tilaustulot (viimeiset 12 kuukautta)",
+      "chartDescription": "Toistuvat kuukausitulot maksavilta yrityksiltä, €{amount}/kk kukin",
+      "mrrLegend": "MRR (€)",
+      "customersChartTitle": "Maksavat asiakkaat ajan mittaan",
+      "customersLegend": "Asiakkaat"
+    },
+    "employees": {
+      "tableTitle": "Rekisteröityneet työntekijät",
+      "tableDescription": "Kaikki käyttäjät, jotka ovat luoneet tilin",
+      "columns": {
+        "name": "Nimi",
+        "company": "Yritys",
+        "language": "Kieli",
+        "role": "Rooli",
+        "registered": "Rekisteröitynyt"
+      },
+      "defaultRole": "käyttäjä"
+    },
+    "site": {
+      "visitsTitle": "Vierailut (viimeiset 30 päivää)",
+      "pageViewsLegend": "Sivunäytöt",
+      "visitorsLegend": "Kävijät",
+      "topPagesTitle": "Vierailluimmat sivut",
+      "columns": { "path": "Polku", "views": "Näytöt" },
+      "noVisits": "Ei vielä seurattuja vierailuja."
+    },
+    "activities": {
+      "monthlyChartTitle": "Suoritetut aktiviteetit kuukausittain",
+      "activitiesLegend": "Aktiviteetit",
+      "topActivitiesTitle": "Käytetyimmät aktiviteetit",
+      "columns": { "activity": "Aktiviteetti", "timesPerformed": "Suorituskertoja" },
+      "noActivities": "Aktiviteetteja ei ole vielä suoritettu."
+    }
+  }
+}

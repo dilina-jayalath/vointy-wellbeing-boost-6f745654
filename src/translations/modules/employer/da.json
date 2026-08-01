@@ -1,1 +1,331 @@
-{}
+{
+  "employerPanel": {
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "activityIndex": "Aktivitetsindeks",
+      "activities": "Aktiviteter",
+      "surveys": "Undersøgelser",
+      "challenges": "Udfordringer",
+      "subscriptions": "Abonnementer",
+      "inviteUsers": "Inviter brugere",
+      "invitedList": "Inviterede liste",
+      "activateUsers": "Aktivér brugere",
+      "teams": "Teams"
+    },
+    "paywall": {
+      "title": "Aktivér arbejdsgiverpanelet",
+      "description": "{orgPrefix}Vointy er gratis for virksomheder og medarbejdere. Arbejdsgiverpanelet med sporing, analyser, kampagner og events koster €149/måned.",
+      "priceSuffix": "pr. måned · 30 dages gratis prøveperiode",
+      "features": {
+        "unlimitedEmployees": "Ubegrænset antal medarbejdere",
+        "unlimitedTeams": "Ubegrænset antal teams",
+        "allActivities": "Alle aktiviteter",
+        "managementDashboard": "Administrationsdashboard",
+        "reporting": "Rapportering",
+        "noPerUserFees": "Ingen gebyrer pr. bruger"
+      },
+      "startTrial": "Start 30 dages gratis prøveperiode",
+      "disclaimer": "Ingen opstartsgebyr · opsig når som helst · kort kræves for at starte prøveperioden, første opkrævning efter 30 dage."
+    },
+    "layout": {
+      "brandTagline": "Byg sundere vaner sammen.",
+      "checkingPlan": "Kontrollerer abonnement…",
+      "trialRemaining": "Resterende gratis prøveperiode: {days} dage",
+      "paymentFailed": "Betaling mislykkedes",
+      "panelActive": "Arbejdsgiverpanel aktivt",
+      "noActivePlan": "Intet aktivt abonnement"
+    },
+    "dashboard": {
+      "title": "Arbejdsgiver-dashboard",
+      "userActivityStatus": "Brugernes aktivitetsstatus",
+      "totalUsers": "Samlet antal brugere",
+      "employeeEngagement": "Medarbejderengagement",
+      "challengeParticipation": "Deltagelse i udfordringer",
+      "surveyResponseRate": "Svarprocent for undersøgelser",
+      "currentPlan": "Nuværende abonnement",
+      "free": "Gratis",
+      "usage": "Forbrug",
+      "planFeatures": {
+        "unlimitedUsers": "Ubegrænset antal brugere",
+        "advancedAnalytics": "Avanceret analyse",
+        "customChallenges": "Tilpassede udfordringer"
+      },
+      "challengesProgress": "Fremgang i udfordringer",
+      "activitiesInChallenges": "Aktiviteter i udfordringer",
+      "noActivityData": "Ingen aktivitetsdata endnu.",
+      "chart": {
+        "registeredActivities": "Registrerede aktiviteter",
+        "targetActivities": "Målaktiviteter",
+        "steps": "Skridt",
+        "water": "Vand",
+        "sleep": "Søvn",
+        "workout": "Træning",
+        "active": "Aktiv",
+        "inactive": "Inaktiv"
+      }
+    },
+    "activateUsers": {
+      "title": "Aktivér brugere",
+      "searchPlaceholder": "Søg efter navn eller e-mail",
+      "name": "Navn",
+      "email": "E-mail",
+      "noUsersFound": "Ingen brugere fundet",
+      "send": "Send",
+      "toastTitle": "Aktiveringspåmindelser sendt",
+      "toastDescription": "{count} bruger(e) vil modtage en påmindelse."
+    },
+    "activities": {
+      "title": "Aktiviteter",
+      "description": "Opret virksomhedsaktiviteter, og inviter medarbejdere enkeltvis eller via en liste.",
+      "yourActivities": "Dine aktiviteter"
+    },
+    "challenges": {
+      "title": "Udfordringer",
+      "description": "Lancer teamudfordringer for at øge aktivitet, søvn, hydrering og meget mere.",
+      "sections": {
+        "active": { "title": "Aktive udfordringer", "body": "Igangværende udfordringer med deltagelse og fremgang." },
+        "create": { "title": "Opret udfordring", "body": "Angiv titel, aktivitetstype, mål, varighed og teams." },
+        "library": { "title": "Udfordringsbibliotek", "body": "Færdiglavede udfordringer: 10.000 skridt, vandmål, mindfulness-uge." },
+        "leaderboard": { "title": "Resultattavle", "body": "Rangering af teams og enkeltpersoner pr. udfordring." }
+      }
+    },
+    "inviteUsers": {
+      "title": "Inviter medarbejdere",
+      "companyLabel": "Virksomhed: {orgName}",
+      "invalidEntryTitle": "Ugyldig indtastning",
+      "invalidEntryDescription": "Indtast et gyldigt navn og en gyldig e-mailadresse.",
+      "csvImportedTitle": "CSV importeret",
+      "csvImportedDescription": "{count} modtager(e) tilføjet.",
+      "linkCopied": "Invitationslink kopieret",
+      "noCompanyTitle": "Ingen virksomhed fundet",
+      "noCompanyDescription": "Din virksomheds arbejdsområde er stadig ved at blive oprettet. Genindlæs siden, og prøv igen.",
+      "createFailedTitle": "Kunne ikke oprette invitationer",
+      "invitationsSentTitle": "Invitationer sendt",
+      "invitationsSentDescription": "{count} medarbejder(e) modtog en invitations-e-mail.",
+      "emailSentTitle": "Invitations-e-mail sendt",
+      "emailSendFailedTitle": "Kunne ikke sende e-mail",
+      "addEmails": {
+        "title": "Tilføj e-mailadresser",
+        "name": "Navn",
+        "namePlaceholder": "Indtast brugerens fulde navn",
+        "email": "E-mailadresse",
+        "add": "Tilføj",
+        "helper": "Indtast navne og e-mailadresser én ad gangen, og klik på \"Tilføj\" eller tryk på Enter",
+        "sendOne": "Send {count} invitation",
+        "sendMany": "Send {count} invitationer"
+      },
+      "bulkUpload": {
+        "title": "Masseupload fra CSV",
+        "uploadCsv": "Upload CSV",
+        "downloadTemplate": "Download skabelon",
+        "info": "Upload en CSV-fil med navne og e-mailadresser. Filen skal have en overskriftsrække med \"email,givenName\" eller indeholde én e-mail og ét navn pr. linje. Download skabelonen for det korrekte format."
+      },
+      "invitations": {
+        "title": "Invitationer",
+        "empty": "Ingen invitationer endnu.",
+        "resend": "Send invitations-e-mail igen",
+        "copyLink": "Kopiér invitationslink",
+        "cancel": "Annuller invitation"
+      },
+      "howItWorks": {
+        "title": "Sådan fungerer det",
+        "bullet1": "Tilføj navne og e-mailadresser manuelt, eller upload en CSV-fil til masseimport",
+        "bullet2": "Hver invitation får et personligt tilmeldingslink, som du kan kopiere og dele",
+        "bullet3": "Inviterede medarbejdere opretter deres adgangskode og tilslutter sig automatisk din virksomhed",
+        "bullet4": "Accepterede invitationer markeres i listen ovenfor"
+      }
+    },
+    "invitedList": {
+      "title": "Inviterede liste",
+      "description": "Alle inviterede medarbejdere, deres invitationsdato og aktiveringsstatus.",
+      "cardTitle": "Invitationer ({count}) · Aktiveret: {activated}",
+      "empty": "Ingen invitationer endnu.",
+      "columns": {
+        "name": "Navn",
+        "email": "E-mailadresse",
+        "invitationDate": "Invitationsdato",
+        "activated": "Aktiveret",
+        "activationDate": "Aktiveringsdato",
+        "actions": "Handlinger"
+      },
+      "activated": "Aktiveret",
+      "notActivated": "Ikke aktiveret",
+      "remove": "Fjern",
+      "removeConfirmTitle": "Fjern invitation?",
+      "removeConfirmDescription": "Dette fjerner invitationen til {email}. Invitationslinket holder op med at virke.",
+      "cancel": "Annuller",
+      "removeFailedTitle": "Kunne ikke fjerne invitation",
+      "removedToast": "{email} fjernet"
+    },
+    "subscriptions": {
+      "title": "Abonnement og fakturering",
+      "description": "Administrer dit abonnement for Vointy-arbejdsgiverpanelet.",
+      "pastDueWarning": "Den seneste betaling mislykkedes. Din adgang fortsætter, mens vi forsøger igen — opdater venligst din betalingsmetode i faktureringsportalen.",
+      "currentPlan": "Nuværende abonnement: {status}",
+      "planLine": "Arbejdsgiverpanel — €149/måned",
+      "cancelsAtPeriodEnd": " (annulleres ved periodens slutning)",
+      "trialEnds": "Prøveperioden slutter ",
+      "accessEnds": "Adgangen slutter ",
+      "renews": "Fornyes ",
+      "portalButton": "Fakturaer, betalingsmetode og opsigelse",
+      "noPlanDescription": "Vointy er gratis for dine medarbejdere og teams. Arbejdsgiverpanelet — sporing, analyser, kampagner og events — kræver et abonnement.",
+      "planCardTitle": "Arbejdsgiverpanel — €149/måned",
+      "onThisPlan": "Du har dette abonnement.",
+      "startTrial": "Start 30 dages gratis prøveperiode",
+      "planDisclaimer": "Ingen opstartsgebyr · ubegrænset antal medarbejdere · opsig når som helst.",
+      "statuses": {
+        "noPlan": "Intet abonnement",
+        "trial": "Gratis prøveperiode",
+        "active": "Aktiv",
+        "pastDue": "Betaling mislykkedes",
+        "canceled": "Annulleret"
+      },
+      "checkoutSuccessTitle": "Tak!",
+      "checkoutSuccessDescription": "Dit abonnement på arbejdsgiverpanelet aktiveres.",
+      "portalFailedTitle": "Kunne ikke åbne faktureringsportalen",
+      "features": {
+        "unlimitedEmployees": "Ubegrænset antal medarbejdere",
+        "unlimitedTeams": "Ubegrænset antal teams",
+        "allActivities": "Alle aktiviteter",
+        "managementDashboard": "Administrationsdashboard",
+        "reporting": "Rapportering",
+        "noPerUserFees": "Ingen gebyrer pr. bruger"
+      }
+    },
+    "surveys": {
+      "title": "Opret en undersøgelse",
+      "titlePlaceholder": "Titel",
+      "descriptionPlaceholder": "Beskrivelse",
+      "startDate": "Startdato *",
+      "endDate": "Slutdato *",
+      "save": "Gem",
+      "savedToastTitle": "Undersøgelse gemt",
+      "savedToastDescription": "\"{title}\" planlagt {start} → {end}."
+    },
+    "teams": {
+      "title": "Teamstyring",
+      "createTeam": "Opret team",
+      "createDialogTitle": "Opret et nyt team",
+      "teamName": "Teamnavn",
+      "description": "Beskrivelse",
+      "create": "Opret",
+      "createdBy": "Oprettet af",
+      "createdByYou": "Dig",
+      "createdToastTitle": "Team oprettet",
+      "createdToastDescription": "\"{name}\" er blevet tilføjet.",
+      "tabs": { "teams": "Teams", "leaderboard": "Resultattavle" },
+      "columns": {
+        "teamName": "Teamnavn",
+        "description": "Beskrivelse",
+        "createdBy": "Oprettet af",
+        "members": "Medlemmer",
+        "actions": "Handlinger"
+      },
+      "noTeams": "Ingen teams fundet. Opret et nyt team for at komme i gang.",
+      "leaderboardColumns": { "rank": "#", "team": "Team", "members": "Medlemmer", "score": "Point" },
+      "noLeaderboard": "Ingen data for resultattavlen endnu."
+    },
+    "wellbeingIndex": {
+      "title": "Aktivitetsindeks",
+      "description": "Følg, hvor aktiv din organisation er over tid.",
+      "sections": {
+        "calculation": {
+          "title": "Sådan beregnes det",
+          "body": "Hver gennemført aktivitet giver en medarbejder 1 point. Point summeres pr. måned og akkumuleres over medlemsåret, der starter, når medarbejderen tilmelder sig."
+        },
+        "monthlyPoints": { "title": "Månedlige point", "body": "Samlede aktivitetspoint pr. måned på tværs af alle aktive teams og medarbejdere." },
+        "yearlyTotal": { "title": "Årlig total", "body": "Akkumulerede point pr. medarbejder siden tilmelding." },
+        "teamBreakdown": { "title": "Teamfordeling", "body": "Aktivitetspoint pr. team med mulighed for at dykke ned." }
+      }
+    },
+    "paymentBanner": {
+      "text": "Alle betalinger foretaget i eksempelvisningen er i testtilstand.",
+      "readMore": "Læs mere"
+    }
+  },
+  "adminPanel": {
+    "title": "Administrationspanel",
+    "stats": {
+      "companies": "Virksomheder",
+      "companiesHint": "{paid} betalende · {free} gratis",
+      "mrr": "MRR",
+      "mrrHint": "Tilbagevendende månedlig omsætning",
+      "registeredEmployees": "Registrerede medarbejdere",
+      "registeredEmployeesHint": "{count} aktiverede invitationer",
+      "pageViews": "Sidevisninger (seneste)",
+      "pageViewsHint": "Seneste 5.000 sporede visninger"
+    },
+    "tabs": {
+      "messages": "Beskeder ({count})",
+      "customers": "Kunder ({count})",
+      "revenue": "Omsætning",
+      "employees": "Medarbejdere ({count})",
+      "site": "Webstedsanalyse",
+      "activities": "Aktivitetsforbrug",
+      "newsletter": "Nyhedsbrev ({count})"
+    },
+    "messages": {
+      "contactTitle": "contact@vointy.life",
+      "contactDescription": "Beskeder fra hjemmesidens kontaktformular",
+      "licenseTitle": "Licensanmodninger",
+      "licenseDescription": "Anmodninger sendt via licensformularen",
+      "otherTitle": "Andre beskeder",
+      "otherDescription": "Alt andet",
+      "empty": "Ingen beskeder endnu."
+    },
+    "customers": {
+      "paying": "Betalende kunder",
+      "free": "Gratis virksomheder",
+      "columns": {
+        "company": "Virksomhed",
+        "plan": "Abonnement",
+        "monthly": "Månedlig",
+        "employees": "Medarbejdere",
+        "joined": "Tilmeldt",
+        "actions": "Handlinger"
+      },
+      "noCompanies": "Ingen virksomheder.",
+      "paid": "Betalt",
+      "free_status": "Gratis",
+      "setFree": "Sæt til gratis",
+      "markPaid": "Markér som betalende",
+      "updateFailedTitle": "Opdatering mislykkedes",
+      "movedToFree": "Flyttet til gratis abonnement",
+      "markedPaying": "Markeret som betalende kunde"
+    },
+    "revenue": {
+      "chartTitle": "Abonnementsomsætning (seneste 12 måneder)",
+      "chartDescription": "Tilbagevendende månedlig omsætning fra betalende virksomheder, €{amount}/måned hver",
+      "mrrLegend": "MRR (€)",
+      "customersChartTitle": "Betalende kunder over tid",
+      "customersLegend": "Kunder"
+    },
+    "employees": {
+      "tableTitle": "Registrerede medarbejdere",
+      "tableDescription": "Alle brugere, der har oprettet en konto",
+      "columns": {
+        "name": "Navn",
+        "company": "Virksomhed",
+        "language": "Sprog",
+        "role": "Rolle",
+        "registered": "Registreret"
+      },
+      "defaultRole": "bruger"
+    },
+    "site": {
+      "visitsTitle": "Besøg (seneste 30 dage)",
+      "pageViewsLegend": "Sidevisninger",
+      "visitorsLegend": "Besøgende",
+      "topPagesTitle": "Mest besøgte sider",
+      "columns": { "path": "Sti", "views": "Visninger" },
+      "noVisits": "Ingen sporede besøg endnu."
+    },
+    "activities": {
+      "monthlyChartTitle": "Udførte aktiviteter pr. måned",
+      "activitiesLegend": "Aktiviteter",
+      "topActivitiesTitle": "Mest anvendte aktiviteter",
+      "columns": { "activity": "Aktivitet", "timesPerformed": "Antal gange udført" },
+      "noActivities": "Ingen aktiviteter udført endnu."
+    }
+  }
+}

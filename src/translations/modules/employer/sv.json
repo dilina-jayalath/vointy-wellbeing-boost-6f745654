@@ -1,1 +1,331 @@
-{}
+{
+  "employerPanel": {
+    "sidebar": {
+      "dashboard": "Översikt",
+      "activityIndex": "Aktivitetsindex",
+      "activities": "Aktiviteter",
+      "surveys": "Enkäter",
+      "challenges": "Utmaningar",
+      "subscriptions": "Prenumerationer",
+      "inviteUsers": "Bjud in användare",
+      "invitedList": "Inbjudningslista",
+      "activateUsers": "Aktivera användare",
+      "teams": "Team"
+    },
+    "paywall": {
+      "title": "Aktivera arbetsgivarpanelen",
+      "description": "{orgPrefix}Vointy är gratis för företag och anställda. Arbetsgivarpanelen med spårning, analys, kampanjer och event kostar €149/månad.",
+      "priceSuffix": "per månad · 30 dagars kostnadsfri provperiod",
+      "features": {
+        "unlimitedEmployees": "Obegränsat antal anställda",
+        "unlimitedTeams": "Obegränsat antal team",
+        "allActivities": "Alla aktiviteter",
+        "managementDashboard": "Hanteringsöversikt",
+        "reporting": "Rapportering",
+        "noPerUserFees": "Inga avgifter per användare"
+      },
+      "startTrial": "Starta 30 dagars kostnadsfri provperiod",
+      "disclaimer": "Ingen startavgift · avsluta när som helst · kort krävs för att starta provperioden, första debiteringen sker efter 30 dagar."
+    },
+    "layout": {
+      "brandTagline": "Bygg hälsosammare vanor tillsammans.",
+      "checkingPlan": "Kontrollerar plan…",
+      "trialRemaining": "Kvarvarande provperiod: {days} dagar",
+      "paymentFailed": "Betalningen misslyckades",
+      "panelActive": "Arbetsgivarpanel aktiv",
+      "noActivePlan": "Ingen aktiv plan"
+    },
+    "dashboard": {
+      "title": "Arbetsgivaröversikt",
+      "userActivityStatus": "Användarnas aktivitetsstatus",
+      "totalUsers": "Totalt antal användare",
+      "employeeEngagement": "Medarbetarengagemang",
+      "challengeParticipation": "Deltagande i utmaningar",
+      "surveyResponseRate": "Svarsfrekvens på enkäter",
+      "currentPlan": "Nuvarande plan",
+      "free": "Gratis",
+      "usage": "Användning",
+      "planFeatures": {
+        "unlimitedUsers": "Obegränsat antal användare",
+        "advancedAnalytics": "Avancerad analys",
+        "customChallenges": "Anpassade utmaningar"
+      },
+      "challengesProgress": "Utmaningarnas framsteg",
+      "activitiesInChallenges": "Aktiviteter i utmaningar",
+      "noActivityData": "Ingen aktivitetsdata ännu.",
+      "chart": {
+        "registeredActivities": "Registrerade aktiviteter",
+        "targetActivities": "Målaktiviteter",
+        "steps": "Steg",
+        "water": "Vatten",
+        "sleep": "Sömn",
+        "workout": "Träning",
+        "active": "Aktiv",
+        "inactive": "Inaktiv"
+      }
+    },
+    "activateUsers": {
+      "title": "Aktivera användare",
+      "searchPlaceholder": "Sök efter namn eller e-post",
+      "name": "Namn",
+      "email": "E-post",
+      "noUsersFound": "Inga användare hittades",
+      "send": "Skicka",
+      "toastTitle": "Aktiveringspåminnelser skickade",
+      "toastDescription": "{count} användare kommer att få en påminnelse."
+    },
+    "activities": {
+      "title": "Aktiviteter",
+      "description": "Skapa företagsaktiviteter och bjud in anställda enskilt eller via en lista.",
+      "yourActivities": "Dina aktiviteter"
+    },
+    "challenges": {
+      "title": "Utmaningar",
+      "description": "Lansera lagutmaningar för att öka aktivitet, sömn, vätskeintag och mer.",
+      "sections": {
+        "active": { "title": "Aktiva utmaningar", "body": "Pågående utmaningar med deltagande och framsteg." },
+        "create": { "title": "Skapa utmaning", "body": "Ange titel, aktivitetstyp, mål, varaktighet och team." },
+        "library": { "title": "Utmaningsbibliotek", "body": "Färdiga utmaningar: 10 000 steg, vattenmål, mindfulnessvecka." },
+        "leaderboard": { "title": "Topplista", "body": "Rankning av team och individer per utmaning." }
+      }
+    },
+    "inviteUsers": {
+      "title": "Bjud in anställda",
+      "companyLabel": "Företag: {orgName}",
+      "invalidEntryTitle": "Ogiltig post",
+      "invalidEntryDescription": "Ange ett giltigt namn och en giltig e-postadress.",
+      "csvImportedTitle": "CSV importerad",
+      "csvImportedDescription": "{count} mottagare har lagts till.",
+      "linkCopied": "Inbjudningslänk kopierad",
+      "noCompanyTitle": "Inget företag hittades",
+      "noCompanyDescription": "Ditt företags arbetsyta håller fortfarande på att skapas. Ladda om sidan och försök igen.",
+      "createFailedTitle": "Kunde inte skapa inbjudningar",
+      "invitationsSentTitle": "Inbjudningar skickade",
+      "invitationsSentDescription": "{count} anställd(a) fick ett inbjudningsmejl.",
+      "emailSentTitle": "Inbjudningsmejl skickat",
+      "emailSendFailedTitle": "Kunde inte skicka mejl",
+      "addEmails": {
+        "title": "Lägg till e-postadresser",
+        "name": "Namn",
+        "namePlaceholder": "Ange användarens fullständiga namn",
+        "email": "E-postadress",
+        "add": "Lägg till",
+        "helper": "Ange namn och e-postadresser en i taget och klicka på \"Lägg till\" eller tryck på Enter",
+        "sendOne": "Skicka {count} inbjudan",
+        "sendMany": "Skicka {count} inbjudningar"
+      },
+      "bulkUpload": {
+        "title": "Massuppladdning från CSV",
+        "uploadCsv": "Ladda upp CSV",
+        "downloadTemplate": "Ladda ner mall",
+        "info": "Ladda upp en CSV-fil med namn och e-postadresser. Filen bör ha en rubrikrad med \"email,givenName\" eller innehålla en e-postadress och ett namn per rad. Ladda ner mallen för rätt format."
+      },
+      "invitations": {
+        "title": "Inbjudningar",
+        "empty": "Inga inbjudningar ännu.",
+        "resend": "Skicka inbjudningsmejl igen",
+        "copyLink": "Kopiera inbjudningslänk",
+        "cancel": "Avbryt inbjudan"
+      },
+      "howItWorks": {
+        "title": "Så fungerar det",
+        "bullet1": "Lägg till namn och e-postadresser manuellt eller ladda upp en CSV-fil för massimport",
+        "bullet2": "Varje inbjudan får en personlig anslutningslänk som du kan kopiera och dela",
+        "bullet3": "Inbjudna anställda skapar sitt lösenord och ansluter sig automatiskt till ditt företag",
+        "bullet4": "Accepterade inbjudningar markeras i listan ovan"
+      }
+    },
+    "invitedList": {
+      "title": "Inbjudningslista",
+      "description": "Alla inbjudna anställda, deras inbjudningsdatum och aktiveringsstatus.",
+      "cardTitle": "Inbjudningar ({count}) · Aktiverade: {activated}",
+      "empty": "Inga inbjudningar ännu.",
+      "columns": {
+        "name": "Namn",
+        "email": "E-postadress",
+        "invitationDate": "Inbjudningsdatum",
+        "activated": "Aktiverad",
+        "activationDate": "Aktiveringsdatum",
+        "actions": "Åtgärder"
+      },
+      "activated": "Aktiverad",
+      "notActivated": "Inte aktiverad",
+      "remove": "Ta bort",
+      "removeConfirmTitle": "Ta bort inbjudan?",
+      "removeConfirmDescription": "Detta tar bort inbjudan för {email}. Inbjudningslänken slutar fungera.",
+      "cancel": "Avbryt",
+      "removeFailedTitle": "Kunde inte ta bort inbjudan",
+      "removedToast": "{email} borttagen"
+    },
+    "subscriptions": {
+      "title": "Prenumeration och fakturering",
+      "description": "Hantera din plan för Vointys arbetsgivarpanel.",
+      "pastDueWarning": "Den senaste betalningen misslyckades. Din åtkomst fortsätter medan vi försöker igen — uppdatera din betalningsmetod i faktureringsportalen.",
+      "currentPlan": "Nuvarande plan: {status}",
+      "planLine": "Arbetsgivarpanel — €149/månad",
+      "cancelsAtPeriodEnd": " (avslutas vid periodens slut)",
+      "trialEnds": "Provperioden slutar ",
+      "accessEnds": "Åtkomsten slutar ",
+      "renews": "Förnyas ",
+      "portalButton": "Fakturor, betalningsmetod och uppsägning",
+      "noPlanDescription": "Vointy är gratis för dina anställda och team. Arbetsgivarpanelen — spårning, analys, kampanjer och event — kräver en prenumeration.",
+      "planCardTitle": "Arbetsgivarpanel — €149/månad",
+      "onThisPlan": "Du har denna plan.",
+      "startTrial": "Starta 30 dagars kostnadsfri provperiod",
+      "planDisclaimer": "Ingen startavgift · obegränsat antal anställda · avsluta när som helst.",
+      "statuses": {
+        "noPlan": "Ingen plan",
+        "trial": "Kostnadsfri provperiod",
+        "active": "Aktiv",
+        "pastDue": "Betalningen misslyckades",
+        "canceled": "Avslutad"
+      },
+      "checkoutSuccessTitle": "Tack!",
+      "checkoutSuccessDescription": "Din plan för arbetsgivarpanelen håller på att aktiveras.",
+      "portalFailedTitle": "Kunde inte öppna faktureringsportalen",
+      "features": {
+        "unlimitedEmployees": "Obegränsat antal anställda",
+        "unlimitedTeams": "Obegränsat antal team",
+        "allActivities": "Alla aktiviteter",
+        "managementDashboard": "Hanteringsöversikt",
+        "reporting": "Rapportering",
+        "noPerUserFees": "Inga avgifter per användare"
+      }
+    },
+    "surveys": {
+      "title": "Skapa en enkät",
+      "titlePlaceholder": "Titel",
+      "descriptionPlaceholder": "Beskrivning",
+      "startDate": "Startdatum *",
+      "endDate": "Slutdatum *",
+      "save": "Spara",
+      "savedToastTitle": "Enkät sparad",
+      "savedToastDescription": "\"{title}\" schemalagd {start} → {end}."
+    },
+    "teams": {
+      "title": "Teamhantering",
+      "createTeam": "Skapa team",
+      "createDialogTitle": "Skapa ett nytt team",
+      "teamName": "Teamnamn",
+      "description": "Beskrivning",
+      "create": "Skapa",
+      "createdBy": "Skapad av",
+      "createdByYou": "Du",
+      "createdToastTitle": "Team skapat",
+      "createdToastDescription": "\"{name}\" har lagts till.",
+      "tabs": { "teams": "Team", "leaderboard": "Topplista" },
+      "columns": {
+        "teamName": "Teamnamn",
+        "description": "Beskrivning",
+        "createdBy": "Skapad av",
+        "members": "Medlemmar",
+        "actions": "Åtgärder"
+      },
+      "noTeams": "Inga team hittades. Skapa ett nytt team för att komma igång.",
+      "leaderboardColumns": { "rank": "#", "team": "Team", "members": "Medlemmar", "score": "Poäng" },
+      "noLeaderboard": "Ingen topplistadata ännu."
+    },
+    "wellbeingIndex": {
+      "title": "Aktivitetsindex",
+      "description": "Följ hur aktiv din organisation är över tid.",
+      "sections": {
+        "calculation": {
+          "title": "Hur det beräknas",
+          "body": "Varje slutförd aktivitet ger en anställd 1 poäng. Poängen summeras per månad och ackumuleras under medlemsåret som börjar när den anställda ansluter sig."
+        },
+        "monthlyPoints": { "title": "Månatliga poäng", "body": "Totala aktivitetspoäng per månad för alla aktiva team och anställda." },
+        "yearlyTotal": { "title": "Årlig totalsumma", "body": "Ackumulerade poäng per anställd sedan de anslöt sig." },
+        "teamBreakdown": { "title": "Teamöversikt", "body": "Aktivitetspoäng per team med möjlighet att fördjupa sig." }
+      }
+    },
+    "paymentBanner": {
+      "text": "Alla betalningar i förhandsgranskningen görs i testläge.",
+      "readMore": "Läs mer"
+    }
+  },
+  "adminPanel": {
+    "title": "Adminpanel",
+    "stats": {
+      "companies": "Företag",
+      "companiesHint": "{paid} betalande · {free} gratis",
+      "mrr": "MRR",
+      "mrrHint": "Återkommande månadsintäkter",
+      "registeredEmployees": "Registrerade anställda",
+      "registeredEmployeesHint": "{count} aktiverade inbjudningar",
+      "pageViews": "Sidvisningar (senaste)",
+      "pageViewsHint": "Senaste 5 000 spårade visningarna"
+    },
+    "tabs": {
+      "messages": "Meddelanden ({count})",
+      "customers": "Kunder ({count})",
+      "revenue": "Intäkter",
+      "employees": "Anställda ({count})",
+      "site": "Webbplatsanalys",
+      "activities": "Aktivitetsanvändning",
+      "newsletter": "Nyhetsbrev ({count})"
+    },
+    "messages": {
+      "contactTitle": "contact@vointy.life",
+      "contactDescription": "Meddelanden från webbplatsens kontaktformulär",
+      "licenseTitle": "Licensförfrågningar",
+      "licenseDescription": "Förfrågningar skickade via licensformuläret",
+      "otherTitle": "Övriga meddelanden",
+      "otherDescription": "Allt annat",
+      "empty": "Inga meddelanden ännu."
+    },
+    "customers": {
+      "paying": "Betalande kunder",
+      "free": "Gratisföretag",
+      "columns": {
+        "company": "Företag",
+        "plan": "Plan",
+        "monthly": "Månadsvis",
+        "employees": "Anställda",
+        "joined": "Anslöt",
+        "actions": "Åtgärder"
+      },
+      "noCompanies": "Inga företag.",
+      "paid": "Betald",
+      "free_status": "Gratis",
+      "setFree": "Ange som gratis",
+      "markPaid": "Markera som betalande",
+      "updateFailedTitle": "Uppdateringen misslyckades",
+      "movedToFree": "Flyttad till gratisplan",
+      "markedPaying": "Markerad som betalande kund"
+    },
+    "revenue": {
+      "chartTitle": "Prenumerationsintäkter (senaste 12 månaderna)",
+      "chartDescription": "Återkommande månadsintäkter från betalande företag, €{amount}/månad vardera",
+      "mrrLegend": "MRR (€)",
+      "customersChartTitle": "Betalande kunder över tid",
+      "customersLegend": "Kunder"
+    },
+    "employees": {
+      "tableTitle": "Registrerade anställda",
+      "tableDescription": "Alla användare som har skapat ett konto",
+      "columns": {
+        "name": "Namn",
+        "company": "Företag",
+        "language": "Språk",
+        "role": "Roll",
+        "registered": "Registrerad"
+      },
+      "defaultRole": "användare"
+    },
+    "site": {
+      "visitsTitle": "Besök (senaste 30 dagarna)",
+      "pageViewsLegend": "Sidvisningar",
+      "visitorsLegend": "Besökare",
+      "topPagesTitle": "Mest besökta sidor",
+      "columns": { "path": "Sökväg", "views": "Visningar" },
+      "noVisits": "Inga spårade besök ännu."
+    },
+    "activities": {
+      "monthlyChartTitle": "Utförda aktiviteter per månad",
+      "activitiesLegend": "Aktiviteter",
+      "topActivitiesTitle": "Mest använda aktiviteter",
+      "columns": { "activity": "Aktivitet", "timesPerformed": "Antal gånger utförd" },
+      "noActivities": "Inga aktiviteter utförda ännu."
+    }
+  }
+}
