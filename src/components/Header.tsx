@@ -30,9 +30,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             {showBack && <BackButton className="text-gray-700 hover:text-brand-purple px-2" />}
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center gap-2">
+              <img src={vointyMark.url} alt="Vointy logo" className="h-9 w-auto" />
               <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.life</span></span>
             </Link>
+
           </div>
 
           
