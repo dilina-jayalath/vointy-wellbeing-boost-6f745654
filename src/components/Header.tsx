@@ -6,6 +6,8 @@ import { useTranslation } from '@/lib/i18n';
 import { useAuth } from '@/contexts/AuthContext';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import BackButton from '@/components/BackButton';
+import vointyMark from '@/assets/vointy-mark.png.asset.json';
+
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
