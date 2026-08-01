@@ -104,6 +104,7 @@ const App = () => (
               >
                 <Route index element={<EmployerDashboard />} />
                 <Route path="wellbeing" element={<EmployerWellbeing />} />
+                <Route path="activity-summary" element={<EmployerActivitySummary />} />
                 <Route path="activities" element={<EmployerActivities />} />
                 <Route path="surveys" element={<EmployerSurveys />} />
                 <Route path="challenges" element={<EmployerChallenges />} />
