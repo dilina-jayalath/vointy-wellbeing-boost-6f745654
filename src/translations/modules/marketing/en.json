@@ -35,20 +35,16 @@
     "startTrial": "Start free 30-day trial"
   },
   "aboutPage": {
-    "title": "About Vointy.life",
-    "subtitle": "We're on a mission to transform workplace wellbeing through social engagement and data-driven insights.",
-    "missionTitle": "Our Mission",
-    "missionP1": "At Vointy.life, we believe that healthy, engaged employees are the foundation of successful organizations. Our social wellness platform helps companies reduce sick leaves by up to 32% while fostering a culture of connection and wellbeing.",
-    "missionP2": "We combine cutting-edge technology with human-centered design to create solutions that make workplace wellness accessible, engaging, and effective for teams of all sizes.",
-    "companiesServedLabel": "Companies Served",
-    "sickLeaveReductionLabel": "Sick Leave Reduction",
-    "valuesTitle": "Our Values",
-    "value1Title": "Wellbeing First",
-    "value1Description": "We put employee wellbeing at the center of everything we do, believing that healthy teams create successful businesses.",
-    "value2Title": "Social Connection",
-    "value2Description": "We foster meaningful connections between colleagues, creating supportive communities within organizations.",
-    "value3Title": "Data-Driven Results",
-    "value3Description": "We use analytics and insights to measure impact and continuously improve our platform's effectiveness."
+    "title": "About us",
+    "subtitle": "Build healthier habits, together.",
+    "p1": "Vointy.life has been developed to improve the wellbeing, healthy lifestyles and shared activities of employees in companies and communities. The goal is that employees enjoy their work and stay fit for work by making use of the Vointy.life app.",
+    "p2": "The service has been designed and developed by Wellthyforce Oy, a Finnish start-up. The company is owned and financed by private entrepreneurs.",
+    "value1Title": "Wellbeing first",
+    "value1Description": "Employee wellbeing is at the centre of everything we build.",
+    "value2Title": "Doing things together",
+    "value2Description": "Shared activities and healthy habits bring teams and communities closer.",
+    "value3Title": "Finnish start-up",
+    "value3Description": "Designed and developed by Wellthyforce Oy, owned and financed by private entrepreneurs."
   },
   "careersPage": {
     "title": "Join Our Mission",

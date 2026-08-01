@@ -35,20 +35,16 @@
     "startTrial": "Avvia la prova gratuita di 30 giorni"
   },
   "aboutPage": {
-    "title": "Chi è Vointy.life",
-    "subtitle": "La nostra missione è trasformare il benessere sul lavoro attraverso l'impegno sociale e i dati.",
-    "missionTitle": "La nostra missione",
-    "missionP1": "In Vointy.life crediamo che dipendenti sani e coinvolti siano il fondamento delle organizzazioni di successo. La nostra piattaforma di benessere sociale aiuta le aziende a ridurre le assenze per malattia fino al 32%, favorendo al contempo una cultura di connessione e benessere.",
-    "missionP2": "Combiniamo tecnologia all'avanguardia con un design incentrato sulle persone per creare soluzioni che rendono il benessere sul lavoro accessibile, coinvolgente ed efficace per team di ogni dimensione.",
-    "companiesServedLabel": "Aziende servite",
-    "sickLeaveReductionLabel": "Riduzione assenze per malattia",
-    "valuesTitle": "I nostri valori",
-    "value1Title": "Il benessere prima di tutto",
-    "value1Description": "Mettiamo il benessere dei dipendenti al centro di tutto ciò che facciamo, convinti che team sani creino aziende di successo.",
-    "value2Title": "Connessione sociale",
-    "value2Description": "Favoriamo connessioni significative tra colleghi, creando comunità di supporto all'interno delle organizzazioni.",
-    "value3Title": "Risultati basati sui dati",
-    "value3Description": "Utilizziamo analisi e insight per misurare l'impatto e migliorare continuamente l'efficacia della nostra piattaforma."
+    "title": "About us",
+    "subtitle": "Build healthier habits, together.",
+    "p1": "Vointy.life è stato sviluppato per migliorare il benessere, gli stili di vita sani e le attività condivise dei dipendenti nelle aziende e nelle comunità. L'obiettivo è che i dipendenti stiano bene al lavoro e mantengano la propria capacità lavorativa grazie all'app Vointy.life.",
+    "p2": "Il servizio è stato progettato e sviluppato da Wellthyforce Oy, una start-up finlandese. La società è posseduta e finanziata da imprenditori privati.",
+    "value1Title": "Prima il benessere",
+    "value1Description": "Il benessere dei dipendenti è al centro di tutto ciò che creiamo.",
+    "value2Title": "Fare insieme",
+    "value2Description": "Le attività condivise e le abitudini sane avvicinano team e comunità.",
+    "value3Title": "Start-up finlandese",
+    "value3Description": "Progettato e sviluppato da Wellthyforce Oy, posseduta e finanziata da imprenditori privati."
   },
   "careersPage": {
     "title": "Unisciti alla nostra missione",
