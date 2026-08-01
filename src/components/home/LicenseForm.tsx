@@ -40,7 +40,8 @@ const LicenseForm = () => {
           email: formData.email,
           company_name: formData.companyName,
           subject: formData.subject,
-          message: formData.message
+          message: formData.message,
+          category: 'license'
         }]);
 
       if (error) throw error;
