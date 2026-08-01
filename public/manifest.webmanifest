@@ -1,13 +1,22 @@
 {
-  "name": "Vointy — Workplace Wellbeing",
+  "id": "/",
+  "name": "Vointy — Build healthier habits, together.",
   "short_name": "Vointy",
   "description": "Daily wellbeing challenges, activities and community for your team.",
   "start_url": "/app",
   "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#9b87f5",
+  "lang": "en",
   "icons": [
+    {
+      "src": "/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/icons/icon-192.png",
       "sizes": "192x192",
