@@ -1235,6 +1235,20 @@ export type Database = {
     }
     Functions: {
       accept_invitation: { Args: { _token: string }; Returns: string }
+      admin_list_users: {
+        Args: never
+        Returns: {
+          created_at: string
+          display_name: string
+          email: string
+          is_admin: boolean
+          user_id: string
+        }[]
+      }
+      admin_set_admin_role: {
+        Args: { _email: string; _grant: boolean }
+        Returns: string
+      }
       current_org_id: { Args: never; Returns: string }
       delete_email: {
         Args: { message_id: number; queue_name: string }
