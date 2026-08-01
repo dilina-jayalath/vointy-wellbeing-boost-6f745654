@@ -6,6 +6,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { useTranslation } from '@/lib/i18n';
+import { useQuery } from '@tanstack/react-query';
+import { supabase } from '@/integrations/supabase/client';
+import BlogMedia from '@/components/blog/BlogMedia';
 
 interface BlogPost {
   title: string;
@@ -20,6 +23,19 @@ const Blog = () => {
   const { t } = useTranslation();
   const blogPosts = (t('blogPage.posts') as BlogPost[]).map((post) => ({ ...post, image: '/placeholder.svg' }));
   const categories = t('blogPage.categories') as string[];
+
+  const { data: livePosts = [] } = useQuery({
+    queryKey: ['public-blog-posts'],
+    queryFn: async () => {
+      const { data } = await supabase
+        .from('blog_posts')
+        .select('id, title, excerpt, content, media_type, media_url, published_at')
+        .eq('status', 'published')
+        .order('published_at', { ascending: false });
+      return data ?? [];
+    },
+  });
+
 
   return (
     <div className="min-h-screen">
