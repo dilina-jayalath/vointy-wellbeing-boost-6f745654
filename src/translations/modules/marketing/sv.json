@@ -1,1 +1,243 @@
-{}
+{
+  "pricingPage": {
+    "headingPrefix": "Ett enkelt pris. Obegränsat antal anställda. Obegränsat antal team.",
+    "headingPrice": "149 €/månad.",
+    "subheading": "Företag ansluter sig till Vointy gratis och delar inloggningsuppgifter med anställda över obegränsat antal team. Uppgradera bara när du vill ha arbetsgivarpanelen med analys, kampanjer och event.",
+    "highlights": [
+      "Kostnadsfri 30-dagars provperiod",
+      "149 €/månad",
+      "Ingen startavgift",
+      "Obegränsat antal anställda",
+      "Avsluta när som helst"
+    ],
+    "freeTitle": "Gratis",
+    "freeForever": "för alltid",
+    "freeDescription": "Registrera dig som företag och dela Vointy-inloggningsuppgifter med dina anställda över obegränsat antal team.",
+    "freeFeatures": [
+      "Obegränsat antal anställda",
+      "Obegränsat antal team",
+      "Alla aktiviteter för anställda",
+      "Teambaserad åtkomst"
+    ],
+    "getStartedFree": "Kom igång gratis",
+    "employerDashboardBadge": "Arbetsgivarpanel",
+    "companyPlanTitle": "Företagsplan",
+    "perMonthPerCompany": "/månad / företag",
+    "companyPlanDescription": "Allt i Gratis, plus arbetsgivarpanelen med uppföljning, analys, kampanjer, event och inbjudningar.",
+    "planFeatures": [
+      "Obegränsat antal anställda",
+      "Obegränsat antal team",
+      "Alla aktiviteter",
+      "Arbetsgivarpanel",
+      "Rapportering och analys",
+      "Inga avgifter per användare"
+    ],
+    "startTrial": "Starta kostnadsfri 30-dagars provperiod"
+  },
+  "aboutPage": {
+    "title": "Om Vointy.life",
+    "subtitle": "Vårt uppdrag är att förändra välbefinnandet på arbetsplatsen genom socialt engagemang och datadrivna insikter.",
+    "missionTitle": "Vårt uppdrag",
+    "missionP1": "På Vointy.life tror vi att friska, engagerade medarbetare är grunden för framgångsrika organisationer. Vår sociala hälsoplattform hjälper företag att minska sjukfrånvaron med upp till 32 % samtidigt som den främjar en kultur av gemenskap och välbefinnande.",
+    "missionP2": "Vi kombinerar den senaste tekniken med människocentrerad design för att skapa lösningar som gör hälsofrämjande arbete på arbetsplatsen tillgängligt, engagerande och effektivt för team av alla storlekar.",
+    "companiesServedLabel": "Antal betjänade företag",
+    "sickLeaveReductionLabel": "Minskad sjukfrånvaro",
+    "valuesTitle": "Våra värderingar",
+    "value1Title": "Välbefinnande i första hand",
+    "value1Description": "Vi sätter de anställdas välbefinnande i centrum för allt vi gör, i tron att friska team skapar framgångsrika företag.",
+    "value2Title": "Social gemenskap",
+    "value2Description": "Vi främjar meningsfulla kontakter mellan kollegor och skapar stödjande gemenskaper inom organisationer.",
+    "value3Title": "Datadrivna resultat",
+    "value3Description": "Vi använder analys och insikter för att mäta effekten och kontinuerligt förbättra vår plattforms genomslagskraft."
+  },
+  "careersPage": {
+    "title": "Var med i vårt uppdrag",
+    "subtitle": "Hjälp oss förändra välbefinnandet på arbetsplatsen och bygga framtidens medarbetarengagemang.",
+    "whyWorkTitle": "Varför arbeta hos Vointy.life?",
+    "benefit1Title": "Distansarbete i första hand",
+    "benefit1Description": "Arbeta var som helst med flexibla arbetstider och fokus på balans mellan arbete och privatliv.",
+    "benefit2Title": "Innovationsfokus",
+    "benefit2Description": "Arbeta med den senaste tekniken som gör verklig skillnad i människors liv.",
+    "benefit3Title": "Utvecklingsmöjligheter",
+    "benefit3Description": "Kontinuerligt lärande och utveckling med mentorskap och utbildningsprogram.",
+    "openPositionsTitle": "Lediga tjänster",
+    "positions": [
+      {
+        "title": "Senior frontend-utvecklare",
+        "department": "Teknik",
+        "location": "Distans",
+        "type": "Heltid",
+        "description": "Bli en del av vårt utvecklingsteam och bygg nästa generations lösningar för hälsofrämjande arbetsplatser med React, TypeScript och modern webbteknik."
+      },
+      {
+        "title": "Produktchef",
+        "department": "Produkt",
+        "location": "San Francisco, CA",
+        "type": "Heltid",
+        "description": "Led produktstrategi och utveckling för vår sociala hälsoplattform i nära samarbete med utvecklings- och designteam."
+      },
+      {
+        "title": "Customer Success Manager",
+        "department": "Customer Success",
+        "location": "Distans",
+        "type": "Heltid",
+        "description": "Hjälp våra företagskunder att maximera värdet av Vointy.life och driv adoption i deras organisationer."
+      },
+      {
+        "title": "UI/UX-designer",
+        "department": "Design",
+        "location": "New York, NY",
+        "type": "Heltid",
+        "description": "Designa intuitiva och engagerande användarupplevelser som gör hälsofrämjande arbete tillgängligt och roligt för alla användare."
+      }
+    ],
+    "applyNow": "Ansök nu",
+    "noRoleText": "Ser du ingen tjänst som passar? Vi letar alltid efter talangfulla personer.",
+    "sendResume": "Skicka ditt CV till oss"
+  },
+  "blogPage": {
+    "title": "Vointy.life-bloggen",
+    "subtitle": "Insikter, forskning och bästa praxis för hälsofrämjande arbete och medarbetarengagemang.",
+    "categories": [
+      "Alla",
+      "Distansarbete",
+      "Analys",
+      "Företagskultur",
+      "Psykisk hälsa",
+      "Forskning",
+      "Implementering"
+    ],
+    "posts": [
+      {
+        "title": "5 sätt att öka de anställdas välbefinnande i distansteam",
+        "excerpt": "Upptäck praktiska strategier för att bibehålla teamgemenskap och stödja anställdas psykiska hälsa i distribuerade arbetsmiljöer.",
+        "author": "Sarah Chen",
+        "date": "1 juni 2025",
+        "readTime": "5 min läsning",
+        "category": "Distansarbete"
+      },
+      {
+        "title": "Avkastningen på hälsoprogram för anställda: en datadriven analys",
+        "excerpt": "Lär dig hur företag mäter avkastningen på sina hälsosatsningar och vilka mätvärden som betyder mest.",
+        "author": "Mike Johnson",
+        "date": "28 maj 2025",
+        "readTime": "8 min läsning",
+        "category": "Analys"
+      },
+      {
+        "title": "Att bygga en hälsokultur: bästa praxis från ledande företag",
+        "excerpt": "Utforska hur branschledare skapar hållbara hälsokulturer som engagerar anställda och driver affärsresultat.",
+        "author": "Emma Rodriguez",
+        "date": "25 maj 2025",
+        "readTime": "6 min läsning",
+        "category": "Företagskultur"
+      },
+      {
+        "title": "Psykisk hälsa på arbetsplatsen: att bryta ner barriärer",
+        "excerpt": "Förstå vikten av stöd för psykisk hälsa och hur man skapar en miljö där anställda känner sig trygga att söka hjälp.",
+        "author": "Dr. Alex Thompson",
+        "date": "22 maj 2025",
+        "readTime": "7 min läsning",
+        "category": "Psykisk hälsa"
+      },
+      {
+        "title": "Vetenskapen bakom sociala hälsoplattformar",
+        "excerpt": "Dyk djupt in i forskningen som visar hur sociala kontakter påverkar de anställdas hälsa, produktivitet och arbetstillfredsställelse.",
+        "author": "Forskningsteamet",
+        "date": "19 maj 2025",
+        "readTime": "10 min läsning",
+        "category": "Forskning"
+      },
+      {
+        "title": "Att implementera hälsoprogram: en steg-för-steg-guide",
+        "excerpt": "En omfattande guide för HR-ledare som vill lansera framgångsrika hälsosatsningar i sina organisationer.",
+        "author": "Lisa Park",
+        "date": "16 maj 2025",
+        "readTime": "12 min läsning",
+        "category": "Implementering"
+      }
+    ],
+    "loadMore": "Ladda fler inlägg"
+  },
+  "contactPage": {
+    "title": "Kontakta oss",
+    "subtitle": "Kom i kontakt med vårt team. Vi finns här för att hjälpa dig förändra välbefinnandet på din arbetsplats.",
+    "conversationTitle": "Låt oss starta en konversation",
+    "conversationDescription": "Redo att se Vointy i praktiken? Vi finns här för att svara på dina frågor och visa hur vår plattform kan minska sjukfrånvaron och öka de anställdas välbefinnande på ditt företag.",
+    "emailUsLabel": "E-posta oss",
+    "callUsLabel": "Ring oss",
+    "visitUsLabel": "Besök oss",
+    "addressLine1": "123 Wellness Street",
+    "addressLine2": "San Francisco, CA 94105",
+    "hoursLabel": "Öppettider",
+    "hoursValue": "Måndag - fredag: 09:00 - 18:00 PST",
+    "requestDemo": "Begär en demo",
+    "whyChooseTitle": "Varför välja Vointy?",
+    "reasons": [
+      {
+        "title": "Bevisade resultat",
+        "description": "Företag som använder Vointy ser i genomsnitt en 30-procentig minskning av sjukfrånvaron inom de första 6 månaderna."
+      },
+      {
+        "title": "Enkel implementering",
+        "description": "Kom igång på bara 24 timmar med vår enkla onboardingprocess och engagerade supportteam."
+      },
+      {
+        "title": "Personligt stöd",
+        "description": "Våra hälsoexperter samarbetar med dig för att skapa ett skräddarsytt program som passar din företagskultur."
+      },
+      {
+        "title": "Datadrivna insikter",
+        "description": "Följ framstegen med omfattande analys och rapportering för att mäta effekten av ditt hälsoprogram."
+      }
+    ]
+  },
+  "contactFormPage": {
+    "successMessage": "Vi har tagit emot ditt meddelande och återkommer till dig inom kort.",
+    "sendAnother": "Skicka ett till meddelande",
+    "sending": "Skickar meddelande...",
+    "placeholderFirstName": "John",
+    "placeholderLastName": "Doe",
+    "placeholderEmail": "john@example.com",
+    "placeholderCompany": "Ditt företag",
+    "placeholderSubject": "Förfrågan om Vointy",
+    "placeholderMessage": "Hur kan vi hjälpa dig?"
+  },
+  "footerContactForm": {
+    "title": "Kontakta oss",
+    "description": "Skicka ett meddelande till oss så återkommer vi till dig.",
+    "firstName": "Förnamn",
+    "lastName": "Efternamn",
+    "email": "E-post",
+    "companyOptional": "Företag (valfritt)",
+    "subject": "Ämne",
+    "message": "Meddelande",
+    "sending": "Skickar...",
+    "sendMessage": "Skicka meddelande",
+    "successToast": "Tack! Ditt meddelande har skickats.",
+    "errorTitle": "Något gick fel"
+  },
+  "navExtra": {
+    "employerPanel": "Arbetsgivarpanel",
+    "myVointy": "Min Vointy",
+    "language": "Språk"
+  },
+  "footerLinks": {
+    "aboutUs": "Om oss",
+    "careers": "Karriär",
+    "blog": "Blogg",
+    "contact": "Kontakt",
+    "privacyPolicy": "Integritetspolicy",
+    "termsOfService": "Användarvillkor",
+    "refundPolicy": "Återbetalningspolicy",
+    "cookiePolicy": "Cookiepolicy",
+    "admin": "Admin"
+  },
+  "notFound": {
+    "message": "Hoppsan! Sidan kunde inte hittas",
+    "returnHome": "Gå till startsidan"
+  },
+  "backButton": {
+    "label": "Tillbaka"
+  }
+}

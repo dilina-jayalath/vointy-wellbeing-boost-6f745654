@@ -1,1 +1,243 @@
-{}
+{
+  "pricingPage": {
+    "headingPrefix": "Én enkel pris. Ubegrænset antal medarbejdere. Ubegrænset antal teams.",
+    "headingPrice": "149 €/måned.",
+    "subheading": "Virksomheder tilmelder sig Vointy gratis og deler login-oplysninger med medarbejdere på tværs af et ubegrænset antal teams. Opgrader kun, hvis du ønsker arbejdsgiverpanelet med analyser, kampagner og events.",
+    "highlights": [
+      "Gratis 30-dages prøveperiode",
+      "149 €/måned",
+      "Intet opstartsgebyr",
+      "Ubegrænset antal medarbejdere",
+      "Opsig når som helst"
+    ],
+    "freeTitle": "Gratis",
+    "freeForever": "for altid",
+    "freeDescription": "Tilmeld dig som virksomhed og del Vointy-login med dine medarbejdere på tværs af et ubegrænset antal teams.",
+    "freeFeatures": [
+      "Ubegrænset antal medarbejdere",
+      "Ubegrænset antal teams",
+      "Alle medarbejderaktiviteter",
+      "Teambaseret adgang"
+    ],
+    "getStartedFree": "Kom i gang gratis",
+    "employerDashboardBadge": "Arbejdsgiverpanel",
+    "companyPlanTitle": "Virksomhedsplan",
+    "perMonthPerCompany": "/måned / virksomhed",
+    "companyPlanDescription": "Alt i Gratis, plus arbejdsgiverpanelet med sporing, analyser, kampagner, events og invitationer.",
+    "planFeatures": [
+      "Ubegrænset antal medarbejdere",
+      "Ubegrænset antal teams",
+      "Alle aktiviteter",
+      "Arbejdsgiverpanel",
+      "Rapportering og analyser",
+      "Ingen gebyrer pr. bruger"
+    ],
+    "startTrial": "Start gratis 30-dages prøveperiode"
+  },
+  "aboutPage": {
+    "title": "Om Vointy.life",
+    "subtitle": "Vores mission er at transformere trivsel på arbejdspladsen gennem socialt engagement og datadrevne indsigter.",
+    "missionTitle": "Vores mission",
+    "missionP1": "Hos Vointy.life tror vi på, at sunde, engagerede medarbejdere er grundlaget for succesfulde organisationer. Vores sociale trivselsplatform hjælper virksomheder med at reducere sygefravær med op til 32 % og samtidig fremme en kultur af fællesskab og trivsel.",
+    "missionP2": "Vi kombinerer den nyeste teknologi med menneskecentreret design for at skabe løsninger, der gør trivsel på arbejdspladsen tilgængeligt, engagerende og effektivt for teams i alle størrelser.",
+    "companiesServedLabel": "Antal betjente virksomheder",
+    "sickLeaveReductionLabel": "Reduktion i sygefravær",
+    "valuesTitle": "Vores værdier",
+    "value1Title": "Trivsel først",
+    "value1Description": "Vi sætter medarbejdernes trivsel i centrum for alt, hvad vi gør, i troen på, at sunde teams skaber succesfulde virksomheder.",
+    "value2Title": "Social forbindelse",
+    "value2Description": "Vi fremmer meningsfulde forbindelser mellem kolleger og skaber støttende fællesskaber i organisationer.",
+    "value3Title": "Datadrevne resultater",
+    "value3Description": "Vi bruger analyser og indsigter til at måle effekt og løbende forbedre vores platforms virkning."
+  },
+  "careersPage": {
+    "title": "Bliv en del af vores mission",
+    "subtitle": "Hjælp os med at transformere trivsel på arbejdspladsen og skabe fremtidens medarbejderengagement.",
+    "whyWorkTitle": "Hvorfor arbejde hos Vointy.life?",
+    "benefit1Title": "Remote-first kultur",
+    "benefit1Description": "Arbejd hvor som helst med fleksible arbejdstider og fokus på balance mellem arbejde og privatliv.",
+    "benefit2Title": "Fokus på innovation",
+    "benefit2Description": "Arbejd med den nyeste teknologi, der gør en reel forskel i menneskers liv.",
+    "benefit3Title": "Udviklingsmuligheder",
+    "benefit3Description": "Løbende læring og udvikling med mentorordninger og træningsprogrammer.",
+    "openPositionsTitle": "Ledige stillinger",
+    "positions": [
+      {
+        "title": "Senior Frontend-udvikler",
+        "department": "Engineering",
+        "location": "Remote",
+        "type": "Fuldtid",
+        "description": "Bliv en del af vores udviklingsteam og byg den næste generation af løsninger til trivsel på arbejdspladsen med React, TypeScript og moderne webteknologier."
+      },
+      {
+        "title": "Produktchef",
+        "department": "Produkt",
+        "location": "San Francisco, CA",
+        "type": "Fuldtid",
+        "description": "Led produktstrategi og -udvikling for vores sociale trivselsplatform i tæt samarbejde med udviklings- og designteams."
+      },
+      {
+        "title": "Customer Success Manager",
+        "department": "Customer Success",
+        "location": "Remote",
+        "type": "Fuldtid",
+        "description": "Hjælp vores erhvervskunder med at maksimere værdien af Vointy.life og drive adoption i deres organisationer."
+      },
+      {
+        "title": "UI/UX-designer",
+        "department": "Design",
+        "location": "New York, NY",
+        "type": "Fuldtid",
+        "description": "Design intuitive og engagerende brugeroplevelser, der gør trivsel på arbejdspladsen tilgængeligt og behageligt for alle brugere."
+      }
+    ],
+    "applyNow": "Ansøg nu",
+    "noRoleText": "Kan du ikke finde en stilling, der passer? Vi leder altid efter talentfulde mennesker.",
+    "sendResume": "Send os dit CV"
+  },
+  "blogPage": {
+    "title": "Vointy.life-bloggen",
+    "subtitle": "Indsigter, forskning og bedste praksis for trivsel på arbejdspladsen og medarbejderengagement.",
+    "categories": [
+      "Alle",
+      "Fjernarbejde",
+      "Analyser",
+      "Virksomhedskultur",
+      "Mental sundhed",
+      "Forskning",
+      "Implementering"
+    ],
+    "posts": [
+      {
+        "title": "5 måder at øge medarbejdertrivslen i fjernteams",
+        "excerpt": "Opdag praktiske strategier til at fastholde teamsammenhold og støtte medarbejdernes mentale sundhed i distribuerede arbejdsmiljøer.",
+        "author": "Sarah Chen",
+        "date": "1. juni 2025",
+        "readTime": "5 min. læsning",
+        "category": "Fjernarbejde"
+      },
+      {
+        "title": "Afkastet af medarbejdertrivselsprogrammer: en datadrevet analyse",
+        "excerpt": "Lær, hvordan virksomheder måler afkastet af deres trivselsinitiativer, og hvilke målepunkter der betyder mest.",
+        "author": "Mike Johnson",
+        "date": "28. maj 2025",
+        "readTime": "8 min. læsning",
+        "category": "Analyser"
+      },
+      {
+        "title": "At opbygge en trivselskultur: bedste praksis fra førende virksomheder",
+        "excerpt": "Udforsk, hvordan branchens førende virksomheder skaber bæredygtige trivselskulturer, der engagerer medarbejdere og driver forretningsresultater.",
+        "author": "Emma Rodriguez",
+        "date": "25. maj 2025",
+        "readTime": "6 min. læsning",
+        "category": "Virksomhedskultur"
+      },
+      {
+        "title": "Mental sundhed på arbejdspladsen: nedbrydning af barrierer",
+        "excerpt": "Forstå vigtigheden af støtte til mental sundhed, og hvordan man skaber et miljø, hvor medarbejdere føler sig trygge ved at søge hjælp.",
+        "author": "Dr. Alex Thompson",
+        "date": "22. maj 2025",
+        "readTime": "7 min. læsning",
+        "category": "Mental sundhed"
+      },
+      {
+        "title": "Videnskaben bag sociale trivselsplatforme",
+        "excerpt": "Dyk ned i forskningen, der viser, hvordan sociale forbindelser påvirker medarbejdernes sundhed, produktivitet og jobtilfredshed.",
+        "author": "Forskningsteamet",
+        "date": "19. maj 2025",
+        "readTime": "10 min. læsning",
+        "category": "Forskning"
+      },
+      {
+        "title": "Implementering af trivselsprogrammer: en trin-for-trin-guide",
+        "excerpt": "En omfattende guide til HR-ledere, der ønsker at lancere succesfulde medarbejdertrivselsinitiativer i deres organisationer.",
+        "author": "Lisa Park",
+        "date": "16. maj 2025",
+        "readTime": "12 min. læsning",
+        "category": "Implementering"
+      }
+    ],
+    "loadMore": "Indlæs flere indlæg"
+  },
+  "contactPage": {
+    "title": "Kontakt os",
+    "subtitle": "Kom i kontakt med vores team. Vi er her for at hjælpe dig med at transformere trivslen på din arbejdsplads.",
+    "conversationTitle": "Lad os starte en samtale",
+    "conversationDescription": "Klar til at se Vointy i aktion? Vi er her for at besvare dine spørgsmål og vise dig, hvordan vores platform kan reducere sygefravær og øge medarbejdertrivslen i din virksomhed.",
+    "emailUsLabel": "Skriv til os",
+    "callUsLabel": "Ring til os",
+    "visitUsLabel": "Besøg os",
+    "addressLine1": "123 Wellness Street",
+    "addressLine2": "San Francisco, CA 94105",
+    "hoursLabel": "Åbningstider",
+    "hoursValue": "Mandag - fredag: 9:00 - 18:00 PST",
+    "requestDemo": "Anmod om en demo",
+    "whyChooseTitle": "Hvorfor vælge Vointy?",
+    "reasons": [
+      {
+        "title": "Dokumenterede resultater",
+        "description": "Virksomheder, der bruger Vointy, oplever i gennemsnit en reduktion i sygefravær på 30 % inden for de første 6 måneder."
+      },
+      {
+        "title": "Nem implementering",
+        "description": "Kom i gang på blot 24 timer med vores enkle onboardingproces og dedikerede supportteam."
+      },
+      {
+        "title": "Personlig support",
+        "description": "Vores trivselseksperter samarbejder med dig om at skabe et skræddersyet program, der passer til din virksomhedskultur."
+      },
+      {
+        "title": "Datadrevne indsigter",
+        "description": "Følg fremskridt med omfattende analyser og rapportering for at måle effekten af dit trivselsprogram."
+      }
+    ]
+  },
+  "contactFormPage": {
+    "successMessage": "Vi har modtaget din besked og vender snart tilbage til dig.",
+    "sendAnother": "Send en ny besked",
+    "sending": "Sender besked...",
+    "placeholderFirstName": "John",
+    "placeholderLastName": "Doe",
+    "placeholderEmail": "john@example.com",
+    "placeholderCompany": "Din virksomhed",
+    "placeholderSubject": "Forespørgsel om Vointy",
+    "placeholderMessage": "Hvordan kan vi hjælpe dig?"
+  },
+  "footerContactForm": {
+    "title": "Kontakt os",
+    "description": "Send os en besked, så vender vi tilbage til dig.",
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "email": "E-mail",
+    "companyOptional": "Virksomhed (valgfri)",
+    "subject": "Emne",
+    "message": "Besked",
+    "sending": "Sender...",
+    "sendMessage": "Send besked",
+    "successToast": "Tak! Din besked er blevet sendt.",
+    "errorTitle": "Noget gik galt"
+  },
+  "navExtra": {
+    "employerPanel": "Arbejdsgiverpanel",
+    "myVointy": "Min Vointy",
+    "language": "Sprog"
+  },
+  "footerLinks": {
+    "aboutUs": "Om os",
+    "careers": "Karriere",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "privacyPolicy": "Privatlivspolitik",
+    "termsOfService": "Servicevilkår",
+    "refundPolicy": "Refusionspolitik",
+    "cookiePolicy": "Cookiepolitik",
+    "admin": "Admin"
+  },
+  "notFound": {
+    "message": "Ups! Siden blev ikke fundet",
+    "returnHome": "Tilbage til forsiden"
+  },
+  "backButton": {
+    "label": "Tilbage"
+  }
+}

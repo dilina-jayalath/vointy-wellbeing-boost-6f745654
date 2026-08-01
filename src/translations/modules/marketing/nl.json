@@ -1,1 +1,243 @@
-{}
+{
+  "pricingPage": {
+    "headingPrefix": "Één eenvoudige prijs. Onbeperkt aantal werknemers. Onbeperkt aantal teams.",
+    "headingPrice": "€149/maand.",
+    "subheading": "Bedrijven sluiten zich gratis aan bij Vointy en delen inloggegevens met werknemers in onbeperkt veel teams. Upgrade alleen als je het werkgeversdashboard met analyses, campagnes en evenementen wilt.",
+    "highlights": [
+      "Gratis proefperiode van 30 dagen",
+      "€149/maand",
+      "Geen opstartkosten",
+      "Onbeperkt aantal werknemers",
+      "Op elk moment opzegbaar"
+    ],
+    "freeTitle": "Gratis",
+    "freeForever": "voor altijd",
+    "freeDescription": "Meld je aan als bedrijf en deel Vointy-inloggegevens met je werknemers in onbeperkt veel teams.",
+    "freeFeatures": [
+      "Onbeperkt aantal werknemers",
+      "Onbeperkt aantal teams",
+      "Alle werknemersactiviteiten",
+      "Teamgebaseerde toegang"
+    ],
+    "getStartedFree": "Gratis aan de slag",
+    "employerDashboardBadge": "Werkgeversdashboard",
+    "companyPlanTitle": "Bedrijfsplan",
+    "perMonthPerCompany": "/maand / bedrijf",
+    "companyPlanDescription": "Alles uit Gratis, plus het werkgeversdashboard met tracking, analyses, campagnes, evenementen en uitnodigingen.",
+    "planFeatures": [
+      "Onbeperkt aantal werknemers",
+      "Onbeperkt aantal teams",
+      "Alle activiteiten",
+      "Werkgeversdashboard",
+      "Rapportage en analyses",
+      "Geen kosten per gebruiker"
+    ],
+    "startTrial": "Start gratis proefperiode van 30 dagen"
+  },
+  "aboutPage": {
+    "title": "Over Vointy.life",
+    "subtitle": "Onze missie is het welzijn op de werkvloer te transformeren door sociale betrokkenheid en datagedreven inzichten.",
+    "missionTitle": "Onze missie",
+    "missionP1": "Bij Vointy.life geloven we dat gezonde, betrokken werknemers de basis vormen van succesvolle organisaties. Ons sociale welzijnsplatform helpt bedrijven ziekteverzuim met tot 32% te verminderen en tegelijk een cultuur van verbondenheid en welzijn te bevorderen.",
+    "missionP2": "We combineren geavanceerde technologie met mensgerichte vormgeving om oplossingen te creëren die welzijn op de werkvloer toegankelijk, boeiend en effectief maken voor teams van elke omvang.",
+    "companiesServedLabel": "Bediende bedrijven",
+    "sickLeaveReductionLabel": "Vermindering ziekteverzuim",
+    "valuesTitle": "Onze waarden",
+    "value1Title": "Welzijn eerst",
+    "value1Description": "We plaatsen het welzijn van werknemers centraal in alles wat we doen, in de overtuiging dat gezonde teams succesvolle bedrijven creëren.",
+    "value2Title": "Sociale verbinding",
+    "value2Description": "We bevorderen zinvolle verbindingen tussen collega's en creëren ondersteunende gemeenschappen binnen organisaties.",
+    "value3Title": "Datagedreven resultaten",
+    "value3Description": "We gebruiken analyses en inzichten om impact te meten en het effect van ons platform voortdurend te verbeteren."
+  },
+  "careersPage": {
+    "title": "Sluit je aan bij onze missie",
+    "subtitle": "Help ons het welzijn op de werkvloer te transformeren en de toekomst van medewerkersbetrokkenheid te bouwen.",
+    "whyWorkTitle": "Waarom werken bij Vointy.life?",
+    "benefit1Title": "Remote-first cultuur",
+    "benefit1Description": "Werk overal met flexibele uren en aandacht voor de balans tussen werk en privéleven.",
+    "benefit2Title": "Focus op innovatie",
+    "benefit2Description": "Werk aan geavanceerde technologie die een écht verschil maakt in het leven van mensen.",
+    "benefit3Title": "Groeimogelijkheden",
+    "benefit3Description": "Continu leren en ontwikkelen met mentorschap en trainingsprogramma's.",
+    "openPositionsTitle": "Openstaande vacatures",
+    "positions": [
+      {
+        "title": "Senior Frontend Developer",
+        "department": "Engineering",
+        "location": "Remote",
+        "type": "Voltijd",
+        "description": "Sluit je aan bij ons engineeringteam om de volgende generatie oplossingen voor welzijn op de werkvloer te bouwen met React, TypeScript en moderne webtechnologieën."
+      },
+      {
+        "title": "Product Manager",
+        "department": "Product",
+        "location": "San Francisco, CA",
+        "type": "Voltijd",
+        "description": "Leid de productstrategie en -ontwikkeling voor ons sociale welzijnsplatform, in nauwe samenwerking met engineering- en designteams."
+      },
+      {
+        "title": "Customer Success Manager",
+        "department": "Customer Success",
+        "location": "Remote",
+        "type": "Voltijd",
+        "description": "Help onze zakelijke klanten optimaal profijt te halen uit Vointy.life en stimuleer adoptie binnen hun organisaties."
+      },
+      {
+        "title": "UI/UX Designer",
+        "department": "Design",
+        "location": "New York, NY",
+        "type": "Voltijd",
+        "description": "Ontwerp intuïtieve en boeiende gebruikerservaringen die welzijn op de werkvloer toegankelijk en plezierig maken voor alle gebruikers."
+      }
+    ],
+    "applyNow": "Solliciteer nu",
+    "noRoleText": "Zie je geen passende functie? We zijn altijd op zoek naar getalenteerde mensen.",
+    "sendResume": "Stuur ons je cv"
+  },
+  "blogPage": {
+    "title": "Vointy.life-blog",
+    "subtitle": "Inzichten, onderzoek en best practices voor welzijn op de werkvloer en medewerkersbetrokkenheid.",
+    "categories": [
+      "Alles",
+      "Werken op afstand",
+      "Analyses",
+      "Bedrijfscultuur",
+      "Mentale gezondheid",
+      "Onderzoek",
+      "Implementatie"
+    ],
+    "posts": [
+      {
+        "title": "5 manieren om het welzijn van werknemers in remote teams te verbeteren",
+        "excerpt": "Ontdek praktische strategieën om teamverbondenheid te behouden en de mentale gezondheid van werknemers te ondersteunen in verspreide werkomgevingen.",
+        "author": "Sarah Chen",
+        "date": "1 juni 2025",
+        "readTime": "5 min leestijd",
+        "category": "Werken op afstand"
+      },
+      {
+        "title": "De ROI van welzijnsprogramma's voor werknemers: een datagedreven analyse",
+        "excerpt": "Ontdek hoe bedrijven het rendement van hun welzijnsinitiatieven meten en welke statistieken er het meest toe doen.",
+        "author": "Mike Johnson",
+        "date": "28 mei 2025",
+        "readTime": "8 min leestijd",
+        "category": "Analyses"
+      },
+      {
+        "title": "Een welzijnscultuur bouwen: best practices van toonaangevende bedrijven",
+        "excerpt": "Ontdek hoe marktleiders duurzame welzijnsculturen creëren die werknemers betrekken en bedrijfsresultaten stimuleren.",
+        "author": "Emma Rodriguez",
+        "date": "25 mei 2025",
+        "readTime": "6 min leestijd",
+        "category": "Bedrijfscultuur"
+      },
+      {
+        "title": "Mentale gezondheid op de werkvloer: barrières doorbreken",
+        "excerpt": "Begrijp het belang van ondersteuning voor mentale gezondheid en hoe je een omgeving creëert waarin werknemers zich veilig voelen om hulp te zoeken.",
+        "author": "Dr. Alex Thompson",
+        "date": "22 mei 2025",
+        "readTime": "7 min leestijd",
+        "category": "Mentale gezondheid"
+      },
+      {
+        "title": "De wetenschap achter sociale welzijnsplatformen",
+        "excerpt": "Duik diep in het onderzoek dat laat zien hoe sociale connecties de gezondheid, productiviteit en werktevredenheid van werknemers beïnvloeden.",
+        "author": "Onderzoeksteam",
+        "date": "19 mei 2025",
+        "readTime": "10 min leestijd",
+        "category": "Onderzoek"
+      },
+      {
+        "title": "Welzijnsprogramma's implementeren: een stap-voor-stapgids",
+        "excerpt": "Een uitgebreide gids voor HR-leiders die succesvolle welzijnsinitiatieven binnen hun organisaties willen lanceren.",
+        "author": "Lisa Park",
+        "date": "16 mei 2025",
+        "readTime": "12 min leestijd",
+        "category": "Implementatie"
+      }
+    ],
+    "loadMore": "Meer berichten laden"
+  },
+  "contactPage": {
+    "title": "Neem contact op",
+    "subtitle": "Neem contact op met ons team. We staan klaar om je te helpen het welzijn op je werkvloer te transformeren.",
+    "conversationTitle": "Laten we een gesprek beginnen",
+    "conversationDescription": "Klaar om Vointy in actie te zien? We beantwoorden graag je vragen en laten zien hoe ons platform ziekteverzuim kan verminderen en het welzijn van werknemers bij jouw bedrijf kan verbeteren.",
+    "emailUsLabel": "E-mail ons",
+    "callUsLabel": "Bel ons",
+    "visitUsLabel": "Bezoek ons",
+    "addressLine1": "123 Wellness Street",
+    "addressLine2": "San Francisco, CA 94105",
+    "hoursLabel": "Openingstijden",
+    "hoursValue": "Maandag t/m vrijdag: 9:00 - 18:00 uur PST",
+    "requestDemo": "Vraag een demo aan",
+    "whyChooseTitle": "Waarom kiezen voor Vointy?",
+    "reasons": [
+      {
+        "title": "Bewezen resultaten",
+        "description": "Bedrijven die Vointy gebruiken zien binnen de eerste 6 maanden gemiddeld 30% minder ziekteverzuim."
+      },
+      {
+        "title": "Eenvoudige implementatie",
+        "description": "Ga binnen 24 uur van start met ons eenvoudige onboardingproces en toegewijd supportteam."
+      },
+      {
+        "title": "Persoonlijke ondersteuning",
+        "description": "Onze welzijnsexperts werken met je samen om een programma op maat te maken dat past bij jouw bedrijfscultuur."
+      },
+      {
+        "title": "Datagedreven inzichten",
+        "description": "Volg de voortgang met uitgebreide analyses en rapportages om de impact van je welzijnsprogramma te meten."
+      }
+    ]
+  },
+  "contactFormPage": {
+    "successMessage": "We hebben je bericht ontvangen en nemen binnenkort contact met je op.",
+    "sendAnother": "Nog een bericht sturen",
+    "sending": "Bericht wordt verzonden...",
+    "placeholderFirstName": "John",
+    "placeholderLastName": "Doe",
+    "placeholderEmail": "john@example.com",
+    "placeholderCompany": "Jouw bedrijf",
+    "placeholderSubject": "Vraag over Vointy",
+    "placeholderMessage": "Hoe kunnen we je helpen?"
+  },
+  "footerContactForm": {
+    "title": "Neem contact op",
+    "description": "Stuur ons een bericht en we nemen contact met je op.",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "E-mail",
+    "companyOptional": "Bedrijf (optioneel)",
+    "subject": "Onderwerp",
+    "message": "Bericht",
+    "sending": "Verzenden...",
+    "sendMessage": "Bericht versturen",
+    "successToast": "Bedankt! Je bericht is verzonden.",
+    "errorTitle": "Er is iets misgegaan"
+  },
+  "navExtra": {
+    "employerPanel": "Werkgeverspaneel",
+    "myVointy": "Mijn Vointy",
+    "language": "Taal"
+  },
+  "footerLinks": {
+    "aboutUs": "Over ons",
+    "careers": "Vacatures",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfService": "Gebruiksvoorwaarden",
+    "refundPolicy": "Restitutiebeleid",
+    "cookiePolicy": "Cookiebeleid",
+    "admin": "Beheer"
+  },
+  "notFound": {
+    "message": "Oeps! Pagina niet gevonden",
+    "returnHome": "Terug naar de startpagina"
+  },
+  "backButton": {
+    "label": "Terug"
+  }
+}
