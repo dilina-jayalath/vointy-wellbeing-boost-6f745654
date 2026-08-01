@@ -312,6 +312,7 @@ export type Database = {
       }
       contact_submissions: {
         Row: {
+          category: string
           company_name: string | null
           created_at: string
           email: string
@@ -322,6 +323,7 @@ export type Database = {
           subject: string
         }
         Insert: {
+          category?: string
           company_name?: string | null
           created_at?: string
           email: string
@@ -332,6 +334,7 @@ export type Database = {
           subject: string
         }
         Update: {
+          category?: string
           company_name?: string | null
           created_at?: string
           email?: string
