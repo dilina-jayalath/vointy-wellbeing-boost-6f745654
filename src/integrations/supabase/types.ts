@@ -513,6 +513,7 @@ export type Database = {
       }
       organizations: {
         Row: {
+          cost_per_sick_day: number
           created_at: string
           created_by: string | null
           id: string
@@ -521,11 +522,13 @@ export type Database = {
           name: string
           plan: string
           plan_started_at: string | null
+          roi_monthly_cost: number
           slug: string | null
           trial_ends_at: string | null
           updated_at: string
         }
         Insert: {
+          cost_per_sick_day?: number
           created_at?: string
           created_by?: string | null
           id?: string
@@ -534,11 +537,13 @@ export type Database = {
           name: string
           plan?: string
           plan_started_at?: string | null
+          roi_monthly_cost?: number
           slug?: string | null
           trial_ends_at?: string | null
           updated_at?: string
         }
         Update: {
+          cost_per_sick_day?: number
           created_at?: string
           created_by?: string | null
           id?: string
@@ -547,6 +552,7 @@ export type Database = {
           name?: string
           plan?: string
           plan_started_at?: string | null
+          roi_monthly_cost?: number
           slug?: string | null
           trial_ends_at?: string | null
           updated_at?: string
@@ -731,6 +737,56 @@ export type Database = {
         Relationships: [
           {
             foreignKeyName: "profiles_organization_id_fkey"
+            columns: ["organization_id"]
+            isOneToOne: false
+            referencedRelation: "organizations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      sick_leave_records: {
+        Row: {
+          absent_employees: number | null
+          created_at: string
+          created_by: string | null
+          headcount: number | null
+          id: string
+          organization_id: string
+          period: string
+          sick_days: number
+          source_file: string | null
+          team_name: string
+          updated_at: string
+        }
+        Insert: {
+          absent_employees?: number | null
+          created_at?: string
+          created_by?: string | null
+          headcount?: number | null
+          id?: string
+          organization_id: string
+          period: string
+          sick_days?: number
+          source_file?: string | null
+          team_name?: string
+          updated_at?: string
+        }
+        Update: {
+          absent_employees?: number | null
+          created_at?: string
+          created_by?: string | null
+          headcount?: number | null
+          id?: string
+          organization_id?: string
+          period?: string
+          sick_days?: number
+          source_file?: string | null
+          team_name?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "sick_leave_records_organization_id_fkey"
             columns: ["organization_id"]
             isOneToOne: false
             referencedRelation: "organizations"
@@ -1242,6 +1298,36 @@ export type Database = {
       org_has_active_subscription: {
         Args: { check_env?: string; org_uuid: string }
         Returns: boolean
+      }
+      org_roi_monthly: {
+        Args: never
+        Returns: {
+          absent_employees: number
+          active_employees: number
+          exercises: number
+          headcount: number
+          index_per_employee: number
+          month: string
+          points: number
+          sick_day_cost: number
+          sick_days: number
+        }[]
+      }
+      org_roi_summary: {
+        Args: never
+        Returns: {
+          cost_per_sick_day: number
+          monthly_cost: number
+          months_with_data: number
+          roi_pct: number
+          savings_12m: number
+          sick_days_12m: number
+          sick_days_change_pct: number
+          sick_days_per_employee_12m: number
+          sick_days_prev_12m: number
+          subscription_cost_12m: number
+          total_employees: number
+        }[]
       }
       org_team_activity: {
         Args: never

@@ -12,7 +12,8 @@
       "activateUsers": "Aktivoi käyttäjiä",
       "teams": "Tiimit",
       "activitySummary": "Aktiivisuustiivistelmä",
-      "engagement": "Sitoutuminen"
+      "engagement": "Sitoutuminen",
+      "roi": "Hallinto & ROI"
     },
     "paywall": {
       "title": "Aktivoi Työnantajapaneeli",
@@ -372,6 +373,57 @@
         "activeMembers": "Aktiiviset",
         "points": "Pisteet",
         "indexPerMember": "Indeksi / jäsen"
+      }
+    },
+    "roi": {
+      "title": "Hallinnollinen ja ROI",
+      "description": "Lataa omat sairauspoissaolotiedot ja vertaa niitä Vointyn aktiviteettidataan nähdäksesi investoinnin tuoton.",
+      "errorTitle": "ROI-tietoja ei voitu ladata",
+      "errorBody": "Vain organisaation vastuuhenkilöt näkevät koostetut ROI-raportit.",
+      "noData": "Sairauspoissaolotietoja ei ole vielä ladattu.",
+      "chartTitle": "Sairauspoissaolopäivät vs. aktiivisuusindeksi",
+      "tableTitle": "Kuukausivertailu",
+      "upload": {
+        "title": "Lataa sairauspoissaolotiedot",
+        "help": "Lataa CSV-tiedosto, jossa on yksi rivi kuukautta (ja halutessa tiimiä) kohti. Tunnistetut sarakkeet: month, sick_days, team, absent_employees, headcount. Olemassa olevat kuukaudet päivitetään.",
+        "clear": "Poista ladatut tiedot",
+        "privacyNote": "Lataa vain koostettuja lukuja – älä sisällytä nimiä tai terveystietoja.",
+        "successTitle": "Sairauspoissaolotiedot tuotu",
+        "errorTitle": "Tuonti epäonnistui",
+        "noRows": "Kelvollisia rivejä ei löytynyt. Tarkista, että tiedostossa on month- ja sick_days-sarakkeet.",
+        "noOrg": "Tunnuksesi ei ole liitetty organisaatioon.",
+        "rowsImported": "riviä tuotu",
+        "rowsSkipped": "ohitettu"
+      },
+      "settings": {
+        "title": "ROI-oletukset",
+        "costPerDay": "Sairauspäivän kustannus (€)",
+        "monthlyCost": "Vointyn kustannus / kk (€)",
+        "save": "Tallenna",
+        "saved": "Oletukset tallennettu",
+        "errorTitle": "Tallennus ei onnistunut"
+      },
+      "kpi": {
+        "sickDays12m": "Sairauspäivät (12 kk)",
+        "prev12m": "Edelliset 12 kk",
+        "change": "Muutos",
+        "perEmployee": "Työntekijää kohti",
+        "savings": "Arvioitu säästö",
+        "subscriptionCost": "Vointyn kustannus (12 kk)",
+        "roi": "ROI",
+        "monthsWithData": "Kuukaudet, joissa dataa"
+      },
+      "chart": {
+        "sickDays": "Sairauspäivät",
+        "index": "Aktiivisuusindeksi / työntekijä"
+      },
+      "table": {
+        "month": "Kuukausi",
+        "sickDays": "Sairauspäivät",
+        "cost": "Kustannus",
+        "points": "Aktiviteettipisteet",
+        "activeEmployees": "Aktiiviset työntekijät",
+        "index": "Indeksi / työntekijä"
       }
     }
   },

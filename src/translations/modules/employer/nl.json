@@ -12,7 +12,8 @@
       "activateUsers": "Gebruikers activeren",
       "teams": "Teams",
       "activitySummary": "Activiteitsoverzicht",
-      "engagement": "Betrokkenheid"
+      "engagement": "Betrokkenheid",
+      "roi": "Beheer & ROI"
     },
     "paywall": {
       "title": "Activeer het werkgeverspaneel",
@@ -372,6 +373,57 @@
         "activeMembers": "Actief",
         "points": "Punten",
         "indexPerMember": "Index per lid"
+      }
+    },
+    "roi": {
+      "title": "Beheer en ROI",
+      "description": "Upload je eigen ziekteverzuimgegevens en vergelijk ze met de activiteitsdata van Vointy om het rendement te zien.",
+      "errorTitle": "ROI-gegevens konden niet worden geladen",
+      "errorBody": "Alleen organisatiebeheerders zien geaggregeerde ROI-rapporten.",
+      "noData": "Nog geen ziekteverzuimgegevens geüpload.",
+      "chartTitle": "Ziektedagen vs. activiteitsindex",
+      "tableTitle": "Maandvergelijking",
+      "upload": {
+        "title": "Ziekteverzuimgegevens uploaden",
+        "help": "Upload een CSV-bestand met één rij per maand (en optioneel per team). Herkende kolommen: month, sick_days, team, absent_employees, headcount. Bestaande maanden worden bijgewerkt.",
+        "clear": "Geüploade gegevens verwijderen",
+        "privacyNote": "Upload alleen geaggregeerde cijfers – geen namen of gezondheidsgegevens.",
+        "successTitle": "Gegevens geïmporteerd",
+        "errorTitle": "Import mislukt",
+        "noRows": "Geen geldige rijen gevonden. Controleer de kolommen month en sick_days.",
+        "noOrg": "Je account is niet gekoppeld aan een organisatie.",
+        "rowsImported": "rijen geïmporteerd",
+        "rowsSkipped": "overgeslagen"
+      },
+      "settings": {
+        "title": "ROI-aannames",
+        "costPerDay": "Kosten per ziektedag (€)",
+        "monthlyCost": "Vointy-kosten per maand (€)",
+        "save": "Opslaan",
+        "saved": "Aannames opgeslagen",
+        "errorTitle": "Opslaan mislukt"
+      },
+      "kpi": {
+        "sickDays12m": "Ziektedagen (12 maanden)",
+        "prev12m": "Vorige 12 maanden",
+        "change": "Verandering",
+        "perEmployee": "Per medewerker",
+        "savings": "Geschatte besparing",
+        "subscriptionCost": "Vointy-kosten (12 maanden)",
+        "roi": "ROI",
+        "monthsWithData": "Maanden met gegevens"
+      },
+      "chart": {
+        "sickDays": "Ziektedagen",
+        "index": "Activiteitsindex / medewerker"
+      },
+      "table": {
+        "month": "Maand",
+        "sickDays": "Ziektedagen",
+        "cost": "Kosten",
+        "points": "Activiteitspunten",
+        "activeEmployees": "Actieve medewerkers",
+        "index": "Index / medewerker"
       }
     }
   },
