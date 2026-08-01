@@ -221,7 +221,7 @@ const PrivacyPolicy = () => {
     },
 
     {
-      id: 8,
+      id: 9,
       title: "Principles of Register Protection",
       icon: <Lock className="w-6 h-6 text-brand-blue" />,
       content: (
@@ -243,7 +243,7 @@ const PrivacyPolicy = () => {
       )
     },
     {
-      id: 9,
+      id: 10,
       title: "Right to Inspect and Request Correction",
       icon: <Eye className="w-6 h-6 text-brand-purple" />,
       content: (
@@ -272,7 +272,7 @@ const PrivacyPolicy = () => {
       )
     },
     {
-      id: 10,
+      id: 11,
       title: "Other Rights Related to Processing Personal Data",
       icon: <UserCheck className="w-6 h-6 text-brand-blue" />,
       content: (
@@ -303,7 +303,7 @@ const PrivacyPolicy = () => {
       )
     },
     {
-      id: 11,
+      id: 12,
       title: "Health and Medical Data",
       icon: <Stethoscope className="w-6 h-6 text-red-500" />,
       content: (
@@ -318,7 +318,7 @@ const PrivacyPolicy = () => {
       )
     },
     {
-      id: 12,
+      id: 13,
       title: "Cookies and Analytics",
       icon: <Clock className="w-6 h-6 text-brand-purple" />,
       content: (
