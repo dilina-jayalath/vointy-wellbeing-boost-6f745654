@@ -52,7 +52,8 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-br from-brand-purple-light to-white">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <img src={vointyMark.url} alt="Vointy logo" className="mx-auto mb-3 h-12 w-auto" />
+          <img src={vointyMark.url} alt="Vointy logo" className="mx-auto mb-2 h-12 w-auto" />
+          <p className="text-sm text-brand-purple font-medium tracking-wide mb-2">Build healthier habits, together.</p>
           <CardTitle className="text-2xl font-display">Log in to Vointy</CardTitle>
           <CardDescription>Welcome back — enter your details below.</CardDescription>
         </CardHeader>

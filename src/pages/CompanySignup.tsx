@@ -74,7 +74,8 @@ const CompanySignup = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
             <div>
-              <img src={vointyMark.url} alt="Vointy logo" className="h-14 w-auto mb-4" />
+              <img src={vointyMark.url} alt="Vointy logo" className="h-14 w-auto mb-2" />
+              <p className="text-sm text-brand-purple font-medium tracking-wide mb-4">Build healthier habits, together.</p>
               <h1 className="text-4xl md:text-5xl font-bold font-display text-brand-dark mb-4 leading-tight">
                 Join Vointy <span className="gradient-text">free</span> as a company
               </h1>
