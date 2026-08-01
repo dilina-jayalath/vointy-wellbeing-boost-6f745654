@@ -35,20 +35,16 @@
     "startTrial": "Start gratis proefperiode van 30 dagen"
   },
   "aboutPage": {
-    "title": "Over Vointy.life",
-    "subtitle": "Onze missie is het welzijn op de werkvloer te transformeren door sociale betrokkenheid en datagedreven inzichten.",
-    "missionTitle": "Onze missie",
-    "missionP1": "Bij Vointy.life geloven we dat gezonde, betrokken werknemers de basis vormen van succesvolle organisaties. Ons sociale welzijnsplatform helpt bedrijven ziekteverzuim met tot 32% te verminderen en tegelijk een cultuur van verbondenheid en welzijn te bevorderen.",
-    "missionP2": "We combineren geavanceerde technologie met mensgerichte vormgeving om oplossingen te creëren die welzijn op de werkvloer toegankelijk, boeiend en effectief maken voor teams van elke omvang.",
-    "companiesServedLabel": "Bediende bedrijven",
-    "sickLeaveReductionLabel": "Vermindering ziekteverzuim",
-    "valuesTitle": "Onze waarden",
+    "title": "About us",
+    "subtitle": "Build healthier habits, together.",
+    "p1": "Vointy.life is ontwikkeld om het welzijn, gezonde leefstijl en gezamenlijke activiteiten van medewerkers in bedrijven en gemeenschappen te verbeteren. Het doel is dat medewerkers zich goed voelen op het werk en arbeidsgeschikt blijven met behulp van de Vointy.life-app.",
+    "p2": "De dienst is ontworpen en ontwikkeld door Wellthyforce Oy, een Finse start-up. Het bedrijf is eigendom van en wordt gefinancierd door particuliere ondernemers.",
     "value1Title": "Welzijn eerst",
-    "value1Description": "We plaatsen het welzijn van werknemers centraal in alles wat we doen, in de overtuiging dat gezonde teams succesvolle bedrijven creëren.",
-    "value2Title": "Sociale verbinding",
-    "value2Description": "We bevorderen zinvolle verbindingen tussen collega's en creëren ondersteunende gemeenschappen binnen organisaties.",
-    "value3Title": "Datagedreven resultaten",
-    "value3Description": "We gebruiken analyses en inzichten om impact te meten en het effect van ons platform voortdurend te verbeteren."
+    "value1Description": "Het welzijn van medewerkers staat centraal in alles wat we bouwen.",
+    "value2Title": "Samen dingen doen",
+    "value2Description": "Gezamenlijke activiteiten en gezonde gewoonten brengen teams en gemeenschappen nader tot elkaar.",
+    "value3Title": "Finse start-up",
+    "value3Description": "Ontworpen en ontwikkeld door Wellthyforce Oy, eigendom van en gefinancierd door particuliere ondernemers."
   },
   "careersPage": {
     "title": "Sluit je aan bij onze missie",

@@ -35,20 +35,16 @@
     "startTrial": "Kostenlose 30-Tage-Testphase starten"
   },
   "aboutPage": {
-    "title": "Über Vointy.life",
-    "subtitle": "Unsere Mission ist es, das Wohlbefinden am Arbeitsplatz durch soziales Engagement und datenbasierte Erkenntnisse zu verändern.",
-    "missionTitle": "Unsere Mission",
-    "missionP1": "Bei Vointy.life glauben wir, dass gesunde, engagierte Mitarbeitende die Grundlage erfolgreicher Organisationen sind. Unsere soziale Wellness-Plattform hilft Unternehmen, Krankheitstage um bis zu 32 % zu reduzieren und gleichzeitig eine Kultur der Verbundenheit und des Wohlbefindens zu fördern.",
-    "missionP2": "Wir kombinieren modernste Technologie mit menschzentriertem Design, um Lösungen zu schaffen, die Wellness am Arbeitsplatz zugänglich, ansprechend und wirksam für Teams jeder Größe machen.",
-    "companiesServedLabel": "Betreute Unternehmen",
-    "sickLeaveReductionLabel": "Weniger Krankheitstage",
-    "valuesTitle": "Unsere Werte",
+    "title": "About us",
+    "subtitle": "Build healthier habits, together.",
+    "p1": "Vointy.life wurde entwickelt, um das Wohlbefinden, gesunde Lebensweisen und gemeinsame Aktivitäten der Mitarbeitenden in Unternehmen und Gemeinschaften zu verbessern. Ziel ist, dass Mitarbeitende sich bei der Arbeit wohlfühlen und arbeitsfähig bleiben – mit Hilfe der Vointy.life-App.",
+    "p2": "Der Service wurde von Wellthyforce Oy entwickelt und gestaltet, einem finnischen Start-up. Das Unternehmen ist im Besitz privater Unternehmer und wird von diesen finanziert.",
     "value1Title": "Wohlbefinden zuerst",
-    "value1Description": "Wir stellen das Wohlbefinden der Mitarbeitenden in den Mittelpunkt all unseres Handelns, denn gesunde Teams schaffen erfolgreiche Unternehmen.",
-    "value2Title": "Soziale Verbindung",
-    "value2Description": "Wir fördern sinnvolle Verbindungen zwischen Kolleginnen und Kollegen und schaffen unterstützende Gemeinschaften innerhalb von Organisationen.",
-    "value3Title": "Datenbasierte Ergebnisse",
-    "value3Description": "Wir nutzen Analysen und Erkenntnisse, um Wirkung zu messen und die Effektivität unserer Plattform kontinuierlich zu verbessern."
+    "value1Description": "Das Wohlbefinden der Mitarbeitenden steht im Zentrum unserer Arbeit.",
+    "value2Title": "Gemeinsam aktiv",
+    "value2Description": "Gemeinsame Aktivitäten und gesunde Gewohnheiten bringen Teams und Gemeinschaften näher zusammen.",
+    "value3Title": "Finnisches Start-up",
+    "value3Description": "Entwickelt von Wellthyforce Oy, im Besitz und finanziert von privaten Unternehmern."
   },
   "careersPage": {
     "title": "Werde Teil unserer Mission",

@@ -35,20 +35,16 @@
     "startTrial": "Aloita ilmainen 30 päivän kokeilu"
   },
   "aboutPage": {
-    "title": "Tietoa Vointy.lifesta",
-    "subtitle": "Missiomme on muuttaa työhyvinvointia sosiaalisen sitoutumisen ja dataan perustuvien oivallusten avulla.",
-    "missionTitle": "Missiomme",
-    "missionP1": "Vointy.lifessa uskomme, että terveet ja sitoutuneet työntekijät ovat menestyvien organisaatioiden perusta. Sosiaalinen hyvinvointialustamme auttaa yrityksiä vähentämään sairauspoissaoloja jopa 32 % samalla vahvistaen yhteisöllisyyden ja hyvinvoinnin kulttuuria.",
-    "missionP2": "Yhdistämme huippuluokan teknologian ihmiskeskeiseen suunnitteluun ja luomme ratkaisuja, jotka tekevät työhyvinvoinnista saavutettavaa, kiinnostavaa ja tehokasta kaikenkokoisille tiimeille.",
-    "companiesServedLabel": "Palveltua yritystä",
-    "sickLeaveReductionLabel": "Sairauspoissaolojen vähennys",
-    "valuesTitle": "Arvomme",
-    "value1Title": "Hyvinvointi etusijalla",
-    "value1Description": "Asetamme työntekijöiden hyvinvoinnin kaiken toimintamme keskiöön, sillä uskomme, että terveet tiimit rakentavat menestyviä yrityksiä.",
-    "value2Title": "Sosiaalinen yhteys",
-    "value2Description": "Vaalimme merkityksellisiä yhteyksiä työtovereiden välillä ja luomme tukevia yhteisöjä organisaatioiden sisällä.",
-    "value3Title": "Dataan perustuvat tulokset",
-    "value3Description": "Käytämme analytiikkaa ja oivalluksia vaikutuksen mittaamiseen ja alustamme tehokkuuden jatkuvaan parantamiseen."
+    "title": "About us",
+    "subtitle": "Build healthier habits, together.",
+    "p1": "Vointy.life on kehitetty parantamaan yritysten ja yhteisöjen työntekijöiden hyvinvointia, terveellisiä elämäntapoja ja yhteistä tekemistä. Tavoitteena on, että työntekijät viihtyvät työssään ja ovat työkykyisiä käyttäen hyväksi Vointy.life sovellusta.",
+    "p2": "Palvelun on suunnitellut ja kehittänyt Wellthyforce Oy, joka on suomalainen start-up. Yhtiö on yksityisten yrittäjien omistama ja rahoittama.",
+    "value1Title": "Hyvinvointi ensin",
+    "value1Description": "Työntekijöiden hyvinvointi on kaiken tekemisemme keskiössä.",
+    "value2Title": "Yhteinen tekeminen",
+    "value2Description": "Yhteiset aktiviteetit ja terveelliset tavat lähentävät tiimejä ja yhteisöjä.",
+    "value3Title": "Suomalainen start-up",
+    "value3Description": "Suunnitellut ja kehittänyt Wellthyforce Oy, yksityisten yrittäjien omistama ja rahoittama."
   },
   "careersPage": {
     "title": "Liity missioomme",

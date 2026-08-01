@@ -35,20 +35,16 @@
     "startTrial": "Start gratis 30-dages prøveperiode"
   },
   "aboutPage": {
-    "title": "Om Vointy.life",
-    "subtitle": "Vores mission er at transformere trivsel på arbejdspladsen gennem socialt engagement og datadrevne indsigter.",
-    "missionTitle": "Vores mission",
-    "missionP1": "Hos Vointy.life tror vi på, at sunde, engagerede medarbejdere er grundlaget for succesfulde organisationer. Vores sociale trivselsplatform hjælper virksomheder med at reducere sygefravær med op til 32 % og samtidig fremme en kultur af fællesskab og trivsel.",
-    "missionP2": "Vi kombinerer den nyeste teknologi med menneskecentreret design for at skabe løsninger, der gør trivsel på arbejdspladsen tilgængeligt, engagerende og effektivt for teams i alle størrelser.",
-    "companiesServedLabel": "Antal betjente virksomheder",
-    "sickLeaveReductionLabel": "Reduktion i sygefravær",
-    "valuesTitle": "Vores værdier",
+    "title": "About us",
+    "subtitle": "Build healthier habits, together.",
+    "p1": "Vointy.life er udviklet for at forbedre medarbejdernes trivsel, sunde livsstil og fælles aktiviteter i virksomheder og fællesskaber. Målet er, at medarbejderne har det godt på arbejdet og bevarer deres arbejdsevne ved hjælp af Vointy.life-appen.",
+    "p2": "Tjenesten er designet og udviklet af Wellthyforce Oy, en finsk start-up. Selskabet er ejet og finansieret af private iværksættere.",
     "value1Title": "Trivsel først",
-    "value1Description": "Vi sætter medarbejdernes trivsel i centrum for alt, hvad vi gør, i troen på, at sunde teams skaber succesfulde virksomheder.",
-    "value2Title": "Social forbindelse",
-    "value2Description": "Vi fremmer meningsfulde forbindelser mellem kolleger og skaber støttende fællesskaber i organisationer.",
-    "value3Title": "Datadrevne resultater",
-    "value3Description": "Vi bruger analyser og indsigter til at måle effekt og løbende forbedre vores platforms virkning."
+    "value1Description": "Medarbejdernes trivsel er kernen i alt, hvad vi bygger.",
+    "value2Title": "Gøre ting sammen",
+    "value2Description": "Fælles aktiviteter og sunde vaner bringer teams og fællesskaber tættere sammen.",
+    "value3Title": "Finsk start-up",
+    "value3Description": "Designet og udviklet af Wellthyforce Oy, ejet og finansieret af private iværksættere."
   },
   "careersPage": {
     "title": "Bliv en del af vores mission",

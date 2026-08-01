@@ -35,20 +35,16 @@
     "startTrial": "Démarrer l'essai gratuit de 30 jours"
   },
   "aboutPage": {
-    "title": "À propos de Vointy.life",
-    "subtitle": "Notre mission est de transformer le bien-être au travail grâce à l'engagement social et aux analyses de données.",
-    "missionTitle": "Notre mission",
-    "missionP1": "Chez Vointy.life, nous croyons que des salariés en bonne santé et engagés sont le fondement des organisations performantes. Notre plateforme de bien-être social aide les entreprises à réduire l'absentéisme jusqu'à 32 % tout en favorisant une culture de connexion et de bien-être.",
-    "missionP2": "Nous combinons technologie de pointe et design centré sur l'humain pour créer des solutions qui rendent le bien-être au travail accessible, engageant et efficace pour les équipes de toutes tailles.",
-    "companiesServedLabel": "Entreprises accompagnées",
-    "sickLeaveReductionLabel": "Réduction de l'absentéisme",
-    "valuesTitle": "Nos valeurs",
-    "value1Title": "Le bien-être avant tout",
-    "value1Description": "Nous plaçons le bien-être des salariés au cœur de tout ce que nous faisons, convaincus que des équipes en bonne santé créent des entreprises prospères.",
-    "value2Title": "Connexion sociale",
-    "value2Description": "Nous favorisons des liens authentiques entre collègues, créant des communautés solidaires au sein des organisations.",
-    "value3Title": "Résultats fondés sur les données",
-    "value3Description": "Nous utilisons l'analyse et les données pour mesurer l'impact et améliorer en continu l'efficacité de notre plateforme."
+    "title": "About us",
+    "subtitle": "Build healthier habits, together.",
+    "p1": "Vointy.life a été développé pour améliorer le bien-être, les modes de vie sains et les activités partagées des salariés dans les entreprises et les communautés. L'objectif est que les salariés se sentent bien au travail et restent aptes au travail grâce à l'application Vointy.life.",
+    "p2": "Le service a été conçu et développé par Wellthyforce Oy, une start-up finlandaise. La société est détenue et financée par des entrepreneurs privés.",
+    "value1Title": "Le bien-être d'abord",
+    "value1Description": "Le bien-être des salariés est au cœur de tout ce que nous créons.",
+    "value2Title": "Faire ensemble",
+    "value2Description": "Les activités partagées et les habitudes saines rapprochent les équipes et les communautés.",
+    "value3Title": "Start-up finlandaise",
+    "value3Description": "Conçu et développé par Wellthyforce Oy, détenue et financée par des entrepreneurs privés."
   },
   "careersPage": {
     "title": "Rejoignez notre mission",

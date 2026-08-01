@@ -35,20 +35,16 @@
     "startTrial": "Starta kostnadsfri 30-dagars provperiod"
   },
   "aboutPage": {
-    "title": "Om Vointy.life",
-    "subtitle": "Vårt uppdrag är att förändra välbefinnandet på arbetsplatsen genom socialt engagemang och datadrivna insikter.",
-    "missionTitle": "Vårt uppdrag",
-    "missionP1": "På Vointy.life tror vi att friska, engagerade medarbetare är grunden för framgångsrika organisationer. Vår sociala hälsoplattform hjälper företag att minska sjukfrånvaron med upp till 32 % samtidigt som den främjar en kultur av gemenskap och välbefinnande.",
-    "missionP2": "Vi kombinerar den senaste tekniken med människocentrerad design för att skapa lösningar som gör hälsofrämjande arbete på arbetsplatsen tillgängligt, engagerande och effektivt för team av alla storlekar.",
-    "companiesServedLabel": "Antal betjänade företag",
-    "sickLeaveReductionLabel": "Minskad sjukfrånvaro",
-    "valuesTitle": "Våra värderingar",
-    "value1Title": "Välbefinnande i första hand",
-    "value1Description": "Vi sätter de anställdas välbefinnande i centrum för allt vi gör, i tron att friska team skapar framgångsrika företag.",
-    "value2Title": "Social gemenskap",
-    "value2Description": "Vi främjar meningsfulla kontakter mellan kollegor och skapar stödjande gemenskaper inom organisationer.",
-    "value3Title": "Datadrivna resultat",
-    "value3Description": "Vi använder analys och insikter för att mäta effekten och kontinuerligt förbättra vår plattforms genomslagskraft."
+    "title": "About us",
+    "subtitle": "Build healthier habits, together.",
+    "p1": "Vointy.life har utvecklats för att förbättra välbefinnandet, hälsosamma levnadsvanor och gemensamma aktiviteter för medarbetare i företag och gemenskaper. Målet är att medarbetarna mår bra på jobbet och behåller sin arbetsförmåga med hjälp av Vointy.life-appen.",
+    "p2": "Tjänsten har designats och utvecklats av Wellthyforce Oy, en finländsk start-up. Bolaget ägs och finansieras av privata företagare.",
+    "value1Title": "Välbefinnande först",
+    "value1Description": "Medarbetarnas välbefinnande står i centrum för allt vi bygger.",
+    "value2Title": "Göra tillsammans",
+    "value2Description": "Gemensamma aktiviteter och hälsosamma vanor för team och gemenskaper närmare varandra.",
+    "value3Title": "Finländsk start-up",
+    "value3Description": "Designad och utvecklad av Wellthyforce Oy, ägd och finansierad av privata företagare."
   },
   "careersPage": {
     "title": "Var med i vårt uppdrag",

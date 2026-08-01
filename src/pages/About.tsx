@@ -1,16 +1,15 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useTranslation } from '@/lib/i18n';
-import { Users, Target, Award, Heart } from 'lucide-react';
+import { Heart, Users, Building2 } from 'lucide-react';
 
 const About = () => {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-brand-purple to-brand-blue text-white">
         <div className="container mx-auto px-4">
@@ -18,71 +17,41 @@ const About = () => {
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">
               {t('aboutPage.title')}
             </h1>
-            <p className="text-xl opacity-90 mb-8">
+            <p className="text-xl opacity-90">
               {t('aboutPage.subtitle')}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Story */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-bold font-display mb-6">{t('aboutPage.missionTitle')}</h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  {t('aboutPage.missionP1')}
-                </p>
-                <p className="text-lg text-gray-600">
-                  {t('aboutPage.missionP2')}
-                </p>
-              </div>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-gray-50 rounded-lg">
-                  <Users className="h-12 w-12 text-brand-purple mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-brand-purple">500+</h3>
-                  <p className="text-gray-600">{t('aboutPage.companiesServedLabel')}</p>
-                </div>
-                <div className="text-center p-6 bg-gray-50 rounded-lg">
-                  <Target className="h-12 w-12 text-brand-blue mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-brand-blue">32%</h3>
-                  <p className="text-gray-600">{t('aboutPage.sickLeaveReductionLabel')}</p>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <p className="text-lg text-muted-foreground">{t('aboutPage.p1')}</p>
+            <p className="text-lg text-muted-foreground">{t('aboutPage.p2')}</p>
           </div>
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Highlights */}
+      <section className="py-16 bg-muted/40">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold font-display text-center mb-12">{t('aboutPage.valuesTitle')}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <Heart className="h-16 w-16 text-brand-purple mx-auto mb-6" />
-                <h3 className="text-xl font-bold mb-4">{t('aboutPage.value1Title')}</h3>
-                <p className="text-gray-600">
-                  {t('aboutPage.value1Description')}
-                </p>
-              </div>
-              <div className="text-center">
-                <Users className="h-16 w-16 text-brand-blue mx-auto mb-6" />
-                <h3 className="text-xl font-bold mb-4">{t('aboutPage.value2Title')}</h3>
-                <p className="text-gray-600">
-                  {t('aboutPage.value2Description')}
-                </p>
-              </div>
-              <div className="text-center">
-                <Award className="h-16 w-16 text-brand-purple mx-auto mb-6" />
-                <h3 className="text-xl font-bold mb-4">{t('aboutPage.value3Title')}</h3>
-                <p className="text-gray-600">
-                  {t('aboutPage.value3Description')}
-                </p>
-              </div>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <Heart className="h-12 w-12 text-brand-purple mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">{t('aboutPage.value1Title')}</h3>
+              <p className="text-muted-foreground">{t('aboutPage.value1Description')}</p>
+            </div>
+            <div className="text-center">
+              <Users className="h-12 w-12 text-brand-blue mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">{t('aboutPage.value2Title')}</h3>
+              <p className="text-muted-foreground">{t('aboutPage.value2Description')}</p>
+            </div>
+            <div className="text-center">
+              <Building2 className="h-12 w-12 text-brand-purple mx-auto mb-4" />
+              <h3 className="text-lg font-bold mb-2">{t('aboutPage.value3Title')}</h3>
+              <p className="text-muted-foreground">{t('aboutPage.value3Description')}</p>
             </div>
           </div>
         </div>
