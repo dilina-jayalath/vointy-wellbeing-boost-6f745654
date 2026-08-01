@@ -13,7 +13,8 @@
       "teams": "Teams",
       "activitySummary": "Activity summary",
       "engagement": "Engagement",
-      "roi": "Admin & ROI"
+      "roi": "Admin & ROI",
+      "predictive": "Predictive analytics"
     },
     "paywall": {
       "title": "Activate the Employer panel",
@@ -424,6 +425,57 @@
         "points": "Activity points",
         "activeEmployees": "Active employees",
         "index": "Index / employee"
+      }
+    },
+    "predictive": {
+      "title": "Predictive analytics",
+      "description": "Forecast of the activity index and early warnings about employees and teams whose activity is dropping.",
+      "errorTitle": "Could not load predictive data",
+      "errorBody": "Only organization managers can view predictive reports.",
+      "chartTitle": "Activity Index: history and 3-month forecast",
+      "teamRiskTitle": "Teams at risk of dropping off",
+      "employeeRiskTitle": "Employees needing attention",
+      "noTeams": "No teams yet.",
+      "noRisk": "No employees at risk right now.",
+      "never": "Never",
+      "methodTitle": "How the predictions are calculated",
+      "method1": "The forecast is a linear trend fitted to the last 12 months of the activity index (points per employee).",
+      "method2": "Risk level combines days since the last activity, the change between the last 30 days and the previous 30 days, and the current activity level.",
+      "method3": "Projected sick days extrapolate the change between the last two 12-month periods; savings use your cost per sick day.",
+      "trend": {
+        "up": "Rising trend",
+        "down": "Falling trend",
+        "flat": "Stable trend"
+      },
+      "risk": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "kpi": {
+        "forecast": "Index forecast, next month",
+        "thisMonth": "This month",
+        "highRiskEmployees": "High-risk employees",
+        "mediumRisk": "Medium risk",
+        "highRiskTeams": "High-risk teams",
+        "ofTeams": "Of teams",
+        "projectedSickDays": "Projected sick days (12 mo)",
+        "projectedSavings": "Projected savings"
+      },
+      "legend": {
+        "actual": "Actual",
+        "forecast": "Forecast"
+      },
+      "table": {
+        "team": "Team",
+        "employee": "Employee",
+        "members": "Active/members",
+        "participation": "Participation",
+        "change": "Change (30 d)",
+        "risk": "Risk",
+        "riskScore": "Risk score",
+        "lastActive": "Last active",
+        "points30d": "Points 30 d (prev.)"
       }
     }
   },

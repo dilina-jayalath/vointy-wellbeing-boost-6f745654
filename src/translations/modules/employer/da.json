@@ -13,7 +13,8 @@
       "teams": "Teams",
       "activitySummary": "Aktivitetsoversigt",
       "engagement": "Engagement",
-      "roi": "Administration & ROI"
+      "roi": "Administration & ROI",
+      "predictive": "Prædiktiv analyse"
     },
     "paywall": {
       "title": "Aktivér arbejdsgiverpanelet",
@@ -424,6 +425,57 @@
         "points": "Aktivitetspoint",
         "activeEmployees": "Aktive medarbejdere",
         "index": "Indeks / medarbejder"
+      }
+    },
+    "predictive": {
+      "title": "Prædiktiv analyse",
+      "description": "Prognose for aktivitetsindekset og tidlige advarsler om medarbejdere og teams med faldende aktivitet.",
+      "errorTitle": "Kunne ikke indlæse prædiktive data",
+      "errorBody": "Kun organisationens administratorer kan se prædiktive rapporter.",
+      "chartTitle": "Aktivitetsindeks: historik og 3-måneders prognose",
+      "teamRiskTitle": "Teams med risiko for frafald",
+      "employeeRiskTitle": "Medarbejdere der kræver opmærksomhed",
+      "noTeams": "Ingen teams endnu.",
+      "noRisk": "Ingen medarbejdere i risiko lige nu.",
+      "never": "Aldrig",
+      "methodTitle": "Sådan beregnes prognoserne",
+      "method1": "Prognosen er en lineær tendens tilpasset aktivitetsindekset for de seneste 12 måneder (point pr. medarbejder).",
+      "method2": "Risikoniveauet kombinerer dage siden seneste aktivitet, ændringen mellem de seneste 30 dage og de forrige 30 dage samt det nuværende aktivitetsniveau.",
+      "method3": "Prognosen for sygedage ekstrapolerer ændringen mellem de to seneste 12-måneders perioder; besparelser bruger omkostningen pr. sygedag.",
+      "trend": {
+        "up": "Stigende tendens",
+        "down": "Faldende tendens",
+        "flat": "Stabil tendens"
+      },
+      "risk": {
+        "high": "Høj",
+        "medium": "Middel",
+        "low": "Lav"
+      },
+      "kpi": {
+        "forecast": "Indeksprognose, næste måned",
+        "thisMonth": "Denne måned",
+        "highRiskEmployees": "Medarbejdere med høj risiko",
+        "mediumRisk": "Middel risiko",
+        "highRiskTeams": "Teams med høj risiko",
+        "ofTeams": "Af teams",
+        "projectedSickDays": "Forventede sygedage (12 mdr.)",
+        "projectedSavings": "Forventet besparelse"
+      },
+      "legend": {
+        "actual": "Faktisk",
+        "forecast": "Prognose"
+      },
+      "table": {
+        "team": "Team",
+        "employee": "Medarbejder",
+        "members": "Aktive/medlemmer",
+        "participation": "Deltagelse",
+        "change": "Ændring (30 d)",
+        "risk": "Risiko",
+        "riskScore": "Risikoscore",
+        "lastActive": "Sidst aktiv",
+        "points30d": "Point 30 d (forrige)"
       }
     }
   },

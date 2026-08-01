@@ -13,6 +13,7 @@ import {
   BarChart3,
   Heart,
   PiggyBank,
+  Brain,
 } from "lucide-react";
 import {
   Sidebar,
@@ -37,6 +38,7 @@ export function EmployerSidebar() {
     { title: t("employerPanel.sidebar.activitySummary"), url: "/employer/activity-summary", icon: BarChart3 },
     { title: t("employerPanel.sidebar.engagement"), url: "/employer/engagement", icon: Heart },
     { title: t("employerPanel.sidebar.roi"), url: "/employer/roi", icon: PiggyBank },
+    { title: t("employerPanel.sidebar.predictive"), url: "/employer/predictive", icon: Brain },
     { title: t("employerPanel.sidebar.activities"), url: "/employer/activities", icon: Dumbbell },
     { title: t("employerPanel.sidebar.surveys"), url: "/employer/surveys", icon: ClipboardList },
     { title: t("employerPanel.sidebar.challenges"), url: "/employer/challenges", icon: Trophy },

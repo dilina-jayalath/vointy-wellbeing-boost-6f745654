@@ -13,7 +13,8 @@
       "teams": "Team",
       "activitySummary": "Aktivitetssammanfattning",
       "engagement": "Engagemang",
-      "roi": "Administration & ROI"
+      "roi": "Administration & ROI",
+      "predictive": "Prediktiv analys"
     },
     "paywall": {
       "title": "Aktivera arbetsgivarpanelen",
@@ -424,6 +425,57 @@
         "points": "Aktivitetspoäng",
         "activeEmployees": "Aktiva medarbetare",
         "index": "Index / medarbetare"
+      }
+    },
+    "predictive": {
+      "title": "Prediktiv analys",
+      "description": "Prognos för aktivitetsindexet och tidiga varningar om anställda och team vars aktivitet minskar.",
+      "errorTitle": "Kunde inte ladda prediktiva data",
+      "errorBody": "Endast organisationens administratörer kan se prediktiva rapporter.",
+      "chartTitle": "Aktivitetsindex: historik och prognos för 3 månader",
+      "teamRiskTitle": "Team med risk att tappa aktivitet",
+      "employeeRiskTitle": "Anställda som behöver uppmärksamhet",
+      "noTeams": "Inga team ännu.",
+      "noRisk": "Inga anställda i riskzonen just nu.",
+      "never": "Aldrig",
+      "methodTitle": "Så beräknas prognoserna",
+      "method1": "Prognosen är en linjär trend anpassad till de senaste 12 månadernas aktivitetsindex (poäng per anställd).",
+      "method2": "Risknivån kombinerar dagar sedan senaste aktivitet, förändringen mellan de senaste 30 dagarna och föregående 30 dagar samt nuvarande aktivitetsnivå.",
+      "method3": "Prognosen för sjukdagar extrapolerar förändringen mellan de två senaste 12-månadersperioderna; besparingar baseras på kostnaden per sjukdag.",
+      "trend": {
+        "up": "Stigande trend",
+        "down": "Sjunkande trend",
+        "flat": "Stabil trend"
+      },
+      "risk": {
+        "high": "Hög",
+        "medium": "Medel",
+        "low": "Låg"
+      },
+      "kpi": {
+        "forecast": "Indexprognos, nästa månad",
+        "thisMonth": "Denna månad",
+        "highRiskEmployees": "Anställda med hög risk",
+        "mediumRisk": "Medelrisk",
+        "highRiskTeams": "Team med hög risk",
+        "ofTeams": "Av team",
+        "projectedSickDays": "Prognos sjukdagar (12 mån)",
+        "projectedSavings": "Prognos besparing"
+      },
+      "legend": {
+        "actual": "Faktiskt",
+        "forecast": "Prognos"
+      },
+      "table": {
+        "team": "Team",
+        "employee": "Anställd",
+        "members": "Aktiva/medlemmar",
+        "participation": "Deltagande",
+        "change": "Förändring (30 d)",
+        "risk": "Risk",
+        "riskScore": "Riskpoäng",
+        "lastActive": "Senast aktiv",
+        "points30d": "Poäng 30 d (föreg.)"
       }
     }
   },

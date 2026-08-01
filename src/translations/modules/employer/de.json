@@ -13,7 +13,8 @@
       "teams": "Teams",
       "activitySummary": "Aktivitätsübersicht",
       "engagement": "Engagement",
-      "roi": "Verwaltung & ROI"
+      "roi": "Verwaltung & ROI",
+      "predictive": "Prädiktive Analytik"
     },
     "paywall": {
       "title": "Employer-Panel aktivieren",
@@ -424,6 +425,57 @@
         "points": "Aktivitätspunkte",
         "activeEmployees": "Aktive Mitarbeitende",
         "index": "Index / Mitarbeitendem"
+      }
+    },
+    "predictive": {
+      "title": "Prädiktive Analytik",
+      "description": "Prognose des Aktivitätsindex und Frühwarnungen zu Mitarbeitenden und Teams mit sinkender Aktivität.",
+      "errorTitle": "Prognosedaten konnten nicht geladen werden",
+      "errorBody": "Nur Organisationsverwalter können Prognoseberichte sehen.",
+      "chartTitle": "Aktivitätsindex: Verlauf und 3-Monats-Prognose",
+      "teamRiskTitle": "Teams mit Abbruchrisiko",
+      "employeeRiskTitle": "Mitarbeitende, die Aufmerksamkeit brauchen",
+      "noTeams": "Noch keine Teams.",
+      "noRisk": "Derzeit keine Mitarbeitenden mit Risiko.",
+      "never": "Nie",
+      "methodTitle": "So werden die Prognosen berechnet",
+      "method1": "Die Prognose ist ein linearer Trend, angepasst an den Aktivitätsindex der letzten 12 Monate (Punkte pro Mitarbeitendem).",
+      "method2": "Die Risikostufe kombiniert Tage seit der letzten Aktivität, die Veränderung zwischen den letzten 30 und den vorherigen 30 Tagen sowie das aktuelle Aktivitätsniveau.",
+      "method3": "Die Krankheitstage-Prognose extrapoliert die Veränderung der letzten zwei 12-Monats-Zeiträume; Einsparungen basieren auf den Kosten pro Krankheitstag.",
+      "trend": {
+        "up": "Steigender Trend",
+        "down": "Fallender Trend",
+        "flat": "Stabiler Trend"
+      },
+      "risk": {
+        "high": "Hoch",
+        "medium": "Mittel",
+        "low": "Niedrig"
+      },
+      "kpi": {
+        "forecast": "Indexprognose, nächster Monat",
+        "thisMonth": "Dieser Monat",
+        "highRiskEmployees": "Mitarbeitende mit hohem Risiko",
+        "mediumRisk": "Mittleres Risiko",
+        "highRiskTeams": "Teams mit hohem Risiko",
+        "ofTeams": "Von Teams",
+        "projectedSickDays": "Prognose Krankheitstage (12 Mon.)",
+        "projectedSavings": "Prognostizierte Einsparung"
+      },
+      "legend": {
+        "actual": "Ist",
+        "forecast": "Prognose"
+      },
+      "table": {
+        "team": "Team",
+        "employee": "Mitarbeitende",
+        "members": "Aktiv/Mitglieder",
+        "participation": "Teilnahme",
+        "change": "Veränderung (30 T)",
+        "risk": "Risiko",
+        "riskScore": "Risikowert",
+        "lastActive": "Zuletzt aktiv",
+        "points30d": "Punkte 30 T (vorh.)"
       }
     }
   },

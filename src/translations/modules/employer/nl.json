@@ -13,7 +13,8 @@
       "teams": "Teams",
       "activitySummary": "Activiteitsoverzicht",
       "engagement": "Betrokkenheid",
-      "roi": "Beheer & ROI"
+      "roi": "Beheer & ROI",
+      "predictive": "Voorspellende analyse"
     },
     "paywall": {
       "title": "Activeer het werkgeverspaneel",
@@ -424,6 +425,57 @@
         "points": "Activiteitspunten",
         "activeEmployees": "Actieve medewerkers",
         "index": "Index / medewerker"
+      }
+    },
+    "predictive": {
+      "title": "Voorspellende analyse",
+      "description": "Prognose van de activiteitsindex en vroege signalen over medewerkers en teams met dalende activiteit.",
+      "errorTitle": "Voorspellende gegevens konden niet worden geladen",
+      "errorBody": "Alleen organisatiebeheerders kunnen voorspellende rapporten bekijken.",
+      "chartTitle": "Activiteitsindex: historie en prognose van 3 maanden",
+      "teamRiskTitle": "Teams met afhaakrisico",
+      "employeeRiskTitle": "Medewerkers die aandacht nodig hebben",
+      "noTeams": "Nog geen teams.",
+      "noRisk": "Momenteel geen medewerkers met risico.",
+      "never": "Nooit",
+      "methodTitle": "Hoe de voorspellingen worden berekend",
+      "method1": "De prognose is een lineaire trend op basis van de activiteitsindex van de laatste 12 maanden (punten per medewerker).",
+      "method2": "Het risiconiveau combineert dagen sinds de laatste activiteit, de verandering tussen de laatste 30 dagen en de 30 dagen daarvoor, en het huidige activiteitsniveau.",
+      "method3": "De prognose van ziektedagen extrapoleert de verandering tussen de laatste twee periodes van 12 maanden; besparingen gebruiken de kosten per ziektedag.",
+      "trend": {
+        "up": "Stijgende trend",
+        "down": "Dalende trend",
+        "flat": "Stabiele trend"
+      },
+      "risk": {
+        "high": "Hoog",
+        "medium": "Gemiddeld",
+        "low": "Laag"
+      },
+      "kpi": {
+        "forecast": "Indexprognose, volgende maand",
+        "thisMonth": "Deze maand",
+        "highRiskEmployees": "Medewerkers met hoog risico",
+        "mediumRisk": "Gemiddeld risico",
+        "highRiskTeams": "Teams met hoog risico",
+        "ofTeams": "Van teams",
+        "projectedSickDays": "Verwachte ziektedagen (12 mnd)",
+        "projectedSavings": "Verwachte besparing"
+      },
+      "legend": {
+        "actual": "Werkelijk",
+        "forecast": "Prognose"
+      },
+      "table": {
+        "team": "Team",
+        "employee": "Medewerker",
+        "members": "Actief/leden",
+        "participation": "Deelname",
+        "change": "Verandering (30 d)",
+        "risk": "Risico",
+        "riskScore": "Risicoscore",
+        "lastActive": "Laatst actief",
+        "points30d": "Punten 30 d (vorige)"
       }
     }
   },
