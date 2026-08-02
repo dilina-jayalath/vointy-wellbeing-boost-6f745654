@@ -3,6 +3,8 @@ import { Upload } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/lib/i18n";
+import { compressImage } from "@/lib/imageCompress";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -69,11 +71,13 @@ export const ActivityForm = ({ open, onOpenChange, activity, onSaved }: Props) =
       return;
     }
     setUploading(true);
-    const ext = file.name.split(".").pop()?.toLowerCase() || "jpg";
+    const optimized = await compressImage(file);
+    const ext = optimized.name.split(".").pop()?.toLowerCase() || "jpg";
     const path = `${user.id}/${crypto.randomUUID()}.${ext}`;
     const { error } = await supabase.storage
       .from("activity-images")
-      .upload(path, file, { contentType: file.type, upsert: false });
+      .upload(path, optimized, { contentType: optimized.type, upsert: false });
+
     if (error) {
       setUploading(false);
       toast({ title: t("appPanel.activityForm.toast.uploadFailed"), description: error.message, variant: "destructive" });
