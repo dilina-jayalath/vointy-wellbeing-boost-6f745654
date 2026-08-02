@@ -10,6 +10,7 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 import { useTranslation } from "@/lib/i18n";
+import LegalConsent from "@/components/auth/LegalConsent";
 
 import { CheckCircle2, Loader2, MailCheck } from "lucide-react";
 
@@ -18,6 +19,7 @@ const CompanySignup = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [done, setDone] = useState(false);
+  const [acceptedLegal, setAcceptedLegal] = useState(false);
   const [form, setForm] = useState({
     companyName: "",
     contactName: "",
@@ -46,6 +48,10 @@ const CompanySignup = () => {
     }
     if (form.password !== form.confirmPassword) {
       toast({ title: t("auth.passwordMismatch"), variant: "destructive" });
+      return;
+    }
+    if (!acceptedLegal) {
+      toast({ title: t("legalConsent.required"), description: t("legalConsent.requiredDescription"), variant: "destructive" });
       return;
     }
     setIsLoading(true);
@@ -148,7 +154,8 @@ const CompanySignup = () => {
                         <Input id="confirmPassword" name="confirmPassword" type="password" value={form.confirmPassword} onChange={onChange} required className="h-12" />
                       </div>
                     </div>
-                    <Button type="submit" className="w-full btn-primary h-12 text-lg font-bold" disabled={isLoading}>
+                    <LegalConsent checked={acceptedLegal} onChange={setAcceptedLegal} id="company-legal-consent" />
+                    <Button type="submit" className="w-full btn-primary h-12 text-lg font-bold" disabled={isLoading || !acceptedLegal}>
                       {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : t("companySignup.createFreeAccount")}
                     </Button>
                     <p className="text-sm text-gray-500 text-center">
