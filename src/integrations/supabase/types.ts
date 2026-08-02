@@ -1078,6 +1078,41 @@ export type Database = {
           },
         ]
       }
+      team_messages: {
+        Row: {
+          content: string
+          created_at: string
+          id: string
+          image_url: string | null
+          team_id: string
+          user_id: string
+        }
+        Insert: {
+          content: string
+          created_at?: string
+          id?: string
+          image_url?: string | null
+          team_id: string
+          user_id: string
+        }
+        Update: {
+          content?: string
+          created_at?: string
+          id?: string
+          image_url?: string | null
+          team_id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "team_messages_team_id_fkey"
+            columns: ["team_id"]
+            isOneToOne: false
+            referencedRelation: "teams"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       teams: {
         Row: {
           created_at: string
@@ -1280,6 +1315,7 @@ export type Database = {
         }[]
       }
       is_org_manager: { Args: never; Returns: boolean }
+      is_team_member: { Args: { _team_id: string }; Returns: boolean }
       move_to_dlq: {
         Args: {
           dlq_name: string
