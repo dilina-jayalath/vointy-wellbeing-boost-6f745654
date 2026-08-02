@@ -34,7 +34,8 @@
       "Rapportage en analyses",
       "Geen kosten per gebruiker"
     ],
-    "startTrial": "Start gratis proefperiode van 30 dagen"
+    "startTrial": "Start gratis proefperiode van 30 dagen",
+    "employerPlanNote": "Inclusief registratie voor maximaal 1.000 werknemers. Iedere extra 1.000 werknemers: €149/maand."
   },
   "aboutPage": {
     "title": "About us",
@@ -223,7 +224,7 @@
     "compCta": "Bekijk prijzen",
     "dashboardLabel": "Werkgeversdashboard",
     "perMonth": "/maand",
-    "perCompany": "per bedrijf · onbeperkt gebruikers",
+    "perCompany": "per 1.000 geregistreerde werknemers",
     "trialValue": "30 dagen",
     "trialLabel": "Gratis proefperiode",
     "setupLabel": "Instelkosten",

@@ -34,7 +34,8 @@
       "Reporting & analytics",
       "No per-user fees"
     ],
-    "startTrial": "Start free 30-day trial"
+    "startTrial": "Start free 30-day trial",
+    "employerPlanNote": "Includes registration for up to 1,000 employees. Each additional 1,000 employees: €149/month."
   },
   "aboutPage": {
     "title": "About us",
@@ -223,7 +224,7 @@
     "compCta": "See pricing",
     "dashboardLabel": "Employer Dashboard",
     "perMonth": "/month",
-    "perCompany": "per company · unlimited users",
+    "perCompany": "per 1,000 registered employees",
     "trialValue": "30 days",
     "trialLabel": "Free trial",
     "setupLabel": "Setup fee",

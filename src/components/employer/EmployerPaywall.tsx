@@ -67,9 +67,12 @@ const EmployerPaywall = () => {
           <p className="text-sm text-muted-foreground">{description}</p>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="rounded-lg bg-slate-50 p-4 text-center">
+          <div className="rounded-lg bg-slate-50 p-4 text-center space-y-1">
             <p className="text-3xl font-bold text-brand-purple">€149</p>
             <p className="text-sm text-muted-foreground">{t("employerPanel.paywall.priceSuffix")}</p>
+            <p className="text-xs text-brand-purple font-medium">
+              {t("employerPanel.paywall.priceNote")}
+            </p>
           </div>
           <ul className="space-y-1 text-sm">
             {PLAN_FEATURES_KEYS.map((f) => (

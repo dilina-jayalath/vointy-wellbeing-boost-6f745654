@@ -20,6 +20,7 @@
       "title": "Activer le panneau Employeur",
       "description": "{orgPrefix}Vointy est gratuit pour les entreprises et les employés. Le panneau Employeur avec suivi, analyses, campagnes et événements coûte 149 €/mois.",
       "priceSuffix": "par mois · essai gratuit de 30 jours",
+      "priceNote": "Inclut l'inscription de jusqu'à 1 000 salariés. Chaque tranche de 1 000 supplémentaires : 149 €/mois.",
       "features": {
         "unlimitedEmployees": "Employés illimités",
         "unlimitedTeams": "Équipes illimitées",
@@ -31,7 +32,7 @@
         "noPerUserFees": "Aucun frais par utilisateur"
       },
       "startTrial": "Démarrer l'essai gratuit de 30 jours",
-      "disclaimer": "Aucun frais d'installation · résiliable à tout moment · carte requise pour démarrer l'essai, premier prélèvement après 30 jours."
+      "disclaimer": "Aucun frais d'installation · 149 €/mois par tranche de 1 000 salariés inscrits · résiliable à tout moment · carte requise pour démarrer l'essai, premier prélèvement après 30 jours."
     },
     "layout": {
       "brandTagline": "Build healthier habits, together.",
@@ -190,7 +191,7 @@
       "planCardTitle": "Panneau Employeur — 149 €/mois",
       "onThisPlan": "Vous êtes sur ce plan.",
       "startTrial": "Démarrer l'essai gratuit de 30 jours",
-      "planDisclaimer": "Aucun frais d'installation · employés illimités · résiliable à tout moment.",
+      "planDisclaimer": "Aucun frais d'installation · 149 €/mois par tranche de 1 000 salariés inscrits · résiliable à tout moment.",
       "statuses": {
         "noPlan": "Aucun plan",
         "trial": "Essai gratuit",

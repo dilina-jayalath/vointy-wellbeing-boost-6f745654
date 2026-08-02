@@ -34,7 +34,8 @@
       "Rapportering och analys",
       "Inga avgifter per användare"
     ],
-    "startTrial": "Starta kostnadsfri 30-dagars provperiod"
+    "startTrial": "Starta kostnadsfri 30-dagars provperiod",
+    "employerPlanNote": "Inkluderar registrering för upp till 1 000 anställda. Varje ytterligare 1 000 anställda: 149 €/månad."
   },
   "aboutPage": {
     "title": "About us",
@@ -223,7 +224,7 @@
     "compCta": "Se priser",
     "dashboardLabel": "Arbetsgivarpanel",
     "perMonth": "/månad",
-    "perCompany": "per företag · obegränsat med användare",
+    "perCompany": "per 1 000 registrerade anställda",
     "trialValue": "30 dagar",
     "trialLabel": "Gratis provperiod",
     "setupLabel": "Startavgift",

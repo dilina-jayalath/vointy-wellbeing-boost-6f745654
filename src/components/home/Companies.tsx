@@ -58,6 +58,9 @@ const Companies = () => {
                   <span className="text-xl text-gray-400 font-medium">{t('homeExtra.perMonth')}</span>
                 </div>
                 <div className="text-sm text-gray-400">{t('homeExtra.perCompany')}</div>
+                <div className="text-xs text-brand-purple font-medium mt-2 px-2">
+                  {t('pricingPage.employerPlanNote')}
+                </div>
               </div>
               <div className="h-px w-full bg-white/10 my-6" />
               <div className="grid grid-cols-2 gap-8">

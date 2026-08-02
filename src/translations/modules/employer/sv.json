@@ -20,6 +20,7 @@
       "title": "Aktivera arbetsgivarpanelen",
       "description": "{orgPrefix}Vointy är gratis för företag och anställda. Arbetsgivarpanelen med spårning, analys, kampanjer och event kostar €149/månad.",
       "priceSuffix": "per månad · 30 dagars kostnadsfri provperiod",
+      "priceNote": "Inkluderar registrering för upp till 1 000 anställda. Varje ytterligare 1 000: 149 €/månad.",
       "features": {
         "unlimitedEmployees": "Obegränsat antal anställda",
         "unlimitedTeams": "Obegränsat antal team",
@@ -31,7 +32,7 @@
         "noPerUserFees": "Inga avgifter per användare"
       },
       "startTrial": "Starta 30 dagars kostnadsfri provperiod",
-      "disclaimer": "Ingen startavgift · avsluta när som helst · kort krävs för att starta provperioden, första debiteringen sker efter 30 dagar."
+      "disclaimer": "Ingen startavgift · 149 €/månad per 1 000 registrerade anställda · avsluta när som helst · kort krävs för att starta provperioden, första debiteringen sker efter 30 dagar."
     },
     "layout": {
       "brandTagline": "Build healthier habits, together.",
@@ -190,7 +191,7 @@
       "planCardTitle": "Arbetsgivarpanel — €149/månad",
       "onThisPlan": "Du har denna plan.",
       "startTrial": "Starta 30 dagars kostnadsfri provperiod",
-      "planDisclaimer": "Ingen startavgift · obegränsat antal anställda · avsluta när som helst.",
+      "planDisclaimer": "Ingen startavgift · 149 €/månad per 1 000 registrerade anställda · avsluta när som helst.",
       "statuses": {
         "noPlan": "Ingen plan",
         "trial": "Kostnadsfri provperiod",

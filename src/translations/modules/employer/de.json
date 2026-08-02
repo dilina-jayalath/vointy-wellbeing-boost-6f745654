@@ -20,6 +20,7 @@
       "title": "Employer-Panel aktivieren",
       "description": "{orgPrefix}Vointy ist für Unternehmen und Mitarbeitende kostenlos. Das Employer-Panel mit Tracking, Analysen, Kampagnen und Events kostet 149 €/Monat.",
       "priceSuffix": "pro Monat · kostenlose 30-Tage-Testphase",
+      "priceNote": "Enthält die Registrierung von bis zu 1.000 Mitarbeitenden. Jede weiteren 1.000: €149/Monat.",
       "features": {
         "unlimitedEmployees": "Unbegrenzte Mitarbeiterzahl",
         "unlimitedTeams": "Unbegrenzte Teams",
@@ -31,7 +32,7 @@
         "noPerUserFees": "Keine Kosten pro Nutzer"
       },
       "startTrial": "Kostenlose 30-Tage-Testphase starten",
-      "disclaimer": "Keine Einrichtungsgebühr · jederzeit kündbar · Zahlungsmethode für den Start der Testphase erforderlich, erste Abbuchung nach 30 Tagen."
+      "disclaimer": "Keine Einrichtungsgebühr · €149/Monat pro 1.000 registrierte Mitarbeitende · jederzeit kündbar · Zahlungsmethode für den Start der Testphase erforderlich, erste Abbuchung nach 30 Tagen."
     },
     "layout": {
       "brandTagline": "Build healthier habits, together.",
@@ -190,7 +191,7 @@
       "planCardTitle": "Employer-Panel — 149 €/Monat",
       "onThisPlan": "Sie nutzen diesen Plan.",
       "startTrial": "Kostenlose 30-Tage-Testphase starten",
-      "planDisclaimer": "Keine Einrichtungsgebühr · unbegrenzte Mitarbeiterzahl · jederzeit kündbar.",
+      "planDisclaimer": "Keine Einrichtungsgebühr · €149/Monat pro 1.000 registrierte Mitarbeitende · jederzeit kündbar.",
       "statuses": {
         "noPlan": "Kein Plan",
         "trial": "Kostenlose Testphase",

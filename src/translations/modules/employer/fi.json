@@ -20,6 +20,7 @@
       "title": "Aktivoi Työnantajapaneeli",
       "description": "{orgPrefix}Vointy on ilmainen yrityksille ja työntekijöille. Työnantajapaneeli, jossa on seuranta, analytiikka, kampanjat ja tapahtumat, maksaa €149/kk.",
       "priceSuffix": "kuukaudessa · 30 päivän ilmainen kokeilu",
+      "priceNote": "Sisältää enintään 1 000 työntekijän rekisteröitymisen käyttäjäksi. Seuraavat 1 000: 149 €/kk.",
       "features": {
         "unlimitedEmployees": "Rajattomasti työntekijöitä",
         "unlimitedTeams": "Rajattomasti tiimejä",
@@ -31,7 +32,7 @@
         "noPerUserFees": "Ei käyttäjäkohtaisia maksuja"
       },
       "startTrial": "Aloita 30 päivän ilmainen kokeilu",
-      "disclaimer": "Ei käyttöönottomaksua · peru milloin tahansa · kortti vaaditaan kokeilun aloittamiseen, ensimmäinen veloitus 30 päivän jälkeen."
+      "disclaimer": "Ei käyttöönottomaksua · 149 €/kk per 1 000 rekisteröitynyttä työntekijää · peru milloin tahansa · kortti vaaditaan kokeilun aloittamiseen, ensimmäinen veloitus 30 päivän jälkeen."
     },
     "layout": {
       "brandTagline": "Build healthier habits, together.",
@@ -190,7 +191,7 @@
       "planCardTitle": "Työnantajapaneeli — €149/kk",
       "onThisPlan": "Olet tässä tilauksessa.",
       "startTrial": "Aloita 30 päivän ilmainen kokeilu",
-      "planDisclaimer": "Ei käyttöönottomaksua · rajattomasti työntekijöitä · peru milloin tahansa.",
+      "planDisclaimer": "Ei käyttöönottomaksua · 149 €/kk per 1 000 rekisteröitynyttä työntekijää · peru milloin tahansa.",
       "statuses": {
         "noPlan": "Ei tilausta",
         "trial": "Ilmainen kokeilu",
