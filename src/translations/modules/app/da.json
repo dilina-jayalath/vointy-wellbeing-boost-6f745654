@@ -7,7 +7,8 @@
       "community": "Fællesskab",
       "index": "Indeks",
       "tagline": "Build healthier habits, together.",
-      "profileAria": "Profil"
+      "profileAria": "Profil",
+      "chat": "Chat"
     },
     "home": {
       "welcomeBack": "Velkommen tilbage",
@@ -208,6 +209,19 @@
         "couldNotLoad": "Kunne ikke indlæse dine aktiviteter",
         "couldNotDelete": "Kunne ikke slette",
         "deleted": "Aktivitet slettet"
+      }
+    },
+    "chat": {
+      "title": "Teamchat",
+      "loading": "Indlæser…",
+      "noTeams": "Du er endnu ikke medlem af et team. Bed din arbejdsgiver om at tilføje dig til et team.",
+      "noMessages": "Ingen beskeder endnu. Sig hej til dit team!",
+      "placeholder": "Skriv en besked…",
+      "send": "Send",
+      "member": "Teammedlem",
+      "toast": {
+        "couldNotLoad": "Kunne ikke indlæse chatten",
+        "couldNotSend": "Kunne ikke sende beskeden"
       }
     }
   }

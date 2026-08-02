@@ -7,7 +7,8 @@
       "community": "Community",
       "index": "Index",
       "tagline": "Build healthier habits, together.",
-      "profileAria": "Profil"
+      "profileAria": "Profil",
+      "chat": "Chatt"
     },
     "home": {
       "welcomeBack": "Välkommen tillbaka",
@@ -208,6 +209,19 @@
         "couldNotLoad": "Kunde inte läsa in dina aktiviteter",
         "couldNotDelete": "Kunde inte ta bort",
         "deleted": "Aktivitet borttagen"
+      }
+    },
+    "chat": {
+      "title": "Teamchatt",
+      "loading": "Laddar…",
+      "noTeams": "Du är inte medlem i något team än. Be din arbetsgivare lägga till dig i ett team.",
+      "noMessages": "Inga meddelanden än. Hälsa på ditt team!",
+      "placeholder": "Skriv ett meddelande…",
+      "send": "Skicka",
+      "member": "Teammedlem",
+      "toast": {
+        "couldNotLoad": "Kunde inte ladda chatten",
+        "couldNotSend": "Kunde inte skicka meddelandet"
       }
     }
   }

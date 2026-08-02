@@ -46,6 +46,7 @@ import AppHome from "./pages/app/Home";
 import AppActivities from "./pages/app/Activities";
 import AppChallenges from "./pages/app/Challenges";
 import AppCommunity from "./pages/app/Community";
+import AppChat from "./pages/app/Chat";
 import AppWellbeing from "./pages/app/Wellbeing";
 import AppProfile from "./pages/app/Profile";
 import NotFound from "./pages/NotFound";
@@ -132,6 +133,7 @@ const App = () => (
                 <Route path="activities" element={<AppActivities />} />
                 <Route path="challenges" element={<AppChallenges />} />
                 <Route path="community" element={<AppCommunity />} />
+                <Route path="chat" element={<AppChat />} />
                 <Route path="wellbeing" element={<AppWellbeing />} />
                 <Route path="profile" element={<AppProfile />} />
               </Route>

@@ -7,7 +7,8 @@
       "community": "Community",
       "index": "Indice",
       "tagline": "Build healthier habits, together.",
-      "profileAria": "Profilo"
+      "profileAria": "Profilo",
+      "chat": "Chat"
     },
     "home": {
       "welcomeBack": "Bentornato/a",
@@ -208,6 +209,19 @@
         "couldNotLoad": "Impossibile caricare le tue attività",
         "couldNotDelete": "Eliminazione non riuscita",
         "deleted": "Attività eliminata"
+      }
+    },
+    "chat": {
+      "title": "Chat del team",
+      "loading": "Caricamento…",
+      "noTeams": "Non fai ancora parte di nessun team. Chiedi al tuo datore di lavoro di aggiungerti.",
+      "noMessages": "Ancora nessun messaggio. Saluta il tuo team!",
+      "placeholder": "Scrivi un messaggio…",
+      "send": "Invia",
+      "member": "Membro del team",
+      "toast": {
+        "couldNotLoad": "Impossibile caricare la chat",
+        "couldNotSend": "Impossibile inviare il messaggio"
       }
     }
   }

@@ -1,5 +1,5 @@
 import { Outlet, NavLink, Link, useLocation } from "react-router-dom";
-import { Home, Activity, Trophy, Users, BarChart3 as ActivityIcon2, User as UserIcon } from "lucide-react";
+import { Home, Activity, Trophy, Users, MessageSquare, BarChart3 as ActivityIcon2, User as UserIcon } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
@@ -18,6 +18,7 @@ const AppLayout = () => {
     { to: "/app/activities", icon: Activity, label: t("appPanel.nav.activities") },
     { to: "/app/challenges", icon: Trophy, label: t("appPanel.nav.challenges") },
     { to: "/app/community", icon: Users, label: t("appPanel.nav.community") },
+    { to: "/app/chat", icon: MessageSquare, label: t("appPanel.nav.chat") },
     { to: "/app/wellbeing", icon: ActivityIcon2, label: t("appPanel.nav.index") },
   ];
 
@@ -62,7 +63,7 @@ const AppLayout = () => {
         </main>
 
         <nav className="fixed bottom-0 left-0 right-0 z-20 mx-auto w-full max-w-md border-t bg-background">
-          <ul className="grid grid-cols-5">
+          <ul className="grid grid-cols-6">
             {navItems.map((item) => (
               <li key={item.to}>
                 <NavLink
