@@ -102,10 +102,13 @@ const Subscription = () => {
                 </div>
                 <CardContent className="p-8 flex flex-col h-full">
                   <h3 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.companyPlanTitle')}</h3>
-                  <div className="flex items-end mb-4">
+                  <div className="flex items-end mb-2">
                     <span className="text-5xl font-bold text-brand-dark">€149</span>
                     <span className="text-gray-500 ml-2 mb-1">{t('pricingPage.perMonthPerCompany')}</span>
                   </div>
+                  <p className="text-sm text-brand-purple font-medium mb-4">
+                    {t('pricingPage.employerPlanNote')}
+                  </p>
                   <p className="text-gray-600 mb-6">
                     {t('pricingPage.companyPlanDescription')}
                   </p>
