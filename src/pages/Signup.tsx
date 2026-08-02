@@ -10,6 +10,7 @@ import { Loader2 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 import LegalConsent from "@/components/auth/LegalConsent";
+import PasswordInput from "@/components/auth/PasswordInput";
 
 
 const Signup = () => {
@@ -96,9 +97,8 @@ const Signup = () => {
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">{t("auth.password")}</Label>
-              <Input
+              <PasswordInput
                 id="password"
-                type="password"
                 placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -107,9 +107,8 @@ const Signup = () => {
             </div>
             <div className="space-y-2">
               <Label htmlFor="confirmPassword">{t("auth.confirmPassword")}</Label>
-              <Input
+              <PasswordInput
                 id="confirmPassword"
-                type="password"
                 placeholder="••••••••"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}

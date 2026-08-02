@@ -11,6 +11,7 @@ import { supabase } from "@/integrations/supabase/client";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 import { useTranslation } from "@/lib/i18n";
 import LegalConsent from "@/components/auth/LegalConsent";
+import PasswordInput from "@/components/auth/PasswordInput";
 
 import { CheckCircle2, Loader2, MailCheck } from "lucide-react";
 
@@ -147,11 +148,11 @@ const CompanySignup = () => {
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="password">{t("companySignup.password")}</Label>
-                        <Input id="password" name="password" type="password" value={form.password} onChange={onChange} required className="h-12" />
+                        <PasswordInput id="password" name="password" value={form.password} onChange={onChange} required className="h-12" />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="confirmPassword">{t("companySignup.confirmPassword")}</Label>
-                        <Input id="confirmPassword" name="confirmPassword" type="password" value={form.confirmPassword} onChange={onChange} required className="h-12" />
+                        <PasswordInput id="confirmPassword" name="confirmPassword" value={form.confirmPassword} onChange={onChange} required className="h-12" />
                       </div>
                     </div>
                     <LegalConsent checked={acceptedLegal} onChange={setAcceptedLegal} id="company-legal-consent" />

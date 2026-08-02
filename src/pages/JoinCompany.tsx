@@ -10,6 +10,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/lib/i18n";
 import { Loader2, MailCheck, PartyPopper } from "lucide-react";
 import LegalConsent from "@/components/auth/LegalConsent";
+import PasswordInput from "@/components/auth/PasswordInput";
 
 interface InviteInfo {
   organization_name: string;
@@ -31,6 +32,7 @@ const JoinCompany = () => {
   const [busy, setBusy] = useState(false);
   const [sent, setSent] = useState(false);
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [name, setName] = useState("");
   const [acceptedLegal, setAcceptedLegal] = useState(false);
 
@@ -65,6 +67,10 @@ const JoinCompany = () => {
     e.preventDefault();
     if (password.length < 8) {
       toast({ title: t("joinCompany.passwordTooShort"), description: t("joinCompany.useAtLeast8Chars"), variant: "destructive" });
+      return;
+    }
+    if (password !== confirmPassword) {
+      toast({ title: t("auth.passwordMismatch"), variant: "destructive" });
       return;
     }
     if (!acceptedLegal) {
@@ -151,11 +157,19 @@ const JoinCompany = () => {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="join-password">{t("joinCompany.choosePassword")}</Label>
-                    <Input
+                    <PasswordInput
                       id="join-password"
-                      type="password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="join-confirm-password">{t("joinCompany.confirmPassword")}</Label>
+                    <PasswordInput
+                      id="join-confirm-password"
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
                       required
                     />
                   </div>
