@@ -204,7 +204,9 @@
       "features": {
         "unlimitedEmployees": "Employés illimités",
         "unlimitedTeams": "Équipes illimitées",
-        "allActivities": "Toutes les activités",
+        "allActivities": "Toutes les 158 activités",
+        "teamBasedAccess": "Accès par équipe",
+        "createOwnActivities": "Créer vos propres activités",
         "managementDashboard": "Tableau de bord de gestion",
         "reporting": "Reporting",
         "noPerUserFees": "Aucun frais par utilisateur"
