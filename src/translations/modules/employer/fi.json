@@ -23,7 +23,9 @@
       "features": {
         "unlimitedEmployees": "Rajattomasti työntekijöitä",
         "unlimitedTeams": "Rajattomasti tiimejä",
-        "allActivities": "Kaikki aktiviteetit",
+        "allActivities": "Kaikki aktiviteetit 158 kpl",
+        "teamBasedAccess": "Tiimipohjainen käyttöoikeus",
+        "createOwnActivities": "Mahdollisuus luoda omia aktiviteetteja",
         "managementDashboard": "Hallintakojelauta",
         "reporting": "Raportointi",
         "noPerUserFees": "Ei käyttäjäkohtaisia maksuja"

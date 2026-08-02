@@ -23,7 +23,9 @@
       "features": {
         "unlimitedEmployees": "Dipendenti illimitati",
         "unlimitedTeams": "Team illimitati",
-        "allActivities": "Tutte le attività",
+        "allActivities": "Tutte le 158 attività",
+        "teamBasedAccess": "Accesso basato sul team",
+        "createOwnActivities": "Crea le tue attività",
         "managementDashboard": "Dashboard di gestione",
         "reporting": "Reportistica",
         "noPerUserFees": "Nessun costo per utente"

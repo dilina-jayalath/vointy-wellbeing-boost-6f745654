@@ -23,7 +23,9 @@
       "features": {
         "unlimitedEmployees": "Onbeperkt aantal werknemers",
         "unlimitedTeams": "Onbeperkt aantal teams",
-        "allActivities": "Alle activiteiten",
+        "allActivities": "Alle 158 activiteiten",
+        "teamBasedAccess": "Teamgebaseerde toegang",
+        "createOwnActivities": "Eigen activiteiten maken",
         "managementDashboard": "Beheerdashboard",
         "reporting": "Rapportage",
         "noPerUserFees": "Geen kosten per gebruiker"

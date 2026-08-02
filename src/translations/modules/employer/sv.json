@@ -23,7 +23,9 @@
       "features": {
         "unlimitedEmployees": "Obegränsat antal anställda",
         "unlimitedTeams": "Obegränsat antal team",
-        "allActivities": "Alla aktiviteter",
+        "allActivities": "Alla 158 aktiviteter",
+        "teamBasedAccess": "Teambaserad åtkomst",
+        "createOwnActivities": "Möjlighet att skapa egna aktiviteter",
         "managementDashboard": "Hanteringsöversikt",
         "reporting": "Rapportering",
         "noPerUserFees": "Inga avgifter per användare"

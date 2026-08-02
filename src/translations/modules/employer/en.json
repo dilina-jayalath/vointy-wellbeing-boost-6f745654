@@ -23,7 +23,9 @@
       "features": {
         "unlimitedEmployees": "Unlimited employees",
         "unlimitedTeams": "Unlimited teams",
-        "allActivities": "All activities",
+        "allActivities": "All 158 activities",
+        "teamBasedAccess": "Team-based access",
+        "createOwnActivities": "Create your own activities",
         "managementDashboard": "Management dashboard",
         "reporting": "Reporting",
         "noPerUserFees": "No per-user fees"
