@@ -97,11 +97,13 @@ const BlogManager = () => {
     }
     setUploading(true);
     try {
-      const ext = file.name.split(".").pop() ?? "bin";
+      const upload = isImage ? await compressImage(file, { maxDimension: 1920 }) : file;
+      const ext = upload.name.split(".").pop() ?? "bin";
       const path = `${crypto.randomUUID()}.${ext}`;
-      const { error } = await supabase.storage.from("blog-media").upload(path, file, {
-        contentType: file.type,
+      const { error } = await supabase.storage.from("blog-media").upload(path, upload, {
+        contentType: upload.type,
       });
+
       if (error) throw error;
       setForm((prev) => ({
         ...prev,
