@@ -23,7 +23,9 @@
       "features": {
         "unlimitedEmployees": "Empleados ilimitados",
         "unlimitedTeams": "Equipos ilimitados",
-        "allActivities": "Todas las actividades",
+        "allActivities": "Todas las 158 actividades",
+        "teamBasedAccess": "Acceso por equipos",
+        "createOwnActivities": "Crear tus propias actividades",
         "managementDashboard": "Panel de gestión",
         "reporting": "Informes",
         "noPerUserFees": "Sin tarifas por usuario"
@@ -202,7 +204,9 @@
       "features": {
         "unlimitedEmployees": "Empleados ilimitados",
         "unlimitedTeams": "Equipos ilimitados",
-        "allActivities": "Todas las actividades",
+        "allActivities": "Todas las 158 actividades",
+        "teamBasedAccess": "Acceso por equipos",
+        "createOwnActivities": "Crear tus propias actividades",
         "managementDashboard": "Panel de gestión",
         "reporting": "Informes",
         "noPerUserFees": "Sin tarifas por usuario"

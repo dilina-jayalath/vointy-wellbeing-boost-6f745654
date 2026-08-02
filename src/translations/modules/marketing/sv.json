@@ -16,7 +16,7 @@
     "freeFeatures": [
       "Obegränsat antal anställda",
       "Obegränsat antal team",
-      "Alla aktiviteter för anställda",
+      "Alla 158 aktiviteter",
       "Teambaserad åtkomst"
     ],
     "getStartedFree": "Kom igång gratis",
@@ -27,7 +27,9 @@
     "planFeatures": [
       "Obegränsat antal anställda",
       "Obegränsat antal team",
-      "Alla aktiviteter",
+      "Alla 158 aktiviteter",
+      "Teambaserad åtkomst",
+      "Möjlighet att skapa egna aktiviteter",
       "Arbetsgivarpanel",
       "Rapportering och analys",
       "Inga avgifter per användare"

@@ -23,7 +23,9 @@
       "features": {
         "unlimitedEmployees": "Unbegrenzte Mitarbeiterzahl",
         "unlimitedTeams": "Unbegrenzte Teams",
-        "allActivities": "Alle Aktivitäten",
+        "allActivities": "Alle 158 Aktivitäten",
+        "teamBasedAccess": "Teambasierter Zugriff",
+        "createOwnActivities": "Eigene Aktivitäten erstellen",
         "managementDashboard": "Management-Dashboard",
         "reporting": "Reporting",
         "noPerUserFees": "Keine Kosten pro Nutzer"
@@ -202,7 +204,9 @@
       "features": {
         "unlimitedEmployees": "Unbegrenzte Mitarbeiterzahl",
         "unlimitedTeams": "Unbegrenzte Teams",
-        "allActivities": "Alle Aktivitäten",
+        "allActivities": "Alle 158 Aktivitäten",
+        "teamBasedAccess": "Teambasierter Zugriff",
+        "createOwnActivities": "Eigene Aktivitäten erstellen",
         "managementDashboard": "Management-Dashboard",
         "reporting": "Reporting",
         "noPerUserFees": "Keine Kosten pro Nutzer"

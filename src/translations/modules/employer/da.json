@@ -23,7 +23,9 @@
       "features": {
         "unlimitedEmployees": "Ubegrænset antal medarbejdere",
         "unlimitedTeams": "Ubegrænset antal teams",
-        "allActivities": "Alle aktiviteter",
+        "allActivities": "Alle 158 aktiviteter",
+        "teamBasedAccess": "Teambaseret adgang",
+        "createOwnActivities": "Mulighed for at skabe egne aktiviteter",
         "managementDashboard": "Administrationsdashboard",
         "reporting": "Rapportering",
         "noPerUserFees": "Ingen gebyrer pr. bruger"
@@ -202,7 +204,9 @@
       "features": {
         "unlimitedEmployees": "Ubegrænset antal medarbejdere",
         "unlimitedTeams": "Ubegrænset antal teams",
-        "allActivities": "Alle aktiviteter",
+        "allActivities": "Alle 158 aktiviteter",
+        "teamBasedAccess": "Teambaseret adgang",
+        "createOwnActivities": "Mulighed for at skabe egne aktiviteter",
         "managementDashboard": "Administrationsdashboard",
         "reporting": "Rapportering",
         "noPerUserFees": "Ingen gebyrer pr. bruger"

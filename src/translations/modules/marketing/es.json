@@ -16,7 +16,7 @@
     "freeFeatures": [
       "Empleados ilimitados",
       "Equipos ilimitados",
-      "Todas las actividades para empleados",
+      "Todas las 158 actividades",
       "Acceso por equipos"
     ],
     "getStartedFree": "Empezar gratis",
@@ -27,7 +27,9 @@
     "planFeatures": [
       "Empleados ilimitados",
       "Equipos ilimitados",
-      "Todas las actividades",
+      "Todas las 158 actividades",
+      "Acceso por equipos",
+      "Crear tus propias actividades",
       "Panel de empleador",
       "Informes y analíticas",
       "Sin tarifas por usuario"
