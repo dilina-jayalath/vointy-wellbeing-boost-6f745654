@@ -34,7 +34,8 @@
       "Informes y analíticas",
       "Sin tarifas por usuario"
     ],
-    "startTrial": "Iniciar prueba gratuita de 30 días"
+    "startTrial": "Iniciar prueba gratuita de 30 días",
+    "employerPlanNote": "Incluye el registro de hasta 1.000 empleados. Cada 1.000 empleados adicionales: 149 €/mes."
   },
   "aboutPage": {
     "title": "About us",

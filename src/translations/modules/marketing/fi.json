@@ -34,7 +34,8 @@
       "Raportointi ja analytiikka",
       "Ei käyttäjäkohtaisia maksuja"
     ],
-    "startTrial": "Aloita ilmainen 30 päivän kokeilu"
+    "startTrial": "Aloita ilmainen 30 päivän kokeilu",
+    "employerPlanNote": "Sisältää enintään 1 000 työntekijän rekisteröitymisen käyttäjäksi. Seuraavat 1 000 rekisteröityjää: 149 €/kk."
   },
   "aboutPage": {
     "title": "About us",

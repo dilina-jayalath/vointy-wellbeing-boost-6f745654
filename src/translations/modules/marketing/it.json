@@ -34,7 +34,8 @@
       "Report e analisi",
       "Nessun costo per utente"
     ],
-    "startTrial": "Avvia la prova gratuita di 30 giorni"
+    "startTrial": "Avvia la prova gratuita di 30 giorni",
+    "employerPlanNote": "Include la registrazione di fino a 1.000 dipendenti. Ogni ulteriore 1.000 dipendenti: €149/mese."
   },
   "aboutPage": {
     "title": "About us",
