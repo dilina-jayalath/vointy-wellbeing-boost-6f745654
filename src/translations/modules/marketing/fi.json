@@ -16,7 +16,7 @@
     "freeFeatures": [
       "Rajattomasti työntekijöitä",
       "Rajattomasti tiimejä",
-      "Kaikki työntekijöiden aktiviteetit",
+      "Kaikki aktiviteetit 158 kpl",
       "Tiimipohjainen käyttöoikeus"
     ],
     "getStartedFree": "Aloita ilmaiseksi",
@@ -27,7 +27,9 @@
     "planFeatures": [
       "Rajattomasti työntekijöitä",
       "Rajattomasti tiimejä",
-      "Kaikki aktiviteetit",
+      "Kaikki aktiviteetit 158 kpl",
+      "Tiimipohjainen käyttöoikeus",
+      "Mahdollisuus luoda omia aktiviteetteja",
       "Työnantajan hallintapaneeli",
       "Raportointi ja analytiikka",
       "Ei käyttäjäkohtaisia maksuja"

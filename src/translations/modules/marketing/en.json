@@ -16,7 +16,7 @@
     "freeFeatures": [
       "Unlimited employees",
       "Unlimited teams",
-      "All employee activities",
+      "All 158 activities",
       "Team-based access"
     ],
     "getStartedFree": "Get started free",
@@ -27,7 +27,9 @@
     "planFeatures": [
       "Unlimited employees",
       "Unlimited teams",
-      "All activities",
+      "All 158 activities",
+      "Team-based access",
+      "Create your own activities",
       "Employer dashboard",
       "Reporting & analytics",
       "No per-user fees"
