@@ -20,6 +20,7 @@
       "title": "Activate the Employer panel",
       "description": "{orgPrefix}Vointy is free for companies and employees. The Employer panel with tracking, analytics, campaigns and events is €149/month.",
       "priceSuffix": "per month · free 30-day trial",
+      "priceNote": "Includes registration for up to 1,000 employees. Each additional 1,000: €149/month.",
       "features": {
         "unlimitedEmployees": "Unlimited employees",
         "unlimitedTeams": "Unlimited teams",

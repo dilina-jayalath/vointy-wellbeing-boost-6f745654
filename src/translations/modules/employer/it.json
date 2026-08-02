@@ -20,6 +20,7 @@
       "title": "Attiva il pannello Datore di lavoro",
       "description": "{orgPrefix}Vointy è gratuito per aziende e dipendenti. Il pannello Datore di lavoro con tracciamento, analisi, campagne ed eventi costa €149/mese.",
       "priceSuffix": "al mese · prova gratuita di 30 giorni",
+      "priceNote": "Include la registrazione di fino a 1.000 dipendenti. Ogni ulteriore 1.000: €149/mese.",
       "features": {
         "unlimitedEmployees": "Dipendenti illimitati",
         "unlimitedTeams": "Team illimitati",

@@ -20,6 +20,7 @@
       "title": "Activeer het werkgeverspaneel",
       "description": "{orgPrefix}Vointy is gratis voor bedrijven en werknemers. Het werkgeverspaneel met tracking, analyses, campagnes en events kost €149/maand.",
       "priceSuffix": "per maand · 30 dagen gratis proefperiode",
+      "priceNote": "Inclusief registratie voor maximaal 1.000 werknemers. Iedere extra 1.000: €149/maand.",
       "features": {
         "unlimitedEmployees": "Onbeperkt aantal werknemers",
         "unlimitedTeams": "Onbeperkt aantal teams",
