@@ -9,12 +9,14 @@ import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
+import LegalConsent from "@/components/auth/LegalConsent";
 
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [acceptedLegal, setAcceptedLegal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { signUp, signInWithGoogle, signInWithApple } = useAuth();
   const { t } = useTranslation();
@@ -25,6 +27,10 @@ const Signup = () => {
     e.preventDefault();
     if (password !== confirmPassword) {
       toast({ title: t("auth.passwordMismatch"), variant: "destructive" });
+      return;
+    }
+    if (!acceptedLegal) {
+      toast({ title: t("legalConsent.required"), description: t("legalConsent.requiredDescription"), variant: "destructive" });
       return;
     }
     setIsLoading(true);
@@ -41,6 +47,10 @@ const Signup = () => {
   };
 
   const handleGoogle = async () => {
+    if (!acceptedLegal) {
+      toast({ title: t("legalConsent.required"), description: t("legalConsent.requiredDescription"), variant: "destructive" });
+      return;
+    }
     setIsLoading(true);
     const { error } = await signInWithGoogle();
     setIsLoading(false);
@@ -50,6 +60,10 @@ const Signup = () => {
   };
 
   const handleApple = async () => {
+    if (!acceptedLegal) {
+      toast({ title: t("legalConsent.required"), description: t("legalConsent.requiredDescription"), variant: "destructive" });
+      return;
+    }
     setIsLoading(true);
     const { error } = await signInWithApple();
     setIsLoading(false);
@@ -102,7 +116,8 @@ const Signup = () => {
                 required
               />
             </div>
-            <Button type="submit" className="w-full bg-brand-purple hover:bg-brand-purple-dark" disabled={isLoading}>
+            <LegalConsent checked={acceptedLegal} onChange={setAcceptedLegal} />
+            <Button type="submit" className="w-full bg-brand-purple hover:bg-brand-purple-dark" disabled={isLoading || !acceptedLegal}>
               {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : t("auth.signupButton")}
             </Button>
           </form>

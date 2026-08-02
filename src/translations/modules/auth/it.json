@@ -89,5 +89,15 @@
     "alreadyDescription": "Questo indirizzo ha già annullato l'iscrizione.",
     "invalidHeading": "Link non valido",
     "invalidDescription": "Questo link di annullamento iscrizione non è valido o è scaduto."
+  },
+  "legalConsent": {
+    "prefix": "Accetto i",
+    "terms": "Termini di servizio",
+    "privacy": "Informativa sulla privacy",
+    "and": "e la",
+    "cookies": "Cookie Policy",
+    "suffix": "",
+    "required": "Accetta i termini",
+    "requiredDescription": "Devi accettare i Termini di servizio, l'Informativa sulla privacy e la Cookie Policy per continuare."
   }
 }

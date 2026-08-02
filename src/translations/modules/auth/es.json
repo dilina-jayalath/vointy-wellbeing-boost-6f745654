@@ -89,5 +89,15 @@
     "alreadyDescription": "Esta dirección ya se ha dado de baja.",
     "invalidHeading": "Enlace no válido",
     "invalidDescription": "Este enlace de cancelación de suscripción no es válido o ha caducado."
+  },
+  "legalConsent": {
+    "prefix": "Acepto los",
+    "terms": "Términos del servicio",
+    "privacy": "Política de privacidad",
+    "and": "y la",
+    "cookies": "Política de cookies",
+    "suffix": "",
+    "required": "Acepta los términos",
+    "requiredDescription": "Debes aceptar los Términos del servicio, la Política de privacidad y la Política de cookies para continuar."
   }
 }

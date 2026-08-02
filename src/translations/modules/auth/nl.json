@@ -89,5 +89,15 @@
     "alreadyDescription": "Dit adres is al afgemeld.",
     "invalidHeading": "Link niet geldig",
     "invalidDescription": "Deze uitschrijflink is ongeldig of verlopen."
+  },
+  "legalConsent": {
+    "prefix": "Ik ga akkoord met de",
+    "terms": "Servicevoorwaarden",
+    "privacy": "Privacybeleid",
+    "and": "en het",
+    "cookies": "Cookiebeleid",
+    "suffix": "",
+    "required": "Accepteer de voorwaarden",
+    "requiredDescription": "Je moet de Servicevoorwaarden, het Privacybeleid en het Cookiebeleid accepteren om door te gaan."
   }
 }

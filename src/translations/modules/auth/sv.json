@@ -89,5 +89,15 @@
     "alreadyDescription": "Den här adressen har redan avslutat sin prenumeration.",
     "invalidHeading": "Länken är inte giltig",
     "invalidDescription": "Den här avregistreringslänken är ogiltig eller har gått ut."
+  },
+  "legalConsent": {
+    "prefix": "Jag godkänner",
+    "terms": "användarvillkoren",
+    "privacy": "integritetspolicyn",
+    "and": "och",
+    "cookies": "cookiepolicyn",
+    "suffix": "",
+    "required": "Godkänn villkoren",
+    "requiredDescription": "Du måste godkänna användarvillkoren, integritetspolicyn och cookiepolicyn för att fortsätta."
   }
 }

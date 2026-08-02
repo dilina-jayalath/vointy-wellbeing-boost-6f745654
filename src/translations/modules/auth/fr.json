@@ -89,5 +89,15 @@
     "alreadyDescription": "Cette adresse est déjà désinscrite.",
     "invalidHeading": "Lien non valide",
     "invalidDescription": "Ce lien de désinscription n'est pas valide ou a expiré."
+  },
+  "legalConsent": {
+    "prefix": "J'accepte les",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "and": "et la",
+    "cookies": "Politique relative aux cookies",
+    "suffix": "",
+    "required": "Veuillez accepter les conditions",
+    "requiredDescription": "Vous devez accepter les Conditions d'utilisation, la Politique de confidentialité et la Politique relative aux cookies pour continuer."
   }
 }

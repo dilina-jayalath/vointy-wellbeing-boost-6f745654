@@ -9,6 +9,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/lib/i18n";
 import { Loader2, MailCheck, PartyPopper } from "lucide-react";
+import LegalConsent from "@/components/auth/LegalConsent";
 
 interface InviteInfo {
   organization_name: string;
@@ -31,6 +32,7 @@ const JoinCompany = () => {
   const [sent, setSent] = useState(false);
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [acceptedLegal, setAcceptedLegal] = useState(false);
 
   useEffect(() => {
     if (!token) {
@@ -63,6 +65,10 @@ const JoinCompany = () => {
     e.preventDefault();
     if (password.length < 8) {
       toast({ title: t("joinCompany.passwordTooShort"), description: t("joinCompany.useAtLeast8Chars"), variant: "destructive" });
+      return;
+    }
+    if (!acceptedLegal) {
+      toast({ title: t("legalConsent.required"), description: t("legalConsent.requiredDescription"), variant: "destructive" });
       return;
     }
     setBusy(true);
@@ -153,7 +159,8 @@ const JoinCompany = () => {
                       required
                     />
                   </div>
-                  <Button type="submit" disabled={busy} className="w-full bg-brand-purple hover:bg-brand-purple-dark">
+                  <LegalConsent checked={acceptedLegal} onChange={setAcceptedLegal} id="join-legal-consent" />
+                  <Button type="submit" disabled={busy || !acceptedLegal} className="w-full bg-brand-purple hover:bg-brand-purple-dark">
                     {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : t("joinCompany.createAccountAndJoin")}
                   </Button>
                   <p className="text-center text-sm">
