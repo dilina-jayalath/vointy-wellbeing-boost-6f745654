@@ -72,7 +72,8 @@
     "createAccountAndJoin": "Crea account e unisciti",
     "alreadyHaveAccount": "Hai già un account?",
     "logIn": "Accedi",
-    "andOpenLinkAgain": "e riapri questo link."
+    "andOpenLinkAgain": "e riapri questo link.",
+    "confirmPassword": "Conferma password"
   },
   "accountPage": {
     "endSession": "Termina la sessione su questo dispositivo.",
@@ -98,6 +99,8 @@
     "cookies": "Cookie Policy",
     "suffix": "",
     "required": "Accetta i termini",
-    "requiredDescription": "Devi accettare i Termini di servizio, l'Informativa sulla privacy e la Cookie Policy per continuare."
+    "requiredDescription": "Devi accettare i Termini di servizio, l'Informativa sulla privacy e la Cookie Policy per continuare.",
+    "showPassword": "Mostra password",
+    "hidePassword": "Nascondi password"
   }
 }

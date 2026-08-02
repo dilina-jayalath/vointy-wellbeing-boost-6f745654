@@ -72,7 +72,8 @@
     "createAccountAndJoin": "Konto erstellen & beitreten",
     "alreadyHaveAccount": "Haben Sie bereits ein Konto?",
     "logIn": "Anmelden",
-    "andOpenLinkAgain": "und öffnen Sie diesen Link erneut."
+    "andOpenLinkAgain": "und öffnen Sie diesen Link erneut.",
+    "confirmPassword": "Passwort bestätigen"
   },
   "accountPage": {
     "endSession": "Beenden Sie Ihre Sitzung auf diesem Gerät.",
@@ -98,6 +99,8 @@
     "cookies": "Cookie-Richtlinie",
     "suffix": " zu",
     "required": "Bitte akzeptieren Sie die Bedingungen",
-    "requiredDescription": "Sie müssen die Nutzungsbedingungen, die Datenschutzerklärung und die Cookie-Richtlinie akzeptieren, um fortzufahren."
+    "requiredDescription": "Sie müssen die Nutzungsbedingungen, die Datenschutzerklärung und die Cookie-Richtlinie akzeptieren, um fortzufahren.",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen"
   }
 }

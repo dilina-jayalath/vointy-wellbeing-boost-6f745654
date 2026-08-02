@@ -72,7 +72,8 @@
     "createAccountAndJoin": "Create account & join",
     "alreadyHaveAccount": "Already have an account?",
     "logIn": "Log in",
-    "andOpenLinkAgain": "and open this link again."
+    "andOpenLinkAgain": "and open this link again.",
+    "confirmPassword": "Confirm password"
   },
   "accountPage": {
     "endSession": "End your session on this device.",
@@ -98,6 +99,8 @@
     "cookies": "Cookie Policy",
     "suffix": "",
     "required": "Please accept the terms",
-    "requiredDescription": "You must accept the Terms of Service, Privacy Policy and Cookie Policy to continue."
+    "requiredDescription": "You must accept the Terms of Service, Privacy Policy and Cookie Policy to continue.",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
   }
 }

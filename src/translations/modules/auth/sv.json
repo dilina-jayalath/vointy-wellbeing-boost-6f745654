@@ -72,7 +72,8 @@
     "createAccountAndJoin": "Skapa konto och gå med",
     "alreadyHaveAccount": "Har du redan ett konto?",
     "logIn": "Logga in",
-    "andOpenLinkAgain": "och öppna den här länken igen."
+    "andOpenLinkAgain": "och öppna den här länken igen.",
+    "confirmPassword": "Bekräfta lösenord"
   },
   "accountPage": {
     "endSession": "Avsluta din session på den här enheten.",
@@ -98,6 +99,8 @@
     "cookies": "cookiepolicyn",
     "suffix": "",
     "required": "Godkänn villkoren",
-    "requiredDescription": "Du måste godkänna användarvillkoren, integritetspolicyn och cookiepolicyn för att fortsätta."
+    "requiredDescription": "Du måste godkänna användarvillkoren, integritetspolicyn och cookiepolicyn för att fortsätta.",
+    "showPassword": "Visa lösenord",
+    "hidePassword": "Dölj lösenord"
   }
 }
