@@ -72,7 +72,8 @@
     "createAccountAndJoin": "Opret konto og deltag",
     "alreadyHaveAccount": "Har du allerede en konto?",
     "logIn": "Log ind",
-    "andOpenLinkAgain": "og åbn dette link igen."
+    "andOpenLinkAgain": "og åbn dette link igen.",
+    "confirmPassword": "Bekræft adgangskode"
   },
   "accountPage": {
     "endSession": "Afslut din session på denne enhed.",
@@ -98,6 +99,8 @@
     "cookies": "cookiepolitikken",
     "suffix": "",
     "required": "Accepter vilkårene",
-    "requiredDescription": "Du skal acceptere servicevilkårene, privatlivspolitikken og cookiepolitikken for at fortsætte."
+    "requiredDescription": "Du skal acceptere servicevilkårene, privatlivspolitikken og cookiepolitikken for at fortsætte.",
+    "showPassword": "Vis adgangskode",
+    "hidePassword": "Skjul adgangskode"
   }
 }

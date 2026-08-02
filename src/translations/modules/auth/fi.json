@@ -72,7 +72,8 @@
     "createAccountAndJoin": "Luo tili ja liity",
     "alreadyHaveAccount": "Onko sinulla jo tili?",
     "logIn": "Kirjaudu sisään",
-    "andOpenLinkAgain": "ja avaa tämä linkki uudelleen."
+    "andOpenLinkAgain": "ja avaa tämä linkki uudelleen.",
+    "confirmPassword": "Vahvista salasana"
   },
   "accountPage": {
     "endSession": "Lopeta istuntosi tällä laitteella.",
@@ -98,6 +99,8 @@
     "cookies": "evästekäytännön",
     "suffix": "",
     "required": "Hyväksy ehdot",
-    "requiredDescription": "Sinun on hyväksyttävä käyttöehdot, tietosuojakäytäntö ja evästekäytäntö jatkaaksesi."
+    "requiredDescription": "Sinun on hyväksyttävä käyttöehdot, tietosuojakäytäntö ja evästekäytäntö jatkaaksesi.",
+    "showPassword": "Näytä salasana",
+    "hidePassword": "Piilota salasana"
   }
 }

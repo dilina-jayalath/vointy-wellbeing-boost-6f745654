@@ -72,7 +72,8 @@
     "createAccountAndJoin": "Account aanmaken & deelnemen",
     "alreadyHaveAccount": "Heeft u al een account?",
     "logIn": "Inloggen",
-    "andOpenLinkAgain": "en open deze link opnieuw."
+    "andOpenLinkAgain": "en open deze link opnieuw.",
+    "confirmPassword": "Wachtwoord bevestigen"
   },
   "accountPage": {
     "endSession": "Beëindig uw sessie op dit apparaat.",
@@ -98,6 +99,8 @@
     "cookies": "Cookiebeleid",
     "suffix": "",
     "required": "Accepteer de voorwaarden",
-    "requiredDescription": "Je moet de Servicevoorwaarden, het Privacybeleid en het Cookiebeleid accepteren om door te gaan."
+    "requiredDescription": "Je moet de Servicevoorwaarden, het Privacybeleid en het Cookiebeleid accepteren om door te gaan.",
+    "showPassword": "Wachtwoord weergeven",
+    "hidePassword": "Wachtwoord verbergen"
   }
 }
