@@ -89,5 +89,15 @@
     "alreadyDescription": "Diese Adresse hat sich bereits abgemeldet.",
     "invalidHeading": "Link ungültig",
     "invalidDescription": "Dieser Abmeldelink ist ungültig oder abgelaufen."
+  },
+  "legalConsent": {
+    "prefix": "Ich stimme den",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "and": "und der",
+    "cookies": "Cookie-Richtlinie",
+    "suffix": " zu",
+    "required": "Bitte akzeptieren Sie die Bedingungen",
+    "requiredDescription": "Sie müssen die Nutzungsbedingungen, die Datenschutzerklärung und die Cookie-Richtlinie akzeptieren, um fortzufahren."
   }
 }

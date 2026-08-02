@@ -89,5 +89,15 @@
     "alreadyDescription": "This address is already opted out.",
     "invalidHeading": "Link not valid",
     "invalidDescription": "This unsubscribe link is invalid or has expired."
+  },
+  "legalConsent": {
+    "prefix": "I agree to the",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "and": "and",
+    "cookies": "Cookie Policy",
+    "suffix": "",
+    "required": "Please accept the terms",
+    "requiredDescription": "You must accept the Terms of Service, Privacy Policy and Cookie Policy to continue."
   }
 }

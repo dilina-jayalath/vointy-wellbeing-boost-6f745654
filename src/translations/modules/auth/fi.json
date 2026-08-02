@@ -89,5 +89,15 @@
     "alreadyDescription": "Tämä osoite on jo perunut tilauksen.",
     "invalidHeading": "Linkki ei ole voimassa",
     "invalidDescription": "Tämä peruutuslinkki ei ole voimassa tai on vanhentunut."
+  },
+  "legalConsent": {
+    "prefix": "Hyväksyn",
+    "terms": "käyttöehdot",
+    "privacy": "tietosuojakäytännön",
+    "and": "ja",
+    "cookies": "evästekäytännön",
+    "suffix": "",
+    "required": "Hyväksy ehdot",
+    "requiredDescription": "Sinun on hyväksyttävä käyttöehdot, tietosuojakäytäntö ja evästekäytäntö jatkaaksesi."
   }
 }

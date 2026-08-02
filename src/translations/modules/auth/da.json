@@ -89,5 +89,15 @@
     "alreadyDescription": "Denne adresse er allerede afmeldt.",
     "invalidHeading": "Linket er ikke gyldigt",
     "invalidDescription": "Dette afmeldingslink er ugyldigt eller er udløbet."
+  },
+  "legalConsent": {
+    "prefix": "Jeg accepterer",
+    "terms": "servicevilkårene",
+    "privacy": "privatlivspolitikken",
+    "and": "og",
+    "cookies": "cookiepolitikken",
+    "suffix": "",
+    "required": "Accepter vilkårene",
+    "requiredDescription": "Du skal acceptere servicevilkårene, privatlivspolitikken og cookiepolitikken for at fortsætte."
   }
 }
