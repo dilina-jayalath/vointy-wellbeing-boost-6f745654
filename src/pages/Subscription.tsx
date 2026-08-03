@@ -75,6 +75,9 @@ const Subscription = () => {
                     <span className="text-5xl font-bold text-brand-dark">€0</span>
                     <span className="text-gray-500 ml-2 mb-1">{t('pricingPage.freeForever')}</span>
                   </div>
+                  <p className="text-sm text-brand-purple font-medium mb-4">
+                    {t('pricingPage.freePlanNote')}
+                  </p>
                   <p className="text-gray-600 mb-6">
                     {t('pricingPage.freeDescription')}
                   </p>
