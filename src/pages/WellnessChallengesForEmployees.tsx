@@ -77,7 +77,7 @@ const WellnessChallengesForEmployees = () => {
     <div className="min-h-screen">
       <Seo
         title="Wellness Challenges for Employees — Vointy.life"
-        description="Run wellness challenges for employees: recovery, movement, mobility and team challenges from a 158-activity archive. Free for companies, Employer panel €149/month."
+        description="Run wellness challenges for employees: recovery, movement and team challenges from a 158-activity archive. Free for companies; Employer panel €149/month."
         path="/wellness-challenges-for-employees"
         jsonLd={jsonLd}
       />
