@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, MapPin, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from '@/lib/i18n';
 
@@ -54,17 +54,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">{t('contactPage.emailUsLabel')}</h3>
-                      <p className="text-gray-600">hello@vointy.life</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-brand-blue/10 rounded-lg flex items-center justify-center mr-4">
-                      <Phone className="h-6 w-6 text-brand-blue" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">{t('contactPage.callUsLabel')}</h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
+                      <p className="text-gray-600">contact@vointy.life</p>
                     </div>
                   </div>
                   

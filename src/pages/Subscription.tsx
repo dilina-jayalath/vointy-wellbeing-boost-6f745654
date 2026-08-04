@@ -70,7 +70,7 @@ const Subscription = () => {
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
               <Card className="border border-gray-200 shadow-sm">
                 <CardContent className="p-8 flex flex-col h-full">
-                  <h3 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.freeTitle')}</h3>
+                  <h2 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.freeTitle')}</h2>
                   <div className="flex items-end mb-4">
                     <span className="text-5xl font-bold text-brand-dark">€0</span>
                     <span className="text-gray-500 ml-2 mb-1">{t('pricingPage.freeForever')}</span>
@@ -104,7 +104,7 @@ const Subscription = () => {
                   {t('pricingPage.employerDashboardBadge')}
                 </div>
                 <CardContent className="p-8 flex flex-col h-full">
-                  <h3 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.companyPlanTitle')}</h3>
+                  <h2 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.companyPlanTitle')}</h2>
                   <div className="flex items-end mb-2">
                     <span className="text-5xl font-bold text-brand-dark">€149</span>
                     <span className="text-gray-500 ml-2 mb-1">{t('pricingPage.perMonthPerCompany')}</span>

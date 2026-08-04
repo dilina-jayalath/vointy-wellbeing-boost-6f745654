@@ -51,7 +51,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <img src={vointyMark.url} alt="Vointy logo" className="h-9 w-auto" />
+              <img src={vointyMark.url} alt="Vointy" className="h-9 w-auto" />
               <h3 className="text-xl font-bold">Vointy.life</h3>
             </div>
             <p className="text-sm text-brand-purple mb-4 font-medium tracking-wide">Build healthier habits, together.</p>

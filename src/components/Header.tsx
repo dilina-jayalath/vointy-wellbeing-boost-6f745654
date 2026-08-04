@@ -32,7 +32,7 @@ const Header = () => {
           <div className="flex items-center gap-2">
             {showBack && <BackButton className="text-gray-700 hover:text-brand-purple px-2" />}
             <Link to="/" className="flex items-center gap-2">
-              <img src={vointyMark.url} alt="Vointy logo" className="h-9 w-auto" />
+              <img src={vointyMark.url} alt="Vointy" className="h-9 w-auto" />
               <div className="flex flex-col leading-none">
                 <span className="text-2xl font-bold text-brand-purple">Vointy<span className="text-brand-blue">.life</span></span>
                 <span className="text-[11px] text-gray-500 font-medium tracking-wide">Build healthier habits, together.</span>
@@ -85,6 +85,8 @@ const Header = () => {
           
           <button 
             className="md:hidden text-gray-700"
+            aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

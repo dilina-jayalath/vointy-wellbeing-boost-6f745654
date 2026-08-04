@@ -40,17 +40,17 @@ const About = () => {
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <Heart className="h-12 w-12 text-brand-purple mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">{t('aboutPage.value1Title')}</h3>
+              <h2 className="text-lg font-bold mb-2">{t('aboutPage.value1Title')}</h2>
               <p className="text-muted-foreground">{t('aboutPage.value1Description')}</p>
             </div>
             <div className="text-center">
               <Users className="h-12 w-12 text-brand-blue mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">{t('aboutPage.value2Title')}</h3>
+              <h2 className="text-lg font-bold mb-2">{t('aboutPage.value2Title')}</h2>
               <p className="text-muted-foreground">{t('aboutPage.value2Description')}</p>
             </div>
             <div className="text-center">
               <Building2 className="h-12 w-12 text-brand-purple mx-auto mb-4" />
-              <h3 className="text-lg font-bold mb-2">{t('aboutPage.value3Title')}</h3>
+              <h2 className="text-lg font-bold mb-2">{t('aboutPage.value3Title')}</h2>
               <p className="text-muted-foreground">{t('aboutPage.value3Description')}</p>
             </div>
           </div>
