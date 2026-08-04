@@ -12,8 +12,6 @@ interface SeoProps {
   image?: string;
 }
 
-const DEFAULT_IMAGE = `${SITE}/og-image.jpg`;
-
 const Seo = ({ title, description, path, jsonLd, noindex, ogType = 'website', image }: SeoProps) => {
   const url = `${SITE}${path}`;
   const imageUrl = image?.startsWith('http') ? image : `${SITE}${image ?? '/og-image.jpg'}`;
