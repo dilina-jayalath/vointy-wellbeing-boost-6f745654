@@ -64,7 +64,7 @@ const Account = () => {
       <div className="max-w-2xl mx-auto space-y-6">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-display">{t("account.title")}</CardTitle>
+            <h1 className="text-2xl font-display font-semibold leading-none tracking-tight">{t("account.title")}</h1>
             <CardDescription>{user?.email}</CardDescription>
           </CardHeader>
           <CardContent>

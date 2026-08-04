@@ -62,9 +62,9 @@ const ResetPassword = () => {
       <Seo title="Reset password — Vointy.life" description="Reset your Vointy.life password to regain access to your team activities, challenges and wellbeing data." path="/reset-password" noindex />
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-display">
+          <h1 className="text-2xl font-display font-semibold leading-none tracking-tight">
             {mode === "update" ? t("authPages.setNewPassword") : t("authPages.resetYourPassword")}
-          </CardTitle>
+          </h1>
           <CardDescription>
             {mode === "update"
               ? t("authPages.enterNewPasswordBelow")

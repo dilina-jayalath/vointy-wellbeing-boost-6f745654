@@ -21,6 +21,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vointy.life/wellness-challenges-for-employees</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://vointy.life/careers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -21,12 +21,12 @@ const WhyVointy = () => {
             <div className="grid sm:grid-cols-2 gap-8">
               <div className="p-6 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100">
                 <TrendingUp className="text-brand-purple mb-4" size={32} />
-                <h4 className="text-lg font-bold mb-2">Track Progress</h4>
+                <h3 className="text-lg font-bold mb-2">Track Progress</h3>
                 <p className="text-gray-600">Personalized activity scores to monitor growth.</p>
               </div>
               <div className="p-6 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100">
                 <Users className="text-brand-blue mb-4" size={32} />
-                <h4 className="text-lg font-bold mb-2">Social Push</h4>
+                <h3 className="text-lg font-bold mb-2">Social Push</h3>
                 <p className="text-gray-600">Invite friends and stay motivated together.</p>
               </div>
             </div>

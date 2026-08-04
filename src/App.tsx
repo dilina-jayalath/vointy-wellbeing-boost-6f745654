@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import Subscription from "./pages/Subscription";
 import About from "./pages/About";
 import CorporateWellnessPrograms from "./pages/CorporateWellnessPrograms";
+import WellnessChallengesForEmployees from "./pages/WellnessChallengesForEmployees";
 import Careers from "./pages/Careers";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -71,6 +72,7 @@ const App = () => (
               <Route path="/subscription" element={<Subscription />} />
               <Route path="/about" element={<About />} />
               <Route path="/corporate-wellness-programs" element={<CorporateWellnessPrograms />} />
+              <Route path="/wellness-challenges-for-employees" element={<WellnessChallengesForEmployees />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />

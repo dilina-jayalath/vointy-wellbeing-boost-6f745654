@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from '@/lib/i18n';
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 import { Trophy, Moon, Zap, Dumbbell, Users2, Apple, PlusCircle } from 'lucide-react';
 import recoveryImg from '@/assets/challenge-recovery.jpg';
 import moveImg from '@/assets/challenge-move.jpg';
@@ -44,6 +45,14 @@ const Challenges = () => {
           </h2>
           <p className="text-xl text-gray-600">
             Keep your team engaged with a variety of fun and impactful wellness challenges.
+          </p>
+          <p className="mt-4">
+            <Link
+              to="/wellness-challenges-for-employees"
+              className="text-brand-purple font-medium underline"
+            >
+              See all wellness challenges for employees
+            </Link>
           </p>
         </div>
         

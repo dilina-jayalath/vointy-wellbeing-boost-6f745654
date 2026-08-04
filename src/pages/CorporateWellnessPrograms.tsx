@@ -247,11 +247,19 @@ const CorporateWellnessPrograms = () => {
             <Link to="/contact-form" className="text-brand-purple underline">
               contact us
             </Link>{' '}
-            to walk through the Employer panel first. Read more{' '}
+            to walk through the Employer panel first. You can also read{' '}
             <Link to="/about" className="text-brand-purple underline">
-              about Wellthyforce Oy
+              about Wellthyforce Oy, the Finnish company behind Vointy
+            </Link>
+            , or see{' '}
+            <Link
+              to="/wellness-challenges-for-employees"
+              className="text-brand-purple underline"
+            >
+              wellness challenges for employees
             </Link>
             .
+
           </p>
           <Button asChild size="lg">
             <Link to="/company-signup">Create a free company account</Link>
