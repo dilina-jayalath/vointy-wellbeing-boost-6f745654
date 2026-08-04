@@ -9,6 +9,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation, languages } from "@/lib/i18n";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
+import Seo from "@/components/Seo";
 
 const Account = () => {
   const { user, profile, isAdmin, signOut, updateProfile, loading } = useAuth();
@@ -54,6 +55,12 @@ const Account = () => {
 
   return (
     <div className="min-h-screen py-24 px-4 bg-gradient-to-br from-brand-purple-light to-white">
+      <Seo
+        title="Your account — Vointy.life"
+        description="Manage your Vointy account: profile details, language preference and sign-in settings on vointy.life."
+        path="/account"
+        noindex
+      />
       <div className="max-w-2xl mx-auto space-y-6">
         <Card>
           <CardHeader>

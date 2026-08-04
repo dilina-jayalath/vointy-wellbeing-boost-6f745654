@@ -25,6 +25,7 @@ import MessageReply from "@/components/admin/MessageReply";
 import BlogManager from "@/components/admin/BlogManager";
 import NewsletterList from "@/components/admin/NewsletterList";
 import AdminRoles from "@/components/admin/AdminRoles";
+import Seo from "@/components/Seo";
 
 
 
@@ -180,6 +181,12 @@ const AdminDashboard = () => {
 
   return (
     <div className="min-h-screen py-10 px-4 bg-slate-50">
+      <Seo
+        title="Admin dashboard — Vointy.life"
+        description="Vointy platform administration: messages, subscribers, revenue, employees and site analytics in one place."
+        path="/admin"
+        noindex
+      />
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-6">
           <BackButton fallback="/" />
