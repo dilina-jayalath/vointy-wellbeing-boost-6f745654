@@ -151,8 +151,10 @@ const EmployerLayout = () => {
             ) : locked ? (
               <EmployerPaywall />
             ) : (
-              <EmployerSeo />
-              <Outlet />
+              <>
+                <EmployerSeo />
+                <Outlet />
+              </>
             )}
           </main>
 
