@@ -121,7 +121,8 @@
         "category": "Implementering"
       }
     ],
-    "loadMore": "Ladda fler inlägg"
+    "loadMore": "Ladda fler inlägg",
+    "latestPosts": "Senaste inläggen"
   },
   "contactPage": {
     "title": "Kontakta oss",

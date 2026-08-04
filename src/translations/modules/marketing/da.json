@@ -121,7 +121,8 @@
         "category": "Implementering"
       }
     ],
-    "loadMore": "Indlæs flere indlæg"
+    "loadMore": "Indlæs flere indlæg",
+    "latestPosts": "Seneste indlæg"
   },
   "contactPage": {
     "title": "Kontakt os",

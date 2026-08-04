@@ -121,7 +121,8 @@
         "category": "Implementation"
       }
     ],
-    "loadMore": "Load More Posts"
+    "loadMore": "Load More Posts",
+    "latestPosts": "Latest posts"
   },
   "contactPage": {
     "title": "Contact Us",

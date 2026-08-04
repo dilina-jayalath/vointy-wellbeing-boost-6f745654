@@ -121,7 +121,8 @@
         "category": "Mise en œuvre"
       }
     ],
-    "loadMore": "Charger plus d'articles"
+    "loadMore": "Charger plus d'articles",
+    "latestPosts": "Derniers articles"
   },
   "contactPage": {
     "title": "Contactez-nous",

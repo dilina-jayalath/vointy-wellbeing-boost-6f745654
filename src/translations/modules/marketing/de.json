@@ -121,7 +121,8 @@
         "category": "Umsetzung"
       }
     ],
-    "loadMore": "Weitere Beiträge laden"
+    "loadMore": "Weitere Beiträge laden",
+    "latestPosts": "Neueste Beiträge"
   },
   "contactPage": {
     "title": "Kontaktieren Sie uns",

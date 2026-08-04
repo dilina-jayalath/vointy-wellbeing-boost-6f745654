@@ -101,10 +101,10 @@ const ContactForm = () => {
             ) : (
               <Card className="shadow-2xl border-none overflow-hidden">
                 <CardHeader className="bg-brand-purple text-white p-8">
-                  <CardTitle className="text-2xl flex items-center gap-3">
+                  <h2 className="text-2xl font-semibold leading-none tracking-tight flex items-center gap-3">
                     <Send size={24} />
                     {t('license.formTitle')}
-                  </CardTitle>
+                  </h2>
                 </CardHeader>
                 <CardContent className="p-8 bg-white">
                   <form onSubmit={handleSubmit} className="space-y-6">

@@ -121,7 +121,8 @@
         "category": "Implementatie"
       }
     ],
-    "loadMore": "Meer berichten laden"
+    "loadMore": "Meer berichten laden",
+    "latestPosts": "Nieuwste berichten"
   },
   "contactPage": {
     "title": "Neem contact op",
