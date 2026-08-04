@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import BackButton from "@/components/BackButton";
+import EmployerSeo from "@/components/employer/EmployerSeo";
 
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
@@ -150,6 +151,7 @@ const EmployerLayout = () => {
             ) : locked ? (
               <EmployerPaywall />
             ) : (
+              <EmployerSeo />
               <Outlet />
             )}
           </main>

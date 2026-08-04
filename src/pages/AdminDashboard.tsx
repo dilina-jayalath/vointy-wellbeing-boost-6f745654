@@ -25,6 +25,7 @@ import MessageReply from "@/components/admin/MessageReply";
 import BlogManager from "@/components/admin/BlogManager";
 import NewsletterList from "@/components/admin/NewsletterList";
 import AdminRoles from "@/components/admin/AdminRoles";
+import Seo from "@/components/Seo";
 
 
 

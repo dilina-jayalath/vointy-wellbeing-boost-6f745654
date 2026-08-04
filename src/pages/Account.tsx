@@ -9,6 +9,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation, languages } from "@/lib/i18n";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
+import Seo from "@/components/Seo";
 
 const Account = () => {
   const { user, profile, isAdmin, signOut, updateProfile, loading } = useAuth();
