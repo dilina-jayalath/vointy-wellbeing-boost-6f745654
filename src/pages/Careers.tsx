@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useTranslation } from '@/lib/i18n';
+import Seo from '@/components/Seo';
 
 const renderWithEmail = (text: string) => {
   const email = 'contact@vointy.life';
@@ -24,6 +25,7 @@ const Careers = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Seo title={"Careers — Vointy.life"} description={"Join Vointy.life: we are looking for sales representatives and partnership partners in workplace wellbeing."} path="/careers" />
       <Header />
       
       {/* Hero Section */}

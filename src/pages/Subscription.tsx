@@ -10,6 +10,7 @@ import { useEmployerOrg } from '@/hooks/useEmployerOrg';
 import { usePaddleCheckout } from '@/hooks/usePaddleCheckout';
 import { EMPLOYER_PRICE_ID } from '@/lib/paddle';
 import { useTranslation } from '@/lib/i18n';
+import Seo from '@/components/Seo';
 
 
 const Subscription = () => {
@@ -39,6 +40,7 @@ const Subscription = () => {
   return (
 
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Seo title={"Pricing — Vointy.life"} description={"One simple price: €149/month for the employer panel. Unlimited employees, unlimited teams, free 30-day trial."} path="/subscription" />
       <Header />
 
       <main className="flex-grow pt-24">

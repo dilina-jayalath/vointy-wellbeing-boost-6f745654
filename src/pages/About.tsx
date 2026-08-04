@@ -3,11 +3,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useTranslation } from '@/lib/i18n';
 import { Heart, Users, Building2 } from 'lucide-react';
+import Seo from '@/components/Seo';
 
 const About = () => {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen">
+      <Seo title={"About us — Vointy.life"} description={"Vointy.life is built by Finnish start-up Wellthyforce Oy to improve employee wellbeing through healthy habits and shared activities."} path="/about" />
       <Header />
 
       {/* Hero Section */}

@@ -9,6 +9,7 @@ import { useTranslation } from '@/lib/i18n';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import BlogMedia from '@/components/blog/BlogMedia';
+import Seo from '@/components/Seo';
 
 interface BlogPost {
   title: string;
@@ -39,6 +40,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo title={"Blog — Vointy.life"} description={"Insights and best practices for workplace wellbeing, employee engagement and healthy habits at work."} path="/blog" />
       <Header />
       
       {/* Hero Section */}

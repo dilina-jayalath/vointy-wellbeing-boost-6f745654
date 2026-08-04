@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, MapPin, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from '@/lib/i18n';
+import Seo from '@/components/Seo';
 
 interface Reason {
   title: string;
@@ -18,6 +19,7 @@ const Contact = () => {
   const reasons = t('contactPage.reasons') as Reason[];
   return (
     <div className="min-h-screen">
+      <Seo title={"Contact — Vointy.life"} description={"Get in touch with the Vointy.life team in Oulu, Finland. Email contact@vointy.life or request a demo."} path="/contact" />
       <Header />
       
       {/* Hero Section */}
