@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "sdk_version": "0.26.1",
+  "path": "/mcp",
+  "auth": {
+    "type": "oauth",
+    "issuer": "https://jwzdpmqirvwguftvrvyu.supabase.co/auth/v1",
+    "accepted_audiences": [
+      "authenticated"
+    ]
+  },
+  "mcp": {
+    "server": {
+      "name": "vointy-wellbeing-boost",
+      "version": "0.1.0",
+      "title": "vointy-wellbeing-boost"
+    },
+    "tools": [
+      {
+        "name": "get_my_profile",
+        "title": "Get my profile",
+        "description": "Return the signed-in user's Vointy profile: display name, language and organization.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "search_activities",
+        "title": "Search activities",
+        "description": "Search the Vointy activity catalogue the signed-in user can access. Returns id, title, description, unit and points.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Free-text search on the activity title."
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of activities to return (default 20)."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "log_activity",
+        "title": "Log a performed activity",
+        "description": "Log a completed activity for the signed-in user. Each logged activity earns 1 Activity Index point.",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "activity_id": {
+              "type": "string",
+              "format": "uuid",
+              "description": "Activity id from search_activities."
+            },
+            "amount": {
+              "type": "number",
+              "description": "Performed amount in the activity's unit (e.g. minutes)."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional note about the performance."
+            }
+          },
+          "required": [
+            "activity_id",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_activity_index",
+        "title": "Get my Activity Index",
+        "description": "Return the signed-in user's Activity Index: total points and points per month for the current calendar year. Every logged activity is worth 1 point.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_challenges",
+        "title": "List challenges",
+        "description": "List challenges visible to the signed-in user, optionally only the ones they have joined.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "joined_only": {
+              "type": "boolean",
+              "description": "When true, only challenges the user has joined."
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of challenges (default 20)."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "join_challenge",
+        "title": "Join a challenge",
+        "description": "Join a challenge as the signed-in user. Use list_challenges to find a challenge id.",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "challenge_id": {
+              "type": "string",
+              "format": "uuid",
+              "description": "Challenge id to join."
+            }
+          },
+          "required": [
+            "challenge_id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_community_posts",
+        "title": "List community posts",
+        "description": "List the most recent community feed posts visible to the signed-in user.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of posts (default 20)."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "create_community_post",
+        "title": "Create a community post",
+        "description": "Publish a post to the Vointy community feed as the signed-in user.",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Post text."
+            },
+            "image_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Optional image URL to attach."
+            }
+          },
+          "required": [
+            "content"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
