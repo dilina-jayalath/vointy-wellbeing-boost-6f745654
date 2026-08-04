@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Cookie, Settings, BarChart3, Zap, Users, Globe, Shield, Mail, Building } from 'lucide-react';
+import Seo from '@/components/Seo';
 
 const CookiePolicy = () => {
   const sections = [
@@ -183,6 +184,7 @@ const CookiePolicy = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title="Cookie Policy — Vointy.life" description="Which cookies Vointy.life uses, why we use them and how you can control cookie preferences in your browser." path="/cookie-policy" />
       <Header />
       
       <section className="pt-24 pb-16 bg-gradient-to-br from-orange-500 to-brand-purple text-white relative overflow-hidden">

@@ -9,6 +9,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
+import Seo from '@/components/Seo';
 
 
 const safeNext = (value: string | null) =>
@@ -62,6 +63,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-br from-brand-purple-light to-white">
+      <Seo title="Log in — Vointy.life" description="Log in to Vointy.life to track activities, join team challenges and build healthier habits together." path="/login" noindex />
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <img src={vointyMark.url} alt="Vointy logo" className="mx-auto mb-2 h-12 w-auto" />

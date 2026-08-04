@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Lock, Eye, UserCheck, Globe, Clock, Phone, Mail, Building, FileText, Users, Stethoscope } from 'lucide-react';
+import Seo from '@/components/Seo';
 
 const PrivacyPolicy = () => {
   const sections = [
@@ -333,6 +334,7 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title="Privacy Policy — Vointy.life" description="How Wellthyforce Oy collects, uses and protects personal data in the Vointy.life employee wellbeing platform." path="/privacy-policy" />
       <Header />
       
       <section className="pt-24 pb-16 bg-gradient-to-br from-brand-purple to-brand-blue text-white relative overflow-hidden">

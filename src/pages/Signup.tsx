@@ -11,6 +11,7 @@ import { useTranslation } from "@/lib/i18n";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 import LegalConsent from "@/components/auth/LegalConsent";
 import PasswordInput from "@/components/auth/PasswordInput";
+import Seo from '@/components/Seo';
 
 
 const Signup = () => {
@@ -75,6 +76,7 @@ const Signup = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-br from-brand-purple-light to-white">
+      <Seo title="Sign up — Vointy.life" description="Create your free Vointy.life account and start building healthier habits with your team today." path="/signup" noindex />
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <img src={vointyMark.url} alt="Vointy logo" className="mx-auto mb-2 h-12 w-auto" />
