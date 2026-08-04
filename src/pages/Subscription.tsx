@@ -40,7 +40,35 @@ const Subscription = () => {
   return (
 
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Seo title={"Pricing — Vointy.life"} description={"One simple price: €149/month for the employer panel. Unlimited employees, unlimited teams, free 30-day trial."} path="/subscription" />
+      <Seo
+        title={"Pricing — Vointy.life"}
+        description={"One simple price: €149/month for the employer panel. Unlimited employees, unlimited teams, free 30-day trial."}
+        path="/subscription"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          name: 'Vointy.life Employer panel',
+          description:
+            'Employer panel for Vointy.life: analytics, reporting, campaigns, events and team-based access. Includes up to 1000 registered employees per company.',
+          brand: { '@type': 'Brand', name: 'Vointy.life' },
+          url: 'https://vointy.life/subscription',
+          offers: {
+            '@type': 'Offer',
+            price: '149',
+            priceCurrency: 'EUR',
+            url: 'https://vointy.life/subscription',
+            availability: 'https://schema.org/InStock',
+            priceSpecification: {
+              '@type': 'UnitPriceSpecification',
+              price: '149',
+              priceCurrency: 'EUR',
+              billingIncrement: 1,
+              unitText: 'MONTH',
+            },
+            seller: { '@type': 'Organization', name: 'Wellthyforce Oy' },
+          },
+        }}
+      />
       <Header />
 
       <main className="flex-grow pt-24">

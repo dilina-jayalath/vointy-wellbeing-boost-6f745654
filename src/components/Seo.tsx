@@ -9,10 +9,12 @@ interface SeoProps {
   jsonLd?: Record<string, unknown>;
   noindex?: boolean;
   ogType?: string;
+  image?: string;
 }
 
-const Seo = ({ title, description, path, jsonLd, noindex, ogType = 'website' }: SeoProps) => {
+const Seo = ({ title, description, path, jsonLd, noindex, ogType = 'website', image }: SeoProps) => {
   const url = `${SITE}${path}`;
+  const imageUrl = image?.startsWith('http') ? image : `${SITE}${image ?? '/og-image.jpg'}`;
   return (
     <Helmet>
       <title>{title}</title>
@@ -23,6 +25,10 @@ const Seo = ({ title, description, path, jsonLd, noindex, ogType = 'website' }: 
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content={ogType} />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta name="twitter:image" content={imageUrl} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {jsonLd && (

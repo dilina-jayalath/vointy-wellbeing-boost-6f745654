@@ -19,7 +19,46 @@ const Contact = () => {
   const reasons = t('contactPage.reasons') as Reason[];
   return (
     <div className="min-h-screen">
-      <Seo title={"Contact — Vointy.life"} description={"Get in touch with the Vointy.life team in Oulu, Finland. Email contact@vointy.life or request a demo."} path="/contact" />
+      <Seo
+        title={"Contact — Vointy.life"}
+        description={"Get in touch with the Vointy.life team in Oulu, Finland. Email contact@vointy.life or request a demo."}
+        path="/contact"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          name: 'Contact Vointy.life',
+          url: 'https://vointy.life/contact',
+          mainEntity: {
+            '@type': 'Organization',
+            name: 'Vointy.life',
+            legalName: 'Wellthyforce Oy',
+            url: 'https://vointy.life/',
+            email: 'contact@vointy.life',
+            vatID: 'FI32544184',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Vasantie 43',
+              postalCode: '90310',
+              addressLocality: 'Oulu',
+              addressCountry: 'FI',
+            },
+            contactPoint: [
+              {
+                '@type': 'ContactPoint',
+                contactType: 'customer support',
+                email: 'contact@vointy.life',
+                availableLanguage: ['en', 'fi'],
+              },
+              {
+                '@type': 'ContactPoint',
+                contactType: 'sales',
+                email: 'contact@vointy.life',
+                availableLanguage: ['en', 'fi'],
+              },
+            ],
+          },
+        }}
+      />
       <Header />
       
       {/* Hero Section */}
