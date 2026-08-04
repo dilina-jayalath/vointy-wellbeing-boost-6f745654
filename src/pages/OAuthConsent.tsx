@@ -81,9 +81,9 @@ const OAuthConsent = () => {
           <p className="text-sm text-brand-purple font-medium tracking-wide mb-2">
             Build healthier habits, together.
           </p>
-          <CardTitle className="text-2xl font-display">
+          <h1 className="text-2xl font-display font-semibold leading-none tracking-tight">
             {error ? "Authorization failed" : details ? `Connect ${clientName}` : "Loading…"}
-          </CardTitle>
+          </h1>
           <CardDescription>
             {error
               ? error

@@ -68,7 +68,7 @@ const Login = () => {
         <CardHeader className="text-center">
           <img src={vointyMark.url} alt="Vointy logo" className="mx-auto mb-2 h-12 w-auto" />
           <p className="text-sm text-brand-purple font-medium tracking-wide mb-2">{t("authPages.slogan")}</p>
-          <CardTitle className="text-2xl font-display">{t("auth.loginTitle")}</CardTitle>
+          <h1 className="text-2xl font-display font-semibold leading-none tracking-tight">{t("auth.loginTitle")}</h1>
           <CardDescription>{t("authPages.welcomeBack")}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
