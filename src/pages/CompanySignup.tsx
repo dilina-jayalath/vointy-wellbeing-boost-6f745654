@@ -14,6 +14,7 @@ import LegalConsent from "@/components/auth/LegalConsent";
 import PasswordInput from "@/components/auth/PasswordInput";
 
 import { CheckCircle2, Loader2, MailCheck } from "lucide-react";
+import Seo from '@/components/Seo';
 
 const CompanySignup = () => {
   const { t } = useTranslation();
@@ -78,6 +79,7 @@ const CompanySignup = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Seo title="Company sign up — Vointy.life" description="Register your company on Vointy.life for free: unlimited teams, 158 activities and healthier habits for your employees." path="/company-signup" />
       <Header />
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4">

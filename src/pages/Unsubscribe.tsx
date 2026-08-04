@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { supabase } from "@/integrations/supabase/client";
 import { useTranslation } from "@/lib/i18n";
 import { Loader2, MailX, CheckCircle2, AlertTriangle } from "lucide-react";
+import Seo from '@/components/Seo';
 
 type State = "loading" | "valid" | "already" | "invalid" | "done" | "error";
 
@@ -57,6 +58,7 @@ const Unsubscribe = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-br from-brand-purple-light to-white">
+      <Seo title="Unsubscribe — Vointy.life" description="Manage your Vointy.life newsletter subscription and unsubscribe from wellbeing updates at any time." path="/unsubscribe" noindex />
       <Card className="w-full max-w-md">
         <CardContent className="p-10 text-center space-y-4">
           {state === "loading" && (

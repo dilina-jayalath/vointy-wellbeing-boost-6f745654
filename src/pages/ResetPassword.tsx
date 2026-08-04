@@ -8,6 +8,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
+import Seo from '@/components/Seo';
 
 const ResetPassword = () => {
   const [mode, setMode] = useState<"request" | "update">("request");
@@ -58,6 +59,7 @@ const ResetPassword = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-br from-brand-purple-light to-white">
+      <Seo title="Reset password — Vointy.life" description="Reset your Vointy.life password to regain access to your team activities, challenges and wellbeing data." path="/reset-password" noindex />
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-display">
