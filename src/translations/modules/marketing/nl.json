@@ -121,7 +121,8 @@
         "category": "Implementatie"
       }
     ],
-    "loadMore": "Meer berichten laden"
+    "loadMore": "Meer berichten laden",
+    "latestPosts": "Nieuwste berichten"
   },
   "contactPage": {
     "title": "Neem contact op",
@@ -129,12 +130,11 @@
     "conversationTitle": "Laten we een gesprek beginnen",
     "conversationDescription": "Klaar om Vointy in actie te zien? We beantwoorden graag je vragen en laten zien hoe ons platform ziekteverzuim kan verminderen en het welzijn van werknemers bij jouw bedrijf kan verbeteren.",
     "emailUsLabel": "E-mail ons",
-    "callUsLabel": "Bel ons",
     "visitUsLabel": "Bezoek ons",
-    "addressLine1": "123 Wellness Street",
-    "addressLine2": "San Francisco, CA 94105",
+    "addressLine1": "Vasantie 43",
+    "addressLine2": "90310 Oulu, Finland",
     "hoursLabel": "Openingstijden",
-    "hoursValue": "Maandag t/m vrijdag: 9:00 - 18:00 uur PST",
+    "hoursValue": "Maandag t/m vrijdag: 9:00 - 17:00 (EET)",
     "requestDemo": "Vraag een demo aan",
     "whyChooseTitle": "Waarom kiezen voor Vointy?",
     "reasons": [

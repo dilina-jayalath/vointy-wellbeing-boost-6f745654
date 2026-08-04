@@ -121,7 +121,8 @@
         "category": "Käyttöönotto"
       }
     ],
-    "loadMore": "Lataa lisää artikkeleita"
+    "loadMore": "Lataa lisää artikkeleita",
+    "latestPosts": "Uusimmat artikkelit"
   },
   "contactPage": {
     "title": "Ota yhteyttä",
@@ -129,12 +130,11 @@
     "conversationTitle": "Aloitetaan keskustelu",
     "conversationDescription": "Valmiina näkemään Vointyn toiminnassa? Vastaamme kysymyksiisi ja näytämme, miten alustamme voi vähentää sairauspoissaoloja ja parantaa työntekijöiden hyvinvointia yrityksessäsi.",
     "emailUsLabel": "Lähetä sähköpostia",
-    "callUsLabel": "Soita meille",
     "visitUsLabel": "Käy luonamme",
-    "addressLine1": "123 Wellness Street",
-    "addressLine2": "San Francisco, CA 94105",
+    "addressLine1": "Vasantie 43",
+    "addressLine2": "90310 Oulu, Finland",
     "hoursLabel": "Aukioloajat",
-    "hoursValue": "Maanantai - perjantai: 9.00 - 18.00 (PST)",
+    "hoursValue": "Maanantai - perjantai: 9.00 - 17.00 (EET)",
     "requestDemo": "Pyydä esittely",
     "whyChooseTitle": "Miksi valita Vointy?",
     "reasons": [

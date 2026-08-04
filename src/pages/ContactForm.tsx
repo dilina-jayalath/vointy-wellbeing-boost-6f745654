@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Send, CheckCircle2 } from 'lucide-react';
+import Seo from '@/components/Seo';
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -75,6 +76,7 @@ const ContactForm = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={"Request a demo — Vointy.life"} description={"Send us a message and our team will show how Vointy.life reduces sick leaves and boosts employee wellbeing."} path="/contact-form" />
       <Header />
       
       <main className="pt-32 pb-20">
@@ -101,10 +103,10 @@ const ContactForm = () => {
             ) : (
               <Card className="shadow-2xl border-none overflow-hidden">
                 <CardHeader className="bg-brand-purple text-white p-8">
-                  <CardTitle className="text-2xl flex items-center gap-3">
+                  <h2 className="text-2xl font-semibold leading-none tracking-tight flex items-center gap-3">
                     <Send size={24} />
                     {t('license.formTitle')}
-                  </CardTitle>
+                  </h2>
                 </CardHeader>
                 <CardContent className="p-8 bg-white">
                   <form onSubmit={handleSubmit} className="space-y-6">

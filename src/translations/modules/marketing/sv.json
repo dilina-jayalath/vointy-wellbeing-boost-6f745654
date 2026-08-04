@@ -121,7 +121,8 @@
         "category": "Implementering"
       }
     ],
-    "loadMore": "Ladda fler inlägg"
+    "loadMore": "Ladda fler inlägg",
+    "latestPosts": "Senaste inläggen"
   },
   "contactPage": {
     "title": "Kontakta oss",
@@ -129,12 +130,11 @@
     "conversationTitle": "Låt oss starta en konversation",
     "conversationDescription": "Redo att se Vointy i praktiken? Vi finns här för att svara på dina frågor och visa hur vår plattform kan minska sjukfrånvaron och öka de anställdas välbefinnande på ditt företag.",
     "emailUsLabel": "E-posta oss",
-    "callUsLabel": "Ring oss",
     "visitUsLabel": "Besök oss",
-    "addressLine1": "123 Wellness Street",
-    "addressLine2": "San Francisco, CA 94105",
+    "addressLine1": "Vasantie 43",
+    "addressLine2": "90310 Oulu, Finland",
     "hoursLabel": "Öppettider",
-    "hoursValue": "Måndag - fredag: 09:00 - 18:00 PST",
+    "hoursValue": "Måndag - fredag: 09:00 - 17:00 (EET)",
     "requestDemo": "Begär en demo",
     "whyChooseTitle": "Varför välja Vointy?",
     "reasons": [

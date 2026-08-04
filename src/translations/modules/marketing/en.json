@@ -121,7 +121,8 @@
         "category": "Implementation"
       }
     ],
-    "loadMore": "Load More Posts"
+    "loadMore": "Load More Posts",
+    "latestPosts": "Latest posts"
   },
   "contactPage": {
     "title": "Contact Us",
@@ -129,12 +130,11 @@
     "conversationTitle": "Let's Start a Conversation",
     "conversationDescription": "Ready to see Vointy in action? We're here to answer your questions and show you how our platform can reduce sick leaves and boost employee wellness at your company.",
     "emailUsLabel": "Email Us",
-    "callUsLabel": "Call Us",
     "visitUsLabel": "Visit Us",
-    "addressLine1": "123 Wellness Street",
-    "addressLine2": "San Francisco, CA 94105",
+    "addressLine1": "Vasantie 43",
+    "addressLine2": "90310 Oulu, Finland",
     "hoursLabel": "Business Hours",
-    "hoursValue": "Monday - Friday: 9:00 AM - 6:00 PM PST",
+    "hoursValue": "Monday - Friday: 9:00 AM - 5:00 PM (EET)",
     "requestDemo": "Request a Demo",
     "whyChooseTitle": "Why Choose Vointy?",
     "reasons": [

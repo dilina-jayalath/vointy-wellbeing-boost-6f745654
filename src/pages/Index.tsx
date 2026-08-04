@@ -9,10 +9,12 @@ import WhyVointy from '@/components/home/WhyVointy';
 import VideoSection from '@/components/home/VideoSection';
 import LicenseForm from '@/components/home/LicenseForm';
 import Footer from '@/components/Footer';
+import Seo from '@/components/Seo';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Seo title={"Vointy.life — Build healthier habits, together."} description={"Improve employee wellbeing and reduce sick leaves with shared activities, challenges and healthy habits. Free for companies."} path="/" />
       <Header />
       <main>
         <Hero />

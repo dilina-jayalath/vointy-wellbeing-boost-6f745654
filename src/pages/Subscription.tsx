@@ -10,6 +10,7 @@ import { useEmployerOrg } from '@/hooks/useEmployerOrg';
 import { usePaddleCheckout } from '@/hooks/usePaddleCheckout';
 import { EMPLOYER_PRICE_ID } from '@/lib/paddle';
 import { useTranslation } from '@/lib/i18n';
+import Seo from '@/components/Seo';
 
 
 const Subscription = () => {
@@ -39,6 +40,7 @@ const Subscription = () => {
   return (
 
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Seo title={"Pricing — Vointy.life"} description={"One simple price: €149/month for the employer panel. Unlimited employees, unlimited teams, free 30-day trial."} path="/subscription" />
       <Header />
 
       <main className="flex-grow pt-24">
@@ -70,7 +72,7 @@ const Subscription = () => {
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
               <Card className="border border-gray-200 shadow-sm">
                 <CardContent className="p-8 flex flex-col h-full">
-                  <h3 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.freeTitle')}</h3>
+                  <h2 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.freeTitle')}</h2>
                   <div className="flex items-end mb-4">
                     <span className="text-5xl font-bold text-brand-dark">€0</span>
                     <span className="text-gray-500 ml-2 mb-1">{t('pricingPage.freeForever')}</span>
@@ -104,7 +106,7 @@ const Subscription = () => {
                   {t('pricingPage.employerDashboardBadge')}
                 </div>
                 <CardContent className="p-8 flex flex-col h-full">
-                  <h3 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.companyPlanTitle')}</h3>
+                  <h2 className="text-2xl font-bold mb-2 text-brand-dark">{t('pricingPage.companyPlanTitle')}</h2>
                   <div className="flex items-end mb-2">
                     <span className="text-5xl font-bold text-brand-dark">€149</span>
                     <span className="text-gray-500 ml-2 mb-1">{t('pricingPage.perMonthPerCompany')}</span>

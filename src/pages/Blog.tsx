@@ -9,6 +9,7 @@ import { useTranslation } from '@/lib/i18n';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import BlogMedia from '@/components/blog/BlogMedia';
+import Seo from '@/components/Seo';
 
 interface BlogPost {
   title: string;
@@ -39,6 +40,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo title={"Blog — Vointy.life"} description={"Insights and best practices for workplace wellbeing, employee engagement and healthy habits at work."} path="/blog" />
       <Header />
       
       {/* Hero Section */}
@@ -78,6 +80,9 @@ const Blog = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold font-display mb-8">
+              {t('blogPage.latestPosts')}
+            </h2>
             {livePosts.length > 0 && (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 {livePosts.map((post: any) => (
