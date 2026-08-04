@@ -17,8 +17,9 @@ interface AuthContextValue {
   signOut: () => Promise<void>;
   resetPassword: (email: string) => Promise<{ error?: Error }>;
   updatePassword: (password: string) => Promise<{ error?: Error }>;
-  signInWithGoogle: () => Promise<{ error?: Error }>;
-  signInWithApple: () => Promise<{ error?: Error }>;
+  signInWithGoogle: (redirectPath?: string) => Promise<{ error?: Error }>;
+  signInWithApple: (redirectPath?: string) => Promise<{ error?: Error }>;
+
   updateProfile: (updates: Partial<Pick<Profile, "display_name" | "avatar_url" | "language">>) => Promise<{ error?: Error }>;
 }
 
@@ -114,23 +115,24 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return { error: error ?? undefined };
   };
 
-  const signInWithGoogle = async () => {
+  const signInWithGoogle = async (redirectPath?: string) => {
     const result = await lovable.auth.signInWithOAuth("google", {
-      redirect_uri: window.location.origin,
+      redirect_uri: `${window.location.origin}${redirectPath ?? ""}`,
     });
     if (result.error) return { error: result.error };
     if (result.redirected) return {};
     return {};
   };
 
-  const signInWithApple = async () => {
+  const signInWithApple = async (redirectPath?: string) => {
     const result = await lovable.auth.signInWithOAuth("apple", {
-      redirect_uri: window.location.origin,
+      redirect_uri: `${window.location.origin}${redirectPath ?? ""}`,
     });
     if (result.error) return { error: result.error };
     if (result.redirected) return {};
     return {};
   };
+
 
   const updateProfile = async (
     updates: Partial<Pick<Profile, "display_name" | "avatar_url" | "language">>
