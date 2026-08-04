@@ -55,6 +55,12 @@ const Account = () => {
 
   return (
     <div className="min-h-screen py-24 px-4 bg-gradient-to-br from-brand-purple-light to-white">
+      <Seo
+        title="Your account — Vointy.life"
+        description="Manage your Vointy account: profile details, language preference and sign-in settings on vointy.life."
+        path="/account"
+        noindex
+      />
       <div className="max-w-2xl mx-auto space-y-6">
         <Card>
           <CardHeader>
