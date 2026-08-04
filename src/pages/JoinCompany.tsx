@@ -11,6 +11,7 @@ import { useTranslation } from "@/lib/i18n";
 import { Loader2, MailCheck, PartyPopper } from "lucide-react";
 import LegalConsent from "@/components/auth/LegalConsent";
 import PasswordInput from "@/components/auth/PasswordInput";
+import Seo from '@/components/Seo';
 
 interface InviteInfo {
   organization_name: string;
@@ -110,6 +111,7 @@ const JoinCompany = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-br from-brand-purple-light to-white">
+      <Seo title="Join your company — Vointy.life" description="Accept your invitation and join your company on Vointy.life to start tracking activities with your team." path="/join" noindex />
       <Card className="w-full max-w-md">
         {invalid ? (
           <CardContent className="p-10 text-center space-y-4">

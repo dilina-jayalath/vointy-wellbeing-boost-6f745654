@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { RefreshCcw, Clock, CreditCard, Building, Mail, Info } from 'lucide-react';
+import Seo from '@/components/Seo';
 
 const RefundPolicy = () => {
   const sections = [
@@ -128,6 +129,7 @@ const RefundPolicy = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title="Refund Policy — Vointy.life" description="Our 30-day money-back guarantee for Vointy.life Employer panel subscriptions and how to request a refund." path="/refund-policy" />
       <Header />
 
       <section className="pt-24 pb-16 bg-gradient-to-br from-brand-blue to-brand-purple text-white relative overflow-hidden">

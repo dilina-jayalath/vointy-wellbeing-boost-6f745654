@@ -38,9 +38,40 @@ const Blog = () => {
   });
 
 
+  const blogJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Vointy.life Blog',
+    url: 'https://vointy.life/blog',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Vointy.life',
+      url: 'https://vointy.life/',
+    },
+    blogPost: [
+      ...livePosts.map((post: any) => ({
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.excerpt || post.content?.slice(0, 200),
+        ...(post.media_type === 'image' && post.media_url ? { image: post.media_url } : {}),
+        ...(post.published_at ? { datePublished: post.published_at } : {}),
+        author: { '@type': 'Organization', name: 'Vointy.life' },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://vointy.life/blog' },
+      })),
+      ...blogPosts.map((post) => ({
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: post.date,
+        author: { '@type': 'Person', name: post.author },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://vointy.life/blog' },
+      })),
+    ],
+  };
+
   return (
     <div className="min-h-screen">
-      <Seo title={"Blog — Vointy.life"} description={"Insights and best practices for workplace wellbeing, employee engagement and healthy habits at work."} path="/blog" />
+      <Seo title={"Blog — Vointy.life"} description={"Insights and best practices for workplace wellbeing, employee engagement and healthy habits at work."} path="/blog" jsonLd={blogJsonLd} />
       <Header />
       
       {/* Hero Section */}

@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { FileText, Shield, Users, Lock, AlertTriangle, Scale, Clock, Mail, Building, Stethoscope, Info, CreditCard } from 'lucide-react';
+import Seo from '@/components/Seo';
 
 const TermsOfService = () => {
   const sections = [
@@ -318,6 +319,7 @@ const TermsOfService = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title="Terms of Service — Vointy.life" description="The terms governing use of the Vointy.life wellbeing platform, subscriptions and Employer panel by companies and employees." path="/terms-of-service" />
       <Header />
       
       <section className="pt-24 pb-16 bg-gradient-to-br from-brand-blue to-brand-purple text-white relative overflow-hidden">
