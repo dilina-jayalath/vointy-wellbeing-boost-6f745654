@@ -144,6 +144,7 @@ const EmployerLayout = () => {
           <PaymentTestModeBanner />
 
           <main className="flex-1 p-6">
+            <EmployerSeo />
             {loading ? (
               <div className="flex items-center justify-center py-24">
                 <Loader2 className="h-6 w-6 animate-spin text-brand-purple" />
@@ -151,10 +152,7 @@ const EmployerLayout = () => {
             ) : locked ? (
               <EmployerPaywall />
             ) : (
-              <>
-                <EmployerSeo />
-                <Outlet />
-              </>
+              <Outlet />
             )}
           </main>
 
