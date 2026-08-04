@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -11,6 +11,9 @@ import { useTranslation } from "@/lib/i18n";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 
 
+const safeNext = (value: string | null) =>
+  value && value.startsWith("/") && !value.startsWith("//") ? value : null;
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,6 +22,8 @@ const Login = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
   const navigate = useNavigate();
+  const [params] = useSearchParams();
+  const next = safeNext(params.get("next"));
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,12 +34,16 @@ const Login = () => {
       toast({ title: t("authPages.loginFailed"), description: error.message, variant: "destructive" });
       return;
     }
+    if (next) {
+      window.location.href = next;
+      return;
+    }
     navigate("/account");
   };
 
   const handleGoogle = async () => {
     setIsLoading(true);
-    const { error } = await signInWithGoogle();
+    const { error } = await signInWithGoogle(next ?? undefined);
     setIsLoading(false);
     if (error) {
       toast({ title: t("authPages.googleSignInFailed"), description: error.message, variant: "destructive" });
@@ -43,12 +52,13 @@ const Login = () => {
 
   const handleApple = async () => {
     setIsLoading(true);
-    const { error } = await signInWithApple();
+    const { error } = await signInWithApple(next ?? undefined);
     setIsLoading(false);
     if (error) {
       toast({ title: t("authPages.appleSignInFailed"), description: error.message, variant: "destructive" });
     }
   };
+
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-br from-brand-purple-light to-white">

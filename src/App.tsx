@@ -23,7 +23,9 @@ import ResetPassword from "./pages/ResetPassword";
 import CompanySignup from "./pages/CompanySignup";
 import JoinCompany from "./pages/JoinCompany";
 import Unsubscribe from "./pages/Unsubscribe";
+import OAuthConsent from "./pages/OAuthConsent";
 import Account from "./pages/Account";
+
 import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import EmployerLayout from "./pages/employer/EmployerLayout";
@@ -82,6 +84,8 @@ const App = () => (
               <Route path="/company-signup" element={<CompanySignup />} />
               <Route path="/join" element={<JoinCompany />} />
               <Route path="/unsubscribe" element={<Unsubscribe />} />
+              <Route path="/.lovable/oauth/consent" element={<OAuthConsent />} />
+
               <Route
                 path="/account"
                 element={
