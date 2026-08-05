@@ -250,7 +250,7 @@ const AdminDashboard = () => {
 
 
           <TabsContent value="messages" className="mt-4">
-            <div className="grid gap-6 lg:grid-cols-3">
+            <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-4">
               {[
                 {
                   key: "contact",
@@ -265,11 +265,20 @@ const AdminDashboard = () => {
                   items: data.messages.filter((m: any) => m.category === "license"),
                 },
                 {
+                  key: "roi_lead",
+                  title: "ROI calculator leads",
+                  description: "Emails submitted to unlock the full ROI report.",
+                  items: data.messages.filter((m: any) => m.category === "roi_lead"),
+                },
+                {
                   key: "other",
                   title: t("adminPanel.messages.otherTitle") as string,
                   description: t("adminPanel.messages.otherDescription") as string,
                   items: data.messages.filter(
-                    (m: any) => m.category !== "contact" && m.category !== "license",
+                    (m: any) =>
+                      m.category !== "contact" &&
+                      m.category !== "license" &&
+                      m.category !== "roi_lead",
                   ),
                 },
               ].map((box) => (
