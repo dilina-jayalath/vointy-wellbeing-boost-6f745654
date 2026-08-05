@@ -6,6 +6,7 @@ import Companies from '@/components/home/Companies';
 import Challenges from '@/components/home/Challenges';
 
 import WhyVointy from '@/components/home/WhyVointy';
+import RoiCalculatorSection from '@/components/home/RoiCalculatorSection';
 import VideoSection from '@/components/home/VideoSection';
 import LicenseForm from '@/components/home/LicenseForm';
 import Footer from '@/components/Footer';
@@ -22,6 +23,7 @@ const Index = () => {
         <Companies />
         <Challenges />
         <WhyVointy />
+        <RoiCalculatorSection />
         <VideoSection />
         <LicenseForm />
       </main>
