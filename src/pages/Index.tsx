@@ -23,6 +23,7 @@ const Index = () => {
         <Companies />
         <Challenges />
         <WhyVointy />
+        <RoiCalculatorSection />
         <VideoSection />
         <LicenseForm />
       </main>
