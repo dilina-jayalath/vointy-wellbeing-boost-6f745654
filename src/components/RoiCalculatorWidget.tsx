@@ -81,6 +81,35 @@ const RoiCalculatorWidget = ({ idPrefix = 'roi' }: { idPrefix?: string }) => {
         .insert([{ email: value, language }]);
       // A duplicate address is fine — the report still unlocks.
       if (error && !`${error.message}`.toLowerCase().includes('duplicate')) throw error;
+
+      // Also log the lead in the admin Messages view under its own category.
+      const summary = [
+        `Employees: ${num(employees)}`,
+        `Monthly gross salary: ${money(monthlySalary)}`,
+        `Sick days / employee / year: ${num(sickDaysPerEmployee)}`,
+        `Assumed reduction: ${reduction}%`,
+        '',
+        `Cost per sick day: ${money(result.costPerSickDay)}`,
+        `Current annual sick-leave cost: ${money(result.currentCost)}`,
+        `Estimated annual savings: ${money(result.savings)}`,
+        `Vointy annual licence: ${money(result.annualLicense)}`,
+        `Net benefit: ${money(result.net)}`,
+        `ROI: ${num(result.roi)}%`,
+        `Language: ${language}`,
+      ].join('\n');
+
+      const { error: leadError } = await supabase.from('contact_submissions').insert([
+        {
+          first_name: 'ROI',
+          last_name: 'Calculator lead',
+          email: value,
+          subject: `ROI report request — ${num(employees)} employees`,
+          message: summary,
+          category: 'roi_lead',
+        },
+      ]);
+      if (leadError) console.error('ROI lead log error:', leadError);
+
       setUnlocked(true);
       toast({ title: 'Your full ROI report is unlocked below.' });
     } catch (err: any) {
