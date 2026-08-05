@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "Tus cifras",
+      "employees": "Número de empleados",
+      "salary": "Salario bruto medio al mes (€)",
+      "salaryHelp": "Lo convertimos en coste por día de baja: salario × 12 ÷ {days} días laborables × {mult} por cargas sociales, sustituciones y producción perdida — actualmente {cost} al día.",
+      "sickDays": "Días de baja por empleado y año",
+      "reduction": "Reducción esperada de las bajas: {n} %",
+      "reductionAria": "Reducción esperada de las bajas",
+      "reductionHelp": "Los programas de bienestar laboral suelen reportar una reducción del 5–15 % en ausencias cortas."
+    },
+    "result": {
+      "title": "Ahorro estimado con Vointy",
+      "annualSavings": "Ahorro anual",
+      "costPerSickDay": "Coste por día de baja",
+      "savingsPerEmployee": "Ahorro por empleado"
+    },
+    "report": {
+      "title": "Tu informe completo",
+      "sickDays": "Días de baja al año",
+      "daysUnit": "días",
+      "currentCost": "Coste actual del absentismo",
+      "daysAvoided": "Días evitados ({n} %)",
+      "license": "Panel de empleador (12 meses)",
+      "net": "Beneficio neto",
+      "roi": "Retorno de la inversión",
+      "breakEven": "Punto de equilibrio",
+      "breakEvenValue": "{n} días de baja evitados",
+      "note": "Vointy es gratis para empresas y empleados. El panel de empleador cuesta 149 €/mes por cada 1.000 empleados registrados. Las estimaciones son orientativas, no una garantía.",
+      "cta": "Empieza gratis para tu empresa"
+    },
+    "lead": {
+      "title": "Obtén el informe completo",
+      "desc": "Introduce tu correo electrónico para desbloquear el informe completo: coste total del absentismo, días evitados, beneficio neto, ROI y punto de equilibrio.",
+      "emailLabel": "Correo de trabajo",
+      "placeholder": "nombre@empresa.es",
+      "submit": "Ver mi informe completo",
+      "submitting": "Desbloqueando…",
+      "privacyPre": "Solo usamos tu dirección para enviarte el informe y algunas ideas sobre bienestar. Puedes darte de baja cuando quieras — consulta nuestra",
+      "privacyLink": "política de privacidad"
+    },
+    "toast": {
+      "invalidEmail": "Introduce una dirección de correo válida.",
+      "unlocked": "Tu informe completo de ROI está desbloqueado abajo.",
+      "error": "Algo ha salido mal"
+    },
+    "home": {
+      "title": "Calculadora de ROI de bienestar",
+      "desc": "Introduce tu número de empleados y el salario medio. La calculadora muestra el ahorro estimado que tu empresa puede lograr en la plataforma vointy.life.",
+      "fullLink": "Abrir la página completa de la calculadora de ROI"
+    },
+    "page": {
+      "h1": "Calculadora de ROI de bienestar",
+      "h2": "De la estimación al ROI medido",
+      "p": "Esta calculadora ofrece una primera estimación. En el panel de empleador puedes subir tus datos reales de bajas mensuales en CSV y compararlos con el Índice de Actividad, midiendo el ahorro con tus propias cifras.",
+      "b1": "Tendencia mensual de bajas frente a la participación en actividades",
+      "b2": "Coste por día de baja y coste de suscripción en una vista de ROI",
+      "b3": "Compromiso, retos y resultados de encuestas por equipo",
+      "ctaStart": "Empieza gratis para tu empresa",
+      "ctaPricing": "Ver precios del panel de empleador",
+      "morePre": "Lee más sobre",
+      "moreLink1": "cómo funcionan los programas de bienestar corporativo de Vointy",
+      "moreMid": "o explora",
+      "moreLink2": "los retos de bienestar para empleados"
+    }
+  }
+}

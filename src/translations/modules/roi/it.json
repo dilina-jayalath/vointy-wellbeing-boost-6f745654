@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "I tuoi numeri",
+      "employees": "Numero di dipendenti",
+      "salary": "Stipendio lordo medio mensile (€)",
+      "salaryHelp": "Lo trasformiamo nel costo per giorno di malattia: stipendio × 12 ÷ {days} giorni lavorativi × {mult} per oneri sociali, sostituzioni e produzione persa — attualmente {cost} al giorno.",
+      "sickDays": "Giorni di malattia per dipendente all'anno",
+      "reduction": "Riduzione attesa delle assenze: {n} %",
+      "reductionAria": "Riduzione attesa delle assenze",
+      "reductionHelp": "I programmi di benessere aziendale riportano tipicamente una riduzione del 5–15 % delle assenze brevi."
+    },
+    "result": {
+      "title": "Risparmio stimato con Vointy",
+      "annualSavings": "Risparmio annuo",
+      "costPerSickDay": "Costo per giorno di malattia",
+      "savingsPerEmployee": "Risparmio per dipendente"
+    },
+    "report": {
+      "title": "Il tuo report completo",
+      "sickDays": "Giorni di malattia all'anno",
+      "daysUnit": "giorni",
+      "currentCost": "Costo attuale delle assenze",
+      "daysAvoided": "Giorni evitati ({n} %)",
+      "license": "Pannello datore di lavoro (12 mesi)",
+      "net": "Beneficio netto",
+      "roi": "Ritorno sull'investimento",
+      "breakEven": "Punto di pareggio",
+      "breakEvenValue": "{n} giorni di malattia evitati",
+      "note": "Vointy è gratuito per aziende e dipendenti. Il pannello datore di lavoro costa 149 €/mese ogni 1.000 dipendenti registrati. Le stime sono indicative, non una garanzia.",
+      "cta": "Inizia gratis per la tua azienda"
+    },
+    "lead": {
+      "title": "Ottieni il report completo",
+      "desc": "Inserisci il tuo indirizzo email per sbloccare il report completo: costo totale delle assenze, giorni evitati, beneficio netto, ROI e punto di pareggio.",
+      "emailLabel": "Email aziendale",
+      "placeholder": "nome@azienda.it",
+      "submit": "Mostra il report completo",
+      "submitting": "Sblocco in corso…",
+      "privacyPre": "Usiamo il tuo indirizzo solo per inviarti il report e occasionali spunti sul benessere. Puoi disiscriverti quando vuoi — consulta la nostra",
+      "privacyLink": "informativa sulla privacy"
+    },
+    "toast": {
+      "invalidEmail": "Inserisci un indirizzo email valido.",
+      "unlocked": "Il tuo report ROI completo è sbloccato qui sotto.",
+      "error": "Qualcosa è andato storto"
+    },
+    "home": {
+      "title": "Calcolatore ROI del benessere",
+      "desc": "Inserisci il numero di dipendenti e lo stipendio medio. Il calcolatore mostra il risparmio stimato che la tua azienda può ottenere sulla piattaforma vointy.life.",
+      "fullLink": "Apri la pagina completa del calcolatore ROI"
+    },
+    "page": {
+      "h1": "Calcolatore ROI del benessere",
+      "h2": "Dalla stima al ROI misurato",
+      "p": "Questo calcolatore fornisce una prima stima. Nel pannello datore di lavoro puoi caricare i dati reali mensili delle assenze in CSV e confrontarli con l'Indice di Attività, misurando i risparmi sui tuoi numeri.",
+      "b1": "Andamento mensile delle assenze rispetto alla partecipazione",
+      "b2": "Costo per giorno di malattia e costo dell'abbonamento in un'unica vista ROI",
+      "b3": "Coinvolgimento, sfide e risultati dei sondaggi a livello di team",
+      "ctaStart": "Inizia gratis per la tua azienda",
+      "ctaPricing": "Vedi i prezzi del pannello datore di lavoro",
+      "morePre": "Scopri di più su",
+      "moreLink1": "come funzionano i programmi di benessere aziendale Vointy",
+      "moreMid": "oppure sfoglia",
+      "moreLink2": "le sfide di benessere per i dipendenti"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "Dine tal",
+      "employees": "Antal medarbejdere",
+      "salary": "Gennemsnitlig bruttoløn pr. måned (€)",
+      "salaryHelp": "Vi omregner det til en omkostning pr. sygedag: løn × 12 ÷ {days} arbejdsdage × {mult} for sociale omkostninger, vikardækning og tabt produktion — aktuelt {cost} pr. dag.",
+      "sickDays": "Sygedage pr. medarbejder pr. år",
+      "reduction": "Forventet reduktion i sygefravær: {n} %",
+      "reductionAria": "Forventet reduktion i sygefravær",
+      "reductionHelp": "Trivselsprogrammer på arbejdspladsen rapporterer typisk 5–15 % færre korte fravær."
+    },
+    "result": {
+      "title": "Estimeret besparelse med Vointy",
+      "annualSavings": "Årlig besparelse",
+      "costPerSickDay": "Omkostning pr. sygedag",
+      "savingsPerEmployee": "Besparelse pr. medarbejder"
+    },
+    "report": {
+      "title": "Din fulde rapport",
+      "sickDays": "Sygedage pr. år",
+      "daysUnit": "dage",
+      "currentCost": "Nuværende fraværsomkostning",
+      "daysAvoided": "Undgåede dage ({n} %)",
+      "license": "Arbejdsgiverpanel (12 måneder)",
+      "net": "Nettogevinst",
+      "roi": "Afkast af investeringen",
+      "breakEven": "Break-even",
+      "breakEvenValue": "{n} undgåede sygedage",
+      "note": "Vointy er gratis for virksomheder og medarbejdere. Arbejdsgiverpanelet koster 149 €/måned pr. 1.000 registrerede medarbejdere. Estimaterne er vejledende, ikke en garanti.",
+      "cta": "Kom gratis i gang for din virksomhed"
+    },
+    "lead": {
+      "title": "Få den fulde rapport",
+      "desc": "Indtast din e-mailadresse for at låse den fulde rapport op: samlede fraværsomkostninger, undgåede dage, nettogevinst, ROI og dit break-even-punkt.",
+      "emailLabel": "Arbejdsmail",
+      "placeholder": "navn@virksomhed.dk",
+      "submit": "Vis min fulde rapport",
+      "submitting": "Låser op…",
+      "privacyPre": "Vi bruger kun din adresse til at sende rapporten og enkelte indsigter om trivsel. Afmeld når som helst — se vores",
+      "privacyLink": "privatlivspolitik"
+    },
+    "toast": {
+      "invalidEmail": "Indtast en gyldig e-mailadresse.",
+      "unlocked": "Din fulde ROI-rapport er låst op nedenfor.",
+      "error": "Noget gik galt"
+    },
+    "home": {
+      "title": "ROI-beregner for trivsel",
+      "desc": "Indtast antal medarbejdere og gennemsnitsløn. Beregneren viser den estimerede besparelse, din virksomhed kan opnå på vointy.life-platformen.",
+      "fullLink": "Åbn hele ROI-beregnersiden"
+    },
+    "page": {
+      "h1": "ROI-beregner for trivsel",
+      "h2": "Fra estimat til målt ROI",
+      "p": "Denne beregner giver et første estimat. I arbejdsgiverpanelet kan du uploade dine faktiske månedlige sygefraværsdata som CSV og sammenligne dem med Aktivitetsindekset, så besparelser måles ud fra dine egne tal.",
+      "b1": "Månedlig sygefraværstendens mod aktivitetsdeltagelse",
+      "b2": "Omkostning pr. sygedag og abonnementspris i én ROI-visning",
+      "b3": "Engagement, udfordringer og undersøgelsesresultater på teamniveau",
+      "ctaStart": "Kom gratis i gang for din virksomhed",
+      "ctaPricing": "Se priser for arbejdsgiverpanelet",
+      "morePre": "Læs mere om",
+      "moreLink1": "hvordan Vointys virksomhedstrivselsprogrammer fungerer",
+      "moreMid": "eller se",
+      "moreLink2": "trivselsudfordringer for medarbejdere"
+    }
+  }
+}
