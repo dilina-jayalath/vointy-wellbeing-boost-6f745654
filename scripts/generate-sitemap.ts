@@ -17,6 +17,7 @@ const entries: SitemapEntry[] = [
   { path: "/about", changefreq: "monthly", priority: "0.7" },
   { path: "/corporate-wellness-programs", changefreq: "monthly", priority: "0.8" },
   { path: "/wellness-challenges-for-employees", changefreq: "monthly", priority: "0.8" },
+  { path: "/roi-calculator", changefreq: "monthly", priority: "0.8" },
   { path: "/careers", changefreq: "monthly", priority: "0.6" },
   { path: "/blog", changefreq: "weekly", priority: "0.7" },
   { path: "/contact", changefreq: "monthly", priority: "0.7" },

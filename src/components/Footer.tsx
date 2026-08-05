@@ -100,6 +100,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/roi-calculator" className="text-gray-300 hover:text-white transition-colors">
+                  Wellbeing ROI Calculator
+                </Link>
+              </li>
+              <li>
                 <Link to="/careers" className="text-gray-300 hover:text-white transition-colors">
                   Careers
                 </Link>
