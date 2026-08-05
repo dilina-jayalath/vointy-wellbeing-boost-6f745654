@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "Dina siffror",
+      "employees": "Antal anställda",
+      "salary": "Genomsnittlig bruttolön per månad (€)",
+      "salaryHelp": "Vi omvandlar detta till en kostnad per sjukdag: lön × 12 ÷ {days} arbetsdagar × {mult} för sociala kostnader, ersättningsarbete och förlorad produktion — just nu {cost} per dag.",
+      "sickDays": "Sjukdagar per anställd och år",
+      "reduction": "Förväntad minskning av sjukfrånvaro: {n} %",
+      "reductionAria": "Förväntad minskning av sjukfrånvaro",
+      "reductionHelp": "Program för arbetsplatshälsa rapporterar vanligtvis 5–15 % minskning av korta frånvaron."
+    },
+    "result": {
+      "title": "Uppskattad besparing med Vointy",
+      "annualSavings": "Årlig besparing",
+      "costPerSickDay": "Kostnad per sjukdag",
+      "savingsPerEmployee": "Besparing per anställd"
+    },
+    "report": {
+      "title": "Din fullständiga rapport",
+      "sickDays": "Sjukdagar per år",
+      "daysUnit": "dagar",
+      "currentCost": "Nuvarande frånvarokostnad",
+      "daysAvoided": "Undvikna dagar ({n} %)",
+      "license": "Arbetsgivarpanel (12 månader)",
+      "net": "Nettonytta",
+      "roi": "Avkastning på investering",
+      "breakEven": "Break-even",
+      "breakEvenValue": "{n} undvikna sjukdagar",
+      "note": "Vointy är gratis för företag och anställda. Arbetsgivarpanelen kostar 149 €/månad per 1 000 registrerade anställda. Uppskattningarna är vägledande, inte en garanti.",
+      "cta": "Börja gratis för ditt företag"
+    },
+    "lead": {
+      "title": "Få hela rapporten",
+      "desc": "Ange din e-postadress för att låsa upp hela rapporten: total frånvarokostnad, undvikna dagar, nettonytta, ROI och din break-even-punkt.",
+      "emailLabel": "Jobbmejl",
+      "placeholder": "namn@foretag.se",
+      "submit": "Visa hela rapporten",
+      "submitting": "Låser upp…",
+      "privacyPre": "Vi använder din adress endast för att skicka rapporten och enstaka insikter om välbefinnande. Avsluta när du vill — se vår",
+      "privacyLink": "integritetspolicy"
+    },
+    "toast": {
+      "invalidEmail": "Ange en giltig e-postadress.",
+      "unlocked": "Din fullständiga ROI-rapport är upplåst nedan.",
+      "error": "Något gick fel"
+    },
+    "home": {
+      "title": "ROI-kalkylator för välbefinnande",
+      "desc": "Ange antal anställda och genomsnittlig lön. Kalkylatorn visar den uppskattade besparingen ditt företag kan nå på plattformen vointy.life.",
+      "fullLink": "Öppna hela ROI-kalkylatorsidan"
+    },
+    "page": {
+      "h1": "ROI-kalkylator för välbefinnande",
+      "h2": "Från uppskattning till mätt ROI",
+      "p": "Kalkylatorn ger en första uppskattning. I arbetsgivarpanelen kan du ladda upp din verkliga månatliga sjukfrånvarodata som CSV och jämföra den med aktivitetsindexet, så att besparingarna mäts utifrån dina egna siffror.",
+      "b1": "Månadstrend för sjukfrånvaro mot aktivitetsdeltagande",
+      "b2": "Kostnad per sjukdag och prenumerationskostnad i en ROI-vy",
+      "b3": "Engagemang, utmaningar och enkätresultat på teamnivå",
+      "ctaStart": "Börja gratis för ditt företag",
+      "ctaPricing": "Se priser för arbetsgivarpanelen",
+      "morePre": "Läs mer om",
+      "moreLink1": "hur Vointys företagshälsoprogram fungerar",
+      "moreMid": "eller bläddra bland",
+      "moreLink2": "hälsoutmaningar för anställda"
+    }
+  }
+}

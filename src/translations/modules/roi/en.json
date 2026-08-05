@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "Your numbers",
+      "employees": "Number of employees",
+      "salary": "Average gross salary per month (€)",
+      "salaryHelp": "We turn this into a cost per sick day: salary × 12 ÷ {days} working days × {mult} for social costs, replacement work and lost output — currently {cost} per day.",
+      "sickDays": "Sick leave days per employee per year",
+      "reduction": "Expected reduction in sick leave: {n}%",
+      "reductionAria": "Expected reduction in sick leave",
+      "reductionHelp": "Workplace wellbeing programmes typically report a 5–15% reduction in short absences."
+    },
+    "result": {
+      "title": "Estimated savings with Vointy",
+      "annualSavings": "Annual savings",
+      "costPerSickDay": "Cost per sick day",
+      "savingsPerEmployee": "Savings per employee"
+    },
+    "report": {
+      "title": "Your full report",
+      "sickDays": "Sick leave days per year",
+      "daysUnit": "days",
+      "currentCost": "Current cost of absence",
+      "daysAvoided": "Days avoided ({n}%)",
+      "license": "Employer panel (12 months)",
+      "net": "Net benefit",
+      "roi": "Return on investment",
+      "breakEven": "Break-even",
+      "breakEvenValue": "{n} sick days avoided",
+      "note": "Vointy is free for companies and employees. The Employer panel costs €149/month per 1,000 registered employees. Estimates are indicative, not a guarantee.",
+      "cta": "Start free for your company"
+    },
+    "lead": {
+      "title": "Get the full report",
+      "desc": "Enter your email address to unlock the full report: total cost of absence, days avoided, net benefit, ROI and your break-even point.",
+      "emailLabel": "Work email",
+      "placeholder": "name@company.com",
+      "submit": "Show my full report",
+      "submitting": "Unlocking…",
+      "privacyPre": "We only use your address to send the report and occasional wellbeing insights. Unsubscribe any time — see our",
+      "privacyLink": "privacy policy"
+    },
+    "toast": {
+      "invalidEmail": "Please enter a valid email address.",
+      "unlocked": "Your full ROI report is unlocked below.",
+      "error": "Something went wrong"
+    },
+    "home": {
+      "title": "Wellbeing ROI calculator",
+      "desc": "Enter your number of employees and average salary. The calculator shows the estimated savings your company can reach on the vointy.life platform.",
+      "fullLink": "Open the full ROI calculator page"
+    },
+    "page": {
+      "h1": "Wellbeing ROI calculator",
+      "h2": "From estimate to measured ROI",
+      "p": "This calculator gives you a first estimate. Inside the Employer panel you can upload your real monthly sick leave data as a CSV and compare it against the Activity Index, so savings are measured from your own numbers instead of assumptions.",
+      "b1": "Monthly sick leave trend against activity participation",
+      "b2": "Cost per sick day and subscription cost in one ROI view",
+      "b3": "Team-level engagement, challenges and survey results",
+      "ctaStart": "Start free for your company",
+      "ctaPricing": "See Employer panel pricing",
+      "morePre": "Read more about",
+      "moreLink1": "how Vointy corporate wellness programs work",
+      "moreMid": "or browse",
+      "moreLink2": "wellness challenges for employees"
+    }
+  }
+}

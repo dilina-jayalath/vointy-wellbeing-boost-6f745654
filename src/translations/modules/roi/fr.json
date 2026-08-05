@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "Vos chiffres",
+      "employees": "Nombre de salariés",
+      "salary": "Salaire brut moyen par mois (€)",
+      "salaryHelp": "Nous le convertissons en coût par jour d'absence : salaire × 12 ÷ {days} jours travaillés × {mult} pour les charges sociales, le remplacement et la production perdue — actuellement {cost} par jour.",
+      "sickDays": "Jours d'arrêt maladie par salarié et par an",
+      "reduction": "Réduction attendue de l'absentéisme : {n} %",
+      "reductionAria": "Réduction attendue de l'absentéisme",
+      "reductionHelp": "Les programmes de bien-être au travail rapportent généralement une baisse de 5 à 15 % des absences courtes."
+    },
+    "result": {
+      "title": "Économies estimées avec Vointy",
+      "annualSavings": "Économies annuelles",
+      "costPerSickDay": "Coût par jour d'absence",
+      "savingsPerEmployee": "Économies par salarié"
+    },
+    "report": {
+      "title": "Votre rapport complet",
+      "sickDays": "Jours d'arrêt maladie par an",
+      "daysUnit": "jours",
+      "currentCost": "Coût actuel de l'absentéisme",
+      "daysAvoided": "Jours évités ({n} %)",
+      "license": "Panneau employeur (12 mois)",
+      "net": "Bénéfice net",
+      "roi": "Retour sur investissement",
+      "breakEven": "Seuil de rentabilité",
+      "breakEvenValue": "{n} jours d'absence évités",
+      "note": "Vointy est gratuit pour les entreprises et les salariés. Le panneau employeur coûte 149 €/mois par tranche de 1 000 salariés inscrits. Les estimations sont indicatives, sans garantie.",
+      "cta": "Commencer gratuitement pour votre entreprise"
+    },
+    "lead": {
+      "title": "Obtenir le rapport complet",
+      "desc": "Saisissez votre adresse e-mail pour débloquer le rapport complet : coût total de l'absentéisme, jours évités, bénéfice net, ROI et seuil de rentabilité.",
+      "emailLabel": "E-mail professionnel",
+      "placeholder": "nom@entreprise.fr",
+      "submit": "Afficher mon rapport complet",
+      "submitting": "Déverrouillage…",
+      "privacyPre": "Nous utilisons votre adresse uniquement pour envoyer le rapport et quelques conseils bien-être. Désinscription à tout moment — voir notre",
+      "privacyLink": "politique de confidentialité"
+    },
+    "toast": {
+      "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+      "unlocked": "Votre rapport ROI complet est débloqué ci-dessous.",
+      "error": "Une erreur est survenue"
+    },
+    "home": {
+      "title": "Calculateur de ROI bien-être",
+      "desc": "Saisissez votre nombre de salariés et le salaire moyen. Le calculateur affiche les économies estimées que votre entreprise peut atteindre sur la plateforme vointy.life.",
+      "fullLink": "Ouvrir la page complète du calculateur de ROI"
+    },
+    "page": {
+      "h1": "Calculateur de ROI bien-être",
+      "h2": "De l'estimation au ROI mesuré",
+      "p": "Ce calculateur donne une première estimation. Dans le panneau employeur, vous pouvez importer vos données réelles d'absence mensuelles au format CSV et les comparer à l'indice d'activité, afin de mesurer les économies à partir de vos propres chiffres.",
+      "b1": "Tendance mensuelle des absences face à la participation aux activités",
+      "b2": "Coût par jour d'absence et coût d'abonnement dans une seule vue ROI",
+      "b3": "Engagement, défis et résultats d'enquêtes au niveau des équipes",
+      "ctaStart": "Commencer gratuitement pour votre entreprise",
+      "ctaPricing": "Voir les tarifs du panneau employeur",
+      "morePre": "En savoir plus sur",
+      "moreLink1": "le fonctionnement des programmes de bien-être Vointy",
+      "moreMid": "ou parcourez",
+      "moreLink2": "les défis bien-être pour les salariés"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "Ihre Zahlen",
+      "employees": "Anzahl der Mitarbeitenden",
+      "salary": "Durchschnittliches Bruttogehalt pro Monat (€)",
+      "salaryHelp": "Wir rechnen daraus die Kosten pro Krankheitstag: Gehalt × 12 ÷ {days} Arbeitstage × {mult} für Lohnnebenkosten, Ersatzarbeit und Produktionsausfall — aktuell {cost} pro Tag.",
+      "sickDays": "Krankheitstage pro Mitarbeitendem und Jahr",
+      "reduction": "Erwartete Reduzierung der Krankheitstage: {n} %",
+      "reductionAria": "Erwartete Reduzierung der Krankheitstage",
+      "reductionHelp": "Betriebliche Gesundheitsprogramme berichten typischerweise von 5–15 % weniger Kurzzeitausfällen."
+    },
+    "result": {
+      "title": "Geschätzte Einsparungen mit Vointy",
+      "annualSavings": "Jährliche Einsparung",
+      "costPerSickDay": "Kosten pro Krankheitstag",
+      "savingsPerEmployee": "Einsparung pro Mitarbeitendem"
+    },
+    "report": {
+      "title": "Ihr vollständiger Bericht",
+      "sickDays": "Krankheitstage pro Jahr",
+      "daysUnit": "Tage",
+      "currentCost": "Aktuelle Kosten der Abwesenheit",
+      "daysAvoided": "Vermiedene Tage ({n} %)",
+      "license": "Arbeitgeber-Panel (12 Monate)",
+      "net": "Nettonutzen",
+      "roi": "Return on Investment",
+      "breakEven": "Break-even",
+      "breakEvenValue": "{n} vermiedene Krankheitstage",
+      "note": "Vointy ist für Unternehmen und Mitarbeitende kostenlos. Das Arbeitgeber-Panel kostet 149 €/Monat je 1.000 registrierte Mitarbeitende. Die Schätzungen sind Richtwerte, keine Garantie.",
+      "cta": "Kostenlos für Ihr Unternehmen starten"
+    },
+    "lead": {
+      "title": "Vollständigen Bericht erhalten",
+      "desc": "Geben Sie Ihre E-Mail-Adresse ein, um den vollständigen Bericht freizuschalten: Gesamtkosten der Abwesenheit, vermiedene Tage, Nettonutzen, ROI und Break-even-Punkt.",
+      "emailLabel": "Geschäftliche E-Mail",
+      "placeholder": "name@unternehmen.de",
+      "submit": "Vollständigen Bericht anzeigen",
+      "submitting": "Wird freigeschaltet…",
+      "privacyPre": "Wir nutzen Ihre Adresse nur, um den Bericht und gelegentliche Wellbeing-Impulse zu senden. Jederzeit abbestellbar — siehe unsere",
+      "privacyLink": "Datenschutzerklärung"
+    },
+    "toast": {
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "unlocked": "Ihr vollständiger ROI-Bericht ist unten freigeschaltet.",
+      "error": "Etwas ist schiefgelaufen"
+    },
+    "home": {
+      "title": "Wellbeing-ROI-Rechner",
+      "desc": "Geben Sie Ihre Mitarbeitendenzahl und das Durchschnittsgehalt ein. Der Rechner zeigt die geschätzten Einsparungen, die Ihr Unternehmen auf der Plattform vointy.life erreichen kann.",
+      "fullLink": "Vollständige ROI-Rechner-Seite öffnen"
+    },
+    "page": {
+      "h1": "Wellbeing-ROI-Rechner",
+      "h2": "Von der Schätzung zum gemessenen ROI",
+      "p": "Dieser Rechner liefert eine erste Schätzung. Im Arbeitgeber-Panel laden Sie Ihre echten monatlichen Krankheitsdaten als CSV hoch und vergleichen sie mit dem Aktivitätsindex — so werden Einsparungen aus Ihren eigenen Zahlen gemessen.",
+      "b1": "Monatlicher Krankenstandstrend gegenüber Aktivitätsteilnahme",
+      "b2": "Kosten pro Krankheitstag und Abokosten in einer ROI-Ansicht",
+      "b3": "Engagement, Challenges und Umfrageergebnisse auf Teamebene",
+      "ctaStart": "Kostenlos für Ihr Unternehmen starten",
+      "ctaPricing": "Preise des Arbeitgeber-Panels ansehen",
+      "morePre": "Lesen Sie mehr darüber,",
+      "moreLink1": "wie Vointy Corporate-Wellness-Programme funktionieren",
+      "moreMid": "oder entdecken Sie",
+      "moreLink2": "Wellness-Challenges für Mitarbeitende"
+    }
+  }
+}

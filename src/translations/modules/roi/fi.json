@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "Omat lukusi",
+      "employees": "Työntekijöiden määrä",
+      "salary": "Keskimääräinen bruttopalkka kuukaudessa (€)",
+      "salaryHelp": "Muunnamme tämän sairauspäivän kustannukseksi: palkka × 12 ÷ {days} työpäivää × {mult} sivukulujen, sijaistyön ja menetetyn tuotoksen vuoksi — tällä hetkellä {cost} päivässä.",
+      "sickDays": "Sairauspoissaolopäivät per työntekijä vuodessa",
+      "reduction": "Odotettu sairauspoissaolojen vähennys: {n} %",
+      "reductionAria": "Odotettu sairauspoissaolojen vähennys",
+      "reductionHelp": "Työhyvinvointiohjelmat raportoivat tyypillisesti 5–15 % vähennyksen lyhyissä poissaoloissa."
+    },
+    "result": {
+      "title": "Arvioitu säästö Vointyn kanssa",
+      "annualSavings": "Vuosittainen säästö",
+      "costPerSickDay": "Sairauspäivän hinta",
+      "savingsPerEmployee": "Säästö per työntekijä"
+    },
+    "report": {
+      "title": "Täysi raporttisi",
+      "sickDays": "Sairauspoissaolopäivät vuodessa",
+      "daysUnit": "päivää",
+      "currentCost": "Poissaolojen nykyinen kustannus",
+      "daysAvoided": "Vältetyt päivät ({n} %)",
+      "license": "Työnantajapaneeli (12 kk)",
+      "net": "Nettohyöty",
+      "roi": "Sijoitetun pääoman tuotto",
+      "breakEven": "Kannattavuusraja",
+      "breakEvenValue": "{n} vältettyä sairauspäivää",
+      "note": "Vointy on ilmainen yrityksille ja työntekijöille. Työnantajapaneeli maksaa 149 €/kk per 1 000 rekisteröitynyttä työntekijää. Arviot ovat suuntaa antavia, eivät takuu.",
+      "cta": "Aloita ilmaiseksi yrityksellesi"
+    },
+    "lead": {
+      "title": "Hanki koko raportti",
+      "desc": "Syötä sähköpostiosoitteesi avataksesi koko raportin: poissaolojen kokonaiskustannus, vältetyt päivät, nettohyöty, ROI ja kannattavuusraja.",
+      "emailLabel": "Työsähköposti",
+      "placeholder": "nimi@yritys.fi",
+      "submit": "Näytä koko raportti",
+      "submitting": "Avataan…",
+      "privacyPre": "Käytämme osoitettasi vain raportin ja satunnaisten hyvinvointivinkkien lähettämiseen. Voit peruuttaa tilauksen milloin tahansa — lue",
+      "privacyLink": "tietosuojaseloste"
+    },
+    "toast": {
+      "invalidEmail": "Syötä kelvollinen sähköpostiosoite.",
+      "unlocked": "Koko ROI-raporttisi on avattu alla.",
+      "error": "Jotain meni pieleen"
+    },
+    "home": {
+      "title": "Hyvinvoinnin ROI-laskuri",
+      "desc": "Syötä työntekijämäärä ja keskiansio. Laskuri näyttää arvioidun säästön, jonka yrityksesi voi saavuttaa vointy.life-alustalla.",
+      "fullLink": "Avaa koko ROI-laskurisivu"
+    },
+    "page": {
+      "h1": "Hyvinvoinnin ROI-laskuri",
+      "h2": "Arviosta mitattuun ROI:hin",
+      "p": "Tämä laskuri antaa ensimmäisen arvion. Työnantajapaneelissa voit ladata todelliset kuukausittaiset sairauspoissaolotiedot CSV-tiedostona ja verrata niitä aktiivisuusindeksiin, jolloin säästöt mitataan omista luvuistasi.",
+      "b1": "Sairauspoissaolojen kuukausitrendi vs. aktiivisuus",
+      "b2": "Sairauspäivän hinta ja tilausmaksu samassa ROI-näkymässä",
+      "b3": "Tiimitason sitoutuminen, haasteet ja kyselytulokset",
+      "ctaStart": "Aloita ilmaiseksi yrityksellesi",
+      "ctaPricing": "Katso työnantajapaneelin hinnoittelu",
+      "morePre": "Lue lisää siitä,",
+      "moreLink1": "miten Vointyn työhyvinvointiohjelmat toimivat",
+      "moreMid": "tai selaa",
+      "moreLink2": "työntekijöiden hyvinvointihaasteita"
+    }
+  }
+}

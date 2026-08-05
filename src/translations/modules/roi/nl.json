@@ -1,0 +1,68 @@
+{
+  "roi": {
+    "form": {
+      "title": "Jouw cijfers",
+      "employees": "Aantal medewerkers",
+      "salary": "Gemiddeld brutosalaris per maand (€)",
+      "salaryHelp": "We rekenen dit om naar kosten per ziektedag: salaris × 12 ÷ {days} werkdagen × {mult} voor sociale lasten, vervanging en gemiste productie — nu {cost} per dag.",
+      "sickDays": "Ziektedagen per medewerker per jaar",
+      "reduction": "Verwachte daling van het ziekteverzuim: {n} %",
+      "reductionAria": "Verwachte daling van het ziekteverzuim",
+      "reductionHelp": "Programma's voor welzijn op het werk melden doorgaans 5–15 % minder kort verzuim."
+    },
+    "result": {
+      "title": "Geschatte besparing met Vointy",
+      "annualSavings": "Jaarlijkse besparing",
+      "costPerSickDay": "Kosten per ziektedag",
+      "savingsPerEmployee": "Besparing per medewerker"
+    },
+    "report": {
+      "title": "Je volledige rapport",
+      "sickDays": "Ziektedagen per jaar",
+      "daysUnit": "dagen",
+      "currentCost": "Huidige verzuimkosten",
+      "daysAvoided": "Vermeden dagen ({n} %)",
+      "license": "Werkgeverspaneel (12 maanden)",
+      "net": "Nettovoordeel",
+      "roi": "Rendement op investering",
+      "breakEven": "Break-even",
+      "breakEvenValue": "{n} vermeden ziektedagen",
+      "note": "Vointy is gratis voor bedrijven en medewerkers. Het werkgeverspaneel kost € 149/maand per 1.000 geregistreerde medewerkers. Schattingen zijn indicatief, geen garantie.",
+      "cta": "Start gratis voor je bedrijf"
+    },
+    "lead": {
+      "title": "Ontvang het volledige rapport",
+      "desc": "Vul je e-mailadres in om het volledige rapport te ontgrendelen: totale verzuimkosten, vermeden dagen, nettovoordeel, ROI en je break-evenpunt.",
+      "emailLabel": "Zakelijk e-mailadres",
+      "placeholder": "naam@bedrijf.nl",
+      "submit": "Toon mijn volledige rapport",
+      "submitting": "Ontgrendelen…",
+      "privacyPre": "We gebruiken je adres alleen om het rapport en af en toe welzijnsinzichten te sturen. Altijd afmelden mogelijk — zie ons",
+      "privacyLink": "privacybeleid"
+    },
+    "toast": {
+      "invalidEmail": "Vul een geldig e-mailadres in.",
+      "unlocked": "Je volledige ROI-rapport is hieronder ontgrendeld.",
+      "error": "Er ging iets mis"
+    },
+    "home": {
+      "title": "ROI-calculator voor welzijn",
+      "desc": "Vul je aantal medewerkers en het gemiddelde salaris in. De calculator toont de geschatte besparing die je bedrijf kan bereiken op het vointy.life-platform.",
+      "fullLink": "Open de volledige ROI-calculatorpagina"
+    },
+    "page": {
+      "h1": "ROI-calculator voor welzijn",
+      "h2": "Van schatting naar gemeten ROI",
+      "p": "Deze calculator geeft een eerste schatting. In het werkgeverspaneel upload je je echte maandelijkse verzuimdata als CSV en vergelijk je die met de Activiteitsindex, zodat besparingen op je eigen cijfers worden gemeten.",
+      "b1": "Maandelijkse verzuimtrend versus deelname aan activiteiten",
+      "b2": "Kosten per ziektedag en abonnementskosten in één ROI-overzicht",
+      "b3": "Betrokkenheid, challenges en enquêteresultaten per team",
+      "ctaStart": "Start gratis voor je bedrijf",
+      "ctaPricing": "Bekijk prijzen van het werkgeverspaneel",
+      "morePre": "Lees meer over",
+      "moreLink1": "hoe de bedrijfswelzijnsprogramma's van Vointy werken",
+      "moreMid": "of bekijk",
+      "moreLink2": "welzijnschallenges voor medewerkers"
+    }
+  }
+}
