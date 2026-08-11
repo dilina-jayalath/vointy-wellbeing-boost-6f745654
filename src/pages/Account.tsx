@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -8,8 +8,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation, languages } from "@/lib/i18n";
 import { useToast } from "@/components/ui/use-toast";
-import { Loader2 } from "lucide-react";
+import { Loader2, Smartphone, Building2 } from "lucide-react";
+import Header from "@/components/Header";
 import Seo from "@/components/Seo";
+
 
 const Account = () => {
   const { user, profile, isAdmin, signOut, updateProfile, loading } = useAuth();
