@@ -135,6 +135,8 @@ const AppActivityIndex = () => {
         {t("appPanel.wellbeing.explanation")}
       </p>
 
+      <ActivityIndexCard />
+
       {chartData.length > 0 && (
         <Card>
           <CardHeader className="pb-2">
