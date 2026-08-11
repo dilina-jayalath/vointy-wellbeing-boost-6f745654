@@ -25,7 +25,7 @@ const AppActivityIndex = () => {
   const qc = useQueryClient();
   const { data: log } = useActivityLog();
   const { data: surveys } = useOpenSurveys();
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [answers, setAnswers] = useState<Record<string, string | number>>({});
   const [saving, setSaving] = useState(false);
 
   const survey = surveys?.[0];
