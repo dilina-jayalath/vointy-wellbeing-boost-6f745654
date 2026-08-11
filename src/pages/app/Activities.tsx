@@ -105,7 +105,7 @@ const AppActivities = () => {
                   <p className="font-medium">{a.title}</p>
                   <p className="text-xs text-muted-foreground line-clamp-2">{a.description}</p>
                   <p className="text-xs text-brand-purple mt-1">
-                    {a.points} pts · {a.unit}
+                    1 pt · {a.unit}
                     {a.category ? ` · ${a.category}` : ""}
                   </p>
                   {a.link && (
