@@ -224,6 +224,19 @@
         "couldNotLoad": "Chatin lataus ei onnistunut",
         "couldNotSend": "Viestin lähetys ei onnistunut"
       }
+    },
+    "index": {
+      "title": "Aktiivisuusindeksi",
+      "description": "0–100 pisteen arvio viimeisiltä 30 päivältä: säännöllisyys, monipuolisuus, yhteisöllisyys ja koettu olo. Pisteet mittaavat määrää, indeksi laatua.",
+      "consistency": "Säännöllisyys",
+      "variety": "Monipuolisuus",
+      "community": "Yhteisöllisyys",
+      "wellbeing": "Koettu hyvinvointi",
+      "activeDays": "{n} aktiivista päivää viimeisen 30 päivän aikana",
+      "categories": "{n} eri aktiviteettikategoriaa",
+      "socialEvents": "{n} yhteisö- ja haastetoimintoa",
+      "surveyAvg": "Kyselyn keskiarvo {n} / 10",
+      "noSurvey": "Ei vielä kyselyvastauksia"
     }
   }
 }

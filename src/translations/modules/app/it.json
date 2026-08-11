@@ -224,6 +224,19 @@
         "couldNotLoad": "Impossibile caricare la chat",
         "couldNotSend": "Impossibile inviare il messaggio"
       }
+    },
+    "index": {
+      "title": "Indice di attività",
+      "description": "Un punteggio da 0 a 100 sugli ultimi 30 giorni: costanza, varietà, comunità e benessere percepito. I punti misurano la quantità, l'indice la qualità.",
+      "consistency": "Costanza",
+      "variety": "Varietà",
+      "community": "Comunità",
+      "wellbeing": "Benessere percepito",
+      "activeDays": "{n} giorni attivi negli ultimi 30 giorni",
+      "categories": "{n} categorie di attività diverse",
+      "socialEvents": "{n} azioni di comunità e sfide",
+      "surveyAvg": "Media del sondaggio {n} / 10",
+      "noSurvey": "Nessuna risposta al sondaggio"
     }
   }
 }

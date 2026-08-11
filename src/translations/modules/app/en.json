@@ -224,6 +224,19 @@
         "couldNotLoad": "Could not load chat",
         "couldNotSend": "Could not send message"
       }
+    },
+    "index": {
+      "title": "Activity Index",
+      "description": "A 0–100 score from the last 30 days: consistency, variety, community and how you feel. Points measure volume, the index measures quality.",
+      "consistency": "Consistency",
+      "variety": "Variety",
+      "community": "Community",
+      "wellbeing": "Perceived wellbeing",
+      "activeDays": "{n} active days in the last 30 days",
+      "categories": "{n} different activity categories",
+      "socialEvents": "{n} community and challenge actions",
+      "surveyAvg": "Survey average {n} / 10",
+      "noSurvey": "No survey answers yet"
     }
   }
 }

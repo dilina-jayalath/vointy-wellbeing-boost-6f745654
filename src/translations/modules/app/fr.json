@@ -224,6 +224,19 @@
         "couldNotLoad": "Impossible de charger le chat",
         "couldNotSend": "Impossible d'envoyer le message"
       }
+    },
+    "index": {
+      "title": "Indice d'activité",
+      "description": "Un score de 0 à 100 sur les 30 derniers jours : régularité, variété, communauté et ressenti. Les points mesurent le volume, l'indice la qualité.",
+      "consistency": "Régularité",
+      "variety": "Variété",
+      "community": "Communauté",
+      "wellbeing": "Bien-être ressenti",
+      "activeDays": "{n} jours actifs sur les 30 derniers jours",
+      "categories": "{n} catégories d'activités différentes",
+      "socialEvents": "{n} actions de communauté et de défis",
+      "surveyAvg": "Moyenne du questionnaire {n} / 10",
+      "noSurvey": "Pas encore de réponses au questionnaire"
     }
   }
 }

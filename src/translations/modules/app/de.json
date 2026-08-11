@@ -224,6 +224,19 @@
         "couldNotLoad": "Chat konnte nicht geladen werden",
         "couldNotSend": "Nachricht konnte nicht gesendet werden"
       }
+    },
+    "index": {
+      "title": "Aktivitätsindex",
+      "description": "Ein Wert von 0–100 für die letzten 30 Tage: Regelmäßigkeit, Vielfalt, Gemeinschaft und persönliches Empfinden. Punkte messen die Menge, der Index die Qualität.",
+      "consistency": "Regelmäßigkeit",
+      "variety": "Vielfalt",
+      "community": "Gemeinschaft",
+      "wellbeing": "Empfundenes Wohlbefinden",
+      "activeDays": "{n} aktive Tage in den letzten 30 Tagen",
+      "categories": "{n} verschiedene Aktivitätskategorien",
+      "socialEvents": "{n} Community- und Challenge-Aktionen",
+      "surveyAvg": "Umfrage-Durchschnitt {n} / 10",
+      "noSurvey": "Noch keine Umfrageantworten"
     }
   }
 }
