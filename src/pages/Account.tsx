@@ -19,14 +19,29 @@ const Account = () => {
   const [displayName, setDisplayName] = useState("");
   const [isSaving, setIsSaving] = useState(false);
 
+  const appliedProfileLanguage = React.useRef(false);
+
   useEffect(() => {
-    if (profile) {
-      setDisplayName(profile.display_name || "");
+    if (!profile) return;
+    setDisplayName(profile.display_name || "");
+    // Apply the stored language only once, otherwise it would immediately
+    // override any manual language change made on this page.
+    if (!appliedProfileLanguage.current) {
+      appliedProfileLanguage.current = true;
       if (profile.language && profile.language !== language) {
         setLanguage(profile.language as typeof language);
       }
     }
-  }, [profile, language, setLanguage]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [profile]);
+
+  const handleLanguageChange = (value: string) => {
+    setLanguage(value as typeof language);
+    if (user) {
+      void updateProfile({ language: value });
+    }
+  };
+
 
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
