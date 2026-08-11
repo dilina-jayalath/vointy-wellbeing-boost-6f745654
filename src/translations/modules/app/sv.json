@@ -5,7 +5,7 @@
       "activities": "Aktiviteter",
       "challenges": "Utmaningar",
       "community": "Community",
-      "index": "Index",
+      "index": "Poäng",
       "tagline": "Build healthier habits, together.",
       "profileAria": "Profil",
       "chat": "Chatt"
@@ -14,7 +14,7 @@
       "welcomeBack": "Välkommen tillbaka",
       "hiGreeting": "Hej, {name}",
       "defaultName": "där",
-      "activityIndex": "Aktivitetsindex",
+      "activityIndex": "Aktivitetspoäng",
       "pointsThisYear": "poäng i år",
       "view": "Visa",
       "pointsToday": "Poäng idag",
@@ -107,7 +107,7 @@
       }
     },
     "wellbeing": {
-      "title": "Aktivitetsindex",
+      "title": "Aktivitetspoäng",
       "pointsThisMembershipYear": "poäng under ditt medlemsår",
       "pointsThisMonth": "{n} poäng denna månad",
       "explanation": "Varje genomförd aktivitet ger 1 poäng. Poängen summeras per månad och samlas under ditt medlemsår, med start den dag du gick med.",

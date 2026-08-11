@@ -5,7 +5,7 @@
       "activities": "Activiteiten",
       "challenges": "Uitdagingen",
       "community": "Community",
-      "index": "Index",
+      "index": "Punten",
       "tagline": "Build healthier habits, together.",
       "profileAria": "Profiel",
       "chat": "Chat"
@@ -14,7 +14,7 @@
       "welcomeBack": "Welkom terug",
       "hiGreeting": "Hoi, {name}",
       "defaultName": "daar",
-      "activityIndex": "Activiteitenindex",
+      "activityIndex": "Activiteitspunten",
       "pointsThisYear": "punten dit jaar",
       "view": "Bekijken",
       "pointsToday": "Punten vandaag",
@@ -107,7 +107,7 @@
       }
     },
     "wellbeing": {
-      "title": "Activiteitenindex",
+      "title": "Activiteitspunten",
       "pointsThisMembershipYear": "punten dit lidmaatschapsjaar",
       "pointsThisMonth": "{n} punten deze maand",
       "explanation": "Elke voltooide activiteit levert 1 punt op. Punten worden per maand opgeteld en verzameld over je lidmaatschapsjaar, vanaf de dag dat je lid werd.",

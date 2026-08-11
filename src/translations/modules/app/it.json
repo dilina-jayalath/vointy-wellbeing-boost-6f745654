@@ -5,7 +5,7 @@
       "activities": "Attività",
       "challenges": "Sfide",
       "community": "Community",
-      "index": "Indice",
+      "index": "Punti",
       "tagline": "Build healthier habits, together.",
       "profileAria": "Profilo",
       "chat": "Chat"
@@ -14,7 +14,7 @@
       "welcomeBack": "Bentornato/a",
       "hiGreeting": "Ciao, {name}",
       "defaultName": "tu",
-      "activityIndex": "Indice di attività",
+      "activityIndex": "Punti di attività",
       "pointsThisYear": "punti quest'anno",
       "view": "Vedi",
       "pointsToday": "Punti oggi",
@@ -107,7 +107,7 @@
       }
     },
     "wellbeing": {
-      "title": "Indice di attività",
+      "title": "Punti di attività",
       "pointsThisMembershipYear": "punti in questo anno di iscrizione",
       "pointsThisMonth": "{n} punti questo mese",
       "explanation": "Ogni attività completata vale 1 punto. I punti vengono sommati mensilmente e accumulati durante il tuo anno di iscrizione, a partire dal giorno di adesione.",

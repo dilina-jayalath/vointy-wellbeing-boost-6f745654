@@ -5,7 +5,7 @@
       "activities": "Activities",
       "challenges": "Challenges",
       "community": "Community",
-      "index": "Index",
+      "index": "Points",
       "tagline": "Build healthier habits, together.",
       "profileAria": "Profile",
       "chat": "Chat"
@@ -14,7 +14,7 @@
       "welcomeBack": "Welcome back",
       "hiGreeting": "Hi, {name}",
       "defaultName": "there",
-      "activityIndex": "Activity Index",
+      "activityIndex": "Activity Points",
       "pointsThisYear": "points this year",
       "view": "View",
       "pointsToday": "Points today",
@@ -107,7 +107,7 @@
       }
     },
     "wellbeing": {
-      "title": "Activity Index",
+      "title": "Activity Points",
       "pointsThisMembershipYear": "points this membership year",
       "pointsThisMonth": "{n} points this month",
       "explanation": "Every completed activity earns 1 point. Points are summed per month and accumulated over your membership year, starting from the day you joined.",
