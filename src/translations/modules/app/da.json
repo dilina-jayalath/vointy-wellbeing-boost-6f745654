@@ -118,7 +118,8 @@
         "couldNotSubmit": "Kunne ikke sende",
         "thanksTitle": "Tak!",
         "thanksDesc": "Dine svar er gemt."
-      }
+      },
+      "answerPlaceholder": "Skriv dit svar…"
     },
     "activityForm": {
       "editTitle": "Rediger aktivitet",

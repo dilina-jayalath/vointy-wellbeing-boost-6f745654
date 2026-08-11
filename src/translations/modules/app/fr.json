@@ -118,7 +118,8 @@
         "couldNotSubmit": "Envoi impossible",
         "thanksTitle": "Merci !",
         "thanksDesc": "Vos réponses ont été enregistrées."
-      }
+      },
+      "answerPlaceholder": "Rédigez votre réponse…"
     },
     "activityForm": {
       "editTitle": "Modifier l'activité",
