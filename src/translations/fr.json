@@ -7,7 +7,8 @@
     "login": "Connexion",
     "logout": "Déconnexion",
     "account": "Compte",
-    "admin": "Admin"
+    "admin": "Admin",
+    "download": "Télécharger l'app"
   },
   "brand": {
     "slogan": "Build healthier habits, together."
