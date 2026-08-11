@@ -482,6 +482,16 @@
         "lastActive": "Senast aktiv",
         "points30d": "Poäng 30 d (föreg.)"
       }
+    },
+    "qualityIndex": {
+      "title": "Aktivitetsindex (kvalitet, 0–100)",
+      "description": "Företagets snitt för de senaste 30 dagarna: regelbundenhet, variation, gemenskap och upplevt välbefinnande. Endast aggregerat – inga individuella uppgifter.",
+      "consistency": "Regelbundenhet",
+      "variety": "Variation",
+      "community": "Gemenskap",
+      "wellbeing": "Upplevt välbefinnande",
+      "highShare": "{n} % av medarbetarna på 70 eller mer",
+      "lowShare": "{n} % under 40"
     }
   },
   "adminPanel": {

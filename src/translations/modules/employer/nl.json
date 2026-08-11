@@ -482,6 +482,16 @@
         "lastActive": "Laatst actief",
         "points30d": "Punten 30 d (vorige)"
       }
+    },
+    "qualityIndex": {
+      "title": "Activiteitenindex (kwaliteit, 0–100)",
+      "description": "Bedrijfsgemiddelde over de laatste 30 dagen: regelmaat, variatie, gemeenschap en ervaren welzijn. Alleen geaggregeerd, geen individuele gegevens.",
+      "consistency": "Regelmaat",
+      "variety": "Variatie",
+      "community": "Gemeenschap",
+      "wellbeing": "Ervaren welzijn",
+      "highShare": "{n}% van de medewerkers op 70 of hoger",
+      "lowShare": "{n}% onder 40"
     }
   },
   "adminPanel": {

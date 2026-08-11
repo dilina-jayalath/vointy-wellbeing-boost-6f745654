@@ -482,6 +482,16 @@
         "lastActive": "Zuletzt aktiv",
         "points30d": "Punkte 30 T (vorh.)"
       }
+    },
+    "qualityIndex": {
+      "title": "Aktivitätsindex (Qualität, 0–100)",
+      "description": "Unternehmensdurchschnitt der letzten 30 Tage: Regelmäßigkeit, Vielfalt, Gemeinschaft und empfundenes Wohlbefinden. Nur aggregiert – keine Einzeldaten.",
+      "consistency": "Regelmäßigkeit",
+      "variety": "Vielfalt",
+      "community": "Gemeinschaft",
+      "wellbeing": "Empfundenes Wohlbefinden",
+      "highShare": "{n}% der Mitarbeitenden bei 70 oder höher",
+      "lowShare": "{n}% unter 40"
     }
   },
   "adminPanel": {

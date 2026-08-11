@@ -482,6 +482,16 @@
         "lastActive": "Ultima attività",
         "points30d": "Punti 30 gg (prec.)"
       }
+    },
+    "qualityIndex": {
+      "title": "Indice di attività (qualità, 0–100)",
+      "description": "Media aziendale degli ultimi 30 giorni: costanza, varietà, comunità e benessere percepito. Solo dati aggregati, nessun dato individuale.",
+      "consistency": "Costanza",
+      "variety": "Varietà",
+      "community": "Comunità",
+      "wellbeing": "Benessere percepito",
+      "highShare": "{n}% dei dipendenti a 70 o più",
+      "lowShare": "{n}% sotto 40"
     }
   },
   "adminPanel": {

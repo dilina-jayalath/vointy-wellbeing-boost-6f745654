@@ -224,6 +224,19 @@
         "couldNotLoad": "Kunne ikke indlæse chatten",
         "couldNotSend": "Kunne ikke sende beskeden"
       }
+    },
+    "index": {
+      "title": "Aktivitetsindeks",
+      "description": "En score fra 0–100 for de seneste 30 dage: regelmæssighed, variation, fællesskab og oplevet trivsel. Point måler mængde, indekset kvalitet.",
+      "consistency": "Regelmæssighed",
+      "variety": "Variation",
+      "community": "Fællesskab",
+      "wellbeing": "Oplevet trivsel",
+      "activeDays": "{n} aktive dage i de seneste 30 dage",
+      "categories": "{n} forskellige aktivitetskategorier",
+      "socialEvents": "{n} fællesskabs- og udfordringshandlinger",
+      "surveyAvg": "Gennemsnit i undersøgelse {n} / 10",
+      "noSurvey": "Endnu ingen svar på undersøgelser"
     }
   }
 }

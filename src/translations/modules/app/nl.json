@@ -224,6 +224,19 @@
         "couldNotLoad": "Chat kon niet worden geladen",
         "couldNotSend": "Bericht kon niet worden verzonden"
       }
+    },
+    "index": {
+      "title": "Activiteitenindex",
+      "description": "Een score van 0–100 over de laatste 30 dagen: regelmaat, variatie, gemeenschap en hoe je je voelt. Punten meten volume, de index kwaliteit.",
+      "consistency": "Regelmaat",
+      "variety": "Variatie",
+      "community": "Gemeenschap",
+      "wellbeing": "Ervaren welzijn",
+      "activeDays": "{n} actieve dagen in de laatste 30 dagen",
+      "categories": "{n} verschillende activiteitscategorieën",
+      "socialEvents": "{n} community- en challenge-acties",
+      "surveyAvg": "Gemiddelde enquête {n} / 10",
+      "noSurvey": "Nog geen enquêteantwoorden"
     }
   }
 }

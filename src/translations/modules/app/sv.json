@@ -224,6 +224,19 @@
         "couldNotLoad": "Kunde inte ladda chatten",
         "couldNotSend": "Kunde inte skicka meddelandet"
       }
+    },
+    "index": {
+      "title": "Aktivitetsindex",
+      "description": "Ett 0–100-värde för de senaste 30 dagarna: regelbundenhet, variation, gemenskap och upplevt välbefinnande. Poängen mäter mängd, indexet kvalitet.",
+      "consistency": "Regelbundenhet",
+      "variety": "Variation",
+      "community": "Gemenskap",
+      "wellbeing": "Upplevt välbefinnande",
+      "activeDays": "{n} aktiva dagar de senaste 30 dagarna",
+      "categories": "{n} olika aktivitetskategorier",
+      "socialEvents": "{n} community- och utmaningshandlingar",
+      "surveyAvg": "Enkätsnitt {n} / 10",
+      "noSurvey": "Inga enkätsvar än"
     }
   }
 }

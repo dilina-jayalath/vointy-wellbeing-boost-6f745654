@@ -1564,12 +1564,39 @@ export type Database = {
           user_id: string
         }[]
       }
+      org_wellbeing_index: {
+        Args: never
+        Returns: {
+          avg_community: number
+          avg_consistency: number
+          avg_index: number
+          avg_variety: number
+          avg_wellbeing: number
+          employees_with_data: number
+          high_index_share: number
+          low_index_share: number
+        }[]
+      }
       read_email_batch: {
         Args: { batch_size: number; queue_name: string; vt: number }
         Returns: {
           message: Json
           msg_id: number
           read_ct: number
+        }[]
+      }
+      user_activity_index: {
+        Args: { _user_id?: string }
+        Returns: {
+          active_days_30d: number
+          categories_30d: number
+          community: number
+          community_events_30d: number
+          consistency: number
+          index_score: number
+          survey_avg: number
+          variety: number
+          wellbeing: number
         }[]
       }
     }

@@ -17,6 +17,7 @@ import {
 } from "recharts";
 import { supabase } from "@/integrations/supabase/client";
 import { useTranslation } from "@/lib/i18n";
+import OrgIndexCard from "@/components/employer/OrgIndexCard";
 
 interface Overview {
   total_employees: number;
@@ -198,6 +199,9 @@ const ActivityIndex = () => {
               </CardContent>
             </Card>
           </div>
+
+          <OrgIndexCard />
+
 
           <Card>
             <CardHeader>

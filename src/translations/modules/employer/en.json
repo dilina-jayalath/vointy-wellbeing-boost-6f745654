@@ -482,6 +482,16 @@
         "lastActive": "Last active",
         "points30d": "Points 30 d (prev.)"
       }
+    },
+    "qualityIndex": {
+      "title": "Activity Index (quality, 0–100)",
+      "description": "Company average from the last 30 days: consistency, variety, community and perceived wellbeing. Aggregated only — no individual employee data.",
+      "consistency": "Consistency",
+      "variety": "Variety",
+      "community": "Community",
+      "wellbeing": "Perceived wellbeing",
+      "highShare": "{n}% of employees at 70 or above",
+      "lowShare": "{n}% below 40"
     }
   },
   "adminPanel": {
