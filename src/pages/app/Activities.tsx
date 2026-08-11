@@ -52,7 +52,7 @@ const AppActivities = () => {
       activity_id: selected.id,
       amount: value,
       unit: selected.unit,
-      points: selected.points,
+      points: 1,
       note: note || null,
     });
     setSaving(false);
