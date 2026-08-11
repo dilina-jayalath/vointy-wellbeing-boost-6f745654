@@ -222,5 +222,33 @@
     "submit": "Begär prenumeration",
     "successTitle": "Förfrågan mottagen!",
     "successMessage": "Vi kontaktar dig snart angående din {plan}-prenumeration."
+  },
+  "download": {
+    "metaTitle": "Ladda ner Vointy-appen",
+    "metaDescription": "Installera Vointy.life som en dator- eller mobilapp. Få samma upplevelse utan att behöva öppna webbläsaren varje gång.",
+    "title": "Hämta Vointy på alla enheter",
+    "subtitle": "Installera Vointy.life som en progressiv webbapp och få tillgång till ditt välmåendecenter från datorn eller telefonen – ingen appbutik behövs.",
+    "desktop": {
+      "title": "Dator",
+      "description": "Installera Vointy direkt från webbläsaren för snabb åtkomst från aktivitetsfältet eller dockan.",
+      "step1": "Öppna vointy.life i Google Chrome eller Microsoft Edge.",
+      "step2": "Klicka på installationsikonen i adressfältet (en skärm med en nedåtpil) eller välj 'Installera Vointy.life' från menyn.",
+      "step3": "Starta Vointy från skrivbordet, startmenyn eller dockan som vilken annan app som helst.",
+      "browsers": "Fungerar i Chrome och Edge på Windows, macOS och Linux."
+    },
+    "mobile": {
+      "title": "Mobil",
+      "description": "Lägg till Vointy på din hemskärm för åtkomst med ett tryck.",
+      "ios": "På iPhone eller iPad trycker du på Dela-knappen i Safari och sedan 'Lägg till på hemskärmen'.",
+      "android": "På Android trycker du på menyn i Chrome och väljer 'Lägg till på hemskärmen' eller 'Installera app'."
+    },
+    "benefits": {
+      "title": "Varför installera Vointy?",
+      "fast": "Öppnas direkt från hemskärmen eller skrivbordet.",
+      "updates": "Alltid uppdaterad utan manuella uppdateringar.",
+      "space": "Tar minimal lagringsplats jämfört med native-appar."
+    },
+    "cta": "Skapa gratiskonto",
+    "footerLink": "Hämta appen"
   }
 }

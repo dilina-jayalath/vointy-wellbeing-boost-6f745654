@@ -222,5 +222,33 @@
     "submit": "Pyydä tilausta",
     "successTitle": "Pyyntö vastaanotettu!",
     "successMessage": "Otamme sinuun pian yhteyttä {plan}-tilauksestasi."
+  },
+  "download": {
+    "metaTitle": "Lataa Vointy-sovellus",
+    "metaDescription": "Asenna Vointy.life työpöytä- tai mobiilisovelluksena. Käytä samaa kokemusta ilman, että sinun tarvitsee avata selainta joka kerta.",
+    "title": "Lataa Vointy kaikille laitteillesi",
+    "subtitle": "Asenna Vointy.life progressiivisena verkkosovelluksena ja käytä hyvinvointikeskustasi tietokoneella tai puhelimella ilman sovelluskauppaa.",
+    "desktop": {
+      "title": "Tietokone",
+      "description": "Asenna Vointy suoraan selaimestasi nopeaa käyttöä varten tehtäväpalkista tai telakasta.",
+      "step1": "Avaa vointy.life Google Chromessa tai Microsoft Edgessä.",
+      "step2": "Napsauta osoitepalkin asennuskuvaketta (näyttö alaspäin osoittavalla nuolella) tai valitse valikosta 'Asenna Vointy.life'.",
+      "step3": "Käynnistä Vointy työpöydältä, Käynnistä-valikosta tai telakasta kuten mikä tahansa muu sovellus.",
+      "browsers": "Toimii Chromessa ja Edgessä Windowsissa, macOS:ssä ja Linuxissa."
+    },
+    "mobile": {
+      "title": "Mobiili",
+      "description": "Lisää Vointy aloitusnäytöllesi yhden napautuksen pääsyä varten.",
+      "ios": "iPhonella tai iPadilla napauta Safarissa Jaa-painiketta ja sitten 'Lisää aloitusnäytölle'.",
+      "android": "Androidissa napauta Chromen valikkoa ja valitse 'Lisää aloitusnäytölle' tai 'Asenna sovellus'."
+    },
+    "benefits": {
+      "title": "Miksi asentaa Vointy?",
+      "fast": "Avautuu välittömästi aloitusnäytöltäsi tai työpöydältäsi.",
+      "updates": "Aina ajan tasalla ilman manuaalisia päivityksiä.",
+      "space": "Vie vähemmän tallennustilaa kuin natiivisovellukset."
+    },
+    "cta": "Luo ilmainen tili",
+    "footerLink": "Lataa sovellus"
   }
 }

@@ -222,5 +222,33 @@
     "submit": "Demander un abonnement",
     "successTitle": "Demande reçue !",
     "successMessage": "Nous vous contacterons prochainement au sujet de votre abonnement {plan}."
+  },
+  "download": {
+    "metaTitle": "Télécharger l'application Vointy",
+    "metaDescription": "Installez Vointy.life comme application desktop ou mobile. Profitez de la même expérience sans ouvrir votre navigateur à chaque fois.",
+    "title": "Obtenez Vointy sur tous vos appareils",
+    "subtitle": "Installez Vointy.life en tant que Progressive Web App et accédez à votre hub bien-être depuis votre ordinateur ou votre téléphone – aucun app store requis.",
+    "desktop": {
+      "title": "Ordinateur",
+      "description": "Installez Vointy directement depuis votre navigateur pour un accès rapide depuis la barre des tâches ou le dock.",
+      "step1": "Ouvrez vointy.life dans Google Chrome ou Microsoft Edge.",
+      "step2": "Cliquez sur l'icône d'installation dans la barre d'adresse (un écran avec une flèche vers le bas) ou sélectionnez 'Installer Vointy.life' dans le menu.",
+      "step3": "Lancez Vointy depuis votre bureau, le menu Démarrer ou le dock comme n'importe quelle autre application.",
+      "browsers": "Fonctionne dans Chrome et Edge sur Windows, macOS et Linux."
+    },
+    "mobile": {
+      "title": "Mobile",
+      "description": "Ajoutez Vointy à votre écran d'accueil pour un accès en un seul geste.",
+      "ios": "Sur iPhone ou iPad, appuyez sur le bouton Partager dans Safari, puis 'Sur l'écran d'accueil'.",
+      "android": "Sur Android, appuyez sur le menu de Chrome et sélectionnez 'Ajouter à l'écran d'accueil' ou 'Installer l'application'."
+    },
+    "benefits": {
+      "title": "Pourquoi installer Vointy ?",
+      "fast": "S'ouvre instantanément depuis votre écran d'accueil ou votre bureau.",
+      "updates": "Toujours à jour sans mises à jour manuelles.",
+      "space": "Prend un espace de stockage minimal comparé aux applications natives."
+    },
+    "cta": "Créer un compte gratuit",
+    "footerLink": "Télécharger l'app"
   }
 }
