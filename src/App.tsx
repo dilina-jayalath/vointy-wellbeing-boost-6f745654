@@ -11,6 +11,7 @@ import About from "./pages/About";
 import CorporateWellnessPrograms from "./pages/CorporateWellnessPrograms";
 import WellnessChallengesForEmployees from "./pages/WellnessChallengesForEmployees";
 import RoiCalculator from "./pages/RoiCalculator";
+import Download from "./pages/Download";
 import Careers from "./pages/Careers";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
