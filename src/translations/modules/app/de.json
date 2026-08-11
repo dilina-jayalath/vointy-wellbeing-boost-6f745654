@@ -118,7 +118,8 @@
         "couldNotSubmit": "Konnte nicht gesendet werden",
         "thanksTitle": "Danke!",
         "thanksDesc": "Deine Antworten wurden gespeichert."
-      }
+      },
+      "answerPlaceholder": "Schreiben Sie Ihre Antwort…"
     },
     "activityForm": {
       "editTitle": "Aktivität bearbeiten",

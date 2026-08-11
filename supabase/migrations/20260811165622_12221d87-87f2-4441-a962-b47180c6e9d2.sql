@@ -1,0 +1,1 @@
+UPDATE public.survey_questions SET question_type = 'text' WHERE id = '4f2c4472-a684-452b-a37b-e5e60a312ec2';

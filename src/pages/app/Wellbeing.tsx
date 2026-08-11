@@ -7,6 +7,9 @@ import { useTranslation } from "@/lib/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
+import { Textarea } from "@/components/ui/textarea";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
 import { Activity as ActivityIcon } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
@@ -22,7 +25,7 @@ const AppActivityIndex = () => {
   const qc = useQueryClient();
   const { data: log } = useActivityLog();
   const { data: surveys } = useOpenSurveys();
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [answers, setAnswers] = useState<Record<string, string | number>>({});
   const [saving, setSaving] = useState(false);
 
   const survey = surveys?.[0];
@@ -72,12 +75,18 @@ const AppActivityIndex = () => {
     if (!user || !survey) return;
     setSaving(true);
     const { error } = await supabase.from("survey_answers").insert(
-      questions.map((q: any) => ({
-        survey_id: survey.id,
-        question_id: q.id,
-        user_id: user.id,
-        answer_value: answers[q.id] ?? 5,
-      }))
+      questions.map((q: any) => {
+        const answer = answers[q.id];
+        const isScale = q.question_type === "scale";
+        const base = {
+          survey_id: survey.id,
+          question_id: q.id,
+          user_id: user.id,
+        };
+        return isScale
+          ? { ...base, answer_value: Number(answer ?? 5) }
+          : { ...base, answer_text: String(answer ?? "") };
+      })
     );
     setSaving(false);
     if (error) {
@@ -135,14 +144,45 @@ const AppActivityIndex = () => {
             {questions.map((q: any) => (
               <div key={q.id} className="space-y-2">
                 <p className="text-sm font-medium">{localized(q.question, language)}</p>
-                <Slider
-                  value={[answers[q.id] ?? 5]}
-                  min={1}
-                  max={10}
-                  step={1}
-                  onValueChange={([v]) => setAnswers((prev) => ({ ...prev, [q.id]: v }))}
-                />
-                <p className="text-xs text-muted-foreground text-right">{answers[q.id] ?? 5} / 10</p>
+                {q.question_type === "scale" ? (
+                  <>
+                    <Slider
+                      value={[Number(answers[q.id] ?? 5)]}
+                      min={1}
+                      max={10}
+                      step={1}
+                      onValueChange={([v]) => setAnswers((prev) => ({ ...prev, [q.id]: v }))}
+                    />
+                    <p className="text-xs text-muted-foreground text-right">{answers[q.id] ?? 5} / 10</p>
+                  </>
+                ) : q.question_type === "text" ? (
+                  <Textarea
+                    value={String(answers[q.id] ?? "")}
+                    onChange={(e) => setAnswers((prev) => ({ ...prev, [q.id]: e.target.value }))}
+                    placeholder={t("appPanel.wellbeing.answerPlaceholder") as string}
+                    rows={3}
+                  />
+                ) : q.question_type === "choice" && Array.isArray(q.options) ? (
+                  <RadioGroup
+                    value={String(answers[q.id] ?? "")}
+                    onValueChange={(v) => setAnswers((prev) => ({ ...prev, [q.id]: v }))}
+                    className="space-y-1"
+                  >
+                    {q.options.map((opt: string) => (
+                      <div key={opt} className="flex items-center space-x-2">
+                        <RadioGroupItem value={opt} id={`${q.id}-${opt}`} />
+                        <Label htmlFor={`${q.id}-${opt}`} className="text-sm font-normal">{opt}</Label>
+                      </div>
+                    ))}
+                  </RadioGroup>
+                ) : (
+                  <Textarea
+                    value={String(answers[q.id] ?? "")}
+                    onChange={(e) => setAnswers((prev) => ({ ...prev, [q.id]: e.target.value }))}
+                    placeholder={t("appPanel.wellbeing.answerPlaceholder") as string}
+                    rows={3}
+                  />
+                )}
               </div>
             ))}
             <Button className="w-full" onClick={submit} disabled={saving}>

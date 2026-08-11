@@ -118,7 +118,8 @@
         "couldNotSubmit": "Lähetys epäonnistui",
         "thanksTitle": "Kiitos!",
         "thanksDesc": "Vastauksesi tallennettiin."
-      }
+      },
+      "answerPlaceholder": "Kirjoita vastauksesi…"
     },
     "activityForm": {
       "editTitle": "Muokkaa aktiviteettia",

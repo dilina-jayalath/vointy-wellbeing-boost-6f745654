@@ -118,7 +118,8 @@
         "couldNotSubmit": "Kunde inte skicka",
         "thanksTitle": "Tack!",
         "thanksDesc": "Dina svar har sparats."
-      }
+      },
+      "answerPlaceholder": "Skriv ditt svar…"
     },
     "activityForm": {
       "editTitle": "Redigera aktivitet",

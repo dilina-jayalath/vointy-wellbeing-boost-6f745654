@@ -118,7 +118,8 @@
         "couldNotSubmit": "No se pudo enviar",
         "thanksTitle": "¡Gracias!",
         "thanksDesc": "Tus respuestas se guardaron."
-      }
+      },
+      "answerPlaceholder": "Escribe tu respuesta…"
     },
     "activityForm": {
       "editTitle": "Editar actividad",

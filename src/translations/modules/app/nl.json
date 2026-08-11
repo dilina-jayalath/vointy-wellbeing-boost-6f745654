@@ -118,7 +118,8 @@
         "couldNotSubmit": "Verzenden mislukt",
         "thanksTitle": "Bedankt!",
         "thanksDesc": "Je antwoorden zijn opgeslagen."
-      }
+      },
+      "answerPlaceholder": "Schrijf je antwoord…"
     },
     "activityForm": {
       "editTitle": "Activiteit bewerken",

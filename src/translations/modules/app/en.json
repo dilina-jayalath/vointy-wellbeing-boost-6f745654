@@ -118,7 +118,8 @@
         "couldNotSubmit": "Could not submit",
         "thanksTitle": "Thanks!",
         "thanksDesc": "Your answers were saved."
-      }
+      },
+      "answerPlaceholder": "Write your answer…"
     },
     "activityForm": {
       "editTitle": "Edit activity",
