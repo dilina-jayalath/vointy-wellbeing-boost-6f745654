@@ -482,6 +482,16 @@
         "lastActive": "Dernière activité",
         "points30d": "Points 30 j (préc.)"
       }
+    },
+    "qualityIndex": {
+      "title": "Indice d'activité (qualité, 0–100)",
+      "description": "Moyenne de l'entreprise sur les 30 derniers jours : régularité, variété, communauté et bien-être ressenti. Uniquement agrégé, sans données individuelles.",
+      "consistency": "Régularité",
+      "variety": "Variété",
+      "community": "Communauté",
+      "wellbeing": "Bien-être ressenti",
+      "highShare": "{n}% des salariés à 70 ou plus",
+      "lowShare": "{n}% sous 40"
     }
   },
   "adminPanel": {

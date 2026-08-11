@@ -482,6 +482,16 @@
         "lastActive": "Sidst aktiv",
         "points30d": "Point 30 d (forrige)"
       }
+    },
+    "qualityIndex": {
+      "title": "Aktivitetsindeks (kvalitet, 0–100)",
+      "description": "Virksomhedens gennemsnit for de seneste 30 dage: regelmæssighed, variation, fællesskab og oplevet trivsel. Kun aggregeret – ingen individuelle data.",
+      "consistency": "Regelmæssighed",
+      "variety": "Variation",
+      "community": "Fællesskab",
+      "wellbeing": "Oplevet trivsel",
+      "highShare": "{n}% af medarbejderne på 70 eller mere",
+      "lowShare": "{n}% under 40"
     }
   },
   "adminPanel": {

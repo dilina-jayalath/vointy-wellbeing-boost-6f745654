@@ -482,6 +482,16 @@
         "lastActive": "Viimeksi aktiivinen",
         "points30d": "Pisteet 30 pv (edell.)"
       }
+    },
+    "qualityIndex": {
+      "title": "Aktiivisuusindeksi (laatu, 0–100)",
+      "description": "Yrityksen keskiarvo viimeisiltä 30 päivältä: säännöllisyys, monipuolisuus, yhteisöllisyys ja koettu hyvinvointi. Vain koostettuna – ei yksittäisten työntekijöiden tietoja.",
+      "consistency": "Säännöllisyys",
+      "variety": "Monipuolisuus",
+      "community": "Yhteisöllisyys",
+      "wellbeing": "Koettu hyvinvointi",
+      "highShare": "{n} % työntekijöistä tasolla 70 tai yli",
+      "lowShare": "{n} % alle 40"
     }
   },
   "adminPanel": {
