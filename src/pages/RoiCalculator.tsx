@@ -47,6 +47,28 @@ const RoiCalculator = () => {
           </div>
         </section>
 
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <Card className="bg-gradient-to-br from-brand-purple/10 via-background to-brand-blue/10 border-brand-purple/20">
+              <CardContent className="p-8 md:p-12 text-center">
+                <div className="flex justify-center gap-4 mb-6">
+                  <div className="bg-brand-purple/10 p-3 rounded-full">
+                    <Monitor className="h-6 w-6 text-brand-purple" />
+                  </div>
+                  <div className="bg-brand-blue/10 p-3 rounded-full">
+                    <Smartphone className="h-6 w-6 text-brand-blue" />
+                  </div>
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">{t('roi.page.downloadTitle')}</h2>
+                <p className="text-muted-foreground mb-8 max-w-xl mx-auto">{t('roi.page.downloadDesc')}</p>
+                <Button asChild size="lg" className="btn-primary">
+                  <Link to="/download">{t('roi.page.downloadCta')}</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         <section className="py-12 md:py-16 bg-muted/40">
           <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-3xl font-bold mb-6">{t('roi.page.h2')}</h2>
