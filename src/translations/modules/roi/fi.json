@@ -62,7 +62,10 @@
       "morePre": "Lue lisää siitä,",
       "moreLink1": "miten Vointyn työhyvinvointiohjelmat toimivat",
       "moreMid": "tai selaa",
-      "moreLink2": "työntekijöiden hyvinvointihaasteita"
+      "moreLink2": "työntekijöiden hyvinvointihaasteita",
+      "downloadTitle": "Ota Vointy mukaasi",
+      "downloadDesc": "Asenna Vointy sovelluksena työpöydällesi tai puhelimeesi — sovelluskauppaa ei tarvita.",
+      "downloadCta": "Lataa sovellus"
     }
   }
 }
