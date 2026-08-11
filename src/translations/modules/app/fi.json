@@ -5,7 +5,7 @@
       "activities": "Aktiviteetit",
       "challenges": "Haasteet",
       "community": "Yhteisö",
-      "index": "Indeksi",
+      "index": "Pisteet",
       "tagline": "Build healthier habits, together.",
       "profileAria": "Profiili",
       "chat": "Chat"
@@ -14,7 +14,7 @@
       "welcomeBack": "Tervetuloa takaisin",
       "hiGreeting": "Hei, {name}",
       "defaultName": "siellä",
-      "activityIndex": "Aktiivisuusindeksi",
+      "activityIndex": "Aktiivisuuspisteet",
       "pointsThisYear": "pistettä tänä vuonna",
       "view": "Näytä",
       "pointsToday": "Pisteet tänään",
@@ -107,7 +107,7 @@
       }
     },
     "wellbeing": {
-      "title": "Aktiivisuusindeksi",
+      "title": "Aktiivisuuspisteet",
       "pointsThisMembershipYear": "pistettä tänä jäsenyysvuonna",
       "pointsThisMonth": "{n} pistettä tässä kuussa",
       "explanation": "Jokainen suoritettu aktiviteetti tuottaa 1 pisteen. Pisteet lasketaan yhteen kuukausittain ja kertyvät jäsenyysvuotesi ajan, liittymispäivästäsi alkaen.",

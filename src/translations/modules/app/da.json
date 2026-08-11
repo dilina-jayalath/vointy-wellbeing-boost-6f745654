@@ -5,7 +5,7 @@
       "activities": "Aktiviteter",
       "challenges": "Udfordringer",
       "community": "Fællesskab",
-      "index": "Indeks",
+      "index": "Point",
       "tagline": "Build healthier habits, together.",
       "profileAria": "Profil",
       "chat": "Chat"
@@ -14,7 +14,7 @@
       "welcomeBack": "Velkommen tilbage",
       "hiGreeting": "Hej, {name}",
       "defaultName": "der",
-      "activityIndex": "Aktivitetsindeks",
+      "activityIndex": "Aktivitetspoint",
       "pointsThisYear": "point i år",
       "view": "Vis",
       "pointsToday": "Point i dag",
@@ -107,7 +107,7 @@
       }
     },
     "wellbeing": {
-      "title": "Aktivitetsindeks",
+      "title": "Aktivitetspoint",
       "pointsThisMembershipYear": "point i dette medlemsår",
       "pointsThisMonth": "{n} point denne måned",
       "explanation": "Hver gennemført aktivitet giver 1 point. Point lægges sammen pr. måned og akkumuleres over dit medlemsår, fra den dag du tilmeldte dig.",
