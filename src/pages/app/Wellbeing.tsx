@@ -143,14 +143,45 @@ const AppActivityIndex = () => {
             {questions.map((q: any) => (
               <div key={q.id} className="space-y-2">
                 <p className="text-sm font-medium">{localized(q.question, language)}</p>
-                <Slider
-                  value={[answers[q.id] ?? 5]}
-                  min={1}
-                  max={10}
-                  step={1}
-                  onValueChange={([v]) => setAnswers((prev) => ({ ...prev, [q.id]: v }))}
-                />
-                <p className="text-xs text-muted-foreground text-right">{answers[q.id] ?? 5} / 10</p>
+                {q.question_type === "scale" ? (
+                  <>
+                    <Slider
+                      value={[Number(answers[q.id] ?? 5)]}
+                      min={1}
+                      max={10}
+                      step={1}
+                      onValueChange={([v]) => setAnswers((prev) => ({ ...prev, [q.id]: v }))}
+                    />
+                    <p className="text-xs text-muted-foreground text-right">{answers[q.id] ?? 5} / 10</p>
+                  </>
+                ) : q.question_type === "text" ? (
+                  <Textarea
+                    value={String(answers[q.id] ?? "")}
+                    onChange={(e) => setAnswers((prev) => ({ ...prev, [q.id]: e.target.value }))}
+                    placeholder={t("appPanel.wellbeing.answerPlaceholder") as string}
+                    rows={3}
+                  />
+                ) : q.question_type === "choice" && Array.isArray(q.options) ? (
+                  <RadioGroup
+                    value={String(answers[q.id] ?? "")}
+                    onValueChange={(v) => setAnswers((prev) => ({ ...prev, [q.id]: v }))}
+                    className="space-y-1"
+                  >
+                    {q.options.map((opt: string) => (
+                      <div key={opt} className="flex items-center space-x-2">
+                        <RadioGroupItem value={opt} id={`${q.id}-${opt}`} />
+                        <Label htmlFor={`${q.id}-${opt}`} className="text-sm font-normal">{opt}</Label>
+                      </div>
+                    ))}
+                  </RadioGroup>
+                ) : (
+                  <Textarea
+                    value={String(answers[q.id] ?? "")}
+                    onChange={(e) => setAnswers((prev) => ({ ...prev, [q.id]: e.target.value }))}
+                    placeholder={t("appPanel.wellbeing.answerPlaceholder") as string}
+                    rows={3}
+                  />
+                )}
               </div>
             ))}
             <Button className="w-full" onClick={submit} disabled={saving}>
