@@ -62,7 +62,10 @@
       "morePre": "Læs mere om",
       "moreLink1": "hvordan Vointys virksomhedstrivselsprogrammer fungerer",
       "moreMid": "eller se",
-      "moreLink2": "trivselsudfordringer for medarbejdere"
+      "moreLink2": "trivselsudfordringer for medarbejdere",
+      "downloadTitle": "Tag Vointy med dig",
+      "downloadDesc": "Installer Vointy som app på din computer eller telefon — ingen app-butik nødvendig.",
+      "downloadCta": "Download app"
     }
   }
 }

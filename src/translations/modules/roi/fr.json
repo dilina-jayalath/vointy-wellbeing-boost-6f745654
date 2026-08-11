@@ -62,7 +62,10 @@
       "morePre": "En savoir plus sur",
       "moreLink1": "le fonctionnement des programmes de bien-être Vointy",
       "moreMid": "ou parcourez",
-      "moreLink2": "les défis bien-être pour les salariés"
+      "moreLink2": "les défis bien-être pour les salariés",
+      "downloadTitle": "Emportez Vointy partout",
+      "downloadDesc": "Installez Vointy comme application sur votre ordinateur ou téléphone — pas besoin de magasin d'applications.",
+      "downloadCta": "Télécharger l'app"
     }
   }
 }
