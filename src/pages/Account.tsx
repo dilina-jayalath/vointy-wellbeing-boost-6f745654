@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -8,8 +8,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation, languages } from "@/lib/i18n";
 import { useToast } from "@/components/ui/use-toast";
-import { Loader2 } from "lucide-react";
+import { Loader2, Smartphone, Building2 } from "lucide-react";
+import Header from "@/components/Header";
 import Seo from "@/components/Seo";
+
 
 const Account = () => {
   const { user, profile, isAdmin, signOut, updateProfile, loading } = useAuth();
@@ -19,14 +21,29 @@ const Account = () => {
   const [displayName, setDisplayName] = useState("");
   const [isSaving, setIsSaving] = useState(false);
 
+  const appliedProfileLanguage = React.useRef(false);
+
   useEffect(() => {
-    if (profile) {
-      setDisplayName(profile.display_name || "");
+    if (!profile) return;
+    setDisplayName(profile.display_name || "");
+    // Apply the stored language only once, otherwise it would immediately
+    // override any manual language change made on this page.
+    if (!appliedProfileLanguage.current) {
+      appliedProfileLanguage.current = true;
       if (profile.language && profile.language !== language) {
         setLanguage(profile.language as typeof language);
       }
     }
-  }, [profile, language, setLanguage]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [profile]);
+
+  const handleLanguageChange = (value: string) => {
+    setLanguage(value as typeof language);
+    if (user) {
+      void updateProfile({ language: value });
+    }
+  };
+
 
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -54,7 +71,9 @@ const Account = () => {
   }
 
   return (
-    <div className="min-h-screen py-24 px-4 bg-gradient-to-br from-brand-purple-light to-white">
+    <div className="min-h-screen bg-gradient-to-br from-brand-purple-light to-white">
+      <Header />
+      <div className="py-24 px-4">
       <Seo
         title="Your account — Vointy.life"
         description="Manage your Vointy account: profile details, language preference and sign-in settings on vointy.life."
@@ -62,6 +81,23 @@ const Account = () => {
         noindex
       />
       <div className="max-w-2xl mx-auto space-y-6">
+        <Card>
+          <CardContent className="py-6 grid gap-3 sm:grid-cols-2">
+            <Button asChild className="bg-brand-purple hover:bg-brand-purple-dark justify-start gap-2">
+              <Link to="/app">
+                <Smartphone className="h-4 w-4" />
+                {t("navExtra.myVointy")}
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="justify-start gap-2">
+              <Link to="/employer">
+                <Building2 className="h-4 w-4" />
+                {t("navExtra.employerPanel")}
+              </Link>
+            </Button>
+          </CardContent>
+        </Card>
+
         <Card>
           <CardHeader>
             <h1 className="text-2xl font-display font-semibold leading-none tracking-tight">{t("account.title")}</h1>
@@ -79,7 +115,8 @@ const Account = () => {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="language">{t("account.language")}</Label>
-                <Select value={language} onValueChange={(v) => setLanguage(v as typeof language)}>
+                <Select value={language} onValueChange={handleLanguageChange}>
+
                   <SelectTrigger id="language">
                     <SelectValue />
                   </SelectTrigger>
@@ -123,8 +160,10 @@ const Account = () => {
           </Card>
         )}
       </div>
+      </div>
     </div>
   );
+
 };
 
 export default Account;
