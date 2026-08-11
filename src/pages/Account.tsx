@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation, languages } from "@/lib/i18n";
 import { useToast } from "@/components/ui/use-toast";
-import { Loader2, Smartphone, Building2 } from "lucide-react";
+import { Loader2, Smartphone, Building2, ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import Seo from "@/components/Seo";
 
@@ -81,6 +81,11 @@ const Account = () => {
         noindex
       />
       <div className="max-w-2xl mx-auto space-y-6">
+        <Button variant="ghost" className="pl-0" onClick={() => navigate(-1)}>
+          <ArrowLeft className="h-4 w-4 mr-2" />
+          {t("common.back")}
+        </Button>
+
         <Card>
           <CardContent className="py-6 grid gap-3 sm:grid-cols-2">
             <Button asChild className="bg-brand-purple hover:bg-brand-purple-dark justify-start gap-2">
