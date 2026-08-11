@@ -158,8 +158,10 @@ const Account = () => {
           </Card>
         )}
       </div>
+      </div>
     </div>
   );
+
 };
 
 export default Account;
