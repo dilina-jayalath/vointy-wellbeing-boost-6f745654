@@ -27,6 +27,8 @@ const AppActivityIndex = () => {
   const { data: surveys } = useOpenSurveys();
   const [answers, setAnswers] = useState<Record<string, string | number>>({});
   const [saving, setSaving] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
 
   const survey = surveys?.[0];
   const questions = (survey?.survey_questions ?? []).sort((a: any, b: any) => a.position - b.position);
@@ -73,6 +75,21 @@ const AppActivityIndex = () => {
 
   const submit = async () => {
     if (!user || !survey) return;
+
+    const missing = questions.filter((q: any) => {
+      if (q.question_type === "scale") return false;
+      const v = answers[q.id];
+      return v === undefined || String(v).trim() === "";
+    });
+    if (missing.length > 0) {
+      toast({
+        title: t("appPanel.wellbeing.toast.couldNotSubmit"),
+        description: t("appPanel.wellbeing.answerPlaceholder") as string,
+        variant: "destructive",
+      });
+      return;
+    }
+
     setSaving(true);
     const { error } = await supabase.from("survey_answers").insert(
       questions.map((q: any) => {
@@ -95,8 +112,10 @@ const AppActivityIndex = () => {
     }
     toast({ title: t("appPanel.wellbeing.toast.thanksTitle"), description: t("appPanel.wellbeing.toast.thanksDesc") });
     setAnswers({});
-    qc.invalidateQueries({ queryKey: ["open-surveys"] });
+    setSubmitted(true);
+    await qc.invalidateQueries({ queryKey: ["open-surveys"] });
   };
+
 
   return (
     <div className="space-y-4">
@@ -134,7 +153,17 @@ const AppActivityIndex = () => {
         </Card>
       )}
 
-      {survey && questions.length > 0 && (
+      {submitted && (
+        <Card>
+          <CardContent className="p-6 text-center space-y-1">
+            <p className="font-medium">{t("appPanel.wellbeing.toast.thanksTitle")}</p>
+            <p className="text-sm text-muted-foreground">{t("appPanel.wellbeing.toast.thanksDesc")}</p>
+          </CardContent>
+        </Card>
+      )}
+
+      {!submitted && survey && questions.length > 0 && (
+
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-base">{localized(survey.title, language)}</CardTitle>
