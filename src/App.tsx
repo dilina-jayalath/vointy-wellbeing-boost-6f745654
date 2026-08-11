@@ -76,6 +76,7 @@ const App = () => (
               <Route path="/corporate-wellness-programs" element={<CorporateWellnessPrograms />} />
               <Route path="/wellness-challenges-for-employees" element={<WellnessChallengesForEmployees />} />
               <Route path="/roi-calculator" element={<RoiCalculator />} />
+              <Route path="/download" element={<Download />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
