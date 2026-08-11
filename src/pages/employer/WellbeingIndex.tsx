@@ -199,6 +199,9 @@ const ActivityIndex = () => {
             </Card>
           </div>
 
+          <OrgIndexCard />
+
+
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-center gap-2 text-muted-foreground">
