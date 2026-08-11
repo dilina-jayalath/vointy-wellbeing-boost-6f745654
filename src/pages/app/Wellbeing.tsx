@@ -13,6 +13,7 @@ import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
 import { Activity as ActivityIcon } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
+import ActivityIndexCard from "@/components/app/ActivityIndexCard";
 
 const localized = (value: any, lang: string) =>
   typeof value === "object" && value !== null ? value[lang] ?? value.en ?? "" : value ?? "";
