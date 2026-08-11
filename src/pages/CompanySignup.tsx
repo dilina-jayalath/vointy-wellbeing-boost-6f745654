@@ -61,7 +61,7 @@ const CompanySignup = () => {
       email: form.email.trim(),
       password: form.password,
       options: {
-        emailRedirectTo: `${window.location.origin}/employer`,
+        emailRedirectTo: `${window.location.origin}/login`,
         data: {
           full_name: form.contactName.trim(),
           company_name: form.companyName.trim(),
