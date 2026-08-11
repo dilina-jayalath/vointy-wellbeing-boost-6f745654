@@ -78,13 +78,14 @@ const AppActivityIndex = () => {
       questions.map((q: any) => {
         const answer = answers[q.id];
         const isScale = q.question_type === "scale";
-        return {
+        const base = {
           survey_id: survey.id,
           question_id: q.id,
           user_id: user.id,
-          answer_value: isScale ? Number(answer ?? 5) : undefined,
-          answer_text: !isScale ? String(answer ?? "") : undefined,
         };
+        return isScale
+          ? { ...base, answer_value: Number(answer ?? 5) }
+          : { ...base, answer_text: String(answer ?? "") };
       })
     );
     setSaving(false);
