@@ -75,12 +75,17 @@ const AppActivityIndex = () => {
     if (!user || !survey) return;
     setSaving(true);
     const { error } = await supabase.from("survey_answers").insert(
-      questions.map((q: any) => ({
-        survey_id: survey.id,
-        question_id: q.id,
-        user_id: user.id,
-        answer_value: answers[q.id] ?? 5,
-      }))
+      questions.map((q: any) => {
+        const answer = answers[q.id];
+        const isScale = q.question_type === "scale";
+        return {
+          survey_id: survey.id,
+          question_id: q.id,
+          user_id: user.id,
+          answer_value: isScale ? Number(answer ?? 5) : undefined,
+          answer_text: !isScale ? String(answer ?? "") : undefined,
+        };
+      })
     );
     setSaving(false);
     if (error) {
