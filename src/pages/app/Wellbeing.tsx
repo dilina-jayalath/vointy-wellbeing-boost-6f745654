@@ -153,7 +153,17 @@ const AppActivityIndex = () => {
         </Card>
       )}
 
-      {survey && questions.length > 0 && (
+      {submitted && (
+        <Card>
+          <CardContent className="p-6 text-center space-y-1">
+            <p className="font-medium">{t("appPanel.wellbeing.toast.thanksTitle")}</p>
+            <p className="text-sm text-muted-foreground">{t("appPanel.wellbeing.toast.thanksDesc")}</p>
+          </CardContent>
+        </Card>
+      )}
+
+      {!submitted && survey && questions.length > 0 && (
+
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-base">{localized(survey.title, language)}</CardTitle>
