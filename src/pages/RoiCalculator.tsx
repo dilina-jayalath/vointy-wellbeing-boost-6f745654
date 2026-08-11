@@ -3,8 +3,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Seo from '@/components/Seo';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import RoiCalculatorWidget from '@/components/RoiCalculatorWidget';
 import { useTranslation } from '@/lib/i18n';
+import { Smartphone, Monitor } from 'lucide-react';
 
 const RoiCalculator = () => {
   const { t } = useTranslation();
@@ -42,6 +44,28 @@ const RoiCalculator = () => {
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <RoiCalculatorWidget idPrefix="page-roi" />
+          </div>
+        </section>
+
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <Card className="bg-gradient-to-br from-brand-purple/10 via-background to-brand-blue/10 border-brand-purple/20">
+              <CardContent className="p-8 md:p-12 text-center">
+                <div className="flex justify-center gap-4 mb-6">
+                  <div className="bg-brand-purple/10 p-3 rounded-full">
+                    <Monitor className="h-6 w-6 text-brand-purple" />
+                  </div>
+                  <div className="bg-brand-blue/10 p-3 rounded-full">
+                    <Smartphone className="h-6 w-6 text-brand-blue" />
+                  </div>
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">{t('roi.page.downloadTitle')}</h2>
+                <p className="text-muted-foreground mb-8 max-w-xl mx-auto">{t('roi.page.downloadDesc')}</p>
+                <Button asChild size="lg" className="btn-primary">
+                  <Link to="/download">{t('roi.page.downloadCta')}</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </section>
 

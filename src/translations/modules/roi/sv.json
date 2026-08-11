@@ -62,7 +62,10 @@
       "morePre": "Läs mer om",
       "moreLink1": "hur Vointys företagshälsoprogram fungerar",
       "moreMid": "eller bläddra bland",
-      "moreLink2": "hälsoutmaningar för anställda"
+      "moreLink2": "hälsoutmaningar för anställda",
+      "downloadTitle": "Ta med dig Vointy",
+      "downloadDesc": "Installera Vointy som en app på din dator eller telefon — ingen appbutik behövs.",
+      "downloadCta": "Ladda appen"
     }
   }
 }
