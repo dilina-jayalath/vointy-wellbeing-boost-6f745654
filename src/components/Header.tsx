@@ -21,6 +21,7 @@ const Header = () => {
     { label: t('nav.features'), href: '#features' },
     { label: t('nav.benefits'), href: '#benefits' },
     { label: t('nav.pricing'), href: '/subscription', isLink: true },
+    { label: t('nav.download'), href: '/download', isLink: true },
     ...(user ? [{ label: t('navExtra.myVointy'), href: '/app', isLink: true }] : []),
     { label: t('navExtra.employerPanel'), href: '/employer', isLink: true },
   ];
