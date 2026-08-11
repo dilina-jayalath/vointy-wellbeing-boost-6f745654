@@ -52,7 +52,7 @@ const AppActivities = () => {
       activity_id: selected.id,
       amount: value,
       unit: selected.unit,
-      points: selected.points,
+      points: 1,
       note: note || null,
     });
     setSaving(false);
@@ -105,7 +105,7 @@ const AppActivities = () => {
                   <p className="font-medium">{a.title}</p>
                   <p className="text-xs text-muted-foreground line-clamp-2">{a.description}</p>
                   <p className="text-xs text-brand-purple mt-1">
-                    {a.points} pts · {a.unit}
+                    1 pt · {a.unit}
                     {a.category ? ` · ${a.category}` : ""}
                   </p>
                   {a.link && (
@@ -138,7 +138,7 @@ const AppActivities = () => {
                 </div>
                 <div className="text-right">
                   <p className="font-medium">{Number(e.amount)} {e.unit ?? ""}</p>
-                  <p className="text-xs text-brand-purple">+{e.points} pts</p>
+                  <p className="text-xs text-brand-purple">+1 pt</p>
                 </div>
               </CardContent>
             </Card>
