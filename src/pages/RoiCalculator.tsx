@@ -3,8 +3,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Seo from '@/components/Seo';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import RoiCalculatorWidget from '@/components/RoiCalculatorWidget';
 import { useTranslation } from '@/lib/i18n';
+import { Smartphone, Monitor } from 'lucide-react';
 
 const RoiCalculator = () => {
   const { t } = useTranslation();
