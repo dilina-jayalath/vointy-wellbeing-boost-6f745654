@@ -81,6 +81,11 @@ const Account = () => {
         noindex
       />
       <div className="max-w-2xl mx-auto space-y-6">
+        <Button variant="ghost" className="pl-0" onClick={() => navigate(-1)}>
+          <ArrowLeft className="h-4 w-4 mr-2" />
+          {t("common.back")}
+        </Button>
+
         <Card>
           <CardContent className="py-6 grid gap-3 sm:grid-cols-2">
             <Button asChild className="bg-brand-purple hover:bg-brand-purple-dark justify-start gap-2">
