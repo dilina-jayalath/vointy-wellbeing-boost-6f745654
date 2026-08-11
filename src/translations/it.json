@@ -222,5 +222,33 @@
     "submit": "Richiedi abbonamento",
     "successTitle": "Richiesta ricevuta!",
     "successMessage": "Ti contatteremo a breve riguardo al tuo abbonamento {plan}."
+  },
+  "download": {
+    "metaTitle": "Scarica l'app Vointy",
+    "metaDescription": "Installa Vointy.life come app desktop o mobile. Ottieni la stessa esperienza senza dover aprire il browser ogni volta.",
+    "title": "Ottieni Vointy su ogni dispositivo",
+    "subtitle": "Installa Vointy.life come Progressive Web App e accedi al tuo hub di benessere da desktop o telefono — nessun app store necessario.",
+    "desktop": {
+      "title": "Desktop",
+      "description": "Installa Vointy direttamente dal browser per un accesso rapido dalla barra delle applicazioni o dal dock.",
+      "step1": "Apri vointy.life in Google Chrome o Microsoft Edge.",
+      "step2": "Fai clic sull'icona di installazione nella barra degli indirizzi (un monitor con una freccia verso il basso) o seleziona 'Installa Vointy.life' dal menu.",
+      "step3": "Avvia Vointy dal desktop, dal menu Start o dal dock come qualsiasi altra app.",
+      "browsers": "Funziona in Chrome e Edge su Windows, macOS e Linux."
+    },
+    "mobile": {
+      "title": "Mobile",
+      "description": "Aggiungi Vointy alla schermata home per l'accesso con un tocco.",
+      "ios": "Su iPhone o iPad, tocca il pulsante Condividi in Safari, poi 'Aggiungi a Home'.",
+      "android": "Su Android, tocca il menu di Chrome e seleziona 'Aggiungi a schermata Home' o 'Installa app'."
+    },
+    "benefits": {
+      "title": "Perché installare Vointy?",
+      "fast": "Si apre istantaneamente dalla schermata home o dal desktop.",
+      "updates": "Sempre aggiornato senza aggiornamenti manuali.",
+      "space": "Occupa uno spazio minimo rispetto alle app native."
+    },
+    "cta": "Crea account gratuito",
+    "footerLink": "Scarica l'app"
   }
 }

@@ -78,6 +78,11 @@ const Footer = () => {
                   {t('nav.pricing')}
                 </Link>
               </li>
+              <li>
+                <Link to="/download" className="text-gray-300 hover:text-white transition-colors">
+                  {t('download.footerLink')}
+                </Link>
+              </li>
             </ul>
           </div>
           

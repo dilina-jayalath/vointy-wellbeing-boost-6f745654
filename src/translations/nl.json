@@ -222,5 +222,33 @@
     "submit": "Abonnement aanvragen",
     "successTitle": "Aanvraag ontvangen!",
     "successMessage": "We nemen binnenkort contact met je op over je {plan}-abonnement."
+  },
+  "download": {
+    "metaTitle": "Download de Vointy-app",
+    "metaDescription": "Installeer Vointy.life als desktop- of mobiele app. Krijg dezelfde ervaring zonder elke keer je browser te openen.",
+    "title": "Vointy op elk apparaat",
+    "subtitle": "Installeer Vointy.life als Progressive Web App en krijg toegang tot je wellbeing-hub vanaf desktop of telefoon – geen app-store nodig.",
+    "desktop": {
+      "title": "Desktop",
+      "description": "Installeer Vointy rechtstreeks vanuit je browser voor snelle toegang vanaf de taakbalk of dock.",
+      "step1": "Open vointy.life in Google Chrome of Microsoft Edge.",
+      "step2": "Klik op het installatie-icoon in de adresbalk (een monitor met een pijl omlaag) of selecteer 'Vointy.life installeren' in het menu.",
+      "step3": "Start Vointy vanaf je bureaublad, startmenu of dock zoals elke andere app.",
+      "browsers": "Werkt in Chrome en Edge op Windows, macOS en Linux."
+    },
+    "mobile": {
+      "title": "Mobiel",
+      "description": "Voeg Vointy toe aan je startscherm voor toegang met één tik.",
+      "ios": "Op iPhone of iPad tik je in Safari op Delen en vervolgens 'Zet op beginscherm'.",
+      "android": "Op Android tik je in het Chrome-menu op 'Toevoegen aan startscherm' of 'App installeren'."
+    },
+    "benefits": {
+      "title": "Waarom Vointy installeren?",
+      "fast": "Opent direct vanaf je startscherm of bureaublad.",
+      "updates": "Altijd up-to-date zonder handmatige updates.",
+      "space": "Neemt minimale opslagruimte in vergeleken met native apps."
+    },
+    "cta": "Gratis account aanmaken",
+    "footerLink": "App downloaden"
   }
 }

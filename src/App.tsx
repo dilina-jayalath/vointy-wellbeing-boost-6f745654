@@ -11,6 +11,7 @@ import About from "./pages/About";
 import CorporateWellnessPrograms from "./pages/CorporateWellnessPrograms";
 import WellnessChallengesForEmployees from "./pages/WellnessChallengesForEmployees";
 import RoiCalculator from "./pages/RoiCalculator";
+import Download from "./pages/Download";
 import Careers from "./pages/Careers";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -75,6 +76,7 @@ const App = () => (
               <Route path="/corporate-wellness-programs" element={<CorporateWellnessPrograms />} />
               <Route path="/wellness-challenges-for-employees" element={<WellnessChallengesForEmployees />} />
               <Route path="/roi-calculator" element={<RoiCalculator />} />
+              <Route path="/download" element={<Download />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
