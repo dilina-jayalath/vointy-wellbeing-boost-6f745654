@@ -63,9 +63,11 @@ export const useChallenges = () =>
     },
   });
 
-export const useOpenSurveys = () =>
-  useQuery({
-    queryKey: ["open-surveys"],
+export const useOpenSurveys = () => {
+  const { user } = useAuth();
+  return useQuery({
+    queryKey: ["open-surveys", user?.id],
+    enabled: !!user,
     queryFn: async () => {
       const { data, error } = await supabase
         .from("wellbeing_surveys")
@@ -73,9 +75,19 @@ export const useOpenSurveys = () =>
         .in("status", ["active", "published"])
         .order("created_at", { ascending: false });
       if (error) throw error;
-      return data;
+
+      const { data: answered, error: answersError } = await supabase
+        .from("survey_answers")
+        .select("survey_id")
+        .eq("user_id", user!.id);
+      if (answersError) throw answersError;
+
+      const answeredIds = new Set((answered ?? []).map((a) => a.survey_id));
+      return (data ?? []).filter((s) => !answeredIds.has(s.id));
     },
   });
+};
+
 
 export const useCommunityFeed = () =>
   useQuery({
