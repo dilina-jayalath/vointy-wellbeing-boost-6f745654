@@ -138,7 +138,7 @@ const AppActivities = () => {
                 </div>
                 <div className="text-right">
                   <p className="font-medium">{Number(e.amount)} {e.unit ?? ""}</p>
-                  <p className="text-xs text-brand-purple">+{e.points} pts</p>
+                  <p className="text-xs text-brand-purple">+1 pt</p>
                 </div>
               </CardContent>
             </Card>
