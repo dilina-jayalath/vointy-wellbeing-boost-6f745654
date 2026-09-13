@@ -12,13 +12,12 @@
     ],
     "freeTitle": "Ilmainen",
     "freeForever": "ikuisesti",
-    "freeDescription": "Liity yrityksenä ja jaa Vointy-tunnukset työntekijöillesi rajattomassa määrässä tiimejä.",
+    "freeDescription": "Liity yrityksenä ja jaa Vointy-tunnukset työntekijöillesi yksittäin tai muodosta tiimi.",
     "freePlanNote": "Sisältää enintään 1 000 rekisteröitynyttä työntekijää per yritys.",
     "freeFeatures": [
-      "Rajattomasti työntekijöitä",
-      "Rajattomasti tiimejä",
-      "Kaikki aktiviteetit 158 kpl",
-      "Tiimipohjainen käyttöoikeus"
+      "Valitse kenelle jaat tunnukset",
+      "Muodosta tiimejä halutessasi",
+      "Käytössä kaikki Vointyn 158 valmista aktiviteettia"
     ],
     "getStartedFree": "Aloita ilmaiseksi",
     "employerDashboardBadge": "Työnantajan hallintapaneeli",
