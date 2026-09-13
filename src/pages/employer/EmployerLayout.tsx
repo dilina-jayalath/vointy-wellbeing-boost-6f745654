@@ -129,7 +129,7 @@ const EmployerLayout = () => {
                   <DropdownMenuItem
                     onClick={async () => {
                       await signOut();
-                      navigate("/auth");
+                      navigate("/login");
                     }}
                     className="cursor-pointer"
                   >
