@@ -29,9 +29,8 @@ const About = () => {
       {/* Story */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground">{t('aboutPage.p1')}</p>
-            <p className="text-lg text-muted-foreground">{t('aboutPage.p2')}</p>
           </div>
         </div>
       </section>
