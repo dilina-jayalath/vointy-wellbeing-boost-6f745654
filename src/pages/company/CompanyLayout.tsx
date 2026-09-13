@@ -1,6 +1,6 @@
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import InstallAppPrompt from "@/components/InstallAppPrompt";
-import { LayoutDashboard, UserPlus, MailCheck, Users, LogOut, Smartphone, Lock } from "lucide-react";
+import { LayoutDashboard, UserPlus, MailCheck, Users, LogOut, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
@@ -35,11 +35,6 @@ const CompanyLayout = () => {
           </Link>
           <div className="flex items-center gap-2">
             {orgName && <span className="hidden md:inline text-sm text-white/85 mr-2">{orgName}</span>}
-            <Button asChild variant="ghost" size="sm" className="text-white hover:bg-white/10 gap-1">
-              <Link to="/app">
-                <Smartphone className="h-4 w-4" /> {t("companyWorkspace.nav.myApp")}
-              </Link>
-            </Button>
             <Button
               variant="ghost"
               size="sm"
