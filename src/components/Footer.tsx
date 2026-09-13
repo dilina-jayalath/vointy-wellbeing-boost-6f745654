@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from '@/lib/i18n';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
@@ -13,6 +13,22 @@ const Footer = () => {
   const { toast } = useToast();
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (id: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    const scroll = () => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(scroll, 150);
+    } else {
+      scroll();
+    }
+  };
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -64,12 +80,12 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">{t('footer.product')}</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/#features" onClick={scrollToSection('features')} className="text-gray-300 hover:text-white transition-colors">
                   {t('nav.features')}
                 </a>
               </li>
               <li>
-                <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/#benefits" onClick={scrollToSection('benefits')} className="text-gray-300 hover:text-white transition-colors">
                   {t('nav.benefits')}
                 </a>
               </li>
