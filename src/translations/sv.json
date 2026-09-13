@@ -257,5 +257,22 @@
     },
     "cta": "Skapa gratiskonto",
     "footerLink": "Hämta appen"
+  },
+  "installPrompt": {
+    "title": "Installera Vointy på din enhet",
+    "description": "Lägg Vointy på hemskärmen för åtkomst med ett tryck.",
+    "installCta": "Installera appen",
+    "moreCta": "Installationsguide",
+    "dismiss": "Stäng",
+    "iosTitle": "Lägg Vointy på din iPhone",
+    "iosDescription": "Lägg Vointy på hemskärmen i Safari — den öppnas som en riktig app.",
+    "iosStep1": "Tryck på Dela-knappen längst ner i Safari.",
+    "iosStep2": "Välj \"Lägg till på hemskärmen\".",
+    "iosStep3": "Tryck på \"Lägg till\" — Vointy visas på hemskärmen.",
+    "androidStep1": "Tryck på menyn (tre punkter) i Chrome.",
+    "androidStep2": "Välj \"Installera app\" eller \"Lägg till på hemskärmen\".",
+    "androidStep3": "Bekräfta — Vointy visas på hemskärmen.",
+    "desktopStep1": "Klicka på installationsikonen i webbläsarens adressfält.",
+    "desktopStep2": "Bekräfta installationen och öppna Vointy från docka eller startmeny."
   }
 }

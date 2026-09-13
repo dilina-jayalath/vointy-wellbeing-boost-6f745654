@@ -257,5 +257,22 @@
     },
     "cta": "Créer un compte gratuit",
     "footerLink": "Télécharger l'app"
+  },
+  "installPrompt": {
+    "title": "Installer Vointy sur votre appareil",
+    "description": "Ajoutez Vointy à votre écran d'accueil pour un accès en un geste.",
+    "installCta": "Installer l'app",
+    "moreCta": "Guide d'installation",
+    "dismiss": "Fermer",
+    "iosTitle": "Ajouter Vointy à votre iPhone",
+    "iosDescription": "Dans Safari, ajoutez Vointy à l'écran d'accueil — il s'ouvre comme une vraie app.",
+    "iosStep1": "Touchez le bouton Partager en bas de Safari.",
+    "iosStep2": "Choisissez \"Sur l'écran d'accueil\".",
+    "iosStep3": "Touchez \"Ajouter\" — Vointy apparaît sur l'écran d'accueil.",
+    "androidStep1": "Touchez le menu (trois points) dans Chrome.",
+    "androidStep2": "Choisissez \"Installer l'application\" ou \"Ajouter à l'écran d'accueil\".",
+    "androidStep3": "Confirmez — Vointy apparaît sur l'écran d'accueil.",
+    "desktopStep1": "Cliquez sur l'icône d'installation dans la barre d'adresse.",
+    "desktopStep2": "Confirmez l'installation et ouvrez Vointy depuis le dock ou le menu Démarrer."
   }
 }

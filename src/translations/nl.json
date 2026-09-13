@@ -257,5 +257,22 @@
     },
     "cta": "Gratis account aanmaken",
     "footerLink": "App downloaden"
+  },
+  "installPrompt": {
+    "title": "Installeer Vointy op je apparaat",
+    "description": "Zet Vointy op je beginscherm voor toegang met één tik.",
+    "installCta": "App installeren",
+    "moreCta": "Installatiegids",
+    "dismiss": "Sluiten",
+    "iosTitle": "Zet Vointy op je iPhone",
+    "iosDescription": "Voeg Vointy in Safari toe aan je beginscherm — het opent als een echte app.",
+    "iosStep1": "Tik op de Deel-knop onderin Safari.",
+    "iosStep2": "Kies \"Zet op beginscherm\".",
+    "iosStep3": "Tik op \"Voeg toe\" — Vointy verschijnt op je beginscherm.",
+    "androidStep1": "Tik op het menu (drie puntjes) in Chrome.",
+    "androidStep2": "Kies \"App installeren\" of \"Toevoegen aan startscherm\".",
+    "androidStep3": "Bevestig — Vointy verschijnt op je startscherm.",
+    "desktopStep1": "Klik op het installatiepictogram in de adresbalk.",
+    "desktopStep2": "Bevestig de installatie en open Vointy via dock of startmenu."
   }
 }

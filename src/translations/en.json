@@ -257,5 +257,22 @@
     },
     "cta": "Create free account",
     "footerLink": "Get the app"
+  },
+  "installPrompt": {
+    "title": "Install Vointy on your device",
+    "description": "Add Vointy to your home screen for one-tap access to your activities.",
+    "installCta": "Install app",
+    "moreCta": "Installation guide",
+    "dismiss": "Dismiss",
+    "iosTitle": "Add Vointy to your iPhone",
+    "iosDescription": "In Safari, add Vointy to your home screen — it opens like a real app.",
+    "iosStep1": "Tap the Share button at the bottom of Safari.",
+    "iosStep2": "Choose \"Add to Home Screen\".",
+    "iosStep3": "Tap \"Add\" — Vointy appears on your home screen.",
+    "androidStep1": "Tap the menu (three dots) in Chrome.",
+    "androidStep2": "Choose \"Install app\" or \"Add to Home screen\".",
+    "androidStep3": "Confirm — Vointy appears on your home screen.",
+    "desktopStep1": "Click the install icon in your browser's address bar.",
+    "desktopStep2": "Confirm the install and open Vointy from your dock or start menu."
   }
 }
