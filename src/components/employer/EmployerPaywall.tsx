@@ -1,4 +1,5 @@
 import { CheckCircle2, Lock, Loader2 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
@@ -92,6 +93,12 @@ const EmployerPaywall = () => {
           </Button>
           <p className="text-xs text-center text-muted-foreground">
             {t("employerPanel.paywall.disclaimer")}
+          </p>
+          <p className="text-sm text-center">
+            <Link to="/company" className="text-brand-purple font-medium hover:underline">
+              {t("companyWorkspace.overview.title")}
+            </Link>{" "}
+            <span className="text-muted-foreground">— {t("companyWorkspace.overview.subtitle")}</span>
           </p>
         </CardContent>
       </Card>

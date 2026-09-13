@@ -584,5 +584,45 @@
       },
       "noActivities": "Inga aktiviteter utförda ännu."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Översikt",
+      "invite": "Dela åtkomst",
+      "invited": "Inbjudna",
+      "teams": "Team",
+      "myApp": "Mina aktiviteter"
+    },
+    "overview": {
+      "title": "Företagets arbetsyta",
+      "subtitle": "Dela Vointy-åtkomst med dina anställda.",
+      "subtitleWithOrg": "Dela Vointy-åtkomst med anställda på {orgName}.",
+      "pending": "Väntande inbjudningar",
+      "accepted": "Anslutna anställda",
+      "teams": "Team",
+      "inviteTitle": "Dela åtkomst",
+      "inviteDescription": "Skicka Vointy-åtkomst en och en, som CSV-lista eller direkt till ett team.",
+      "teamsTitle": "Team",
+      "teamsDescription": "Skapa team och dela åtkomst till hela teamet på en gång.",
+      "stepsTitle": "Så fungerar det",
+      "step1": "Skapa team om du vill gruppera dina anställda.",
+      "step2": "Dela åtkomst via e-post — var och en får sin egen länk.",
+      "step3": "Anställda ansluter gratis och börjar samla aktivitetspoäng."
+    },
+    "invite": {
+      "teamLabel": "Team (valfritt)",
+      "noTeam": "Inget team",
+      "teamHint": "Lägger till den inbjudna personen i detta team."
+    },
+    "teams": {
+      "title": "Team",
+      "subtitle": "Gruppera anställda i team och dela åtkomst per team.",
+      "createFailed": "Kunde inte skapa teamet"
+    },
+    "upsell": {
+      "title": "Behöver du analys och rapportering?",
+      "description": "Att dela åtkomst och skapa team är gratis. Arbetsgivarpanelen ger analys, kampanjer, enkäter och rapportering.",
+      "cta": "Se arbetsgivarpanelen"
+    }
   }
 }

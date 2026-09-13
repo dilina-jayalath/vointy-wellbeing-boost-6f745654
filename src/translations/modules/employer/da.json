@@ -584,5 +584,45 @@
       },
       "noActivities": "Ingen aktiviteter udført endnu."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Oversigt",
+      "invite": "Del adgang",
+      "invited": "Inviterede",
+      "teams": "Teams",
+      "myApp": "Mine aktiviteter"
+    },
+    "overview": {
+      "title": "Virksomhedens arbejdsrum",
+      "subtitle": "Del Vointy-adgang med dine medarbejdere.",
+      "subtitleWithOrg": "Del Vointy-adgang med medarbejderne i {orgName}.",
+      "pending": "Ventende invitationer",
+      "accepted": "Tilmeldte medarbejdere",
+      "teams": "Teams",
+      "inviteTitle": "Del adgang",
+      "inviteDescription": "Send adgang enkeltvis, som CSV-liste eller direkte til et team.",
+      "teamsTitle": "Teams",
+      "teamsDescription": "Opret teams og del adgang med et helt team ad gangen.",
+      "stepsTitle": "Sådan virker det",
+      "step1": "Opret teams, hvis du vil gruppere dine medarbejdere.",
+      "step2": "Del adgang via e-mail — hver person får sit eget link.",
+      "step3": "Medarbejdere tilmelder sig gratis og begynder at samle aktivitetspoint."
+    },
+    "invite": {
+      "teamLabel": "Team (valgfrit)",
+      "noTeam": "Intet team",
+      "teamHint": "Tilføjer den inviterede person til dette team."
+    },
+    "teams": {
+      "title": "Teams",
+      "subtitle": "Grupper medarbejdere i teams og del adgang pr. team.",
+      "createFailed": "Teamet kunne ikke oprettes"
+    },
+    "upsell": {
+      "title": "Har du brug for analyser og rapportering?",
+      "description": "At dele adgang og oprette teams er gratis. Arbejdsgiverpanelet tilføjer analyser, kampagner, undersøgelser og rapportering.",
+      "cta": "Se arbejdsgiverpanelet"
+    }
   }
 }

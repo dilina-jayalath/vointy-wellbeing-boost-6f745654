@@ -584,5 +584,45 @@
       },
       "noActivities": "Aktiviteetteja ei ole vielä suoritettu."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Yleiskuva",
+      "invite": "Jaa tunnukset",
+      "invited": "Kutsutut",
+      "teams": "Tiimit",
+      "myApp": "Omat aktiviteetit"
+    },
+    "overview": {
+      "title": "Yrityksen työtila",
+      "subtitle": "Jaa Vointy-tunnukset työntekijöillesi.",
+      "subtitleWithOrg": "Jaa Vointy-tunnukset yrityksen {orgName} työntekijöille.",
+      "pending": "Kutsuja odottaa",
+      "accepted": "Liittyneitä työntekijöitä",
+      "teams": "Tiimejä",
+      "inviteTitle": "Jaa tunnukset",
+      "inviteDescription": "Lähetä Vointy-tunnukset yksitellen, CSV-listana tai suoraan tiimille.",
+      "teamsTitle": "Tiimit",
+      "teamsDescription": "Luo tiimejä ja jaa tunnukset koko tiimille kerralla.",
+      "stepsTitle": "Näin se toimii",
+      "step1": "Luo tiimit, jos haluat ryhmitellä työntekijät.",
+      "step2": "Jaa tunnukset sähköpostilla — jokainen saa oman liittymislinkin.",
+      "step3": "Työntekijät liittyvät maksutta ja alkavat kerätä aktiivisuuspisteitä."
+    },
+    "invite": {
+      "teamLabel": "Tiimi (valinnainen)",
+      "noTeam": "Ei tiimiä",
+      "teamHint": "Lisää kutsutun henkilön tähän tiimiin."
+    },
+    "teams": {
+      "title": "Tiimit",
+      "subtitle": "Ryhmittele työntekijät tiimeihin ja jaa tunnukset tiimeittäin.",
+      "createFailed": "Tiimin luonti ei onnistunut"
+    },
+    "upsell": {
+      "title": "Tarvitsetko analytiikkaa ja raportointia?",
+      "description": "Tunnusten jakaminen ja tiimien luonti on maksutonta. Työnantajapaneeli tuo analytiikan, kampanjat, kyselyt ja raportoinnin.",
+      "cta": "Katso työnantajapaneeli"
+    }
   }
 }

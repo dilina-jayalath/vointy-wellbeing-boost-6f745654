@@ -584,5 +584,45 @@
       },
       "noActivities": "Aucune activité réalisée pour le moment."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Aperçu",
+      "invite": "Partager l'accès",
+      "invited": "Personnes invitées",
+      "teams": "Équipes",
+      "myApp": "Mes activités"
+    },
+    "overview": {
+      "title": "Espace entreprise",
+      "subtitle": "Partagez l'accès Vointy avec vos employés.",
+      "subtitleWithOrg": "Partagez l'accès Vointy avec les employés de {orgName}.",
+      "pending": "Invitations en attente",
+      "accepted": "Employés inscrits",
+      "teams": "Équipes",
+      "inviteTitle": "Partager l'accès",
+      "inviteDescription": "Envoyez l'accès un par un, via une liste CSV ou directement à une équipe.",
+      "teamsTitle": "Équipes",
+      "teamsDescription": "Créez des équipes et partagez l'accès à toute une équipe.",
+      "stepsTitle": "Comment ça marche",
+      "step1": "Créez des équipes si vous souhaitez regrouper vos employés.",
+      "step2": "Partagez l'accès par e-mail — chacun reçoit son propre lien.",
+      "step3": "Les employés rejoignent gratuitement et collectent des points d'activité."
+    },
+    "invite": {
+      "teamLabel": "Équipe (facultatif)",
+      "noTeam": "Aucune équipe",
+      "teamHint": "Ajoute la personne invitée à cette équipe."
+    },
+    "teams": {
+      "title": "Équipes",
+      "subtitle": "Regroupez vos employés en équipes et partagez l'accès par équipe.",
+      "createFailed": "Impossible de créer l'équipe"
+    },
+    "upsell": {
+      "title": "Besoin d'analyses et de rapports ?",
+      "description": "Partager l'accès et créer des équipes est gratuit. Le panneau employeur ajoute analyses, campagnes, enquêtes et rapports.",
+      "cta": "Voir le panneau employeur"
+    }
   }
 }

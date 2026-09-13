@@ -9,8 +9,11 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 import { useTranslation } from "@/lib/i18n";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 interface Recipient { id: string; name: string; email: string; }
+
+interface TeamOption { id: string; name: string; }
 
 interface Invitation {
   id: string;
@@ -30,6 +33,8 @@ const InviteUsers = () => {
   const [sending, setSending] = useState(false);
   const [resending, setResending] = useState<string | null>(null);
   const [invitations, setInvitations] = useState<Invitation[]>([]);
+  const [teams, setTeams] = useState<TeamOption[]>([]);
+  const [teamId, setTeamId] = useState("none");
   const fileRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
   const { user } = useAuth();
@@ -49,6 +54,18 @@ const InviteUsers = () => {
   useEffect(() => {
     loadInvitations();
   }, [loadInvitations]);
+
+  useEffect(() => {
+    if (!orgId) return;
+    (async () => {
+      const { data } = await supabase
+        .from("teams")
+        .select("id, name")
+        .eq("organization_id", orgId)
+        .order("name");
+      setTeams((data as TeamOption[]) ?? []);
+    })();
+  }, [orgId]);
 
   const add = () => {
     if (!name.trim() || !emailRe.test(email)) {
@@ -168,6 +185,7 @@ const InviteUsers = () => {
           invited_by: user.id,
           email: r.email,
           name: r.name,
+          team_id: teamId !== "none" ? teamId : null,
         }))
       )
       .select("id, name, email, token, status, created_at");
@@ -212,7 +230,7 @@ const InviteUsers = () => {
           <CardTitle className="text-lg">{t("employerPanel.inviteUsers.addEmails.title")}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="grid gap-4 md:grid-cols-[1fr_1fr_auto] items-end">
+          <div className="grid gap-4 md:grid-cols-[1fr_1fr_1fr_auto] items-end">
             <div className="space-y-1">
               <Label htmlFor="inv-name">{t("employerPanel.inviteUsers.addEmails.name")}</Label>
               <div className="relative">
@@ -229,6 +247,21 @@ const InviteUsers = () => {
                 <Input id="inv-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="pl-9"
                   onKeyDown={(e) => e.key === "Enter" && add()} />
               </div>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="inv-team">{t("companyWorkspace.invite.teamLabel")}</Label>
+              <Select value={teamId} onValueChange={setTeamId}>
+                <SelectTrigger id="inv-team" className="h-10">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent className="bg-background z-50">
+                  <SelectItem value="none">{t("companyWorkspace.invite.noTeam")}</SelectItem>
+                  {teams.map((tm) => (
+                    <SelectItem key={tm.id} value={tm.id}>{tm.name}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              <p className="text-xs text-muted-foreground">{t("companyWorkspace.invite.teamHint")}</p>
             </div>
             <Button onClick={add} className="bg-brand-blue hover:bg-brand-blue/90 uppercase h-10">
               <Plus className="h-4 w-4 mr-1" /> {t("employerPanel.inviteUsers.addEmails.add")}

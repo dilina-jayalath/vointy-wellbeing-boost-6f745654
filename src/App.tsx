@@ -47,6 +47,9 @@ import EmployerInvitedList from "./pages/employer/InvitedList";
 import EmployerActivate from "./pages/employer/ActivateUsers";
 import EmployerTeams from "./pages/employer/Teams";
 import EmployerActivities from "./pages/employer/Activities";
+import CompanyLayout from "./pages/company/CompanyLayout";
+import CompanyOverview from "./pages/company/Overview";
+import CompanyTeams from "./pages/company/Teams";
 import AppLayout from "./pages/app/AppLayout";
 import AppHome from "./pages/app/Home";
 import AppActivities from "./pages/app/Activities";
@@ -132,6 +135,19 @@ const App = () => (
                 <Route path="invited" element={<EmployerInvitedList />} />
                 <Route path="activate" element={<EmployerActivate />} />
                 <Route path="teams" element={<EmployerTeams />} />
+              </Route>
+              <Route
+                path="/company"
+                element={
+                  <ProtectedRoute>
+                    <CompanyLayout />
+                  </ProtectedRoute>
+                }
+              >
+                <Route index element={<CompanyOverview />} />
+                <Route path="invite" element={<EmployerInvite />} />
+                <Route path="invited" element={<EmployerInvitedList />} />
+                <Route path="teams" element={<CompanyTeams />} />
               </Route>
               <Route
                 path="/app"

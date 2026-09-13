@@ -584,5 +584,45 @@
       },
       "noActivities": "Aún no se han realizado actividades."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Resumen",
+      "invite": "Compartir acceso",
+      "invited": "Invitados",
+      "teams": "Equipos",
+      "myApp": "Mis actividades"
+    },
+    "overview": {
+      "title": "Espacio de la empresa",
+      "subtitle": "Comparte el acceso a Vointy con tus empleados.",
+      "subtitleWithOrg": "Comparte el acceso a Vointy con los empleados de {orgName}.",
+      "pending": "Invitaciones pendientes",
+      "accepted": "Empleados incorporados",
+      "teams": "Equipos",
+      "inviteTitle": "Compartir acceso",
+      "inviteDescription": "Envía el acceso uno a uno, con una lista CSV o directamente a un equipo.",
+      "teamsTitle": "Equipos",
+      "teamsDescription": "Crea equipos y comparte el acceso con todo un equipo a la vez.",
+      "stepsTitle": "Cómo funciona",
+      "step1": "Crea equipos si quieres agrupar a tus empleados.",
+      "step2": "Comparte el acceso por correo — cada persona recibe su propio enlace.",
+      "step3": "Los empleados se unen gratis y empiezan a acumular puntos de actividad."
+    },
+    "invite": {
+      "teamLabel": "Equipo (opcional)",
+      "noTeam": "Sin equipo",
+      "teamHint": "Añade a la persona invitada a este equipo."
+    },
+    "teams": {
+      "title": "Equipos",
+      "subtitle": "Agrupa a tus empleados en equipos y comparte el acceso por equipo.",
+      "createFailed": "No se pudo crear el equipo"
+    },
+    "upsell": {
+      "title": "¿Necesitas analítica e informes?",
+      "description": "Compartir acceso y crear equipos es gratis. El panel del empleador añade analítica, campañas, encuestas e informes.",
+      "cta": "Ver el panel del empleador"
+    }
   }
 }

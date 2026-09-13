@@ -10,6 +10,7 @@ import { Loader2 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 import Seo from '@/components/Seo';
+import { landingRoute } from "@/lib/landingRoute";
 
 
 const safeNext = (value: string | null) =>
@@ -39,7 +40,7 @@ const Login = () => {
       window.location.href = next;
       return;
     }
-    navigate("/app");
+    navigate(await landingRoute());
   };
 
   const handleGoogle = async () => {
