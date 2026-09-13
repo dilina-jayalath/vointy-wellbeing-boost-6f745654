@@ -1,4 +1,5 @@
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
+import InstallAppPrompt from "@/components/InstallAppPrompt";
 import { LayoutDashboard, UserPlus, MailCheck, Users, LogOut, Smartphone, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
@@ -71,6 +72,8 @@ const CompanyLayout = () => {
       </header>
 
       <main className="flex-1 container mx-auto px-4 py-6 space-y-6">
+        <InstallAppPrompt variant="card" storageKey="vointy-install-dismissed-company" />
+
         <Outlet />
 
         <div className="rounded-lg border bg-white p-5 flex flex-col md:flex-row md:items-center gap-4 justify-between">
