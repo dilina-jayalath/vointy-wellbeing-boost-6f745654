@@ -40,7 +40,7 @@
     "confirmationSentTo": "Lähetimme vahvistuslinkin osoitteeseen {{email}}. Vahvista se aktivoidaksesi tunnuksesi, kirjaudu sitten yrityspaneeliisi ja aloita työntekijöiden kutsuminen.",
     "goToLogin": "Siirry kirjautumiseen",
     "createYourCompanyAccount": "Luo yritystilisi",
-    "freeForever": "Ikuisesti ilmainen. Luottokorttia ei tarvita.",
+    "freeForever": "Ilmainen. Luottokorttia ei tarvita.",
     "companyName": "Yrityksen nimi *",
     "contactPerson": "Yhteyshenkilö *",
     "workEmail": "Työsähköposti *",
