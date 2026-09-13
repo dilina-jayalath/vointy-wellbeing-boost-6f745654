@@ -80,7 +80,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">{t('footer.product')}</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/#features" onClick={scrollToSection('features')} className="text-gray-300 hover:text-white transition-colors">
                   {t('nav.features')}
                 </a>
               </li>
