@@ -2,11 +2,12 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/i18n';
 import { Link } from 'react-router-dom';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, Check } from 'lucide-react';
 import heroImage from '@/assets/hero.jpg';
 
 const Hero = () => {
   const { t } = useTranslation();
+  const benefits = (t('hero.benefits') as string[]) ?? [];
 
   return (
     <section className="relative pt-32 pb-20 overflow-hidden">
@@ -23,8 +24,19 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-brand-dark mb-6 leading-tight">
               {t('hero.title')}
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-xl text-gray-600 mb-6 max-w-2xl mx-auto lg:mx-0">
               {t('hero.subtitle')}
+            </p>
+            <ul className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 mb-6 text-sm text-brand-dark font-medium">
+              {benefits.map((benefit, index) => (
+                <li key={index} className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-brand-purple flex-shrink-0" />
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
+              {t('hero.upgradeNote')}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <Link to="/company-signup">

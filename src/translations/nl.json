@@ -17,9 +17,15 @@
     "back": "Terug"
   },
   "hero": {
-    "title": "Bouw een gezonder, productiever team.",
-    "subtitle": "Help je medewerkers actief, gemotiveerd en energiek te blijven met eenvoudige dagelijkse uitdagingen. Vointy maakt het voor elk team gemakkelijk om het welzijn op de werkvloer te verbeteren.",
-    "ctaFree": "Gratis starten"
+    "title": "Welzijn op het werk – gratis voor jouw bedrijf",
+    "subtitle": "Geef je medewerkers toegang tot 158 kant-en-klare welzijnsactiviteiten. Gratis voor bedrijven met maximaal 1.000 medewerkers.",
+    "ctaFree": "Gratis starten",
+    "benefits": [
+      "Geen contracten.",
+      "Geen kosten per gebruiker.",
+      "Geen opstartkosten."
+    ],
+    "upgradeNote": "Upgrade pas naar het Employer Dashboard wanneer je analyses, campagnes en rapportages nodig hebt."
   },
   "freeTeam": {
     "title": "Voor teams tot 10 personen",

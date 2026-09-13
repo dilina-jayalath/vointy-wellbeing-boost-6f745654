@@ -17,9 +17,15 @@
     "back": "Takaisin"
   },
   "hero": {
-    "title": "Rakenna terveempi ja tuottavampi tiimi.",
-    "subtitle": "Auta työntekijöitäsi pysymään aktiivisina, motivoituneina ja energisinä yksinkertaisten päivittäisten haasteiden avulla. Vointy tekee työpaikan hyvinvoinnin parantamisesta helppoa—jokaiselle tiimille.",
-    "ctaFree": "Aloita ilmaiseksi"
+    "title": "Työpaikkahyvinvointia – maksutta yrityksellesi",
+    "subtitle": "Anna työntekijöillesi pääsy 158 valmiiseen hyvinvointiaktiivisuuteen. Maksutta yrityksille, joilla on enintään 1 000 työntekijää.",
+    "ctaFree": "Aloita ilmaiseksi",
+    "benefits": [
+      "Ei sopimuksia.",
+      "Ei käyttäjäkohtaisia maksuja.",
+      "Ei käyttöönotto­kuluja."
+    ],
+    "upgradeNote": "Päivitä työnantajapaneeliin vasta, kun tarvitset analytiikkaa, kampanjoita ja raportointia."
   },
   "freeTeam": {
     "title": "Tiimeille 10 henkilöön asti",
