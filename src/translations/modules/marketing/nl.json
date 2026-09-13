@@ -231,6 +231,18 @@
     "setupLabel": "Instelkosten",
     "altHero": "Een divers team rekt zich samen buiten uit",
     "altWhy": "Vointy-app dashboard met activiteitsringen",
-    "altCompanies": "Bedrijfsleiding bespreekt het welzijn van medewerkers"
+    "altCompanies": "Bedrijfsleiding bespreekt het welzijn van medewerkers",
+    "compPriceTitle": "Wat kost dit?",
+    "compPrice": "€ 0",
+    "compFreeSubtitle": "Wat krijgen we gratis?",
+    "compFreeFeatures": [
+      "158 activiteiten",
+      "Nodig personen of teams uit",
+      "Medewerkerstoegang",
+      "Teamuitdagingen",
+      "Sociale feed",
+      "Activiteitstracking",
+      "Geen kosten per gebruiker"
+    ]
   }
 }

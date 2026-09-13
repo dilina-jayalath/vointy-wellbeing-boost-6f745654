@@ -231,6 +231,18 @@
     "setupLabel": "Costo di attivazione",
     "altHero": "Un team eterogeneo si allunga insieme all'aperto",
     "altWhy": "Dashboard dell'app Vointy con gli anelli di attività",
-    "altCompanies": "La direzione aziendale discute del benessere dei dipendenti"
+    "altCompanies": "La direzione aziendale discute del benessere dei dipendenti",
+    "compPriceTitle": "Quanto costa?",
+    "compPrice": "0 €",
+    "compFreeSubtitle": "Cosa otteniamo gratuitamente?",
+    "compFreeFeatures": [
+      "158 attività",
+      "Invita persone o team",
+      "Accesso dipendenti",
+      "Sfide di team",
+      "Feed sociale",
+      "Tracciamento attività",
+      "Nessun costo per utente"
+    ]
   }
 }

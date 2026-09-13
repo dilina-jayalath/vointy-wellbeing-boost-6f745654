@@ -230,6 +230,18 @@
     "setupLabel": "Aloitusmaksu",
     "altHero": "Monimuotoinen tiimi venyttelee yhdessä ulkona",
     "altWhy": "Vointy-sovelluksen näkymä aktiivisuusrenkaineen",
-    "altCompanies": "Yrityksen johto keskustelee työntekijöiden hyvinvoinnista"
+    "altCompanies": "Yrityksen johto keskustelee työntekijöiden hyvinvoinnista",
+    "compPriceTitle": "Mitä tämä maksaa?",
+    "compPrice": "0 €",
+    "compFreeSubtitle": "Mitä saamme ilmaiseksi?",
+    "compFreeFeatures": [
+      "158 aktiviteettia",
+      "Kutsu mukaan henkilöitä tai tiimejä",
+      "Työntekijöiden pääsy",
+      "Tiimihaasteet",
+      "Sosiaalinen syöte",
+      "Aktiivisuuden seuranta",
+      "Ei käyttäjäkohtaisia maksuja"
+    ]
   }
 }

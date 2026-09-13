@@ -231,6 +231,18 @@
     "setupLabel": "Frais d'installation",
     "altHero": "Une équipe diverse s'étire ensemble en plein air",
     "altWhy": "Tableau de bord de l'application Vointy avec les anneaux d'activité",
-    "altCompanies": "La direction de l'entreprise discute du bien-être des employés"
+    "altCompanies": "La direction de l'entreprise discute du bien-être des employés",
+    "compPriceTitle": "Combien ça coûte ?",
+    "compPrice": "0 €",
+    "compFreeSubtitle": "Qu'obtenons-nous gratuitement ?",
+    "compFreeFeatures": [
+      "158 activités",
+      "Invitez des personnes ou des équipes",
+      "Accès employés",
+      "Défis d'équipe",
+      "Fil social",
+      "Suivi d'activité",
+      "Aucun frais par utilisateur"
+    ]
   }
 }

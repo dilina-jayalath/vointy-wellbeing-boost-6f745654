@@ -231,6 +231,18 @@
     "setupLabel": "Cuota de alta",
     "altHero": "Un equipo diverso estirando juntos al aire libre",
     "altWhy": "Panel de la aplicación Vointy con los anillos de actividad",
-    "altCompanies": "La dirección de la empresa habla sobre el bienestar de los empleados"
+    "altCompanies": "La dirección de la empresa habla sobre el bienestar de los empleados",
+    "compPriceTitle": "¿Cuánto cuesta?",
+    "compPrice": "0 €",
+    "compFreeSubtitle": "¿Qué recibimos gratis?",
+    "compFreeFeatures": [
+      "158 actividades",
+      "Invita a personas o equipos",
+      "Acceso para empleados",
+      "Desafíos de equipo",
+      "Feed social",
+      "Seguimiento de actividad",
+      "Sin tarifas por usuario"
+    ]
   }
 }
