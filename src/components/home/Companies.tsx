@@ -20,15 +20,18 @@ const Companies = () => {
               <Building2 size={24} />
               <span className="uppercase tracking-widest">{t('companies.title')}</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              {t('homeExtra.compTitlePart1')} <span className="text-brand-blue">{t('homeExtra.compTitleHighlight')}</span> {t('homeExtra.compTitlePart2')}
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+              {t('homeExtra.compPriceTitle')} <span className="text-brand-blue">{t('homeExtra.compPrice')}</span>
             </h2>
+            <p className="text-2xl text-white font-semibold mb-6 leading-relaxed">
+              {t('homeExtra.compFreeSubtitle')}
+            </p>
             <p className="text-xl text-gray-300 mb-10 leading-relaxed">
               {t('homeExtra.compText')}
             </p>
             
             <div className="space-y-4 mb-10">
-              {(t('homeExtra.compFeatures') as unknown as string[]).map((feat) => (
+              {(t('homeExtra.compFreeFeatures') as unknown as string[]).map((feat) => (
                 <div key={feat} className="flex items-center gap-3">
                   <CheckCircle2 className="text-brand-purple" size={20} />
                   <span className="text-gray-200 font-medium">{feat}</span>

@@ -231,6 +231,18 @@
     "setupLabel": "Einrichtungsgebühr",
     "altHero": "Vielfältiges Team dehnt sich gemeinsam im Freien",
     "altWhy": "Vointy App-Dashboard mit Aktivitätsringen",
-    "altCompanies": "Unternehmensleitung spricht über das Wohlbefinden der Mitarbeitenden"
+    "altCompanies": "Unternehmensleitung spricht über das Wohlbefinden der Mitarbeitenden",
+    "compPriceTitle": "Was kostet das?",
+    "compPrice": "0 €",
+    "compFreeSubtitle": "Was bekommen wir kostenlos?",
+    "compFreeFeatures": [
+      "158 Aktivitäten",
+      "Personen oder Teams einladen",
+      "Mitarbeiterzugriff",
+      "Team-Challenges",
+      "Social Feed",
+      "Aktivitätstracking",
+      "Keine Gebühren pro Nutzer"
+    ]
   }
 }
