@@ -17,9 +17,15 @@
     "back": "Retour"
   },
   "hero": {
-    "title": "Construisez une équipe plus saine et plus productive.",
-    "subtitle": "Aidez vos employés à rester actifs, motivés et pleins d'énergie grâce à des défis quotidiens simples. Vointy facilite l'amélioration du bien-être au travail, pour chaque équipe.",
-    "ctaFree": "Commencer gratuitement"
+    "title": "Bien-être au travail – gratuit pour votre entreprise",
+    "subtitle": "Donnez à vos employés accès à 158 activités de bien-être prêtes à l'emploi. Gratuit pour les entreprises jusqu'à 1 000 employés.",
+    "ctaFree": "Commencer gratuitement",
+    "benefits": [
+      "Aucun contrat.",
+      "Aucun frais par utilisateur.",
+      "Aucun coût de mise en place."
+    ],
+    "upgradeNote": "Passez au Employer Dashboard uniquement lorsque vous avez besoin d'analyses, de campagnes et de rapports."
   },
   "freeTeam": {
     "title": "Pour les équipes jusqu'à 10 personnes",

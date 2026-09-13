@@ -17,9 +17,15 @@
     "back": "Tillbaka"
   },
   "hero": {
-    "title": "Bygg ett hälsosammare, mer produktivt team.",
-    "subtitle": "Hjälp dina anställda att hålla sig aktiva, motiverade och energiska med enkla dagliga utmaningar. Vointy gör det enkelt att förbättra välbefinnandet på jobbet – för alla team.",
-    "ctaFree": "Kom igång gratis"
+    "title": "Arbetsplatsväl­befinnande – gratis för ditt företag",
+    "subtitle": "Ge dina anställda tillgång till 158 färdiga välbefinnandeaktiviteter. Gratis för företag med upp till 1 000 anställda.",
+    "ctaFree": "Kom igång gratis",
+    "benefits": [
+      "Inga avtal.",
+      "Inga avgifter per användare.",
+      "Inga startkostnader."
+    ],
+    "upgradeNote": "Uppgradera till Employer Dashboard endast när du behöver analyser, kampanjer och rapportering."
   },
   "freeTeam": {
     "title": "För team upp till 10 personer",

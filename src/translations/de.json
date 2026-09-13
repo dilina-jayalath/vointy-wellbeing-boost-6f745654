@@ -17,9 +17,15 @@
     "back": "Zurück"
   },
   "hero": {
-    "title": "Baue ein gesünderes, produktiveres Team auf.",
-    "subtitle": "Helfen Sie Ihren Mitarbeitenden, mit einfachen täglichen Herausforderungen aktiv, motiviert und energiegeladen zu bleiben. Vointy macht es für jedes Team einfach, das Wohlbefinden am Arbeitsplatz zu verbessern.",
-    "ctaFree": "Kostenlos starten"
+    "title": "Betriebliches Wohlbefinden – kostenlos für Ihr Unternehmen",
+    "subtitle": "Geben Sie Ihren Mitarbeitenden Zugang zu 158 sofort einsetzbaren Wohlbefinden-Aktivitäten. Kostenlos für Unternehmen mit bis zu 1.000 Mitarbeitenden.",
+    "ctaFree": "Kostenlos starten",
+    "benefits": [
+      "Keine Verträge.",
+      "Keine Kosten pro Nutzer.",
+      "Keine Einrichtungskosten."
+    ],
+    "upgradeNote": "Upgraden Sie erst auf das Employer Dashboard, wenn Sie Analysen, Kampagnen und Reporting benötigen."
   },
   "freeTeam": {
     "title": "Für Teams bis zu 10 Personen",

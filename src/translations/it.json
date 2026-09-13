@@ -17,9 +17,15 @@
     "back": "Indietro"
   },
   "hero": {
-    "title": "Costruisci un team più sano e più produttivo.",
-    "subtitle": "Aiuta i tuoi dipendenti a rimanere attivi, motivati ed energici con semplici sfide quotidiane. Vointy rende facile migliorare il benessere sul lavoro, per ogni team.",
-    "ctaFree": "Inizia gratis"
+    "title": "Benessere sul lavoro – gratis per la tua azienda",
+    "subtitle": "Dai ai tuoi dipendenti accesso a 158 attività di benessere pronte all'uso. Gratis per aziende fino a 1.000 dipendenti.",
+    "ctaFree": "Inizia gratis",
+    "benefits": [
+      "Nessun contratto.",
+      "Nessun costo per utente.",
+      "Nessun costo di configurazione."
+    ],
+    "upgradeNote": "Passa alla Employer Dashboard solo quando ti servono analisi, campagne e reportistica."
   },
   "freeTeam": {
     "title": "Per team fino a 10 persone",
