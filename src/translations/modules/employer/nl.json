@@ -584,5 +584,45 @@
       },
       "noActivities": "Nog geen activiteiten uitgevoerd."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Overzicht",
+      "invite": "Toegang delen",
+      "invited": "Uitgenodigd",
+      "teams": "Teams",
+      "myApp": "Mijn activiteiten"
+    },
+    "overview": {
+      "title": "Bedrijfswerkruimte",
+      "subtitle": "Deel Vointy-toegang met je medewerkers.",
+      "subtitleWithOrg": "Deel Vointy-toegang met de medewerkers van {orgName}.",
+      "pending": "Openstaande uitnodigingen",
+      "accepted": "Aangesloten medewerkers",
+      "teams": "Teams",
+      "inviteTitle": "Toegang delen",
+      "inviteDescription": "Stuur toegang één voor één, als CSV-lijst of direct naar een team.",
+      "teamsTitle": "Teams",
+      "teamsDescription": "Maak teams en deel toegang met een heel team tegelijk.",
+      "stepsTitle": "Hoe het werkt",
+      "step1": "Maak teams als je medewerkers wilt groeperen.",
+      "step2": "Deel toegang per e-mail — iedereen krijgt een eigen link.",
+      "step3": "Medewerkers doen gratis mee en verzamelen activiteitspunten."
+    },
+    "invite": {
+      "teamLabel": "Team (optioneel)",
+      "noTeam": "Geen team",
+      "teamHint": "Voegt de uitgenodigde persoon toe aan dit team."
+    },
+    "teams": {
+      "title": "Teams",
+      "subtitle": "Groepeer medewerkers in teams en deel toegang per team.",
+      "createFailed": "Team kon niet worden aangemaakt"
+    },
+    "upsell": {
+      "title": "Analyses en rapportage nodig?",
+      "description": "Toegang delen en teams maken is gratis. Het werkgeverspaneel voegt analyses, campagnes, enquêtes en rapportage toe.",
+      "cta": "Bekijk het werkgeverspaneel"
+    }
   }
 }

@@ -584,5 +584,45 @@
       },
       "noActivities": "Noch keine ausgeführten Aktivitäten."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Überblick",
+      "invite": "Zugang teilen",
+      "invited": "Eingeladene",
+      "teams": "Teams",
+      "myApp": "Meine Aktivitäten"
+    },
+    "overview": {
+      "title": "Unternehmens-Arbeitsbereich",
+      "subtitle": "Teilen Sie den Vointy-Zugang mit Ihren Mitarbeitenden.",
+      "subtitleWithOrg": "Teilen Sie den Vointy-Zugang mit den Mitarbeitenden von {orgName}.",
+      "pending": "Offene Einladungen",
+      "accepted": "Beigetretene Mitarbeitende",
+      "teams": "Teams",
+      "inviteTitle": "Zugang teilen",
+      "inviteDescription": "Senden Sie den Zugang einzeln, als CSV-Liste oder direkt an ein Team.",
+      "teamsTitle": "Teams",
+      "teamsDescription": "Erstellen Sie Teams und teilen Sie den Zugang für ein ganzes Team.",
+      "stepsTitle": "So funktioniert es",
+      "step1": "Erstellen Sie Teams, wenn Sie Mitarbeitende gruppieren möchten.",
+      "step2": "Teilen Sie den Zugang per E-Mail — jede Person erhält ihren eigenen Link.",
+      "step3": "Mitarbeitende treten kostenlos bei und sammeln Aktivitätspunkte."
+    },
+    "invite": {
+      "teamLabel": "Team (optional)",
+      "noTeam": "Kein Team",
+      "teamHint": "Fügt die eingeladene Person diesem Team hinzu."
+    },
+    "teams": {
+      "title": "Teams",
+      "subtitle": "Gruppieren Sie Mitarbeitende in Teams und teilen Sie den Zugang pro Team.",
+      "createFailed": "Team konnte nicht erstellt werden"
+    },
+    "upsell": {
+      "title": "Brauchen Sie Analysen und Reporting?",
+      "description": "Zugang teilen und Teams erstellen ist kostenlos. Das Arbeitgeber-Panel bietet Analysen, Kampagnen, Umfragen und Reporting.",
+      "cta": "Arbeitgeber-Panel ansehen"
+    }
   }
 }

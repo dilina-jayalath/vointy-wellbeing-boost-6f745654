@@ -584,5 +584,45 @@
       },
       "noActivities": "Nessuna attività svolta ancora."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Panoramica",
+      "invite": "Condividi accesso",
+      "invited": "Invitati",
+      "teams": "Team",
+      "myApp": "Le mie attività"
+    },
+    "overview": {
+      "title": "Spazio aziendale",
+      "subtitle": "Condividi l'accesso a Vointy con i tuoi dipendenti.",
+      "subtitleWithOrg": "Condividi l'accesso a Vointy con i dipendenti di {orgName}.",
+      "pending": "Inviti in attesa",
+      "accepted": "Dipendenti iscritti",
+      "teams": "Team",
+      "inviteTitle": "Condividi accesso",
+      "inviteDescription": "Invia l'accesso uno per uno, con una lista CSV o direttamente a un team.",
+      "teamsTitle": "Team",
+      "teamsDescription": "Crea team e condividi l'accesso con un intero team.",
+      "stepsTitle": "Come funziona",
+      "step1": "Crea i team se vuoi raggruppare i dipendenti.",
+      "step2": "Condividi l'accesso via e-mail — ognuno riceve il proprio link.",
+      "step3": "I dipendenti si iscrivono gratis e iniziano a raccogliere punti attività."
+    },
+    "invite": {
+      "teamLabel": "Team (facoltativo)",
+      "noTeam": "Nessun team",
+      "teamHint": "Aggiunge la persona invitata a questo team."
+    },
+    "teams": {
+      "title": "Team",
+      "subtitle": "Raggruppa i dipendenti in team e condividi l'accesso per team.",
+      "createFailed": "Impossibile creare il team"
+    },
+    "upsell": {
+      "title": "Ti servono analisi e report?",
+      "description": "Condividere l'accesso e creare team è gratuito. Il pannello datore di lavoro aggiunge analisi, campagne, sondaggi e report.",
+      "cta": "Vedi il pannello datore di lavoro"
+    }
   }
 }

@@ -584,5 +584,45 @@
       },
       "noActivities": "No activities performed yet."
     }
+  },
+  "companyWorkspace": {
+    "nav": {
+      "overview": "Overview",
+      "invite": "Share access",
+      "invited": "Invited people",
+      "teams": "Teams",
+      "myApp": "My activities"
+    },
+    "overview": {
+      "title": "Company workspace",
+      "subtitle": "Share Vointy access with your employees.",
+      "subtitleWithOrg": "Share Vointy access with the employees of {orgName}.",
+      "pending": "Invitations pending",
+      "accepted": "Employees joined",
+      "teams": "Teams",
+      "inviteTitle": "Share access",
+      "inviteDescription": "Send Vointy access to individuals one by one, as a CSV list, or straight to a team.",
+      "teamsTitle": "Teams",
+      "teamsDescription": "Create teams and share access to a whole team at once.",
+      "stepsTitle": "How it works",
+      "step1": "Create teams if you want to group your employees.",
+      "step2": "Share access by email — each person gets their own join link.",
+      "step3": "Employees join for free and start collecting activity points."
+    },
+    "invite": {
+      "teamLabel": "Team (optional)",
+      "noTeam": "No team",
+      "teamHint": "Adds the invited person to this team."
+    },
+    "teams": {
+      "title": "Teams",
+      "subtitle": "Group your employees into teams and share access per team.",
+      "createFailed": "Could not create the team"
+    },
+    "upsell": {
+      "title": "Need analytics and reporting?",
+      "description": "Sharing access and creating teams is free. The Employer panel adds analytics, campaigns, surveys and reporting.",
+      "cta": "See Employer panel"
+    }
   }
 }
