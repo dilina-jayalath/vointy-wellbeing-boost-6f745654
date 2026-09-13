@@ -39,7 +39,7 @@ const Login = () => {
       window.location.href = next;
       return;
     }
-    navigate("/app");
+    navigate(await landingRoute());
   };
 
   const handleGoogle = async () => {
