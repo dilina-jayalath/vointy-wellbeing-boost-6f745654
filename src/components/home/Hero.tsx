@@ -7,7 +7,7 @@ import heroImage from '@/assets/hero.jpg';
 
 const Hero = () => {
   const { t } = useTranslation();
-  const benefits = t('hero.benefits', []) as string[];
+  const benefits = (t('hero.benefits') as string[]) ?? [];
 
   return (
     <section className="relative pt-32 pb-20 overflow-hidden">
