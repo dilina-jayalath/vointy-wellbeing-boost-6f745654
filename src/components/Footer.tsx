@@ -85,7 +85,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/#benefits" onClick={scrollToSection('benefits')} className="text-gray-300 hover:text-white transition-colors">
                   {t('nav.benefits')}
                 </a>
               </li>
