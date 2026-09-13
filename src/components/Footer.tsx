@@ -83,45 +83,9 @@ const Footer = () => {
                   {t('download.footerLink')}
                 </Link>
               </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4">{t('footer.company')}</h3>
-            <ul className="space-y-3">
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/corporate-wellness-programs" className="text-gray-300 hover:text-white transition-colors">
-                  Corporate Wellness Programs
-                </Link>
-              </li>
-              <li>
-                <Link to="/wellness-challenges-for-employees" className="text-gray-300 hover:text-white transition-colors">
-                  Wellness Challenges for Employees
-                </Link>
-              </li>
-              <li>
-                <Link to="/roi-calculator" className="text-gray-300 hover:text-white transition-colors">
-                  Wellbeing ROI Calculator
-                </Link>
-              </li>
-              <li>
-                <Link to="/careers" className="text-gray-300 hover:text-white transition-colors">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="text-gray-300 hover:text-white transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact-form" className="text-gray-300 hover:text-white transition-colors">
-                  Contact
+                  About us
                 </Link>
               </li>
             </ul>
