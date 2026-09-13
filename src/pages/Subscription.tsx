@@ -75,8 +75,13 @@ const Subscription = () => {
         <section className="bg-gradient-to-b from-purple-50 to-white pt-16 pb-12">
           <div className="container mx-auto px-4 text-center max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-brand-dark leading-tight">
-              {t('pricingPage.headingPrefix')}{' '}
-              <span className="gradient-text">{t('pricingPage.headingPrice')}</span>
+              {t('pricingPage.headingPrefix')}
+              {t('pricingPage.headingPrice') ? (
+                <>
+                  {' '}
+                  <span className="gradient-text">{t('pricingPage.headingPrice')}</span>
+                </>
+              ) : null}
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
               {t('pricingPage.subheading')}
