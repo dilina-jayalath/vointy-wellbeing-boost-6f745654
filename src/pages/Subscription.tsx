@@ -83,7 +83,7 @@ const Subscription = () => {
                 </>
               ) : null}
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8 whitespace-pre-line">
               {t('pricingPage.subheading')}
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
