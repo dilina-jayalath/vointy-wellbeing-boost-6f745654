@@ -11,6 +11,7 @@ import VideoSection from '@/components/home/VideoSection';
 import LicenseForm from '@/components/home/LicenseForm';
 import Footer from '@/components/Footer';
 import Seo from '@/components/Seo';
+import InstallAppPrompt from '@/components/InstallAppPrompt';
 
 const Index = () => {
   return (
@@ -26,6 +27,9 @@ const Index = () => {
         <RoiCalculatorSection />
         <VideoSection />
         <LicenseForm />
+        <section className="container mx-auto px-4 pb-12">
+          <InstallAppPrompt variant="card" storageKey="vointy-install-dismissed-home" className="mx-auto max-w-2xl" />
+        </section>
       </main>
       <Footer />
     </div>

@@ -257,5 +257,22 @@
     },
     "cta": "Crear cuenta gratuita",
     "footerLink": "Descargar app"
+  },
+  "installPrompt": {
+    "title": "Instala Vointy en tu dispositivo",
+    "description": "Añade Vointy a la pantalla de inicio para acceder con un toque.",
+    "installCta": "Instalar app",
+    "moreCta": "Guía de instalación",
+    "dismiss": "Cerrar",
+    "iosTitle": "Añade Vointy a tu iPhone",
+    "iosDescription": "En Safari, añade Vointy a la pantalla de inicio — se abre como una app real.",
+    "iosStep1": "Toca el botón Compartir en la parte inferior de Safari.",
+    "iosStep2": "Elige \"Añadir a pantalla de inicio\".",
+    "iosStep3": "Toca \"Añadir\" — Vointy aparecerá en tu pantalla de inicio.",
+    "androidStep1": "Toca el menú (tres puntos) en Chrome.",
+    "androidStep2": "Elige \"Instalar aplicación\" o \"Añadir a pantalla de inicio\".",
+    "androidStep3": "Confirma — Vointy aparecerá en tu pantalla de inicio.",
+    "desktopStep1": "Haz clic en el icono de instalación en la barra de direcciones.",
+    "desktopStep2": "Confirma la instalación y abre Vointy desde el dock o el menú de inicio."
   }
 }

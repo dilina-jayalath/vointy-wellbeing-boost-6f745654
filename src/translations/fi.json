@@ -257,5 +257,22 @@
     },
     "cta": "Luo ilmainen tili",
     "footerLink": "Lataa sovellus"
+  },
+  "installPrompt": {
+    "title": "Asenna Vointy laitteellesi",
+    "description": "Lisää Vointy kotinäytölle, niin pääset aktiviteetteihin yhdellä napautuksella.",
+    "installCta": "Asenna sovellus",
+    "moreCta": "Asennusohje",
+    "dismiss": "Sulje",
+    "iosTitle": "Lisää Vointy iPhoneen",
+    "iosDescription": "Lisää Vointy Safarissa kotinäytölle — se avautuu kuin oikea sovellus.",
+    "iosStep1": "Napauta Safarin alareunan Jaa-painiketta.",
+    "iosStep2": "Valitse \"Lisää kotinäytölle\".",
+    "iosStep3": "Napauta \"Lisää\" — Vointy ilmestyy kotinäytölle.",
+    "androidStep1": "Napauta Chromen valikkoa (kolme pistettä).",
+    "androidStep2": "Valitse \"Asenna sovellus\" tai \"Lisää kotinäytölle\".",
+    "androidStep3": "Vahvista — Vointy ilmestyy kotinäytölle.",
+    "desktopStep1": "Napsauta selaimen osoitepalkin asennuskuvaketta.",
+    "desktopStep2": "Vahvista asennus ja avaa Vointy telakasta tai käynnistysvalikosta."
   }
 }

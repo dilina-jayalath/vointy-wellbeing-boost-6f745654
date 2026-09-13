@@ -4,6 +4,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import BackButton from "@/components/BackButton";
+import InstallAppPrompt from "@/components/InstallAppPrompt";
 import vointyMark from "@/assets/vointy-mark.png.asset.json";
 
 
@@ -57,6 +58,8 @@ const AppLayout = () => {
             </NavLink>
           </div>
         </header>
+
+        <InstallAppPrompt storageKey="vointy-install-dismissed-app" />
 
         <main className="flex-1 p-4 pb-24">
           <Outlet />

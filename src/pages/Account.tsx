@@ -11,6 +11,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Loader2, Smartphone, Building2, ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import Seo from "@/components/Seo";
+import InstallAppPrompt from "@/components/InstallAppPrompt";
 
 
 const Account = () => {
@@ -85,6 +86,8 @@ const Account = () => {
           <ArrowLeft className="h-4 w-4 mr-2" />
           {t("common.back")}
         </Button>
+
+        <InstallAppPrompt variant="card" storageKey="vointy-install-dismissed-account" />
 
         <Card>
           <CardContent className="py-6 grid gap-3 sm:grid-cols-2">
