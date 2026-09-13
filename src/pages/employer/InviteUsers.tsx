@@ -9,8 +9,11 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEmployerOrg } from "@/hooks/useEmployerOrg";
 import { useTranslation } from "@/lib/i18n";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 interface Recipient { id: string; name: string; email: string; }
+
+interface TeamOption { id: string; name: string; }
 
 interface Invitation {
   id: string;
@@ -30,6 +33,8 @@ const InviteUsers = () => {
   const [sending, setSending] = useState(false);
   const [resending, setResending] = useState<string | null>(null);
   const [invitations, setInvitations] = useState<Invitation[]>([]);
+  const [teams, setTeams] = useState<TeamOption[]>([]);
+  const [teamId, setTeamId] = useState("none");
   const fileRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
   const { user } = useAuth();
