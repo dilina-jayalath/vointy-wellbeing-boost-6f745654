@@ -309,6 +309,7 @@ Deno.serve(async (req) => {
       message_id: messageId,
       to: effectiveRecipient,
       from: `${SITE_NAME} <noreply@${FROM_DOMAIN}>`,
+      reply_to: 'paavo.vasala@wasala.fi',
       sender_domain: SENDER_DOMAIN,
       subject: resolvedSubject,
       html,
